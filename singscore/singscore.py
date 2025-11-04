@@ -284,7 +284,8 @@ def score(up_gene, sample, down_gene = False, norm_method = 'standard',
                 data = temp_df
 
             else:
-                data = data.append(temp_df)
+                # data = data.append(temp_df)
+                data = pandas.concat([data, temp_df], axis=0)
         return data
 
     except:
