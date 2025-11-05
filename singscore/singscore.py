@@ -395,7 +395,8 @@ def rank(up_gene, sample, down_gene = False,norm_method = 'standard'):
             up_ranks['up_or_down'] = 'up'
 
         if down_gene != False:
-            ranks = up_ranks.append(down_ranks)
+            # ranks = up_ranks.append(down_ranks)
+            ranks = pandas.concat([up_ranks, down_ranks], axis=0)
         else:
             ranks = up_ranks
 

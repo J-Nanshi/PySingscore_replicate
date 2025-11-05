@@ -1,0 +1,9 @@
+{
+  "n_total_genes": 11899,
+  "n_up_mapped": 179,
+  "n_down_mapped": 97,
+  "up_score_norm_centered": 0.2500638740061395,
+  "down_score_norm_centered": 0.03708003361303425,
+  "total_score": 0.28714390761917374,
+  "notes": "Scores are normalized to theoretical min/max per sample and centered at 0; total_score is the sum of centered up/down components."
+}

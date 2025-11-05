@@ -34,33 +34,49 @@ def _read_expr(expr_path: Path) -> pd.DataFrame:
     """Read a single-sample expression table; return DataFrame with columns ['gene','value']."""
     # Let pandas sniff the delimiter; works for CSV/TSV
     df = pd.read_csv(expr_path, sep=None, engine="python")
+    print(df.head())
     # Standardize column names
     cols = {c.lower().strip(): c for c in df.columns}
+    print(cols)
     gene_col_candidates = [k for k in cols.keys() if k in {"gene", "genes", "gene_symbol", "symbol", "hgnc_symbol"}]
+    print(gene_col_candidates)
     value_col_candidates = [k for k in cols.keys() if k in {"tpm", "fpkm", "rpkm", "rsem", "expr", "expression", "value"}]
+    print(value_col_candidates)
 
     if not gene_col_candidates:
         # fallback = first column
         gene_col = df.columns[0]
+        print(f'if: {gene_col}')
     else:
         gene_col = cols[gene_col_candidates[0]]
+        print(f'else: {gene_col}')
 
     if not value_col_candidates:
         # fallback = second column
         if len(df.columns) < 2:
             raise ValueError("Expression file must have at least two columns: gene and value.")
         value_col = df.columns[1]
+        print(f'if: {value_col}')
     else:
         value_col = cols[value_col_candidates[0]]
+        print(f'else: {value_col}')
 
     out = df[[gene_col, value_col]].rename(columns={gene_col: "gene", value_col: "value"}).copy()
+    out.to_csv("results/first_out_df1.csv", index=False)
+    print(f'out_df1 = {len(out)}, {out.shape}')
     # Clean gene symbols, drop missing values
     out["gene"] = out["gene"].astype(str).str.strip()
     out = out.dropna(subset=["gene", "value"])
+    out.to_csv("results/second_out_filtered_missing_values_df2.csv", index=False)
+    print(f'out_df2_dropped missing = {len(out)}, {out.shape}')
     # Keep only finite numeric values
     out = out[np.isfinite(out["value"].values)]
+    out.to_csv("results/second_out_filtered_numeric_values_df3.csv", index=False)
+    print(f'out_df3_numeric_only = {len(out)}, {out.shape}')
     # Ensure unique genes: keep the max value per gene (or mean—choice does not affect ranks much)
     out = out.groupby("gene", as_index=False)["value"].max()
+    out.to_csv("results/second_out_filtered_unique_values_df4.csv", index=False)
+    print(f'out_df4_final_unique = {len(out)}, {out.shape}')
     return out
 
 
@@ -143,6 +159,7 @@ def main():
     expr = expr.drop_duplicates(subset=["gene_upper"]).set_index("gene_upper")
 
     up_set = _read_gene_list(args.up)
+    print(f'length of up set raw:{len(up_set)}')
     down_set = _read_gene_list(args.down) if args.down else set()
 
     # Rank within sample
@@ -150,6 +167,7 @@ def main():
 
     # Directional scores
     up_score, n_up = _singscore_direction(ranks, up_set, "up")
+    print(f'length of up set after direction ranks: {(n_up)}')
     down_score, n_down = (None, 0)
     if down_set:
         down_score, n_down = _singscore_direction(ranks, down_set, "down")
