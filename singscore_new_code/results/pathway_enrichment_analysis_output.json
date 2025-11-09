@@ -1,0 +1,101 @@
+{
+  "TGF-β signature": {
+    "pathway_id": "TGFb_EMT_v1",
+    "pathway_display_name": "TGF-β / EMT signature",
+    "pathway_description": "Genes whose expression typically changes during TGF-β signalling and epithelial-to-mesenchymal transition (EMT). Up genes often include mesenchymal markers; down genes include epithelial markers.",
+    "typical_biological_processes": [
+      "TGF-β signalling",
+      "Epithelial-to-mesenchymal transition (EMT)",
+      "Cell migration and invasion",
+      "Fibrosis and extracellular matrix remodelling"
+    ],
+    "gene_set_info": {
+      "up_geneset_size": 193,
+      "down_geneset_size": 108,
+      "geneset_covered_in_sample": 268
+    },
+    "scores": {
+      "up_geneset_score": 0.61,
+      "down_geneset_score": -0.14,
+      "total_singscore": 0.47
+    },
+    "statistics": {
+      "p_value": 0.76,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    },
+    "interpretation": "Moderate up-score with slightly negative down-score suggests partial activation of the TGF-β / EMT program. However the empirical p-value is high (0.76), indicating the observed score is not statistically different from random expectation; thus the activation is not robustly supported.",
+    "inference": {
+      "predicted_response": "Unclear / weak implication",
+      "confidence": "Low",
+      "rationale": "Although TGF-β/EMT shows some activation (positive total singscore), the lack of statistical significance (high p-value) means we cannot confidently assert pathway-driven biology that would modulate Palbociclib response. TGF-β mediated EMT can be associated with cell-cycle changes, but the evidence is weak here."
+    },
+    "notes": "High p-value may arise from limited gene coverage and/or small effect size.High p-value suggests ignoring the weak signal for clinical decisions without further validation."
+  },
+
+  "Palbociclib resistance signature": {
+    "pathway_id": "Palb_res_v1",
+    "pathway_display_name": "Palbociclib resistance signature",
+    "pathway_description": "Genes whose expression pattern has been associated with resistance (or lack of response) to the CDK4/6 inhibitor Palbociclib in prior studies.",
+    "typical_biological_processes": [
+      "Cell-cycle deregulation",
+      "Compensatory signalling (e.g., PI3K/AKT)",
+      "Altered Rb pathway activity"
+    ],
+    "gene_set_info": {
+      "up_geneset_size": 782,
+      "down_geneset_size": 185,
+      "geneset_covered_in_sample": 835
+    },
+    "scores": {
+      "up_geneset_score": 0.45,
+      "down_geneset_score": 0.016,
+      "total_singscore": 0.467
+    },
+    "statistics": {
+      "p_value": 0.901,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    },
+    "interpretation": "Up-score moderately positive and down-score near zero but the p-value is very high (0.901). There is no statistical evidence that this sample reflects the resistance signature.",
+    "inference": {
+      "predicted_response": "Likely not resistant (i.e., no strong resistance signature)",
+      "confidence": "Low to Moderate",
+      "rationale": "The resistance signature is not significantly enriched. While a modest positive up-score is present, it lacks statistical support; thus the sample does not strongly display the resistance phenotype."
+    },
+    "notes": "High p-value may arise from limited gene coverage and/or small effect size.High p-value suggests ignoring the weak signal for clinical decisions without further validation."
+  },
+
+  "Cyclin D associated G1 events": {
+    "pathway_id": "CyclinD_G1_v1",
+    "pathway_display_name": "Cyclin D / G1 events signature",
+    "pathway_description": "Genes associated with Cyclin D activity and progression through G1 (upstream of CDK4/6). A high up-score suggests active CyclinD-CDK4/6 axis driving G1 progression.",
+    "typical_biological_processes": [
+      "G1 phase progression",
+      "Cyclin D - CDK4/6 activation",
+      "Cell cycle entry and proliferation"
+    ],
+    "gene_set_info": {
+      "up_geneset_size": 15,
+      "down_geneset_size": 15,
+      "geneset_covered_in_sample": 30
+    },
+    "scores": {
+      "up_geneset_score": 0.66,
+      "down_geneset_score": -0.19,
+      "total_singscore": 0.47
+    },
+    "statistics": {
+      "p_value": 0.597,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    },
+    "interpretation": "Strong up-score and negative down-score indicate concordance with Cyclin D / G1 biology, but p-value is not significant (0.597). Hence the evidence for pathway activation is suggestive but not statistically robust.",
+    "inference": {
+      "predicted_response": "Potential sensitivity",
+      "confidence": "Low to Moderate",
+      "rationale": "Palbociclib targets CDK4/6 which act downstream of Cyclin D. The strong up-score suggests the CyclinD-CDK4/6 axis may be active, which could indicate sensitivity, but lack of statistical significance reduces confidence."
+    },
+    "notes": "High p-value may arise from limited gene coverage and/or small effect size.High p-value suggests ignoring the weak signal for clinical decisions without further validation."
+  }
+}
