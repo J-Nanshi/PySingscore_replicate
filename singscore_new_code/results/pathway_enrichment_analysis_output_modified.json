@@ -1,0 +1,74 @@
+{
+  "TGF-β signature": {
+    "pathway_display_name": "TGF-β signature",
+    "gene_set_info": {
+      "up_geneset_size": 193,
+      "down_geneset_size": 108,
+      "geneset_covered_in_sample": 268
+    },
+    "scores": {
+      "up_geneset_score": 0.61,
+      "down_geneset_score": -0.14,
+      "total_singscore": 0.47
+    },
+    "statistics": {
+      "p_value": 0.76,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Palbociclib resistance signature": {
+    "pathway_display_name": "Palbociclib resistance signature",
+    "gene_set_info": {
+      "up_geneset_size": 782,
+      "down_geneset_size": 185,
+      "geneset_covered_in_sample": 835
+    },
+    "scores": {
+      "up_geneset_score": 0.45,
+      "down_geneset_score": 0.016,
+      "total_singscore": 0.467
+    },
+    "statistics": {
+      "p_value": 0.901,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Cyclin D associated G1 events": {
+    "pathway_display_name": "Cyclin D / G1 events signature",
+    "gene_set_info": {
+      "up_geneset_size": 15,
+      "down_geneset_size": 15,
+      "geneset_covered_in_sample": 30
+    },
+    "scores": {
+      "up_geneset_score": 0.66,
+      "down_geneset_score": -0.19,
+      "total_singscore": 0.47
+    },
+    "statistics": {
+      "p_value": 0.597,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Tamoxifen_resistance": {
+    "pathway_display_name": "Tamoxifen_resistance",
+    "gene_set_info": {
+      "up_geneset_size": 54,
+      "down_geneset_size": 54,
+      "geneset_covered_in_sample": 102
+    },
+    "scores": {
+      "up_geneset_score": 0.6300490596892886,
+      "down_geneset_score": -0.15503815017266648,
+      "total_singscore": 0.4750109095166221
+    },
+    "statistics": {
+      "p_value": 0.6648335166483351,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  }
+}
