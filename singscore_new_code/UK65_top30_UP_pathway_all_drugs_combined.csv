@@ -1,0 +1,181 @@
+drug,pathways,total_singscore,p_value
+Doxorubicin,Negative Regulation of Oxidative Stress-Induced Intrinsic Apoptotic Signaling Pathway (GO:1902176),0.334174332888041,9.999000099990002e-05
+Doxorubicin,Constitutive Signaling by Overexpressed ERBB2,0.3261747232725639,9.999000099990002e-05
+Doxorubicin,Regulation of Fibroblast Migration (GO:0010762),0.3236668027766435,9.999000099990002e-05
+Doxorubicin,SARS-CoV-1-host Interactions,0.3164265950789617,9.999000099990002e-05
+Doxorubicin,Negative Regulation of Fibroblast Migration (GO:0010764),0.3065211181391553,0.0074992500749925
+Doxorubicin,SARS-CoV-1 Infection,0.2992753139243167,9.999000099990002e-05
+Doxorubicin,Chaperone Mediated Autophagy,0.2875839298110523,9.999000099990002e-05
+Doxorubicin,FBXL7 Down-Regulates AURKA During Mitotic Entry and in Early Mitosis,0.286740893839962,9.999000099990002e-05
+Doxorubicin,Signaling by ERBB2 ECD Mutants,0.2862894994692577,9.999000099990002e-05
+Doxorubicin,Sema4D Induced Cell Migration and Growth-Cone Collapse,0.2754164965291956,9.999000099990002e-05
+Doxorubicin,Downregulation of ERBB2 ERBB3 Signaling,0.2746097638329339,9.999000099990002e-05
+Doxorubicin,Regulation of Translation (GO:0006417),0.2708852344474726,9.999000099990002e-05
+Doxorubicin,Macromolecule Biosynthetic Process (GO:0009059),0.2684812863442646,9.999000099990002e-05
+Doxorubicin,APC C Cdh1 Mediated Degradation of Cdc20 and Other APC C Cdh1 Targets in Late Mitosis Early G1,0.2683971116858178,9.999000099990002e-05
+Doxorubicin,RHOH GTPase Cycle,0.2618495428895533,9.999000099990002e-05
+Doxorubicin,DNA Topological Change (GO:0006265),0.2600415402545928,0.0020997900209979
+Doxorubicin,Host Interactions of HIV Factors,0.2595917215641945,9.999000099990002e-05
+Doxorubicin,Nef Mediated CD4 Down-regulation,0.2576561500891119,0.0022997700229977
+Doxorubicin,Reelin-Mediated Signaling Pathway (GO:0038026),0.2486080421639334,0.008999100089991
+Doxorubicin,Chromatin Remodeling (GO:0006338),0.2483917333674493,9.999000099990002e-05
+Doxorubicin,Sema4D in Semaphorin Signaling,0.2483647118081079,9.999000099990002e-05
+Doxorubicin,Positive Regulation of Translation (GO:0045727),0.2471863990167964,9.999000099990002e-05
+Doxorubicin,APC C-mediated Degradation of Cell Cycle Proteins,0.2470988749430392,9.999000099990002e-05
+Doxorubicin,Regulation of Mitotic Cell Cycle,0.2470988749430392,9.999000099990002e-05
+Doxorubicin,MITF-M-dependent Gene Expression,0.2461894078551355,9.999000099990002e-05
+Doxorubicin,MAPK6 MAPK4 Signaling,0.2421582246840063,9.999000099990002e-05
+Doxorubicin,Negative Regulation of Intrinsic Apoptotic Signaling Pathway (GO:2001243),0.2419582571937142,9.999000099990002e-05
+Doxorubicin,Cellular Responses to Stress,0.2416915176315381,9.999000099990002e-05
+Doxorubicin,Adherens junction,0.2406657703998128,9.999000099990002e-05
+Doxorubicin,Regulation of Inflammatory Response to Antigenic Stimulus (GO:0002861),0.2398163836041479,0.0002999700029997
+Fulvestrant,Progesterone Receptor Signaling Pathway (GO:0050847),0.3078530612244898,0.0001999800019998
+Fulvestrant,Maintenance of Protein Location in Nucleus (GO:0051457),0.3061821151490405,9.999000099990002e-05
+Fulvestrant,Maintenance of Protein Localization in Organelle (GO:0072595),0.2990681764567114,9.999000099990002e-05
+Fulvestrant,Estrogen-dependent Gene Expression,0.2739436467266424,9.999000099990002e-05
+Fulvestrant,Chromatin Remodeling (GO:0006338),0.2483917333674493,9.999000099990002e-05
+Fulvestrant,Mitochondrial Unfolded Protein Response (UPRmt),0.245705580958602,0.0002999700029997
+Fulvestrant,RUNX1 Regulates Estrogen Receptor Mediated Transcription,0.2444634889541843,0.0178982101789821
+Fulvestrant,Regulation of RUNX2 Expression and Activity,0.2430384370222871,9.999000099990002e-05
+Fulvestrant,Cellular Responses to Stress,0.2416915176315381,9.999000099990002e-05
+Fulvestrant,Transcriptional Activation of Mitochondrial Biogenesis,0.2367339365740872,9.999000099990002e-05
+Fulvestrant,Cellular Response to Hexose Stimulus (GO:0071331),0.2360049009597713,9.999000099990002e-05
+Fulvestrant,Mitochondrial Biogenesis,0.2359736203675302,9.999000099990002e-05
+Fulvestrant,Response to Peptide Hormone (GO:0043434),0.2351389312069439,9.999000099990002e-05
+Fulvestrant,Cellular Responses to Stimuli,0.2343462785883969,9.999000099990002e-05
+Fulvestrant,Regulation of Ketone Metabolic Process (GO:0010565),0.2340108566997265,0.0053994600539946
+Fulvestrant,Cellular Response to Corticosteroid Stimulus (GO:0071384),0.2307456800047729,0.0013998600139986
+Fulvestrant,SUMOylation,0.2279109959733002,9.999000099990002e-05
+Fulvestrant,SUMO E3 Ligases SUMOylate Target Proteins,0.2265945966130809,9.999000099990002e-05
+Fulvestrant,Intracellular Glucose Homeostasis (GO:0001678),0.2246666368844224,9.999000099990002e-05
+Fulvestrant,Chromatin Organization (GO:0006325),0.2222271788517141,9.999000099990002e-05
+Fulvestrant,Deubiquitination,0.2212935437504083,9.999000099990002e-05
+Fulvestrant,SUMOylation of Intracellular Receptors,0.2211128876025534,9.999000099990002e-05
+Fulvestrant,Protein Localization to Nucleus (GO:0034504),0.2209722394922523,9.999000099990002e-05
+Fulvestrant,ESR-mediated Signaling,0.2130378936863424,9.999000099990002e-05
+Fulvestrant,Transcriptional Regulation by the AP-2 (TFAP2) Family of Transcription Factors,0.2117091893139018,9.999000099990002e-05
+Fulvestrant,Transcriptional Regulation by RUNX2,0.2100676592462531,9.999000099990002e-05
+Fulvestrant,Response to Glucose (GO:0009749),0.2095635501586618,9.999000099990002e-05
+Fulvestrant,Protein Localization to Chromatin (GO:0071168),0.2070761113212246,9.999000099990002e-05
+Fulvestrant,Positive Regulation of Nitric Oxide Metabolic Process (GO:1904407),0.2049788083369368,9.999000099990002e-05
+Fulvestrant,Nuclear Receptor-Mediated Steroid Hormone Signaling Pathway (GO:0030518),0.204523692753217,9.999000099990002e-05
+Gemcitabine,One-Carbon Metabolic Process (GO:0006730),0.2951265306122448,0.0004999500049995
+Gemcitabine,Myc Targets V1,0.2882062937062936,9.999000099990002e-05
+Gemcitabine,UV-damage Excision Repair (GO:0070914),0.2834048885112193,0.0001999800019998
+Gemcitabine,Regulation of Translation (GO:0006417),0.2708852344474726,9.999000099990002e-05
+Gemcitabine,Tetrahydrofolate Metabolic Process (GO:0046653),0.2665224489795917,0.0008999100089991
+Gemcitabine,"Base-Excision Repair, Gap-Filling (GO:0006287)",0.2598157995317063,0.0005999400059994
+Gemcitabine,Global Genome Nucleotide Excision Repair (GG-NER),0.2510698007197639,9.999000099990002e-05
+Gemcitabine,Dual Incision in GG-NER,0.2498178382004507,9.999000099990002e-05
+Gemcitabine,Nucleotide Excision Repair,0.2467496592568308,9.999000099990002e-05
+Gemcitabine,Mitochondrial DNA Replication (GO:0006264),0.2462118341194373,0.00999900009999
+Gemcitabine,Transcription-Coupled Nucleotide Excision Repair (TC-NER),0.2438642443876737,9.999000099990002e-05
+Gemcitabine,Recognition of DNA Damage by PCNA-containing Replication Complex,0.2397140522875817,9.999000099990002e-05
+Gemcitabine,Dual Incision in TC-NER,0.2346160563733272,9.999000099990002e-05
+Gemcitabine,Transcriptional Regulation by E2F6,0.2305139248050912,9.999000099990002e-05
+Gemcitabine,DNA Damage Bypass,0.2287618905146373,9.999000099990002e-05
+Gemcitabine,Base-Excision Repair (GO:0006284),0.2275414652191119,9.999000099990002e-05
+Gemcitabine,Double-Strand Break Repair via Nonhomologous End Joining (GO:0006303),0.2259593510961981,9.999000099990002e-05
+Gemcitabine,Translesion Synthesis (GO:0019985),0.2255526890044583,9.999000099990002e-05
+Gemcitabine,Gap-filling DNA Repair Synthesis and Ligation in TC-NER,0.2254957196841749,9.999000099990002e-05
+Gemcitabine,Tetrahydrofolate Interconversion (GO:0035999),0.2250516922407226,0.0272972702729727
+Gemcitabine,Gap-filling DNA Repair Synthesis and Ligation in GG-NER,0.2235793342862977,9.999000099990002e-05
+Gemcitabine,Nucleotide-Excision Repair (GO:0006289),0.2201449444192,9.999000099990002e-05
+Gemcitabine,Response to UV (GO:0009411),0.2197686902205738,9.999000099990002e-05
+Gemcitabine,mTORC1 Signaling,0.2189228712464006,9.999000099990002e-05
+Gemcitabine,Base excision repair,0.216573753220401,9.999000099990002e-05
+Gemcitabine,Cytosolic Iron-Sulfur Cluster Assembly,0.2137640087797249,0.0028997100289971
+Gemcitabine,Translesion Synthesis by Y Family DNA Polymerases Bypasses Lesions on DNA Template,0.2135910428244524,9.999000099990002e-05
+Gemcitabine,S Phase,0.2127488677716529,9.999000099990002e-05
+Gemcitabine,Regulation of G0 to G1 Transition (GO:0070316),0.2116396015544595,9.999000099990002e-05
+Gemcitabine,Negative Regulation of Translation (GO:0017148),0.2079356789820049,9.999000099990002e-05
+Paclitaxel,Negative Regulation of Oxidative Stress-Induced Intrinsic Apoptotic Signaling Pathway (GO:1902176),0.334174332888041,9.999000099990002e-05
+Paclitaxel,Constitutive Signaling by Overexpressed ERBB2,0.3261747232725639,9.999000099990002e-05
+Paclitaxel,M-decay Degradation of Maternal mRNAs by Maternally Stored Factors,0.2995647731916632,9.999000099990002e-05
+Paclitaxel,Signaling by ERBB2 ECD Mutants,0.2862894994692577,9.999000099990002e-05
+Paclitaxel,Regulation of Protein K63-linked Ubiquitination (GO:1900044),0.2814583503415245,0.0001999800019998
+Paclitaxel,Sema4D Induced Cell Migration and Growth-Cone Collapse,0.2754164965291956,9.999000099990002e-05
+Paclitaxel,Downregulation of ERBB2 ERBB3 Signaling,0.2746097638329339,9.999000099990002e-05
+Paclitaxel,Regulation of Translation (GO:0006417),0.2708852344474726,9.999000099990002e-05
+Paclitaxel,Unfolded Protein Response,0.265133705338845,9.999000099990002e-05
+Paclitaxel,MAP Kinase Activation,0.2628118099341562,9.999000099990002e-05
+Paclitaxel,Host Interactions of HIV Factors,0.2595917215641945,9.999000099990002e-05
+Paclitaxel,Androgen Response,0.2574830209188024,9.999000099990002e-05
+Paclitaxel,Interleukin-17 Signaling,0.2558884899185105,9.999000099990002e-05
+Paclitaxel,JNK (c-Jun Kinases) Phosphorylation and Activation Mediated by Activated Human TAK1,0.2505884143625078,9.999000099990002e-05
+Paclitaxel,Reelin-Mediated Signaling Pathway (GO:0038026),0.2486080421639334,0.008999100089991
+Paclitaxel,Sema4D in Semaphorin Signaling,0.2483647118081079,9.999000099990002e-05
+Paclitaxel,Positive Regulation of Translation (GO:0045727),0.2471863990167964,9.999000099990002e-05
+Paclitaxel,Negative Regulation of Protein Polymerization (GO:0032272),0.2424062955247858,9.999000099990002e-05
+Paclitaxel,Negative Regulation of Intrinsic Apoptotic Signaling Pathway (GO:2001243),0.2419582571937142,9.999000099990002e-05
+Paclitaxel,Cellular Responses to Stress,0.2416915176315381,9.999000099990002e-05
+Paclitaxel,SARS-CoV-2-host Interactions,0.240718757812283,9.999000099990002e-05
+Paclitaxel,Adherens junction,0.2406657703998128,9.999000099990002e-05
+Paclitaxel,Regulation of Inflammatory Response to Antigenic Stimulus (GO:0002861),0.2398163836041479,0.0002999700029997
+Paclitaxel,Signaling by CSF1 (M-CSF) in Myeloid Cells,0.2381732070543678,9.999000099990002e-05
+Paclitaxel,Cellular Responses to Stimuli,0.2343462785883969,9.999000099990002e-05
+Paclitaxel,Maternal to Zygotic Transition (MZT),0.2337003888812695,9.999000099990002e-05
+Paclitaxel,Regulation of PLK1 Activity at G2 M Transition,0.2333232085862934,9.999000099990002e-05
+Paclitaxel,Viral Infection Pathways,0.2311074362073271,9.999000099990002e-05
+Paclitaxel,Response to Epidermal Growth Factor (GO:0070849),0.230897331154684,9.999000099990002e-05
+Paclitaxel,SARS-CoV-2 Infection,0.2306510306603714,9.999000099990002e-05
+Palbociclib,Amyloid-Beta Formation (GO:0034205),0.386779650640764,9.999000099990002e-05
+Palbociclib,Transcriptional Activity of SMAD2 SMAD3 SMAD4 Heterotrimer,0.3378814390842192,9.999000099990002e-05
+Palbociclib,Amyloid Precursor Protein Catabolic Process (GO:0042987),0.3371687505831855,9.999000099990002e-05
+Palbociclib,RUNX3 Regulates p14-ARF,0.3218326530612245,9.999000099990002e-05
+Palbociclib,SMAD2 SMAD3 SMAD4 Heterotrimer Regulates Transcription,0.3180972097373176,9.999000099990002e-05
+Palbociclib,Drug-mediated Inhibition of CDK4 CDK6 Activity,0.3150989593960416,0.0058994100589941
+Palbociclib,Ubiquitin-dependent Degradation of Cyclin D,0.314525618497667,9.999000099990002e-05
+Palbociclib,Peptidyl-Serine Autophosphorylation (GO:0036289),0.3095155497510408,0.0003999600039996
+Palbociclib,Regulation of Translation in Response to Stress (GO:0043555),0.308087094931026,0.0003999600039996
+Palbociclib,Regulation of TP53 Degradation,0.3074419962060412,9.999000099990002e-05
+Palbociclib,Amyloid-Beta Metabolic Process (GO:0050435),0.3014796160283362,9.999000099990002e-05
+Palbociclib,Regulation of TP53 Expression and Degradation,0.3014309970671824,9.999000099990002e-05
+Palbociclib,RUNX3 Regulates WNT Signaling,0.2971237041874133,0.0006999300069993
+Palbociclib,p53-Dependent G1 S DNA Damage Checkpoint,0.2940338734128102,9.999000099990002e-05
+Palbociclib,p53-Dependent G1 DNA Damage Response,0.2940338734128102,9.999000099990002e-05
+Palbociclib,Transcription Elongation by RNA Polymerase II (GO:0006368),0.2895815584627773,9.999000099990002e-05
+Palbociclib,Myc Targets V1,0.2882062937062936,9.999000099990002e-05
+Palbociclib,Regulation of mRNA Processing (GO:0050684),0.2864276240445896,9.999000099990002e-05
+Palbociclib,SCF(Skp2)-mediated Degradation of P27 P21,0.2813962918064491,9.999000099990002e-05
+Palbociclib,MAPK Targets Nuclear Events Mediated by MAP Kinases,0.2806493782030417,9.999000099990002e-05
+Palbociclib,Transcriptional Regulation by RUNX3,0.2792223493286772,9.999000099990002e-05
+Palbociclib,G1 S DNA Damage Checkpoints,0.2782631202549565,9.999000099990002e-05
+Palbociclib,Signaling by TGF-beta Receptor Complex,0.2779979663384535,9.999000099990002e-05
+Palbociclib,Estrogen-dependent Gene Expression,0.2739436467266424,9.999000099990002e-05
+Palbociclib,Regulation of RUNX1 Expression and Activity,0.2734401796651694,9.999000099990002e-05
+Palbociclib,Regulation of Translation (GO:0006417),0.2708852344474726,9.999000099990002e-05
+Palbociclib,Regulation of mRNA 3'-End Processing (GO:0031440),0.2683862541833319,0.0020997900209979
+Palbociclib,Cyclin A Cdk2-associated Events at S Phase Entry,0.2673370702508041,9.999000099990002e-05
+Palbociclib,CDK-mediated Phosphorylation and Removal of Cdc6,0.2653744015183601,9.999000099990002e-05
+Palbociclib,Chromatin Modifying Enzymes,0.265304997152383,9.999000099990002e-05
+Zoledronic_Acid,TGFBR3 PTM Regulation,0.3236588506395437,9.999000099990002e-05
+Zoledronic_Acid,Regulation of Receptor Binding (GO:1900120),0.3076445449828301,0.0016998300169983
+Zoledronic_Acid,Positive Regulation of Myotube Differentiation (GO:0010831),0.2771067129157315,0.0156984301569843
+Zoledronic_Acid,Cellular Response to Hypoxia,0.2675882753919564,9.999000099990002e-05
+Zoledronic_Acid,Regulation of Gene Expression by Hypoxia-inducible Factor,0.2605131763329387,0.0020997900209979
+Zoledronic_Acid,Regulation of Myotube Differentiation (GO:0010830),0.2546386280114332,9.999000099990002e-05
+Zoledronic_Acid,Signaling by TGFBR3,0.2545036931567055,9.999000099990002e-05
+Zoledronic_Acid,MAPK6 MAPK4 Signaling,0.2421582246840063,9.999000099990002e-05
+Zoledronic_Acid,Positive Regulation of Lymphocyte Differentiation (GO:0045621),0.2420542919082603,9.999000099990002e-05
+Zoledronic_Acid,Negative Regulation of Intrinsic Apoptotic Signaling Pathway (GO:2001243),0.2419582571937142,9.999000099990002e-05
+Zoledronic_Acid,Cellular Responses to Stress,0.2416915176315381,9.999000099990002e-05
+Zoledronic_Acid,Positive Regulation of Transmembrane Transport (GO:0034764),0.2409926985163758,0.0002999700029997
+Zoledronic_Acid,Signaling by TGFB Family Members,0.2376191765199237,9.999000099990002e-05
+Zoledronic_Acid,Regulation of Cholesterol Biosynthesis by SREBP (SREBF),0.235766249697961,9.999000099990002e-05
+Zoledronic_Acid,Cellular Responses to Stimuli,0.2343462785883969,9.999000099990002e-05
+Zoledronic_Acid,Macromolecule Catabolic Process (GO:0009057),0.233357987059784,9.999000099990002e-05
+Zoledronic_Acid,Regulation of Monoatomic Anion Transport (GO:0044070),0.222619873495205,0.0461953804619538
+Zoledronic_Acid,Prostate cancer,0.2147611328437221,9.999000099990002e-05
+Zoledronic_Acid,Activation of Gene Expression by SREBF (SREBP),0.2145601251780751,9.999000099990002e-05
+Zoledronic_Acid,Cellular Response to Angiotensin (GO:1904385),0.2136,0.0070992900709929
+Zoledronic_Acid,ESR-mediated Signaling,0.2130378936863424,9.999000099990002e-05
+Zoledronic_Acid,Bladder cancer,0.2125881079540513,9.999000099990002e-05
+Zoledronic_Acid,Erythrocytes Take up Oxygen and Release Carbon Dioxide,0.2112988355642616,0.0368963103689631
+Zoledronic_Acid,Regulation of Cellular Response to Stress (GO:0080135),0.2052173752842886,9.999000099990002e-05
+Zoledronic_Acid,Regulation of Intrinsic Apoptotic Signaling Pathway (GO:2001242),0.2008215818516247,9.999000099990002e-05
+Zoledronic_Acid,Axon Guidance,0.1952546602296138,9.999000099990002e-05
+Zoledronic_Acid,Cellular Responses to Mechanical Stimuli,0.1928874328874328,9.999000099990002e-05
+Zoledronic_Acid,Response of Endothelial Cells to Shear Stress,0.1928874328874328,9.999000099990002e-05
+Zoledronic_Acid,Nervous System Development,0.1925233579293122,9.999000099990002e-05
+Zoledronic_Acid,Diabetic cardiomyopathy,0.1920056694806657,9.999000099990002e-05

@@ -1,0 +1,181 @@
+drug,pathways,total_singscore,p_value
+Doxorubicin,Lipid Metabolic Process (GO:0006629),0.0417539205421112,0.015998400159984
+Doxorubicin,Regulation of ERK1 and ERK2 Cascade (GO:0070372),0.04345273320657,0.0160983901609839
+Doxorubicin,Fatty Acid Metabolism,0.0465737792787264,0.0191980801919808
+Doxorubicin,Response to Lipopolysaccharide (GO:0032496),0.0468045078934185,0.02999700029997
+Doxorubicin,"PI5P, PP2A and IER3 Regulate PI3K AKT Signaling",0.0485716200967522,0.0493950604939506
+Doxorubicin,Positive Regulation of Cytokine Production (GO:0001819),0.0490676519684153,0.0025997400259974
+Doxorubicin,Positive Regulation of Epithelial Cell Proliferation (GO:0050679),0.0492508365772041,0.0414958504149585
+Doxorubicin,Positive Regulation of Multicellular Organismal Process (GO:0051240),0.0497285811832324,0.0004999500049995
+Doxorubicin,Nervous System Development (GO:0007399),0.0502178083158509,0.0001999800019998
+Doxorubicin,Natural killer cell mediated cytotoxicity,0.0521808206775386,0.0420957904209579
+Doxorubicin,Cellular Response to Oxygen-Containing Compound (GO:1901701),0.0527843835839184,0.0002999700029997
+Doxorubicin,Negative Regulation of the PI3K AKT Network,0.0527925363302644,0.0317968203179682
+Doxorubicin,Sphingolipid Biosynthetic Process (GO:0030148),0.0552758677144727,0.0474952504749525
+Doxorubicin,PI3K AKT Signaling in Cancer,0.056157205167897,0.0276972302769723
+Doxorubicin,Negative Regulation of Cytokine Production (GO:0001818),0.0583172644175917,0.003999600039996
+Doxorubicin,Positive Regulation of Protein Serine/Threonine Kinase Activity (GO:0071902),0.0589709372006719,0.0483951604839516
+Doxorubicin,Positive Regulation of Cell Population Proliferation (GO:0008284),0.0605458385142667,9.999000099990002e-05
+Doxorubicin,Generation of Neurons (GO:0048699),0.0624156406676732,0.003999600039996
+Doxorubicin,Regulation of MAP Kinase Activity (GO:0043405),0.0624891342141863,0.0415958404159584
+Doxorubicin,Regulation of Wnt Signaling Pathway (GO:0030111),0.0627550184350675,0.0144985501449855
+Doxorubicin,Intracellular Monoatomic Cation Homeostasis (GO:0030003),0.0627585995063798,0.0015998400159984
+Doxorubicin,Cholinergic synapse,0.0630005875284068,0.0134986501349865
+Doxorubicin,Axon Guidance (GO:0007411),0.0632434350414707,0.0042995700429957
+Doxorubicin,Proteolysis (GO:0006508),0.0633906772544812,0.0002999700029997
+Doxorubicin,cAMP signaling pathway,0.0642176606205383,0.0008999100089991
+Doxorubicin,Regulation of MAPK Cascade (GO:0043408),0.0660409053273163,0.0003999600039996
+Doxorubicin,Regulation of Epithelial Cell Proliferation (GO:0050678),0.0664046450673533,0.017998200179982
+Doxorubicin,Sphingolipid Metabolic Process (GO:0006665),0.0668353735958908,0.024997500249975
+Doxorubicin,Gastric cancer,0.0669571076846579,0.0037996200379962
+Doxorubicin,Positive Regulation of Cell Adhesion (GO:0045785),0.0671871470307755,0.0182981701829817
+Fulvestrant,Lipid Metabolic Process (GO:0006629),0.0417539205421112,0.015998400159984
+Fulvestrant,Regulation of ERK1 and ERK2 Cascade (GO:0070372),0.04345273320657,0.0160983901609839
+Fulvestrant,Fatty Acid Metabolism,0.0465737792787264,0.0191980801919808
+Fulvestrant,"PI5P, PP2A and IER3 Regulate PI3K AKT Signaling",0.0485716200967522,0.0493950604939506
+Fulvestrant,Positive Regulation of Cytokine Production (GO:0001819),0.0490676519684153,0.0025997400259974
+Fulvestrant,Cellular Response to Oxygen-Containing Compound (GO:1901701),0.0527843835839184,0.0002999700029997
+Fulvestrant,Negative Regulation of the PI3K AKT Network,0.0527925363302644,0.0317968203179682
+Fulvestrant,Regulation of Insulin Secretion (GO:0050796),0.054690580394591,0.0483951604839516
+Fulvestrant,PI3K AKT Signaling in Cancer,0.056157205167897,0.0276972302769723
+Fulvestrant,Negative Regulation of Cytokine Production (GO:0001818),0.0583172644175917,0.003999600039996
+Fulvestrant,Cellular Response to Hormone Stimulus (GO:0032870),0.0605417171068786,0.0354964503549645
+Fulvestrant,Positive Regulation of Cell Population Proliferation (GO:0008284),0.0605458385142667,9.999000099990002e-05
+Fulvestrant,Positive Regulation of Secretion by Cell (GO:1903532),0.0611661211129296,0.0411958804119588
+Fulvestrant,GnRH secretion,0.0634839809134287,0.0468953104689531
+Fulvestrant,Regulation of MAPK Cascade (GO:0043408),0.0660409053273163,0.0003999600039996
+Fulvestrant,Breast cancer,0.0673099009276203,0.0040995900409959
+Fulvestrant,Chemical carcinogenesis,0.0717468380784754,0.0002999700029997
+Fulvestrant,Positive Regulation of Signal Transduction (GO:0009967),0.072441046416331,0.0002999700029997
+Fulvestrant,+ Reg of Phosphatidylinositol 3-Kinase/Prot Kinase B Signal Transduction (GO:0051897),0.0729377790070051,0.0004999500049995
+Fulvestrant,Positive Regulation of Protein Secretion (GO:0050714),0.0735101307134924,0.0168983101689831
+Fulvestrant,Negative Regulation of Cell Cycle (GO:0045786),0.0744368287502745,0.0121987801219878
+Fulvestrant,Xenobiotic Metabolism,0.0746875985710616,0.0001999800019998
+Fulvestrant,Cellular Response to Cytokine Stimulus (GO:0071345),0.0765627783688894,9.999000099990002e-05
+Fulvestrant,Positive Regulation of DNA-binding Transcription Factor Activity (GO:0051091),0.0769287689552867,0.0001999800019998
+Fulvestrant,Negative Regulation of Response to External Stimulus (GO:0032102),0.0803735864664738,0.0006999300069993
+Fulvestrant,Negative Regulation of Biosynthetic Process (GO:0009890),0.0847339970179249,0.033996600339966
+Fulvestrant,Positive Regulation of Cellular Process (GO:0048522),0.0872927057203587,9.999000099990002e-05
+Fulvestrant,Metabolism of Steroids,0.0887054503905526,9.999000099990002e-05
+Fulvestrant,Negative Regulation of Multicellular Organismal Process (GO:0051241),0.0899816369839832,9.999000099990002e-05
+Fulvestrant,Regulation of Cell Population Proliferation (GO:0042127),0.0906423009245643,9.999000099990002e-05
+Gemcitabine,Purine metabolism,0.0819542003253736,0.0007999200079992
+Gemcitabine,G1 S-Specific Transcription,0.0951121523685039,0.0433956604339566
+Gemcitabine,Glutathione metabolism,0.0988250204415371,0.0080991900809919
+Gemcitabine,Nucleoside Phosphate Biosynthetic Process (GO:1901293),0.117727784129058,0.0414958504149585
+Gemcitabine,E2F Mediated Regulation of DNA Replication,0.1178146624691871,0.0283971602839716
+Gemcitabine,Metabolism of Nucleotides,0.1261154202012435,9.999000099990002e-05
+Gemcitabine,Lagging Strand Synthesis,0.126547570436913,0.0248975102489751
+Gemcitabine,Positive Regulation of Cell Cycle Process (GO:0090068),0.1267702923043325,9.999000099990002e-05
+Gemcitabine,Extension of Telomeres,0.1279893704006541,0.0012998700129987
+Gemcitabine,Nucleobase-Containing Small Molecule Metabolic Process (GO:0055086),0.1285325218970125,0.0340965903409659
+Gemcitabine,DNA-templated DNA Replication Maintenance of Fidelity (GO:0045005),0.1287366589598075,0.0016998300169983
+Gemcitabine,DNA replication,0.1356972932726793,0.0021997800219978
+Gemcitabine,Mismatch Repair,0.1359638021364904,0.0322967703229677
+Gemcitabine,Positive Regulation of Cell Cycle G1/S Phase Transition (GO:1902808),0.136145753053551,0.0011998800119988
+Gemcitabine,Chromosome Maintenance,0.1370993453722402,9.999000099990002e-05
+Gemcitabine,Mismatch repair,0.1375574617232569,0.0120987901209879
+Gemcitabine,Mismatch Repair (MMR) Directed by MSH2 MSH6 (MutSalpha),0.1400753475786134,0.0336966303369663
+Gemcitabine,DNA Strand Elongation (GO:0022616),0.1400896671837156,0.0464953504649535
+Gemcitabine,Telomere C-strand (Lagging Strand) Synthesis,0.142095978773925,0.0023997600239976
+Gemcitabine,Inhibition of Replication Initiation of Damaged DNA by RB1 E2F1,0.1425464970592945,0.0354964503549645
+Gemcitabine,DNA Biosynthetic Process (GO:0071897),0.1439198714638756,0.0195980401959804
+Gemcitabine,Positive Regulation of G2/M Transition of Mitotic Cell Cycle (GO:0010971),0.145046837828719,0.0142985701429857
+Gemcitabine,Positive Regulation of G1/S Transition of Mitotic Cell Cycle (GO:1900087),0.1474385162186453,0.0014998500149985
+Gemcitabine,Telomere Maintenance,0.1485658002455996,9.999000099990002e-05
+Gemcitabine,Pyrimidine metabolism,0.1488979758740544,9.999000099990002e-05
+Gemcitabine,Nucleotide Salvage,0.1509663360161562,0.0072992700729927
+Gemcitabine,Interconversion of Nucleotide Di- and Triphosphates,0.1512904448065988,0.0018998100189981
+Gemcitabine,DNA-templated DNA Replication (GO:0006261),0.1515616859908649,0.0001999800019998
+Gemcitabine,Polymerase Switching,0.1524213865820659,0.0224977502249775
+Gemcitabine,Leading Strand Synthesis,0.1524213865820659,0.0224977502249775
+Paclitaxel,Transmission Across Chemical Synapses,0.0387766546531794,0.0190980901909809
+Paclitaxel,Lipid Metabolic Process (GO:0006629),0.0417539205421112,0.015998400159984
+Paclitaxel,Regulation of ERK1 and ERK2 Cascade (GO:0070372),0.04345273320657,0.0160983901609839
+Paclitaxel,Response to Lipopolysaccharide (GO:0032496),0.0468045078934185,0.02999700029997
+Paclitaxel,"PI5P, PP2A and IER3 Regulate PI3K AKT Signaling",0.0485716200967522,0.0493950604939506
+Paclitaxel,Positive Regulation of Cytokine Production (GO:0001819),0.0490676519684153,0.0025997400259974
+Paclitaxel,Positive Regulation of Epithelial Cell Proliferation (GO:0050679),0.0492508365772041,0.0414958504149585
+Paclitaxel,Nervous System Development (GO:0007399),0.0502178083158509,0.0001999800019998
+Paclitaxel,Natural killer cell mediated cytotoxicity,0.0521808206775386,0.0420957904209579
+Paclitaxel,Cellular Response to Oxygen-Containing Compound (GO:1901701),0.0527843835839184,0.0002999700029997
+Paclitaxel,Negative Regulation of the PI3K AKT Network,0.0527925363302644,0.0317968203179682
+Paclitaxel,PI3K AKT Signaling in Cancer,0.056157205167897,0.0276972302769723
+Paclitaxel,Regulation of JNK Cascade (GO:0046328),0.0577290598332373,0.0202979702029797
+Paclitaxel,Positive Regulation of Protein Serine/Threonine Kinase Activity (GO:0071902),0.0589709372006719,0.0483951604839516
+Paclitaxel,Cellular Response to Hormone Stimulus (GO:0032870),0.0605417171068786,0.0354964503549645
+Paclitaxel,Positive Regulation of Cell Population Proliferation (GO:0008284),0.0605458385142667,9.999000099990002e-05
+Paclitaxel,Generation of Neurons (GO:0048699),0.0624156406676732,0.003999600039996
+Paclitaxel,Regulation of MAP Kinase Activity (GO:0043405),0.0624891342141863,0.0415958404159584
+Paclitaxel,Cholinergic synapse,0.0630005875284068,0.0134986501349865
+Paclitaxel,Axon Guidance (GO:0007411),0.0632434350414707,0.0042995700429957
+Paclitaxel,Regulation of MAPK Cascade (GO:0043408),0.0660409053273163,0.0003999600039996
+Paclitaxel,Regulation of Epithelial Cell Proliferation (GO:0050678),0.0664046450673533,0.017998200179982
+Paclitaxel,Gastric cancer,0.0669571076846579,0.0037996200379962
+Paclitaxel,Positive Regulation of Cell Adhesion (GO:0045785),0.0671871470307755,0.0182981701829817
+Paclitaxel,Breast cancer,0.0673099009276203,0.0040995900409959
+Paclitaxel,Positive Regulation of Neuron Projection Development (GO:0010976),0.0690645641301385,0.0101989801019898
+Paclitaxel,Regulation of Phagocytosis (GO:0050764),0.069102433040278,0.0390960903909609
+Paclitaxel,Transport of Small Molecules,0.0698779234785523,9.999000099990002e-05
+Paclitaxel,Neuron Projection Guidance (GO:0097485),0.0714010753391398,0.0027997200279972
+Paclitaxel,Positive Regulation of Signal Transduction (GO:0009967),0.072441046416331,0.0002999700029997
+Palbociclib,Transmission Across Chemical Synapses,0.0387766546531794,0.0190980901909809
+Palbociclib,"PI5P, PP2A and IER3 Regulate PI3K AKT Signaling",0.0485716200967522,0.0493950604939506
+Palbociclib,Nervous System Development (GO:0007399),0.0502178083158509,0.0001999800019998
+Palbociclib,Cellular Response to Oxygen-Containing Compound (GO:1901701),0.0527843835839184,0.0002999700029997
+Palbociclib,Negative Regulation of the PI3K AKT Network,0.0527925363302644,0.0317968203179682
+Palbociclib,JAK-STAT signaling pathway,0.0532929259790855,0.0214978502149785
+Palbociclib,PI3K AKT Signaling in Cancer,0.056157205167897,0.0276972302769723
+Palbociclib,Negative Regulation of Cytokine Production (GO:0001818),0.0583172644175917,0.003999600039996
+Palbociclib,Positive Regulation of Protein Serine/Threonine Kinase Activity (GO:0071902),0.0589709372006719,0.0483951604839516
+Palbociclib,Chemokine signaling pathway,0.0594361358501839,0.0035996400359964
+Palbociclib,Positive Regulation of Cell Population Proliferation (GO:0008284),0.0605458385142667,9.999000099990002e-05
+Palbociclib,Generation of Neurons (GO:0048699),0.0624156406676732,0.003999600039996
+Palbociclib,Regulation of MAP Kinase Activity (GO:0043405),0.0624891342141863,0.0415958404159584
+Palbociclib,Regulation of MAPK Cascade (GO:0043408),0.0660409053273163,0.0003999600039996
+Palbociclib,Regulation of Epithelial Cell Proliferation (GO:0050678),0.0664046450673533,0.017998200179982
+Palbociclib,Gastric cancer,0.0669571076846579,0.0037996200379962
+Palbociclib,Signaling pathways regulating pluripotency of stem cells,0.0672916957145786,0.0048995100489951
+Palbociclib,Breast cancer,0.0673099009276203,0.0040995900409959
+Palbociclib,Th1 and Th2 cell differentiation,0.0686751908046344,0.0156984301569843
+Palbociclib,Chemical carcinogenesis,0.0717468380784754,0.0002999700029997
+Palbociclib,IGF1R Signaling Cascade,0.0722401602158008,0.0483951604839516
+Palbociclib,+ Reg of Phosphatidylinositol 3-Kinase/Prot Kinase B Signal Transduction (GO:0051897),0.0729377790070051,0.0004999500049995
+Palbociclib,Negative Regulation of Cell Cycle (GO:0045786),0.0744368287502745,0.0121987801219878
+Palbociclib,Activation of NMDA Receptors and Postsynaptic Events,0.0752595461618064,0.0068993100689931
+Palbociclib,Cellular Response to Cytokine Stimulus (GO:0071345),0.0765627783688894,9.999000099990002e-05
+Palbociclib,Regulation of Osteoblast Differentiation (GO:0045667),0.0770093293442538,0.0067993200679932
+Palbociclib,Interleukin-4 and Interleukin-13 Signaling,0.0772008376341443,0.0034996500349965
+Palbociclib,Hemostasis,0.0772698417697824,9.999000099990002e-05
+Palbociclib,Hippo signaling pathway,0.0773076283162129,0.0002999700029997
+Palbociclib,Hemopoiesis (GO:0030097),0.0774284644219804,0.002999700029997
+Zoledronic_Acid,Lipid Metabolic Process (GO:0006629),0.0417539205421112,0.015998400159984
+Zoledronic_Acid,Response to Lipopolysaccharide (GO:0032496),0.0468045078934185,0.02999700029997
+Zoledronic_Acid,Positive Regulation of Cytokine Production (GO:0001819),0.0490676519684153,0.0025997400259974
+Zoledronic_Acid,Positive Regulation of Multicellular Organismal Process (GO:0051240),0.0497285811832324,0.0004999500049995
+Zoledronic_Acid,Cellular Response to Oxygen-Containing Compound (GO:1901701),0.0527843835839184,0.0002999700029997
+Zoledronic_Acid,Collagen Formation,0.0571964099360903,0.0342965703429657
+Zoledronic_Acid,Myeloid Leukocyte Differentiation (GO:0002573),0.0604562833362178,0.0480951904809519
+Zoledronic_Acid,Proteolysis (GO:0006508),0.0633906772544812,0.0002999700029997
+Zoledronic_Acid,Transport of Small Molecules,0.0698779234785523,9.999000099990002e-05
+Zoledronic_Acid,Coagulation,0.0738106686827023,0.0020997900209979
+Zoledronic_Acid,Negative Regulation of Signal Transduction (GO:0009968),0.0739195383347073,9.999000099990002e-05
+Zoledronic_Acid,Xenobiotic Metabolism,0.0746875985710616,0.0001999800019998
+Zoledronic_Acid,Positive Regulation of Cytokine-Mediated Signaling Pathway (GO:0001961),0.0753425829380056,0.0423957604239576
+Zoledronic_Acid,Assembly of Collagen Fibrils and Other Multimeric Structures,0.0767072020207831,0.0206979302069793
+Zoledronic_Acid,Interleukin-4 and Interleukin-13 Signaling,0.0772008376341443,0.0034996500349965
+Zoledronic_Acid,Antigen Receptor-Mediated Signaling Pathway (GO:0050851),0.0786189516776884,0.0027997200279972
+Zoledronic_Acid,Extracellular Matrix Organization,0.0789610819509333,9.999000099990002e-05
+Zoledronic_Acid,Regulation of DNA Binding (GO:0051101),0.0829401416014141,0.0383961603839616
+Zoledronic_Acid,Degradation of the Extracellular Matrix,0.0863145376255895,0.0004999500049995
+Zoledronic_Acid,Positive Regulation of Cellular Process (GO:0048522),0.0872927057203587,9.999000099990002e-05
+Zoledronic_Acid,Metabolism of Steroids,0.0887054503905526,9.999000099990002e-05
+Zoledronic_Acid,Metabolism of Lipids,0.0921825315820286,9.999000099990002e-05
+Zoledronic_Acid,IL-17 signaling pathway,0.0926809653327068,0.0025997400259974
+Zoledronic_Acid,Cell Surface Receptor Protein Tyrosine Kinase Signaling Pathway (GO:0007169),0.0931075051949639,9.999000099990002e-05
+Zoledronic_Acid,Regulation of IGF Transport and Uptake by Insulin-like Growth Factor Binding Proteins (IGFBPs),0.0932775930508555,0.0001999800019998
+Zoledronic_Acid,Complement,0.0934606091674292,9.999000099990002e-05
+Zoledronic_Acid,Collagen Degradation,0.0958419337920722,0.0070992900709929
+Zoledronic_Acid,IL-2/STAT5 Signaling,0.0962405453344926,9.999000099990002e-05
+Zoledronic_Acid,Endoderm Formation (GO:0001706),0.0978040914028628,0.0244975502449755
+Zoledronic_Acid,Positive Regulation of Gene Expression (GO:0010628),0.1043963272272004,9.999000099990002e-05
