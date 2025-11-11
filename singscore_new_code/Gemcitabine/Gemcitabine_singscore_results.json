@@ -1,0 +1,1962 @@
+{
+  "DNA Repair": {
+    "gene_set_info": {
+      "geneset_size": 312,
+      "geneset_covered_in_sample": 293
+    },
+    "scores": {
+      "total_singscore": 0.2036717641585657
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "G2-M Checkpoint": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 200
+    },
+    "scores": {
+      "total_singscore": 0.1769744960921431
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "mTORC1 Signaling": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 200
+    },
+    "scores": {
+      "total_singscore": 0.21892287124640064
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "E2F Targets": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 200
+    },
+    "scores": {
+      "total_singscore": 0.1608183874948581
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Myc Targets V1": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 200
+    },
+    "scores": {
+      "total_singscore": 0.2882062937062936
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Base excision repair": {
+    "gene_set_info": {
+      "geneset_size": 33,
+      "geneset_covered_in_sample": 33
+    },
+    "scores": {
+      "total_singscore": 0.21657375322040107
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "DNA replication": {
+    "gene_set_info": {
+      "geneset_size": 36,
+      "geneset_covered_in_sample": 36
+    },
+    "scores": {
+      "total_singscore": 0.13569729327267932
+    },
+    "statistics": {
+      "p_value": 0.0021997800219978004,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Drug metabolism": {
+    "gene_set_info": {
+      "geneset_size": 108,
+      "geneset_covered_in_sample": 82
+    },
+    "scores": {
+      "total_singscore": 0.012664395515741611
+    },
+    "statistics": {
+      "p_value": 0.3467653234676532,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Glutathione metabolism": {
+    "gene_set_info": {
+      "geneset_size": 57,
+      "geneset_covered_in_sample": 50
+    },
+    "scores": {
+      "total_singscore": 0.09882502044153718
+    },
+    "statistics": {
+      "p_value": 0.008099190080991902,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Homologous recombination": {
+    "gene_set_info": {
+      "geneset_size": 41,
+      "geneset_covered_in_sample": 41
+    },
+    "scores": {
+      "total_singscore": 0.20256242592668272
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Mismatch repair": {
+    "gene_set_info": {
+      "geneset_size": 23,
+      "geneset_covered_in_sample": 23
+    },
+    "scores": {
+      "total_singscore": 0.1375574617232569
+    },
+    "statistics": {
+      "p_value": 0.012098790120987902,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Nucleotide excision repair": {
+    "gene_set_info": {
+      "geneset_size": 47,
+      "geneset_covered_in_sample": 46
+    },
+    "scores": {
+      "total_singscore": 0.2028748542667842
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "One carbon pool by folate": {
+    "gene_set_info": {
+      "geneset_size": 20,
+      "geneset_covered_in_sample": 20
+    },
+    "scores": {
+      "total_singscore": 0.17837076357697013
+    },
+    "statistics": {
+      "p_value": 0.0030996900309969004,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Purine metabolism": {
+    "gene_set_info": {
+      "geneset_size": 129,
+      "geneset_covered_in_sample": 121
+    },
+    "scores": {
+      "total_singscore": 0.0819542003253736
+    },
+    "statistics": {
+      "p_value": 0.0007999200079992001,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Pyrimidine metabolism": {
+    "gene_set_info": {
+      "geneset_size": 56,
+      "geneset_covered_in_sample": 55
+    },
+    "scores": {
+      "total_singscore": 0.1488979758740544
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "p53 signaling pathway": {
+    "gene_set_info": {
+      "geneset_size": 73,
+      "geneset_covered_in_sample": 71
+    },
+    "scores": {
+      "total_singscore": 0.15604157289578136
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Activation of the Pre-Replicative Complex": {
+    "gene_set_info": {
+      "geneset_size": 33,
+      "geneset_covered_in_sample": 33
+    },
+    "scores": {
+      "total_singscore": 0.07680246514662503
+    },
+    "statistics": {
+      "p_value": 0.0670932906709329,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Base Excision Repair": {
+    "gene_set_info": {
+      "geneset_size": 71,
+      "geneset_covered_in_sample": 60
+    },
+    "scores": {
+      "total_singscore": 0.18549761417859578
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Cell Cycle": {
+    "gene_set_info": {
+      "geneset_size": 649,
+      "geneset_covered_in_sample": 621
+    },
+    "scores": {
+      "total_singscore": 0.18298779061964598
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Cell Cycle, Mitotic": {
+    "gene_set_info": {
+      "geneset_size": 516,
+      "geneset_covered_in_sample": 496
+    },
+    "scores": {
+      "total_singscore": 0.1884735584349989
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Chromosome Maintenance": {
+    "gene_set_info": {
+      "geneset_size": 119,
+      "geneset_covered_in_sample": 105
+    },
+    "scores": {
+      "total_singscore": 0.13709934537224022
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Cytosolic Iron-Sulfur Cluster Assembly": {
+    "gene_set_info": {
+      "geneset_size": 13,
+      "geneset_covered_in_sample": 13
+    },
+    "scores": {
+      "total_singscore": 0.2137640087797249
+    },
+    "statistics": {
+      "p_value": 0.0028997100289971,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "DNA Damage Bypass": {
+    "gene_set_info": {
+      "geneset_size": 48,
+      "geneset_covered_in_sample": 47
+    },
+    "scores": {
+      "total_singscore": 0.22876189051463736
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "DNA Double-Strand Break Repair": {
+    "gene_set_info": {
+      "geneset_size": 152,
+      "geneset_covered_in_sample": 140
+    },
+    "scores": {
+      "total_singscore": 0.19573890614924683
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "DNA Replication": {
+    "gene_set_info": {
+      "geneset_size": 143,
+      "geneset_covered_in_sample": 130
+    },
+    "scores": {
+      "total_singscore": 0.1856259859910393
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "DNA Replication Pre-Initiation": {
+    "gene_set_info": {
+      "geneset_size": 118,
+      "geneset_covered_in_sample": 106
+    },
+    "scores": {
+      "total_singscore": 0.20454194023250127
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "DNA Replication Initiation": {
+    "gene_set_info": {
+      "geneset_size": 8,
+      "geneset_covered_in_sample": 8
+    },
+    "scores": {
+      "total_singscore": 0.15701269284140074
+    },
+    "statistics": {
+      "p_value": 0.06109389061093891,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "DNA Strand Elongation": {
+    "gene_set_info": {
+      "geneset_size": 32,
+      "geneset_covered_in_sample": 32
+    },
+    "scores": {
+      "total_singscore": 0.08407932633385085
+    },
+    "statistics": {
+      "p_value": 0.05449455054494551,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Defective Pyroptosis": {
+    "gene_set_info": {
+      "geneset_size": 41,
+      "geneset_covered_in_sample": 29
+    },
+    "scores": {
+      "total_singscore": 0.17481044413049385
+    },
+    "statistics": {
+      "p_value": 0.00039996000399960006,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Diseases of Programmed Cell Death": {
+    "gene_set_info": {
+      "geneset_size": 78,
+      "geneset_covered_in_sample": 59
+    },
+    "scores": {
+      "total_singscore": 0.1987395753111204
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Dual Incision in GG-NER": {
+    "gene_set_info": {
+      "geneset_size": 41,
+      "geneset_covered_in_sample": 41
+    },
+    "scores": {
+      "total_singscore": 0.24981783820045078
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Dual Incision in TC-NER": {
+    "gene_set_info": {
+      "geneset_size": 63,
+      "geneset_covered_in_sample": 63
+    },
+    "scores": {
+      "total_singscore": 0.23461605637332728
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "E2F Mediated Regulation of DNA Replication": {
+    "gene_set_info": {
+      "geneset_size": 22,
+      "geneset_covered_in_sample": 22
+    },
+    "scores": {
+      "total_singscore": 0.11781466246918715
+    },
+    "statistics": {
+      "p_value": 0.028397160283971604,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Extension of Telomeres": {
+    "gene_set_info": {
+      "geneset_size": 51,
+      "geneset_covered_in_sample": 50
+    },
+    "scores": {
+      "total_singscore": 0.12798937040065417
+    },
+    "statistics": {
+      "p_value": 0.0012998700129987,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "G1 S Transition": {
+    "gene_set_info": {
+      "geneset_size": 121,
+      "geneset_covered_in_sample": 120
+    },
+    "scores": {
+      "total_singscore": 0.1978109197758644
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "G1 S-Specific Transcription": {
+    "gene_set_info": {
+      "geneset_size": 29,
+      "geneset_covered_in_sample": 28
+    },
+    "scores": {
+      "total_singscore": 0.0951121523685039
+    },
+    "statistics": {
+      "p_value": 0.0433956604339566,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Gap-filling DNA Repair Synthesis and Ligation in GG-NER": {
+    "gene_set_info": {
+      "geneset_size": 25,
+      "geneset_covered_in_sample": 25
+    },
+    "scores": {
+      "total_singscore": 0.22357933428629773
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Gap-filling DNA Repair Synthesis and Ligation in TC-NER": {
+    "gene_set_info": {
+      "geneset_size": 62,
+      "geneset_covered_in_sample": 62
+    },
+    "scores": {
+      "total_singscore": 0.22549571968417492
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Gene Expression (Transcription)": {
+    "gene_set_info": {
+      "geneset_size": 1615,
+      "geneset_covered_in_sample": 1483
+    },
+    "scores": {
+      "total_singscore": 0.17612247149195204
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Generic Transcription Pathway": {
+    "gene_set_info": {
+      "geneset_size": 1230,
+      "geneset_covered_in_sample": 1147
+    },
+    "scores": {
+      "total_singscore": 0.1660544297626919
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Global Genome Nucleotide Excision Repair (GG-NER)": {
+    "gene_set_info": {
+      "geneset_size": 84,
+      "geneset_covered_in_sample": 84
+    },
+    "scores": {
+      "total_singscore": 0.2510698007197639
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "HDR Through Homologous Recombination (HRR)": {
+    "gene_set_info": {
+      "geneset_size": 69,
+      "geneset_covered_in_sample": 67
+    },
+    "scores": {
+      "total_singscore": 0.18139643801204264
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "HDR Through Homologous Recombination (HRR) or Single Strand Annealing (SSA)": {
+    "gene_set_info": {
+      "geneset_size": 116,
+      "geneset_covered_in_sample": 104
+    },
+    "scores": {
+      "total_singscore": 0.17885143312804552
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Homology Directed Repair": {
+    "gene_set_info": {
+      "geneset_size": 122,
+      "geneset_covered_in_sample": 110
+    },
+    "scores": {
+      "total_singscore": 0.1783744411326379
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Inhibition of Replication Initiation of Damaged DNA by RB1 E2F1": {
+    "gene_set_info": {
+      "geneset_size": 13,
+      "geneset_covered_in_sample": 13
+    },
+    "scores": {
+      "total_singscore": 0.14254649705929456
+    },
+    "statistics": {
+      "p_value": 0.0354964503549645,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Interconversion of Nucleotide Di- and Triphosphates": {
+    "gene_set_info": {
+      "geneset_size": 30,
+      "geneset_covered_in_sample": 29
+    },
+    "scores": {
+      "total_singscore": 0.1512904448065988
+    },
+    "statistics": {
+      "p_value": 0.0018998100189981002,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Lagging Strand Synthesis": {
+    "gene_set_info": {
+      "geneset_size": 20,
+      "geneset_covered_in_sample": 20
+    },
+    "scores": {
+      "total_singscore": 0.126547570436913
+    },
+    "statistics": {
+      "p_value": 0.024897510248975102,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Leading Strand Synthesis": {
+    "gene_set_info": {
+      "geneset_size": 14,
+      "geneset_covered_in_sample": 14
+    },
+    "scores": {
+      "total_singscore": 0.15242138658206594
+    },
+    "statistics": {
+      "p_value": 0.022497750224977502,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Metabolism of Nucleotides": {
+    "gene_set_info": {
+      "geneset_size": 98,
+      "geneset_covered_in_sample": 93
+    },
+    "scores": {
+      "total_singscore": 0.12611542020124356
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Mismatch Repair": {
+    "gene_set_info": {
+      "geneset_size": 15,
+      "geneset_covered_in_sample": 15
+    },
+    "scores": {
+      "total_singscore": 0.1359638021364904
+    },
+    "statistics": {
+      "p_value": 0.032296770322967704,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Mismatch Repair (MMR) Directed by MSH2 MSH3 (MutSbeta)": {
+    "gene_set_info": {
+      "geneset_size": 14,
+      "geneset_covered_in_sample": 14
+    },
+    "scores": {
+      "total_singscore": 0.12235816926378651
+    },
+    "statistics": {
+      "p_value": 0.05369463053694631,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Mismatch Repair (MMR) Directed by MSH2 MSH6 (MutSalpha)": {
+    "gene_set_info": {
+      "geneset_size": 14,
+      "geneset_covered_in_sample": 14
+    },
+    "scores": {
+      "total_singscore": 0.1400753475786134
+    },
+    "statistics": {
+      "p_value": 0.0336966303369663,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Mitotic G1 Phase and G1 S Transition": {
+    "gene_set_info": {
+      "geneset_size": 139,
+      "geneset_covered_in_sample": 138
+    },
+    "scores": {
+      "total_singscore": 0.18057398963410143
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Nucleotide Excision Repair": {
+    "gene_set_info": {
+      "geneset_size": 108,
+      "geneset_covered_in_sample": 108
+    },
+    "scores": {
+      "total_singscore": 0.2467496592568308
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Nucleotide Salvage": {
+    "gene_set_info": {
+      "geneset_size": 23,
+      "geneset_covered_in_sample": 22
+    },
+    "scores": {
+      "total_singscore": 0.15096633601615628
+    },
+    "statistics": {
+      "p_value": 0.0072992700729927005,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "PCNA-Dependent Long Patch Base Excision Repair": {
+    "gene_set_info": {
+      "geneset_size": 21,
+      "geneset_covered_in_sample": 21
+    },
+    "scores": {
+      "total_singscore": 0.1737641195561077
+    },
+    "statistics": {
+      "p_value": 0.0028997100289971,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Polymerase Switching": {
+    "gene_set_info": {
+      "geneset_size": 14,
+      "geneset_covered_in_sample": 14
+    },
+    "scores": {
+      "total_singscore": 0.15242138658206594
+    },
+    "statistics": {
+      "p_value": 0.022497750224977502,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Polymerase Switching on the C-strand of the Telomere": {
+    "gene_set_info": {
+      "geneset_size": 26,
+      "geneset_covered_in_sample": 26
+    },
+    "scores": {
+      "total_singscore": 0.17443259648373188
+    },
+    "statistics": {
+      "p_value": 0.0012998700129987,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Processive Synthesis on the C-strand of the Telomere": {
+    "gene_set_info": {
+      "geneset_size": 19,
+      "geneset_covered_in_sample": 19
+    },
+    "scores": {
+      "total_singscore": 0.16473183489531062
+    },
+    "statistics": {
+      "p_value": 0.0071992800719928,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Processive Synthesis on the Lagging Strand": {
+    "gene_set_info": {
+      "geneset_size": 15,
+      "geneset_covered_in_sample": 15
+    },
+    "scores": {
+      "total_singscore": 0.11731237667551209
+    },
+    "statistics": {
+      "p_value": 0.0575942405759424,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Purine Salvage": {
+    "gene_set_info": {
+      "geneset_size": 13,
+      "geneset_covered_in_sample": 12
+    },
+    "scores": {
+      "total_singscore": 0.1316672109287833
+    },
+    "statistics": {
+      "p_value": 0.057394260573942604,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Pyrimidine Salvage": {
+    "gene_set_info": {
+      "geneset_size": 11,
+      "geneset_covered_in_sample": 11
+    },
+    "scores": {
+      "total_singscore": 0.16500673496877427
+    },
+    "statistics": {
+      "p_value": 0.027097290270972903,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "RNA Polymerase II Transcription": {
+    "gene_set_info": {
+      "geneset_size": 1360,
+      "geneset_covered_in_sample": 1269
+    },
+    "scores": {
+      "total_singscore": 0.1745351895540438
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Recognition of DNA Damage by PCNA-containing Replication Complex": {
+    "gene_set_info": {
+      "geneset_size": 30,
+      "geneset_covered_in_sample": 30
+    },
+    "scores": {
+      "total_singscore": 0.2397140522875817
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Removal of the Flap Intermediate": {
+    "gene_set_info": {
+      "geneset_size": 14,
+      "geneset_covered_in_sample": 14
+    },
+    "scores": {
+      "total_singscore": 0.11584107026220025
+    },
+    "statistics": {
+      "p_value": 0.0643935606439356,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Removal of the Flap Intermediate From the C-strand": {
+    "gene_set_info": {
+      "geneset_size": 17,
+      "geneset_covered_in_sample": 17
+    },
+    "scores": {
+      "total_singscore": 0.18198837122731337
+    },
+    "statistics": {
+      "p_value": 0.003999600039996,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Resolution of AP Sites via the Multiple-Nucleotide Patch Replacement Pathway": {
+    "gene_set_info": {
+      "geneset_size": 25,
+      "geneset_covered_in_sample": 25
+    },
+    "scores": {
+      "total_singscore": 0.16788809475188893
+    },
+    "statistics": {
+      "p_value": 0.0020997900209979003,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Resolution of Abasic Sites (AP Sites)": {
+    "gene_set_info": {
+      "geneset_size": 38,
+      "geneset_covered_in_sample": 38
+    },
+    "scores": {
+      "total_singscore": 0.19505105727705996
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "S Phase": {
+    "gene_set_info": {
+      "geneset_size": 150,
+      "geneset_covered_in_sample": 149
+    },
+    "scores": {
+      "total_singscore": 0.21274886777165292
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Synthesis of DNA": {
+    "gene_set_info": {
+      "geneset_size": 108,
+      "geneset_covered_in_sample": 107
+    },
+    "scores": {
+      "total_singscore": 0.1990112675743484
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Telomere C-strand (Lagging Strand) Synthesis": {
+    "gene_set_info": {
+      "geneset_size": 34,
+      "geneset_covered_in_sample": 34
+    },
+    "scores": {
+      "total_singscore": 0.142095978773925
+    },
+    "statistics": {
+      "p_value": 0.0023997600239976003,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Telomere C-strand Synthesis Initiation": {
+    "gene_set_info": {
+      "geneset_size": 13,
+      "geneset_covered_in_sample": 13
+    },
+    "scores": {
+      "total_singscore": 0.1943738793761245
+    },
+    "statistics": {
+      "p_value": 0.0064993500649935,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Telomere Maintenance": {
+    "gene_set_info": {
+      "geneset_size": 92,
+      "geneset_covered_in_sample": 80
+    },
+    "scores": {
+      "total_singscore": 0.14856580024559962
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Termination of Translesion DNA Synthesis": {
+    "gene_set_info": {
+      "geneset_size": 32,
+      "geneset_covered_in_sample": 32
+    },
+    "scores": {
+      "total_singscore": 0.20506296470299856
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Transcription-Coupled Nucleotide Excision Repair (TC-NER)": {
+    "gene_set_info": {
+      "geneset_size": 76,
+      "geneset_covered_in_sample": 76
+    },
+    "scores": {
+      "total_singscore": 0.24386424438767373
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Transcriptional Regulation by E2F6": {
+    "gene_set_info": {
+      "geneset_size": 34,
+      "geneset_covered_in_sample": 34
+    },
+    "scores": {
+      "total_singscore": 0.23051392480509125
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Translesion Synthesis by Y Family DNA Polymerases Bypasses Lesions on DNA Template": {
+    "gene_set_info": {
+      "geneset_size": 39,
+      "geneset_covered_in_sample": 38
+    },
+    "scores": {
+      "total_singscore": 0.2135910428244524
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "DNA Biosynthetic Process (GO:0071897)": {
+    "gene_set_info": {
+      "geneset_size": 17,
+      "geneset_covered_in_sample": 17
+    },
+    "scores": {
+      "total_singscore": 0.14391987146387564
+    },
+    "statistics": {
+      "p_value": 0.019598040195980403,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "DNA Damage Response (GO:0006974)": {
+    "gene_set_info": {
+      "geneset_size": 421,
+      "geneset_covered_in_sample": 408
+    },
+    "scores": {
+      "total_singscore": 0.18696774411366068
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "DNA Metabolic Process (GO:0006259)": {
+    "gene_set_info": {
+      "geneset_size": 302,
+      "geneset_covered_in_sample": 289
+    },
+    "scores": {
+      "total_singscore": 0.18990848257303095
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "DNA Repair (GO:0006281)": {
+    "gene_set_info": {
+      "geneset_size": 302,
+      "geneset_covered_in_sample": 289
+    },
+    "scores": {
+      "total_singscore": 0.1999725280573108
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "DNA Replication (GO:0006260)": {
+    "gene_set_info": {
+      "geneset_size": 73,
+      "geneset_covered_in_sample": 71
+    },
+    "scores": {
+      "total_singscore": 0.16962411154187296
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "DNA Replication Initiation (GO:0006270)": {
+    "gene_set_info": {
+      "geneset_size": 21,
+      "geneset_covered_in_sample": 21
+    },
+    "scores": {
+      "total_singscore": 0.07246304949355298
+    },
+    "statistics": {
+      "p_value": 0.12738726127387262,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "DNA Strand Elongation (GO:0022616)": {
+    "gene_set_info": {
+      "geneset_size": 12,
+      "geneset_covered_in_sample": 12
+    },
+    "scores": {
+      "total_singscore": 0.14008966718371563
+    },
+    "statistics": {
+      "p_value": 0.046495350464953504,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "DNA Strand Elongation Involved in DNA Replication (GO:0006271)": {
+    "gene_set_info": {
+      "geneset_size": 12,
+      "geneset_covered_in_sample": 12
+    },
+    "scores": {
+      "total_singscore": 0.16619724059106866
+    },
+    "statistics": {
+      "p_value": 0.020897910208979104,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "DNA Synthesis Involved in DNA Repair (GO:0000731)": {
+    "gene_set_info": {
+      "geneset_size": 27,
+      "geneset_covered_in_sample": 26
+    },
+    "scores": {
+      "total_singscore": 0.17996682291732113
+    },
+    "statistics": {
+      "p_value": 0.000999900009999,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "DNA-templated DNA Replication (GO:0006261)": {
+    "gene_set_info": {
+      "geneset_size": 55,
+      "geneset_covered_in_sample": 54
+    },
+    "scores": {
+      "total_singscore": 0.15156168599086495
+    },
+    "statistics": {
+      "p_value": 0.00019998000199980003,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "DNA-templated DNA Replication Maintenance of Fidelity (GO:0045005)": {
+    "gene_set_info": {
+      "geneset_size": 44,
+      "geneset_covered_in_sample": 42
+    },
+    "scores": {
+      "total_singscore": 0.12873665895980757
+    },
+    "statistics": {
+      "p_value": 0.0016998300169983002,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "G1/S Transition of Mitotic Cell Cycle (GO:0000082)": {
+    "gene_set_info": {
+      "geneset_size": 64,
+      "geneset_covered_in_sample": 60
+    },
+    "scores": {
+      "total_singscore": 0.15266666666666673
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "RNA Biosynthetic Process (GO:0032774)": {
+    "gene_set_info": {
+      "geneset_size": 128,
+      "geneset_covered_in_sample": 124
+    },
+    "scores": {
+      "total_singscore": 0.207879388755579
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "UDP Metabolic Process (GO:0046048)": {
+    "gene_set_info": {
+      "geneset_size": 5,
+      "geneset_covered_in_sample": 5
+    },
+    "scores": {
+      "total_singscore": 0.1800326463986942
+    },
+    "statistics": {
+      "p_value": 0.0867913208679132,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "UV-damage Excision Repair (GO:0070914)": {
+    "gene_set_info": {
+      "geneset_size": 12,
+      "geneset_covered_in_sample": 11
+    },
+    "scores": {
+      "total_singscore": 0.28340488851121937
+    },
+    "statistics": {
+      "p_value": 0.00019998000199980003,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Base-Excision Repair (GO:0006284)": {
+    "gene_set_info": {
+      "geneset_size": 39,
+      "geneset_covered_in_sample": 38
+    },
+    "scores": {
+      "total_singscore": 0.2275414652191119
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Base-Excision Repair, Gap-Filling (GO:0006287)": {
+    "gene_set_info": {
+      "geneset_size": 12,
+      "geneset_covered_in_sample": 11
+    },
+    "scores": {
+      "total_singscore": 0.2598157995317063
+    },
+    "statistics": {
+      "p_value": 0.0005999400059994001,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Carbohydrate Derivative Biosynthetic Process (GO:1901137)": {
+    "gene_set_info": {
+      "geneset_size": 44,
+      "geneset_covered_in_sample": 41
+    },
+    "scores": {
+      "total_singscore": 0.1856699716615049
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Cell Cycle G1/S Phase Transition (GO:0044843)": {
+    "gene_set_info": {
+      "geneset_size": 66,
+      "geneset_covered_in_sample": 62
+    },
+    "scores": {
+      "total_singscore": 0.15731150249113324
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Cellular Response to UV (GO:0034644)": {
+    "gene_set_info": {
+      "geneset_size": 77,
+      "geneset_covered_in_sample": 72
+    },
+    "scores": {
+      "total_singscore": 0.1867594638586536
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Cellular Response to Light Stimulus (GO:0071482)": {
+    "gene_set_info": {
+      "geneset_size": 62,
+      "geneset_covered_in_sample": 55
+    },
+    "scores": {
+      "total_singscore": 0.19257597442426722
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Double-Strand Break Repair (GO:0006302)": {
+    "gene_set_info": {
+      "geneset_size": 176,
+      "geneset_covered_in_sample": 171
+    },
+    "scores": {
+      "total_singscore": 0.1925296656462362
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Double-Strand Break Repair via Nonhomologous End Joining (GO:0006303)": {
+    "gene_set_info": {
+      "geneset_size": 47,
+      "geneset_covered_in_sample": 46
+    },
+    "scores": {
+      "total_singscore": 0.22595935109619814
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Fatty Acid Homeostasis (GO:0055089)": {
+    "gene_set_info": {
+      "geneset_size": 11,
+      "geneset_covered_in_sample": 9
+    },
+    "scores": {
+      "total_singscore": 0.08704179874744344
+    },
+    "statistics": {
+      "p_value": 0.18588141185881413,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Mitochondrial DNA Metabolic Process (GO:0032042)": {
+    "gene_set_info": {
+      "geneset_size": 13,
+      "geneset_covered_in_sample": 12
+    },
+    "scores": {
+      "total_singscore": 0.19474719024682297
+    },
+    "statistics": {
+      "p_value": 0.008399160083991601,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Mitochondrial DNA Replication (GO:0006264)": {
+    "gene_set_info": {
+      "geneset_size": 8,
+      "geneset_covered_in_sample": 7
+    },
+    "scores": {
+      "total_singscore": 0.24621183411943737
+    },
+    "statistics": {
+      "p_value": 0.009999000099990002,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Mitotic DNA Replication (GO:1902969)": {
+    "gene_set_info": {
+      "geneset_size": 10,
+      "geneset_covered_in_sample": 10
+    },
+    "scores": {
+      "total_singscore": 0.15828571428571425
+    },
+    "statistics": {
+      "p_value": 0.0400959904009599,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Mitotic Cell Cycle Phase Transition (GO:0044772)": {
+    "gene_set_info": {
+      "geneset_size": 113,
+      "geneset_covered_in_sample": 109
+    },
+    "scores": {
+      "total_singscore": 0.166536451920116
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Negative Regulation of Gene Expression (GO:0010629)": {
+    "gene_set_info": {
+      "geneset_size": 364,
+      "geneset_covered_in_sample": 341
+    },
+    "scores": {
+      "total_singscore": 0.15653076594445103
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Negative Regulation of Protein Metabolic Process (GO:0051248)": {
+    "gene_set_info": {
+      "geneset_size": 146,
+      "geneset_covered_in_sample": 133
+    },
+    "scores": {
+      "total_singscore": 0.173168440237485
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Negative Regulation of Translation (GO:0017148)": {
+    "gene_set_info": {
+      "geneset_size": 102,
+      "geneset_covered_in_sample": 96
+    },
+    "scores": {
+      "total_singscore": 0.20793567898200493
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Nucleic Acid Biosynthetic Process (GO:0141187)": {
+    "gene_set_info": {
+      "geneset_size": 5,
+      "geneset_covered_in_sample": 5
+    },
+    "scores": {
+      "total_singscore": 0.16433789022648437
+    },
+    "statistics": {
+      "p_value": 0.10618938106189381,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Nucleobase-Containing Small Molecule Interconversion (GO:0015949)": {
+    "gene_set_info": {
+      "geneset_size": 7,
+      "geneset_covered_in_sample": 7
+    },
+    "scores": {
+      "total_singscore": 0.17619708373901732
+    },
+    "statistics": {
+      "p_value": 0.0537946205379462,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Nucleobase-Containing Small Molecule Metabolic Process (GO:0055086)": {
+    "gene_set_info": {
+      "geneset_size": 18,
+      "geneset_covered_in_sample": 17
+    },
+    "scores": {
+      "total_singscore": 0.12853252189701259
+    },
+    "statistics": {
+      "p_value": 0.034096590340965904,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Nucleoside Diphosphate Metabolic Process (GO:0009132)": {
+    "gene_set_info": {
+      "geneset_size": 6,
+      "geneset_covered_in_sample": 6
+    },
+    "scores": {
+      "total_singscore": 0.13133910109914027
+    },
+    "statistics": {
+      "p_value": 0.1382861713828617,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Nucleoside Phosphate Biosynthetic Process (GO:1901293)": {
+    "gene_set_info": {
+      "geneset_size": 19,
+      "geneset_covered_in_sample": 18
+    },
+    "scores": {
+      "total_singscore": 0.11772778412905804
+    },
+    "statistics": {
+      "p_value": 0.041495850414958506,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Nucleoside Phosphate Metabolic Process (GO:0006753)": {
+    "gene_set_info": {
+      "geneset_size": 31,
+      "geneset_covered_in_sample": 29
+    },
+    "scores": {
+      "total_singscore": -0.07181149631874961
+    },
+    "statistics": {
+      "p_value": 0.9089091090890911,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Nucleotide Biosynthetic Process (GO:0009165)": {
+    "gene_set_info": {
+      "geneset_size": 18,
+      "geneset_covered_in_sample": 16
+    },
+    "scores": {
+      "total_singscore": 0.15969727280150237
+    },
+    "statistics": {
+      "p_value": 0.012698730126987301,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Nucleotide Metabolic Process (GO:0009117)": {
+    "gene_set_info": {
+      "geneset_size": 13,
+      "geneset_covered_in_sample": 12
+    },
+    "scores": {
+      "total_singscore": 0.10506299834000055
+    },
+    "statistics": {
+      "p_value": 0.11048895110488952,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Nucleotide-Excision Repair (GO:0006289)": {
+    "gene_set_info": {
+      "geneset_size": 53,
+      "geneset_covered_in_sample": 53
+    },
+    "scores": {
+      "total_singscore": 0.22014494441920007
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Nucleotide-Excision Repair, DNA Gap Filling (GO:0006297)": {
+    "gene_set_info": {
+      "geneset_size": 5,
+      "geneset_covered_in_sample": 5
+    },
+    "scores": {
+      "total_singscore": 0.1950336665986533
+    },
+    "statistics": {
+      "p_value": 0.06999300069993,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "One-Carbon Metabolic Process (GO:0006730)": {
+    "gene_set_info": {
+      "geneset_size": 10,
+      "geneset_covered_in_sample": 10
+    },
+    "scores": {
+      "total_singscore": 0.2951265306122448
+    },
+    "statistics": {
+      "p_value": 0.0004999500049995,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Organophosphate Biosynthetic Process (GO:0090407)": {
+    "gene_set_info": {
+      "geneset_size": 34,
+      "geneset_covered_in_sample": 32
+    },
+    "scores": {
+      "total_singscore": 0.07689174973445545
+    },
+    "statistics": {
+      "p_value": 0.070992900709929,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Positive Regulation of G1/S Transition of Mitotic Cell Cycle (GO:1900087)": {
+    "gene_set_info": {
+      "geneset_size": 33,
+      "geneset_covered_in_sample": 32
+    },
+    "scores": {
+      "total_singscore": 0.14743851621864534
+    },
+    "statistics": {
+      "p_value": 0.0014998500149985001,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Positive Regulation of G2/M Transition of Mitotic Cell Cycle (GO:0010971)": {
+    "gene_set_info": {
+      "geneset_size": 20,
+      "geneset_covered_in_sample": 19
+    },
+    "scores": {
+      "total_singscore": 0.14504683782871908
+    },
+    "statistics": {
+      "p_value": 0.014298570142985701,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Positive Regulation of Cell Cycle G1/S Phase Transition (GO:1902808)": {
+    "gene_set_info": {
+      "geneset_size": 44,
+      "geneset_covered_in_sample": 42
+    },
+    "scores": {
+      "total_singscore": 0.13614575305355103
+    },
+    "statistics": {
+      "p_value": 0.0011998800119988001,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Positive Regulation of Cell Cycle G2/M Phase Transition (GO:1902751)": {
+    "gene_set_info": {
+      "geneset_size": 23,
+      "geneset_covered_in_sample": 22
+    },
+    "scores": {
+      "total_singscore": 0.1717464583766446
+    },
+    "statistics": {
+      "p_value": 0.0025997400259974,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Positive Regulation of Cell Cycle Process (GO:0090068)": {
+    "gene_set_info": {
+      "geneset_size": 119,
+      "geneset_covered_in_sample": 103
+    },
+    "scores": {
+      "total_singscore": 0.12677029230433257
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Positive Regulation of Mitotic Cell Cycle Phase Transition (GO:1901992)": {
+    "gene_set_info": {
+      "geneset_size": 64,
+      "geneset_covered_in_sample": 62
+    },
+    "scores": {
+      "total_singscore": 0.1530727495355514
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Pyrimidine Nucleotide Metabolic Process (GO:0006220)": {
+    "gene_set_info": {
+      "geneset_size": 5,
+      "geneset_covered_in_sample": 4
+    },
+    "scores": {
+      "total_singscore": 0.12309230392556925
+    },
+    "statistics": {
+      "p_value": 0.19978002199780023,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Pyrimidine Ribonucleotide Biosynthetic Process (GO:0009220)": {
+    "gene_set_info": {
+      "geneset_size": 7,
+      "geneset_covered_in_sample": 7
+    },
+    "scores": {
+      "total_singscore": 0.12106097795605208
+    },
+    "statistics": {
+      "p_value": 0.134986501349865,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Pyrimidine Ribonucleotide Metabolic Process (GO:0009218)": {
+    "gene_set_info": {
+      "geneset_size": 5,
+      "geneset_covered_in_sample": 5
+    },
+    "scores": {
+      "total_singscore": 0.12810038767598453
+    },
+    "statistics": {
+      "p_value": 0.1638836116388361,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Regulation of G0 to G1 Transition (GO:0070316)": {
+    "gene_set_info": {
+      "geneset_size": 33,
+      "geneset_covered_in_sample": 31
+    },
+    "scores": {
+      "total_singscore": 0.2116396015544595
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Regulation of G1/S Transition of Mitotic Cell Cycle (GO:2000045)": {
+    "gene_set_info": {
+      "geneset_size": 111,
+      "geneset_covered_in_sample": 108
+    },
+    "scores": {
+      "total_singscore": 0.18441984111806264
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Regulation of G2/M Transition of Mitotic Cell Cycle (GO:0010389)": {
+    "gene_set_info": {
+      "geneset_size": 37,
+      "geneset_covered_in_sample": 35
+    },
+    "scores": {
+      "total_singscore": 0.07446023639282062
+    },
+    "statistics": {
+      "p_value": 0.06519348065193481,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Regulation of Cytokine Production (GO:0001817)": {
+    "gene_set_info": {
+      "geneset_size": 172,
+      "geneset_covered_in_sample": 151
+    },
+    "scores": {
+      "total_singscore": 0.027285698012266324
+    },
+    "statistics": {
+      "p_value": 0.12338766123387661,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Regulation of Translation (GO:0006417)": {
+    "gene_set_info": {
+      "geneset_size": 201,
+      "geneset_covered_in_sample": 194
+    },
+    "scores": {
+      "total_singscore": 0.2708852344474726
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Regulation of Type I Interferon Production (GO:0032479)": {
+    "gene_set_info": {
+      "geneset_size": 66,
+      "geneset_covered_in_sample": 64
+    },
+    "scores": {
+      "total_singscore": 0.1806961005890534
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Response to UV (GO:0009411)": {
+    "gene_set_info": {
+      "geneset_size": 100,
+      "geneset_covered_in_sample": 94
+    },
+    "scores": {
+      "total_singscore": 0.21976869022057388
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Response to Light Stimulus (GO:0009416)": {
+    "gene_set_info": {
+      "geneset_size": 59,
+      "geneset_covered_in_sample": 52
+    },
+    "scores": {
+      "total_singscore": 0.15556652849154284
+    },
+    "statistics": {
+      "p_value": 0.00019998000199980003,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Tetrahydrofolate Interconversion (GO:0035999)": {
+    "gene_set_info": {
+      "geneset_size": 6,
+      "geneset_covered_in_sample": 6
+    },
+    "scores": {
+      "total_singscore": 0.22505169224072263
+    },
+    "statistics": {
+      "p_value": 0.027297270272972702,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Tetrahydrofolate Metabolic Process (GO:0046653)": {
+    "gene_set_info": {
+      "geneset_size": 10,
+      "geneset_covered_in_sample": 10
+    },
+    "scores": {
+      "total_singscore": 0.26652244897959176
+    },
+    "statistics": {
+      "p_value": 0.0008999100089991,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Translesion Synthesis (GO:0019985)": {
+    "gene_set_info": {
+      "geneset_size": 23,
+      "geneset_covered_in_sample": 23
+    },
+    "scores": {
+      "total_singscore": 0.22555268900445835
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  }
+}

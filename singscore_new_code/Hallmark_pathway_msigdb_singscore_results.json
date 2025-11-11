@@ -1,0 +1,702 @@
+{
+  "TNF-alpha Signaling via NF-kB": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 192
+    },
+    "scores": {
+      "total_singscore": 0.08483363660662879
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Hypoxia": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 191
+    },
+    "scores": {
+      "total_singscore": 0.1571318958804322
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Cholesterol Homeostasis": {
+    "gene_set_info": {
+      "geneset_size": 74,
+      "geneset_covered_in_sample": 73
+    },
+    "scores": {
+      "total_singscore": 0.18045143760780447
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Mitotic Spindle": {
+    "gene_set_info": {
+      "geneset_size": 199,
+      "geneset_covered_in_sample": 199
+    },
+    "scores": {
+      "total_singscore": 0.23076831651160246
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Wnt-beta Catenin Signaling": {
+    "gene_set_info": {
+      "geneset_size": 42,
+      "geneset_covered_in_sample": 41
+    },
+    "scores": {
+      "total_singscore": 0.15545354051766846
+    },
+    "statistics": {
+      "p_value": 0.00029997000299970003,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "TGF-beta Signaling": {
+    "gene_set_info": {
+      "geneset_size": 54,
+      "geneset_covered_in_sample": 52
+    },
+    "scores": {
+      "total_singscore": 0.250567692181888
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "IL-6/JAK/STAT3 Signaling": {
+    "gene_set_info": {
+      "geneset_size": 87,
+      "geneset_covered_in_sample": 81
+    },
+    "scores": {
+      "total_singscore": 0.04208795557192946
+    },
+    "statistics": {
+      "p_value": 0.0968903109689031,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "DNA Repair": {
+    "gene_set_info": {
+      "geneset_size": 150,
+      "geneset_covered_in_sample": 149
+    },
+    "scores": {
+      "total_singscore": 0.19901969508420458
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "G2-M Checkpoint": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 200
+    },
+    "scores": {
+      "total_singscore": 0.1769744960921431
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Apoptosis": {
+    "gene_set_info": {
+      "geneset_size": 161,
+      "geneset_covered_in_sample": 158
+    },
+    "scores": {
+      "total_singscore": 0.1894911030622598
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Notch Signaling": {
+    "gene_set_info": {
+      "geneset_size": 32,
+      "geneset_covered_in_sample": 32
+    },
+    "scores": {
+      "total_singscore": 0.1300721566304437
+    },
+    "statistics": {
+      "p_value": 0.005099490050994901,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Adipogenesis": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 195
+    },
+    "scores": {
+      "total_singscore": 0.20298865847292746
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Estrogen Response Early": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 195
+    },
+    "scores": {
+      "total_singscore": 0.17636459503208424
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Estrogen Response Late": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 188
+    },
+    "scores": {
+      "total_singscore": 0.14463090066431405
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Androgen Response": {
+    "gene_set_info": {
+      "geneset_size": 100,
+      "geneset_covered_in_sample": 97
+    },
+    "scores": {
+      "total_singscore": 0.2574830209188024
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Myogenesis": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 182
+    },
+    "scores": {
+      "total_singscore": 0.10529268495398059
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Protein Secretion": {
+    "gene_set_info": {
+      "geneset_size": 96,
+      "geneset_covered_in_sample": 95
+    },
+    "scores": {
+      "total_singscore": 0.29524235532513443
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Interferon Alpha Response": {
+    "gene_set_info": {
+      "geneset_size": 97,
+      "geneset_covered_in_sample": 97
+    },
+    "scores": {
+      "total_singscore": 0.13228903309500895
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Interferon Gamma Response": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 195
+    },
+    "scores": {
+      "total_singscore": 0.10803534802300996
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Apical Junction": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 188
+    },
+    "scores": {
+      "total_singscore": 0.11832646041496453
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Apical Surface": {
+    "gene_set_info": {
+      "geneset_size": 44,
+      "geneset_covered_in_sample": 41
+    },
+    "scores": {
+      "total_singscore": 0.03680067063452108
+    },
+    "statistics": {
+      "p_value": 0.20927907209279073,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Hedgehog Signaling": {
+    "gene_set_info": {
+      "geneset_size": 36,
+      "geneset_covered_in_sample": 33
+    },
+    "scores": {
+      "total_singscore": 0.17853185612714972
+    },
+    "statistics": {
+      "p_value": 0.00019998000199980003,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Complement": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 188
+    },
+    "scores": {
+      "total_singscore": 0.09346060916742926
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Unfolded Protein Response": {
+    "gene_set_info": {
+      "geneset_size": 113,
+      "geneset_covered_in_sample": 112
+    },
+    "scores": {
+      "total_singscore": 0.26513370533884506
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "PI3K/AKT/mTOR  Signaling": {
+    "gene_set_info": {
+      "geneset_size": 105,
+      "geneset_covered_in_sample": 101
+    },
+    "scores": {
+      "total_singscore": 0.2343030833051759
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "mTORC1 Signaling": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 200
+    },
+    "scores": {
+      "total_singscore": 0.21892287124640064
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "E2F Targets": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 200
+    },
+    "scores": {
+      "total_singscore": 0.1608183874948581
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Myc Targets V1": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 200
+    },
+    "scores": {
+      "total_singscore": 0.2882062937062936
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Myc Targets V2": {
+    "gene_set_info": {
+      "geneset_size": 58,
+      "geneset_covered_in_sample": 58
+    },
+    "scores": {
+      "total_singscore": 0.18535610936556912
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Epithelial Mesenchymal Transition": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 192
+    },
+    "scores": {
+      "total_singscore": 0.1659121244208679
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Inflammatory Response": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 186
+    },
+    "scores": {
+      "total_singscore": 0.00036978390297293107
+    },
+    "statistics": {
+      "p_value": 0.49085091490850913,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Xenobiotic Metabolism": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 181
+    },
+    "scores": {
+      "total_singscore": 0.07468759857106166
+    },
+    "statistics": {
+      "p_value": 0.00019998000199980003,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Fatty Acid Metabolism": {
+    "gene_set_info": {
+      "geneset_size": 158,
+      "geneset_covered_in_sample": 150
+    },
+    "scores": {
+      "total_singscore": 0.14340530925013684
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Oxidative Phosphorylation": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 200
+    },
+    "scores": {
+      "total_singscore": 0.2355020567667626
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Glycolysis": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 196
+    },
+    "scores": {
+      "total_singscore": 0.15461991327747682
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Reactive Oxygen Species Pathway": {
+    "gene_set_info": {
+      "geneset_size": 49,
+      "geneset_covered_in_sample": 48
+    },
+    "scores": {
+      "total_singscore": 0.15375037473087505
+    },
+    "statistics": {
+      "p_value": 0.00029997000299970003,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "p53 Pathway": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 194
+    },
+    "scores": {
+      "total_singscore": 0.1592839893294984
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "UV Response Up": {
+    "gene_set_info": {
+      "geneset_size": 158,
+      "geneset_covered_in_sample": 149
+    },
+    "scores": {
+      "total_singscore": 0.1556695168782538
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "UV Response Dn": {
+    "gene_set_info": {
+      "geneset_size": 144,
+      "geneset_covered_in_sample": 144
+    },
+    "scores": {
+      "total_singscore": 0.21594241064507003
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Angiogenesis": {
+    "gene_set_info": {
+      "geneset_size": 36,
+      "geneset_covered_in_sample": 35
+    },
+    "scores": {
+      "total_singscore": 0.12705734714723482
+    },
+    "statistics": {
+      "p_value": 0.0040995900409959,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "heme Metabolism": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 191
+    },
+    "scores": {
+      "total_singscore": 0.1475834183902488
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Coagulation": {
+    "gene_set_info": {
+      "geneset_size": 138,
+      "geneset_covered_in_sample": 118
+    },
+    "scores": {
+      "total_singscore": 0.07381066868270236
+    },
+    "statistics": {
+      "p_value": 0.0020997900209979003,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "IL-2/STAT5 Signaling": {
+    "gene_set_info": {
+      "geneset_size": 199,
+      "geneset_covered_in_sample": 191
+    },
+    "scores": {
+      "total_singscore": 0.09624054533449267
+    },
+    "statistics": {
+      "p_value": 9.999000099990002e-05,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Bile Acid Metabolism": {
+    "gene_set_info": {
+      "geneset_size": 112,
+      "geneset_covered_in_sample": 99
+    },
+    "scores": {
+      "total_singscore": 0.03906150108681761
+    },
+    "statistics": {
+      "p_value": 0.09259074092590741,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Pperoxisome": {
+    "gene_set_info": {
+      "geneset_size": 104,
+      "geneset_covered_in_sample": 100
+    },
+    "scores": {
+      "total_singscore": 0.11446210569438753
+    },
+    "statistics": {
+      "p_value": 0.00019998000199980003,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Allograft Rejection": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 173
+    },
+    "scores": {
+      "total_singscore": 0.034736352579067376
+    },
+    "statistics": {
+      "p_value": 0.0608939106089391,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Spermatogenesis": {
+    "gene_set_info": {
+      "geneset_size": 135,
+      "geneset_covered_in_sample": 106
+    },
+    "scores": {
+      "total_singscore": -0.01596204457667011
+    },
+    "statistics": {
+      "p_value": 0.7143285671432856,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "KRAS Signaling Up": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 188
+    },
+    "scores": {
+      "total_singscore": 0.027096560858132168
+    },
+    "statistics": {
+      "p_value": 0.09929007099290071,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "KRAS Signaling Dn": {
+    "gene_set_info": {
+      "geneset_size": 200,
+      "geneset_covered_in_sample": 150
+    },
+    "scores": {
+      "total_singscore": -0.07848330596606456
+    },
+    "statistics": {
+      "p_value": 0.9996000399960004,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  },
+  "Pancreas Beta Cells": {
+    "gene_set_info": {
+      "geneset_size": 40,
+      "geneset_covered_in_sample": 26
+    },
+    "scores": {
+      "total_singscore": 0.01527371093210006
+    },
+    "statistics": {
+      "p_value": 0.39466053394660533,
+      "method": "permutation (empirical)",
+      "permutations": 10000
+    }
+  }
+}
