@@ -1,0 +1,76 @@
++--------------------------------------------------------------------------------+
+|                               START                                            |
++--------------------------------------------------------------------------------+
+         |
+         v
++----------------------+      +------------------------------------------------+
+| Input A: IDG_2022    |      | Input B: 5 pathway libraries (~7,800 sets)    |
+| (6 drug gene-sets)   |      | - MSigDB Hallmark                              |
++----------------------+      | - KEGG (human)                                 |
+         |                   | - Reactome pathways 2024                        |
+         |                   | - GO Biological Process 2025                    |
+         v                   | - GO Molecular Function 2025                    |
++----------------------+      +------------------------------------------------+
+| FOR each drug gene-  |
+| set in IDG_2022      |
++----------------------+
+         |
+         v
++---------------------------------------------------------------+
+| Compute JACCARD similarity between this drug gene-set         |
+| and EACH of the ~7,800 pathway gene-sets                      |
++---------------------------------------------------------------+
+         |
+         v
++---------------------------------------------------------------+
+| FILTER pathways with JACCARD > 0  (retain potential pathways) |
++---------------------------------------------------------------+
+         |
+         v
++---------------------------------------------------------------+
+| For EACH retained pathway (for this drug):                    |
+|   - compute SINGSCORE (per-sample / per-signature as needed)  |
+|   - compute p-value (e.g., permutation / null distribution)   |
++---------------------------------------------------------------+
+         |
+         v
++---------------------------------------------------------------+
+| FILTER significant pathways: p-value <= 0.05                   |
++---------------------------------------------------------------+
+         |
+         v
++---------------------------------------------------------------+
+| RESULTING set = Significant candidate pathways for this drug  |
++---------------------------------------------------------------+
+         |
+         v
++-------------------------------+    +-------------------------------+
+| 7a) DOWN-REGULATED analysis   |    | 7b) UP-REGULATED analysis     |
+| - Sort resulting pathways by  |    | - Sort resulting pathways by  |
+|   Singscore ascending         |    |   Singscore descending        |
+| - Select TOP 30               |    | - Select TOP 30               |
++-------------------------------+    +-------------------------------+
+         |                                   |
+         \---------------+-------------------/
+                         |
+                         v
++---------------------------------------------------------------+
+| 8) DEEP SEARCH / ANNOTATION for each selected pathway:        |
+|    - Literature (citations) for pathway ↔ drug sensitivity    |
+|    - Known resistance mechanisms                              |
+|    - Indication/context (tumor type, experimental evidence)   |
+|    - Cross-check with databases (clinical trials, drug labels)|
++---------------------------------------------------------------+
+         |
+         v
++---------------------------------------------------------------+
+| 9) FINAL OUTPUT table/file:                                   |
+|    Columns: Drug | Target | Pathway | Relationship            |
+|             | Indication | Citations                        |
++---------------------------------------------------------------+
+         |
+         v
++----------------------+
+| END (next drug) or   |
+| Repeat for next drug |
++----------------------+
