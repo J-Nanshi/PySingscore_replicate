@@ -1,0 +1,150 @@
+{
+  "drug_name": "Olaparib",
+  "cancer_indication": "HER2-negative, germline BRCA1/2-mutated metastatic breast cancer (adjuvant therapy in high-risk BRCA-mutated early breast cancer)",
+  "drug_category": "DDR",
+  "drug_class": "PARP inhibitor",
+  "moa": "Olaparib binds and inhibits PARP1, PARP2, and PARP3, enzymes involved in single-strand DNA break repair. In breast cancer cells with BRCA1/2 mutations or other homologous recombination defects, PARP inhibition leads to accumulation of unrepaired single-strand breaks that collapse replication forks into lethal double-strand breaks. Olaparib also traps PARP-DNA complexes, preventing repair enzyme release and intensifying DNA damage. This synthetic lethal mechanism causes selective cancer cell death in tumors with homologous recombination deficiency.",
+  "chembl_id": "CHEMBL521686",
+  "drugbank_id": "DB09074",
+  "synonyms": [
+    "AZD-2281",
+    "AZD2281",
+    "KU-0059436",
+    "KU59436",
+    "Lynparza®"
+  ],
+  "primary_targets": [
+    "PARP1",
+    "PARP2",
+    "PARP3"
+  ],
+  "pathway_sets": [
+    "R-HSA-5685942",
+    "hsa03440",
+    "GO:0000724",
+    "R-HSA-73884",
+    "hsa03410",
+    "GO:0006284",
+    "GO:0006303",
+    "HALLMARK_DNA_REPAIR",
+    "GO:0006977",
+    "GOBP_DEFENSE_RESPONSE_TO_VIRUS",
+    "hsa04210"
+  ],
+  "pathway_sets_description": [
+    "Error-free repair of double-strand DNA breaks by homologous recombination",
+    "Error-free repair of double-strand DNA breaks (homologous recombination pathway)",
+    "Repair of double-strand DNA breaks via homologous recombination",
+    "Base excision repair (PARP-mediated single-strand break repair)",
+    "Base excision repair (single-strand break repair)",
+    "Base-excision repair of single-base lesions (single-strand breaks)",
+    "Non-homologous end joining (error-prone double-strand break repair)",
+    "Hallmark gene set of DNA repair genes",
+    "DNA damage response signaling (checkpoint activation)",
+    "Defense response to virus (innate immune interferon pathway)",
+    "Apoptosis (programmed cell death) pathway"
+  ],
+  "pathway_sets_interpretations": [
+    "BRCA-mutant breast tumors lack HRR, making them vulnerable to olaparib-induced DNA damage.",
+    "Same as above: HRR deficiency sensitizes tumors to PARP inhibition.",
+    "Same as above: HRR deficiency sensitizes tumors to PARP inhibition.",
+    "PARP inhibition blocks BER, causing toxic DNA damage accumulation.",
+    "See R-HSA-73884 description.",
+    "See R-HSA-73884 description.",
+    "NHEJ is upregulated when HR is lost, enabling mutagenic DSB repair and possible drug resistance.",
+    "Represents overall DNA repair activity; defects here modulate sensitivity to DNA damage.",
+    "Part of the damage checkpoint pathway leading to cell-cycle arrest and apoptosis.",
+    "Interferon/viral response is upregulated by PARP inhibitor-induced DNA damage, potentially enhancing immune-mediated tumor killing.",
+    "Execution of apoptosis removes damaged cells following DNA damage."
+  ],
+  "sensitivity_genes_up": [
+    "PARP1"
+  ],
+  "sensitivity_genes_up_interpretations": [
+    "High PARP1 expression provides abundant drug target and has been linked to improved response."
+  ],
+  "sensitivity_genes_down": [
+    "BRCA1",
+    "BRCA2",
+    "PALB2",
+    "TP53BP1",
+    "RIF1"
+  ],
+  "sensitivity_genes_down_interpretations": [
+    "BRCA1/2 loss causes HR deficiency, driving synthetic lethality with olaparib.",
+    "PALB2 loss similarly impairs HR repair, increasing olaparib sensitivity.",
+    "53BP1 (TP53BP1) loss enhances DNA end resection in BRCA1-mutant cells, increasing reliance on PARP and sensitivity.",
+    "RIF1 loss also promotes end resection and sensitivity to PARP inhibition."
+  ],
+  "resistance_genes_up": [
+    "ABCB1"
+  ],
+  "resistance_genes_up_interpretations": [
+    "ABCB1 (P-glycoprotein) overexpression exports olaparib from cells, reducing intracellular drug levels and causing resistance."
+  ],
+  "resistance_genes_down": [
+    "PARP1",
+    "REV7",
+    "SHLD1",
+    "SHLD2"
+  ],
+  "resistance_genes_down_interpretations": [
+    "PARP1 loss-of-function removes the drug’s binding target, conferring resistance.",
+    "Loss of Shieldin complex components (REV7, SHLD1, SHLD2) restores homologous recombination in BRCA1-deficient tumors, leading to resistance."
+  ],
+  "pathways_upregulated": [
+    "GO:0006303",
+    "GOBP_DEFENSE_RESPONSE_TO_VIRUS"
+  ],
+  "pathways_upregulated_names": [
+    "double-strand break repair via nonhomologous end joining",
+    "defense response to virus"
+  ],
+  "pathways_upregulated_interpretations": [
+    "In HR-deficient breast tumors, NHEJ is upregulated to compensate for HR loss, which can allow error-prone repair and undermine olaparib efficacy.",
+    "PARP inhibitor-induced DNA damage activates the cGAS–STING interferon response (defense to virus pathway), potentially enhancing immune-mediated tumor killing."
+  ],
+  "pathways_downregulated": [
+    "R-HSA-73884",
+    "GO:0006284"
+  ],
+  "pathways_downregulated_names": [
+    "Base Excision Repair",
+    "base-excision repair"
+  ],
+  "pathways_downregulated_interpretations": [
+    "PARP inhibition shuts down the base excision repair pathway, causing unrepaired single-strand breaks.",
+    "The homologous recombination pathway is inherently nonfunctional in BRCA1/2-mutated tumors (the therapy target)."
+  ],
+  "contraindications": [
+    "Pregnancy",
+    "Breastfeeding",
+    "Severe hypersensitivity to olaparib or its components",
+    "Concurrent use of strong CYP3A4 inhibitors or inducers"
+  ],
+  "kg_relationships": [
+    "Olaparib|inhibits|PARP1",
+    "Olaparib|inhibits|PARP2",
+    "Olaparib|inhibits|PARP3",
+    "BRCA1_loss|confers_sensitivity_to|Olaparib",
+    "BRCA2_loss|confers_sensitivity_to|Olaparib",
+    "PALB2_loss|confers_sensitivity_to|Olaparib",
+    "TP53BP1_loss|confers_sensitivity_to|Olaparib",
+    "PARP1_loss|confers_resistance_to|Olaparib",
+    "ABCB1_overexpression|confers_resistance_to|Olaparib",
+    "REV7_loss|confers_resistance_to|Olaparib",
+    "SHLD1_loss|confers_resistance_to|Olaparib",
+    "SHLD2_loss|confers_resistance_to|Olaparib"
+  ],
+  "citations": [
+    "https://www.bccancer.bc.ca/drug-database-site/Drug%20Index/Olaparib_monograph.pdf",
+    "https://pubmed.ncbi.nlm.nih.gov/29660759/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6503629/",
+    "https://ascopost.com/issues/january-25-2025/olympia-trial-long-term-benefits-of-olaparib-confirmed-in-high-risk-subgroup-of-breast-cancer/",
+    "https://go.drugbank.com/drugs/DB09074",
+    "https://www.medscape.co.uk/viewarticle/guideline-essentials-2022-esmo-recommendations-metastatic-2023a10004wc?gs=0&token=ByYam7TJsucIU8Xp1op22CTz6kcXUL8AM1k2pwVI2CciHYyY623CDn%2FCKm9WbQ7YHuq6EWCfgM%2B%2FAN3cKbN0167FQgqCEdeUmCHd%2FGRUz4nCSB7R2NS6DTqLUu163%2F9b9NP5lylTVX3d%2FjXty0AH60XoXz9wU%2FAIugpTxck4OwRZy%2B3R1k942%2F2Hz7D6uIPnXBOlvqMSPWMrNqn13wPOZM6sf%2BrxOq0Q9Rfj%2BZOfwoInsi8Gu11DPQS4yX%2FX%2BkcXJ7ZAKb33xxjITKCt5g6GXinAVlS54rYPJSRFS2cqiQSLx%2F9gWQlMCwX8rvauMEZ6eZFlxshCMJ7CcV%2Fo2DzyNQLkj5WjAmpfxBgYZ5QGWCvgQtl4zNzGWoTO2gACo%2F3B79Q1hNMDst%2FoBKKJlF2XlRoV%2Bi6BGctPnT4LHly9%2FT8%3D",
+    "https://www.oncoscience.us/article/610/text/",
+    "https://reactome.org/content/detail/R-HSA-5685942"
+  ],
+  "notes": "Efficacy is restricted to tumors with homologous recombination defects (BRCA1/2 mutations); olaparib is teratogenic and contraindicated in pregnancy."
+}

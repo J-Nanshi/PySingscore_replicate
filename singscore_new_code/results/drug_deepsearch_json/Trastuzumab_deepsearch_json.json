@@ -1,0 +1,109 @@
+{
+  "drug_name": "Trastuzumab",
+  "cancer_indication": "HER2-overexpressing (HER2-positive) breast cancer (adjuvant, neoadjuvant, and metastatic settings)",
+  "drug_category": "HER2-targeted",
+  "drug_class": "monoclonal antibody",
+  "moa": "Trastuzumab is a humanized monoclonal antibody that binds the extracellular domain of HER2/ERBB2 on tumor cells, preventing receptor dimerization and downstream signaling. This disrupts HER2-driven activation of PI3K/AKT and MAPK pathways, inhibiting tumor growth. Trastuzumab binding also induces HER2 internalization and degradation. Importantly, its Fc region engages immune effector cells (NK cells and macrophages) to mediate antibody-dependent cellular cytotoxicity (ADCC) against HER2-overexpressing cancer cells.",
+  "chembl_id": "CHEMBL1201585",
+  "drugbank_id": "DB00072",
+  "synonyms": [
+    "GB221",
+    "RHUMAB HER2",
+    "Trastuzumab beta",
+    "trastuzumab-anns",
+    "trastuzumab-dkst",
+    "trastuzumab-dttb",
+    "Trastuzumab-herw",
+    "trastuzumab-pkrb",
+    "trastuzumab-qyyp",
+    "Trastuzumab-strf",
+    "Trastuzumab-zerc",
+    "Herceptin",
+    "Herzuma",
+    "Kanjinti",
+    "Ogivri",
+    "Ontruzant",
+    "Trazimera",
+    "Zercepac"
+  ],
+  "primary_targets": [
+    "ERBB2"
+  ],
+  "pathway_sets": [
+    "KEGG_hsa04012",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "HALLMARK_APOPTOSIS",
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_G2M_CHECKPOINT",
+    "REACTOME_SIGNALING_BY_ERBB2",
+    "GO_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY",
+    "GO_FC_GAMMA_RECEPTOR_SIGNALING"
+  ],
+  "pathway_sets_description": [
+    "ERBB (HER) receptor signaling pathway controlling cell proliferation and survival",
+    "PI3K/AKT/mTOR signaling cascade for cell growth and survival downstream of growth factors",
+    "Programmed cell death (apoptosis) pathway involving caspases in response to pro-apoptotic signals",
+    "Genes regulated by E2F transcription factors controlling G1/S phase cell cycle transition",
+    "Genes controlling G2/M checkpoint in cell cycle regulation",
+    "Signaling events initiated by activated ERBB2 (HER2) receptor in cancer",
+    "Immune pathway for natural killer (NK) cells to recognize and kill target cells",
+    "Immune cell activation via Fc gamma receptors on NK cells and macrophages against antibody-tagged cells"
+  ],
+  "pathway_sets_interpretations": [
+    "Central to HER2-driven tumor growth, so its activity indicates how dependent the cancer is on HER2 signaling",
+    "Drives proliferation and survival downstream of HER2; inhibition of this pathway slows tumor growth",
+    "Controls cell death; activation of apoptosis can inhibit tumor survival and complement HER2 blockade",
+    "Controls cell cycle entry; suppression leads to growth arrest when HER2 is inhibited",
+    "Controls cell division; dysregulation leads to uncontrolled proliferation in cancer",
+    "Encompasses HER2-mediated signaling cascade critical for HER2+ breast cancer growth",
+    "Enables elimination of tumor cells by the innate immune system, an effect enhanced by trastuzumab binding",
+    "Initiates immune effector functions (ADCC) upon antibody binding, important for trastuzumab's mechanism"
+  ],
+  "sensitivity_genes_up": [
+    "ERBB2"
+  ],
+  "sensitivity_genes_up_interpretations": [
+    "High ERBB2 (HER2) expression or amplification increases the number of available drug targets, making HER2-overexpressing tumors more sensitive to trastuzumab."
+  ],
+  "sensitivity_genes_down": [],
+  "sensitivity_genes_down_interpretations": [],
+  "resistance_genes_up": [
+    "PIK3CA",
+    "IGF1R"
+  ],
+  "resistance_genes_up_interpretations": [
+    "Activating mutations in PIK3CA hyperactivate PI3K/AKT signaling, bypassing HER2 inhibition and conferring trastuzumab resistance.",
+    "IGF1R overexpression activates alternative growth signaling pathways, reducing reliance on HER2 and contributing to resistance."
+  ],
+  "resistance_genes_down": [
+    "PTEN"
+  ],
+  "resistance_genes_down_interpretations": [
+    "PTEN loss removes inhibition of the PI3K/AKT pathway, sustaining tumor survival signals despite HER2 blockade and leading to trastuzumab resistance."
+  ],
+  "pathways_upregulated": [],
+  "pathways_upregulated_names": [],
+  "pathways_upregulated_interpretations": [],
+  "pathways_downregulated": [],
+  "pathways_downregulated_names": [],
+  "pathways_downregulated_interpretations": [],
+  "contraindications": [
+    "Hypersensitivity to trastuzumab or its components",
+    "Pregnancy (fetal toxicity)"
+  ],
+  "kg_relationships": [
+    "Trastuzumab|inhibits|ERBB2",
+    "ERBB2_amplification|confers_sensitivity_to|Trastuzumab",
+    "PTEN_loss|confers_resistance_to|Trastuzumab",
+    "PIK3CA_mutation|confers_resistance_to|Trastuzumab"
+  ],
+  "citations": [
+    "https://www.accessdata.fda.gov/drugsatfda_docs/label/2010/103792s5250lbl.pdf",
+    "https://go.drugbank.com/drugs/DB00072",
+    "https://pubmed.ncbi.nlm.nih.gov/33040720/",
+    "https://pubmed.ncbi.nlm.nih.gov/15324695/",
+    "https://pubmed.ncbi.nlm.nih.gov/39611930/",
+    "https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-ado-trastuzumab-emtansine-early-breast-cancer"
+  ],
+  "notes": "Trastuzumab is only effective in HER2-amplified breast cancer and has minimal activity in HER2-negative subtypes. Documented resistance mechanisms include PTEN loss and activating PIK3CA mutations. A single study found an upregulated cAMP-related gene set in responders (no standard pathway ID provided), and no consistent downregulated pathways were reported."
+}

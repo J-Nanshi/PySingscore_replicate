@@ -1,0 +1,159 @@
+{
+  "drug_name": "Alpelisib",
+  "cancer_indication": "HR+/HER2-negative, PIK3CA-mutated advanced or metastatic breast cancer (post-endocrine therapy)",
+  "drug_category": "PI3K/AKT pathway",
+  "drug_class": "PI3K\u03b1 inhibitor",
+  "moa": "Alpelisib selectively inhibits the PI3K\u2013AKT\u2013mTOR signaling pathway by targeting the p110\u03b1 (PIK3CA) subunit, blocking PIP3 production and preventing AKT activation, which leads to cell cycle arrest and apoptosis in PIK3CA-mutant breast cancer【7\u202fL208-L217】. In ER\u00b2 (luminal) tumors, PI3K\u03b1 inhibition causes upregulation of estrogen receptor signaling; thus, combining alpelisib with an ER antagonist (fulvestrant) yields synergistic anti-tumor effects【7\u202fL229-L237】. Overall, alpelisib selectively shuts down the PI3K\u2013AKT growth pathway in PI3K-addicted cancer cells, exploiting a synthetic lethality with ER blockade in HR+/PIK3CA-mutant breast cancer【7\u202fL208-L217】【7\u202fL229-L237】.",
+  "chembl_id": "CHEMBL2396661",
+  "drugbank_id": "DB12015",
+  "synonyms": [
+    "BYL 719",
+    "BYL-719",
+    "NVP-BYL719",
+    "Piqray",
+    "Vijoice"
+  ],
+  "primary_targets": [
+    "PIK3CA"
+  ],
+  "pathway_sets": [
+    "hsa04151",
+    "GO:0030520",
+    "R-HSA-1257604",
+    "GO:0045787",
+    "R-HSA-1643713"
+  ],
+  "pathway_sets_description": [
+    "PI3K\u2013AKT\u2013mTOR signaling: regulates cell growth and survival via AKT and mTOR【10\u202fL407-L415】.",
+    "Estrogen receptor signaling: drives hormone-mediated proliferation in ER-positive tumors【10\u202fL421-L430】.",
+    "RTK/RAS\u2013MAPK cascade: transduces growth factor signals through RAS/RAF/MEK/ERK【11\u202fL438-L447】.",
+    "Cell cycle regulation: controls G1\u2192S transition via Cyclin D\u2013CDK4/6 and E2F【11\u202fL507-L516】.",
+    "Insulin signaling: transduces insulin effects on metabolism and cell growth via PI3K\u2013AKT【11\u202fL523-L531】."
+  ],
+  "pathway_sets_interpretations": [
+    "Central oncogenic pathway; its inhibition by alpelisib underlies sensitivity in PIK3CA-mutant tumors【10\u202fL412-L419】.",
+    "Critical HR+ pathway; PI3K\u03b1 blockade triggers compensatory ER activation (a sensitivity factor for endocrine combination)【10\u202fL423-L430】.",
+    "Alternate proliferation pathway; activation of RTK/RAS\u2013MAPK confers resistance when PI3K\u03b1 is inhibited【11\u202fL441-L450】.",
+    "Drives proliferation; suppression (G1 arrest) correlates with response, while Cyclin E/RB1 alterations confer resistance【11\u202fL507-L516】.",
+    "Mediates metabolic signals; PI3K\u03b1 inhibition causes insulin feedback, altering tumor metabolism and potentially affecting drug response【11\u202fL523-L531】."
+  ],
+  "sensitivity_genes_up": [
+    "PIK3CA"
+  ],
+  "sensitivity_genes_up_interpretations": [
+    "Activating PIK3CA mutations create dependence on PI3K\u03b1 signaling, so their presence predicts sensitivity to alpelisib【15\u202fL890-L899】."
+  ],
+  "sensitivity_genes_down": [],
+  "sensitivity_genes_down_interpretations": [],
+  "resistance_genes_up": [
+    "ESR1",
+    "AKT1",
+    "PIK3CG",
+    "KRAS",
+    "ERBB3",
+    "IGF1R",
+    "CDK2",
+    "CCNE1"
+  ],
+  "resistance_genes_up_interpretations": [
+    "ESR1 mutations (constitutive ER activity) can drive resistance by bypassing PI3K\u03b1 dependence【19\u202fL1125-L1134】.",
+    "AKT1 mutations (e.g. E17K) activate downstream PI3K\u2013AKT signaling independent of PI3K\u03b1【19\u202fL1159-L1166】.",
+    "PIK3CG (p110\u03b3) upregulation sustains PI3K\u2013AKT signaling via an alternate isoform【19\u202fL1163-L1166】.",
+    "KRAS mutations activate the MAPK pathway, providing an alternative growth drive when PI3K\u03b1 is inhibited【19\u202fL1167-L1173】.",
+    "ERBB3 (HER3) overexpression increases RTK signaling, reactivating PI3K/MAPK pathways despite alpelisib【20\u202fL1231-L1239】.",
+    "IGF1R overexpression similarly reactivates PI3K/MAPK signaling downstream of receptor feedback【20\u202fL1231-L1239】.",
+    "CDK2 overexpression drives cell cycle progression (G1/S) independent of PI3K\u03b1, leading to resistance【20\u202fL1245-L1253】.",
+    "CCNE1 (Cyclin E1) overexpression sustains G1/S transition, bypassing PI3K\u03b1-driven growth control【20\u202fL1245-L1253】."
+  ],
+  "resistance_genes_down": [
+    "PTEN",
+    "RB1"
+  ],
+  "resistance_genes_down_interpretations": [
+    "PTEN loss removes negative regulation of PI3K, activating PI3K\u03b2/AKT and conferring resistance【19\u202fL1101-L1110】.",
+    "RB1 loss bypasses G1 arrest and allows proliferation without PI3K\u03b1 signaling【20\u202fL1245-L1253】."
+  ],
+  "pathways_upregulated": [
+    "GO:0030520",
+    "R-HSA-199420",
+    "hsa04630",
+    "R-HSA-198203",
+    "HALLMARK_GLYCOLYSIS",
+    "GO:0008625"
+  ],
+  "pathways_upregulated_names": [
+    "Estrogen receptor signaling",
+    "HER3/EGFR\u2013RAS\u2013MAPK signaling",
+    "SRC\u2013STAT3 inflammatory pathway (JAK/STAT)",
+    "mTORC2/AKT re-activation",
+    "Glycolysis",
+    "Intrinsic apoptosis"
+  ],
+  "pathways_upregulated_interpretations": [
+    "ER pathway feedback is activated in ER+ tumors after PI3K\u03b1 inhibition, reflecting compensatory upregulation【22\u202fL576-L584】.",
+    "HER2/HER3\u2013MAPK signaling rises in resistant tumors due to relieved feedback, driving alternative proliferation【22\u202fL619-L627】.",
+    "Inflammatory JAK/STAT (SRC\u2013STAT3) signaling is elevated in resistant models (often with PTEN loss), aiding survival【22\u202fL637-L646】.",
+    "Alternate AKT activation emerges (via mTORC2 or PI3K\u03b2) in resistance, restoring PI3K\u2013AKT signaling despite PI3K\u03b1 inhibition【22\u202fL653-L661】.",
+    "Glycolytic metabolism is upregulated systemically due to insulin feedback from PI3K\u03b1 blockade, which can fuel tumor metabolism【22\u202fL669-L677】.",
+    "Intrinsic apoptotic pathways become active in responders undergoing cell death, reflecting successful tumor kill【22\u202fL686-L690】."
+  ],
+  "pathways_downregulated": [
+    "hsa04151",
+    "R-HSA-1640170",
+    "GO:0043124",
+    "R-HSA-165159",
+    "GO:0006281"
+  ],
+  "pathways_downregulated_names": [
+    "PI3K\u2013Akt signaling pathway",
+    "Cell cycle checkpoints",
+    "Negative regulation of apoptosis",
+    "mTOR signaling",
+    "DNA repair"
+  ],
+  "pathways_downregulated_interpretations": [
+    "PI3K\u2013AKT pathway activity is markedly reduced in responders (p-AKT and mTOR activity down), and its suppression is a hallmark of effective alpelisib therapy【24\u202fL750-L758】.",
+    "Cell cycle progression programs (E2F targets) are suppressed, leading to G1 arrest and reduced proliferation in sensitive tumors【24\u202fL766-L774】.",
+    "Anti-apoptotic signaling (e.g. NF-\u03baB) is diminished, tilting balance toward apoptosis in tumors that respond to alpelisib【24\u202fL782-L790】.",
+    "mTORC1-driven protein synthesis is inhibited (reduced S6/4EBP1 phosphorylation), contributing to growth arrest【24\u202fL798-L807】.",
+    "Some DNA repair gene sets (e.g. homologous recombination) are downregulated, increasing DNA damage in treated cells【24\u202fL812-L821】."
+  ],
+  "contraindications": [
+    "History of severe hypersensitivity to alpelisib",
+    "Pregnancy"
+  ],
+  "kg_relationships": [
+    "PIK3CA_mutation|confers_sensitivity_to|Alpelisib",
+    "PTEN_loss|confers_resistance_to|Alpelisib",
+    "ESR1_mutation|confers_resistance_to|Alpelisib",
+    "AKT1_E17K|confers_resistance_to|Alpelisib",
+    "PIK3CG_overexpression|confers_resistance_to|Alpelisib",
+    "KRAS_mutation|confers_resistance_to|Alpelisib",
+    "ERBB3_overexpression|confers_resistance_to|Alpelisib",
+    "IGF1R_overexpression|confers_resistance_to|Alpelisib",
+    "RB1_loss|confers_resistance_to|Alpelisib",
+    "CDK2_overexpression|confers_resistance_to|Alpelisib",
+    "CCNE1_overexpression|confers_resistance_to|Alpelisib",
+    "Alpelisib|inhibits|PIK3CA"
+  ],
+  "citations": [
+    "https://go.drugbank.com/drugs/DB12015",
+    "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/212526s000lbl.pdf",
+    "https://breast-cancer-research.biomedcentral.com/articles/10.1186/s13058-020-01284-9",
+    "https://www.ema.europa.eu/en/medicines/human/EPAR/piqray",
+    "https://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId=7955",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12159599/",
+    "https://eprints.aihta.at/1247/7/Oncology%20Fact%20Sheet%20Nr.12_Update.pdf",
+    "https://www.annalsofoncology.org/article/S0923-7534(19)31239-6/fulltext",
+    "https://en.wikipedia.org/wiki/Alpelisib",
+    "https://www.sciencedirect.com/science/article/pii/S1476558623000386",
+    "https://www.sciencedirect.com/topics/medicine-and-dentistry/alpelisib",
+    "https://aacrjournals.org/cancerres/article/76/14_Supplement/242/609619/Abstract-242-Deciphering-the-role-of-PTEN-as-a",
+    "https://www.thelancet.com/journals/eclinm/article/PIIS2589-5370(24)00099-3/fulltext",
+    "https://ar.iiarjournals.org/content/45/5/1877",
+    "https://www.sciencedirect.com/science/article/pii/S0753332224000982",
+    "https://pubmed.ncbi.nlm.nih.gov/32864625/",
+    "https://www.nature.com/articles/s41416-020-01147-2"
+  ],
+  "notes": "Most clinical evidence is in HR+/HER2\u2013, PIK3CA-mutant breast cancer; roles in HER2+ or TNBC are still being explored【7\u202fL252-L259】."
+}

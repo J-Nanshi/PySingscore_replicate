@@ -1,0 +1,123 @@
+{
+  "drug_name": "Fulvestrant",
+  "cancer_indication": "Hormone receptor-positive (ER+) advanced or metastatic breast cancer (postmenopausal women)",
+  "drug_category": "Hormonal therapy",
+  "drug_class": "Selective estrogen receptor downregulator (SERD)",
+  "moa": "Fulvestrant is a selective estrogen receptor downregulator (SERD) that binds to and accelerates the degradation of the estrogen receptor α (ERα). This causes complete blockade of estrogen signaling without any partial agonist activity, shutting off the ER-driven transcriptional program (for example, genes like GREB1 and PGR are downregulated). As a result, ER-positive breast cancer cells undergo cell-cycle arrest and decreased proliferation. Fulvestrant is administered by intramuscular injection and is used across ER-positive breast cancer subtypes, especially luminal (ER+/HER2-negative) tumors.",
+  "chembl_id": "CHEMBL1",
+  "drugbank_id": "DB00947",
+  "synonyms": [
+    "Faslodex",
+    "ICI 182780",
+    "ZD-9238"
+  ],
+  "primary_targets": [
+    "ESR1"
+  ],
+  "pathway_sets": [
+    "HALLMARK_XENOBIOTIC_METABOLISM",
+    "HALLMARK_CHOLESTEROL_HOMEOSTASIS",
+    "HALLMARK_FATTY_ACID_METABOLISM",
+    "HALLMARK_PEROXISOME",
+    "HALLMARK_OXIDATIVE_PHOSPHORYLATION"
+  ],
+  "pathway_sets_description": [
+    "Hallmark xenobiotic metabolism gene set",
+    "Hallmark cholesterol homeostasis gene set",
+    "Hallmark fatty acid metabolism gene set",
+    "Hallmark peroxisome gene set",
+    "Hallmark oxidative phosphorylation gene set"
+  ],
+  "pathway_sets_interpretations": [
+    "Upregulation of xenobiotic metabolism suggests adaptation for detoxification and survival under estrogen deprivation.",
+    "Enhanced cholesterol homeostasis may support membrane synthesis or steroid production in resistant tumors.",
+    "Increased fatty acid metabolism indicates energy production rerouted to mitochondrial oxidation in endocrine-resistant cells.",
+    "Upregulated peroxisome pathway suggests increased fatty acid oxidation and reactive oxygen species management in resistant tumors.",
+    "Enhanced oxidative phosphorylation reflects a metabolic shift to produce ATP and support growth when ER signaling is blocked."
+  ],
+  "sensitivity_genes_up": [
+    "ESR1",
+    "PGR"
+  ],
+  "sensitivity_genes_up_interpretations": [
+    "High ESR1 (estrogen receptor) expression means the tumor remains strongly ER-dependent and is more likely to respond to ER blockade.",
+    "High PGR (progesterone receptor) expression often co-occurs with high ER and indicates a hormone-responsive (Luminal A) phenotype, increasing sensitivity to fulvestrant."
+  ],
+  "sensitivity_genes_down": [
+    "MKI67"
+  ],
+  "sensitivity_genes_down_interpretations": [
+    "Low MKI67 (Ki-67) expression indicates lower proliferation characteristic of Luminal A tumors, which correlates with greater sensitivity to fulvestrant."
+  ],
+  "resistance_genes_up": [
+    "EGFR",
+    "ERBB2",
+    "CCND1"
+  ],
+  "resistance_genes_up_interpretations": [
+    "Upregulation of EGFR provides alternate growth signals bypassing ER and leads to fulvestrant resistance.",
+    "HER2 (ERBB2) overexpression activates growth pathways independent of ER, reducing the effectiveness of fulvestrant.",
+    "Cyclin D1 (CCND1) amplification drives cell-cycle progression independent of ER signaling, blunting the anti-proliferative effect of fulvestrant."
+  ],
+  "resistance_genes_down": [
+    "RB1"
+  ],
+  "resistance_genes_down_interpretations": [
+    "Loss of RB1 releases E2F-driven proliferation, which can confer resistance to fulvestrant by allowing cell-cycle progression despite ER blockade."
+  ],
+  "pathways_upregulated": [],
+  "pathways_upregulated_names": [
+    "EGF/EGFR/HER2 signaling",
+    "PI3K/AKT/mTOR signaling",
+    "RAS/MAPK signaling",
+    "E2F target gene expression",
+    "G2/M cell-cycle checkpoint"
+  ],
+  "pathways_upregulated_interpretations": [
+    "Mechanism: ERBB (EGF/HER2) signaling activation provides alternate mitogenic signals. Effect: This bypasses ER dependence and undermines fulvestrant efficacy. Rationale: Upregulated growth factor signaling is a known resistance mechanism in endocrine therapy.",
+    "Mechanism: PI3K/AKT/mTOR pathway activation promotes cell survival and growth. Effect: This reduces sensitivity to fulvestrant by supporting proliferation independent of ER. Rationale: Constitutive PI3K/AKT signaling is frequently seen in resistant ER+ tumors.",
+    "Mechanism: RAS/MAPK pathway activation drives proliferation and survival. Effect: This diminishes fulvestrant’s anti-tumor effect by signaling through an ER-independent route. Rationale: Enhanced MAPK activity is commonly observed in endocrine-resistant breast cancers.",
+    "Mechanism: E2F target gene upregulation indicates increased CDK4/6–Cyclin D1 activity. Effect: This sustains cell-cycle progression despite ER blockade. Rationale: Resistant tumors often maintain high E2F/cell-cycle activity to circumvent ER inhibition.",
+    "Mechanism: G2/M checkpoint genes are upregulated, reflecting cell-cycle drive. Effect: This suggests continued division signals when ER is downregulated. Rationale: Fulvestrant-resistant cells exhibit persistently active cell-cycle checkpoint programs."
+  ],
+  "pathways_downregulated": [],
+  "pathways_downregulated_names": [
+    "Estrogen receptor signaling",
+    "Cell cycle progression"
+  ],
+  "pathways_downregulated_interpretations": [
+    "Mechanism: Fulvestrant binds ER and promotes its degradation. Effect: ER-mediated transcription (estrogen response genes) is shut off, halting estrogen-driven proliferation. Rationale: Downregulation of estrogen signaling is the direct action of fulvestrant and is therapeutic.",
+    "Mechanism: ER blockade leads to cell-cycle arrest. Effect: Downregulation of proliferation genes (E2F targets, G2/M checkpoint) occurs, slowing tumor growth. Rationale: Lower proliferation indices are observed in fulvestrant-treated ER+ tumors as a therapeutic goal."
+  ],
+  "contraindications": [
+    "Pregnancy (Category D/X) – potential fetal harm; avoid pregnancy during treatment",
+    "Nursing mothers (breastfeeding) – contraindicated"
+  ],
+  "kg_relationships": [
+    "Fulvestrant|inhibits|ESR1",
+    "ESR1_overexpression|confers_sensitivity_to|Fulvestrant",
+    "CCND1_amplification|confers_resistance_to|Fulvestrant",
+    "RB1_loss|confers_resistance_to|Fulvestrant",
+    "ESR1_mutation|confers_resistance_to|Fulvestrant",
+    "EGFR_activation|confers_resistance_to|Fulvestrant",
+    "ERBB2_amplification|confers_resistance_to|Fulvestrant"
+  ],
+  "citations": [
+    "https://go.drugbank.com/drugs/DB00947",
+    "https://en.wikipedia.org/wiki/Fulvestrant",
+    "https://www.emjreviews.com/oncology/symposium/treatment-strategies-and-sequencing-after-endocrine-therapy-plus-cdk4-6-",
+    "https://www.bccancer.bc.ca/drug-database-site/Drug%20Index/Fulvestrant_Monograph.pdf",
+    "https://bmccancer.biomedcentral.com/articles/10.1186/s12885-025-14826-1",
+    "https://pubmed.ncbi.nlm.nih.gov/27185372/",
+    "https://breast-cancer-research.biomedcentral.com/articles/10.1186/s13058-021-01462-3",
+    "https://www.tandfonline.com/doi/full/10.2147/OTT.S170736",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7169993/",
+    "https://aacrjournals.org/clincancerres/article/31/12_Supplement/PS18-09/753919/Abstract-PS18-09-Endocrine-Response-in-",
+    "https://clinicaltrials.gov/study/NCT02206984",
+    "https://onlinelibrary.wiley.com/doi/10.1155/2014/390618",
+    "https://www.sciencedirect.com/science/article/pii/S0304383524003628",
+    "https://s3-us-west-2.amazonaws.com/drugbank/fda_labels/DB00947.pdf?1265922805",
+    "https://www.esmo.org/guidelines/esmo-mcbs/esmo-mcbs-for-solid-tumours/esmo-mcbs-scorecards/scorecard-409-1"
+  ],
+  "notes": "Fulvestrant is only effective in ER-positive breast cancer; it has no role in ER-negative (e.g., triple-negative) tumors because they lack the target. Most clinical evidence pertains to luminal (ER+/PR+) subtypes."
+}

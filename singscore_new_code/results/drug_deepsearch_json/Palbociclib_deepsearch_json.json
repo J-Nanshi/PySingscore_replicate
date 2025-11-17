@@ -1,0 +1,175 @@
+{
+  "drug_name": "Palbociclib",
+  "cancer_indication": "HR-positive, HER2-negative advanced or metastatic breast cancer",
+  "drug_category": "CDK4/6",
+  "drug_class": "CDK4/6 inhibitor",
+  "moa": "Palbociclib is a selective inhibitor of cyclin-dependent kinases CDK4 and CDK6, preventing phosphorylation of the retinoblastoma protein (Rb) and blocking the G1-to-S phase transition. In HR+ breast cancer, estrogen receptor signaling induces Cyclin D1, which activates CDK4/6 to inactivate Rb and promote cell proliferation. By inhibiting CDK4/6, palbociclib maintains Rb in its active, growth-suppressive state bound to E2F, enforcing G1 arrest and causing decreased expression of E2F target genes and DNA replication enzymes. This leads to a cytostatic G1 phase arrest rather than apoptosis, especially when combined with endocrine therapy.",
+  "chembl_id": "CHEMBL189963",
+  "drugbank_id": "DB09073",
+  "synonyms": [
+    "Ibrance",
+    "PD-0332991",
+    "PD 0332991",
+    "PD0332991"
+  ],
+  "primary_targets": [
+    "CDK4",
+    "CDK6"
+  ],
+  "pathway_sets": [
+    "hsa04110",
+    "R-HSA-69231",
+    "GO:0000082",
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_G2M_CHECKPOINT",
+    "R-HSA-69205",
+    "R-HSA-217379",
+    "GO:0006260",
+    "GO:0090398",
+    "R-HSA-69202",
+    "hsa04151",
+    "R-HSA-122638",
+    "hsa03030",
+    "GO:0050863",
+    "GO:0019882",
+    "GO:0031295",
+    "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE"
+  ],
+  "pathway_sets_description": [
+    "Cell Cycle (KEGG hsa04110) controls cell cycle progression through G1/S/G2/M phases.",
+    "Cyclin D associated events in G1 (Reactome R-HSA-69231) describes how Cyclin D binds CDK4/6 to phosphorylate Rb and promote G1/S transition.",
+    "G1/S transition of mitotic cell cycle (GO:0000082) is the process where cells move from G1 into S phase.",
+    "MSigDB Hallmark E2F Targets is the set of genes regulated by E2F transcription factors controlling DNA replication and cell cycle progression.",
+    "MSigDB Hallmark G2M Checkpoint is the gene set involved in G2-to-M phase transition and mitotic entry.",
+    "G1/S-specific transcription (Reactome R-HSA-69205) involves E2F-driven transcription during G1/S.",
+    "Activation of E2F targets (Reactome R-HSA-217379) is the pathway of inducing E2F-regulated genes for S phase entry.",
+    "DNA replication (GO:0006260) covers the process of duplicating the genome before cell division.",
+    "Cellular senescence (GO:0090398) is the permanent arrest of cell division in response to stress.",
+    "Cyclin E associated events during G1/S transition (Reactome R-HSA-69202) describes Cyclin E/CDK2 activation at the G1/S checkpoint.",
+    "PI3K-Akt signaling pathway (KEGG hsa04151) is a major cell survival and growth pathway activated by growth factors.",
+    "PI3K/AKT activation (Reactome R-HSA-122638) is the signaling cascade triggered by PI3K leading to AKT phosphorylation.",
+    "DNA replication (KEGG hsa03030) is the pathway of DNA synthesis machinery during S phase.",
+    "Positive regulation of T cell activation (GO:0050863) is an immune process enhancing T cell responses.",
+    "Antigen processing and presentation (GO:0019882) involves displaying peptides on MHC for immune recognition.",
+    "T cell costimulation (GO:0031295) is the immune pathway providing secondary signals for T cell activation.",
+    "MSigDB Hallmark Interferon Alpha Response is the gene set induced by interferon-alpha signaling.",
+    "MSigDB Hallmark Interferon Gamma Response is the gene set induced by interferon-gamma signaling."
+  ],
+  "pathway_sets_interpretations": [
+    "Core cell cycle machinery regulating proliferation; targeting this pathway halts tumor cell division.",
+    "Central to CDK4/6 inhibitor mechanism, so tumor dependence on Cyclin D-CDK4/6 activity affects drug response.",
+    "Represents the G1/S checkpoint; downregulation of this transition is the goal of palbociclib therapy.",
+    "Indicator of proliferative gene expression; suppression of E2F targets reflects effective CDK4/6 inhibition.",
+    "Represents mitotic entry control; lower activity here indicates blocked progression to mitosis.",
+    "Directly involves E2F-driven gene expression; reactivation of this pathway is seen in resistance.",
+    "Tracks E2F-mediated S-phase genes; suppression correlates with drug response, reactivation with resistance.",
+    "Critical DNA synthesis processes are shut down by G1 arrest.",
+    "Marker of permanent growth arrest; engaged when cells senesce due to sustained CDK4/6 inhibition.",
+    "An alternative G1/S route via Cyclin E/CDK2; its upregulation bypasses CDK4/6 blockade in resistance.",
+    "A survival pathway that can provide alternative growth signals when cell cycle is blocked.",
+    "Its activation (e.g. via PIK3CA mutation or PTEN loss) can drive proliferation independently of CDK4/6.",
+    "Essential S-phase machinery paused by CDK4/6 inhibition.",
+    "Immune activation signal that may increase in some contexts of CDK4/6 inhibition.",
+    "Antigen presentation pathway noted to be modulated by cell cycle arrest.",
+    "Costimulatory immune signaling attenuated in resistant cells.",
+    "Reflects immune/inflammation state; interferon pathways change with drug response.",
+    "Same as interferon-alpha but for interferon-gamma signaling; part of immune-related response changes."
+  ],
+  "sensitivity_genes_up": [
+    "RB1",
+    "CCND1"
+  ],
+  "sensitivity_genes_up_interpretations": [
+    "An intact RB1 is required for palbociclib to enforce G1 arrest; loss of RB1 causes resistance.",
+    "High Cyclin D1 (CCND1) indicates dependency on CDK4/6 for proliferation, making cells more sensitive to its inhibition."
+  ],
+  "sensitivity_genes_down": [
+    "CDKN2A"
+  ],
+  "sensitivity_genes_down_interpretations": [
+    "Loss of CDKN2A (p16) removes inhibition of CDK4/6, increasing reliance on these kinases and enhancing drug sensitivity."
+  ],
+  "resistance_genes_up": [
+    "CCNE1",
+    "CDK6",
+    "FGFR1"
+  ],
+  "resistance_genes_up_interpretations": [
+    "High CCNE1 (Cyclin E1) activates CDK2 and allows cell cycle progression despite CDK4/6 inhibition, conferring resistance.",
+    "Upregulated CDK6 can partially compensate for CDK4 inhibition by phosphorylating Rb and enabling cell cycle entry.",
+    "FGFR1 amplification activates MAPK/ERK signaling and increases cyclin D/E, promoting cell proliferation even with CDK4/6 blocked."
+  ],
+  "resistance_genes_down": [
+    "RB1",
+    "PTEN"
+  ],
+  "resistance_genes_down_interpretations": [
+    "Loss of RB1 removes the drug target, making CDK4/6 inhibition ineffective.",
+    "Loss of PTEN hyperactivates PI3K/AKT signaling, which can drive cell survival and cyclin D/E activation independently of CDK4/6."
+  ],
+  "pathways_upregulated": [
+    "R-HSA-69202",
+    "hsa04151",
+    "R-HSA-122638"
+  ],
+  "pathways_upregulated_names": [
+    "Cyclin E associated events during G1/S transition",
+    "PI3K-Akt signaling pathway",
+    "PI3K/AKT activation"
+  ],
+  "pathways_upregulated_interpretations": [
+    "This pathway enables cells to bypass CDK4/6 blockade by reactivating E2F-mediated transcription in resistant tumors.",
+    "Activation of this pathway promotes growth and survival despite cell cycle inhibition.",
+    "PI3K/AKT upregulation increases cyclin D1/E levels and reduces dependency on CDK4/6, mediating resistance."
+  ],
+  "pathways_downregulated": [
+    "R-HSA-113510",
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_G2M_CHECKPOINT",
+    "hsa03030",
+    "HALLMARK_MITOTIC_SPINDLE"
+  ],
+  "pathways_downregulated_names": [
+    "Activation of E2F target genes at G1/S (Reactome)",
+    "E2F Targets (MSigDB Hallmark)",
+    "G2M Checkpoint (MSigDB Hallmark)",
+    "DNA replication (KEGG)",
+    "Mitotic Spindle (MSigDB Hallmark)"
+  ],
+  "pathways_downregulated_interpretations": [
+    "Palbociclib enforces Rb-E2F repression, silencing E2F-driven gene networks needed for S phase entry.",
+    "Genes promoting DNA synthesis and mitosis (E2F targets) are suppressed by effective CDK4/6 inhibition.",
+    "Entry into mitosis is blocked, consistent with a G1 arrest phenotype.",
+    "The DNA synthesis machinery is largely idle due to G1 arrest.",
+    "Mitotic machinery and spindle formation genes are inactive, reflecting lack of cell division."
+  ],
+  "contraindications": [
+    "Hypersensitivity to palbociclib or its components"
+  ],
+  "kg_relationships": [
+    "Palbociclib|inhibits|CDK4",
+    "Palbociclib|inhibits|CDK6"
+  ],
+  "citations": [
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0189007",
+    "https://www.oncology-central.com/virus-drug-combination-supercharges-anti-tumor-immune-response/",
+    "https://reference.medscape.com/drug/ibrance-palbociclib-999995",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5221599/",
+    "https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/207103s008lbl.pdf",
+    "https://www.ema.europa.eu/en/documents/product-information/ibrance-epar-product-information_en.pdf",
+    "https://www.nature.com/articles/s41523-024-00624-8?error=cookies_not_supported&code=a5a4955a-f059-4b69-a1b1-7b86a074a208",
+    "https://pubmed.ncbi.nlm.nih.gov/30511015/",
+    "https://reactome.org/content/detail/R-HSA-69231",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC7751736/",
+    "https://www.targetedonc.com/view/concept-to-clinic-cdk-46-inhibition-in-er-positive-breast-cancer",
+    "https://aacrjournals.org/cancerdiscovery/article/11/1/92/2681/Triplet-Therapy-with-Palbociclib-Taselisib-and",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC5809273/",
+    "https://breast-cancer-research.biomedcentral.com/articles/10.1186/s13058-022-01510-6",
+    "https://www.mdpi.com/2072-6694/15/19/4835",
+    "https://www.frontiersin.org/journals/cell-and-developmental-biology/articles/10.3389/fcell.2023.1148792/full",
+    "https://www.nature.com/articles/s41467-022-32828-6",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC12424417/"
+  ],
+  "notes": "No absolute contraindications except hypersensitivity. Patients should be monitored for neutropenia; avoid use in those with uncontrolled infections."
+}
