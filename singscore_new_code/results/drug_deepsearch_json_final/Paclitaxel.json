@@ -1,0 +1,189 @@
+{
+"drug_name": "Paclitaxel",
+"cancer_indication": "Adjuvant therapy for node-positive early-stage breast cancer after anthracycline-based regimens and single-agent treatment for metastatic breast cancer after anthracycline failure, used across subtypes including triple-negative breast cancer and HER2-positive disease in combination with trastuzumab.",
+"drug_category": "Cytotoxic chemotherapy",
+"drug_class": "Taxane microtubule-stabilizing agent",
+"moa": "Paclitaxel binds directly to β-tubulin in microtubules, stabilizing them against depolymerization and blocking the dynamic reorganization required for mitosis, causing G2/M arrest and abnormal multipolar spindles followed by mitotic catastrophe and apoptosis. It also directly binds the anti-apoptotic protein BCL2, inactivating it and facilitating programmed cell death in tumor cells. In breast cancer, paclitaxel perturbs cell-cycle gene programs and induces innate immune and interferon responses while simultaneously activating TLR4-driven NF-κB and PI3K/AKT survival pathways and ABC-transporter–mediated drug efflux that can promote resistance.",
+"chembl_id": null,
+"drugbank_id": "DB01229",
+"synonyms": [
+"Taxol"
+],
+"primary_targets": [
+"TUBB",
+"BCL2"
+],
+"pathway_sets": [
+"HALLMARK_G2M_CHECKPOINT",
+"HALLMARK_MITOTIC_SPINDLE",
+"HALLMARK_APOPTOSIS",
+"HALLMARK_INTERFERON_GAMMA_RESPONSE",
+"REACTOME_NFKB_AND_MAP_KINASES_ACTIVATION_MEDIATED_BY_TLR4_SIGNALING_REPERTOIRE",
+"REACTOME_PI3K_AKT_SIGNALING",
+"KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION",
+"KEGG_ABC_TRANSPORTERS",
+"REACTOME_CELL_CYCLE",
+"HALLMARK_ANGIOGENESIS"
+],
+"pathway_sets_annotations": {
+"HALLMARK_G2M_CHECKPOINT": {
+"description": "Gene program controlling the G2/M cell-cycle checkpoint and mitotic entry, including regulators of mitosis and transition through G2 into M phase.",
+"interpretation": "In breast cancer, this checkpoint underlies proliferative capacity; paclitaxel-induced microtubule stabilization halts mitosis and downregulates G2/M checkpoint genes, contributing to cytotoxicity."
+},
+"HALLMARK_MITOTIC_SPINDLE": {
+"description": "Genes encoding structural and regulatory components of the mitotic spindle and microtubule apparatus required for chromosome segregation.",
+"interpretation": "Breast cancer cells rely on an intact mitotic spindle for division; paclitaxel binding to β-tubulin in spindle microtubules disrupts spindle function and enforces mitotic arrest."
+},
+"HALLMARK_APOPTOSIS": {
+"description": "Core regulators and effectors of programmed cell death, including pro- and anti-apoptotic factors.",
+"interpretation": "Activation of apoptosis in breast tumor cells, facilitated by paclitaxel-mediated BCL2 inactivation and mitotic catastrophe, is a key mediator of treatment response."
+},
+"HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+"description": "Interferon-γ–responsive genes involved in innate and adaptive immune activation, antigen presentation, and antiviral defense.",
+"interpretation": "Paclitaxel can induce interferon-stimulated gene programs in triple-negative breast cancer, and tumors with stronger interferon responses show improved sensitivity to the drug."
+},
+"REACTOME_NFKB_AND_MAP_KINASES_ACTIVATION_MEDIATED_BY_TLR4_SIGNALING_REPERTOIRE": {
+"description": "Toll-like receptor 4 signaling cascade that activates NF-κB and MAP kinase pathways, leading to transcription of inflammatory cytokines such as IL6 and IL8.",
+"interpretation": "In breast cancer cells, paclitaxel agonism of TLR4 activates NF-κB/MAPK survival signaling and cytokine production, driving inflammatory, pro-survival states associated with chemoresistance."
+},
+"REACTOME_PI3K_AKT_SIGNALING": {
+"description": "Phosphoinositide 3-kinase and AKT kinase signaling network that promotes cell survival, metabolism, and growth.",
+"interpretation": "Paclitaxel-induced TLR4 or growth factor receptor activation can stimulate PI3K/AKT survival signaling in breast tumors, helping cells evade paclitaxel-triggered apoptosis."
+},
+"KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION": {
+"description": "Cytokines and their receptors, including IL6 and IL8, mediating intercellular communication and inflammatory responses.",
+"interpretation": "Paclitaxel/TLR4-driven upregulation of IL6, IL8, and other cytokines in breast cancer cells creates autocrine survival and pro-angiogenic loops that support resistance and tumor progression."
+},
+"KEGG_ABC_TRANSPORTERS": {
+"description": "ATP-binding cassette transporter family members that mediate active transmembrane efflux of xenobiotics and drugs.",
+"interpretation": "Overexpression of ABC transporters such as ABCB1 and ABCC3 in breast cancer enhances paclitaxel efflux, lowering intracellular drug levels and conferring chemoresistance."
+},
+"REACTOME_CELL_CYCLE": {
+"description": "Integrated network of genes regulating progression through all phases of the cell cycle, including checkpoints and mitotic control.",
+"interpretation": "Paclitaxel treatment in triple-negative breast cancer suppresses broad cell-cycle gene expression, aligning with G2/M arrest and reduced proliferation in breast cancer cells."
+},
+"HALLMARK_ANGIOGENESIS": {
+"description": "Gene set controlling new blood vessel formation, including pro-angiogenic growth factors and cytokines.",
+"interpretation": "Paclitaxel-induced TLR4/NF-κB activation increases IL6 and IL8, which can promote angiogenesis and breast tumor progression, aligning this pathway with drug resistance."
+}
+},
+"sensitivity_genes_up": [
+"TP53"
+],
+"sensitivity_genes_down": [
+"BCL2",
+"TLR4",
+"ABCB1",
+"ABCC3"
+],
+"resistance_genes_up": [
+"TLR4",
+"ABCB1",
+"ABCC3",
+"IL6",
+"IL8",
+"BCL2"
+],
+"resistance_genes_down": [
+"TP53",
+"BAX"
+],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "TP53",
+"interpretation": "Tumors with intact p53 have stronger apoptotic signaling, and the report notes that intact p53 favors paclitaxel sensitivity when mitotic arrest triggers cell death."
+}
+],
+"sensitivity_genes_down_annotations": [
+{
+"gene": "BCL2",
+"interpretation": "Low BCL2 expression reduces anti-apoptotic buffering, and the report states that low BCL2 favors sensitivity to paclitaxel-induced apoptosis."
+},
+{
+"gene": "TLR4",
+"interpretation": "TLR4 knockdown in triple-negative breast cancer downregulated NF-κB/IL6 survival genes and reduced the paclitaxel IC50, indicating that reduced TLR4 signaling increases sensitivity."
+},
+{
+"gene": "ABCB1",
+"interpretation": "Downregulation or loss of ABCB1/P-glycoprotein increases intracellular paclitaxel retention; clinical data link high ABCB1 expression to resistance, implying that its loss confers sensitivity."
+},
+{
+"gene": "ABCC3",
+"interpretation": "Reduced ABCC3 (MRP3) expression decreases efflux of paclitaxel, and the report notes that loss of ABC transporters like ABCC3 confers sensitivity."
+}
+],
+"resistance_genes_up_annotations": [
+{
+"gene": "TLR4",
+"interpretation": "Overexpression of TLR4 and activation by paclitaxel leads to NF-κB/MAPK signaling and secretion of IL6 and IL8, generating pro-survival inflammatory states and chemoresistance."
+},
+{
+"gene": "ABCB1",
+"interpretation": "Elevated ABCB1/P-glycoprotein actively exports paclitaxel from breast cancer cells, lowering intracellular drug levels and driving resistance."
+},
+{
+"gene": "ABCC3",
+"interpretation": "Increased ABCC3 (MRP3) expression enhances paclitaxel efflux, contributing to decreased efficacy and resistance."
+},
+{
+"gene": "IL6",
+"interpretation": "Paclitaxel/TLR4 signaling upregulates IL6, which participates in autocrine survival and angiogenic feedback loops linked to resistance and metastasis."
+},
+{
+"gene": "IL8",
+"interpretation": "Paclitaxel-induced IL8 secretion as part of the TLR4/NF-κB response promotes pro-survival and pro-angiogenic signaling associated with chemoresistance."
+},
+{
+"gene": "BCL2",
+"interpretation": "Upregulation of anti-apoptotic BCL2 in highly proliferative tumors is described as contributing to chemoresistance by blunting paclitaxel-induced cell death."
+}
+],
+"resistance_genes_down_annotations": [
+{
+"gene": "TP53",
+"interpretation": "Loss or downregulation of p53 is reported to blunt paclitaxel’s effect, with tumors lacking functional p53 being more chemoresistant."
+},
+{
+"gene": "BAX",
+"interpretation": "Downregulation of pro-apoptotic BAX as part of reduced apoptotic machinery is noted as a mechanism that diminishes paclitaxel efficacy and contributes to resistance."
+}
+],
+"kg_gene_relationships": [
+"Paclitaxel|binds|TUBB",
+"Paclitaxel|binds|BCL2",
+"TLR4_overexpression|confers_resistance_to|Paclitaxel",
+"TLR4_knockdown|confers_sensitivity_to|Paclitaxel",
+"ABCB1_overexpression|confers_resistance_to|Paclitaxel",
+"ABCB1_downregulation|confers_sensitivity_to|Paclitaxel",
+"ABCC3_overexpression|confers_resistance_to|Paclitaxel",
+"ABCC3_downregulation|confers_sensitivity_to|Paclitaxel",
+"BCL2_low_expression|confers_sensitivity_to|Paclitaxel",
+"BCL2_overexpression|confers_resistance_to|Paclitaxel",
+"TP53_intact|confers_sensitivity_to|Paclitaxel",
+"TP53_loss|confers_resistance_to|Paclitaxel",
+"BAX_loss|confers_resistance_to|Paclitaxel",
+"IL6_overexpression|confers_resistance_to|Paclitaxel",
+"IL8_overexpression|confers_resistance_to|Paclitaxel"
+],
+"citations": [
+"Taxol (paclitaxel) injection label",
+"[https://www.accessdata.fda.gov/drugsatfda_docs/label/2011/020262s049lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2011/020262s049lbl.pdf)",
+"Paclitaxel 6 mg/ml concentrate for solution for infusion - Summary of Product",
+"Characteristics (SmPC) - (emc) | 3891",
+"[https://www.medicines.org.uk/emc/product/3891/smpc](https://www.medicines.org.uk/emc/product/3891/smpc)",
+"TNBC response to paclitaxel phenocopies interferon response which reveals cell cycle-associated resistance mechanisms | Scientific Reports",
+"[https://www.nature.com/articles/s41598-024-82218-9?error=cookies_not_supported&code=7ae52db4-37ba-4d66-b66b-8ab521c5d893](https://www.nature.com/articles/s41598-024-82218-9?error=cookies_not_supported&code=7ae52db4-37ba-4d66-b66b-8ab521c5d893)",
+"Gene Expression-Based Predictive Markers for Paclitaxel Treatment in ER+ and ER− Breast Cancer",
+"- PMC",
+"[https://pmc.ncbi.nlm.nih.gov/articles/PMC6405635/](https://pmc.ncbi.nlm.nih.gov/articles/PMC6405635/)",
+"Paclitaxel: Uses, Interactions, Mechanism of Action | DrugBank Online",
+"[https://go.drugbank.com/drugs/DB01229](https://go.drugbank.com/drugs/DB01229)",
+"Paclitaxel directly binds to Bcl-2 and functionally mimics activity of Nur77 - PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/19671798/](https://pubmed.ncbi.nlm.nih.gov/19671798/)",
+""TLR4 is a novel determinant of the response to paclitaxel in breast ca" by Sandeep Rajput",
+"[https://opensiuc.lib.siu.edu/dissertations/845/](https://opensiuc.lib.siu.edu/dissertations/845/)",
+"Paclitaxel's Mechanistic and Clinical Effects on Breast Cancer - PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/31783552/](https://pubmed.ncbi.nlm.nih.gov/31783552/)"
+],
+"notes": "Most mechanistic sensitivity and resistance data summarized here derive from breast cancer models, particularly triple-negative breast cancer, and may not fully generalize to all subtypes. Paclitaxel is contraindicated in patients with a history of severe hypersensitivity to paclitaxel or to Cremophor EL/polyoxyethylated castor oil and requires caution with hepatic dysfunction; see cited regulatory labels and mechanistic reviews for full context. Downloadable file path: sandbox:/mnt/data/Paclitaxel_pathway_summary.json"
+}

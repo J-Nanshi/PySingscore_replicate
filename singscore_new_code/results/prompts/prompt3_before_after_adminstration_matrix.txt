@@ -1,0 +1,58 @@
+Task:
+For each pathway listed below, generate a table with the following columns:
+Pathway | Administration | Regulation | Effect | Rationale | Ref(s)
+
+Rules:
+Only focus on breast cancer 
+
+For each pathway, produce 8 rows:
+
+Before administration (baseline breast cancer state)
+
+After administration (drug-induced state)
+
+For Before, determine whether baseline up/down regulation predicts sensitivity or resistance to <DRUG_NAME>.
+
+For After, describe how <DRUG_NAME> mechanistically regulates that pathway (up/down) and what effect that causes (sensitive/resistant).
+
+Provide a clear mechanistic rationale for each regulation/effect pair.
+
+Add citation(s): Citations (mandatory for all key claims)
+•	Use:
+o	PMID
+o	NCT IDs
+o	FDA/EMA label IDs
+o	ChEMBL IDs
+o	DrugBank IDs
+o	MSigDB / Reactome / KEGG / GO / ImmuneDB / ImmunoSigDB identifiers
+•	Every claim about:
+o	Mechanism of action (MOA)
+o	Predictive/prognostic biomarkers
+o	Sensitivity mechanisms
+o	Resistance mechanisms
+o	Subtype-specific behavior
+o	Pathway associations
+o	Synonyms / identifiers (ChEMBL / DrugBank)
+o	Contraindications / safety
+→ must have at least one citation.
+Breast cancer subtype awareness
+When possible, explicitly stratify findings by subtype:
+•	HR+/HER2– (Luminal A/B)
+•	HER2+
+•	Triple-negative breast cancer (TNBC)
+•	gBRCA1/2-mutated / HRD+
+•	Basal-like / HER2-enriched / Luminal A / Luminal B
+
+Keep rationales 1–2 sentences, mechanistic, and specific. If breast-only evidence is required, add a short tag in Rationale when using cross-cancer data (e.g., “Mechanism shown in ovarian cancer but relevant to taxane resistance”).
+Output Format Example (must follow this style):
+
+| Pathway                 | Administration | Regulation |         Effect | Rationale                                                                                                                                                                                                                                                | Ref(s)                                                                                                                                                                                                      |
+| ----------------------- | -------------: | ---------: | -------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| HALLMARK_G2M_CHECKPOINT |         Before |     **Up** | **Resistance** | High baseline G2/M signature can accompany genomic instability/CIN or upregulated checkpoint/survival programs that allow cells to tolerate mitotic errors, reducing paclitaxel efficacy.                                                                | Swanton et al. Cancer Cell 2007 (regulators of mitotic arrest & resistance). PMID: **17560332**; Swanton 2009 (CIN and taxane response). PMID: **19458043**                                                 |
+| HALLMARK_G2M_CHECKPOINT |         Before |     **Up** |  **Sensitive** | Conversely, tumors with many actively cycling (G2/M) cells present more mitotic targets (microtubules/mitotic spindles), increasing likelihood of paclitaxel killing dividing cells.                                                                     | Jordan & Wilson review (microtubule drugs target mitosis). Nat Rev Cancer 2004. PMID: **15057285**; Nakayama et al. (CDK1/2 as predictors of paclitaxel response). PMID: **19239702**                       |
+| HALLMARK_G2M_CHECKPOINT |         Before |   **Down** | **Resistance** | Low baseline G2/M activity means fewer mitotic cells/targets at treatment start, so paclitaxel has less opportunity to induce lethal mitotic defects → primary resistance.                                                                               | Jordan & Wilson 2004 (mechanism: target is mitotic microtubules); review on taxane resistance mechanisms. PMID: **15057285**; Murray et al. review (taxane resistance mechanisms). (see review)             |
+| HALLMARK_G2M_CHECKPOINT |         Before |   **Down** |  **Sensitive** | In some contexts low baseline G2/M with specific checkpoint defects (e.g., weakened G2/M checkpoint) may predispose cells to lethal mitotic catastrophe when exposed to paclitaxel despite low proliferation.                                            | Wang et al. (G2/M checkpoint weakening can promote mitotic catastrophe under therapy). PMID: (review) **?** — see Wang 2009 (centrosome/G2M regulators). PMCID review. PMID listed in that review.          |
+| HALLMARK_G2M_CHECKPOINT |          After |     **Up** | **Resistance** | Drug-induced increase in G2/M signature (apparent accumulation) can reflect activation of pro-survival checkpoint pathways or an adaptive arrest that allows repair/escape and eventual resistance rather than immediate death.                          | Papers showing adaptive checkpoint/mitotic delay can permit survival (Swanton reviews; general microtubule drug literature). PMID: **17560332**, **15057285**                                               |
+| HALLMARK_G2M_CHECKPOINT |          After |     **Up** |  **Sensitive** | Paclitaxel can cause mitotic arrest/accumulation of cells in G2/M or produce abnormal mitoses (multipolar spindles) that increase mitotic errors and cell death — an increased G2/M signature after treatment is often associated with drug sensitivity. | Zasadil et al., Sci Transl Med 2014 — paclitaxel causes chromosome missegregation on multipolar spindles leading to tumor cell death. PMID: **24670687**; Jordan & Wilson 2004. PMID: **15057285**          |
+| HALLMARK_G2M_CHECKPOINT |          After |   **Down** | **Resistance** | Downregulation of G2/M markers after treatment can indicate selection for quiescent/non-cycling subclones or effective checkpoint recovery/repair that reduce vulnerability to further paclitaxel exposure (treatment escape).                           | Evidence on emergence of noncycling/resistant populations after therapy and taxane resistance reviews. (see taxane resistance reviews; Swanton 2007/2009). PMIDs: **17560332**, **19458043**                |
+| HALLMARK_G2M_CHECKPOINT |          After |   **Down** |  **Sensitive** | In some tumors paclitaxel causes catastrophic mitoses and loss of viable cycling cells; bulk tumor G2/M expression falls because dividing cells are eliminated — this post-treatment G2/M downshift therefore reflects effective killing (sensitivity).  | Zasadil et al. 2014 (paclitaxel cytotoxicity via multipolar spindle missegregation), clinical/review articles on paclitaxel response. PMID: **24670687**; review: Samaan et al. 2019. PMID/PMCID in review. |

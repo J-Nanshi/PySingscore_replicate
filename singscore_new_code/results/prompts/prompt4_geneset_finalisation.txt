@@ -1,0 +1,49 @@
+Task:
+For each pathway listed below, generate a table with the following columns:
+Pathway | Administration | Regulation | Effect | Rationale | Ref(s)
+
+Rules:
+Only focus on breast cancer 
+
+For each pathway, produce 1 row:
+
+Before administration (baseline breast cancer state)
+
+For Before, determine whether baseline up/down regulation predicts sensitivity or resistance to <DRUG_NAME>.
+
+Provide a clear mechanistic rationale for each regulation/effect pair.
+
+Provide a clear link/reference IDs attached to the citations.
+
+Add citation(s): Citations (mandatory for all key claims)
+•	Use:
+o	PMID
+o	NCT IDs
+o	FDA/EMA label IDs
+o	ChEMBL IDs
+o	DrugBank IDs
+o	MSigDB / Reactome / KEGG / GO / ImmuneDB / ImmunoSigDB identifiers
+•	Every claim about:
+o	Mechanism of action (MOA)
+o	Predictive/prognostic biomarkers
+o	Sensitivity mechanisms
+o	Resistance mechanisms
+o	Subtype-specific behavior
+o	Pathway associations
+o	Synonyms / identifiers (ChEMBL / DrugBank)
+o	Contraindications / safety
+→ must have at least one citation.
+Breast cancer subtype awareness
+When possible, explicitly stratify findings by subtype:
+•	HR+/HER2– (Luminal A/B)
+•	HER2+
+•	Triple-negative breast cancer (TNBC)
+•	gBRCA1/2-mutated / HRD+
+•	Basal-like / HER2-enriched / Luminal A / Luminal B
+
+Keep rationale 2-3 sentences, mechanistic, and specific. If breast-only evidence is required, add a short tag in Rationale when using cross-cancer data (e.g., “Mechanism shown in ovarian cancer but relevant to taxane resistance”).
+Output Format Example (must follow this style):
+
+| Pathway                 | Administration | Regulation |         Effect | Rationale                                                                                                                                                                                                                                                | Ref(s)                                                                                                                                                                                                      |
+| ----------------------- | -------------: | ---------: | -------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| HALLMARK_G2M_CHECKPOINT |         Before |     **Up** |  **Sensitive** | Tumors with many actively cycling (G2/M) cells present more mitotic targets (microtubules/mitotic spindles), increasing likelihood of paclitaxel killing dividing cells.                                                                     | Jordan & Wilson review (microtubule drugs target mitosis). Nat Rev Cancer 2004. PMID: **15057285**; Nakayama et al. (CDK1/2 as predictors of paclitaxel response). PMID: **19239702**                       |
