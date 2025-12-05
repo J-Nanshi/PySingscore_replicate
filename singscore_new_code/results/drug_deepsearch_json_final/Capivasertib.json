@@ -1,0 +1,201 @@
+{
+"drug_name": "Capivasertib",
+"cancer_indication": "Hormone receptor–positive (HR+)/HER2-negative advanced breast cancer with activating PI3K pathway alterations (PIK3CA mutation, AKT1 mutation, and/or PTEN loss), in combination with fulvestrant after progression on endocrine therapy.",
+"drug_category": "PI3K–AKT–mTOR pathway inhibitor",
+"drug_class": "pan-AKT inhibitor",
+"moa": "Capivasertib is an oral, ATP-competitive pan-AKT kinase inhibitor that targets AKT1, AKT2, and AKT3 and thereby shuts down the hyperactivated PI3K–AKT–mTOR signaling axis in breast cancer. In tumors with PIK3CA mutations, PTEN loss, or AKT1-activating mutations, capivasertib blocks downstream signaling to mTORC1, FOXO3, and key substrates such as GSK3β and PRAS40, inducing cell-cycle arrest and apoptosis in AKT-addicted cells. In ER+ breast cancer, AKT inhibition reduces ligand-independent estrogen receptor activity and E2F/FOXM1-driven proliferation, resensitizing endocrine-resistant tumors when combined with ER-targeted therapy. In HER2- or RTK-driven disease, capivasertib inhibits the HER2→PI3K→AKT node and can synergize with HER2-targeted agents, while also modulating apoptosis and DNA repair pathways in contexts such as HRD/BRCA-mutated tumors.",
+"chembl_id": "CHEMBL2325741",
+"drugbank_id": "DB12218",
+"synonyms": [
+"AZD5363",
+"AZD-5363",
+"Capivasertibum",
+"TRUQAP®",
+"AZC5363"
+],
+"primary_targets": [
+"AKT1",
+"AKT2",
+"AKT3"
+],
+"pathway_sets": [
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+"PID_FOXO_PATHWAY",
+"HALLMARK_E2F_TARGETS",
+"KEGG_MAPK_SIGNALING_PATHWAY",
+"PID_PI3KCI_PATHWAY",
+"HALLMARK_MTORC1_SIGNALING",
+"HALLMARK_ESTROGEN_RESPONSE_EARLY",
+"HALLMARK_APOPTOSIS",
+"REACTOME_SIGNALING_BY_ERBB2"
+],
+"pathway_sets_annotations": {
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+"description": "Canonical PI3K–AKT–mTOR growth and survival signaling driven by upstream oncogenic events such as PIK3CA mutation, PTEN loss, and AKT1 mutations, promoting cell-cycle progression, metabolism, and protein synthesis in breast cancer cells.",
+"interpretation": "In breast cancer, frequent activation of this pathway (via PIK3CA, PTEN, or AKT1 alterations and HER2/RTK input) creates strong dependency on AKT signaling; capivasertib directly targets this axis, and tumors with high PI3K–AKT–mTOR activity are particularly sensitive while those that maintain downstream output (e.g., persistent mTORC1 activity) show resistance."
+},
+"PID_FOXO_PATHWAY": {
+"description": "FOXO transcription factor signaling (notably FOXO3) that is negatively regulated by AKT and controls genes involved in cell-cycle arrest (e.g., p27Kip1), apoptosis (e.g., BIM), and stress responses.",
+"interpretation": "In ER+ PIK3CA-mutant breast cancer, AKT normally phosphorylates and inactivates FOXO3; capivasertib relieves this inhibition, allowing FOXO3 to repress FOXM1/E2F proliferation programs and induce pro-apoptotic genes, so an intact FOXO3 pathway is crucial for effective AKT inhibition and its loss mediates resistance."
+},
+"HALLMARK_E2F_TARGETS": {
+"description": "E2F and FOXM1-driven transcriptional program regulating G1–S and G2–M cell-cycle progression, including cyclins, CDKs, and mitotic genes.",
+"interpretation": "In luminal ER+ breast cancers, high FOXM1/E2F target gene expression sustains proliferation and is enriched in capivasertib-resistant models, whereas downregulation of this cell-cycle signature (often via FOXO3 activation) characterizes responding tumors and reflects effective growth arrest under AKT inhibition."
+},
+"KEGG_MAPK_SIGNALING_PATHWAY": {
+"description": "RAS–RAF–MEK–ERK signaling cascade downstream of receptor tyrosine kinases that promotes proliferation, survival, and transcriptional responses.",
+"interpretation": "Upon AKT blockade with capivasertib, breast tumors frequently show feedback upregulation of ERK1/2 phosphorylation and MAPK pathway signatures, providing an alternative proliferative route that underlies primary and adaptive resistance, while concurrent MAPK suppression enhances response."
+},
+"PID_PI3KCI_PATHWAY": {
+"description": "Class I PI3K signaling module integrating inputs from growth factor receptors (including HER2, EGFR, IGF/insulin) to generate PIP3 and activate downstream kinases such as AKT and SGK1.",
+"interpretation": "In breast cancer, genomic lesions like PIK3CA mutation and PTEN loss hyperactivate class I PI3K signaling, driving AKT and SGK1 activity; this both creates capivasertib-sensitive addiction to AKT and enables SGK1-mediated bypass resistance when alternative PI3K effectors are upregulated."
+},
+"HALLMARK_MTORC1_SIGNALING": {
+"description": "mTORC1-dependent regulation of protein translation and cell growth via phosphorylation of substrates such as S6 ribosomal protein and 4EBP1, linking nutrient and growth factor signals to biosynthesis.",
+"interpretation": "In capivasertib-treated PIK3CA-mutant breast tumors, suppression of mTORC1 signaling and translation correlates with clinical benefit, whereas persistent or reactivated mTORC1-driven protein synthesis (high phospho-4EBP1 and ribosomal protein expression) marks intrinsic or acquired resistance."
+},
+"HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+"description": "Estrogen receptor–regulated early response gene program controlling proliferation and survival in hormone receptor–positive breast epithelial cells.",
+"interpretation": "In HR+ breast cancer, ER signaling crosstalks with AKT; capivasertib reduces ER phosphorylation and, when combined with ER downregulators like fulvestrant, leads to deeper suppression of estrogen response genes, overcoming endocrine resistance driven by PI3K–AKT hyperactivation."
+},
+"HALLMARK_APOPTOSIS": {
+"description": "Apoptotic signaling cascades, including mitochondrial pathways governed by BCL-2 family proteins and pro-apoptotic mediators such as BAD, BIM, BAX, and BAK.",
+"interpretation": "AKT inhibition by capivasertib shifts the balance toward apoptosis in breast cancer cells by preventing phosphorylation of pro-apoptotic proteins and enabling FOXO3-driven BIM induction; tumors with intact apoptotic machinery are more likely to undergo cell death, whereas those with suppressed pro-apoptotic signaling resist AKT blockade."
+},
+"REACTOME_SIGNALING_BY_ERBB2": {
+"description": "ERBB2/HER2 receptor tyrosine kinase signaling network that activates downstream PI3K–AKT and RAS–MAPK pathways to promote proliferation and survival, particularly in HER2-amplified breast cancer.",
+"interpretation": "HER2-driven breast tumors often signal through PI3K–AKT, and preclinical data show that combining capivasertib with anti-HER2 therapies can more completely shut down ERBB2→PI3K→AKT signaling, suggesting a role for this pathway in both driving disease and shaping response or resistance to AKT inhibition in HER2-enriched contexts."
+}
+},
+"sensitivity_genes_up": [
+"PIK3CA",
+"AKT1",
+"FOXO3"
+],
+"sensitivity_genes_down": [
+"PTEN",
+"FOXM1",
+"SGK1",
+"BRCA1",
+"BRCA2"
+],
+"resistance_genes_up": [
+"FOXM1",
+"SGK1"
+],
+"resistance_genes_down": [
+"FOXO3"
+],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "PIK3CA",
+"interpretation": "Activating PIK3CA mutations hyperactivate PI3K–AKT signaling in breast tumors, creating strong dependency on AKT; clinical trials showed that PIK3CA-mutant cancers derive greater progression-free survival benefit from capivasertib, indicating that this gain-of-function alteration increases sensitivity to AKT inhibition."
+},
+{
+"gene": "AKT1",
+"interpretation": "The AKT1 E17K activating mutation drives estrogen-independent signaling in ER+ breast cancer, and AKT1-mutant tumors demonstrated notable response rates to capivasertib monotherapy, consistent with enhanced sensitivity when AKT1 is constitutively activated and then specifically inhibited."
+},
+{
+"gene": "FOXO3",
+"interpretation": "FOXO3 is a critical effector of capivasertib’s mechanism; when AKT is inhibited, active FOXO3 induces cell-cycle arrest and apoptosis via target genes such as p27 and BIM, and preclinical work shows that higher FOXO3 activity or intact FOXO3 function correlates with better response to AKT inhibition in PIK3CA-altered ER+ models."
+}
+],
+"sensitivity_genes_down_annotations": [
+{
+"gene": "PTEN",
+"interpretation": "Loss or downregulation of PTEN releases negative control of PI3K signaling, leading to marked AKT hyperactivation; HR+ and TNBC tumors with PTEN loss are particularly dependent on AKT and have shown enhanced benefit from capivasertib, making PTEN deficiency a sensitizing context."
+},
+{
+"gene": "FOXM1",
+"interpretation": "FOXM1 is a proliferation-driving transcription factor; experimental downregulation or knockdown of FOXM1 in ER+ breast cancer cells reverses acquired resistance and restores sensitivity to capivasertib, indicating that low FOXM1/mitotic drive allows AKT inhibition to more effectively arrest growth and induce death."
+},
+{
+"gene": "SGK1",
+"interpretation": "SGK1 can substitute for AKT downstream of PI3K; breast cancer models with low SGK1 expression lack this backup route and are more vulnerable to capivasertib, whereas SGK1 knockdown in resistant lines re-sensitizes them, so reduced SGK1 signaling enhances sensitivity to AKT inhibition."
+},
+{
+"gene": "BRCA1",
+"interpretation": "BRCA1 loss creates homologous recombination deficiency, and preclinical studies show that AKT inhibition is synthetic lethal with BRCA1 deficiency and augments the effects of PARP inhibition; thus, downregulated or mutated BRCA1 can increase sensitivity to capivasertib in DNA repair–defective breast cancers, particularly in combination regimens."
+},
+{
+"gene": "BRCA2",
+"interpretation": "Similar to BRCA1, BRCA2 loss underlies HR-deficient breast cancers that accumulate DNA damage; early clinical and preclinical data suggest that combining capivasertib with PARP inhibitors is effective in BRCA1/2-mutated tumors, implying that reduced BRCA2-mediated repair heightens susceptibility to AKT pathway suppression."
+}
+],
+"resistance_genes_up_annotations": [
+{
+"gene": "FOXM1",
+"interpretation": "Long-term capivasertib exposure in ER+ PIK3CA-mutant breast cancer models leads to marked FOXM1 upregulation, maintaining G2/M and mitotic gene expression despite AKT/FOXO3 blockade; overexpression of FOXM1 experimentally diminishes capivasertib efficacy, demonstrating that high FOXM1 promotes resistance by sustaining cell-cycle progression."
+},
+{
+"gene": "SGK1",
+"interpretation": "Elevated SGK1 expression and activity (with increased phosphorylation of its substrate NDRG1) characterizes breast cancer cell lines intrinsically resistant to capivasertib and other AKT inhibitors; SGK1 can maintain phosphorylation of shared downstream targets when AKT is inhibited, so SGK1 upregulation provides a parallel survival pathway that confers resistance."
+}
+],
+"resistance_genes_down_annotations": [
+{
+"gene": "FOXO3",
+"interpretation": "Deletion or functional downregulation of FOXO3 (FOXO3A) in ER+ PIK3CA-altered breast cancer models abolishes capivasertib-induced transcriptional repression and apoptosis, resulting in marked resistance; loss of this tumor suppressor pathway prevents AKT inhibition from triggering the necessary cell-cycle arrest and cell death program."
+}
+],
+"kg_gene_relationships": [
+"Capivasertib|inhibits|AKT1",
+"Capivasertib|inhibits|AKT2",
+"Capivasertib|inhibits|AKT3",
+"PIK3CA_mutation|activates|PI3K_AKT_mTOR_signaling",
+"PTEN_loss|hyperactivates|PI3K_AKT_mTOR_signaling",
+"PIK3CA_mutation|confers_sensitivity_to|Capivasertib",
+"AKT1_E17K_mutation|confers_sensitivity_to|Capivasertib",
+"PTEN_loss|confers_sensitivity_to|Capivasertib",
+"FOXO3A_deletion|confers_resistance_to|Capivasertib",
+"FOXM1_overexpression|confers_resistance_to|Capivasertib",
+"FOXM1_knockdown|confers_sensitivity_to|Capivasertib",
+"SGK1_overexpression|confers_resistance_to|Capivasertib",
+"SGK1_knockdown|confers_sensitivity_to|Capivasertib"
+],
+"citations": [
+"Capivasertib: Uses, Interactions, Mechanism of Action | DrugBank Online",
+"[https://go.drugbank.com/drugs/DB12218](https://go.drugbank.com/drugs/DB12218)",
+"Safety Profile | TRUQAP® (capivasertib) Tablets | For HCPs",
+"[https://www.truqaphcp.com/safety](https://www.truqaphcp.com/safety)",
+""The emerging role of capivasertib in breast cancer" - PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/35398754/](https://pubmed.ncbi.nlm.nih.gov/35398754/)",
+"Capivasertib Plus Paclitaxel Misses OS End Points in Advanced Triple-Negative Breast Cancer | OncLive",
+"[https://www.onclive.com/view/capivasertib-plus-paclitaxel-misses-os-end-points-in-advanced-triple-negative-breast-cancer](https://www.onclive.com/view/capivasertib-plus-paclitaxel-misses-os-end-points-in-advanced-triple-negative-breast-cancer)",
+"Capivasertib (AZD5363) | Akt inhibitor | Mechanism | Concentration",
+"[https://www.selleckchem.com/products/azd5363.html](https://www.selleckchem.com/products/azd5363.html)",
+"Frontiers | Crosstalk between protein kinases AKT and ERK1/2 in human lung tumor-derived cell models",
+"[https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.1045521/full](https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.1045521/full)",
+"Resistance to Targeted Inhibitors of the PI3K/AKT/mTOR Pathway in ...",
+"[https://pubmed.ncbi.nlm.nih.gov/38927964/](https://pubmed.ncbi.nlm.nih.gov/38927964/)",
+"AKT Antagonist AZD5363 Influences Estrogen Receptor Function in ...",
+"[https://pubmed.ncbi.nlm.nih.gov/26116361/](https://pubmed.ncbi.nlm.nih.gov/26116361/)",
+"Compound: CAPIVASERTIB (CHEMBL2325741) - ChEMBL",
+"[https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2325741](https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2325741)",
+"The interplay between FOXO3 and FOXM1 influences sensitivity to AKT inhibition in PIK3CA and PIK3CA/PTEN altered estrogen receptor positive breast cancer | npj Breast Cancer",
+"[https://www.nature.com/articles/s41523-025-00752-9?error=cookies_not_supported&code=1547208e-bc91-4d11-b812-2aced919950d](https://www.nature.com/articles/s41523-025-00752-9?error=cookies_not_supported&code=1547208e-bc91-4d11-b812-2aced919950d)",
+"mTORC1-Driven Protein Translation Correlates with Clinical Benefit of Capivasertib within a Genetically Preselected Cohort of PIK3CA-Altered Tumors - PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/38954770/](https://pubmed.ncbi.nlm.nih.gov/38954770/)",
+"Phase I Trial of the PARP Inhibitor Olaparib and AKT ... - PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/32532747/](https://pubmed.ncbi.nlm.nih.gov/32532747/)",
+"Elevated SGK1 predicts resistance of breast cancer cells to Akt inhibitors - PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/23581296/](https://pubmed.ncbi.nlm.nih.gov/23581296/)",
+"AKT inhibition impairs PCNA ubiquitylation and triggers synthetic ...",
+"[https://www.nature.com/articles/s41388-019-0724-7](https://www.nature.com/articles/s41388-019-0724-7)",
+"AKT inhibition is synthetic lethal with the homologous recombination...",
+"[https://www.researchgate.net/figure/AKT-inhibition-is-synthetic-lethal-with-the-homologous-recombination-HR-deficiency_fig11_330767504](https://www.researchgate.net/figure/AKT-inhibition-is-synthetic-lethal-with-the-homologous-recombination-HR-deficiency_fig11_330767504)",
+"Oral SERDs and PI3K Inhibitors Move the Needle Beyond CDK4/6 Inhibitors in Metastatic Breast Cancer | OncLive",
+"[https://www.onclive.com/view/oral-serds-and-pi3k-inhibitors-move-the-needle-beyond-cdk4-6-inhibitors-in-metastatic-breast-cancer](https://www.onclive.com/view/oral-serds-and-pi3k-inhibitors-move-the-needle-beyond-cdk4-6-inhibitors-in-metastatic-breast-cancer)",
+"Mechanisms of acquired resistance to AKT inhibitor capivasertib in ...",
+"[https://aacrjournals.org/cancerres/article/84/7_Supplement/LB450/742769/Abstract-LB450-Mechanisms-of-acquired-resistance](https://aacrjournals.org/cancerres/article/84/7_Supplement/LB450/742769/Abstract-LB450-Mechanisms-of-acquired-resistance)",
+"Resistance to Targeted Inhibitors of the PI3K/AKT/mTOR Pathway in ...",
+"[https://pmc.ncbi.nlm.nih.gov/articles/PMC11201395/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11201395/)",
+"Truqap Disease Interactions - Drugs.com",
+"[https://www.drugs.com/disease-interactions/capivasertib,truqap.html](https://www.drugs.com/disease-interactions/capivasertib,truqap.html)",
+"Fulvestrant plus capivasertib versus placebo after relapse or ...",
+"[https://www.sciencedirect.com/science/article/pii/S1470204519308174](https://www.sciencedirect.com/science/article/pii/S1470204519308174)",
+"Cost-Effectiveness of Capivasertib as a Second-Line Therapy for ...",
+"[https://europepmc.org/article/med/39630382](https://europepmc.org/article/med/39630382)"
+],
+"notes": "This JSON encodes only pathways, genes, mechanisms, and safety context explicitly described for capivasertib in human breast cancer in the provided deep-research output, with conservative gene-level lists focused on well-supported sensitivity and resistance mechanisms (PIK3CA/AKT1/PTEN-driven PI3K–AKT activation, FOXO3–FOXM1 axis, SGK1, and BRCA1/2 in HRD settings). Some aspects, particularly immune microenvironment effects and certain DNA repair interactions, are still emerging or based on preclinical or combination-therapy data and should be interpreted cautiously. No additional pathways, genes, or citations beyond those in the source document have been added.  "
+}

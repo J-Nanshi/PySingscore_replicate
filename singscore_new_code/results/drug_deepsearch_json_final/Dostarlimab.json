@@ -1,0 +1,259 @@
+{
+"drug_name": "Dostarlimab",
+"cancer_indication": "Investigational PD-1 blockade in human breast cancer, with emerging use in PD-L1–positive triple-negative breast cancer (TNBC) and selected biomarker-enriched subgroups (e.g. BRCA1/2-mutated or HRD-positive tumors) based on class-effect data and early dostarlimab combination trials.",
+"drug_category": "Immune checkpoint inhibitor (PD-1)",
+"drug_class": "Humanized IgG4 anti–PD-1 monoclonal antibody",
+"moa": "Dostarlimab binds the PD-1 (PDCD1) receptor on activated T cells and blocks its interaction with PD-L1 and PD-L2, releasing PD-1–mediated co-inhibition and restoring T-cell proliferation, cytokine production and cytotoxic function against tumor cells in breast cancer. Its efficacy depends on an immune-inflamed tumor microenvironment with intact antigen presentation, T-cell receptor signaling and interferon responses, which is most commonly seen in PD-L1–positive TNBC, HER2-enriched and some BRCA1/2-mutated or HRD-positive tumors. Resistance arises when tumors downregulate antigen presentation or interferon signaling, or upregulate immunosuppressive pathways such as TGF-β, WNT/β-catenin, PI3K/AKT, IDO1/kynurenine and alternate checkpoint receptors.",
+
+"chembl_id": "CHEMBL4298124",
+"drugbank_id": "DB15627",
+
+"synonyms": [
+"Dostarlimab-gxly",
+"Jemperli",
+"TSR-042",
+"GSK-4057190",
+"ANB-011",
+"WBP-285"
+],
+
+"primary_targets": [
+"PDCD1"
+],
+
+"pathway_sets": [
+"REACTOME_CO_INHIBITION_BY_PD_1",
+"KEGG_T_CELL_RECEPTOR_SIGNALING_PATHWAY",
+"HALLMARK_INTERFERON_GAMMA_RESPONSE",
+"KEGG_MEDICUS_REFERENCE_CGAS_STING_SIGNALING_PATHWAY",
+"GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION_OF_PEPTIDE_ANTIGEN_VIA_MHC_CLASS_I",
+"HALLMARK_TGF_BETA_SIGNALING",
+"HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+"GOBP_TOLERANCE_INDUCTION_DEPENDENT_UPON_IMMUNE_RESPONSE",
+"GOBP_L_TRYPTOPHAN_CATABOLIC_PROCESS_TO_KYNURENINE",
+"REACTOME_INTERLEUKIN_10_SIGNALING",
+"KEGG_JAK_STAT_SIGNALING_PATHWAY"
+],
+
+"pathway_sets_annotations": {
+"REACTOME_CO_INHIBITION_BY_PD_1": {
+"description": "PD-1 co-inhibitory immune checkpoint signaling in activated T cells, where engagement of PD-1 (PDCD1) by PD-L1/PD-L2 dampens T-cell receptor signaling, proliferation and cytokine production, limiting effector T-cell responses.",
+"interpretation": "In breast cancer, this pathway is the primary target of dostarlimab; blocking PD-1 co-inhibition reinvigorates tumor-infiltrating lymphocytes and restores anti-tumor immunity, particularly in immune-inflamed TNBC and HER2-enriched tumors with pre-existing T-cell activity."
+},
+"KEGG_T_CELL_RECEPTOR_SIGNALING_PATHWAY": {
+"description": "T-cell receptor (TCR) signaling cascade triggered by recognition of peptide–MHC complexes, leading to activation of downstream kinases, transcription factors and effector functions in T cells.",
+"interpretation": "Breast tumors with intact antigen presentation and robust TCR signaling (high MHC I, adequate costimulation and TILs) show better responses to PD-1 blockade with dostarlimab, whereas defects in antigen presentation or costimulation can render tumors resistant despite PD-1 inhibition."
+},
+"HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+"description": "Genes induced by interferon-gamma, reflecting a Th1-type inflammatory response including chemokines (e.g. CXCL9, CXCL10), antigen presentation molecules and immune activation markers.",
+"interpretation": "A high IFN-γ response signature in breast tumors, especially TNBC, correlates with a T-cell–inflamed microenvironment and predicts increased sensitivity to PD-1 inhibitors such as dostarlimab, while loss of IFN-γ responsiveness via JAK/STAT defects confers resistance."
+},
+"KEGG_MEDICUS_REFERENCE_CGAS_STING_SIGNALING_PATHWAY": {
+"description": "Cytosolic DNA-sensing pathway centered on cGAS–STING, which detects double-stranded DNA in the cytosol and induces type I interferon and inflammatory cytokine production.",
+"interpretation": "In BRCA1/2-mutated and HRD-positive breast cancers, DNA damage activates cGAS–STING, promoting type I IFN signaling, dendritic cell activation and T-cell recruitment, thereby sensitizing tumors to dostarlimab, particularly in combinations with PARP inhibitors that further enhance STING activation."
+},
+"GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION_OF_PEPTIDE_ANTIGEN_VIA_MHC_CLASS_I": {
+"description": "Processing of intracellular proteins into peptides and their loading onto MHC class I molecules for presentation to CD8+ T cells, involving components such as the immunoproteasome, TAP complex, tapasin, β2-microglobulin and HLA class I.",
+"interpretation": "Breast tumors that maintain or upregulate MHC I antigen presentation are more susceptible to T-cell–mediated killing unleashed by dostarlimab, whereas loss of B2M, HLA class I or other antigen-processing components results in immune escape and resistance to PD-1 blockade."
+},
+"HALLMARK_TGF_BETA_SIGNALING": {
+"description": "Transforming growth factor-beta signaling through SMAD and non-SMAD pathways, regulating fibrosis, epithelial–mesenchymal transition, immune suppression and stromal remodeling.",
+"interpretation": "High TGF-β signaling in breast tumors and their stroma promotes immune exclusion, Treg and MDSC recruitment and IDO1 induction, and is associated with poor response or resistance to PD-1 inhibitors like dostarlimab, whereas suppression of TGF-β signaling can improve T-cell infiltration and sensitivity."
+},
+"HALLMARK_WNT_BETA_CATENIN_SIGNALING": {
+"description": "Canonical WNT signaling via β-catenin stabilization and nuclear translocation, controlling developmental programs, stemness and cell fate.",
+"interpretation": "Upregulated WNT/β-catenin signaling in basal-like and other breast cancers excludes dendritic cells and T cells from the tumor microenvironment, creating immune-cold tumors that resist dostarlimab, while downregulation of this pathway is linked to improved TIL priming and checkpoint inhibitor responsiveness."
+},
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+"description": "PI3K–AKT–mTOR intracellular signaling axis driving cell growth, survival, metabolism and proliferation downstream of growth factor and oncogenic inputs.",
+"interpretation": "Hyperactive PI3K–AKT signaling (e.g. via PTEN loss) in breast tumors promotes an immunosuppressive milieu with reduced antigen presentation and TILs and increased VEGF and other factors, contributing to resistance to dostarlimab, whereas pharmacologic or genetic attenuation of this pathway can enhance immune infiltration and PD-1 blockade efficacy."
+},
+"GOBP_TOLERANCE_INDUCTION_DEPENDENT_UPON_IMMUNE_RESPONSE": {
+"description": "Immune processes that induce peripheral tolerance following immune activation, including the induction of regulatory T cells and production of suppressive mediators such as IDO1, TGF-β and IL-10.",
+"interpretation": "In breast cancer, chronic immune activation and PD-1 pathway engagement can drive tolerance programs (e.g. Treg accumulation, IDO1 and IL-10 upregulation), establishing an immunosuppressive microenvironment that counteracts the reinvigorated T cells produced by dostarlimab."
+},
+"GOBP_L_TRYPTOPHAN_CATABOLIC_PROCESS_TO_KYNURENINE": {
+"description": "Catabolism of L-tryptophan to kynurenine, largely mediated by indoleamine 2,3-dioxygenase 1 (IDO1), generating metabolites that modulate immune responses.",
+"interpretation": "High IDO1-driven tryptophan catabolism in breast tumors depletes tryptophan and accumulates immunosuppressive kynurenines, promoting T-cell dysfunction and regulatory T-cell expansion, thereby conferring resistance to dostarlimab; conversely, low IDO1 activity or pathway inhibition is associated with improved checkpoint inhibitor responses."
+},
+"REACTOME_INTERLEUKIN_10_SIGNALING": {
+"description": "Interleukin-10 signaling pathway, in which IL-10 engages its receptor to activate downstream JAK–STAT signaling and exert anti-inflammatory and immunosuppressive effects.",
+"interpretation": "Elevated IL-10 signaling in the breast tumor microenvironment contributes to a "cold" immunosuppressive state with limited T-cell activation, and is described as part of cytokine milieus that blunt the effectiveness of PD-1 blockade with dostarlimab."
+},
+"KEGG_JAK_STAT_SIGNALING_PATHWAY": {
+"description": "Janus kinase (JAK)–signal transducer and activator of transcription (STAT) cascades downstream of cytokine receptors (including IFN and IL-6 family receptors), governing transcriptional responses to cytokines.",
+"interpretation": "Intact JAK–STAT signaling is required for breast cancer cells to respond to IFN-γ by upregulating MHC I and pro-apoptotic programs under PD-1 blockade; loss-of-function mutations in JAK1/2 or downregulation of IFNGR/IRF1 abrogate these responses and are implicated as mechanisms of resistance to dostarlimab, while chronic IL-6/STAT3 activation supports immunosuppressive MDSCs and macrophages that also limit benefit."
+}
+},
+
+"sensitivity_genes_up": [
+"CXCL9",
+"CXCL10",
+"STING1",
+"IFNB1"
+],
+"sensitivity_genes_down": [
+"IDO1"
+],
+"resistance_genes_up": [
+"IDO1",
+"HAVCR2",
+"LAG3",
+"FOXP3",
+"CCL22",
+"CCR4"
+],
+"resistance_genes_down": [
+"B2M",
+"HLA-A",
+"JAK1",
+"JAK2",
+"IFNGR1",
+"IFNGR2",
+"IRF1",
+"FAS",
+"CD80",
+"CD86"
+],
+
+"sensitivity_genes_up_annotations": [
+{
+"gene": "CXCL9",
+"interpretation": "High baseline CXCL9 expression is part of an IFN-γ–related, T-cell–inflamed gene expression profile in breast cancer that correlates with greater sensitivity to PD-1 blockade, reflecting enhanced recruitment and activation of CXCR3+ effector T cells."
+},
+{
+"gene": "CXCL10",
+"interpretation": "CXCL10 is another IFN-γ–inducible chemokine whose elevated expression marks an immune-inflamed TNBC microenvironment with abundant TILs, and increased CXCL10 is associated with improved responses to PD-1 inhibitors such as dostarlimab."
+},
+{
+"gene": "STING1",
+"interpretation": "Upregulation of STING1 (STING pathway) and related genes in HRD-positive and BRCA-mutated breast tumors promotes type I interferon production and dendritic cell activation, enhancing CD8+ T-cell priming and sensitizing these tumors to dostarlimab, particularly in PARP inhibitor combinations."
+},
+{
+"gene": "IFNB1",
+"interpretation": "Increased IFNB1 expression reflects active cGAS–STING signaling and type I interferon responses in breast cancers that respond to PD-1 blockade, supporting enhanced immune recognition and improved benefit from dostarlimab."
+}
+],
+"sensitivity_genes_down_annotations": [
+{
+"gene": "IDO1",
+"interpretation": "Breast tumors with low baseline IDO1 expression or limited induction of the IDO1–kynurenine pathway exhibit less tryptophan depletion and immunosuppressive metabolite production, which is associated with better T-cell function and improved responses to PD-1 inhibitors including dostarlimab."
+}
+],
+"resistance_genes_up_annotations": [
+{
+"gene": "IDO1",
+"interpretation": "High IDO1 expression in breast tumors drives tryptophan catabolism to kynurenine, suppressing effector T cells and promoting regulatory T cells; in TNBC and other settings, high baseline IDO1 has been associated with worse outcomes on immune checkpoint inhibitors, indicating resistance to PD-1 blockade."
+},
+{
+"gene": "HAVCR2",
+"interpretation": "HAVCR2 (TIM-3) is upregulated on tumor-infiltrating T cells after PD-1 blockade as an adaptive resistance mechanism; increased TIM-3 expression in post-therapy breast cancer samples signifies continued T-cell exhaustion and reduced efficacy of dostarlimab."
+},
+{
+"gene": "LAG3",
+"interpretation": "LAG3 is another inhibitory checkpoint receptor that is upregulated on TILs in breast tumors that do not respond to PD-1 therapy, contributing to redundant inhibitory signaling that limits the benefit of dostarlimab."
+},
+{
+"gene": "FOXP3",
+"interpretation": "Increased infiltration of FOXP3+ regulatory T cells has been observed in breast tumors progressing on PD-1 inhibitors, reflecting expansion of immunosuppressive Tregs that counteract the reinvigorated effector T cells induced by dostarlimab."
+},
+{
+"gene": "CCL22",
+"interpretation": "CCL22 expression recruits CCR4+ regulatory T cells into the breast tumor microenvironment; upregulation of CCL22 in tumors progressing on PD-1 therapy is implicated in Treg-mediated resistance to dostarlimab."
+},
+{
+"gene": "CCR4",
+"interpretation": "CCR4 on regulatory T cells mediates their chemotaxis in response to ligands such as CCL22; high CCR4-dependent Treg trafficking supports an immunosuppressive niche that undermines the anti-tumor activity of dostarlimab."
+}
+],
+"resistance_genes_down_annotations": [
+{
+"gene": "B2M",
+"interpretation": "Loss-of-function mutations or downregulation of B2M in breast tumors result in loss of MHC class I surface expression, preventing CD8+ T cells from recognizing tumor antigens and causing resistance to PD-1 blockade with dostarlimab."
+},
+{
+"gene": "HLA-A",
+"interpretation": "Reduced HLA-A expression and broader HLA class I downregulation have been observed in metastatic breast cancer lesions that fail PD-1 therapy, indicating that diminished MHC I presentation contributes to escape from dostarlimab-induced T-cell killing."
+},
+{
+"gene": "JAK1",
+"interpretation": "Inactivating mutations in JAK1 abrogate interferon signaling in tumor cells so that IFN-γ released by T cells cannot induce MHC I or growth arrest, a mechanism described in PD-1–refractory cancers and implicated in resistance to dostarlimab."
+},
+{
+"gene": "JAK2",
+"interpretation": "JAK2 loss-of-function mutations have been reported in metastatic TNBC resistant to pembrolizumab, and by analogy such defects prevent IFN-γ–driven upregulation of antigen presentation and apoptosis, conferring resistance to PD-1 blockade including dostarlimab."
+},
+{
+"gene": "IFNGR1",
+"interpretation": "Downregulation of IFNGR1 reduces tumor cell responsiveness to IFN-γ, limiting induction of PD-L1, MHC I and pro-apoptotic genes, and is described as one way tumors escape the immune pressure unleashed by PD-1 inhibitors."
+},
+{
+"gene": "IFNGR2",
+"interpretation": "Reduced IFNGR2 expression similarly impairs IFN-γ receptor signaling in breast cancer cells, preventing full execution of interferon-mediated anti-tumor programs despite active T cells under dostarlimab therapy."
+},
+{
+"gene": "IRF1",
+"interpretation": "Loss or downregulation of IRF1, a key transcription factor for IFN-γ responses, blunts induction of PD-L1, CXCL9 and other immunogenic genes in tumor cells, contributing to resistance to PD-1 blockade in breast cancer."
+},
+{
+"gene": "FAS",
+"interpretation": "Downregulation or loss of the death receptor FAS on breast cancer cells diminishes their susceptibility to Fas/FasL-mediated apoptosis by cytotoxic T cells, enabling survival despite dostarlimab-mediated T-cell activation."
+},
+{
+"gene": "CD80",
+"interpretation": "Low expression of the costimulatory ligand CD80 on antigen-presenting cells in the breast tumor microenvironment impairs T-cell priming and costimulation, which can lead to primary resistance where PD-1 blockade alone cannot fully activate T cells."
+},
+{
+"gene": "CD86",
+"interpretation": "Reduced CD86 levels on dendritic cells and other APCs weaken CD28-mediated costimulatory signaling to T cells, contributing to ineffective T-cell activation and resistance to dostarlimab even when PD-1 is blocked."
+}
+],
+
+"kg_gene_relationships": [
+"Dostarlimab|inhibits|PDCD1",
+"CXCL9_high|confers_sensitivity_to|Dostarlimab",
+"CXCL10_high|confers_sensitivity_to|Dostarlimab",
+"STING1_activation|confers_sensitivity_to|Dostarlimab",
+"IFNB1_upregulation|confers_sensitivity_to|Dostarlimab",
+"IDO1_overexpression|confers_resistance_to|Dostarlimab",
+"IDO1_low|confers_sensitivity_to|Dostarlimab",
+"B2M_loss|confers_resistance_to|Dostarlimab",
+"HLA-A_downregulation|confers_resistance_to|Dostarlimab",
+"JAK1_loss|confers_resistance_to|Dostarlimab",
+"JAK2_loss|confers_resistance_to|Dostarlimab",
+"FAS_downregulation|confers_resistance_to|Dostarlimab",
+"HAVCR2_upregulation|confers_resistance_to|Dostarlimab",
+"LAG3_upregulation|confers_resistance_to|Dostarlimab",
+"FOXP3_positive_Treg_infiltration|confers_resistance_to|Dostarlimab"
+],
+
+"citations": [
+"[https://pubmed.ncbi.nlm.nih.gov/34106455/](https://pubmed.ncbi.nlm.nih.gov/34106455/)",
+"[https://go.drugbank.com/drugs/DB15627](https://go.drugbank.com/drugs/DB15627)",
+"[https://www.cancer.gov/publications/dictionaries/cancer-drug/def/dostarlimab](https://www.cancer.gov/publications/dictionaries/cancer-drug/def/dostarlimab)",
+"[https://bmccancer.biomedcentral.com/articles/10.1186/s12885-024-13105-9](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-024-13105-9)",
+"[https://www.mdpi.com/2227-9059/9/11/1687](https://www.mdpi.com/2227-9059/9/11/1687)",
+"[https://www.esmo.org/oncology-news/adding-pd1-inhibitor-to-neoadjuvant-chemotherapy-significantly-increases-the-pcr-rate-in high-risk-early-stage-er-positive-her2-negative-breast-cancer](https://www.esmo.org/oncology-news/adding-pd1-inhibitor-to-neoadjuvant-chemotherapy-significantly-increases-the-pcr-rate-in high-risk-early-stage-er-positive-her2-negative-breast-cancer)",
+"[https://www.onclive.com/view/neoadjuvant-niraparib-plus-dostarlimab-data-support-development-of-non-chemo-approaches-in brca-er-breast-cancer](https://www.onclive.com/view/neoadjuvant-niraparib-plus-dostarlimab-data-support-development-of-non-chemo-approaches-in brca-er-breast-cancer)",
+"[https://dgidb.org/drugs/rxcui:2539967](https://dgidb.org/drugs/rxcui:2539967)",
+"[https://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId=11518](https://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId=11518)",
+"[https://www.accessdata.fda.gov/drugsatfda_docs/nda/2021/761223Orig1s000OtherR.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/nda/2021/761223Orig1s000OtherR.pdf)",
+"[https://www.nature.com/articles/s41598-024-76296-y](https://www.nature.com/articles/s41598-024-76296-y)",
+"[https://ascopubs.org/doi/10.1200/JCO.2021.39.15_suppl.4058](https://ascopubs.org/doi/10.1200/JCO.2021.39.15_suppl.4058)",
+"[https://www.researchgate.net/publication/390669739_Progress_of_PD-1PD L1_immune_checkpoint_inhibitors_in_the_treatment_of_triple-negative_breast_cancer](https://www.researchgate.net/publication/390669739_Progress_of_PD-1PD L1_immune_checkpoint_inhibitors_in_the_treatment_of_triple-negative_breast_cancer)",
+"[https://pmc.ncbi.nlm.nih.gov/articles/PMC9118588/](https://pmc.ncbi.nlm.nih.gov/articles/PMC9118588/)",
+"[https://molecular-cancer.biomedcentral.com/articles/10.1186/s12943-025-02400-z](https://molecular-cancer.biomedcentral.com/articles/10.1186/s12943-025-02400-z)",
+"[https://www.nature.com/articles/s41598-024-76296-y?error=cookies_not_supported&code=3086f44e-832a-4fef-8382-0273d74a7972](https://www.nature.com/articles/s41598-024-76296-y?error=cookies_not_supported&code=3086f44e-832a-4fef-8382-0273d74a7972)",
+"[https://gskpro.com/content/dam/global/hcpportal/en_US/Prescribing_Information/Jemperli/pdf/JEMPERLI-PI-MG.PDF](https://gskpro.com/content/dam/global/hcpportal/en_US/Prescribing_Information/Jemperli/pdf/JEMPERLI-PI-MG.PDF)",
+"[https://www.ema.europa.eu/en/documents/product-information/jemperli-epar-product-information_en.pdf](https://www.ema.europa.eu/en/documents/product-information/jemperli-epar-product-information_en.pdf)",
+"[https://gskpro.com/en-ie/products/jemperli-new/safety/](https://gskpro.com/en-ie/products/jemperli-new/safety/)",
+"[https://www.cancernetwork.com/view/niraparib-dostarlimab-shows-promise-in-brca-er-her2-breast-cancer](https://www.cancernetwork.com/view/niraparib-dostarlimab-shows-promise-in-brca-er-her2-breast-cancer)",
+"[https://www.esmoopen.com/article/S2059-7029(23)00605-1/fulltext](https://www.esmoopen.com/article/S2059-7029%2823%2900605-1/fulltext)",
+"[https://www.cancer.gov/research/participate/clinical-trials-search/v?id=NCI-2021-08759](https://www.cancer.gov/research/participate/clinical-trials-search/v?id=NCI-2021-08759)",
+"[https://www.aacr.org/about-the-aacr/newsroom/news-releases/neoadjuvant-pd-1-blockade-in-early-stage-mismatch-repair deficient-cancers-can-eliminate-the-need-for-surgery-regardless-of-tumor-type/](https://www.aacr.org/about-the-aacr/newsroom/news-releases/neoadjuvant-pd-1-blockade-in-early-stage-mismatch-repair deficient-cancers-can-eliminate-the-need-for-surgery-regardless-of-tumor-type/)",
+"[https://www.sciencedirect.com/science/article/pii/S294971322300085X](https://www.sciencedirect.com/science/article/pii/S294971322300085X)"
+],
+
+"notes": "All fields are derived strictly from the provided deep-research dossier on dostarlimab in human breast cancer, with pathway interpretations emphasizing breast cancer–specific immune mechanisms, sensitivity and resistance patterns; gene-level entries are limited to cases explicitly discussed in the document (e.g. CXCL9/CXCL10, STING1/IFNB1, IDO1, B2M, JAK1/2, IFNGR1/2, IRF1, FAS, FOXP3, CCL22/CCR4, CD80/CD86). Additional potential biomarkers mentioned only at the pathway or cell-type level were not expanded beyond the source text. See the underlying dostarlimab deep-research file for full methodological and citation context ."
+}

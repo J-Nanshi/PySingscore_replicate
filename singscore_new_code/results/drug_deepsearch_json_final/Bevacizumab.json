@@ -1,0 +1,256 @@
+{
+"drug_name": "Bevacizumab",
+"cancer_indication": "HER2-negative metastatic or locally advanced breast cancer (especially triple-negative disease) in combination with chemotherapy for patients with high tumor burden or visceral crisis, as permitted in some regulatory settings.",
+"drug_category": "Anti-angiogenic",
+"drug_class": "Anti–VEGF-A monoclonal antibody",
+"moa": "Bevacizumab is a humanized monoclonal antibody that binds VEGF-A, preventing it from engaging VEGFR-1 and VEGFR-2 on endothelial cells and thereby inhibiting tumor angiogenesis. In breast cancer, many tumors—particularly aggressive triple-negative and basal-like subtypes—overexpress VEGF in response to hypoxia via HIF-1α, making them highly dependent on VEGF-driven neovascularization. By neutralizing VEGF-A, bevacizumab prunes immature vessels and transiently normalizes the remaining vasculature, improving delivery of concomitant chemotherapy and reducing tumor perfusion. Over time, however, VEGF blockade can exacerbate hypoxia and select for alternative angiogenic pathways, EMT, and invasive or stem-like phenotypes that drive resistance.",
+"chembl_id": "CHEMBL1201583",
+"drugbank_id": "DB00112",
+"synonyms": [
+"Avastin",
+"Abevmy",
+"Alymsys",
+"Avzivi",
+"Aybintio",
+"Mvasi (bevacizumab-awwb)",
+"Zirabev (bevacizumab-bvzr)",
+"Vegzelma",
+"Oyavas",
+"rhuMAb-VEGF",
+"ABP-215",
+"BAT1706",
+"CT-P16",
+"BP102",
+"IBI305",
+"MIL60",
+"PF-06439535"
+],
+"primary_targets": [
+"VEGFA"
+],
+"pathway_sets": [
+"KEGG_VEGF_SIGNALING_PATHWAY",
+"HALLMARK_HYPOXIA",
+"HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+"REACTOME_SIGNALING_BY_NOTCH",
+"SMID_BREAST_CANCER_BASAL_UP",
+"PID_FGF_PATHWAY",
+"REACTOME_TIE2_SIGNALING",
+"REACTOME_SIGNALING_BY_MET",
+"HALLMARK_INTERFERON_GAMMA_RESPONSE",
+"HALLMARK_IL6_JAK_STAT3_SIGNALING",
+"HALLMARK_ANGIOGENESIS",
+"REACTOME_SIGNALING_BY_PDGF"
+],
+"pathway_sets_annotations": {
+"KEGG_VEGF_SIGNALING_PATHWAY": {
+"description": "VEGF-A/VEGFR1/VEGFR2-driven pro-angiogenic signaling that governs endothelial proliferation, migration, and new vessel sprouting in tumors.",
+"interpretation": "In breast cancer, particularly VEGF-high and highly vascular TNBC/basal-like tumors, strong VEGF signaling drives angiogenesis and tumor growth; bevacizumab sensitivity is greatest when this pathway is dominant and effectively downregulated by VEGF-A neutralization."
+},
+"HALLMARK_HYPOXIA": {
+"description": "Hypoxia- and HIF-1α–driven transcriptional program, including markers such as HIF1A and CA9, activated in low-oxygen tumor regions.",
+"interpretation": "In bevacizumab-treated breast tumors, anti-angiogenic pruning increases intratumoral hypoxia, stabilizing HIF-1α and inducing hypoxia-response genes that promote angiogenic rebound, EMT, MET activation and aggressive behavior, thereby contributing to acquired resistance."
+},
+"HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+"description": "EMT program characterized by induction of transcription factors such as TWIST1, SNAI1/SNAI2 and mesenchymal markers like vimentin (VIM) with loss of epithelial traits.",
+"interpretation": "Following VEGF blockade in breast cancer, EMT gene upregulation enhances motility, apoptosis resistance, vessel co-option and metastatic dissemination, representing a key resistance mechanism to bevacizumab."
+},
+"REACTOME_SIGNALING_BY_NOTCH": {
+"description": "Notch receptor–ligand signaling (e.g., NOTCH1, JAG1, DLL4) regulating cell fate, stem cell maintenance and endothelial tip/stalk cell behavior.",
+"interpretation": "Bevacizumab-resistant breast tumors show Notch pathway activation in both tumor and endothelial cells, supporting a stem-like cancer cell compartment and VEGF-independent, stable vasculature that undermine ongoing VEGF-A blockade."
+},
+"SMID_BREAST_CANCER_BASAL_UP": {
+"description": "Basal-like breast cancer gene-set reflecting a stem-cell–associated, highly proliferative and often TNBC-linked transcriptional phenotype.",
+"interpretation": "Basal-like and TNBC tumors frequently exhibit high VEGF expression, angiogenesis and immune activation, conferring notable initial sensitivity to bevacizumab, but they can adapt under therapy by shifting further toward basal/stemness and EMT programs that mediate resistance."
+},
+"PID_FGF_PATHWAY": {
+"description": "FGF2–FGFR signaling cascade promoting endothelial proliferation, survival and pericyte recruitment, acting as a potent alternative pro-angiogenic axis.",
+"interpretation": "In breast cancer models, upregulation of FGF2/FGFR signaling under bevacizumab pressure restores angiogenesis and is correlated with poor response, while low baseline FGF2 or dual VEGF/FGF blockade is associated with improved bevacizumab activity."
+},
+"REACTOME_TIE2_SIGNALING": {
+"description": "Angiopoietin–Tie2 receptor signaling (e.g., ANGPT1/ANGPT2–TIE2) that modulates vessel stability, remodeling and interaction with Tie2-expressing myeloid cells.",
+"interpretation": "During escape from bevacizumab in breast cancer, rising Angiopoietin-2 levels and Tie2-dependent recruitment of pro-angiogenic macrophages facilitate VEGF-independent vascular regrowth and immunosuppression, and high Ang2 has been linked to poor bevacizumab responses."
+},
+"REACTOME_SIGNALING_BY_MET": {
+"description": "HGF–c-MET receptor tyrosine kinase signaling controlling tumor cell proliferation, survival, motility and pro-angiogenic factor production.",
+"interpretation": "Anti-VEGF–induced hypoxia in breast tumors upregulates HGF/c-MET signaling, which drives invasive escape, metastatic spread and VEGF-independent vascular support, making c-MET activation a prominent bevacizumab resistance pathway."
+},
+"HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+"description": "Interferon-γ–driven immune activation program including Th1 chemokines (e.g., CXCL9, CXCL10), T-cell receptor signaling and antigen-presentation genes.",
+"interpretation": "In HER2-negative and especially TNBC breast cancers, upregulated IFN-γ–related immune signatures and TIL-rich, T-cell–inflamed microenvironments are associated with better PFS and higher pathologic response when bevacizumab is added, as VEGF blockade relieves immunosuppression and enhances effector T-cell infiltration."
+},
+"HALLMARK_IL6_JAK_STAT3_SIGNALING": {
+"description": "IL-6–driven activation of JAK/STAT3 inflammatory signaling in tumor and stromal cells, promoting survival, cytokine production and pro-angiogenic gene expression.",
+"interpretation": "In obese or inflammation-rich breast cancer microenvironments, IL-6/STAT3 upregulation sustains angiogenesis, recruits immunosuppressive myeloid cells and is specifically implicated in bevacizumab resistance, with IL-6 blockade restoring sensitivity in preclinical TNBC models."
+},
+"HALLMARK_ANGIOGENESIS": {
+"description": "Angiogenesis gene set representing coordinated expression of VEGF pathway components, endothelial markers and pro-angiogenic regulators.",
+"interpretation": "Breast tumors with high HALLMARK_ANGIOGENESIS scores (e.g., VEGF-Ahigh, high microvessel density) are strongly angiogenesis-dependent and exhibit the greatest tumor regression and PFS benefit from bevacizumab, whereas angiogenesis-poor tumors show intrinsic non-response."
+},
+"REACTOME_SIGNALING_BY_PDGF": {
+"description": "PDGF–PDGFR signaling that stimulates pericyte recruitment, vessel maturation and additional pro-angiogenic support often cooperating with other growth factors.",
+"interpretation": "In breast cancer, PDGF signaling acts as a supporting angiogenic route; PDGF-BB can synergize with FGF2 and contribute to VEGF-independent vascularization, so activation of PDGF pathways can participate in bevacizumab resistance, while their relative quiescence favors VEGF-addicted sensitivity."
+},
+"sensitivity_genes_up": [
+"VEGFA",
+"KDR",
+"CXCL9",
+"CXCL10"
+],
+"sensitivity_genes_down": [
+"FGF2"
+],
+"resistance_genes_up": [
+"FGF2",
+"ANGPT2",
+"MET",
+"IL6",
+"HIF1A",
+"CA9",
+"TWIST1",
+"SNAI1",
+"SNAI2",
+"VIM",
+"CXCL8",
+"VEGFA"
+],
+"resistance_genes_down": [],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "VEGFA",
+"interpretation": "Elevated baseline VEGF-A levels in plasma or tumor define highly angiogenesis-driven breast cancers, and multiple biomarker analyses reported greater PFS benefit and tumor shrinkage on bevacizumab in VEGF-Ahigh patients, consistent with VEGF-addicted tumors being most sensitive to VEGF-A neutralization."
+},
+{
+"gene": "KDR",
+"interpretation": "Higher baseline VEGFR-2 (KDR) levels in plasma were associated with improved PFS on bevacizumab in HER2-negative metastatic breast cancer, indicating that tumors actively signaling through VEGFA–VEGFR2 are more vulnerable to VEGF-A blockade."
+},
+{
+"gene": "CXCL9",
+"interpretation": "High expression of the Th1 chemokine CXCL9 marks immune-infiltrated, T cell–inflamed breast tumors in which bevacizumab-induced vessel normalization enhances T-cell recruitment, and such immune-activated tumors showed better clinical benefit in exploratory analyses."
+},
+{
+"gene": "CXCL10",
+"interpretation": "Like CXCL9, increased CXCL10 expression is part of an interferon-γ–driven immune signature that correlates with higher TILs and improved PFS when bevacizumab is combined with chemotherapy, reflecting synergy between VEGF blockade and pre-existing antitumor immunity."
+}
+],
+"sensitivity_genes_down_annotations": [
+{
+"gene": "FGF2",
+"interpretation": "Low baseline FGF2 was observed in bevacizumab responders, whereas higher FGF2 levels correlated with poor responses; tumors lacking this alternative FGF-driven angiogenic route are more strictly VEGF-dependent and thus more sensitive to VEGF-A inhibition."
+}
+],
+"resistance_genes_up_annotations": [
+{
+"gene": "FGF2",
+"interpretation": "Bevacizumab-resistant breast tumors and models often show rising FGF2, and FGF2–FGFR signaling restores endothelial proliferation and pericyte recruitment despite VEGF blockade; high FGF2 in settings such as obesity is explicitly linked to diminished bevacizumab efficacy, and dual VEGF/FGF inhibition reverses resistance in preclinical studies."
+},
+{
+"gene": "ANGPT2",
+"interpretation": "ANGPT2 (Angiopoietin-2) is frequently upregulated during VEGF inhibition, and high Ang2 levels and Ang2-positive vessels are associated with poor bevacizumab responses, as Ang2/Tie2 signaling destabilizes vasculature while recruiting Tie2+ macrophages that support VEGF-independent vascular regrowth and immune evasion."
+},
+{
+"gene": "MET",
+"interpretation": "Under bevacizumab-induced hypoxia, c-MET is upregulated and activated, driving invasive migration, survival and alternative pro-angiogenic signaling; increased MET expression has been documented at progression on anti-VEGF therapy and is a central component of escape from VEGF-A blockade."
+},
+{
+"gene": "IL6",
+"interpretation": "IL6 is elevated in inflammatory and obese breast cancer contexts, where IL-6/STAT3 signaling promotes pro-angiogenic inflammation, myeloid cell recruitment and survival; high IL-6 specifically mediated obesity-associated bevacizumab resistance in TNBC models, and IL-6 blockade restored sensitivity."
+},
+{
+"gene": "HIF1A",
+"interpretation": "Bevacizumab-induced hypoxia stabilizes HIF1A, and post-treatment tumors show increased HIF1A expression, which transcriptionally drives VEGF family ligands, MET and EMT programs, thereby orchestrating multiple resistance mechanisms to continued VEGF-A inhibition."
+},
+{
+"gene": "CA9",
+"interpretation": "CA9, a hypoxia marker co-upregulated with HIF1A after bevacizumab, reports the hypoxic shift that accompanies VEGF blockade; increased CA9 reflects activation of hypoxia-responsive survival pathways linked to angiogenic rebound and resistance."
+},
+{
+"gene": "TWIST1",
+"interpretation": "TWIST1 is among the EMT transcription factors found upregulated in bevacizumab-treated breast tumor models, and its induction contributes to motility, invasion and survival of tumor cells under anti-angiogenic stress, enabling escape via EMT-mediated phenotypic switching."
+},
+{
+"gene": "SNAI1",
+"interpretation": "SNAI1 levels increase with bevacizumab-associated EMT in experimental breast tumors, supporting a mesenchymal, invasive phenotype that facilitates vessel co-option and resistance to angiogenesis inhibition."
+},
+{
+"gene": "SNAI2",
+"interpretation": "SNAI2 (Slug) is similarly upregulated as part of the EMT response under VEGF blockade, promoting loss of epithelial characteristics and enhanced migration, which undermines the benefit of bevacizumab by allowing tumor cells to relocate to better-vascularized niches."
+},
+{
+"gene": "VIM",
+"interpretation": "Vimentin (VIM), a mesenchymal cytoskeletal marker, increases during bevacizumab-induced EMT in breast cancer models, reflecting a shift toward a motile, mesenchymal cell state that is less dependent on local angiogenesis and more capable of resisting therapy."
+},
+{
+"gene": "CXCL8",
+"interpretation": "IL-8/CXCL8 is induced by hypoxia in tumors treated with anti-angiogenic therapy and acts as a pro-angiogenic chemokine that recruits neutrophils and endothelial precursors; its upregulation is described as part of inflammatory escape networks that sustain angiogenesis despite VEGF-A blockade."
+},
+{
+"gene": "VEGFA",
+"interpretation": "Although baseline VEGF-Ahigh predicts benefit, post-bevacizumab biopsies sometimes show rebound VEGFA overexpression, and the report describes this overproduction of the target ligand as a negative feedback resistance tactic whereby very high VEGF-A levels attempt to overwhelm antibody-mediated neutralization."
+}
+],
+"resistance_genes_down_annotations": [],
+"kg_gene_relationships": [
+"Bevacizumab|binds|VEGFA",
+"High_VEGFA|confers_sensitivity_to|Bevacizumab",
+"VEGFA_rebound_upregulation|confers_resistance_to|Bevacizumab",
+"High_KDR|confers_sensitivity_to|Bevacizumab",
+"High_CXCL9_CXCL10_signature|confers_sensitivity_to|Bevacizumab",
+"Low_FGF2|confers_sensitivity_to|Bevacizumab",
+"High_FGF2|confers_resistance_to|Bevacizumab",
+"ANGPT2_upregulation|confers_resistance_to|Bevacizumab",
+"MET_upregulation|confers_resistance_to|Bevacizumab",
+"High_IL6|confers_resistance_to|Bevacizumab"
+],
+"citations": [
+"Bevacizumab - Wikipedia",
+"[https://en.wikipedia.org/wiki/Bevacizumab](https://en.wikipedia.org/wiki/Bevacizumab)",
+"First-line bevacizumab in combination with chemotherapy for HER2-negative metastatic breast cancer: pooled and subgroup analyses of data from 2447 patients - Annals of Oncology",
+"[https://www.annalsofoncology.org/article/S0923-7534(19)37346-6/fulltext](https://www.annalsofoncology.org/article/S0923-7534%2819%2937346-6/fulltext)",
+"Avastin OD WD Memo 12.15.10.FINAL.doc",
+"[https://www.fda.gov/media/79525/download](https://www.fda.gov/media/79525/download)",
+"SEOM–GEICAM–SOLTI clinical guidelines in advanced breast cancer (2022) | Clinical and Translational Oncology",
+"[https://link.springer.com/article/10.1007/s12094-023-03203-8](https://link.springer.com/article/10.1007/s12094-023-03203-8)",
+"Biomarker results from the AVADO phase 3 trial of first ... - PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/23422754/](https://pubmed.ncbi.nlm.nih.gov/23422754/)",
+"Bevacizumab improves tumor infiltration of mature dendritic cells and effector T-cells in triple−negative breast cancer patients | npj Precision Oncology",
+"[https://www.nature.com/articles/s41698-021-00197-w?error=cookies_not_supported&code=e355e22b-a522-4240-aa59-1ba77da2400f](https://www.nature.com/articles/s41698-021-00197-w?error=cookies_not_supported&code=e355e22b-a522-4240-aa59-1ba77da2400f)",
+"Bevacizumab: Uses, Interactions, Mechanism of Action | DrugBank Online",
+"[https://go.drugbank.com/drugs/DB00112](https://go.drugbank.com/drugs/DB00112)",
+"Angiogenesis and lymphangiogenesis are downregulated in primary breast cancer | British Journal of Cancer",
+"[https://www.nature.com/articles/6605219?error=cookies_not_supported&code=4da439b0-35b3-4d1c-a81d-5ab6004c313b](https://www.nature.com/articles/6605219?error=cookies_not_supported&code=4da439b0-35b3-4d1c-a81d-5ab6004c313b)",
+"Frontiers | Resistance Mechanisms to Anti−angiogenic Therapies in Cancer",
+"[https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2020.00221/full](https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2020.00221/full)",
+"Ludwig Cancer Research",
+"[https://www.ludwigcancerresearch.org/news-releases/obesity-may-promote-resistance-to-antiangiogenic-therapy-for-breast−cancer/](https://www.ludwigcancerresearch.org/news-releases/obesity-may-promote-resistance-to-antiangiogenic-therapy-for-breast−cancer/)",
+"Gene Expression Analysis Reveals Distinct Pathways of Resistance to Bevacizumab in Xenograft Models of Human ER-Positive Breast Cancer",
+"[https://scholarworks.indianapolis.iu.edu/items/61ba28d2-87a5-4606-a4ad-3ee2dd93e4b6](https://scholarworks.indianapolis.iu.edu/items/61ba28d2-87a5-4606-a4ad-3ee2dd93e4b6)",
+"Resistance to Anti-Angiogenic Therapy in Cancer—Alterations ... - NIH",
+"[https://pmc.ncbi.nlm.nih.gov/articles/PMC5979390/](https://pmc.ncbi.nlm.nih.gov/articles/PMC5979390/)",
+"An update on biomarkers of potential benefit with bevacizumab for ...",
+"[https://pmc.ncbi.nlm.nih.gov/articles/PMC6736652/](https://pmc.ncbi.nlm.nih.gov/articles/PMC6736652/)",
+"Angiogenic factors FGF2 and PDGF-BB synergistically promote ...",
+"[https://pmc.ncbi.nlm.nih.gov/articles/PMC1994630/](https://pmc.ncbi.nlm.nih.gov/articles/PMC1994630/)",
+"Therapeutic paradigm of dual targeting VEGF and PDGF for ... - PMC",
+"[https://pmc.ncbi.nlm.nih.gov/articles/PMC7382445/](https://pmc.ncbi.nlm.nih.gov/articles/PMC7382445/)",
+"Atezolizumab plus paclitaxel and bevacizumab as first-line treatment ...",
+"[https://www.nature.com/articles/s41591-025-03734-3](https://www.nature.com/articles/s41591-025-03734-3)",
+"[PDF] AVASTIN - European Medicines Agency (EMA)",
+"[https://www.ema.europa.eu/en/documents/variation-report/avastin-h-c-582-ii-0025-epar-assessment-report-variation_en.pdf](https://www.ema.europa.eu/en/documents/variation-report/avastin-h-c-582-ii-0025-epar-assessment-report-variation_en.pdf)",
+"AVASTIN® (bevacizumab) Label",
+"[https://www.accessdata.fda.gov/drugsatfda_docs/label/2009/125085s0169lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2009/125085s0169lbl.pdf)",
+"Bevacizumab (Avastin®) in cancer treatment: A review of 15 years of ...",
+"[https://www.sciencedirect.com/science/article/pii/S0305737220300554](https://www.sciencedirect.com/science/article/pii/S0305737220300554)",
+"Avastin® (bevacizumab) Important Safety Information",
+"[https://www.avastin.com/hcp/safety.html](https://www.avastin.com/hcp/safety.html)",
+"Contraindicated Use of Bevacizumab and Toxicity in Elderly Patients ...",
+"[https://ascopubs.org/doi/10.1200/JCO.2012.48.4857](https://ascopubs.org/doi/10.1200/JCO.2012.48.4857)",
+"ABC5 International Consensus Conference on ... - Thieme Connect",
+"[https://www.thieme-connect.com/products/ejournals/pdf/10.1055/a-1139-9380.pdf](https://www.thieme-connect.com/products/ejournals/pdf/10.1055/a-1139-9380.pdf)",
+"Bevacizumab - ESMO-MCBS Scorecards | ESMO",
+"[https://www.esmo.org/guidelines/esmo-mcbs/esmo-mcbs-for-solid-tumours/esmo-mcbs-scorecards/scorecard-363-1](https://www.esmo.org/guidelines/esmo-mcbs/esmo-mcbs-for-solid-tumours/esmo-mcbs-scorecards/scorecard-363-1)",
+"Targeting Angiogenesis in Breast Cancer: Current Evidence and ...",
+"[https://pmc.ncbi.nlm.nih.gov/articles/PMC8913593/](https://pmc.ncbi.nlm.nih.gov/articles/PMC8913593/)"
+],
+"notes": "This JSON is strictly derived from the provided deep-research report for bevacizumab in breast cancer, which emphasizes pathway-level rather than exhaustive gene-level biomarkers. Gene lists are restricted to factors explicitly discussed as associated with bevacizumab sensitivity or resistance in human breast cancer contexts or closely related human models, and many associations remain exploratory without validated clinical cut-offs. No definitive predictive biomarker for bevacizumab is established; most evidence supports a VEGF-addicted, angiogenesis-high, immune-inflamed TNBC/basal-like subset as relatively more sensitive, with resistance commonly emerging via hypoxia/HIF1A, FGF2, Ang2/Tie2, MET, EMT/stemness and IL-6/STAT3 pathways. See cited trial, biomarker and guideline references for full context and limitations."
+}

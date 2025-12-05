@@ -1,0 +1,297 @@
+{
+"drug_name": "Abemaciclib",
+"cancer_indication": "Hormone receptor–positive, HER2-negative (HR+/HER2–) advanced or metastatic breast cancer in combination with endocrine therapy or as monotherapy after endocrine and chemotherapy failure, and high-risk node-positive early HR+/HER2– breast cancer (Ki-67 ≥20%) in combination with endocrine therapy.",
+"drug_category": "CDK4/6",
+"drug_class": "CDK4/6 inhibitor",
+"moa": "Abemaciclib is an oral, selective ATP-competitive inhibitor of CDK4 and CDK6 that blocks phosphorylation of the retinoblastoma protein (RB1), maintaining RB1 in its active, growth-suppressive state and enforcing the G1 cell-cycle checkpoint in Rb-proficient breast cancer cells. In HR+ breast cancer, estrogen receptor signaling upregulates Cyclin D1 (CCND1), driving cyclin D–CDK4/6 complexes; abemaciclib disrupts this ER–Cyclin D–CDK4/6–RB1–E2F axis, suppressing E2F target genes and halting G1→S progression. Its antiproliferative effect is greatest in ER-positive, RB1-intact luminal tumors that depend on Cyclin D–CDK4/6 signaling, while tumors with RB1 loss or cyclin E–CDK2 hyperactivation show de novo or acquired resistance. Abemaciclib can also induce senescence with a senescence-associated secretory phenotype and modulate immune pathways, including PD-L1 upregulation on tumor cells.",
+"chembl_id": "CHEMBL3301610",
+"drugbank_id": "DB12001",
+"synonyms": [
+"Abemaciclib (INN)",
+"Verzenio\u00ae (US)",
+"Verzenios\u00ae (EU)",
+"LY2835219"
+],
+"primary_targets": [
+"CDK4",
+"CDK6"
+],
+"pathway_sets": [
+"KEGG_CELL_CYCLE",
+"HALLMARK_E2F_TARGETS",
+"HALLMARK_ESTROGEN_RESPONSE_EARLY",
+"REACTOME_CYCLIN_D_ASSOCIATED_EVENTS_IN_G1",
+"REACTOME_CYCLIN_E_ASSOCIATED_EVENTS_DURING_G1_S_TRANSITION",
+"REACTOME_ABERRANT_REGULATION_OF_MITOTIC_G_S_TRANSITION_IN_CANCER_DUE_TO_RB1_DEFECTS",
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+"REACTOME_SIGNALING_BY_FGFR1",
+"KEGG_MEDICUS_REFERENCE_P16_CELL_CYCLE_G1_S",
+"KEGG_MEDICUS_REFERENCE_PDL_PD1_SHP_PI3K_SIGNALING_PATHWAY",
+"HALLMARK_INFLAMMATORY_RESPONSE",
+"REACTOME_SIGNALING_BY_HIPPO",
+"HALLMARK_G2M_CHECKPOINT"
+],
+"pathway_sets_annotations": {
+"KEGG_CELL_CYCLE": {
+"description": "KEGG cell cycle pathway encompassing regulation of G1, S, G2, and M phases via cyclin–CDK complexes and RB1-controlled checkpoints.",
+"interpretation": "In breast cancer, hyperactivation of Cyclin D–CDK4/6–RB1 signaling drives G1–S transition; abemaciclib directly targets this module to arrest proliferating HR+/HER2– tumor cells and its failure (e.g., via RB1 loss or cyclin E–CDK2 bypass) underlies resistance."
+},
+"HALLMARK_E2F_TARGETS": {
+"description": "Hallmark gene set of E2F-regulated genes controlling DNA replication, S-phase entry, and cell-cycle progression.",
+"interpretation": "Abemaciclib-mediated RB1 activation suppresses E2F target gene transcription in sensitive tumors, whereas persistent or reactivated E2F programs (often via cyclin E–CDK2) are associated with resistance."
+},
+"HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+"description": "Hallmark gene set capturing early transcriptional responses to estrogen mediated by ESR1, including Cyclin D1 and other proliferative targets.",
+"interpretation": "In luminal breast cancer, active estrogen signaling upregulates Cyclin D1 and primes dependence on CDK4/6; effective endocrine therapy plus abemaciclib downregulates this program and predicts better responses, while loss or bypass of ER signaling diminishes benefit."
+},
+"REACTOME_CYCLIN_D_ASSOCIATED_EVENTS_IN_G1": {
+"description": "Reactome pathway describing Cyclin D–CDK4/6 complexes phosphorylating RB1 and promoting G1 progression.",
+"interpretation": "HR+/HER2– tumors with high Cyclin D1 and CDK4/6 activity are strongly dependent on this axis, making them particularly sensitive to abemaciclib, which blocks Cyclin D–CDK4/6-driven RB1 phosphorylation."
+},
+"REACTOME_CYCLIN_E_ASSOCIATED_EVENTS_DURING_G1_S_TRANSITION": {
+"description": "Reactome pathway covering Cyclin E–CDK2-mediated phosphorylation of RB1 and regulation of G1/S transition.",
+"interpretation": "Upregulation of Cyclin E1 (CCNE1) and CDK2 provides an RB1-phosphorylating bypass that sustains S-phase entry despite CDK4/6 inhibition, and high Cyclin E1 levels correlate with shorter progression-free survival on CDK4/6 inhibitors."
+},
+"REACTOME_ABERRANT_REGULATION_OF_MITOTIC_G_S_TRANSITION_IN_CANCER_DUE_TO_RB1_DEFECTS": {
+"description": "Reactome pathway describing dysregulated G1/S control in cancer resulting from RB1 loss or inactivation.",
+"interpretation": "Loss-of-function RB1 alterations abolish the G1 checkpoint that abemaciclib enforces, leading to primary or acquired resistance in breast cancers where RB1 is deleted, mutated, or otherwise non-functional."
+},
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+"description": "Hallmark pathway representing growth factor–driven PI3K–AKT–mTOR signaling that promotes cell survival, metabolism, and proliferation.",
+"interpretation": "In HR+ breast cancer, PI3K/AKT/mTOR hyperactivation (e.g., via PIK3CA mutation) can reduce reliance on Cyclin D–CDK4/6 and sustain growth under CDK4/6 blockade, while low or therapeutically inhibited PI3K signaling is associated with greater abemaciclib sensitivity and underpins combination strategies with PI3K/mTOR inhibitors."
+},
+"REACTOME_SIGNALING_BY_FGFR1": {
+"description": "Reactome pathway for FGFR1-mediated signaling through downstream MAPK and PI3K cascades.",
+"interpretation": "FGFR1 amplification or activating alterations in ER+ breast cancer drive MAPK and mTOR activation, induce cyclins and CDK6, and are enriched at progression on CDK4/6 inhibitors, making FGFR1 signaling a key resistance pathway and target for combinatorial therapy."
+},
+"KEGG_MEDICUS_REFERENCE_P16_CELL_CYCLE_G1_S": {
+"description": "Curated KEGG-based pathway describing CDKN2A (p16INK4A) regulation of CDK4/6 and the G1/S cell-cycle transition.",
+"interpretation": "High p16INK4A (CDKN2A) expression reflects an aberrant RB regulatory loop often linked to RB1 loss and has been associated with poor response to CDK4/6 inhibitors, whereas p16-low, RB1-intact luminal tumors are more sensitive to abemaciclib."
+},
+"KEGG_MEDICUS_REFERENCE_PDL_PD1_SHP_PI3K_SIGNALING_PATHWAY": {
+"description": "Curated KEGG-based pathway of PD-1/PD-L1 immune checkpoint signaling through SHP phosphatases and PI3K in the tumor microenvironment.",
+"interpretation": "Abemaciclib exposure can induce PD-L1 expression on tumor cells and intersects with PD-1/PD-L1 signaling, enabling adaptive immune evasion unless checkpoint blockade is added and influencing response in immune-infiltrated breast cancers."
+},
+"HALLMARK_INFLAMMATORY_RESPONSE": {
+"description": "Hallmark gene set reflecting cytokine, chemokine, and innate immune signaling associated with inflammatory responses.",
+"interpretation": "CDK4/6 inhibition can trigger a senescence-associated secretory phenotype with inflammatory cytokines that recruit and activate immune cells, so an intact and inflamed tumor microenvironment can augment abemaciclib-mediated tumor control, whereas immune-cold states blunt this effect."
+},
+"REACTOME_SIGNALING_BY_HIPPO": {
+"description": "Reactome pathway for Hippo tumor suppressor signaling, including upstream regulators like FAT1 and downstream YAP/TAZ effectors controlling proliferation and CDK6 expression.",
+"interpretation": "Loss of FAT1 downregulates Hippo signaling, unleashes YAP activity, increases CDK6 and Cyclin D, and has been associated with markedly shorter progression-free survival on CDK4/6 inhibitors in HR+ breast cancer, defining a resistance mechanism."
+},
+"HALLMARK_G2M_CHECKPOINT": {
+"description": "Hallmark gene set for the G2/M checkpoint and mitotic spindle machinery governing entry into and progression through mitosis.",
+"interpretation": "Although abemaciclib principally enforces the G1 checkpoint, suppression of proliferative programs including G2/M signatures and Ki-67 is observed in responding tumors, whereas failure to durably downregulate cell-cycle checkpoints is seen in resistant disease."
+}
+},
+"sensitivity_genes_up": [
+"CCND1",
+"CDK4",
+"RB1",
+"ESR1",
+"PGR"
+],
+"sensitivity_genes_down": [
+"CCNE1",
+"CDKN2A",
+"TK1",
+"PIK3CA"
+],
+"resistance_genes_up": [
+"CCNE1",
+"FGFR1",
+"FGFR2",
+"PIK3CA",
+"CDKN2A",
+"CDK6",
+"MYC",
+"KRAS",
+"HRAS",
+"ABCB1",
+"ABCG2",
+"BCL2",
+"MCL1"
+],
+"resistance_genes_down": [
+"RB1",
+"FAT1",
+"ESR1",
+"TP53"
+],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "CCND1",
+"interpretation": "Cyclin D1 amplification or overexpression is common in ER+ luminal tumors and indicates strong dependence on Cyclin D–CDK4/6 signaling, which abemaciclib effectively blocks, so high CCND1 is associated with increased sensitivity."
+},
+{
+"gene": "CDK4",
+"interpretation": "High baseline CDK4 mRNA expression correlates with longer progression-free survival on CDK4/6 inhibitor therapy, reflecting that tumors reliant on CDK4 activity are more effectively suppressed by abemaciclib."
+},
+{
+"gene": "RB1",
+"interpretation": "Presence of functional RB1 is essential for abemaciclib-induced G1 arrest; RB1-proficient, p16-low HR+ tumors show strong antiproliferative responses, making intact RB1 a marker of sensitivity."
+},
+{
+"gene": "ESR1",
+"interpretation": "A robust estrogen receptor transcriptional program with high ESR1 expression in luminal tumors maintains Cyclin D–CDK4/6 dependence, and such ER-driven cancers derive greater benefit from abemaciclib plus endocrine therapy."
+},
+{
+"gene": "PGR",
+"interpretation": "PGR expression is part of ER-driven luminal gene programs; tumors with high ER/PgR-related signatures tend to respond better to combined endocrine and CDK4/6 inhibition, indicating enhanced sensitivity."
+}
+],
+"sensitivity_genes_down_annotations": [
+{
+"gene": "CCNE1",
+"interpretation": "Low Cyclin E1 expression or absence of CCNE1 amplification limits Cyclin E–CDK2 bypass of RB1, making tumors more dependent on Cyclin D–CDK4/6 for G1/S progression and therefore more sensitive to abemaciclib."
+},
+{
+"gene": "CDKN2A",
+"interpretation": "Low p16INK4A (CDKN2A) indicates an intact RB1 axis not already blocked by endogenous CDK4/6 inhibition, and RB1-intact, p16-low luminal tumors respond well to abemaciclib."
+},
+{
+"gene": "TK1",
+"interpretation": "A pronounced decline in thymidine kinase 1 activity after initiation of abemaciclib reflects effective suppression of S-phase entry and is associated with longer progression-free survival, so TK1 downregulation is a pharmacodynamic marker of sensitivity."
+},
+{
+"gene": "PIK3CA",
+"interpretation": "Absence of activating PIK3CA-driven PI3K hyperactivation (i.e., low or non-mutant PI3K signaling) is associated with longer responses to endocrine therapy plus CDK4/6 inhibition, implying that reduced PIK3CA-driven pathway activity increases CDK4/6 dependence and sensitivity."
+}
+],
+"resistance_genes_up_annotations": [
+{
+"gene": "CCNE1",
+"interpretation": "Amplification or overexpression of Cyclin E1 (CCNE1) activates Cyclin E–CDK2, maintains RB1 phosphorylation, and is repeatedly observed at progression on CDK4/6 inhibitors, correlating with shorter progression-free survival and resistance."
+},
+{
+"gene": "FGFR1",
+"interpretation": "FGFR1 amplification and ligand-driven activation upregulate MAPK and mTOR signaling, increase cyclins and CDK6, and are enriched in ER+ tumors progressing on CDK4/6 inhibitors, conferring resistance that can be mitigated by FGFR blockade."
+},
+{
+"gene": "FGFR2",
+"interpretation": "FGFR2 alterations detected in circulating tumor DNA of patients progressing on CDK4/6 inhibitors indicate activation of FGFR signaling as a bypass route that sustains proliferation despite abemaciclib."
+},
+{
+"gene": "PIK3CA",
+"interpretation": "Activating PIK3CA mutations drive PI3K/AKT/mTOR hyperactivation, providing growth and survival signals that reduce reliance on Cyclin D–CDK4/6 and are associated with shorter duration of benefit from CDK4/6 inhibition."
+},
+{
+"gene": "CDKN2A",
+"interpretation": "High p16INK4A (CDKN2A) expression reflects an aberrant RB1 regulatory loop and is linked to poor response; overexpression of p16 in RB-proficient models led to downregulation of CDK4 and resistance to CDK4/6 inhibitors."
+},
+{
+"gene": "CDK6",
+"interpretation": "Prolonged abemaciclib exposure can select for CDK6 amplification and overexpression, which restores cell-cycle drive and results in cross-resistance to CDK4/6 inhibitors by exceeding achievable drug inhibition."
+},
+{
+"gene": "MYC",
+"interpretation": "Upregulation of MYC and associated cell-cycle gene programs in resistant models reflects a reactivation of proliferative transcription networks that support continued growth despite CDK4/6 blockade."
+},
+{
+"gene": "KRAS",
+"interpretation": "Emergent KRAS mutations after CDK4/6 inhibitor therapy hyperactivate RAS–RAF–MEK–ERK signaling, promoting Cyclin D/E expression and providing an RB1-independent route to maintain proliferation under abemaciclib."
+},
+{
+"gene": "HRAS",
+"interpretation": "HRAS amplification has been reported in metastatic HR+ patients post-CDK4/6 inhibition, driving MAPK signaling that can bypass CDK4/6 blockade and contribute to resistance."
+},
+{
+"gene": "ABCB1",
+"interpretation": "Overexpression of the drug efflux pump P-glycoprotein (ABCB1) in preclinical models reduces intracellular abemaciclib levels and is implicated as a mechanism of pharmacokinetic resistance, especially in sanctuary sites such as the CNS."
+},
+{
+"gene": "ABCG2",
+"interpretation": "Increased expression of the efflux transporter ABCG2 limits brain penetration of abemaciclib and, together with ABCB1, can decrease effective drug exposure in tumor tissue, contributing to resistance."
+},
+{
+"gene": "BCL2",
+"interpretation": "High levels of the anti-apoptotic protein BCL-2 dampen apoptosis in cells arrested by CDK4/6 inhibition, allowing survival in a quiescent state and predisposing to treatment persistence or relapse."
+},
+{
+"gene": "MCL1",
+"interpretation": "MCL-1 overexpression provides strong survival signaling so that abemaciclib-induced cell-cycle arrest is not accompanied by cell death, whereas downregulation of MCL-1 via BH3 mimetics can restore apoptotic responses and overcome resistance."
+}
+],
+"resistance_genes_down_annotations": [
+{
+"gene": "RB1",
+"interpretation": "Loss-of-function RB1 mutations or deletions abolish the CDK4/6–RB1 checkpoint targeted by abemaciclib, and acquired RB1 loss has been documented at progression, conferring near-complete resistance."
+},
+{
+"gene": "FAT1",
+"interpretation": "Loss of FAT1 downregulates Hippo signaling, unleashes YAP activity, increases CDK6 expression, and is associated with markedly shorter progression-free survival on CDK4/6 inhibitors in HR+ breast cancer, making FAT1 loss a resistance driver."
+},
+{
+"gene": "ESR1",
+"interpretation": "Downregulation or loss of estrogen receptor signaling, including conversion of ER+ tumors to ER– states, reduces Cyclin D1 dependence and is linked to diminished benefit from CDK4/6 inhibitors in endocrine-treated breast cancer."
+},
+{
+"gene": "TP53",
+"interpretation": "Loss or mutation of TP53 impairs p21-mediated checkpoint responses and apoptosis; p53-defective tumors are less likely to undergo durable arrest or cell death with CDK4/6 inhibition, contributing to intrinsic or acquired resistance."
+}
+],
+"kg_gene_relationships": [
+"Abemaciclib|inhibits|CDK4",
+"Abemaciclib|inhibits|CDK6",
+"CCND1_overexpression|confers_sensitivity_to|Abemaciclib",
+"CDK4_high_expression|confers_sensitivity_to|Abemaciclib",
+"RB1_intact|confers_sensitivity_to|Abemaciclib",
+"RB1_loss|confers_resistance_to|Abemaciclib",
+"CCNE1_amplification|confers_resistance_to|Abemaciclib",
+"CDKN2A_overexpression|confers_resistance_to|Abemaciclib",
+"CDKN2A_low_expression|confers_sensitivity_to|Abemaciclib",
+"FGFR1_amplification|confers_resistance_to|Abemaciclib",
+"FGFR2_alteration|confers_resistance_to|Abemaciclib",
+"PIK3CA_mutation|confers_resistance_to|Abemaciclib",
+"TK1_downregulation|associated_with|Abemaciclib_response",
+"TK1_persistent_high_activity|associated_with|Abemaciclib_resistance",
+"ABCB1_overexpression|confers_resistance_to|Abemaciclib",
+"ABCG2_overexpression|confers_resistance_to|Abemaciclib",
+"FAT1_loss|confers_resistance_to|Abemaciclib",
+"ESR1_loss|confers_resistance_to|Abemaciclib"
+],
+"citations": [
+"label",
+"[https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/208716s006s007s008lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/208716s006s007s008lbl.pdf)",
+"Abemaciclib: Uses, Interactions,",
+"Mechanism of Action | DrugBank Online",
+"[https://go.drugbank.com/drugs/DB12001](https://go.drugbank.com/drugs/DB12001)",
+"Potential biomarkers of resistance to CDK4/6 inhibitors: a narrative review",
+"of preclinical and clinical studies - Huang - Translational Breast Cancer Research",
+"[https://tbcr.amegroups.org/article/view/45140/html](https://tbcr.amegroups.org/article/view/45140/html)",
+"High p16 expression and heterozygous RB1 loss are biomarkers for CDK4/6 inhibitor",
+"resistance in ER+ breast cancer | Nature Communications",
+"[https://www.nature.com/articles/s41467-022-32828-6?error=cookies_not_supported&code=613af7fb-ead0-46f6-b211-434352ac2b5d](https://www.nature.com/articles/s41467-022-32828-6?error=cookies_not_supported&code=613af7fb-ead0-46f6-b211-434352ac2b5d)",
+"Co-clinical trial targeting ER, FGFR and CDK4/6 in resistant ... - Nature",
+"[https://www.nature.com/articles/s41698-025-01106-1](https://www.nature.com/articles/s41698-025-01106-1)",
+"Aberrant FGFR signaling mediates resistance to CDK4/6 inhibitors ...",
+"[https://www.nature.com/articles/s41467-019-09068-2](https://www.nature.com/articles/s41467-019-09068-2)",
+"Effects of ABCB1 and ABCG2 Polymorphisms on the ...",
+"[https://ar.iiarjournals.org/content/43/3/1283](https://ar.iiarjournals.org/content/43/3/1283)",
+"ABCB1 and ABCG2 limit brain penetration and, together with ...",
+"[https://www.sciencedirect.com/science/article/abs/pii/S1043661821005387](https://www.sciencedirect.com/science/article/abs/pii/S1043661821005387)",
+"Differences in metabolic transport and resistance mechanisms of ...",
+"[https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2023.1212986/full](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2023.1212986/full)",
+"Abstract 359: Rb loss-related DNA damage repair deficiency ...",
+"[https://aacrjournals.org/cancerres/article/85/8_Supplement_1/359/756454/Abstract-359-Rb-loss-related-DNA-damage-repair?searchresult=1](https://aacrjournals.org/cancerres/article/85/8_Supplement_1/359/756454/Abstract-359-Rb-loss-related-DNA-damage-repair?searchresult=1)",
+"Regulation of PD-L1 expression in the tumor microenvironment | Journal of Hematology &",
+"Oncology | Full Text",
+"[https://jhoonline.biomedcentral.com/articles/10.1186/s13045-020-01027-5](https://jhoonline.biomedcentral.com/articles/10.1186/s13045-020-01027-5)",
+"Resistance to abemaciclib is associated with increased metastatic ...",
+"[https://onlinelibrary.wiley.com/doi/full/10.1002/mc.23646](https://onlinelibrary.wiley.com/doi/full/10.1002/mc.23646)",
+"CDK4/6 Inhibition Augments Anti-Tumor Immunity by Enhancing T ...",
+"[https://pmc.ncbi.nlm.nih.gov/articles/PMC5809273/](https://pmc.ncbi.nlm.nih.gov/articles/PMC5809273/)",
+"Targeting Aberrant FGFR Signaling to Overcome CDK4/6 Inhibitor ...",
+"[https://pmc.ncbi.nlm.nih.gov/articles/PMC7912842/](https://pmc.ncbi.nlm.nih.gov/articles/PMC7912842/)",
+"Effects of ABCB1 and ABCG2 Polymorphisms on the ...",
+"[https://ar.iiarjournals.org/content/43/3/1283](https://ar.iiarjournals.org/content/43/3/1283)",
+"ABCB1 and ABCG2 limit brain penetration and, together with ...",
+"[https://www.sciencedirect.com/science/article/abs/pii/S1043661821005387](https://www.sciencedirect.com/science/article/abs/pii/S1043661821005387)",
+"Differences in metabolic transport and resistance mechanisms of ...",
+"[https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2023.1212986/full](https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2023.1212986/full)",
+"Abstract 359: Rb loss-related DNA damage repair deficiency ...",
+"[https://aacrjournals.org/cancerres/article/85/8_Supplement_1/359/756454/Abstract-359-Rb-loss-related-DNA-damage-repair?searchresult=1](https://aacrjournals.org/cancerres/article/85/8_Supplement_1/359/756454/Abstract-359-Rb-loss-related-DNA-damage-repair?searchresult=1)"
+],
+"notes": "Most mechanistic and biomarker data summarized here are derived from HR+/HER2– luminal breast cancer, and evidence for TNBC, basal-like, and some immune or apoptosis gene-level associations is more limited, so sensitivity and resistance gene lists are not exhaustive and should be interpreted alongside full trial and mechanistic data. See cited trial, label, and translational references for complete context. \uE107filecite\uE102turn0file0\uE101 \uE107filecite\uE102turn0file1\uE101"
+}
