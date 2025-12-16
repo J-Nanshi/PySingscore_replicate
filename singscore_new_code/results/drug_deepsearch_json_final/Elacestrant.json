@@ -1,0 +1,119 @@
+{
+"drug_name": "Elacestrant",
+"cancer_indication": "ER-positive, HER2-negative, ESR1-mutated advanced or metastatic breast cancer after progression on at least one line of endocrine therapy including prior CDK4/6 inhibitor exposure",
+"drug_category": "Endocrine therapy",
+"drug_class": "Selective estrogen receptor degrader (SERD)",
+"moa": "Elacestrant is an oral, non-steroidal SERD that binds estrogen receptor alpha (ESR1/ERα), acts as a high-affinity antagonist, and promotes ubiquitin–proteasome–mediated degradation of ER in ER-positive breast-cancer cells. This reduces ER protein levels and estrogen-responsive transcriptional programs that drive proliferation and survival in luminal (HR+/HER2–) disease, including tumors with activating ESR1 ligand-binding domain mutations that emerge under aromatase inhibitor therapy. In preclinical ER+ models, including endocrine-resistant and CDK4/6 inhibitor–resistant patient-derived xenografts, elacestrant suppresses estrogen-response gene sets, downregulates cell-cycle effectors, induces cell-cycle arrest, and maintains antitumor activity where ER signaling remains a key dependency.",
+"chembl_id": "CHEMBL4297509",
+"drugbank_id": "DB06374",
+"synonyms": [
+"Orserdu",
+"RAD1901",
+"ER-306323"
+],
+"primary_targets": [
+"ESR1"
+],
+"pathway_sets": [
+"HALLMARK_ESTROGEN_RESPONSE_EARLY",
+"KEGG_MEDICUS_REFERENCE_NUCLEAR_INITIATED_ESTROGEN_SIGNALING_PATHWAY",
+"WP_ESTROGEN_SIGNALING",
+"HALLMARK_ESTROGEN_RESPONSE_LATE",
+"HALLMARK_E2F_TARGETS",
+"HALLMARK_G2M_CHECKPOINT",
+"HALLMARK_MTORC1_SIGNALING",
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+"KEGG_ERBB_SIGNALING_PATHWAY",
+"HALLMARK_APOPTOSIS"
+],
+"pathway_sets_annotations": {
+"HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+"description": "Gene set representing estrogen-response transcriptional programs regulated by ERα in hormone-responsive breast-cancer cells.",
+"interpretation": "In ER+/HER2– breast cancer, these early estrogen-response genes capture ER-dependent signaling that underlies luminal tumor proliferation; elacestrant antagonizes and degrades ERα, leading to broad suppression of these signatures in responsive and ESR1-mutated models."
+},
+"KEGG_MEDICUS_REFERENCE_NUCLEAR_INITIATED_ESTROGEN_SIGNALING_PATHWAY": {
+"description": "KEGG-based nuclear estrogen signaling pathway encompassing ER-mediated regulation of gene expression in response to estrogen.",
+"interpretation": "ER-driven estrogen signaling supports growth and survival of luminal ER+/HER2– tumors and often remains active in ESR1-mutated disease after aromatase inhibitors; elacestrant targets this nuclear ER signaling axis by degrading ERα and reducing estrogen-dependent transcription."
+},
+"WP_ESTROGEN_SIGNALING": {
+"description": "Estrogen signaling pathway centered on ERα-dependent regulation of estrogen-responsive gene expression.",
+"interpretation": "This pathway reflects the broader ER-regulated transcriptional network in ER+/HER2– breast cancer; its persistent activity, particularly in tumors with ESR1 mutations, marks continued ER dependence that can be disrupted by elacestrant-mediated ER degradation."
+},
+"HALLMARK_ESTROGEN_RESPONSE_LATE": {
+"description": "Gene set capturing late estrogen-response genes regulated downstream of sustained ERα activity.",
+"interpretation": "Late estrogen-response signatures form part of the extended ER transcriptional program maintaining luminal identity and proliferation in ER+ disease; endocrine-relapsed tumors often show reduced activity of these gene sets, whereas elacestrant-responsive tumors exhibit marked on-treatment downregulation."
+},
+"HALLMARK_E2F_TARGETS": {
+"description": "Gene set of E2F transcription factor targets involved in G1–S transition, DNA replication, and cell-cycle progression.",
+"interpretation": "In ER+/HER2– breast cancer, ER signaling promotes cyclin D–CDK4/6 and E2F-regulated cell-cycle programs; elacestrant downregulates key cell-cycle proteins and suppresses E2F-target gene expression in CDK4/6 inhibitor–resistant models, contributing to cell-cycle arrest."
+},
+"HALLMARK_G2M_CHECKPOINT": {
+"description": "Gene set comprising regulators of the G2/M checkpoint and mitotic entry within the cell cycle.",
+"interpretation": "Hyperactive G2/M checkpoint and cell-cycle gene sets support uncontrolled proliferation in ER+ tumors; elacestrant-induced ER blockade is associated with suppression of G2/M and broader cell-cycle signatures and with growth inhibition in ER+ and CDK4/6 inhibitor–resistant models."
+},
+"HALLMARK_MTORC1_SIGNALING": {
+"description": "Gene set associated with mTORC1 pathway activation as part of the PI3K/AKT/mTOR signaling network.",
+"interpretation": "PI3K/AKT/mTOR pathway activation is described as a canonical driver of endocrine resistance in ER+ breast cancer via ER-independent survival signaling; preclinical work combining elacestrant with mTOR inhibition (e.g., everolimus) shows enhanced antitumor activity, highlighting this pathway as an important resistance and combination target context."
+},
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+"description": "Gene set summarizing activity of the PI3K–AKT–mTOR signaling axis in tumor cells.",
+"interpretation": "PI3K/AKT/mTOR signaling is frequently altered in endocrine-resistant ER+ metastatic breast cancer and provides ER-independent survival signals; combination studies of elacestrant with PI3K or mTOR inhibitors and class-level endocrine-resistance data underscore the relevance of this pathway for both resistance biology and rational combinations."
+},
+"KEGG_ERBB_SIGNALING_PATHWAY": {
+"description": "KEGG ErbB signaling pathway involving HER family receptors (e.g., HER2/ERBB2, EGFR) and their downstream cascades.",
+"interpretation": "Endocrine-resistant ER+ breast cancers often show increased RTK/ERBB activity and HER2-enriched transcriptomic features, with reduced benefit from ER-targeted therapy; such RTK/ErbB signaling shifts are discussed as escape routes from ER dependence that may limit the impact of ER degradation by elacestrant when they dominate tumor biology."
+},
+"HALLMARK_APOPTOSIS": {
+"description": "Gene set including core mediators and regulators of programmed cell death pathways.",
+"interpretation": "ER blockade via SERDs, including elacestrant, is associated with engagement of apoptotic machinery in ER-dependent models and tumor regression; endocrine-resistant states often show diminished pro-apoptotic signaling, indicating that effective activation of apoptosis downstream of ER and cell-cycle inhibition is an important determinant of treatment response."
+}
+},
+"sensitivity_genes_up": [
+"ESR1"
+],
+"sensitivity_genes_down": [],
+"resistance_genes_up": [],
+"resistance_genes_down": [
+"ESR1"
+],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "ESR1",
+"interpretation": "Activating ESR1 ligand-binding domain mutations (for example Y537S and D538G) maintain high ER transcriptional activity and strong estrogen-response signatures under estrogen deprivation; in the phase III EMERALD trial, tumors with ESR1 mutations derived greater progression-free survival benefit from elacestrant than ESR1 wild-type disease, and ESR1-mutated, endocrine-resistant patient-derived xenografts showed marked suppression of estrogen-response programs and tumor growth on elacestrant, supporting mutant ERα signaling as a sensitivity-associated state."
+}
+],
+"sensitivity_genes_down_annotations": [],
+"resistance_genes_up_annotations": [],
+"resistance_genes_down_annotations": [
+{
+"gene": "ESR1",
+"interpretation": "Endocrine-relapsed ER+ breast cancers frequently show downregulation of early and late estrogen-response gene sets and may exhibit ER loss or marked ER downregulation, which is described as a mechanism of resistance to SERMs and SERDs; the deep-research output notes that elacestrant requires ERα for binding and degradation and that tumors evolving ER loss or very low estrogen-response activity are intrinsically resistant, implying that reduced ESR1 expression and signaling confers resistance to elacestrant."
+}
+],
+"kg_gene_relationships": [
+"Elacestrant|antagonizes_and_degrades|ESR1",
+"ESR1_mutation|confers_sensitivity_to|Elacestrant",
+"ESR1_loss|confers_resistance_to|Elacestrant"
+],
+"citations": [
+"Bardia, A., et al. (2021). Phase I study of elacestrant (RAD1901) in ER-positive, HER2-\nnegative advanced breast cancer. Journal of Clinical Oncology, 39(12), 1360–1370. \nPMID: 33513026.",
+"Bidard, F.-C., et al. (2022). Elacestrant versus standard endocrine monotherapy for ER-\npositive, HER2-negative metastatic breast cancer (EMERALD): a phase 3 randomized \ntrial. Journal of Clinical Oncology. PMID: 35584336. NCT03778931.",
+"Bardia, A., et al. (2024). Elacestrant in ER-positive, HER2-negative metastatic breast \ncancer with ESR1 mutations: Subgroup analyses from EMERALD. Clinical Cancer \nResearch, 30(19), 4299–4312. PMID: 39087959.",
+"Bihani, T., et al. (2017). Elacestrant (RAD1901), a selective estrogen receptor degrader, \nhas antitumor activity in multiple ER-positive breast cancer models. Clinical Cancer \nResearch, 23(16), 4793–4804. PMID: 28473534.",
+"Patel, H. K., et al. (2019). Elacestrant (RAD1901) demonstrates antitumor activity in \nCDK4/6 inhibitor–resistant ER-positive breast cancer models. Breast Cancer Research, \n21, 146. PMID: 31801598.",
+"Pancholi, S., et al. (2022). Elacestrant shows strong anti-estrogenic activity in \nendocrine-resistant and fulvestrant-resistant ER-positive breast cancer patient-derived \nxenografts. NPJ Breast Cancer, 8, 121. PMID: 36317934.",
+"Rani, A., et al. (2019). Endocrine resistance in hormone receptor-positive breast cancer: \nAn overview. Frontiers in Endocrinology, 10, 245. PMID: 31133803.",
+"Li, Z., et al. (2024). The EstroGene2.0 database for endocrine therapy response and \nresistance in breast cancer. bioRxiv. [https://doi.org/10.1101/2024.06.28.601163](https://doi.org/10.1101/2024.06.28.601163).",
+"Clusan, L., et al. (2023). A basic review on estrogen receptor signaling pathways in \nbreast cancer. International Journal of Molecular Sciences, 24(7), 6834. PMID: \n37048255.",
+"Nath, A., et al. (2022). ENDORSE: A prognostic model for endocrine therapy in ER-\npositive breast cancer. Molecular Systems Biology, 18(4), e10558. PMID: 35318601.",
+"Hoy, S. M. (2023). Elacestrant: First approval. Drugs, 83(7), 633–639. PMID: 36849468.",
+"Varella, L., et al. (2023). Evaluating elacestrant in the management of ER-positive, \nHER2-negative metastatic breast cancer. Cancers (Basel), 15(6), 1779. PMID: \n36901578.",
+"Shah, M., et al. (2024). Elacestrant for estrogen receptor–positive, human epidermal \ngrowth factor receptor 2–negative advanced breast cancer. The Oncologist, 29(3), e239–\ne248. PMID: 38376373.",
+"Hageman, E., et al. (2024). Elacestrant for ER-positive, HER2-negative advanced breast \ncancer with ESR1 mutations. Annals of Pharmacotherapy, 58(11), 1193–1205. PMID: \n37994211.",
+"Gheysen, M., et al. (2024). Oral SERDs changing the landscape in hormone receptor–\npositive metastatic breast cancer. Cancer Treatment Reviews. PMID: 39227547.",
+"Fan, Z., et al. (2025). Post-marketing safety profile of elacestrant in breast cancer. BMC \nPharmacology and Toxicology, 26(x). PMID: 39929820.",
+"Ribas, R., et al. (2015). AKT antagonist AZD5363 influences estrogen receptor function \nin endocrine-resistant breast cancer and synergizes with fulvestrant in vivo. Molecular \nCancer Therapeutics, 14(9), 2035–2048. PMID: 26206984.",
+"Palaniappan, M., et al. (2024). Current therapeutic opportunities for estrogen receptor \nalpha–positive breast cancer. Biomedicines, 12(12), 2700. PMID: 39689175."
+],
+"notes": "JSON fields are derived directly from the provided deep-research output for elacestrant in human ER+/HER2– breast cancer; ESR1 is the only gene with explicit, repeated gene-level sensitivity and resistance associations, while PI3K/AKT/mTOR and ERBB/RTK pathways are treated at the pathway/class level rather than as individual gene biomarkers. Most adaptive resistance and combination insights (e.g., with PI3K, mTOR, and CDK4/6 inhibitors) are supported by preclinical endocrine-resistance literature and early clinical data and should be interpreted in that context. "
+}

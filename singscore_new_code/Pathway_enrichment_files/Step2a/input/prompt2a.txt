@@ -1,0 +1,5 @@
+1) Check and give correct and incorrect judgement in a new column for the regulation stated. Check the deduced regulation aligns based on effect and rationale for each pathway if the <DRUG_NAME> "is to be administered" (is the regulation and effect of the pathways in tumor cells before the drug is given) (i.e. given a patient has breast cancer the regulation given for a pathway and effect are aligning in tumor sample so that <DRUG_NAME> can be prescribed) for breast cancer. 
+ 
+2) Generate the corrected tabular output. Pathway (ID/Name) Regulation(corrected) Effect (corrected) Rationale(correct) References (corrected) 
+ 
+<DRUG_NAME> = <Dostralimab>
