@@ -1,0 +1,104 @@
+{
+"drug_name": "Selpercatinib",
+"cancer_indication": "Breast cancer with RET fusions (metastatic disease; NCCN “useful in certain circumstances”).",
+"drug_category": "Tyrosine kinase inhibitor",
+"drug_class": "Highly selective RET kinase inhibitor",
+"moa": "Selpercatinib binds directly to the ATP site of the RET kinase, preventing autophosphorylation and activation. In RET fusion–positive cells, this shuts off constitutive RET signaling that drives downstream MAPK/ERK and PI3K/AKT pathways, reducing tumor cell proliferation and survival. In ER+ breast cancer, RET activation is linked to endocrine resistance; by inhibiting RET, selpercatinib can restore sensitivity to endocrine therapy and has shown re-sensitization effects in endocrine/CDK4/6 inhibitor–resistant models.",
+"chembl_id": "CHEMBL4559134",
+"drugbank_id": "DB15685",
+"synonyms": [
+"Selpercatinib (INN)",
+"LOXO-292",
+"LY3527723",
+"Retevmo®",
+"Retsevmo®",
+"LY-3527723",
+"LOXO292",
+"WHO10967"
+],
+"primary_targets": [
+"RET",
+"FLT1",
+"FLT4",
+"FGFR1",
+"FGFR2",
+"FGFR3"
+],
+"pathway_sets": [
+"KEGG_MEDICUS_VARIANT_RET_FUSION_KINASE_TO_RAS_ERK_SIGNALING_PATHWAY",
+"KEGG_MEDICUS_VARIANT_MUTATION_ACTIVATED_RET_TO_PI3K_SIGNALING_PATHWAY",
+"HALLMARK_E2F_TARGETS",
+"HALLMARK_G2M_CHECKPOINT",
+"PID_RET_PATHWAY"
+],
+"pathway_sets_annotations": {
+"KEGG_MEDICUS_VARIANT_RET_FUSION_KINASE_TO_RAS_ERK_SIGNALING_PATHWAY": {
+"description": "Constitutively active RET fusions drive downstream RAS/MAPK (MAPK/ERK) signaling.",
+"interpretation": "RET fusion–driven MAPK/ERK signaling is a core proliferative pathway in RET-altered breast cancers and is a major downstream axis of oncogenic RET activity."
+},
+"KEGG_MEDICUS_VARIANT_MUTATION_ACTIVATED_RET_TO_PI3K_SIGNALING_PATHWAY": {
+"description": "Activated RET triggers downstream PI3K/AKT signaling that supports tumor cell survival and growth.",
+"interpretation": "PI3K/AKT signaling is a key survival pathway downstream of RET activation in RET-driven breast cancer contexts."
+},
+"HALLMARK_E2F_TARGETS": {
+"description": "Cell-cycle transcriptional program driven by E2F-associated genes linked to proliferation.",
+"interpretation": "E2F-driven cell-cycle activity reflects proliferative state in breast cancer models and is reported as suppressed in endocrine-resistant ER+ models upon RET inhibition."
+},
+"HALLMARK_G2M_CHECKPOINT": {
+"description": "Gene program associated with G2/M checkpoint control and mitotic progression.",
+"interpretation": "G2/M checkpoint regulators contribute to mitotic progression in breast cancer models and are reported as suppressed in resistant ER+ cell lines upon selpercatinib treatment."
+},
+"PID_RET_PATHWAY": {
+"description": "RET (rearranged during transfection) receptor tyrosine kinase signaling pathway.",
+"interpretation": "Aberrant RET activity (fusions or amplifications/overexpression) can drive oncogenic signaling and is linked to therapeutic resistance (including endocrine resistance) in breast cancer contexts described."
+}
+},
+"sensitivity_genes_up": [
+"RET"
+],
+"sensitivity_genes_down": [],
+"resistance_genes_up": [],
+"resistance_genes_down": [
+"TP53"
+],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "RET",
+"interpretation": "RET fusion–positive breast cancers and RET-driven tumor contexts are described as sensitive to RET inhibition, with clinical responses reported and mechanistic suppression of downstream MAPK/ERK and PI3K/AKT signaling upon RET blockade."
+}
+],
+"sensitivity_genes_down_annotations": [],
+"resistance_genes_up_annotations": [],
+"resistance_genes_down_annotations": [
+{
+"gene": "TP53",
+"interpretation": "TP53 is frequently co-mutated in RET-altered breast cancer (~80%), inactivating the p53 pathway; the deep-research output associates downregulated p53 pathway activity with increased resistance."
+}
+],
+"kg_gene_relationships": [
+"Selpercatinib|inhibits|RET",
+"Selpercatinib|inhibits|FLT1",
+"Selpercatinib|inhibits|FLT4",
+"Selpercatinib|inhibits|FGFR1",
+"Selpercatinib|inhibits|FGFR2",
+"Selpercatinib|inhibits|FGFR3"
+],
+"Breast_cancer_subtype_information": {
+"HR⁺/HER2⁻ (Luminal A/B)": "RET is more commonly overexpressed in ER⁺ tumors that have acquired endocrine resistance. Selpercatinib shows activity in this context (ER⁺ endocrine-resistant models and organoids were resensitized), and NCCN guidelines recognize RET fusions as actionable in HR⁺ metastatic disease (RET fusion → selpercatinib).",
+"HER2⁺": "RET genomic alterations have been identified in a subset of HER2⁺ tumors, though clinical data are limited. One index case with HER2+ breast cancer had a NCOA4-RET fusion and responded to RET inhibition (cabozantinib); the role of selpercatinib specifically in HER2+ cases is not documented.",
+"Triple-negative (Basal-like/HER2-enriched)": "A majority (~65%) of RET-altered breast cancers were ER⁻, implying many fall into the triple-negative category. Data in TNBC are sparse; selpercatinib’s tumor-agnostic approval suggests any RET fusion TNBC could respond, but no TNBC-specific trial results have been published.",
+"BRCA1/2-mutated / HRD+": "There is no known interaction between selpercatinib and BRCA status; no evidence links BRCA/HRD status to selpercatinib response."
+},
+"citations": [
+"[https://go.drugbank.com/drugs/DB15685](https://go.drugbank.com/drugs/DB15685)",
+"[https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-selpercatinib-locally-advanced-or-metastatic ret-fusion-positive-solid-tumors](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-selpercatinib-locally-advanced-or-metastatic ret-fusion-positive-solid-tumors)",
+"[https://www.nature.com/articles/s41467-018-07341-4?error=cookies_not_supported&code=43cfec8a b557-4afd-9895-8e55587b34d4](https://www.nature.com/articles/s41467-018-07341-4?error=cookies_not_supported&code=43cfec8a b557-4afd-9895-8e55587b34d4)",
+"[https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2024.1497093/full](https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2024.1497093/full)",
+"[https://pubmed.ncbi.nlm.nih.gov/40688508/](https://pubmed.ncbi.nlm.nih.gov/40688508/)",
+"[https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/213246s008lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/213246s008lbl.pdf)",
+"[https://www.ema.europa.eu/en/documents/product-information/retsevmo-epar-product-information_en.pdf](https://www.ema.europa.eu/en/documents/product-information/retsevmo-epar-product-information_en.pdf)",
+"[https://ascopost.com/issues/may-25-2025/nccn-clinical-practice-guidelines-in-oncology-2025-updates/](https://ascopost.com/issues/may-25-2025/nccn-clinical-practice-guidelines-in-oncology-2025-updates/)",
+"[https://education.nccn.org/node/95857](https://education.nccn.org/node/95857)"
+],
+"notes": "Breast-cancer–specific profiling data post-selpercatinib are described as scarce; several subtype statements are based on limited reports and extrapolation within the deep-research output. Contraindications: none listed in the deep-research output. Source files:  "
+}

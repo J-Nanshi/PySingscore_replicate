@@ -1,0 +1,106 @@
+{
+"drug_name": "Larotrectinib",
+"cancer_indication": "Breast cancer with an NTRK gene fusion (notably secretory breast carcinoma with ETV6–NTRK3); otherwise off-label unless the tumor tests NTRK-fusion positive.",
+"drug_category": "Targeted kinase inhibitor",
+"drug_class": "TRK inhibitor",
+"moa": "Larotrectinib is an orally available small-molecule inhibitor of TRKA/TRKB/TRKC (NTRK1/2/3) that occupies the ATP pocket of TRK fusion proteins, preventing autophosphorylation and downstream signaling. In NTRK fusion–positive breast cancers (most notably secretory breast carcinoma), constitutively active TRK signaling drives PI3K–AKT and RAS–MAPK pathways; larotrectinib blocks these oncogenic signals, leading to tumor growth arrest and apoptosis. Its activity is described as relevant only in tumors driven by an NTRK fusion, with minimal effect in tumors lacking NTRK fusions.",
+"chembl_id": "CHEMBL3889654",
+"drugbank_id": "DB14723",
+"synonyms": [
+"ARRY-470",
+"BAY-2733344 (BAY-2757556)",
+"LOXO-101",
+"ARRY 470",
+"Vitrakvi®"
+],
+"primary_targets": [
+"NTRK1",
+"NTRK2",
+"NTRK3"
+],
+"pathway_sets": [
+"REACTOME_SIGNALING_BY_NTRKS",
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+"HALLMARK_KRAS_SIGNALING_UP",
+"HALLMARK_APOPTOSIS"
+],
+"pathway_sets_annotations": {
+"REACTOME_SIGNALING_BY_NTRKS": {
+"description": "Canonical TRK receptor signaling pathway (TRKA/TRKB/TRKC) and downstream effectors including PI3K/AKT and RAS/MAPK signaling modules.",
+"interpretation": "In NTRK fusion–positive breast cancers (e.g., secretory carcinoma), TRK signaling is constitutively active and functions as a dominant oncogenic driver pathway."
+},
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+"description": "Core cell-survival and growth signaling program reflecting PI3K→AKT→mTOR pathway activity.",
+"interpretation": "This pathway can be activated downstream of constitutively active TRK fusion signaling in NTRK fusion–positive tumors, supporting survival and proliferation programs in breast cancer contexts where the TRK axis is oncogenic."
+},
+"HALLMARK_KRAS_SIGNALING_UP": {
+"description": "Gene-expression program consistent with activation of the RAS–RAF–MEK–ERK (MAPK) cascade.",
+"interpretation": "TRK fusion kinases can activate RAS/MAPK signaling; in breast cancers driven by NTRK fusions, MAPK pathway activity reflects a key proliferative output of the TRK oncogenic driver."
+},
+"HALLMARK_APOPTOSIS": {
+"description": "Programmed cell death signaling and execution machinery reflected by apoptosis-associated gene expression.",
+"interpretation": "Apoptosis is typically suppressed in cancer; in TRK-driven breast tumors, restoration of apoptotic signaling is a key biological consequence associated with effective blockade of the TRK oncogenic driver."
+}
+},
+"sensitivity_genes_up": [
+"NTRK1",
+"NTRK2",
+"NTRK3"
+],
+"sensitivity_genes_down": [],
+"resistance_genes_up": [],
+"resistance_genes_down": [],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "NTRK1",
+"interpretation": "Oncogenic activation of TRKA signaling via NTRK fusions is described as the defining biological context for larotrectinib activity, since the drug directly inhibits TRK kinase signaling in fusion-driven tumors."
+},
+{
+"gene": "NTRK2",
+"interpretation": "Larotrectinib is described as a selective inhibitor of TRK kinases; tumors with constitutively active TRK signaling driven by NTRK fusions are the population in which responses are observed."
+},
+{
+"gene": "NTRK3",
+"interpretation": "Secretory breast carcinoma is noted as a rare subtype driven by ETV6–NTRK3 fusions, and reported breast-cancer responses to larotrectinib occur in TRK fusion–positive cases."
+}
+],
+"sensitivity_genes_down_annotations": [],
+"resistance_genes_up_annotations": [],
+"resistance_genes_down_annotations": [],
+"kg_gene_relationships": [
+"Larotrectinib|inhibits|NTRK1",
+"Larotrectinib|inhibits|NTRK2",
+"Larotrectinib|inhibits|NTRK3"
+],
+"Breast_cancer_subtype_information": {
+"HR⁺/HER2⁻ (Luminal A/B)": "NTRK fusions are extremely rare (<0.1%) in hormone-receptor positive cancers; no specific studies of larotrectinib in this subtype exist, and it would only be effective if an NTRK fusion were incidentally present.",
+"HER2⁺": "NTRK fusions are uncommon; no clinical data on larotrectinib in HER2-positive breast cancer, and standard HER2-targeted therapy is used unless an NTRK fusion is unexpectedly found (very unlikely).",
+"Triple-Negative (TNBC)": "Includes secretory carcinoma, a rare TNBC subtype defined by ETV6–NTRK3 fusions; secretory breast carcinomas nearly all harbor NTRK3 fusions and case series document highly durable responses to larotrectinib in metastatic secretory breast cancer; conventional TNBC without secretory features has extremely low NTRK-fusion incidence.",
+"gBRCA1/2-Mutated / HRD": "No reported interactions; larotrectinib’s action is independent of DNA repair status, and use is guided by NTRK fusion status, not by BRCA/HRD.",
+"Basal-like": "Secretory carcinomas are often basal-like in immunophenotype; evidence in basal-like breast cancer is largely from secretory cases, with no data on other basal-like cancers.",
+"HER2-enriched (by gene expression)": "No specific data; if such tumors carry an NTRK fusion (presumably virtually none), larotrectinib would apply per tumor-agnostic rule, but there is no evidence specific to this subtype."
+},
+"citations": [
+"Larotrectinib: Uses, Interactions,",
+"Mechanism of Action | DrugBank Online",
+"[https://go.drugbank.com/drugs/DB14723](https://go.drugbank.com/drugs/DB14723)",
+"NDA 211710 Oral Solution Vitrakvi Draft USPI_15May2020_Tracked_Bayer Internal",
+"Sep2020",
+"[https://labeling.bayerhealthcare.com/html/products/pi/vitrakvi_PI.pdf](https://labeling.bayerhealthcare.com/html/products/pi/vitrakvi_PI.pdf)",
+"Locally Recurrent Secretory Carcinoma of the Breast with NTRK3 Gene Fusion - PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/34176200/](https://pubmed.ncbi.nlm.nih.gov/34176200/)",
+"TRK inhibitor in a patient with metastatic triple-negative breast cancer and NTRK",
+"fusions identified via cell-free DNA analysis - PMC ",
+"[https://pmc.ncbi.nlm.nih.gov/articles/PMC9893401/](https://pmc.ncbi.nlm.nih.gov/articles/PMC9893401/)",
+"Larotrectinib | C21H22F2N6O2 | CID 46188928 - PubChem",
+"[https://pubchem.ncbi.nlm.nih.gov/compound/Larotrectinib](https://pubchem.ncbi.nlm.nih.gov/compound/Larotrectinib)",
+"Frontiers | Evaluation of NTRK Gene Fusion by Five Different Platforms in Triple-Negative Breast",
+"Carcinoma",
+"[https://www.frontiersin.org/journals/molecular-biosciences/articles/10.3389/fmolb.2021.654387/full](https://www.frontiersin.org/journals/molecular-biosciences/articles/10.3389/fmolb.2021.654387/full)",
+"bayer.com",
+"[https://www.bayer.com/sites/default/files/vitrakvi-capsules-smpc-jul-2020.pdf](https://www.bayer.com/sites/default/files/vitrakvi-capsules-smpc-jul-2020.pdf)",
+"NTRK Gene Fusion Testing | VITRAKVI® (larotrectinib) | HCP Site",
+"[https://www.vitrakvihcp.com/testing](https://www.vitrakvihcp.com/testing)"
+],
+"notes": "Resistance gene-direction evidence specific to breast cancer is described as limited; the document notes known on-target resistance via kinase-domain point mutations in NTRK1/3 (e.g., NTRK1 G595R, NTRK3 G623R/G696A) and describes additional bypass mechanisms as hypothesized from other cancers. Safety notes include that the FDA label lists no on-label contraindications except hypersensitivity to larotrectinib or excipients, and warns about neurologic toxicities, hepatotoxicity, and embryofetal toxicity, with avoidance of strong CYP3A4 inhibitors/inducers.   "
+}

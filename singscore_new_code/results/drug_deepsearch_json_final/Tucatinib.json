@@ -1,0 +1,186 @@
+{
+"drug_name": "Tucatinib",
+"cancer_indication": "HER2-positive advanced/metastatic breast cancer (in combination with trastuzumab and capecitabine) after ≥1 prior anti-HER2 regimen, including patients with brain metastases.",
+"drug_category": "HER2-targeted",
+"drug_class": "Tyrosine kinase inhibitor",
+"moa": "Tucatinib is an orally active, highly selective small-molecule tyrosine kinase inhibitor of HER2 (ERBB2) that binds the intracellular kinase domain and inhibits HER2 phosphorylation and downstream signaling. It inhibits the phosphorylation of both HER-2 and HER-3, leading to downstream changes in MAPK and AKT signaling and reduced cell proliferation. In HER2-amplified breast cancer, this blocks the PI3K-AKT and RAS-RAF-MEK-ERK cascades and can lead to cell cycle arrest and apoptosis. It is ~500-fold more selective for HER2 vs EGFR, and has demonstrated CNS activity in HER2+ brain metastases.",
+"chembl_id": "CHEMBL3989868",
+"drugbank_id": "DB11652",
+"synonyms": [
+"ARRY-380",
+"ARRY380",
+"MK-7119",
+"ONT-380 (ONT-380)",
+"irbinitinib (ONT-380)",
+"TUKYSA"
+],
+"primary_targets": [
+"ERBB2",
+"ERBB3"
+],
+"pathway_sets": [
+"REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2",
+"REACTOME_PI3K_AKT_SIGNALING_IN_CANCER",
+"KEGG_MAPK_SIGNALING_PATHWAY",
+"REACTOME_SIGNALING_BY_EGFR_IN_CANCER",
+"HALLMARK_NOTCH_SIGNALING",
+"HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+"HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+"HALLMARK_MTORC1_SIGNALING",
+"HALLMARK_ESTROGEN_RESPONSE_EARLY",
+"REACTOME_TCR_SIGNALING"
+],
+"pathway_sets_annotations": {
+"REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2": {
+"description": "Constitutive ERBB2 (HER2) homodimer/heterodimer signaling activates proliferative downstream pathways, including PI3K/AKT and MAPK/ERK cascades.",
+"interpretation": "HER2 pathway upregulation is a dominant oncogenic driver in HER2-amplified breast cancer and defines a central therapeutic vulnerability targeted by tucatinib."
+},
+"REACTOME_PI3K_AKT_SIGNALING_IN_CANCER": {
+"description": "A major pro-survival signaling axis activated by receptor tyrosine kinases (including HER2/ERBB2) that promotes growth and survival through AKT pathway activity.",
+"interpretation": "PI3K/AKT signaling is a key downstream effector of HER2-driven tumors and shapes tumor cell survival programs relevant to targeted therapy response."
+},
+"KEGG_MAPK_SIGNALING_PATHWAY": {
+"description": "A downstream RAS–RAF–MEK–ERK cascade activated by HER2 that promotes cell growth and proliferation.",
+"interpretation": "MAPK pathway activity reflects proliferative signaling downstream of HER2 and contributes to growth of HER2-driven breast cancers."
+},
+"REACTOME_SIGNALING_BY_EGFR_IN_CANCER": {
+"description": "EGFR (ERBB1) receptor tyrosine kinase signaling that can activate overlapping downstream pathways and can bypass HER2 blockade when elevated.",
+"interpretation": "EGFR signaling can provide an alternative growth route and is described as a bypass mechanism in tumors progressing on HER2-directed therapy."
+},
+"HALLMARK_NOTCH_SIGNALING": {
+"description": "Notch signaling regulates cell fate decisions and is noted as active/upregulated in triple-negative/basal breast cancer contexts.",
+"interpretation": "Notch activity reflects basal/TNBC biology and can support tumor growth independently of HER2 signaling."
+},
+"HALLMARK_WNT_BETA_CATENIN_SIGNALING": {
+"description": "Wnt/β-catenin signaling pathway associated with deregulation in basal/TNBC subtype biology and linked to EMT/stemness programs.",
+"interpretation": "Wnt/β-catenin activity contributes to aggressive phenotypes (e.g., EMT and stemness) that are not directly targeted by tucatinib."
+},
+"HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+"description": "NF-κB-driven inflammatory and survival transcriptional program that is described as active in mesenchymal-like TNBC.",
+"interpretation": "NF-κB activity promotes survival/inflammation programs that can dominate tumor behavior outside HER2 dependency."
+},
+"HALLMARK_MTORC1_SIGNALING": {
+"description": "mTOR/mTORC1 nutrient-sensing growth pathway; activation is reported in certain TNBC subgroup contexts (including HRD-low TNBC with poor prognosis).",
+"interpretation": "mTORC1 activation represents an alternative growth/survival program that may reduce dependence on HER2 signaling."
+},
+"HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+"description": "Estrogen receptor signaling transcriptional program characteristic of HR+ (luminal) breast cancers and linked to endocrine-driven proliferation.",
+"interpretation": "ER signaling is a key proliferative driver in HR+ disease and is described as a potential bypass/crosstalk mechanism in HR+/HER2+ settings."
+},
+"REACTOME_TCR_SIGNALING": {
+"description": "T cell receptor (TCR) signaling is an adaptive immunity pathway reflecting T-cell activation and immune signaling within the tumor microenvironment.",
+"interpretation": "Immune activation signatures (including T-cell activity) are described as markers of an immunoreactive microenvironment that may correlate with outcomes and combination responses, though tucatinib is not an immunotherapy."
+}
+},
+"sensitivity_genes_up": [
+"ERBB2",
+"ERBB3"
+],
+"sensitivity_genes_down": [],
+"resistance_genes_up": [
+"EGFR",
+"ERBB2",
+"ERBB3",
+"ESR1",
+"MET",
+"PIK3CA",
+"AR"
+],
+"resistance_genes_down": [
+"PTEN"
+],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "ERBB2",
+"interpretation": "Amplification/overexpression of ERBB2 (HER2) is described as strongly predicting sensitivity because tucatinib directly inhibits HER2 kinase and blocks the dominant oncogenic driver."
+},
+{
+"gene": "ERBB3",
+"interpretation": "Tumors co-overexpressing ERBB2 and ERBB3 are described as sensitive because HER2 blockade inactivates HER2–HER3 signaling, and tucatinib inhibits HER3 phosphorylation."
+}
+],
+"sensitivity_genes_down_annotations": [],
+"resistance_genes_up_annotations": [
+{
+"gene": "EGFR",
+"interpretation": "EGFR overexpression/upregulation is described as a bypass mechanism because EGFR can dimerize with HER2 or signal independently; tucatinib spares EGFR, so elevated EGFR signaling can mitigate HER2 blockade."
+},
+{
+"gene": "MET",
+"interpretation": "MET amplification is described as an example of alternate RTK upregulation that can bypass HER2 inhibition and confer resistance."
+},
+{
+"gene": "PIK3CA",
+"interpretation": "Activating PI3K/AKT pathway alterations (including PIK3CA mutations) are described as sustaining proliferative signaling despite HER2 blockade, contributing to resistance."
+},
+{
+"gene": "PTEN",
+"interpretation": "PTEN loss is described as a downstream alteration that may sustain PI3K/AKT signaling despite HER2 inhibition and contribute to resistance."
+},
+{
+"gene": "ERBB2",
+"interpretation": "Certain HER2 kinase domain mutations are described as decreasing binding of reversible TKIs (example given: T798I) and may confer resistance to drugs like tucatinib."
+},
+{
+"gene": "ERBB3",
+"interpretation": "HER3 (ERBB3) signaling up (e.g., via neuregulin) is described as potentially sustaining HER2–HER3 pathway signaling and blunting tucatinib effect despite inhibition of HER3 phosphorylation."
+},
+{
+"gene": "ESR1",
+"interpretation": "Upregulation of ER signaling is described as sustaining proliferation in HR+/HER2+ tumors when HER2 is blocked (cross-talk), reducing tucatinib efficacy."
+},
+{
+"gene": "AR",
+"interpretation": "ER/AR signaling cross-talk is described as a resistance mechanism context in HER2+ tumors co-expressing hormone receptors, where hormone receptor signaling can partially resist HER2 inhibition."
+}
+],
+"resistance_genes_down_annotations": [
+{
+"gene": "PTEN",
+"interpretation": "PTEN loss (low PTEN) is described as a downstream alteration that may sustain PI3K/AKT signaling despite HER2 blockade, contributing to resistance."
+}
+],
+"kg_gene_relationships": [
+"Tucatinib|inhibits|ERBB2",
+"Tucatinib|inhibits|ERBB3",
+"ERBB2_overexpression|confers_sensitivity_to|Tucatinib",
+"EGFR_upregulation|confers_resistance_to|Tucatinib",
+"MET_amplification|confers_resistance_to|Tucatinib",
+"PIK3CA_mutation|confers_resistance_to|Tucatinib",
+"PTEN_loss|confers_resistance_to|Tucatinib",
+"ESR1_upregulation|confers_resistance_to|Tucatinib",
+"ERBB2_T798I|confers_resistance_to|Tucatinib"
+],
+"Breast_cancer_subtype_information": {
+"HER2-Positive (ERBB2-amplified) Metastatic Breast Cancer": "Tucatinib’s efficacy is firmly established in HER2+ MBC. The HER2CLIMB trial (phase II) showed that adding tucatinib to trastuzumab + capecitabine significantly improved PFS and OS compared to placebo. Importantly, in patients with brain metastases, tucatinib conferred a major benefit.",
+"HER2-Low / HER2-Negative with ERBB2 Mutations": "In a phase 2 basket trial (SGNTUC-019), heavily pretreated patients with HER2-mutant, HER2– breast cancer achieved a 41.9% response rate to tucatinib + trastuzumab, indicating substantial activity even without HER2 amplification.",
+"HR+/HER2– (Luminal A/B)": "Tucatinib is not indicated in HR+/HER2– breast cancer. No clinical trials have shown efficacy in this subtype, since they lack HER2 target. (Exceptions: if a luminal tumor harbors an ERBB2 mutation, see above.)",
+"Triple-Negative/Basal-like": "TNBC is defined by lack of HER2, so tucatinib monotherapy has no approved role. However, recent “HER2-low” TNBC subgroup analyses suggest possible use in combination with HER2-directed ADCs; pre-treating HER2-low TNBC cells with tucatinib accumulates inactive HER2 and sensitizes them to trastuzumab–deruxtecan.",
+"BRCA1/2-Mutated or HRD+ Tumors": "There is no evidence that germline BRCA mutation or HRD status per se affects tucatinib sensitivity, except insofar as some of these tumors may also overexpress HER2."
+},
+"citations": [
+"Tucatinib: Uses, Interactions, Mechanism of Action | DrugBank Online",
+"[https://go.drugbank.com/drugs/DB11652](https://go.drugbank.com/drugs/DB11652)",
+"Reactome | Signaling by ERBB2 in Cancer",
+"[https://reactome.org/content/detail/R-HSA-1227990](https://reactome.org/content/detail/R-HSA-1227990)",
+"JCI Insight - Multiomics of HER2-low triple-negative breast cancer identifies a receptor\ntyrosine kinase–relevant subgroup with therapeutic prospects",
+"[https://insight.jci.org/articles/view/172366](https://insight.jci.org/articles/view/172366)",
+"HER2-Selective and Reversible Tyrosine Kinase Inhibitor Tucatinib Potentiates the Activity of T DM1 in Preclinical Models of HER2-positive Breast Cancer - PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/37721518/](https://pubmed.ncbi.nlm.nih.gov/37721518/)",
+"label",
+"[https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213411s004lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213411s004lbl.pdf)",
+"Tucatinib and trastuzumab in HER2-mutated metastatic breast cancer: a phase 2 basket trial | Nature\nMedicine",
+"[https://www.nature.com/articles/s41591-024-03462-0?error=cookies_not_supported&code=8d23fc8b-d72d-484a a35f-5a85d7497ba1](https://www.nature.com/articles/s41591-024-03462-0?error=cookies_not_supported&code=8d23fc8b-d72d-484a a35f-5a85d7497ba1)",
+"KEGG PATHWAY: Breast cancer - Reference pathway",
+"[https://www.kegg.jp/kegg-bin/show_pathway?map05224](https://www.kegg.jp/kegg-bin/show_pathway?map05224)",
+"Acquired gene alterations potentially related to resistance to anti ...",
+"[https://ascopubs.org/doi/pdf/10.1200/JCO.2025.43.4_suppl.277](https://ascopubs.org/doi/pdf/10.1200/JCO.2025.43.4_suppl.277)",
+"Mechanisms of acquired resistance to HER2-Positive breast cancer ...",
+"[https://www.sciencedirect.com/science/article/pii/S0014299924004138](https://www.sciencedirect.com/science/article/pii/S0014299924004138)",
+"Tucatinib Plus T-DM1 Extends Progression-Free Survival vs T-DM1 Alone in Advanced HER2-\nPositive Breast Cancer - The ASCO Post",
+"[https://ascopost.com/issues/december-25-2023/tucatinib-plus-t-dm1-extends-progression-free-survival-vs-t-dm1-alone-in advanced-her2-positive-breast-cancer/](https://ascopost.com/issues/december-25-2023/tucatinib-plus-t-dm1-extends-progression-free-survival-vs-t-dm1-alone-in advanced-her2-positive-breast-cancer/)",
+"TUKYSA Combination Significantly Improves Progression-Free Survival as First-Line Maintenance in\nHER2+ Metastatic Breast Cancer in HER2CLIMB-05 Trial | Pfizer",
+"[https://www.pfizer.com/news/press-release/press-release-detail/tukysa-combination-significantly-improves-progression-free](https://www.pfizer.com/news/press-release/press-release-detail/tukysa-combination-significantly-improves-progression-free)"
+],
+"notes": "Drug efflux/metabolism mechanisms are mentioned as possible but with limited breast-cancer–specific evidence. Contraindications are stated as none (aside from standard pregnancy/lactation cautions). Sources parsed from  and prompt instructions ."
+}

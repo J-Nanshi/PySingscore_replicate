@@ -1,9 +1,9 @@
 {
 "drug_name": "Alpelisib",
-"cancer_indication": "HR+, HER2-negative metastatic breast cancer with activating PIK3CA mutations, in combination with fulvestrant after progression on endocrine therapy.",
+"cancer_indication": "FDA-approved (May 2019) for HR+, HER2-negative metastatic breast cancer with activating PIK3CA mutations, in combination with fulvestrant after progression on endocrine therapy.",
 "drug_category": "PI3K pathway inhibitor",
 "drug_class": "PI3Kα inhibitor",
-"moa": "Alpelisib is an oral, highly selective ATP-competitive inhibitor of the p110α catalytic subunit of class IA phosphatidylinositol 3-kinase (PIK3CA), blocking conversion of PIP2 to PIP3 and preventing downstream AKT/mTOR activation in PIK3CA-mutant breast cancer cells. In HR+ breast cancer, activating PIK3CA mutations drive PI3K-pathway hyperactivation and endocrine resistance, so PI3Kα inhibition reduces proliferative and survival signaling. By suppressing PI3K/AKT/mTOR signaling and ER cross-talk, particularly when combined with ER antagonists such as fulvestrant, alpelisib induces G1 arrest and promotes apoptosis in PIK3CA-dependent, luminal tumors.",
+"moa": "Alpelisib is a highly selective ATP-competitive inhibitor of PI3K p110α (PIK3CA). It prevents phosphorylation of PIP₂ to PIP₃, thereby blocking activation of AKT and downstream mTOR signaling. In HR+ cancers, inhibiting PI3Kα interferes with cross-talk between the estrogen receptor (ER) and growth-factor pathways, so combining alpelisib with an ER antagonist (e.g. fulvestrant) produces synergistic anti-proliferative effects. In practice, alpelisib treatment reduces phosphorylated AKT and S6K in tumor cells, triggering G₁ arrest and apoptosis of PIK3CA-driven breast cancer cells.",
 "chembl_id": "CHEMBL2396661",
 "drugbank_id": "DB12015",
 "synonyms": [
@@ -21,53 +21,43 @@
 "REACTOME_MTOR_SIGNALLING",
 "REACTOME_SIGNALING_BY_ERBB2",
 "REACTOME_ESR_MEDIATED_SIGNALING",
-"GOBP_INFLAMMATORY_RESPONSE",
 "KEGG_GLYCOLYSIS_GLUCONEOGENESIS",
 "KEGG_MAPK_SIGNALING_PATHWAY",
-"REACTOME_CELL_CYCLE",
 "HALLMARK_APOPTOSIS",
 "STEIN_ESR1_TARGETS"
 ],
 "pathway_sets_annotations": {
 "REACTOME_PI3K_AKT_ACTIVATION": {
-"description": "PI3K–AKT signaling transduces growth factor and oncogenic cues through PIP3-dependent activation of AKT and downstream effectors, including mTOR, to promote cell proliferation and survival.",
-"interpretation": "In PIK3CA-mutant HR+ breast cancer, this pathway is hyperactivated and drives endocrine resistance and tumor growth; alpelisib directly inhibits PI3Kα to shut down AKT/mTOR output in sensitive tumors."
+"description": "PI3K–AKT signaling transduces growth-factor and oncogenic cues into downstream survival and proliferation programs via activation of AKT and downstream effectors.",
+"interpretation": "This is the direct target pathway impacted by alpelisib in breast cancer, and its activity is central to growth and endocrine resistance in PIK3CA-mutant HR+ tumors."
 },
 "REACTOME_MTOR_SIGNALLING": {
-"description": "mTOR signaling integrates upstream inputs from PI3K/AKT to regulate protein synthesis, cell growth, and metabolism via effectors such as S6K and 4EBP1.",
-"interpretation": "Downstream mTORC1 activity is initially suppressed by PI3Kα inhibition but becomes hyperactivated in acquired alpelisib resistance, where elevated phospho-S6K and phospho-4EBP1 sustain proliferation despite PI3K blockade."
+"description": "mTOR signaling regulates cellular growth and protein synthesis downstream of upstream pathways including PI3K/AKT, through effectors such as S6K and 4EBP1.",
+"interpretation": "mTOR pathway output is a key downstream growth program in breast cancer biology and is discussed as a major node in the PI3K/AKT/mTOR network relevant to alpelisib activity."
 },
 "REACTOME_SIGNALING_BY_ERBB2": {
-"description": "ERBB2/HER2 signaling is a receptor tyrosine kinase pathway that activates PI3K/AKT and MAPK cascades in response to HER2 overexpression or amplification.",
-"interpretation": "In HER2+ PIK3CA-mutant breast cancers, ERBB2 signaling cooperates with PI3K activation and confers resistance to anti-HER2 therapy; combining alpelisib with HER2-targeted agents can overcome this in preclinical models."
+"description": "ERBB2/HER2 signaling is a receptor tyrosine kinase pathway that can activate PI3K/AKT and other growth programs in breast cancer.",
+"interpretation": "ERBB2/HER2 signaling is described as cross-talking with PI3K signaling and is relevant to breast cancer contexts where HER2 and PI3K pathways are co-activated."
 },
 "REACTOME_ESR_MEDIATED_SIGNALING": {
-"description": "ESR-mediated signaling reflects estrogen receptor (ER, ESR1)–driven transcriptional programs that regulate luminal differentiation, proliferation, and endocrine response in HR+ breast cancer.",
-"interpretation": "ER signaling is a dominant driver in HR+ disease; combining alpelisib with ER antagonists such as fulvestrant suppresses ER target gene expression and improves outcomes in PIK3CA-mutant tumors."
-},
-"GOBP_INFLAMMATORY_RESPONSE": {
-"description": "The inflammatory response gene program (e.g., GO:0006955) encompasses innate and adaptive immune signaling, including interferon and cytokine pathways.",
-"interpretation": "Immune and inflammatory gene sets, including interferon response signatures, are upregulated in alpelisib-resistant breast cancer models, suggesting inflammatory and immune programs accompany or facilitate escape from PI3K inhibition."
+"description": "ESR-mediated signaling reflects estrogen receptor (ER) signaling programs that regulate transcriptional outputs and luminal breast cancer behavior.",
+"interpretation": "ER signaling is described as a major driver in HR+ breast cancer and is relevant to alpelisib use in combination with ER antagonism to suppress ER-driven biology."
 },
 "KEGG_GLYCOLYSIS_GLUCONEOGENESIS": {
-"description": "Glycolysis/gluconeogenesis controls cellular glucose utilization and energy production through glycolytic enzymes and associated metabolic nodes.",
-"interpretation": "PI3K activation promotes glycolysis, and alpelisib-resistant cells exhibit increased reliance on glucose metabolism; metabolic vulnerabilities in glycolysis become exploitable in resistant tumors."
+"description": "Glycolysis and gluconeogenesis pathways govern cellular glucose metabolism and energy generation through core glycolytic enzymes and associated metabolic steps.",
+"interpretation": "Glucose metabolism is discussed as part of metabolic adaptations in alpelisib-resistant models, making glycolysis/gluconeogenesis relevant in the breast cancer context described."
 },
 "KEGG_MAPK_SIGNALING_PATHWAY": {
-"description": "MAPK signaling relays mitogenic stimuli via RAS–RAF–MEK–ERK to regulate cell proliferation, survival, and differentiation.",
-"interpretation": "Activation of MAPK/ERK signaling, including through RAS or FGFR1-driven pathways, acts as a bypass route that can diminish alpelisib sensitivity by sustaining growth signals independent of PI3K."
-},
-"REACTOME_CELL_CYCLE": {
-"description": "Cell cycle pathways orchestrate progression through G1, S, G2, and M phases, including cyclin/CDK control of G1–S transition.",
-"interpretation": "PI3K and ER signaling converge on cell-cycle regulators; alpelisib treatment leads to G1 arrest with reduced cyclin D1 and proliferation in sensitive HR+ breast cancer cells."
+"description": "MAPK signaling transmits mitogenic and stress signals via RAS–RAF–MEK–ERK modules to regulate proliferation and survival.",
+"interpretation": "MAPK/ERK is described as a parallel growth pathway implicated in bypass signaling in the breast cancer context discussed for alpelisib."
 },
 "HALLMARK_APOPTOSIS": {
-"description": "Apoptosis represents programmed cell death mediated by intrinsic and extrinsic pathways that eliminate damaged or stressed cells.",
-"interpretation": "When AKT-mediated survival signaling is suppressed by PI3Kα inhibition, pro-apoptotic programs are unleashed, contributing to tumor cell death in alpelisib-sensitive contexts."
+"description": "Apoptosis is programmed cell death regulated by intrinsic and extrinsic pathways that remove damaged or stressed cells.",
+"interpretation": "Apoptosis is discussed as a downstream cellular consequence when PI3K/AKT survival signaling is suppressed in the breast cancer contexts described."
 },
 "STEIN_ESR1_TARGETS": {
-"description": "ESR1 target gene sets capture transcriptional programs directly regulated by estrogen receptor alpha in luminal breast cancer.",
-"interpretation": "ESR1-driven transcription remains a key dependency in many PIK3CA-mutant, luminal tumors; ESR1 mutations and active ER signaling are associated with clinical benefit from alpelisib plus fulvestrant, which together suppress ER targets and PI3K output."
+"description": "ESR1 target gene sets capture transcriptional programs regulated by estrogen receptor alpha (ESR1) in luminal breast cancer contexts.",
+"interpretation": "ESR1-driven transcription is discussed as a key feature of HR+ breast cancer and is relevant to alpelisib use alongside ER blockade in the described setting."
 }
 },
 "sensitivity_genes_up": [
@@ -84,38 +74,45 @@
 "sensitivity_genes_up_annotations": [
 {
 "gene": "PIK3CA",
-"interpretation": "Activating PIK3CA mutations define the target population for alpelisib; in pivotal HR+/HER2− metastatic trials, the presence of a PIK3CA mutation was required and predictive of benefit, as alpelisib directly inhibits mutant PI3Kα in these tumors."
+"interpretation": "Presence of an activating PIK3CA mutation is described as required and predictive for response in the pivotal HR+/HER2− metastatic breast cancer trials discussed."
 },
 {
 "gene": "ESR1",
-"interpretation": "ESR1-mutant, ER-driven tumors remained clinically responsive when estrogen signaling was blocked with fulvestrant and PI3Kα was inhibited by alpelisib, indicating that active ER/ESR1 signaling in combination with effective ER blockade is associated with sensitivity."
+"interpretation": "Activating ESR1 (ER) mutations are described as remaining sensitive when estrogen signaling was blocked by fulvestrant plus PI3K inhibition in the breast cancer context discussed."
 }
 ],
 "sensitivity_genes_down_annotations": [],
 "resistance_genes_up_annotations": [
 {
 "gene": "FGFR1",
-"interpretation": "High baseline activity of bypass pathways, including FGFR1 amplification, is linked to lower sensitivity to PI3K inhibition; FGFR1-driven MAPK/ERK signaling can maintain proliferative signaling and reduce alpelisib efficacy."
+"interpretation": "High baseline activity of bypass pathways including FGFR1 amplifications is described as potentially portending lower sensitivity, and FGFR pathways are listed among expected bypass mechanisms to PI3K blockade."
 }
 ],
 "resistance_genes_down_annotations": [
 {
 "gene": "PTEN",
-"interpretation": "Loss of the negative regulator PTEN leads to unchecked PI3K signaling; PTEN loss is described as a mechanism that would confer resistance to alpelisib by reactivating PIP3 and downstream AKT despite PI3Kα inhibition."
+"interpretation": "Loss of PTEN is described as a mechanism that would confer resistance by reactivating PIP₃ signaling, based on the preclinical rationale presented."
 }
 ],
 "kg_gene_relationships": [
 "Alpelisib|inhibits|PIK3CA",
 "PIK3CA_mutation|predicts_sensitivity_to|Alpelisib",
-"ESR1_mutation|predicts_sensitivity_to|Alpelisib_plus_fulvestrant",
+"ESR1_mutation|associated_with_sensitivity_to|Alpelisib_plus_fulvestrant",
 "FGFR1_amplification|confers_resistance_to|Alpelisib",
 "PTEN_loss|confers_resistance_to|Alpelisib"
 ],
+"Breast_cancer_subtype_information": {
+"HR+/HER2– (Luminal A/B)": "Main indication. ~28–47% harbor PIK3CA mutations. Trials (SOLAR-1, BYLieve) have shown robust benefit in this subtype. Luminal-A tumors (often co-mutated MAP3K1) have especially high response rates.",
+"HER2+": "~23–33% have PIK3CA mutations. PIK3CA-driven PI3K activation is a known mechanism of resistance to anti-HER2 therapy. Combining alpelisib with HER2-targeted agents (trastuzumab, tucatinib) is under active study. Preclinical HER2+ models with PIK3CA mutations benefited from adding alpelisib to anti-HER2 antibodies. No approval yet, but rationale is strong.",
+"TNBC/Basal-like": "PIK3CA mutations are uncommon overall (8–25% in TNBC) and mainly occur in the luminal-AR (LAR) subset. AR+ TNBC exhibits ~40% PIK3CA mutation versus ~4% in AR– TNBC. In AR+ models, PI3K inhibitors dramatically reduce viability when combined with AR blockade. Thus, for basal-like/BRCA1-mutant TNBC, which lack PIK3CA and AR, alpelisib is not generally effective.",
+"HER2-enriched (PAM50)": "These often overlap HER2+/some HR+ tumors. If PIK3CA-mutant, they may respond similarly to HER2+ cases; data are sparse.",
+"Luminal A vs B": "Both are HR+, but luminal A tends to have higher PIK3CA rates and better PI3Ki sensitivity. Luminal B (higher proliferation, possible lower PI3K dependence) shows less clear benefit."
+},
 "citations": [
-"[https://www.dovepress.com/role-of-alpelisib-in-the-treatment-of-pik3ca-mutated-breast-cancer-pat-peer-reviewed-fulltext article-TCRM](https://www.dovepress.com/role-of-alpelisib-in-the-treatment-of-pik3ca-mutated-breast-cancer-pat-peer-reviewed-fulltext article-TCRM)",
+"[https://www.dovepress.com/role-of-alpelisib-in-the-treatment-of-pik3ca-mutated-breast-cancer-pat-peer-reviewed-fulltext￾article-TCRM](https://www.dovepress.com/role-of-alpelisib-in-the-treatment-of-pik3ca-mutated-breast-cancer-pat-peer-reviewed-fulltext￾article-TCRM)",
 "[https://en.wikipedia.org/wiki/Alpelisib](https://en.wikipedia.org/wiki/Alpelisib)",
 "[https://go.drugbank.com/drugs/DB12015](https://go.drugbank.com/drugs/DB12015)",
-"[https://www.dovepress.com/alpelisib-in-the-treatment-of-breast-cancer-a-short-review-on-the-emer-peer-reviewed-fulltext article-BCTT](https://www.dovepress.com/alpelisib-in-the-treatment-of-breast-cancer-a-short-review-on-the-emer-peer-reviewed-fulltext article-BCTT)",
+"[https://www.dovepress.com/alpelisib-in-the-treatment-of-breast-cancer-a-short-review-on-the-emer-peer-reviewed-fulltext￾article-BCTT](https://www.dovepress.com/alpelisib-in-the-treatment-of-breast-cancer-a-short-review-on-the-emer-peer-reviewed-fulltext￾article-BCTT)",
 "[https://pubmed.ncbi.nlm.nih.gov/37469415/](https://pubmed.ncbi.nlm.nih.gov/37469415/)",
 "[https://pubmed.ncbi.nlm.nih.gov/25103565/](https://pubmed.ncbi.nlm.nih.gov/25103565/)",
 "[https://amp.chemicalbook.com/ChemicalProductProperty_EN_CB52604234.htm](https://amp.chemicalbook.com/ChemicalProductProperty_EN_CB52604234.htm)",
@@ -127,5 +124,5 @@
 "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/212526s000lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/212526s000lbl.pdf)",
 "[https://pmc.ncbi.nlm.nih.gov/articles/PMC5125254/](https://pmc.ncbi.nlm.nih.gov/articles/PMC5125254/)"
 ],
-"notes": "JSON derived strictly from the provided deep-research document on alpelisib in human breast cancer, focusing on PIK3CA-mutant HR+/HER2− disease and related pathway behavior; gene-level sensitivity and resistance assignments are limited to PIK3CA, ESR1, FGFR1, and PTEN where explicitly described. "
+"notes": "Extracted strictly from the provided Alpelisib deep-research PDF and the JSON-generation instructions; gene-level directionality reflects only what is explicitly stated (e.g., PIK3CA mutation predictive; ESR1 mutations sensitive in combination; FGFR1 amplification and PTEN loss as resistance rationales).  "
 }

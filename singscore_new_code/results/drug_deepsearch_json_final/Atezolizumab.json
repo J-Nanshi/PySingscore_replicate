@@ -1,9 +1,9 @@
 {
 "drug_name": "Atezolizumab",
-"cancer_indication": "PD-L1–positive unresectable locally advanced or metastatic triple-negative breast cancer (TNBC), and investigational use in other breast cancer subtypes",
+"cancer_indication": "PD-L1–positive unresectable locally advanced or metastatic triple-negative breast cancer (TNBC) in combination with nab-paclitaxel (IMpassion130; indication withdrawn in the US in 2021).",
 "drug_category": "Immune checkpoint inhibitor",
 "drug_class": "Anti–PD-L1 humanized IgG1 monoclonal antibody",
-"moa": "Atezolizumab binds the immune checkpoint ligand PD-L1 (CD274) on tumor and immune cells and blocks its interaction with PD-1 and CD80, releasing inhibitory signals on cytotoxic T cells. In breast cancer, particularly PD-L1–positive TNBC with high tumor-infiltrating lymphocytes, this restores IFN-γ–driven T-cell activation, antigen presentation and cytotoxic killing of tumor cells rather than directly inducing tumor cell death. Efficacy depends on a pre-existing but restrained anti-tumor immune response; immune-excluded or immune-desert phenotypes with high TGF-β, Wnt or hypoxia signaling respond poorly despite PD-L1 blockade.",
+"moa": "Atezolizumab is a humanized IgG1 monoclonal antibody that blocks PD-L1 (CD274) on tumor and immune cells, preventing PD-L1 from engaging PD-1 on T cells. In breast cancer, its activity is most established in immunogenic TNBC where PD-L1 expression and tumor-infiltrating lymphocytes are present, enabling reactivation of anti-tumor T-cell function. The drug does not directly kill tumor cells; tumor control occurs via restored immune recognition and killing in tumors with a pre-existing but restrained anti-tumor immune response.",
 "chembl_id": "CHEMBL3707227",
 "drugbank_id": "DB11595",
 "synonyms": [
@@ -28,62 +28,57 @@
 "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
 "HALLMARK_HYPOXIA",
 "KEGG_HOMOLOGOUS_RECOMBINATION",
-"HALLMARK_TNFA_SIGNALING_VIA_NFKB",
 "GOBP_KYNURENINE_METABOLIC_PROCESS",
 "GOBP_REGULATION_OF_T_CELL_COSTIMULATION"
 ],
 "pathway_sets_annotations": {
 "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
-"description": "Canonical interferon-gamma response program including IFN-γ–inducible chemokines (such as CXCL9, CXCL10), IDO1 and MHC antigen-presentation machinery.",
-"interpretation": "In TNBC, high IFN-γ response marks a T cell–inflamed, PD-L1–induced state where antigen presentation and T-cell recruitment are active, predicting sensitivity to atezolizumab; loss of IFN-γ signaling (for example via JAK mutations) impairs MHC upregulation and contributes to resistance."
+"description": "Interferon-γ–driven immune activation program that includes interferon-responsive genes involved in antigen presentation and immune chemokine signaling.",
+"interpretation": "This pathway reflects an immune-inflamed tumor microenvironment in breast cancer, supporting antigen presentation and immune-cell recruitment that underpins response to PD-L1 blockade."
 },
 "HALLMARK_ALLOGRAFT_REJECTION": {
-"description": "T cell–mediated alloreactive immune response signature enriched for CD8+ T-cell, NK-cell activation and cytotoxic effector genes.",
-"interpretation": "In breast cancer biopsies from atezolizumab-treated TNBC, enrichment of this T-cell cytotoxicity signature reflects dense effector T-cell infiltration and is associated with an immune-inflamed microenvironment and better clinical response."
+"description": "Immune cytotoxicity and lymphocyte activation signature enriched for T-cell and NK-cell effector programs.",
+"interpretation": "In breast tumors, this signature captures the presence and activity of cytotoxic immune infiltrates that are central to checkpoint inhibitor efficacy."
 },
 "WP_CANCER_IMMUNOTHERAPY_BY_PD1_BLOCKADE": {
-"description": "Pathway capturing PD-1/PD-L1 immune checkpoint signaling and its blockade, encompassing PD-L1 expression on tumor and immune cells and PD-1 signaling on T cells.",
-"interpretation": "Atezolizumab directly targets this axis by binding PD-L1; tumors with active PD-1/PD-L1 signaling (PD-L1–positive TNBC with TILs) derive benefit from checkpoint release, whereas PD-L1–negative tumors lack the target and are primarily resistant."
+"description": "Checkpoint signaling pathway describing PD-1/PD-L1–mediated inhibition of T-cell activation and its therapeutic blockade.",
+"interpretation": "This pathway is the core axis targeted by atezolizumab (via PD-L1), and its activity defines immune suppression that can be released by PD-L1 blockade in breast cancer."
 },
 "HALLMARK_WNT_BETA_CATENIN_SIGNALING": {
-"description": "Wnt ligand–driven β-catenin signaling controlling stemness, proliferation and stromal crosstalk.",
-"interpretation": "In TNBC tumor cells and cancer-associated fibroblasts, high Wnt/β-catenin activity excludes T cells from the tumor bed and can induce PD-L1 on stroma, creating an immune-cold, atezolizumab-resistant microenvironment; experimental Wnt inhibition restores T-cell infiltration and sensitivity."
+"description": "Wnt ligand–driven β-catenin signaling program implicated in tumor cell state and stromal interactions.",
+"interpretation": "In breast cancer, Wnt/β-catenin activity is linked to immune exclusion and reduced permissiveness of the tumor microenvironment to effective anti-tumor T-cell infiltration."
 },
 "HALLMARK_TGF_BETA_SIGNALING": {
-"description": "Transforming growth factor-beta pathway regulating fibroblast activation, extracellular matrix deposition, EMT and immune suppression.",
-"interpretation": "TNBC basal-like immune-suppressed tumors with high TGF-β and EMT signatures exhibit dense stroma and peripheral T-cell trapping, conferring poor response to atezolizumab, whereas lower TGF-β activity and EMT downregulation are linked to immune-infiltrated, therapy-sensitive phenotypes."
+"description": "TGF-β signaling program regulating fibroblast activation, extracellular matrix remodeling, and immune suppression.",
+"interpretation": "This pathway contributes to immune-excluded tumor states in breast cancer by promoting stromal barriers and immunosuppressive cues that limit effective immune-cell penetration."
 },
 "GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION": {
-"description": "MHC class I and II antigen processing and presentation machinery including B2M, TAP transporters and HLA heavy chains.",
-"interpretation": "Intact and upregulated antigen presentation in TNBC supports effective recognition of tumor neoantigens by T cells and correlates with better response to PD-L1 blockade; loss-of-function events such as B2M or JAK mutations downregulate this pathway and drive immune escape from atezolizumab."
+"description": "Processes enabling antigen processing and presentation (including MHC class I presentation) required for T-cell recognition of tumor antigens.",
+"interpretation": "Effective antigen presentation is fundamental to T-cell–mediated killing in breast cancer immunotherapy; defects in this process enable immune escape despite checkpoint blockade."
 },
 "GOBP_REGULATION_OF_T_CELL_ACTIVATION": {
-"description": "Biological processes that positively or negatively regulate T-cell activation, including co-stimulatory and co-inhibitory receptor–ligand interactions and cytokine cues.",
-"interpretation": "Breast tumors with robust CD8+ T-cell activation and cytotoxic programs respond better to atezolizumab, while adaptive upregulation of alternative checkpoints (e.g. LAG-3, TIM-3) or deficient activating signals contributes to T-cell exhaustion and resistance."
+"description": "Biological processes that regulate T-cell activation states through cytokines, antigen presentation, and receptor–ligand interactions.",
+"interpretation": "T-cell activation programs shape whether breast tumors are immune-inflamed versus immune suppressed, influencing the capacity of checkpoint blockade to restore cytotoxic function."
 },
 "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
-"description": "Oncogenic PI3K–AKT–mTOR survival and metabolism signaling downstream of growth factor receptors and PTEN loss.",
-"interpretation": "In TNBC, hyperactive PI3K/AKT/mTOR signaling (for example via PTEN loss or PIK3CA mutation) is linked to reduced TILs and an immunosuppressive cytokine milieu, mediating primary resistance to PD-L1 blockade; pharmacologic AKT inhibition has been explored to re-sensitize tumors to atezolizumab."
+"description": "Oncogenic PI3K–AKT–mTOR signaling program controlling cell survival, growth, metabolism, and microenvironmental signaling.",
+"interpretation": "In breast cancer, PI3K/AKT/mTOR activity is described as contributing to an immune-suppressive milieu and reduced tumor immune infiltration, impacting responsiveness to PD-L1 blockade."
 },
 "HALLMARK_HYPOXIA": {
-"description": "Hypoxia-inducible factor–driven transcriptional response to low oxygen, including HIF1A targets and pro-angiogenic factors such as VEGF.",
-"interpretation": "TNBC with strong hypoxia/angiogenesis signatures exhibit poor T-cell infiltration and inferior atezolizumab outcomes, whereas responders show relative downregulation of hypoxia programs on treatment, consistent with a more permissive immune microenvironment."
+"description": "Hypoxia-response transcriptional program driven by low oxygen stress and associated microenvironmental remodeling.",
+"interpretation": "Hypoxia-related programs in breast cancer are associated with immune dysfunction and reduced immune-cell infiltration, shaping an environment less favorable for effective checkpoint inhibitor activity."
 },
 "KEGG_HOMOLOGOUS_RECOMBINATION": {
-"description": "DNA double-strand break repair by homologous recombination involving BRCA1, BRCA2 and associated repair factors.",
-"interpretation": "Breast cancers with homologous recombination deficiency, including gBRCA1/2-mutated TNBC, accumulate neoantigens, display high TILs and PD-L1 expression and tend to be more sensitive to atezolizumab-based regimens, while restoration or upregulation of repair on treatment can represent a tumor survival response."
-},
-"HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
-"description": "TNF-α–induced NF-κB inflammatory signaling driving cytokine and chemokine production.",
-"interpretation": "An immune-oriented TNFα/NF-κB profile that induces chemokines like CXCL9 and CXCL10 supports dendritic cell activation and T-cell recruitment and is associated with atezolizumab sensitivity, whereas tumor-intrinsic NF-κB survival and growth signals may counteract this benefit if dominant."
+"description": "Homologous recombination DNA double-strand break repair pathway (HR) that maintains genome integrity.",
+"interpretation": "In breast cancer, homologous recombination deficiency is discussed as increasing genomic instability and tumor immunogenicity, providing context for immune engagement relevant to checkpoint inhibitor response."
 },
 "GOBP_KYNURENINE_METABOLIC_PROCESS": {
-"description": "Metabolism of tryptophan along the kynurenine pathway, largely mediated by IDO1 in the tumor microenvironment.",
-"interpretation": "In TNBC, IFN-γ–induced IDO1 increases kynurenine and depletes tryptophan, suppressing T-cell proliferation; high IDO1/kynurenine activity marks resistance to PD-L1 blockade, and pharmacologic IDO inhibition is mechanistically expected to enhance atezolizumab efficacy."
+"description": "Tryptophan catabolism to kynurenine and related metabolites, a metabolic axis that can modulate immune responses.",
+"interpretation": "Kynurenine-pathway activity is described as creating a metabolically immunosuppressive environment that can dampen anti-tumor T-cell function in breast cancer."
 },
 "GOBP_REGULATION_OF_T_CELL_COSTIMULATION": {
-"description": "Regulation of co-stimulatory signals for T cells, including CD28–CD80/CD86 and cytokines such as IL-2.",
-"interpretation": "Effective atezolizumab activity requires not only PD-L1 blockade but also adequate co-stimulation; breast tumors or microenvironments that downregulate CD80/86 or IL-2 signaling leave T cells anergic despite PD-L1 inhibition, contributing to clinical resistance."
+"description": "Processes regulating co-stimulatory signaling necessary for full T-cell activation (e.g., CD28/B7 and cytokine support).",
+"interpretation": "Adequate co-stimulation is necessary for effective T-cell activation; deficits in co-stimulatory signaling can limit the effectiveness of checkpoint blockade in breast tumors."
 }
 },
 "sensitivity_genes_up": [
@@ -115,121 +110,147 @@
 "B2M",
 "JAK1",
 "JAK2",
+"PTEN",
+"TAP1",
+"TAP2",
 "CD274"
 ],
 "sensitivity_genes_up_annotations": [
 {
 "gene": "CD274",
-"interpretation": "High PD-L1 (CD274) expression on tumor-infiltrating immune cells or tumor cells identifies TNBC that are dependent on the PD-1/PD-L1 checkpoint for immune escape; in IMpassion130, PD-L1–positive tumors derived clear PFS benefit from atezolizumab plus nab-paclitaxel, making CD274 upregulation a predictive marker of sensitivity."
+"interpretation": "PD-L1 (CD274) expression is described as required for atezolizumab to have a target in breast cancer, and PD-L1–positive TNBC showed benefit in IMpassion130."
 },
 {
 "gene": "CXCL9",
-"interpretation": "CXCL9 is an IFN-γ–inducible chemokine that recruits effector T cells; upregulation in TNBC corresponds to a T cell–inflamed microenvironment and has been linked to better responses to PD-1/PD-L1 blockade, supporting atezolizumab sensitivity when CXCL9 is high."
+"interpretation": "CXCL9 is listed among IFN-γ–responsive genes associated with a T-cell–inflamed tumor state that supports immune-cell recruitment in responding tumors."
 },
 {
 "gene": "CXCL10",
-"interpretation": "Similar to CXCL9, CXCL10 is induced by interferon signaling and promotes T-cell trafficking into tumors; high CXCL10 expression in TNBC is associated with robust immune infiltration and improved outcomes with checkpoint inhibition, consistent with greater benefit from atezolizumab."
+"interpretation": "CXCL10 is listed among IFN-γ–responsive genes associated with chemokine-driven lymphocyte trafficking in immune-inflamed breast tumors."
 },
 {
 "gene": "CCL5",
-"interpretation": "CCL5 participates in recruiting T cells and dendritic cells; its upregulation, often as part of interferon/NF-κB inflammatory programs, marks immune-infiltrated TNBC that respond more favorably to PD-L1 blockade compared with chemokine-poor, immune-cold tumors."
+"interpretation": "CCL5 is described as a chemokine whose upregulation is associated with recruitment of immune cells into the tumor microenvironment in sensitivity contexts."
 }
 ],
 "sensitivity_genes_down_annotations": [
 {
 "gene": "BRCA1",
-"interpretation": "Loss-of-function germline or somatic BRCA1 mutations cause homologous recombination deficiency, increasing genomic instability, neoantigen load and TILs; TNBC with BRCA1 deficiency have shown numerically higher response rates to checkpoint inhibitors and are highlighted as more immunogenic, indicating increased atezolizumab sensitivity when BRCA1 function is low."
+"interpretation": "BRCA1/2-mutated or HRD-high TNBC is described as more immunogenic (higher mutation load/neoantigens and TIL-rich, PD-L1–positive environment), consistent with improved responsiveness to checkpoint blockade in the subtype discussion."
 },
 {
 "gene": "BRCA2",
-"interpretation": "BRCA2 deficiency similarly impairs homologous recombination and contributes to HRD-high status; BRCA2-mutated breast cancers can present with higher neoantigen burden and immune infiltration, and HRD-positive cohorts are described as more responsive to PD-L1 blockade, supporting increased atezolizumab sensitivity with BRCA2 loss."
+"interpretation": "BRCA1/2-mutated or HRD-high TNBC is described as more immunogenic (higher mutation load/neoantigens and TIL-rich, PD-L1–positive environment), consistent with improved responsiveness to checkpoint blockade in the subtype discussion."
 }
 ],
 "resistance_genes_up_annotations": [
 {
 "gene": "LAG3",
-"interpretation": "LAG-3 upregulation on T cells is reported after PD-1/PD-L1 blockade in TNBC, providing an alternative inhibitory signal that maintains T-cell exhaustion even when PD-L1 is blocked; high LAG3 expression in this context is described as a resistance mechanism and has motivated trials combining LAG-3 and PD-L1 inhibitors."
+"interpretation": "Compensatory upregulation of alternative immune checkpoints such as LAG-3 is described as a resistance mechanism after PD-1/PD-L1 axis blockade."
 },
 {
 "gene": "HAVCR2",
-"interpretation": "HAVCR2 (TIM-3) is another checkpoint receptor that becomes upregulated on T cells following PD-1/PD-L1 inhibition; TNBC studies cited show increased TIM-3 on Tregs and CD4 T cells under PD-L1 blockade, contributing to continued T-cell dysfunction and resistance to atezolizumab."
+"interpretation": "TIM-3 (HAVCR2) is described as another checkpoint that can be upregulated in TNBC following PD-1/PD-L1 blockade, contributing to continued T-cell dysfunction."
 },
 {
 "gene": "CTLA4",
-"interpretation": "CTLA4 expression on T cells provides a separate inhibitory axis during priming; although less extensively documented in breast cancer than in melanoma, the text notes that upregulated CTLA-4 can contribute to residual immune suppression and reduced benefit from PD-L1 blockade alone."
+"interpretation": "CTLA-4 is mentioned as an additional inhibitory pathway that could contribute to residual immune suppression when upregulated."
 },
 {
 "gene": "IDO1",
-"interpretation": "IDO1 is induced by IFN-γ and catalyzes tryptophan degradation into kynurenine; high IDO1 activity in TNBC creates a metabolically suppressive microenvironment that blunts T-cell proliferation, and tumors that upregulate IDO1 under immune pressure are described as more resistant to atezolizumab, prompting trials of IDO inhibition with checkpoint blockade."
+"interpretation": "IDO1 is described as an immunosuppressive enzyme that increases kynurenine and suppresses T-cell proliferation, contributing to resistance under immune pressure."
 },
 {
 "gene": "IL10",
-"interpretation": "IL-10 is an anti-inflammatory cytokine produced by tumors and tumor-associated myeloid cells; its increased expression dampens effector T-cell responses even when PD-L1 is blocked, and IL-10–rich environments are cited as part of immunosuppressive cytokine networks associated with poor checkpoint inhibitor responses."
+"interpretation": "IL-10 is described as an anti-inflammatory cytokine that can dampen immune responses even when PD-L1 is blocked."
 },
 {
 "gene": "VEGFA",
-"interpretation": "VEGFA-driven angiogenesis is highlighted as both promoting hypoxia and directly inhibiting T-cell function and trafficking; high VEGF levels in hypoxic tumors correlate with poor responses to immunotherapy, which underlies combination strategies of anti-angiogenics with PD-L1 inhibitors to overcome this resistance mechanism."
+"interpretation": "VEGF-A is described as promoting angiogenesis and inhibiting immune-cell trafficking/function, correlating with poorer immunotherapy response."
 },
 {
 "gene": "HIF1A",
-"interpretation": "HIF1A is a central transcription factor in the hypoxia program; high HIF-1α target-gene expression in atezolizumab-treated TNBC correlates with immune exclusion and inferior PFS, whereas responders show reduced hypoxia signatures, indicating that upregulated HIF1A activity contributes to resistance."
+"interpretation": "Hypoxia programs (linked to HIF-1α activity) are described as associated with immune exclusion and resistance to checkpoint blockade in breast cancer."
 },
 {
 "gene": "MYC",
-"interpretation": "MYC amplification or overexpression in TNBC drives oncogenic transcriptional programs that suppress antigen presentation and foster immune evasion; preclinical data cited show that MYC-driven tumors are highly resistant to checkpoint blockade unless MYC-related processes are targeted, so MYC upregulation is considered a resistance biomarker to atezolizumab."
+"interpretation": "MYC overexpression is described as fostering immune evasion, including suppression of immune responses and reduced efficacy of checkpoint blockade unless MYC-driven processes are addressed."
 },
 {
 "gene": "FOXP3",
-"interpretation": "FOXP3 marks regulatory T cells; tumors with high FOXP3+ Treg infiltration have stronger immunosuppressive tone, and the document notes that high Treg-associated pathways reduce atezolizumab efficacy, making elevated FOXP3-expressing Tregs a resistance feature."
+"interpretation": "FOXP3+ regulatory T-cell enrichment is described as part of an immunosuppressive tumor microenvironment that reduces atezolizumab efficacy."
 },
 {
 "gene": "ARG1",
-"interpretation": "ARG1 is expressed by myeloid-derived suppressor cells and depletes arginine needed for T-cell proliferation; increased ARG1 expression is included among MDSC-associated pathways that accumulate under therapy and inhibit effector T cells, contributing to resistance to PD-L1 blockade."
+"interpretation": "ARG1 is listed among myeloid-derived suppressor cell–associated pathways that promote suppressive immune infiltrates and reduce checkpoint inhibitor efficacy."
 },
 {
 "gene": "IL6",
-"interpretation": "IL-6 supports MDSCs and inflammatory but immunosuppressive myeloid phenotypes; the text reports that elevated IL-6 and IL-8 levels are associated with worse outcomes on immunotherapy, indicating that IL6 upregulation is part of Treg/MDSC immunosuppressive pathways that blunt atezolizumab benefit."
+"interpretation": "IL-6 is listed among pathways supporting immunosuppressive myeloid programs (MDSC-associated), contributing to resistance contexts."
 },
 {
 "gene": "CCR4",
-"interpretation": "CCR4 is a chemokine receptor that attracts regulatory T cells; tumors with higher expression of CCR4-linked pathways recruit more Tregs, and the document notes that such Treg-enriched microenvironments reduce the effectiveness of atezolizumab."
+"interpretation": "CCR4 is referenced as a factor involved in Treg recruitment; higher Treg-associated pathways are described as reducing immunotherapy efficacy."
 },
 {
 "gene": "CXCR2",
-"interpretation": "CXCR2 mediates neutrophil and MDSC chemotaxis; upregulation of CXCR2-associated pathways brings suppressive myeloid populations into the tumor bed, and the text highlights CXCR2 blockade as a strategy to reduce MDSC recruitment and potentially restore sensitivity to PD-L1 blockade, implying that high CXCR2 activity marks resistance."
+"interpretation": "CXCR2 is described in the context of myeloid/neutrophil (MDSC) recruitment pathways that can suppress effector T-cell activity and reduce checkpoint inhibitor response."
 }
 ],
 "resistance_genes_down_annotations": [
 {
 "gene": "B2M",
-"interpretation": "B2M encodes β2-microglobulin, essential for MHC class I surface expression; the document notes that B2M mutations and loss of MHC I antigen presentation are observed in resistant cases, meaning B2M downregulation or loss allows tumor cells to evade T-cell recognition despite atezolizumab-induced T-cell activation."
+"interpretation": "Loss of antigen presentation via B2M disruption is described as allowing tumors to evade T-cell recognition despite checkpoint blockade."
 },
 {
 "gene": "JAK1",
-"interpretation": "JAK1 transduces interferon-γ signaling in tumor cells; a truncating JAK1 mutation is reported in a non-responding TNBC, and loss of JAK-STAT signaling prevents IFN-γ–induced upregulation of MHC and PD-L1, thereby shielding tumor cells from immune attack and conferring resistance to PD-L1 blockade."
+"interpretation": "A JAK1 truncating mutation is described in a non-responding TNBC case, consistent with loss of interferon signaling and reduced immune-mediated tumor killing."
 },
 {
 "gene": "JAK2",
-"interpretation": "JAK2 mediates interferon receptor signaling; the text describes acquired JAK2 inactivation in melanoma as a mechanism of resistance via loss of antigen presentation and extrapolates that similar downregulation in breast cancer would likewise abrogate IFN-γ responses, contributing to atezolizumab resistance when JAK2 function is lost."
+"interpretation": "Loss of JAK1/2-mediated interferon signaling is described as a resistance route by preventing interferon-driven antigen presentation and related immune responses."
+},
+{
+"gene": "PTEN",
+"interpretation": "PTEN loss (with increased PI3K pathway signaling) is described as being linked to an immune-cold microenvironment and poorer response to PD-1/PD-L1 blockade."
+},
+{
+"gene": "TAP1",
+"interpretation": "Loss of antigen-processing machinery components such as TAP transporters is described as an example of antigen presentation pathway downregulation that can drive immune escape."
+},
+{
+"gene": "TAP2",
+"interpretation": "Loss of antigen-processing machinery components such as TAP transporters is described as an example of antigen presentation pathway downregulation that can drive immune escape."
 },
 {
 "gene": "CD274",
-"interpretation": "While PD-L1 presence is required for atezolizumab binding, the document emphasizes that PD-L1–negative TNBC did not benefit in IMpassion130, effectively making very low or absent CD274 expression a marker of primary resistance because the target checkpoint axis is not engaged in these tumors."
+"interpretation": "PD-L1–negative tumors are described as having no target for atezolizumab and did not benefit in the PD-L1–negative TNBC subgroup discussion, consistent with resistance when CD274 is low/absent."
 }
 ],
 "kg_gene_relationships": [
 "Atezolizumab|binds|CD274",
 "CD274_high|predicts_sensitivity_to|Atezolizumab",
+"CD274_low|confers_resistance_to|Atezolizumab",
 "BRCA1_loss|confers_sensitivity_to|Atezolizumab",
 "BRCA2_loss|confers_sensitivity_to|Atezolizumab",
 "B2M_loss|confers_resistance_to|Atezolizumab",
 "JAK1_loss|confers_resistance_to|Atezolizumab",
 "JAK2_loss|confers_resistance_to|Atezolizumab",
+"PTEN_loss|confers_resistance_to|Atezolizumab",
 "LAG3_upregulation|confers_resistance_to|Atezolizumab",
 "HAVCR2_upregulation|confers_resistance_to|Atezolizumab",
-"IDO1_upregulation|confers_resistance_to|Atezolizumab",
-"PTEN_loss|confers_resistance_to|Atezolizumab"
+"IDO1_upregulation|confers_resistance_to|Atezolizumab"
 ],
+"Breast_cancer_subtype_information": {
+"Triple-Negative Breast Cancer (TNBC)": "This is the only subtype with proven clinical benefit from atezolizumab; IMpassion130 showed PD-L1–positive TNBC derived PFS benefit, with PD-L1 positivity on immune cells (≥1% IC by SP142 assay) required for efficacy.",
+"Basal-like immune-activated (BLIA) TNBC": "Responded best; characterized by high TILs, PD-L1, and low EMT/stroma.",
+"Basal-like immune-suppressed (BLIS) TNBC": "Responded poorly; characterized by high TGF-β and low immune infiltration, with immunosuppressive stroma and immune exclusion.",
+"HR+/HER2– (Luminal) Breast Cancer": "Generally low PD-L1 expression and low TIL levels; trials have shown very low response rates and atezolizumab is not indicated for HR+ disease outside rare clinical trial anecdotes.",
+"HER2-Positive Breast Cancer": "Combination immunotherapy strategies are investigational; KATE2 (T-DM1 ± atezolizumab) did not meet the primary PFS endpoint overall, with a numerical PFS improvement in the PD-L1+ subgroup reported as small-sample exploratory.",
+"BRCA-Mutated/HRD+ Cancers": "A significant fraction of TNBC (and some luminal B) tumors have HRD; BRCA/HRD+ status is described as suggestive of an inflamed tumor microenvironment due to more neoantigens, potentially contributing to atezolizumab efficacy, though not all HRD+ tumors have TILs.",
+"PD-L1–Negative TNBC": "Did not benefit in IMpassion130; described as an immune-cold subset often with low TILs and may require additional interventions to induce inflammation.",
+"Tumor Mutational Burden (TMB) High Subset": "A minority of breast tumors have very high TMB; such tumors may respond better to PD-1/L1 inhibitors, but this is described as not specifically studied for atezolizumab in breast cancer and remains a rare subset."
+},
 "citations": [
 "Atezolizumab: Uses, Interactions, Mechanism of Action | DrugBank Online",
 "[https://go.drugbank.com/drugs/DB11595](https://go.drugbank.com/drugs/DB11595)",
@@ -238,8 +259,10 @@
 "Atezolizumab in metastatic triple-negative breast cancer - ESMO Open",
 "[https://www.esmoopen.com/article/S2059-7029(20)32770-8/fulltext](https://www.esmoopen.com/article/S2059-7029%2820%2932770-8/fulltext)",
 "Atezolizumab and Nab-Paclitaxel in Advanced Triple-Negative Breast Cancer -",
+"PubMed",
 "[https://pubmed.ncbi.nlm.nih.gov/30345906/](https://pubmed.ncbi.nlm.nih.gov/30345906/)",
-"Roche Withdraws Atezolizumab PD-L1–Positive Metastatic TNBC Indication in the United\nStates | OncLive",
+"Roche Withdraws Atezolizumab PD-L1–Positive Metastatic TNBC Indication in the United",
+"States | OncLive",
 "[https://www.onclive.com/view/roche-withdraws-atezolizumab-pd-l1-positive-metastatic-tnbc-indication-in-the-united-states](https://www.onclive.com/view/roche-withdraws-atezolizumab-pd-l1-positive-metastatic-tnbc-indication-in-the-united-states)",
 "Still the Standard of Care for Metastatic Triple-Negative Breast Cancer",
 "[https://dailynews.ascopubs.org/do/chemoimmunotherapy-still-standard-care-metastatic-triple-negative-breast-cancer](https://dailynews.ascopubs.org/do/chemoimmunotherapy-still-standard-care-metastatic-triple-negative-breast-cancer)",
@@ -248,18 +271,23 @@
 "atezolizumab | Ligand page | IUPHAR/BPS Guide to PHARMACOLOGY",
 "[https://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId=7990](https://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId=7990)",
 "Mechanisms of action and acquired resistance to",
-"[https://www.cuba.dialogoroche.com/content/dam/roche-dialogo/global-assets/downloadable-assets/congresos-y-eventos/\noncology/roche-asco-2022/07-oncology-annual-meeting-2022-poster-molinero-mechanisms-of-action-and-acquired-resistance-to atezolizumab.pdf](https://www.cuba.dialogoroche.com/content/dam/roche-dialogo/global-assets/downloadable-assets/congresos-y-eventos/\noncology/roche-asco-2022/07-oncology-annual-meeting-2022-poster-molinero-mechanisms-of-action-and-acquired-resistance-to atezolizumab.pdf)",
+"atezolizumab plus nab-paclitaxel in metastatic triple negative breast cancer (mTNBC)",
+"[https://www.cuba.dialogoroche.com/content/dam/roche-dialogo/global-assets/downloadable-assets/congresos-y-eventos/](https://www.cuba.dialogoroche.com/content/dam/roche-dialogo/global-assets/downloadable-assets/congresos-y-eventos/)",
+"oncology/roche-asco-2022/07-oncology-annual-meeting-2022-poster-molinero-mechanisms-of-action-and-acquired-resistance-to￾atezolizumab.pdf",
 "[PDF] The Tumor Microenvironment and Atezolizumab + nab-Paclitaxel ...",
-"[https://www.cuba.dialogoroche.com/content/dam/roche-dialogo/global-assets/downloadable-assets/oncology/roche-asco-2021/\npresentaciones/oncology-annual-meeting-2021-presentation-emens-the-tumor-microenvironment-TME-and-atezolizumab-nab paclitaxel-A-nP-activity-in-metastatic-triple-negative-breast-cancer.pdf](https://www.cuba.dialogoroche.com/content/dam/roche-dialogo/global-assets/downloadable-assets/oncology/roche-asco-2021/\npresentaciones/oncology-annual-meeting-2021-presentation-emens-the-tumor-microenvironment-TME-and-atezolizumab-nab paclitaxel-A-nP-activity-in-metastatic-triple-negative-breast-cancer.pdf)",
-"PD-L1 Blockade by Atezolizumab Downregulates Signaling Pathways\nAssociated with Tumor Growth, Metastasis, and Hypoxia in Human Triple Negative Breast Cancer",
+"[https://www.cuba.dialogoroche.com/content/dam/roche-dialogo/global-assets/downloadable-assets/oncology/roche-asco-2021/](https://www.cuba.dialogoroche.com/content/dam/roche-dialogo/global-assets/downloadable-assets/oncology/roche-asco-2021/)",
+"presentaciones/oncology-annual-meeting-2021-presentation-emens-the-tumor-microenvironment-TME-and-atezolizumab-nab￾paclitaxel-A-nP-activity-in-metastatic-triple-negative-breast-cancer.pdf",
+"PD-L1 Blockade by Atezolizumab Downregulates Signaling Pathways",
+"Associated with Tumor Growth, Metastasis, and Hypoxia in Human Triple Negative Breast Cancer",
 "[https://www.mdpi.com/2072-6694/11/8/1050](https://www.mdpi.com/2072-6694/11/8/1050)",
 "Homologous Recombination Repair Deficiency and the Immune ...",
 "[https://www.sciencedirect.com/science/article/pii/S1936523319304954](https://www.sciencedirect.com/science/article/pii/S1936523319304954)",
 "First-Line Ipatasertib, Atezolizumab, and Taxane Triplet for ...",
 "[https://aacrjournals.org/clincancerres/article/30/4/767/734225/First-Line-Ipatasertib-Atezolizumab-and-Taxane](https://aacrjournals.org/clincancerres/article/30/4/767/734225/First-Line-Ipatasertib-Atezolizumab-and-Taxane)",
-"Frontiers | Wnt Inhibition Sensitizes PD-L1 Blockade Therapy by Overcoming Bone Marrow Derived Myofibroblasts-Mediated Immune Resistance in Tumors",
+"Frontiers | Wnt Inhibition Sensitizes PD-L1 Blockade Therapy by Overcoming Bone Marrow￾Derived Myofibroblasts-Mediated Immune Resistance in Tumors",
 "[https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2021.619209/full](https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2021.619209/full)",
-"PD-L1 Blockade by Atezolizumab Downregulates Signaling Pathways Associated with Tumor Growth,\nMetastasis, and Hypoxia in Human Triple Negative Breast Cancer - PubMed",
+"PD-L1 Blockade by Atezolizumab Downregulates Signaling Pathways Associated with Tumor Growth,",
+"Metastasis, and Hypoxia in Human Triple Negative Breast Cancer - PubMed",
 "[https://pubmed.ncbi.nlm.nih.gov/31349612/](https://pubmed.ncbi.nlm.nih.gov/31349612/)",
 "The role of tumor microenvironment and immune cell crosstalk in ...",
 "[https://www.sciencedirect.com/science/article/pii/S030438352500432X](https://www.sciencedirect.com/science/article/pii/S030438352500432X)",
@@ -290,5 +318,5 @@
 "NCT06175390 | Tiragolumab, Atezolizumab and Chemotherapy in ...",
 "[https://clinicaltrials.gov/study/NCT06175390](https://clinicaltrials.gov/study/NCT06175390)"
 ],
-"notes": "JSON derived strictly from the provided deep-research report and curated pathway list for atezolizumab in breast cancer; fields are left empty where explicit human data were not available.  "
+"notes": "All fields were populated using only the provided deep-research output and the user-supplied pathway list; pathways not present in the curated PATHWAY_LIST were not included in pathway_sets. Source files:  "
 }

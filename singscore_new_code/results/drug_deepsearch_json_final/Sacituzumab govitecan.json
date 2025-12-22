@@ -1,0 +1,145 @@
+{
+"drug_name": "Sacituzumab govitecan",
+"cancer_indication": "Metastatic triple-negative breast cancer (TNBC) after ≥2 prior therapies; heavily pretreated hormone receptor–positive/HER2-negative (HR+/HER2−) breast cancer.",
+"drug_category": "Antibody–drug conjugate (ADC)",
+"drug_class": "TROP-2–directed antibody–drug conjugate with SN-38 (topoisomerase I inhibitor) payload",
+"moa": "Sacituzumab govitecan (Trodelvy) is an ADC composed of a humanized IgG1 anti–TROP-2 monoclonal antibody linked to SN-38. The antibody binds TROP-2 on tumor cells and triggers rapid internalization; the hydrolysable linker then releases SN-38 intracellularly. SN-38 inhibits DNA topoisomerase I, stabilizing the topoisomerase–DNA cleavage complex and causing DNA single- and double-strand breaks, leading to cell cycle arrest and apoptosis. The Fc portion may also engage Fcγ receptors on immune cells, contributing to antibody-dependent cellular cytotoxicity (ADCC).",
+"chembl_id": "CHEMBL3545262",
+"drugbank_id": "DB12893",
+"synonyms": [
+"Trodelvy",
+"sacituzumab govitecan-hziy",
+"hRS7-SN38",
+"RS7-SN38",
+"IMMU-132 (IMMU 132)",
+"RS7SN38",
+"sacituzumab govitecan"
+],
+"primary_targets": [
+"TACSTD2",
+"TOP1"
+],
+"pathway_sets": [
+"WP_TROP2_REGULATORY_SIGNALING",
+"GOMF_DNA_TOPOISOMERASE_ACTIVITY",
+"REACTOME_GLUCURONIDATION"
+],
+"pathway_sets_annotations": {
+"WP_TROP2_REGULATORY_SIGNALING": {
+"description": "Trop-2 (TACSTD2) is an epithelial cell-surface antigen that can signal to promote tumor growth via pathways including PKC/MAPK and β-catenin programs and integrin/Src/FAK signaling involved in migration.",
+"interpretation": "Trop-2 signaling and expression are central to the biology and targeting of many breast cancers (especially TNBC), and Trop-2 surface availability influences ADC binding and internalization in breast cancer."
+},
+"GOMF_DNA_TOPOISOMERASE_ACTIVITY": {
+"description": "DNA topoisomerase I (TOP1) activity mediates resolution of DNA topological stress by creating transient single-strand breaks and religating DNA; inhibition stabilizes the TOP1–DNA cleavage complex and induces DNA breaks.",
+"interpretation": "TOP1 activity is directly relevant to the SN-38 payload mechanism in breast cancer, where TOP1 inhibition drives DNA damage, checkpoint activation, and apoptosis."
+},
+"REACTOME_GLUCURONIDATION": {
+"description": "Glucuronidation is a detoxification/metabolic process in which UDP-glucuronosyltransferases (including UGT1A1) conjugate substrates (including SN-38) to glucuronic acid, typically reducing activity and enhancing clearance.",
+"interpretation": "Glucuronidation is clinically relevant to SN-38 exposure in breast cancer treatment with sacituzumab govitecan because UGT1A1-mediated inactivation modulates active payload levels and is tied to safety and response-modifying metabolism."
+}
+},
+"sensitivity_genes_up": [
+"TACSTD2",
+"TOP1"
+],
+"sensitivity_genes_down": [
+"UGT1A1",
+"ABCG2",
+"ABCB1"
+],
+"resistance_genes_up": [
+"UGT1A1",
+"ABCG2",
+"ABCB1"
+],
+"resistance_genes_down": [
+"TACSTD2"
+],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "TACSTD2",
+"interpretation": "High cell-surface Trop-2 increases ADC binding and internalization, increasing intracellular delivery of SN-38."
+},
+{
+"gene": "TOP1",
+"interpretation": "SN-38 targets the TOP1–DNA complex; active TOP1 is required for DNA cleavage complex stabilization and downstream DNA damage that mediates cytotoxicity."
+}
+],
+"sensitivity_genes_down_annotations": [
+{
+"gene": "UGT1A1",
+"interpretation": "Lower UGT1A1 activity reduces SN-38 glucuronidation/inactivation, increasing SN-38 exposure (with increased toxicity risk noted for low-activity UGT1A1*28 homozygosity)."
+},
+{
+"gene": "ABCG2",
+"interpretation": "Reduced efflux transporter activity would be expected to retain SN-38 intracellularly, increasing effective exposure to the payload."
+},
+{
+"gene": "ABCB1",
+"interpretation": "Reduced efflux transporter activity would be expected to retain SN-38 intracellularly, increasing effective exposure to the payload."
+}
+],
+"resistance_genes_up_annotations": [
+{
+"gene": "UGT1A1",
+"interpretation": "Upregulated UGT1A1 activity glucuronidates (inactivates) SN-38, lowering active drug levels and thereby contributing to resistance."
+},
+{
+"gene": "ABCG2",
+"interpretation": "Overexpression of drug efflux pumps can increase removal of SN-38, reducing intracellular payload levels and contributing to resistance."
+},
+{
+"gene": "ABCB1",
+"interpretation": "Overexpression of drug efflux pumps can increase removal of SN-38, reducing intracellular payload levels and contributing to resistance."
+}
+],
+"resistance_genes_down_annotations": [
+{
+"gene": "TACSTD2",
+"interpretation": "Downregulation or loss of Trop-2 reduces ADC binding/uptake and can make sacituzumab govitecan ineffective."
+}
+],
+"kg_gene_relationships": [
+"Sacituzumab govitecan|targets|TACSTD2",
+"Sacituzumab govitecan|inhibits|TOP1",
+"TACSTD2|confers_sensitivity_to|Sacituzumab govitecan",
+"TOP1|confers_sensitivity_to|Sacituzumab govitecan",
+"UGT1A1|confers_resistance_to|Sacituzumab govitecan",
+"ABCG2|confers_resistance_to|Sacituzumab govitecan",
+"ABCB1|confers_resistance_to|Sacituzumab govitecan",
+"TACSTD2|confers_resistance_to|Sacituzumab govitecan"
+],
+"Breast_cancer_subtype_information": {
+"HR+/HER2− (Luminal A/B)": "HR+/HER2− (Luminal A/B): These tumors often upregulate hormone-response and proliferation signatures. For example, Luminal A subtypes characteristically show enrichment of focal adhesion pathways (cell–matrix interactions). Luminal B tumors tend to have higher cell-cycle/E2F target activity.",
+"HER2+": "HER2+: These cancers frequently have upregulated ERBB2/HER2 signaling, PI3K/AKT, and MAPK pathway activity, driving rapid growth. Immune signatures are variable.",
+"Triple-negative (Basal-like/TNBC)": "Triple-negative (Basal-like/TNBC): High expression of inflammatory and proliferative pathways is typical. MSigDB data note that basal/TNBC tumors have upregulated WNT signaling. Other upregulated features in TNBC include TNF-α/NFκB, IL6/JAK/STAT3, and IFNγ-response pathways, along with strong cell-cycle (E2F, G2M) signatures.",
+"gBRCA1/2-mutated and HRD+ tumors": "gBRCA1/2-mutated and HRD+ tumors: These often overlap with TNBC and show high replication stress. Homologous recombination pathways (if intact) may be active, but by definition HRD tumors lack effective HR repair. They frequently upregulate alternative DNA damage responses and cell-cycle checkpoint pathways (e.g. ATR/CHK1) to cope with genomic instability."
+},
+"citations": [
+"Sacituzumab govitecan for hormone receptor-positive and triple-negative breast cancers - PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/37090944/](https://pubmed.ncbi.nlm.nih.gov/37090944/)",
+"Sacituzumab govitecan: Uses, Interactions, Mechanism of Action | DrugBank Online",
+"[https://go.drugbank.com/drugs/DB12893](https://go.drugbank.com/drugs/DB12893)",
+"FDA approves sacituzumab govitecan-hziy for HR-positive breast cancer | FDA",
+"[https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-hr-positive-breast cancer](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-sacituzumab-govitecan-hziy-hr-positive-breast cancer)",
+"Sacituzumab Govitecan in Metastatic Triple-Negative Breast Cancer - PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/33882206/](https://pubmed.ncbi.nlm.nih.gov/33882206/)",
+"Overall survival with sacituzumab govitecan in hormone receptor-positive and human epidermal growth factor receptor 2-negative metastatic breast cancer (TROPiCS-02): a randomised, open-label, multicentre, phase 3 trial - PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/37633306/](https://pubmed.ncbi.nlm.nih.gov/37633306/)",
+"label",
+"[https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/761115s009lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/761115s009lbl.pdf)",
+"Sacituzumab govitecan - Wikipedia",
+"[https://en.wikipedia.org/wiki/Sacituzumab_govitecan](https://en.wikipedia.org/wiki/Sacituzumab_govitecan)",
+"SMID_BREAST_CANCER_LUMINAL_A_UP",
+"[https://www.gsea-msigdb.org/gsea/msigdb/cards/SMID_BREAST_CANCER_LUMINAL_A_UP](https://www.gsea-msigdb.org/gsea/msigdb/cards/SMID_BREAST_CANCER_LUMINAL_A_UP)",
+"Parallel Genomic Alterations of Antigen and Payload Targets Mediate Polyclonal Acquired Clinical Resistance to Sacituzumab Govitecan in Triple-Negative Breast Cancer - PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/34404686/](https://pubmed.ncbi.nlm.nih.gov/34404686/)",
+"Trodelvy, INN-sacituzumab govitecan",
+"[https://www.ema.europa.eu/en/documents/product-information/trodelvy-epar-product-information_en.pdf](https://www.ema.europa.eu/en/documents/product-information/trodelvy-epar-product-information_en.pdf)",
+"Overview | Sacituzumab govitecan for treating unresectable triple-negative advanced breast cancer after 2 or more therapies | Guidance | NICE",
+"[https://www.nice.org.uk/guidance/ta819](https://www.nice.org.uk/guidance/ta819)",
+"Gilead Statement on New NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines®) Recommendation for Sacituzumab Govitecan-Hziy (Trodelvy®) in Second-Line and Later Metastatic Triple Negative Breast Cancer",
+"[https://www.gilead.com/company/company-statements/2021/gilead-statement-on-new-nccn-clinical-practice-guidelines-in oncology-recommendation-for-sacituzumab-govitecan-hziy-in-second-line-and-later-metastatic-triple-negative-breast-cancer](https://www.gilead.com/company/company-statements/2021/gilead-statement-on-new-nccn-clinical-practice-guidelines-in oncology-recommendation-for-sacituzumab-govitecan-hziy-in-second-line-and-later-metastatic-triple-negative-breast-cancer)"
+],
+"notes": "Contraindication explicitly noted: hypersensitivity to sacituzumab (Trodelvy). Key toxicities described include severe neutropenia and diarrhea with boxed warnings. Source files:  "
+}

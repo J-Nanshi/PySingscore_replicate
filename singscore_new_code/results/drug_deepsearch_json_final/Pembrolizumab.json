@@ -1,0 +1,159 @@
+{
+"drug_name": "Pembrolizumab",
+"cancer_indication": "In breast cancer, pembrolizumab has been approved primarily for triple-negative breast cancer (TNBC): as neoadjuvant therapy (with chemotherapy) followed by adjuvant use in high-risk early-stage TNBC, and as first-line therapy (with chemotherapy) in metastatic TNBC expressing PD-L1 (combined positive score ≥10). It also has tissue-agnostic FDA approvals for MSI-H/dMMR tumors and for tumor mutational burden–high (≥10 mut/Mb) solid tumors, although these indications are rare in breast cancer.",
+"drug_category": "Immune checkpoint",
+"drug_class": "PD-1 inhibitor",
+"moa": "Pembrolizumab (Keytruda) is a humanized IgG4 monoclonal antibody that targets the PD-1 checkpoint on T cells. By blocking PD-1, pembrolizumab prevents binding of its ligands (PD-L1/PD-L2) and thereby reactivates anti-tumor T-cell responses. PD-1 signaling normally inhibits T-cell activation and cytokine production; pembrolizumab antagonizes this checkpoint to promote cytotoxic T-cell infiltration and cytokine release within tumors, with particular clinical efficacy in TNBC.",
+"chembl_id": "CHEMBL3137343",
+"drugbank_id": "DB09037",
+"synonyms": [
+"Keytruda",
+"MK-3475",
+"SCH-900475"
+],
+"primary_targets": [
+"PDCD1"
+],
+"pathway_sets": [
+"REACTOME_CO_INHIBITION_BY_PD_1",
+"WP_CANCER_IMMUNOTHERAPY_BY_PD1_BLOCKADE",
+"REACTOME_TCR_SIGNALING",
+"GOBP_T_CELL_ACTIVATION",
+"KEGG_JAK_STAT_SIGNALING_PATHWAY",
+"KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION",
+"HALLMARK_TGF_BETA_SIGNALING",
+"HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+"REACTOME_SIGNALING_BY_VEGF"
+],
+"pathway_sets_annotations": {
+"REACTOME_CO_INHIBITION_BY_PD_1": {
+"description": "PD-1 engagement inhibits T-cell receptor signaling and IL-2 production, suppressing T-cell activation and function.",
+"interpretation": "This immune-checkpoint pathway is central to tumor immune evasion; blocking PD-1 can restore anti-tumor T-cell responses in breast cancer."
+},
+"WP_CANCER_IMMUNOTHERAPY_BY_PD1_BLOCKADE": {
+"description": null,
+"interpretation": null
+},
+"REACTOME_TCR_SIGNALING": {
+"description": "Activation of the T-cell receptor triggers downstream signaling cascades (including NF-κB) leading to T-cell proliferation and effector function.",
+"interpretation": "TCR signaling supports anti-tumor immunity; higher activity of T-cell signaling programs is relevant to effective PD-1 blockade in breast cancer."
+},
+"GOBP_T_CELL_ACTIVATION": {
+"description": "General biological process of activating T cells, driven by antigen receptor and co-stimulatory signals and shaped by cytokines.",
+"interpretation": "T-cell activation is a core requirement for immune-mediated tumor killing and is a key biological context for checkpoint inhibitor activity in breast cancer."
+},
+"KEGG_JAK_STAT_SIGNALING_PATHWAY": {
+"description": "Cytokine signaling (including interferons) activates JAK/STAT modules; IFN-γ receptor engagement triggers JAK1/2 and STAT1 phosphorylation and transcription of immune-effector genes.",
+"interpretation": "Cytokine-driven JAK/STAT signaling contributes to immune effector programs within tumors and is relevant to anti-tumor immune activity during PD-1 blockade."
+},
+"KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION": {
+"description": "Broad network of cytokines (e.g., IL-2, interferons, chemokines) and receptors coordinating innate and adaptive immune responses.",
+"interpretation": "Cytokine and chemokine signaling shapes immune-cell recruitment and activation in the tumor microenvironment, influencing immune engagement in breast cancer."
+},
+"HALLMARK_TGF_BETA_SIGNALING": {
+"description": "TGF-β signaling through receptor/SMAD pathways fosters immune tolerance and can exclude cytotoxic T cells from the tumor microenvironment.",
+"interpretation": "TGF-β–driven immune suppression and exclusion are relevant tumor-microenvironment features that can counter anti-tumor immunity in breast cancer."
+},
+"HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+"description": "NF-κB transcription factor signaling drives inflammatory gene expression and is activated by cytokines and antigen (TCR) signals in T cells.",
+"interpretation": "Inflammatory signaling programs are part of immune activation states in tumors and are relevant to immune regulation in breast cancer."
+},
+"REACTOME_SIGNALING_BY_VEGF": {
+"description": "VEGF and its receptors promote angiogenesis and vascular permeability, supporting tumor blood vessel formation and tumor growth.",
+"interpretation": "VEGF-driven angiogenesis is associated with immune evasion features in the tumor microenvironment and is relevant to immune context in breast cancer."
+}
+},
+"sensitivity_genes_up": [
+"CXCL9",
+"CXCL10"
+],
+"sensitivity_genes_down": [],
+"resistance_genes_up": [
+"LAG3"
+],
+"resistance_genes_down": [
+"PTEN",
+"JAK1",
+"JAK2",
+"STAT1"
+],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "CXCL9",
+"interpretation": "IFN-γ–induced chemokine expression (including CXCL9) is reported to rise in tumors responding to pembrolizumab."
+},
+{
+"gene": "CXCL10",
+"interpretation": "IFN-γ–induced chemokine expression (including CXCL10) is reported to rise in tumors responding to pembrolizumab."
+}
+],
+"sensitivity_genes_down_annotations": [],
+"resistance_genes_up_annotations": [
+{
+"gene": "LAG3",
+"interpretation": "Alternative immune checkpoint pathways parallel to PD-1 (e.g., LAG3) are described as potential escape routes that may be co-upregulated in non-responders."
+}
+],
+"resistance_genes_down_annotations": [
+{
+"gene": "PTEN",
+"interpretation": "Loss of PTEN is described as an example of a change that can blunt tumor immunogenicity and contribute to checkpoint resistance."
+},
+{
+"gene": "JAK1",
+"interpretation": "Defects in IFN-γ/JAK-STAT signaling are described as mechanisms that can blunt immunogenicity and underlie resistance to pembrolizumab."
+},
+{
+"gene": "JAK2",
+"interpretation": "Defects in IFN-γ/JAK-STAT signaling are described as mechanisms that can blunt immunogenicity and underlie resistance to pembrolizumab."
+},
+{
+"gene": "STAT1",
+"interpretation": "Defects in IFN-γ/JAK-STAT signaling are described as mechanisms that can blunt immunogenicity and underlie resistance to pembrolizumab."
+}
+],
+"kg_gene_relationships": [
+"Pembrolizumab|binds|PDCD1"
+],
+"Breast_cancer_subtype_information": {
+"TNBC": "Pembrolizumab has clear efficacy. Early-stage high-risk TNBC achieves higher pathologic complete response and longer disease-free survival when pembrolizumab is added to neoadjuvant chemotherapy. In metastatic TNBC, KEYNOTE-355 showed that pembrolizumab + chemo improves PFS and OS in patients with PD-L1 CPS≥10; PD-L1 testing (CPS) is routine in metastatic TNBC to select therapy.",
+"HR+/HER2– BC": "Clinical benefit of pembrolizumab is not established; current guidelines note no definitive role for PD-1 inhibitors in HR+/HER2– breast cancer and evidence is insufficient, so immune therapies are generally not recommended outside trials.",
+"HER2+ BC": "There is no approved use of pembrolizumab for HER2-positive breast cancer; trials combining PD-1 blockade with HER2-targeted therapy are ongoing, and routine use is not supported by current data.",
+"gBRCA1/2-mutated BC": "Pembrolizumab has no specific indication tied to BRCA status in breast cancer; trials are exploring pembrolizumab plus chemotherapy in HER2–/BRCA-mutant metastatic breast cancer, but BRCA status is not presently an independent predictor of pembrolizumab response in breast cancer."
+},
+"citations": [
+"Definition of pembrolizumab - NCI Drug Dictionary - NCI",
+"[https://www.cancer.gov/publications/dictionaries/cancer-drug/def/pembrolizumab](https://www.cancer.gov/publications/dictionaries/cancer-drug/def/pembrolizumab)",
+"Keytruda | European Medicines Agency (EMA)",
+"[https://www.ema.europa.eu/en/medicines/human/EPAR/keytruda](https://www.ema.europa.eu/en/medicines/human/EPAR/keytruda)",
+"FDA approves pembrolizumab for high-risk early-stage triple-negative breast cancer | FDA",
+"[https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-high-risk-early-stage-triple negative-breast-cancer](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-high-risk-early-stage-triple negative-breast-cancer)",
+"label",
+"[https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/125514s096lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/125514s096lbl.pdf)",
+"Reactome | Co-inhibition by PD-1",
+"[https://reactome.org/content/detail/R-HSA-389948](https://reactome.org/content/detail/R-HSA-389948)",
+"KEGG PATHWAY: PD-L1 expression and PD-1 checkpoint pathway in cancer - Homo sapiens (human)",
+"[https://www.kegg.jp/pathway/hsa05235](https://www.kegg.jp/pathway/hsa05235)",
+"Reactome | Regulation of NF-kappa B signaling",
+"[https://reactome.org/content/detail/R-HSA-9758274](https://reactome.org/content/detail/R-HSA-9758274)",
+"KEGG PATHWAY: hsa04630",
+"[https://www.genome.jp/dbget-bin/www_bget?pathway](https://www.genome.jp/dbget-bin/www_bget?pathway):hsa04630",
+"KEGG PATHWAY: Cytokine-cytokine receptor interaction - Homo sapiens (human)",
+"[https://www.kegg.jp/pathway/hsa04060](https://www.kegg.jp/pathway/hsa04060)",
+"High TGF-β signature predicts immunotherapy resistance in gynecologic cancer patients treated with",
+"immune checkpoint inhibition | npj Precision Oncology",
+"[https://www.nature.com/articles/s41698-021-00242-8?error=cookies_not_supported&code=176f03ea-e220-4793-8890-](https://www.nature.com/articles/s41698-021-00242-8?error=cookies_not_supported&code=176f03ea-e220-4793-8890-)",
+"ac3057d85436",
+"Reactome | Signaling by VEGF",
+"[https://reactome.org/content/detail/R-HSA-194138](https://reactome.org/content/detail/R-HSA-194138)",
+"1 Recommendations | Pembrolizumab for neoadjuvant and adjuvant treatment of triple-negative",
+"early or locally advanced breast cancer | Guidance | NICE",
+"[https://www.nice.org.uk/guidance/ta851/chapter/1-Recommendations](https://www.nice.org.uk/guidance/ta851/chapter/1-Recommendations)",
+"1 Recommendations | Pembrolizumab plus chemotherapy for untreated, triple-negative, locally",
+"recurrent unresectable or metastatic breast cancer | Guidance | NICE",
+"[https://www.nice.org.uk/guidance/ta801/chapter/1-Recommendations](https://www.nice.org.uk/guidance/ta801/chapter/1-Recommendations)",
+"Expert consensus on the clinical application of immunotherapy in breast cancer: 2024 - PMC",
+"[https://pmc.ncbi.nlm.nih.gov/articles/PMC11094404/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11094404/)"
+],
+"notes": "Primary breast-cancer approvals described are for TNBC (perioperative high-risk early-stage TNBC with chemotherapy, and first-line metastatic TNBC with chemotherapy for PD-L1 CPS≥10). Tissue-agnostic approvals for MSI-H/dMMR and TMB-high (≥10 mut/Mb) solid tumors are described as rare in breast cancer. The FDA label is described as having no absolute contraindications; key safety issues noted include immune-related adverse events, infusion reactions, and embryofetal risk (fetal harm) with contraception recommended for women of childbearing potential."
+}

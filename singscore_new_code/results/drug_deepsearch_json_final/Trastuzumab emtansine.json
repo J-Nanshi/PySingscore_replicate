@@ -1,0 +1,215 @@
+{
+"drug_name": "Trastuzumab emtansine (T-DM1)",
+"cancer_indication": "HER2-positive breast cancer (metastatic disease after prior trastuzumab/taxane therapy, or adjuvant therapy for residual invasive disease after neoadjuvant treatment).",
+"drug_category": "HER2-targeted",
+"drug_class": "antibody–drug conjugate",
+"moa": "Trastuzumab emtansine (T-DM1) combines the anti-HER2 antibody trastuzumab with the microtubule inhibitor DM1 via a stable linker. It binds HER2 (ERBB2) on cancer cells, blocks HER2-driven signaling and can elicit ADCC, then the HER2–T-DM1 complex is internalized via receptor-mediated endocytosis. In lysosomes, DM1 is released and binds β-tubulin to inhibit microtubule function, inducing mitotic arrest and triggering apoptosis.",
+"chembl_id": "CHEMBL1743082",
+"drugbank_id": "DB05773",
+"synonyms": [
+"Kadcyla",
+"ado‐trastuzumab emtansine",
+"trastuzumab‐DM1",
+"trastuzumab‐MCC-DM1",
+"T-DM1",
+"TDM1",
+"RG-3502",
+"PRO-132365"
+],
+"primary_targets": [
+"ERBB2",
+"TUBB"
+],
+"pathway_sets": [
+"REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2",
+"REACTOME_SIGNALING_BY_ERBB2_IN_CANCER",
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+"HALLMARK_KRAS_SIGNALING_UP",
+"HALLMARK_G2M_CHECKPOINT",
+"HALLMARK_E2F_TARGETS",
+"HALLMARK_APOPTOSIS",
+"HALLMARK_INTERFERON_GAMMA_RESPONSE",
+"GOBP_RECEPTOR_MEDIATED_ENDOCYTOSIS",
+"GOBP_LYSOSOMAL_TRANSPORT",
+"KEGG_ABC_TRANSPORTERS",
+"GOBP_CAVEOLIN_MEDIATED_ENDOCYTOSIS"
+],
+"pathway_sets_annotations": {
+"REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2": {
+"description": "Constitutive downstream signaling driven by overexpressed ERBB2 (HER2) receptor activity.",
+"interpretation": "HER2 overexpression is the key biomarker for T-DM1 activity in breast cancer, and HER2-driven signaling underpins tumor proliferation and survival in HER2-positive disease."
+},
+"REACTOME_SIGNALING_BY_ERBB2_IN_CANCER": {
+"description": "Cancer-associated ERBB2 (HER2) receptor signaling and its downstream proliferative and survival pathways.",
+"interpretation": "ERBB2 signaling is central to HER2-positive breast cancer biology and is directly engaged by the trastuzumab component of T-DM1."
+},
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+"description": "PI3K–AKT–mTOR survival and growth signaling downstream of receptor tyrosine kinases, including HER2.",
+"interpretation": "This pathway is described as a key downstream HER2 axis in HER2-positive breast cancer and is mechanistically relevant to the anti-proliferative effects associated with HER2 targeting."
+},
+"HALLMARK_KRAS_SIGNALING_UP": {
+"description": "RAS–MAPK signaling programs associated with KRAS/RAS pathway activation and proliferative signaling.",
+"interpretation": "RAS/MAPK signaling is described as a downstream pathway linked to HER2 signaling, relevant to proliferation and potential pathway bypass in HER2-driven tumors."
+},
+"HALLMARK_G2M_CHECKPOINT": {
+"description": "Regulation of mitotic entry and the G2/M checkpoint machinery that controls progression through mitosis.",
+"interpretation": "The DM1 payload induces mitotic arrest; pathway activity reflecting mitotic cycling is mechanistically relevant to DM1-mediated cytotoxicity in tumor cells."
+},
+"HALLMARK_E2F_TARGETS": {
+"description": "E2F-driven transcriptional programs associated with cell-cycle progression and S-phase entry.",
+"interpretation": "E2F activity is described as reflecting cell-cycle progression, which is mechanistically relevant because T-DM1 requires dividing cells for DM1-mediated mitotic effects."
+},
+"HALLMARK_APOPTOSIS": {
+"description": "Intrinsic apoptosis and execution programs mediated by caspases and BCL2-family regulated mitochondrial pathways.",
+"interpretation": "Apoptotic machinery is described as enabling tumor cell death after DM1-induced damage and HER2 pathway effects."
+},
+"HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+"description": "Interferon-γ–associated immune activation and inflammatory transcriptional responses.",
+"interpretation": "Immune activation is described as relevant to Fc-mediated immune effector functions (e.g., ADCC) associated with the trastuzumab component of T-DM1."
+},
+"GOBP_RECEPTOR_MEDIATED_ENDOCYTOSIS": {
+"description": "Internalization of receptor–ligand complexes through receptor-mediated endocytosis and vesicular trafficking.",
+"interpretation": "T-DM1 requires HER2 binding followed by internalization for intracellular delivery of DM1, making endocytic uptake mechanistically central."
+},
+"GOBP_LYSOSOMAL_TRANSPORT": {
+"description": "Trafficking to lysosomes and transport processes that support lysosomal degradation and downstream handling of catabolites.",
+"interpretation": "Lysosomal processing is described as necessary for DM1 release after internalization, linking lysosomal transport/function to payload availability."
+},
+"KEGG_ABC_TRANSPORTERS": {
+"description": "ATP-binding cassette transporter-mediated efflux of xenobiotics and drugs (e.g., MDR1/P-gp).",
+"interpretation": "Drug efflux is described as mechanistically relevant to intracellular DM1 exposure after payload release, impacting retention of the cytotoxic component."
+},
+"GOBP_CAVEOLIN_MEDIATED_ENDOCYTOSIS": {
+"description": "Endocytic uptake mediated by caveolin-dependent vesicles and caveolae-associated internalization routes.",
+"interpretation": "Caveolin-associated uptake is described as influencing T-DM1 internalization, linking this endocytosis route to intracellular delivery of DM1."
+}
+},
+"sensitivity_genes_up": [
+"CCNB1",
+"CDC20",
+"CAV1",
+"SH3GL1",
+"SLC46A3"
+],
+"sensitivity_genes_down": [],
+"resistance_genes_up": [
+"ABCB1",
+"PLK1",
+"PIK3CA",
+"KRAS"
+],
+"resistance_genes_down": [
+"ERBB2",
+"CCNB1",
+"CDC20",
+"CAV1",
+"SH3GL1",
+"SLC46A3"
+],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "CCNB1",
+"interpretation": "High cyclin B1 expression is described as indicating active cycling into mitosis, where the DM1 payload is most effective at inducing mitotic arrest."
+},
+{
+"gene": "CDC20",
+"interpretation": "Higher CDC20 is described alongside cyclin B1 as supporting mitotic entry/progression, aligning with T-DM1’s requirement for dividing cells to enable DM1-mediated mitotic blockade."
+},
+{
+"gene": "CAV1",
+"interpretation": "Elevated caveolin-1 is described as enhancing T-DM1 uptake via caveolin-mediated endocytosis, increasing internalization and payload delivery."
+},
+{
+"gene": "SH3GL1",
+"interpretation": "Upregulation of SH3GL1 (endophilin A2) is described as promoting efficient HER2–T-DM1 internalization; reduced levels suppress cytotoxicity in the report."
+},
+{
+"gene": "SLC46A3",
+"interpretation": "Higher SLC46A3 is described as facilitating lysosomal export of DM1 into the cytosol, supporting payload release and cytotoxicity."
+}
+],
+"sensitivity_genes_down_annotations": [],
+"resistance_genes_up_annotations": [
+{
+"gene": "ABCB1",
+"interpretation": "Overexpression of MDR1/P-gp (ABCB1) is described as effluxing the DM1 payload, reducing intracellular drug concentration and promoting lack of response."
+},
+{
+"gene": "PLK1",
+"interpretation": "High PLK1 activity is described in resistant models as promoting mitotic progression and dampening T-DM1 cytotoxicity; PLK1 inhibition can resensitize in the report."
+},
+{
+"gene": "PIK3CA",
+"interpretation": "Constitutive PI3K–AKT activation is described as a known resistance mechanism in HER2-positive breast cancer that can blunt HER2 inhibition effects relevant to T-DM1."
+},
+{
+"gene": "KRAS",
+"interpretation": "KRAS/RAS hyperactivation is described as bypassing HER2 blockade by sustaining RAS/MAPK signaling, which can undermine the anti-proliferative signaling impact of HER2 targeting."
+}
+],
+"resistance_genes_down_annotations": [
+{
+"gene": "ERBB2",
+"interpretation": "Reduction or loss of HER2 expression is described as decreasing the available target for T-DM1 binding, impairing delivery of the DM1 payload and contributing to lack of response."
+},
+{
+"gene": "CCNB1",
+"interpretation": "Downregulation of cyclin B1 is described as preventing cells from entering mitosis where DM1 acts, reducing cytotoxic effect in the report."
+},
+{
+"gene": "CDC20",
+"interpretation": "Downregulation of CDC20 is described as preventing mitotic progression needed for DM1-mediated arrest and downstream apoptosis."
+},
+{
+"gene": "CAV1",
+"interpretation": "Reduced caveolin-1 is described as impairing T-DM1 internalization and lowering cytotoxicity through diminished endocytic uptake."
+},
+{
+"gene": "SH3GL1",
+"interpretation": "Reduced SH3GL1 is described as impairing HER2–T-DM1 internalization and suppressing cytotoxicity by limiting delivery to lysosomes."
+},
+{
+"gene": "SLC46A3",
+"interpretation": "Loss of SLC46A3 is described as preventing lysosomal export of DM1, trapping the payload and reducing tumor cell killing."
+}
+],
+"kg_gene_relationships": [
+"Trastuzumab emtansine|binds|ERBB2",
+"Trastuzumab emtansine|targets|TUBB",
+"ABCB1_overexpression|confers_resistance_to|Trastuzumab emtansine",
+"PLK1_upregulation|confers_resistance_to|Trastuzumab emtansine",
+"ERBB2_downregulation|confers_resistance_to|Trastuzumab emtansine",
+"CAV1_upregulation|confers_sensitivity_to|Trastuzumab emtansine",
+"SH3GL1_upregulation|confers_sensitivity_to|Trastuzumab emtansine",
+"SLC46A3_loss|confers_resistance_to|Trastuzumab emtansine"
+],
+"Breast_cancer_subtype_information": {
+"HER2-positive subtypes": "Trastuzumab emtansine efficacy is strictly tied to HER2 status; it is effective in all HER2-positive subtypes (including HER2-enriched or Luminal B/HER2+ cancers) and is indifferent to hormone receptor or BRCA/HRD status per se.",
+"HR-positive/HER2-negative (Luminal A/B)": "HR-positive/HER2-negative (Luminal A/B) tumors express little or no HER2 and are not targets of T-DM1; no trial evidence supports T-DM1 in these HER2-negative subtypes.",
+"triple-negative/basal-like": "Triple-negative/basal-like tumors express little or no HER2 and are not targets of T-DM1; no trial evidence supports T-DM1 in these HER2-negative subtypes.",
+"intratumoral HER2 heterogeneity": "Intratumoral heterogeneity of HER2 (e.g., mixed HER2+/HER2– regions) is described as predicting T-DM1 failure.",
+"germline BRCA1/2–mutated tumors": "Germline BRCA1/2–mutated tumors are often triple-negative; the absence of HER2 in these cases means T-DM1 is inactive, and there is no known interaction between HRD status and T-DM1 sensitivity described."
+},
+"citations": [
+"Mechanisms of resistance to trastuzumab",
+"emtansine (T-DM1) in HER2-positive breast cancer | British Journal of Cancer",
+"[https://www.nature.com/articles/s41416-019-0635-y?error=cookies_not_supported&code=c83e8097-](https://www.nature.com/articles/s41416-019-0635-y?error=cookies_not_supported&code=c83e8097-)",
+"a223-4887-90f9-2449e06f9b38",
+"Trastuzumab emtansine: Uses, Interactions, Mechanism of Action | DrugBank",
+"Online",
+"[https://go.drugbank.com/drugs/DB05773](https://go.drugbank.com/drugs/DB05773)",
+"FDA Approval Summary: Ado-Trastuzumab Emtansine for the Adjuvant Treatment of HER2-positive",
+"Early Breast Cancer - PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/32217612/](https://pubmed.ncbi.nlm.nih.gov/32217612/)",
+"Trastuzumab deruxtecan versus trastuzumab emtansine in HER2-positive metastatic breast cancer:",
+"long-term survival analysis of the DESTINY-Breast03 trial | Nature Medicine",
+"[https://www.nature.com/articles/s41591-024-03021-7?error=cookies_not_supported&code=3b7fc151-](https://www.nature.com/articles/s41591-024-03021-7?error=cookies_not_supported&code=3b7fc151-)",
+"b354-4288-906b-3cd9c82c4f71",
+"KADCYLA (ado-trastuzumab emtansine) Label",
+"[https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/125427lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/125427lbl.pdf)",
+"1 Recommendations | Trastuzumab emtansine for adjuvant treatment of HER2-positive early breast",
+"cancer | Guidance | NICE",
+"[https://www.nice.org.uk/guidance/ta632/chapter/1-Recommendations](https://www.nice.org.uk/guidance/ta632/chapter/1-Recommendations)"
+],
+"notes": "The report describes T-DM1 as FDA- and EMA-approved for HER2-positive breast cancer and emphasizes dependence on high HER2 expression for efficacy, with no activity in HER2-negative subtypes. Safety cautions described include black-box warnings for serious hepatotoxicity and cardiac toxicity and embryo-fetal risk, along with the need for monitoring. Source files:  "
+}

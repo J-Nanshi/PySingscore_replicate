@@ -1,0 +1,197 @@
+{
+"drug_name": "Palbociclib",
+"cancer_indication": "Hormone receptor–positive (HR+), HER2-negative advanced or metastatic breast cancer, in combination with endocrine therapy (aromatase inhibitor or fulvestrant).",
+"drug_category": "CDK4/6",
+"drug_class": "CDK4/6 inhibitor",
+"moa": "Palbociclib is an oral, selective inhibitor of CDK4 and CDK6 that blocks the G1–S cell-cycle transition by preventing RB phosphorylation and thereby keeping E2F transcription factors inactive. In ER+ breast cancer cells, palbociclib combined with endocrine therapy produces greater RB dephosphorylation and suppression of E2F signaling than either agent alone, leading to durable G1 arrest and often cellular senescence. Cancers lacking RB are intrinsically resistant because RB loss abolishes palbociclib’s mechanism of action.",
+"chembl_id": "CHEMBL189963",
+"drugbank_id": "DB09073",
+"synonyms": [
+"Ibrance",
+"PD-0332991",
+"PD-332991",
+"PD0332991",
+"PD332991"
+],
+"primary_targets": [
+"CDK4",
+"CDK6"
+],
+"pathway_sets": [
+"REACTOME_CELL_CYCLE",
+"HALLMARK_E2F_TARGETS",
+"HALLMARK_G2M_CHECKPOINT",
+"REACTOME_PI3K_AKT_SIGNALING_IN_CANCER",
+"REACTOME_FGFR_LIGAND_BINDING_AND_ACTIVATION",
+"KEGG_MAPK_SIGNALING_PATHWAY",
+"HALLMARK_MYC_TARGETS_V1",
+"GOBP_CELLULAR_SENESCENCE",
+"HALLMARK_MTORC1_SIGNALING"
+],
+"pathway_sets_annotations": {
+"REACTOME_CELL_CYCLE": {
+"description": "Core pathway controlling cell-cycle progression, including the G1/S transition driven by cyclin D–CDK4/6 activity and RB phosphorylation.",
+"interpretation": "Cell-cycle dysregulation drives proliferation in HR+ breast cancer; dependence on CDK4/6–RB–E2F axis underlies clinical utility of CDK4/6 inhibition."
+},
+"HALLMARK_E2F_TARGETS": {
+"description": "E2F transcriptional program supporting S-phase entry and DNA replication machinery.",
+"interpretation": "E2F-driven transcription reflects proliferative state and RB pathway control in ER+ tumors; this proliferative program is central to tumor growth biology."
+},
+"HALLMARK_G2M_CHECKPOINT": {
+"description": "Gene set controlling mitotic entry and G2/M progression, including mitotic regulators such as PLK1, Aurora kinases, and WEE1 as described in resistant contexts.",
+"interpretation": "Activation of late cell-cycle programs can support continued proliferation and cell-cycle escape programs in breast cancer when upstream checkpoints are constrained."
+},
+"REACTOME_PI3K_AKT_SIGNALING_IN_CANCER": {
+"description": "Survival and growth signaling axis encompassing PI3K/AKT and downstream mTOR-related outputs.",
+"interpretation": "PI3K/AKT/mTOR signaling provides pro-survival and proliferative inputs that can reduce reliance on cell-cycle checkpoint control in breast cancer."
+},
+"REACTOME_FGFR_LIGAND_BINDING_AND_ACTIVATION": {
+"description": "FGFR pathway signaling that promotes proliferation and cyclin D-related growth programs (including FGFR1-associated signaling described in resistant models).",
+"interpretation": "Growth-factor receptor signaling can sustain breast tumor proliferation by promoting cyclin D-linked programs and growth signaling."
+},
+"KEGG_MAPK_SIGNALING_PATHWAY": {
+"description": "Growth-factor/MAPK signaling cascade (RAS–RAF–MEK–ERK) that increases cyclin D and supports proliferation, as described for MAPK cascade activity in resistant cells.",
+"interpretation": "MAPK signaling is a major proliferative pathway in breast cancer and can support tumor growth through mitogenic transcription and cyclin regulation."
+},
+"HALLMARK_MYC_TARGETS_V1": {
+"description": "c-MYC-associated transcriptional program (MYC target gene enrichment described in less responsive tumors).",
+"interpretation": "MYC-driven transcription is associated with aggressive proliferative states in breast cancer biology, particularly in less responsive tumor contexts described."
+},
+"GOBP_CELLULAR_SENESCENCE": {
+"description": "Cellular senescence program characterized by senescence-like arrest and induction of senescence markers (e.g., p21Cip1 and p16INK4A described).",
+"interpretation": "Senescence-like arrest represents a durable antiproliferative state relevant to therapeutic growth control in HR+ breast cancer models."
+},
+"HALLMARK_MTORC1_SIGNALING": {
+"description": "mTORC1-related signaling outputs; mTOR pathway components and mTORC1 targets were described as activated in resistant models.",
+"interpretation": "mTOR signaling supports growth and metabolic programs that can maintain tumor cell fitness and proliferative capacity in breast cancer."
+}
+},
+"sensitivity_genes_up": [
+"CCND1",
+"RB1"
+],
+"sensitivity_genes_down": [
+"CCNE1",
+"CDK2",
+"CDKN2A"
+],
+"resistance_genes_up": [
+"AURKB",
+"CCNE1",
+"CDK2",
+"CDK6",
+"FGFR1",
+"KRAS",
+"MTOR",
+"MYC",
+"PDPK1",
+"PLK1",
+"WEE1"
+],
+"resistance_genes_down": [
+"RB1"
+],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "CCND1",
+"interpretation": "High Cyclin D1 was described as correlating with sensitivity, consistent with reliance on Cyclin D–CDK4/6 activity for G1–S progression."
+},
+{
+"gene": "RB1",
+"interpretation": "Only RB-proficient cancers were described as responding; intact RB enables palbociclib to suppress E2F signaling via RB hypophosphorylation."
+}
+],
+"sensitivity_genes_down_annotations": [
+{
+"gene": "CCNE1",
+"interpretation": "High Cyclin E1 was described as a negative predictor of response; conversely, low cyclin E was described as a biomarker of sensitivity."
+},
+{
+"gene": "CDK2",
+"interpretation": "High CDK2 (often coupled with Cyclin E) was described as a bypass mechanism for CDK4/6 blockade; lower CDK2 activity aligns with sensitivity."
+},
+{
+"gene": "CDKN2A",
+"interpretation": "Low p16 was described as correlating with sensitivity in the biomarker notes."
+}
+],
+"resistance_genes_up_annotations": [
+{
+"gene": "CCNE1",
+"interpretation": "High Cyclin E1 was described as a negative predictor and as enabling bypass of CDK4/6 blockade with CDK2."
+},
+{
+"gene": "CDK2",
+"interpretation": "High CDK2 was described as a bypass driver of resistance by allowing cell-cycle progression despite CDK4/6 inhibition."
+},
+{
+"gene": "MYC",
+"interpretation": "High c-MYC was described as correlating with poor palbociclib response and as part of a mechanism elevating CDK6 via the c-MYC/miR-29b-3p/CDK6 axis."
+},
+{
+"gene": "CDK6",
+"interpretation": "CDK6 upregulation was described in the c-MYC→miR-29b-3p→CDK6 axis as inhibiting palbociclib-induced G1 arrest."
+},
+{
+"gene": "FGFR1",
+"interpretation": "FGFR1 upregulation/amplification was described in resistant breast cancers and linked to proliferative signaling that mediates palbociclib escape."
+},
+{
+"gene": "KRAS",
+"interpretation": "KRAS was described as upregulated in resistant lines within the RAS–MAPK cascade, supporting proliferation and undermining CDK4/6 dependence."
+},
+{
+"gene": "PDPK1",
+"interpretation": "PDK1 was described as among PI3K pathway activators upregulated in resistant lines, aligning with increased growth/survival signaling."
+},
+{
+"gene": "MTOR",
+"interpretation": "mTOR was described as among pathway components upregulated/activated in resistant models, supporting compensatory growth signaling."
+},
+{
+"gene": "PLK1",
+"interpretation": "PLK1 was described as a G2/M entry regulator upregulated in resistant cells, enabling bypass of the G1/S block."
+},
+{
+"gene": "AURKB",
+"interpretation": "AURKB was described among mitotic regulators upregulated in resistant cells, contributing to G2/M-related escape programs."
+},
+{
+"gene": "WEE1",
+"interpretation": "WEE1 was described among G2/M entry regulators upregulated in resistant cells, consistent with mitotic program reactivation during resistance."
+}
+],
+"resistance_genes_down_annotations": [
+{
+"gene": "RB1",
+"interpretation": "RB loss was described as causing intrinsic resistance because the drug’s mechanism requires RB-mediated repression of E2F transcription."
+}
+],
+"kg_gene_relationships": [
+"Palbociclib|inhibits|CDK4",
+"Palbociclib|inhibits|CDK6",
+"RB1_loss|confers_resistance_to|Palbociclib",
+"CCNE1_high|confers_resistance_to|Palbociclib",
+"CDK2_high|confers_resistance_to|Palbociclib",
+"FGFR1_upregulation|confers_resistance_to|Palbociclib",
+"MYC_high|confers_resistance_to|Palbociclib",
+"CDK6_upregulation|confers_resistance_to|Palbociclib"
+],
+"Breast_cancer_subtype_information": {
+"HR+ (luminal A/B) / HR+/HER2−": "HR+ (luminal A/B) tumors were described as most sensitive to palbociclib because they usually retain functional RB; palbociclib is FDA-approved for HR+/HER2− advanced or metastatic disease with endocrine therapy.",
+"HER2+ (with HR+)": "Subtype data were described as limited; some studies suggest potential benefit in HR+/HER2+ contexts, but HER2 signaling may confer resistance without concurrent ER blockade, and palbociclib is not routinely approved for HER2+ disease unless HR+.",
+"Triple-negative/basal-like": "Triple-negative/basal-like tumors were described as often RB-deficient and MYC-driven with low sensitivity; RB loss and MYC upregulation were described as hallmarks of intrinsic resistance.",
+"BRCA1/2-mutated or HRD+": "Described as often overlapping with basal-like phenotype; no clear evidence was described that HRD directly alters palbociclib sensitivity, and clinical use in BRCA-mutant cases was described as not established.",
+"Luminal A vs B": "Both luminal A and luminal B were described as ER+ and responsive to CDK4/6 inhibition in trials; luminal B may have higher Cyclin E/CDK2 expression potentially reducing response.",
+"Endocrine-resistant/ESR1-mutant": "Palbociclib was described as remaining effective in ESR1-mutant and wild-type cohorts; PALOMA-3 showed PFS benefit regardless of ESR1 mutation status."
+},
+"citations": [
+"[https://go.drugbank.com/drugs/DB09073](https://go.drugbank.com/drugs/DB09073)",
+"[https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207103s021,212436s009lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207103s021,212436s009lbl.pdf)",
+"[https://en.wikipedia.org/wiki/Palbociclib](https://en.wikipedia.org/wiki/Palbociclib)",
+"[https://pubmed.ncbi.nlm.nih.gov/32934206/](https://pubmed.ncbi.nlm.nih.gov/32934206/)",
+"[https://pmc.ncbi.nlm.nih.gov/articles/PMC4128689/](https://pmc.ncbi.nlm.nih.gov/articles/PMC4128689/)",
+"[https://www.nature.com/articles/s41598-025-11052-4?error=cookies_not_supported&code=eb0b53f1-6789-47c0-b244-aa2bfa5d76f3](https://www.nature.com/articles/s41598-025-11052-4?error=cookies_not_supported&code=eb0b53f1-6789-47c0-b244-aa2bfa5d76f3)"
+],
+"notes": "Pathway identifiers in the source material include Reactome R-HSA IDs, GO:0090398 for senescence, and MYC targets referenced as HALLMARK_MYC_TARGETS_V2; the requested <PATHWAY_NAME> list was used as the output keyset without adding new pathway IDs beyond what was described. Source files:  "
+}

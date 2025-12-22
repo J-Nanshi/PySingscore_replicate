@@ -1,0 +1,176 @@
+{
+"drug_name": "Toremifene",
+"cancer_indication": "Postmenopausal women with metastatic ER-positive (or unknown-status) breast cancer.",
+"drug_category": "Endocrine therapy",
+"drug_class": "Selective estrogen receptor modulator (SERM)",
+"moa": "Toremifene binds estrogen receptors and blocks estrogen signaling in breast cancer cells. In breast tissue it acts primarily as an ER antagonist, suppressing ER coactivator function and downregulating ER target genes. In ER+ breast tumor cells, this antiestrogen effect leads to cell-cycle arrest and apoptosis. Preclinical studies described increased TGF-β1 and other growth-inhibitory signals after toremifene exposure.",
+"chembl_id": "CHEMBL1655",
+"drugbank_id": "DB00539",
+"synonyms": [
+"toremifene",
+"toremifene citrate",
+"Fareston",
+"(Z)-toremifene",
+"4-chlorotamoxifen",
+"4-CT",
+"Acapodene",
+"CCRIS-8745",
+"FC-1157",
+"FC-1157a",
+"GTx-006",
+"NK-622",
+"NSC-613680",
+"GTX-006",
+"J33.157K"
+],
+"primary_targets": [
+"ESR1",
+"ESR2",
+"SHBG",
+"IGF1R"
+],
+"pathway_sets": [
+"HALLMARK_ESTROGEN_RESPONSE_EARLY",
+"HALLMARK_ESTROGEN_RESPONSE_LATE",
+"REACTOME_ESR_MEDIATED_SIGNALING",
+"HALLMARK_KRAS_SIGNALING_UP",
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+"HALLMARK_G2M_CHECKPOINT",
+"HALLMARK_E2F_TARGETS",
+"HALLMARK_APOPTOSIS",
+"HALLMARK_TGF_BETA_SIGNALING",
+"REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2"
+],
+"pathway_sets_annotations": {
+"HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+"description": "Early estrogen-response genes activated by estrogen receptor signaling.",
+"interpretation": "Represents ER-driven transcriptional programs that support hormone-dependent growth in ER+ (luminal) breast cancer."
+},
+"HALLMARK_ESTROGEN_RESPONSE_LATE": {
+"description": "Late-phase estrogen target genes regulated downstream of estrogen receptor signaling.",
+"interpretation": "Reflects sustained estrogen/ER pathway activity associated with ER-dependent proliferation in hormone receptor–positive breast cancer."
+},
+"REACTOME_ESR_MEDIATED_SIGNALING": {
+"description": "Core estrogen receptor (ESR) signaling cascade controlling estrogen-dependent transcription and downstream effects.",
+"interpretation": "Central pathway defining estrogen-driven tumor biology and endocrine dependence in ER+ breast cancer."
+},
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+"description": "Central survival and proliferation signaling pathway involving PI3K, AKT, and mTOR.",
+"interpretation": "A known driver of endocrine resistance and ER-independent survival signaling in breast cancer when activated."
+},
+"HALLMARK_G2M_CHECKPOINT": {
+"description": "Cell-cycle checkpoint and mitotic control processes governing G2/M transition and mitotic progression.",
+"interpretation": "Represents proliferative cell-division programs relevant to tumor growth and cell-cycle arrest phenotypes in breast cancer."
+},
+"HALLMARK_E2F_TARGETS": {
+"description": "E2F-regulated genes required for S-phase entry and DNA replication.",
+"interpretation": "Captures transcriptional output of proliferative cell-cycle drive that can sustain growth in breast cancer."
+},
+"HALLMARK_APOPTOSIS": {
+"description": "Programmed cell death signaling programs that execute apoptotic responses.",
+"interpretation": "Determines capacity for therapy-induced tumor cell death and response phenotypes in breast cancer."
+},
+"HALLMARK_TGF_BETA_SIGNALING": {
+"description": "Transforming growth factor beta (TGF-β) signaling programs involved in growth regulation and downstream transcriptional responses.",
+"interpretation": "Growth-inhibitory TGF-β responsiveness was described as contributing to growth arrest signals in the context of toremifene exposure."
+}
+},
+"sensitivity_genes_up": [
+"ESR1"
+],
+"sensitivity_genes_down": [],
+"resistance_genes_up": [
+"PIK3CA",
+"ERBB2",
+"EGFR",
+"CCND1",
+"CDK4",
+"CDK6",
+"BCL2"
+],
+"resistance_genes_down": [
+"ESR1",
+"PTEN",
+"SMAD4"
+],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "ESR1",
+"interpretation": "ER positivity (active ER pathway) is the clinical basis for SERM use; tumors with ER-driven biology are the setting in which toremifene has benefit."
+}
+],
+"sensitivity_genes_down_annotations": [],
+"resistance_genes_up_annotations": [
+{
+"gene": "PIK3CA",
+"interpretation": "PI3K pathway activation (including PIK3CA mutations) was described as a mechanism of endocrine/SERM resistance by enabling ER-independent survival."
+},
+{
+"gene": "ERBB2",
+"interpretation": "Active HER2 signaling was described as bypassing ER blockade via downstream MAPK/PI3K pathways, producing partial resistance unless ER is strongly positive."
+},
+{
+"gene": "EGFR",
+"interpretation": "HER2/EGFR signaling activity was described as a bypass mechanism that can activate downstream pathways and reduce endocrine response."
+},
+{
+"gene": "CCND1",
+"interpretation": "Overexpression of cyclin D1 was described as allowing continued proliferation despite ER blockade, contributing to resistance."
+},
+{
+"gene": "CDK4",
+"interpretation": "CDK4/6-driven cell-cycle progression was described as a route to override antiestrogen-induced arrest, contributing to resistance when elevated."
+},
+{
+"gene": "CDK6",
+"interpretation": "CDK4/6-driven cell-cycle progression was described as a route to override antiestrogen-induced arrest, contributing to resistance when elevated."
+},
+{
+"gene": "BCL2",
+"interpretation": "Suppressed apoptotic machinery was described as promoting resistance; high anti-apoptotic BCL2 was cited as an example that can blunt toremifene-induced death."
+}
+],
+"resistance_genes_down_annotations": [
+{
+"gene": "ESR1",
+"interpretation": "Loss of ER expression or function (ER-negative/ESR1-null) was described as rendering SERMs ineffective because there is no ER pathway target to block."
+},
+{
+"gene": "PTEN",
+"interpretation": "PTEN loss was cited as an example of PI3K/AKT pathway activation associated with endocrine/SERM resistance."
+},
+{
+"gene": "SMAD4",
+"interpretation": "Inactivation of TGF-β signaling (e.g., SMAD4 loss) was described as potentially blunting growth-inhibitory feedback, contributing to resistance."
+}
+],
+"kg_gene_relationships": [
+"Toremifene|antagonizes|ESR1",
+"Toremifene|binds|ESR2",
+"PIK3CA|confers_resistance_to|Toremifene",
+"PTEN_loss|confers_resistance_to|Toremifene",
+"ERBB2_overexpression|confers_resistance_to|Toremifene",
+"CCND1_overexpression|confers_resistance_to|Toremifene",
+"ESR1_loss|confers_resistance_to|Toremifene",
+"SMAD4_loss|confers_resistance_to|Toremifene"
+],
+"Breast_cancer_subtype_information": {
+"HR+/HER2– (Luminal A/B)": "Toremifene is indicated only in HR+ subtypes; luminal tumors respond when ER is present. Luminal A derive the greatest benefit; Luminal B also respond.",
+"HER2+ (ER– or ER+)": "In HER2-enriched cancers that lack ER, toremifene has no role. If HER2+ tumors co-express ER (a subset of Luminal B), endocrine therapy may be used alongside HER2 inhibitors; HER2-driven signaling confers partial resistance.",
+"Triple-Negative (TNBC)/Basal-like": "TNBCs lack ER, PR, and HER2, so SERMs are ineffective; no evidence supports toremifene in TNBC.",
+"gBRCA1/2-mutated": "BRCA1-associated tumors are usually basal/TNBC, so toremifene is not used. BRCA2-mutant cancers tend to be ER+ and can be treated with endocrine therapy; there is no special sensitivity or resistance beyond ER status."
+},
+"citations": [
+"[https://go.drugbank.com/drugs/DB00539](https://go.drugbank.com/drugs/DB00539)",
+"[https://pubmed.ncbi.nlm.nih.gov/25114854/](https://pubmed.ncbi.nlm.nih.gov/25114854/)",
+"[https://en.wikipedia.org/wiki/Toremifene](https://en.wikipedia.org/wiki/Toremifene)",
+"[https://www.mdpi.com/2227-9059/13/11/2620](https://www.mdpi.com/2227-9059/13/11/2620)",
+"[https://pubmed.ncbi.nlm.nih.gov/8350365/](https://pubmed.ncbi.nlm.nih.gov/8350365/)",
+"[https://www.genome.jp/dbget-bin/www_bget?dr](https://www.genome.jp/dbget-bin/www_bget?dr):D08620",
+"[https://www.spandidos-publications.com/10.3892/mmr.2024.13304](https://www.spandidos-publications.com/10.3892/mmr.2024.13304)",
+"[https://www.cancer.org/cancer/types/breast-cancer/treatment/hormone-therapy-for-breast-cancer.html](https://www.cancer.org/cancer/types/breast-cancer/treatment/hormone-therapy-for-breast-cancer.html)",
+"[https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2cab8dd1-3a10-48e6-86ce-0e5275ed49e5](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=2cab8dd1-3a10-48e6-86ce-0e5275ed49e5)",
+"[https://www.ema.europa.eu/en/documents/product-information/fareston-epar-product-information_en.pdf](https://www.ema.europa.eu/en/documents/product-information/fareston-epar-product-information_en.pdf)"
+],
+"notes": "HALLMARK_KRAS_SIGNALING_UP and REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2 were not explicitly described with those exact identifiers in the provided deep-research output; related Ras (hsa04014) and HER2/ERBB pathway context was discussed elsewhere. Contraindications described included hypersensitivity; QT prolongation risk (including uncorrected hypokalemia/hypomagnesemia and recent ventricular arrhythmias); pregnancy; pre-existing endometrial hyperplasia or unexplained vaginal bleeding; and severe hepatic impairment, plus cautions with CYP3A4 modulators and QT-prolonging drugs. Sources:  "
+}

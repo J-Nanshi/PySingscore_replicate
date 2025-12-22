@@ -1,0 +1,195 @@
+{
+"drug_name": "Neratinib",
+"cancer_indication": "Extended adjuvant therapy for early-stage HER2-positive breast cancer following adjuvant trastuzumab; and (with capecitabine) for metastatic HER2-positive breast cancer after ≥2 prior anti-HER2 regimens.",
+"drug_category": "HER2-targeted",
+"drug_class": "Irreversible HER-family tyrosine kinase inhibitor",
+"moa": "Neratinib is an irreversible tyrosine kinase inhibitor that covalently binds and inhibits EGFR, ERBB2 (HER2), and ERBB4 (HER4), preventing receptor autophosphorylation and downstream signaling through MAPK/ERK and PI3K/AKT pathways. In human breast-cancer models and clinical contexts, this blockade suppresses proliferative and survival signaling and promotes apoptosis and cell-cycle arrest. In ER+/HER2+ disease, neratinib is described as complementing endocrine therapy, with clinical activity reported for combinations such as neratinib with fulvestrant and trastuzumab in ER+ metastatic disease with ERBB2 mutations.",
+"chembl_id": "CHEMBL180022",
+"drugbank_id": "DB11828",
+"synonyms": [
+"Nerlynx",
+"Hernix",
+"HKI-272",
+"HKI-272 (alternate formatting)",
+"PF-0528767",
+"WAY-179272",
+"N-6404",
+"NCI NSC 757439"
+],
+"primary_targets": [
+"EGFR",
+"ERBB2",
+"ERBB4",
+"KDR"
+],
+"pathway_sets": [
+"REACTOME_SIGNALING_BY_ERBB2",
+"REACTOME_MAPK1_MAPK3_SIGNALING",
+"REACTOME_PI3K_AKT_SIGNALING_IN_CANCER",
+"HALLMARK_MTORC1_SIGNALING",
+"HALLMARK_E2F_TARGETS",
+"HALLMARK_APOPTOSIS",
+"HALLMARK_ESTROGEN_RESPONSE_LATE"
+],
+"pathway_sets_annotations": {
+"REACTOME_SIGNALING_BY_ERBB2": {
+"description": "HER2/ERBB2 receptor tyrosine-kinase signaling that drives downstream proliferative and survival cascades.",
+"interpretation": "ERBB2 pathway activity is a core oncogenic dependency in HER2-driven breast cancer and is a key axis targeted by neratinib."
+},
+"REACTOME_MAPK1_MAPK3_SIGNALING": {
+"description": "MAPK1/MAPK3 (ERK1/2) signaling downstream of activated receptor tyrosine kinases controlling proliferation and survival programs.",
+"interpretation": "MAPK/ERK output is a major downstream effector of EGFR/HER2 signaling in breast cancer and is part of the growth circuitry impacted by ERBB blockade."
+},
+"REACTOME_PI3K_AKT_SIGNALING_IN_CANCER": {
+"description": "PI3K–AKT signaling controlling cell survival and growth, frequently dysregulated in cancer via pathway alterations.",
+"interpretation": "PI3K/AKT activity supports tumor survival and is highlighted as both a downstream node of HER signaling and a pathway that can shape response or escape to HER2-directed therapy in breast cancer."
+},
+"HALLMARK_MTORC1_SIGNALING": {
+"description": "mTORC1-driven anabolic growth and translation programs that integrate nutrient and growth-factor signals.",
+"interpretation": "mTORC1 signaling reflects tumor growth-state control downstream of AKT and is described as a relevant survival/growth axis in the neratinib mechanism and resistance context."
+},
+"HALLMARK_E2F_TARGETS": {
+"description": "E2F-regulated transcriptional program linked to G1/S progression and proliferative cell-cycle activity.",
+"interpretation": "E2F-target activity captures proliferative drive and cell-cycle progression, which is discussed as changing with effective ERBB blockade and as a potential bypass route when sustained."
+},
+"HALLMARK_APOPTOSIS": {
+"description": "Core apoptotic machinery and pro-death signaling programs that execute programmed cell death.",
+"interpretation": "Apoptosis is a key tumor-control outcome described with HER-family signaling inhibition, reflecting a shift away from survival signaling in responsive settings."
+},
+"HALLMARK_ESTROGEN_RESPONSE_LATE": {
+"description": "Estrogen receptor (ER)-linked transcriptional program reflecting sustained/late ER-driven gene expression.",
+"interpretation": "ER signaling is described as clinically relevant in HR+ breast cancer subtypes where cross-talk with HER2 can influence benefit and where combination endocrine strategies are discussed alongside neratinib."
+}
+},
+"sensitivity_genes_up": [
+"ERBB2",
+"PIK3CA"
+],
+"sensitivity_genes_down": [],
+"resistance_genes_up": [
+"PIK3CA",
+"ERBB3",
+"IGF1R",
+"MET",
+"CCND1",
+"CDK4",
+"BCL2",
+"TNF",
+"IL6",
+"STAT3"
+],
+"resistance_genes_down": [
+"PTEN",
+"RB1",
+"TP53"
+],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "ERBB2",
+"interpretation": "Higher HER2 dependence (amplification/overexpression or activating ERBB2 context as described) is presented as a setting where neratinib’s direct ERBB2 inhibition is most effective."
+},
+{
+"gene": "PIK3CA",
+"interpretation": "PIK3CA alterations are explicitly described as being associated with enhanced benefit from neratinib in ExteNET (noted as counterintuitive in the source)."
+}
+],
+"sensitivity_genes_down_annotations": [],
+"resistance_genes_up_annotations": [
+{
+"gene": "PIK3CA",
+"interpretation": "Upregulated PI3K/AKT/mTOR signaling driven by PIK3CA mutation is described as a bypass survival mechanism that can reduce neratinib efficacy when the pathway remains high."
+},
+{
+"gene": "ERBB3",
+"interpretation": "Upregulation of alternate tyrosine-kinase signaling via ERBB3 is described as a mechanism to reactivate AKT/MAPK and bypass HER2 blockade."
+},
+{
+"gene": "IGF1R",
+"interpretation": "Upregulation of IGF1R signaling is described as an alternative receptor input that can restore downstream survival signaling despite ERBB inhibition."
+},
+{
+"gene": "MET",
+"interpretation": "Upregulation of HGF–MET signaling is described as a bypass route to reactivate AKT/MAPK and support resistance to HER2 inhibition."
+},
+{
+"gene": "CCND1",
+"interpretation": "Elevated Cyclin D1/E2F axis activity (including CCND1 amplification as stated) is described as enabling proliferation and overcoming neratinib-induced growth suppression."
+},
+{
+"gene": "CDK4",
+"interpretation": "Upregulation of Cyclin D1–CDK4 signaling is described as sustaining RB phosphorylation/E2F activation and promoting resistance to neratinib’s antiproliferative effects."
+},
+{
+"gene": "BCL2",
+"interpretation": "Overexpression of anti-apoptotic BCL2-family signaling is described as a survival mechanism that can blunt neratinib-induced cell death."
+},
+{
+"gene": "TNF",
+"interpretation": "TNF-linked inflammatory survival signaling (via TNFα/NFκB framing in the source) is described as a potential escape program under chronic neratinib exposure."
+},
+{
+"gene": "IL6",
+"interpretation": "Upregulation of IL6-associated survival signaling (with STAT3 noted) is described as a potential resistance mechanism supporting survival under HER2 inhibition."
+},
+{
+"gene": "STAT3",
+"interpretation": "STAT3-associated survival signaling is described as part of an inflammatory/pro-survival program that may help cells resist neratinib-induced death."
+}
+],
+"resistance_genes_down_annotations": [
+{
+"gene": "PTEN",
+"interpretation": "PTEN loss is described as hyperactivating PI3K/AKT and mTORC1 signaling, enabling bypass survival signaling and contributing to resistance."
+},
+{
+"gene": "RB1",
+"interpretation": "RB1 loss is described as allowing bypass of neratinib’s antiproliferative effects by sustaining E2F-driven proliferation."
+},
+{
+"gene": "TP53",
+"interpretation": "Loss or downregulation of p53 function (including TP53 mutation context) is described as limiting apoptotic responses to ERBB2 inhibition and contributing to resistance."
+}
+],
+"kg_gene_relationships": [
+"Neratinib|inhibits|EGFR",
+"Neratinib|inhibits|ERBB2",
+"Neratinib|inhibits|ERBB4",
+"Neratinib|inhibits|KDR",
+"PIK3CA_alteration|predicts_sensitivity_to|Neratinib",
+"PIK3CA_activation|confers_resistance_to|Neratinib",
+"PTEN_loss|confers_resistance_to|Neratinib",
+"RB1_loss|confers_resistance_to|Neratinib",
+"CCND1_amplification|confers_resistance_to|Neratinib",
+"ERBB2_L755S|confers_resistance_to|Neratinib"
+],
+"Breast_cancer_subtype_information": {
+"early-stage HER2-positive breast cancer": "Neratinib is approved as extended adjuvant therapy for early-stage HER2-positive breast cancer (following trastuzumab); US indication covers early-stage HER2-overexpressing disease after adjuvant trastuzumab, while EU approval limits it to hormone receptor–positive HER2+ disease.",
+"metastatic HER2-positive breast cancer": "In 2020, the FDA approved neratinib (with capecitabine) for metastatic HER2+ breast cancer after ≥2 prior anti-HER2 regimens.",
+"HER2-negative metastatic breast cancer with activating ERBB2 mutations": "As of 2023, NCCN advises neratinib use (often with fulvestrant and trastuzumab) in HER2-negative metastatic patients with activating ERBB2 mutations.",
+"ER+/HER2+ disease": "Neratinib may complement endocrine therapy in hormone-receptor–positive subtypes, with greater benefit described in HR+ patients and with combination endocrine blockade (e.g., neratinib, fulvestrant, trastuzumab) reported to yield objective responses in ER+ metastatic disease with ERBB2 mutation context."
+},
+"citations": [
+"NERLYNX (neratinib) tablets",
+"[https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/208051s000lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/208051s000lbl.pdf)",
+"Nerlynx, INN-neratinib",
+"[https://www.ema.europa.eu/en/documents/product-information/nerlynx-epar-product-information_en.pdf](https://www.ema.europa.eu/en/documents/product-information/nerlynx-epar-product-information_en.pdf)",
+"FDA approves neratinib for metastatic HER2-positive breast cancer | FDA",
+"[https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-neratinib-metastatic-her2-positive-breast cancer](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-neratinib-metastatic-her2-positive-breast cancer)",
+"NCCN Adds Neratinib to New Metastatic Breast Cancer Guidelines | OncLive",
+"[https://www.onclive.com/view/nccn-adds-neratinib-to-new-metastatic-breast-cancer-guidelines](https://www.onclive.com/view/nccn-adds-neratinib-to-new-metastatic-breast-cancer-guidelines)",
+"NCCN Guidelines Updates: Breast Cancer - PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/29784737/](https://pubmed.ncbi.nlm.nih.gov/29784737/)",
+"Neratinib: Uses, Interactions, Mechanism of Action | DrugBank Online",
+"[https://go.drugbank.com/drugs/DB11828](https://go.drugbank.com/drugs/DB11828)",
+"Final Efficacy Results of Neratinib in HER2-positive Hormone Receptor-positive Early-stage Breast Cancer",
+"From the Phase III ExteNET Trial - PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/33183970/](https://pubmed.ncbi.nlm.nih.gov/33183970/)",
+"Neratinib - Wikipedia",
+"[https://en.wikipedia.org/wiki/Neratinib](https://en.wikipedia.org/wiki/Neratinib)",
+"Neratinib | CellMinerCDB | NCI Genomics and Pharmacology Facility",
+"[https://discover.nci.nih.gov/drugs/cellminercdb/Neratinib_cellminercdb.html](https://discover.nci.nih.gov/drugs/cellminercdb/Neratinib_cellminercdb.html)",
+"PIK3CA alterations and benefit with neratinib: analysis from the randomized, double-blind, placebo controlled, phase III ExteNET trial | Breast Cancer Research | Full Text",
+"[https://breast-cancer-research.biomedcentral.com/articles/10.1186/s13058-019-1115-2](https://breast-cancer-research.biomedcentral.com/articles/10.1186/s13058-019-1115-2)"
+],
+"notes": "Gene-level sensitivity/resistance signals include a noted context-dependent dual role for PI3K pathway alterations (PIK3CA) described as both enhanced benefit in ExteNET and as a bypass resistance axis when PI3K/AKT/mTOR remains high. Source files: prompt2_final.docx ; Neratinib.pdf ."
+}

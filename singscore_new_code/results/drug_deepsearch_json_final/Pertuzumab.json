@@ -1,0 +1,134 @@
+{
+"drug_name": "Pertuzumab",
+"cancer_indication": "HER2-positive breast cancer in combination with trastuzumab and chemotherapy (including metastatic, neoadjuvant, and adjuvant settings).",
+"drug_category": "HER2-targeted",
+"drug_class": "Humanized IgG1 monoclonal antibody",
+"moa": "Pertuzumab is a humanized IgG1 monoclonal antibody targeting HER2/ERBB2. It binds HER2’s dimerization domain (subdomain II) and prevents ligand-dependent HER2 heterodimerization, reducing downstream PI3K/AKT and RAS/MAPK signaling. This leads to reduced proliferation (cell-cycle/E2F) and increased apoptosis in HER2-driven tumor cells. Its Fc region engages immune effector cells to mediate antibody-dependent cellular cytotoxicity (ADCC).",
+"chembl_id": "CHEMBL2007641",
+"drugbank_id": "DB06366",
+"synonyms": [
+"2C4 Antibody",
+"rhuMAb-2C4",
+"BCD-178",
+"MOAB-2C4",
+"R1273",
+"RG-1273",
+"SYSA1901",
+"Perjeta",
+"Perjeta–Herceptin",
+"Phesgo",
+"Phesgo SC"
+],
+"primary_targets": [
+"ERBB2"
+],
+"pathway_sets": [
+"REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2",
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+"KEGG_MAPK_SIGNALING_PATHWAY",
+"HALLMARK_E2F_TARGETS",
+"HALLMARK_APOPTOSIS",
+"GOBP_FC_GAMMA_RECEPTOR_SIGNALING_PATHWAY",
+"REACTOME_SIGNALING_BY_ERBB2_IN_CANCER"
+],
+"pathway_sets_annotations": {
+"REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2": {
+"description": "Represents signaling output driven by HER2 (ERBB2) overexpression, including receptor dimerization-dependent activation of downstream growth and survival pathways.",
+"interpretation": "In HER2-positive breast cancer, HER2 overexpression drives oncogenic signaling programs that sustain proliferation and survival."
+},
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+"description": "Growth and survival signaling axis downstream of receptor tyrosine kinases, involving PI3K-mediated AKT activation and downstream pro-survival/metabolic programs.",
+"interpretation": "PI3K/AKT signaling is a key downstream effector of HER2 activity in HER2-positive tumors and supports tumor cell survival and metabolism."
+},
+"KEGG_MAPK_SIGNALING_PATHWAY": {
+"description": "Mitogen-activated protein kinase signaling cascade (e.g., RAS/RAF/MEK/ERK) that drives proliferation and differentiation downstream of receptor tyrosine kinases.",
+"interpretation": "HER2-driven MAPK signaling contributes to mitogenic signaling and tumor proliferation in HER2-positive breast cancer."
+},
+"HALLMARK_E2F_TARGETS": {
+"description": "Transcriptional program associated with E2F activity and cell-cycle progression, reflecting proliferative signaling and G1/S transition.",
+"interpretation": "E2F-driven cell-cycle transcription reflects proliferative output downstream of HER2/MAPK signaling and is relevant to tumor growth in HER2-positive disease."
+},
+"HALLMARK_APOPTOSIS": {
+"description": "Programmed cell death pathway activities, including caspase activation and pro-apoptotic signaling balance.",
+"interpretation": "Apoptosis is a key tumor-suppressive process; shifts toward apoptosis occur when HER2-driven survival signaling is reduced."
+},
+"GOBP_FC_GAMMA_RECEPTOR_SIGNALING_PATHWAY": {
+"description": "Immune effector signaling triggered by antibody Fc engagement of Fcγ receptors on immune cells, enabling cytotoxic responses such as ADCC.",
+"interpretation": "Fcγ receptor signaling supports immune-mediated tumor killing when therapeutic antibodies engage immune effector cells."
+},
+"REACTOME_SIGNALING_BY_ERBB2_IN_CANCER": {
+"description": "Cancer-relevant signaling downstream of ERBB2/HER2, integrating activation of pathways such as PI3K/AKT and MAPK that promote tumor growth and survival.",
+"interpretation": "ERBB2 signaling is central to the oncogenic program of HER2-positive breast cancer and is directly relevant to therapeutic targeting."
+}
+},
+"sensitivity_genes_up": [
+"ERBB2"
+],
+"sensitivity_genes_down": [],
+"resistance_genes_up": [
+"IGF1R",
+"MET",
+"PIK3CA"
+],
+"resistance_genes_down": [
+"PTEN"
+],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "ERBB2",
+"interpretation": "Pertuzumab benefit is confined to tumors that overexpress HER2 (ERBB2), consistent with HER2 being the sole direct target and the biomarker defining indicated breast cancer populations."
+}
+],
+"sensitivity_genes_down_annotations": [],
+"resistance_genes_up_annotations": [
+{
+"gene": "PIK3CA",
+"interpretation": "PIK3CA mutations are described as a potential resistance mechanism that can activate PI3K/AKT signaling independent of HER2, attenuating response to HER2 blockade."
+},
+{
+"gene": "IGF1R",
+"interpretation": "Alternate receptor tyrosine kinase signaling is described as a potential resistance mechanism; IGF-1R is cited as an example of such bypass signaling."
+},
+{
+"gene": "MET",
+"interpretation": "Alternate receptor tyrosine kinase signaling is described as a potential resistance mechanism; MET is cited as an example of such bypass signaling."
+}
+],
+"resistance_genes_down_annotations": [
+{
+"gene": "PTEN",
+"interpretation": "PTEN loss is described as a potential resistance mechanism by activating PI3K/AKT signaling independent of HER2, which may attenuate response to HER2 blockade."
+}
+],
+"kg_gene_relationships": [
+"Pertuzumab|inhibits|ERBB2",
+"PIK3CA_mutation|may_attenuate_response_to|Pertuzumab",
+"PTEN_loss|may_attenuate_response_to|Pertuzumab",
+"IGF1R_activation|may_attenuate_response_to|Pertuzumab",
+"MET_activation|may_attenuate_response_to|Pertuzumab"
+],
+"Breast_cancer_subtype_information": {
+"HER2-positive breast cancers": "In summary, all HER2+ subtypes benefit from pertuzumab (Luminal B [HR+/HER2+], HER2-enriched [HR–/HER2+] alike ).",
+"hormone-receptor-positive HER2+": "Pertuzumab plus trastuzumab and chemo is a standard component of therapy in tumors that overexpress HER2 (either hormone-receptor-positive HER2+ or triple-negative HER2+ subtypes ).",
+"triple-negative HER2+": "Pertuzumab plus trastuzumab and chemo is a standard component of therapy in tumors that overexpress HER2 (either hormone-receptor-positive HER2+ or triple-negative HER2+ subtypes ).",
+"HER2-negative subtypes": "In contrast, HER2-negative subtypes derive no benefit: triple-negative breast cancer (TNBC, HR–/HER2–) or hormone-positive/HER2– cancers are not indicated for pertuzumab."
+},
+"citations": [
+"[https://pubmed.ncbi.nlm.nih.gov/22149875/](https://pubmed.ncbi.nlm.nih.gov/22149875/)",
+"[https://pubmed.ncbi.nlm.nih.gov/22153890/](https://pubmed.ncbi.nlm.nih.gov/22153890/)",
+"[https://pubmed.ncbi.nlm.nih.gov/39259927/](https://pubmed.ncbi.nlm.nih.gov/39259927/)",
+"[https://go.drugbank.com/drugs/DB06366](https://go.drugbank.com/drugs/DB06366)",
+"[https://www.genome.jp/dbget-bin/www_bget?pathway](https://www.genome.jp/dbget-bin/www_bget?pathway):hsa04012",
+"[https://reactome.org/content/detail/R-HSA-9006934](https://reactome.org/content/detail/R-HSA-9006934)",
+"[https://www.kegg.jp/pathway/hsa04151](https://www.kegg.jp/pathway/hsa04151)",
+"[https://reactome.org/content/detail/R-HSA-1257604](https://reactome.org/content/detail/R-HSA-1257604)",
+"[https://www.kegg.jp/pathway/hsa04010](https://www.kegg.jp/pathway/hsa04010)",
+"[https://www.kegg.jp/pathway/hsa04110](https://www.kegg.jp/pathway/hsa04110)",
+"[https://www.kegg.jp/pathway/hsa04210](https://www.kegg.jp/pathway/hsa04210)",
+"[https://urgi.versailles.inrae.fr/OakMine_PM1N/report.do?id=6431389](https://urgi.versailles.inrae.fr/OakMine_PM1N/report.do?id=6431389)",
+"[https://www.genome.jp/dbget-bin/www_bget?pathway](https://www.genome.jp/dbget-bin/www_bget?pathway):hsa05224",
+"[https://www.accessdata.fda.gov/drugsatfda_docs/label/2012/125409lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2012/125409lbl.pdf)",
+"[https://ec.europa.eu/health/documents/community-register/2016/20161027136303/anx_136303_en.pdf](https://ec.europa.eu/health/documents/community-register/2016/20161027136303/anx_136303_en.pdf)"
+],
+"notes": "Primary target stated as ERBB2 only; no other direct human protein targets reported. Potential resistance mechanisms explicitly mentioned include PIK3CA mutations, PTEN loss, and alternate RTK signaling (e.g., IGF-1R, MET). Contraindications/cautions explicitly mentioned include hypersensitivity, avoidance in pregnancy/breastfeeding with embryo–fetal toxicity warning, and monitoring for cardiac dysfunction (LVEF decreases).  "
+}

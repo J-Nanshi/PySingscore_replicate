@@ -1,0 +1,296 @@
+{
+"drug_name": "Entrectinib",
+"cancer_indication": "Breast cancers harboring oncogenic NTRK1/2/3 gene fusions (rare; enriched in secretory breast carcinoma).",
+"drug_category": "Targeted therapy",
+"drug_class": "Tyrosine kinase inhibitor",
+"moa": "Entrectinib is an ATP-competitive inhibitor of TRKA/TRKB/TRKC (NTRK1/2/3) as well as ROS1 and ALK. In NTRK fusion–positive breast cancers, it inhibits the constitutively active TRK fusion kinase, shutting down downstream pro-growth signaling (including RAS–MAPK and PI3K–AKT–mTOR) and promoting cell-cycle arrest and apoptosis. Entrectinib has central nervous system penetrance, supporting activity in brain metastases when present.",
+"chembl_id": "CHEMBL1983268",
+"drugbank_id": "DB11986",
+"synonyms": [
+"Rozlytrek",
+"RXDX-101",
+"NMS-E628"
+],
+"primary_targets": [
+"NTRK1",
+"NTRK2",
+"NTRK3",
+"ROS1",
+"ALK"
+],
+"pathway_sets": [
+"REACTOME_SIGNALING_BY_NTRKS",
+"HALLMARK_KRAS_SIGNALING_UP",
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+"REACTOME_SIGNALING_BY_MET",
+"HALLMARK_APOPTOSIS",
+"HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+"KEGG_ERBB_SIGNALING_PATHWAY"
+],
+"pathway_sets_annotations": {
+"REACTOME_SIGNALING_BY_NTRKS": {
+"description": "Neurotrophin receptor tyrosine kinase signaling mediated by TRKA/TRKB/TRKC, which can activate downstream cascades that promote proliferation and survival.",
+"interpretation": "In breast cancer cases with NTRK fusions, TRK signaling functions as a dominant oncogenic driver and defines a biomarker-selected, targetable dependency."
+},
+"HALLMARK_KRAS_SIGNALING_UP": {
+"description": "A gene-expression program reflecting increased RAS pathway output, commonly converging on MAPK/ERK-driven proliferation and survival.",
+"interpretation": "RAS/MAPK output is a key growth axis downstream of TRK and can also represent a compensatory proliferative route in TRK-driven tumors."
+},
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+"description": "A survival and growth signaling program driven by PI3K activation, AKT signaling, and mTOR pathway output.",
+"interpretation": "PI3K–AKT–mTOR signaling is a major downstream survival pathway engaged by TRK fusions and can support continued tumor viability when activated by additional lesions."
+},
+"REACTOME_SIGNALING_BY_MET": {
+"description": "HGF/MET receptor signaling that activates downstream proliferative and survival pathways, including MAPK and PI3K signaling modules.",
+"interpretation": "MET signaling represents a clinically relevant alternative RTK axis that can sustain growth in TRK-driven contexts when activated as a bypass route."
+},
+"HALLMARK_APOPTOSIS": {
+"description": "A gene-expression program encompassing intrinsic and extrinsic apoptotic machinery and execution pathways.",
+"interpretation": "Apoptotic competence influences whether tumor cells undergo effective cell death when oncogenic survival signaling is inhibited."
+},
+"HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+"description": "A transcriptional program associated with loss of epithelial features and acquisition of mesenchymal traits, including increased motility and cellular plasticity.",
+"interpretation": "EMT-like states in breast cancer can be linked to broader drug tolerance and signaling rewiring, potentially altering dependence on the original oncogenic driver."
+},
+"KEGG_ERBB_SIGNALING_PATHWAY": {
+"description": "Signaling through ERBB family receptors (including HER2/ERBB2 and EGFR) that activates proliferative and survival pathways such as MAPK and PI3K.",
+"interpretation": "ERBB pathway activity is a major breast cancer growth axis and can co-exist with, or dominate over, other drivers in rare dual-driver settings."
+}
+},
+"sensitivity_genes_up": [
+"NTRK1",
+"NTRK2",
+"NTRK3",
+"BAX",
+"BCL2L11"
+],
+"sensitivity_genes_down": [
+"BCL2",
+"MCL1"
+],
+"resistance_genes_up": [
+"KRAS",
+"MET",
+"HGF",
+"PIK3CA",
+"ERBB2",
+"EGFR",
+"ESR1",
+"ABCB1",
+"ABCG2",
+"BCL2",
+"MCL1",
+"AXL"
+],
+"resistance_genes_down": [
+"PTEN",
+"TP53",
+"BCL2L11",
+"CDH1",
+"DUSP6",
+"NTRK1",
+"NTRK2",
+"NTRK3"
+],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "NTRK1",
+"interpretation": "Presence of an NTRK fusion driver (activating TRK signaling dependence) is described as the foremost determinant of sensitivity to TRK inhibition."
+},
+{
+"gene": "NTRK2",
+"interpretation": "Presence of an NTRK fusion driver (activating TRK signaling dependence) is described as a key determinant of sensitivity to TRK inhibition."
+},
+{
+"gene": "NTRK3",
+"interpretation": "NTRK3 fusion signaling (e.g., ETV6–NTRK3) is described as a dominant oncogenic driver in secretory breast carcinoma and underpins sensitivity to TRK inhibition."
+},
+{
+"gene": "BAX",
+"interpretation": "A primed apoptotic state is described as facilitating more efficient tumor cell death when survival signaling is removed; high baseline pro-apoptotic factors (including Bax) are presented as a sensitivity-favoring context."
+},
+{
+"gene": "BCL2L11",
+"interpretation": "Loss of pro-apoptotic factors (BIM) is discussed in the context of failure to execute apoptosis; conversely, tumors with primed pro-apoptotic machinery (including BIM) are described as more likely to undergo robust cell death after TRK inhibition."
+}
+],
+"sensitivity_genes_down_annotations": [
+{
+"gene": "BCL2",
+"interpretation": "Low expression of anti-apoptotic proteins (including BCL-2) is described as a context in which tumor cells may die more readily once oncogenic survival signaling is inhibited."
+},
+{
+"gene": "MCL1",
+"interpretation": "Low expression of anti-apoptotic proteins (including MCL1) is described as a context in which tumor cells may be more apoptosis-ready after survival signaling is removed."
+}
+],
+"resistance_genes_up_annotations": [
+{
+"gene": "KRAS",
+"interpretation": "Acquired KRAS mutation is described as a mechanism that reactivates ERK signaling and bypasses upstream TRK inhibition, leading to resistance."
+},
+{
+"gene": "MET",
+"interpretation": "MET amplification/upregulation is described as an off-target bypass that can reactivate downstream MAPK/PI3K signaling despite TRK inhibition."
+},
+{
+"gene": "HGF",
+"interpretation": "Increased HGF is described as a context for MET pathway upregulation, supporting MET-driven bypass signaling."
+},
+{
+"gene": "PIK3CA",
+"interpretation": "PIK3CA activating mutation is described as a co-occurring alteration that can sustain PI3K/AKT output and blunt apoptosis despite TRK blockade."
+},
+{
+"gene": "ERBB2",
+"interpretation": "HER2 (ERBB2) amplification/activation is described as a parallel dominant growth axis that can drive proliferation and survival despite TRK inhibition in rare dual-driver scenarios."
+},
+{
+"gene": "EGFR",
+"interpretation": "Upregulation of other RTKs (including EGFR) is discussed as a plausible bypass route that converges on shared downstream survival/proliferation pathways."
+},
+{
+"gene": "ESR1",
+"interpretation": "Reactivation of estrogen receptor signaling in ER+ contexts is described as a subtype-linked alternative growth mechanism that can reduce dependence on NTRK-driven signaling."
+},
+{
+"gene": "ABCB1",
+"interpretation": "Upregulation of drug efflux pumps (including ABCB1) is described as a potential pharmacologic resistance mechanism that could reduce intracellular drug exposure."
+},
+{
+"gene": "ABCG2",
+"interpretation": "Upregulation of drug efflux pumps (including ABCG2) is described as a potential pharmacologic resistance mechanism that could reduce intracellular drug exposure."
+},
+{
+"gene": "BCL2",
+"interpretation": "Upregulation of anti-apoptotic proteins (including BCL-2) is described as a mechanism that suppresses apoptotic execution, allowing persistence despite TRK inhibition."
+},
+{
+"gene": "MCL1",
+"interpretation": "Upregulation of anti-apoptotic proteins (including MCL1) is described as a mechanism that suppresses apoptotic execution, allowing persistence despite TRK inhibition."
+},
+{
+"gene": "AXL",
+"interpretation": "EMT-associated states are described as potentially invoking alternative signaling such as AXL, contributing to drug tolerance and reduced reliance on the original driver."
+}
+],
+"resistance_genes_down_annotations": [
+{
+"gene": "PTEN",
+"interpretation": "PTEN loss is discussed as removing a negative regulator of PI3K signaling, enabling persistent AKT pathway output and reduced effectiveness of TRK pathway suppression."
+},
+{
+"gene": "TP53",
+"interpretation": "Loss of p53 function is discussed as potentially impairing apoptotic responses and allowing continued survival under drug-induced stress."
+},
+{
+"gene": "BCL2L11",
+"interpretation": "Loss of pro-apoptotic factors (BIM) is discussed as limiting apoptotic execution, enabling tumor persistence despite inhibition of upstream oncogenic signaling."
+},
+{
+"gene": "CDH1",
+"interpretation": "EMT activation is described with E-cadherin decrease; reduced epithelial differentiation markers are presented as part of a drug-tolerant mesenchymal transition phenotype."
+},
+{
+"gene": "DUSP6",
+"interpretation": "Downregulation of negative feedback regulators (e.g., MAPK phosphatases such as DUSP6) is discussed as potentially enabling pathway rebound if suppression is incomplete."
+},
+{
+"gene": "NTRK1",
+"interpretation": "Loss of fusion expression/target downregulation is described as a target-loss mechanism where the drug no longer has an effective on-pathway target."
+},
+{
+"gene": "NTRK2",
+"interpretation": "Loss of fusion expression/target downregulation is described as a target-loss mechanism where the drug no longer has an effective on-pathway target."
+},
+{
+"gene": "NTRK3",
+"interpretation": "Loss of fusion expression/target downregulation is described as a target-loss mechanism where the drug no longer has an effective on-pathway target."
+}
+],
+"kg_gene_relationships": [
+"Entrectinib|inhibits|NTRK1",
+"Entrectinib|inhibits|NTRK2",
+"Entrectinib|inhibits|NTRK3",
+"Entrectinib|inhibits|ROS1",
+"Entrectinib|inhibits|ALK",
+"KRAS|confers_resistance_to|Entrectinib",
+"MET|confers_resistance_to|Entrectinib",
+"PIK3CA|confers_resistance_to|Entrectinib",
+"ERBB2|confers_resistance_to|Entrectinib",
+"ESR1|confers_resistance_to|Entrectinib",
+"ABCB1|confers_resistance_to|Entrectinib",
+"ABCG2|confers_resistance_to|Entrectinib",
+"BCL2|confers_resistance_to|Entrectinib",
+"MCL1|confers_resistance_to|Entrectinib"
+],
+"Breast_cancer_subtype_information": {
+"HR+/HER2– (Luminal) Subtype": "NTRK fusions are extremely rare in luminal breast cancers, but they have been identified. Some ER+ breast cancers acquired NTRK fusions after progressing on hormonal therapy, suggesting a subclone with an NTRK fusion may emerge and drive the tumor. If an ER+ cancer is driven by an NTRK fusion, it will respond to entrectinib, but optimal care might require combined endocrine therapy to suppress any residual ER-driven component.",
+"HER2-Positive Subtype": "NTRK fusions are similarly uncommon for HER2-positive disease. A reported case described a HER2-enriched breast adenocarcinoma with an ERBB2–NTRK3 fusion and HER2 amplification, implying two drivers. There is no published report of treating such a case with entrectinib; the discussion extrapolates that dual targeting would likely be needed, as entrectinib alone could be insufficient if HER2 signaling remains unchecked.",
+"Triple-Negative Breast Cancer (TNBC)": "TNBC is the subtype where NTRK fusions, while still rare, are slightly more encountered aside from secretory carcinoma. True NTRK fusions were described as exceedingly rare in non-secretory TNBC; one TNBC cohort case was reclassified as secretory carcinoma with an NTRK3–ETV6 fusion. Secretory breast carcinoma (often ER/PR/HER2-negative) is defined by ETV6–NTRK3 and has shown very high response rates to TRK inhibitors; scattered non-secretory TNBC case reports with NTRK fusions also support responsiveness. TNBC may have higher likelihood of MET amplification as a resistance mechanism, so vigilance for MET is noted.",
+"gBRCA-mutated / HRD+ Subgroup": "No known correlation between BRCA1/2 mutations and NTRK fusions is described; they appear independent. If both were present, the text discusses potential dual susceptibilities (PARP inhibitors for BRCA and TRK inhibitor for the fusion), but no reported case is described.",
+"Basal-like vs. Other Intrinsic Subtypes": "The text notes secretory carcinoma does not fit neatly into typical intrinsic subtypes and that there is not enough data to say intrinsic subtype affects response; the determinant is presence of the targetable NTRK abnormality."
+},
+"citations": [
+"label",
+"[https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/212725s011lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/212725s011lbl.pdf)",
+"Entrectinib Continues to Yield Promising Data in",
+"NTRK Fusion–Positive Breast Cancer | OncLive",
+"[https://www.onclive.com/view/entrectinib-continues-to-yield-promising-data-in-ntrk-fusion-positive-breast-cancer](https://www.onclive.com/view/entrectinib-continues-to-yield-promising-data-in-ntrk-fusion-positive-breast-cancer)",
+"Evaluation of NTRK Gene Fusion by Five Different Platforms in Triple-Negative",
+"Breast Carcinoma - PMC",
+"[https://pmc.ncbi.nlm.nih.gov/articles/PMC8418219/](https://pmc.ncbi.nlm.nih.gov/articles/PMC8418219/)",
+"173P Entrectinib in NTRK fusion-positive (NTRK-fp) breast cancer: Updated data from",
+"STARTRK-2 - Annals of Oncology",
+"[https://www.annalsofoncology.org/article/S0923-7534(22)00571-3/fulltext](https://www.annalsofoncology.org/article/S0923-7534%2822%2900571-3/fulltext)",
+"NCCN Guidelines for Patients Metastatic Breast Cancer",
+"[https://www.mbcalliance.org/wp-content/uploads/stage_iv_breast-patient.pdf](https://www.mbcalliance.org/wp-content/uploads/stage_iv_breast-patient.pdf)",
+"Compound: ENTRECTINIB (CHEMBL1983268) - ChEMBL - EMBL-EBI",
+"[https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1983268](https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1983268)",
+"Entrectinib: Uses, Interactions, Mechanism of Action | DrugBank Online",
+"[https://go.drugbank.com/drugs/DB11986](https://go.drugbank.com/drugs/DB11986)",
+"entrectinib | Ligand page | IUPHAR/BPS Guide to PHARMACOLOGY",
+"[https://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId=8290](https://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId=8290)",
+"Entrectinib resistance mechanisms in ROS1-rearranged non ... - NIH",
+"[https://pmc.ncbi.nlm.nih.gov/articles/PMC7066105/](https://pmc.ncbi.nlm.nih.gov/articles/PMC7066105/)",
+"Frontiers | RNA hybrid-capture next-generation sequencing has high sensitivity in identifying",
+"known and less characterized oncogenic and likely oncogenic NTRK fusions in a real-world standard-of-care",
+"setting",
+"[https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2025.1550706/full](https://www.frontiersin.org/journals/genetics/articles/10.3389/fgene.2025.1550706/full)",
+"TRKing down drug resistance in NTRK fusion‐positive cancers",
+"[https://pathsocjournals.onlinelibrary.wiley.com/doi/full/10.1002/path.6341](https://pathsocjournals.onlinelibrary.wiley.com/doi/full/10.1002/path.6341)",
+"Oncogenic fusions: Targeting NTRK - ScienceDirect.com",
+"[https://www.sciencedirect.com/science/article/pii/S1040842823003220](https://www.sciencedirect.com/science/article/pii/S1040842823003220)",
+"NTRK insights: best practices for pathologists - ScienceDirect.com",
+"[https://www.sciencedirect.com/science/article/pii/S0893395222003064](https://www.sciencedirect.com/science/article/pii/S0893395222003064)",
+"Genomic context of NTRK1/2/3 fusion-positive tumours from a large ...",
+"[https://www.nature.com/articles/s41698-021-00206-y](https://www.nature.com/articles/s41698-021-00206-y)",
+"[PDF] Advances in the Management of Metastatic Breast Cancer with ...",
+"[https://education.nccn.org/sites/default/files/course/2023-02/6_Metastatic_NCCNbc23_v1.pdf](https://education.nccn.org/sites/default/files/course/2023-02/6_Metastatic_NCCNbc23_v1.pdf)",
+"Inhibition of MEK1/2 Forestalls the Onset of Acquired Resistance to ...",
+"[https://pubmed.ncbi.nlm.nih.gov/32755586/](https://pubmed.ncbi.nlm.nih.gov/32755586/)",
+"TRKing down drug resistance in NTRK fusion‐positive cancers†",
+"[https://pathsocjournals.onlinelibrary.wiley.com/doi/pdf/10.1002/path.6341](https://pathsocjournals.onlinelibrary.wiley.com/doi/pdf/10.1002/path.6341)",
+"Strategic Combinations to Prevent and Overcome Resistance to ...",
+"[https://ascopubs.org/doi/10.1200/EDBK_280845](https://ascopubs.org/doi/10.1200/EDBK_280845)",
+"Detection of NTRK Fusions: Merits and Limitations of Current ...",
+"[https://aacrjournals.org/cancerres/article/79/13/3163/635027/Detection-of-NTRK-Fusions-Merits-and-Limitations](https://aacrjournals.org/cancerres/article/79/13/3163/635027/Detection-of-NTRK-Fusions-Merits-and-Limitations)",
+"Protein tyrosine kinase inhibitor resistance in malignant tumors",
+"[https://www.nature.com/articles/s41392-022-01168-8](https://www.nature.com/articles/s41392-022-01168-8)",
+"Mechanisms of resistance to tyrosine kinase inhibitor‐targeted ...",
+"[https://onlinelibrary.wiley.com/doi/full/10.1002/mco2.694](https://onlinelibrary.wiley.com/doi/full/10.1002/mco2.694)",
+"Entrectinib, a TRK/ROS1 inhibitor with anti-CNS tumor activity - NIH",
+"[https://pmc.ncbi.nlm.nih.gov/articles/PMC7283026/](https://pmc.ncbi.nlm.nih.gov/articles/PMC7283026/)",
+"Beyond epidermal growth factor receptor: MET amplification as a ...",
+"[https://www.esmoopen.com/article/S2059-7029(21)00281-7/fulltext](https://www.esmoopen.com/article/S2059-7029%2821%2900281-7/fulltext)",
+"Case Reports Larotrectinib in NTRK3 fusion–positive metastatic ...",
+"[https://www.sciencedirect.com/science/article/pii/S2666621924000565](https://www.sciencedirect.com/science/article/pii/S2666621924000565)",
+"ETV6-NTRK3–Mediated Breast Epithelial Cell Transformation Is ...",
+"[https://aacrjournals.org/cancerres/article/71/3/1060/575589/ETV6-NTRK3-Mediated-Breast-Epithelial-Cell](https://aacrjournals.org/cancerres/article/71/3/1060/575589/ETV6-NTRK3-Mediated-Breast-Epithelial-Cell)",
+"Advancement of secretory breast carcinoma: a narrative review - Min",
+"[https://atm.amegroups.org/article/view/102630/html](https://atm.amegroups.org/article/view/102630/html)",
+"Entrectinib, a new multi-target inhibitor for cancer therapy",
+"[https://www.sciencedirect.com/science/article/pii/S0753332222003638](https://www.sciencedirect.com/science/article/pii/S0753332222003638)"
+],
+"notes": "Subtype evidence is limited by the rarity of NTRK-fusion breast cancers; the document emphasizes biomarker-driven use across subtypes. Safety discussion notes no absolute contraindications on label, with strong cautions around embryo-fetal toxicity/pregnancy and key monitoring (e.g., cardiac function, CNS effects, liver enzymes, uric acid, QT). Source files:  "
+}

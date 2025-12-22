@@ -1,0 +1,188 @@
+{
+"drug_name": "Talazoparib",
+"cancer_indication": "Deleterious or suspected deleterious germline BRCA1/2-mutated, HER2-negative advanced or metastatic breast cancer",
+"drug_category": "DDR",
+"drug_class": "PARP inhibitor",
+"moa": "Talazoparib is a potent small-molecule inhibitor of PARP-1/2 that blocks repair of single-strand DNA breaks and is a highly potent PARP-trapping inhibitor that stabilizes PARP–DNA complexes. Accumulated DNA lesions convert into toxic double-strand breaks during replication; in BRCA1/2-dependent homologous recombination (HR)-deficient tumor cells, these breaks cannot be efficiently repaired, leading to replication fork collapse, genomic instability, and apoptosis (synthetic lethality). It is clinically used in HER2-negative breast cancer with deleterious or suspected deleterious germline BRCA1/2 mutations.",
+"chembl_id": "CHEMBL3137320",
+"drugbank_id": "DB11760",
+"synonyms": [
+"Talzenna",
+"BMN-673",
+"LT-00673",
+"MDV-3800"
+],
+"primary_targets": [
+"PARP1",
+"PARP2"
+],
+"pathway_sets": [
+"REACTOME_HDR_THROUGH_HOMOLOGOUS_RECOMBINATION_HRR",
+"HALLMARK_APOPTOSIS",
+"REACTOME_ABC_FAMILY_PROTEINS_MEDIATED_TRANSPORT",
+"REACTOME_ACTIVATION_OF_ATR_IN_RESPONSE_TO_REPLICATION_STRESS",
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+],
+"pathway_sets_annotations": {
+"REACTOME_HDR_THROUGH_HOMOLOGOUS_RECOMBINATION_HRR": {
+"description": "Homologous recombination repair (HRR) is a BRCA1/2-dependent pathway that repairs DNA double-strand breaks and supports accurate genome maintenance during replication.",
+"interpretation": "HRR status is a central determinant of breast tumor DNA repair capacity and influences vulnerability to DNA damage accumulation when repair is compromised."
+},
+"HALLMARK_APOPTOSIS": {
+"description": "Programmed cell death signaling pathways that execute apoptosis in response to irreparable cellular damage, including DNA damage.",
+"interpretation": "Apoptotic competence shapes whether breast cancer cells undergo cell death after severe DNA damage and checkpoint activation."
+},
+"REACTOME_ABC_FAMILY_PROTEINS_MEDIATED_TRANSPORT": {
+"description": "ATP-binding cassette (ABC) transporters mediate drug efflux and regulate intracellular concentrations of small molecules.",
+"interpretation": "ABC transporter activity can modulate intracellular exposure to anticancer drugs in breast cancer cells, affecting effective drug levels within tumor cells."
+},
+"REACTOME_ACTIVATION_OF_ATR_IN_RESPONSE_TO_REPLICATION_STRESS": {
+"description": "ATR-mediated checkpoint signaling responds to replication stress by slowing cell cycle progression and coordinating DNA damage responses and repair processes.",
+"interpretation": "Replication-stress checkpoints can influence breast cancer cell survival under genotoxic stress by regulating time for repair and coordinating damage tolerance."
+},
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+"description": "PI3K/AKT/mTOR signaling is a pro-survival and growth pathway that promotes cell survival, proliferation, and can influence DNA repair and apoptotic thresholds.",
+"interpretation": "PI3K/AKT/mTOR pathway activity contributes to breast cancer cell survival programs and can affect responses to therapies by supporting survival and repair signaling."
+}
+},
+"sensitivity_genes_up": [
+"PTEN"
+],
+"sensitivity_genes_down": [
+"BRCA1",
+"BRCA2",
+"PALB2",
+"RAD51C",
+"RAD51D",
+"ATM"
+],
+"resistance_genes_up": [
+"ABCB1",
+"BCL2",
+"ATR",
+"ATM"
+],
+"resistance_genes_down": [
+"TP53BP1",
+"RIF1",
+"MRE11",
+"MUS81",
+"TP53"
+],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "PTEN",
+"interpretation": "PTEN expression is described as an example of PI3K/AKT pathway inhibition that can sensitize tumors to talazoparib by lowering pro-survival signaling and reducing support for HR capacity."
+}
+],
+"sensitivity_genes_down_annotations": [
+{
+"gene": "BRCA1",
+"interpretation": "BRCA1 loss is described as causing HR deficiency that prevents efficient double-strand break repair, creating synthetic lethality under PARP inhibition and promoting talazoparib sensitivity."
+},
+{
+"gene": "BRCA2",
+"interpretation": "BRCA2 loss is described as causing HR deficiency that prevents efficient double-strand break repair, creating synthetic lethality under PARP inhibition and promoting talazoparib sensitivity."
+},
+{
+"gene": "PALB2",
+"interpretation": "Defects in PALB2 are described as HR gene defects that reduce efficient double-strand break repair, increasing sensitivity to talazoparib via HR deficiency."
+},
+{
+"gene": "RAD51C",
+"interpretation": "Defects in RAD51C are described as HR gene defects associated with impaired DSB repair capacity, increasing sensitivity to talazoparib."
+},
+{
+"gene": "RAD51D",
+"interpretation": "Defects in RAD51D are described as HR gene defects associated with impaired DSB repair capacity, increasing sensitivity to talazoparib."
+},
+{
+"gene": "ATM",
+"interpretation": "ATM is described among HR gene defects linked to reduced efficient DSB repair and increased sensitivity to PARP inhibition; separately, ATR/ATM checkpoint activation is described as opposing talazoparib efficacy."
+}
+],
+"resistance_genes_up_annotations": [
+{
+"gene": "ABCB1",
+"interpretation": "ABCB1 (MDR1/P-gp) overexpression is described as exporting talazoparib out of cancer cells, lowering intracellular drug levels and conferring PARP inhibitor resistance."
+},
+{
+"gene": "BCL2",
+"interpretation": "Overexpression of anti-apoptotic BCL-2 is described as downregulating apoptotic cell death, allowing survival despite DNA damage and reducing talazoparib efficacy."
+},
+{
+"gene": "ATR",
+"interpretation": "ATR checkpoint activation is described as slowing the cell cycle and promoting repair; upregulated ATR signaling facilitates survival under PARP inhibition and opposes talazoparib efficacy."
+},
+{
+"gene": "ATM",
+"interpretation": "ATM checkpoint pathway activation is described as part of replication-stress/DNA damage checkpoint signaling that provides more time for repair under PARP inhibition, contributing to resistance."
+}
+],
+"resistance_genes_down_annotations": [
+{
+"gene": "TP53BP1",
+"interpretation": "Loss of 53BP1 (TP53BP1) is described as enabling DNA end resection and HR restoration, which can abrogate PARP inhibitor lethality and confer talazoparib resistance."
+},
+{
+"gene": "RIF1",
+"interpretation": "Loss of RIF1 is described alongside 53BP1-related factors as enabling restoration of HR capacity (via resumed DNA end resection), contributing to talazoparib resistance."
+},
+{
+"gene": "MRE11",
+"interpretation": "Downregulation of nucleases such as MRE11 is described as promoting replication fork protection (fork stability), allowing survival under PARP inhibition and contributing to resistance."
+},
+{
+"gene": "MUS81",
+"interpretation": "Downregulation of nucleases such as MUS81 is described as promoting replication fork protection (fork stability), allowing survival under PARP inhibition and contributing to resistance."
+},
+{
+"gene": "TP53",
+"interpretation": "Loss of p53 function is described as impairing apoptosis and checkpoints required for full PARP inhibitor response, thereby blunting talazoparib-induced cell death and contributing to resistance."
+}
+],
+"kg_gene_relationships": [
+"Talazoparib|inhibits|PARP1",
+"Talazoparib|inhibits|PARP2",
+"BRCA1_loss|confers_sensitivity_to|Talazoparib",
+"BRCA2_loss|confers_sensitivity_to|Talazoparib",
+"PALB2_defect|confers_sensitivity_to|Talazoparib",
+"RAD51C_defect|confers_sensitivity_to|Talazoparib",
+"RAD51D_defect|confers_sensitivity_to|Talazoparib",
+"ABCB1_overexpression|confers_resistance_to|Talazoparib",
+"TP53BP1_loss|confers_resistance_to|Talazoparib",
+"RIF1_loss|confers_resistance_to|Talazoparib",
+"BCL2_overexpression|confers_resistance_to|Talazoparib",
+"TP53_loss|confers_resistance_to|Talazoparib",
+"PTEN_expression|confers_sensitivity_to|Talazoparib"
+],
+"Breast_cancer_subtype_information": {
+"HER2-negative disease (both triple-negative and hormone-receptor positive)": "Talazoparib is typically used in HER2-negative disease (both triple-negative and hormone-receptor positive), reflecting its trial populations.",
+"BRCA1-mutant (typically basal/TNBC)": "An analysis of the ABRAZO trial found comparable talazoparib efficacy in BRCA1-mutant (typically basal/TNBC) tumors.",
+"BRCA2-mutant (often luminal)": "An analysis of the ABRAZO trial found comparable talazoparib efficacy in BRCA2-mutant (often luminal) tumors."
+},
+"citations": [
+"Talazoparib: Uses, Interactions, Mechanism of Action | DrugBank Online",
+"[https://go.drugbank.com/drugs/DB11760](https://go.drugbank.com/drugs/DB11760)",
+"Germline BRCA-Mutated HER2-Negative Advanced Breast Cancer: Overcoming Challenges in Genetic",
+"Testing and Clinical Considerations When Using Talazoparib - PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/37246120/](https://pubmed.ncbi.nlm.nih.gov/37246120/)",
+"Alternate therapeutic pathways for PARP inhibitors and potential",
+"mechanisms of resistance | Experimental & Molecular Medicine",
+"[https://www.nature.com/articles/s12276-021-00557-3?error=cookies_not_supported&code=10408e90-9b6d-4603-](https://www.nature.com/articles/s12276-021-00557-3?error=cookies_not_supported&code=10408e90-9b6d-4603-)",
+"b46a-28d64f42df46",
+"Talazoparib | Pfizer Oncology Development Website",
+"[https://www.pfizeroncologydevelopment.com/molecule/talazoparib](https://www.pfizeroncologydevelopment.com/molecule/talazoparib)",
+"Talazoparib versus chemotherapy in patients with germline BRCA1/2-mutated HER2-negative advanced",
+"breast cancer: final overall survival results from the EMBRACA trial - PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/32828825/](https://pubmed.ncbi.nlm.nih.gov/32828825/)",
+"Genomic analysis of advanced breast cancer tumors from talazoparib-treated gBRCA1/2mut carriers in",
+"the ABRAZO study | npj Breast Cancer",
+"[https://www.nature.com/articles/s41523-023-00561-y](https://www.nature.com/articles/s41523-023-00561-y)?",
+"error=cookies_not_supported&code=75753832-6a95-4f0a-97a3-97c2240482c5",
+"Phase II study of talazoparib in advanced cancers with BRCA1/2, DNA repair, and PTEN alterations | npj",
+"Precision Oncology",
+"[https://www.nature.com/articles/s41698-024-00634-6?error=cookies_not_supported&code=0c16203a-95db-43ef a436-3422f3bf2751](https://www.nature.com/articles/s41698-024-00634-6?error=cookies_not_supported&code=0c16203a-95db-43ef a436-3422f3bf2751)"
+],
+"notes": "The report describes talazoparib as FDA-approved (October 2018) for germline BRCA1/2-mutated, HER2-negative advanced/metastatic breast cancer and emphasizes HR deficiency–driven synthetic lethality. Resistance mechanisms described include HR restoration (e.g., via BRCA reversion and loss of end-joining factors such as TP53BP1/RIF1), ABCB1-mediated drug efflux, ATR/ATM checkpoint activation, PI3K/AKT/mTOR pro-survival signaling, impaired apoptosis (e.g., BCL2 overexpression or TP53 loss), and replication fork protection (e.g., via downregulation of nucleases such as MRE11 and MUS81). PTEN loss is described as having complex effects, with PTEN expression cited as an example of PI3K/AKT inhibition that can sensitize to talazoparib."
+}

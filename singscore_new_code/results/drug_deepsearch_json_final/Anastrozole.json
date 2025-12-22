@@ -165,6 +165,17 @@
 "ERBB2_overexpression|confers_resistance_to|Anastrozole",
 "CCND1_CDK4_activity_decrease|associated_with|Anastrozole_sensitivity"
 ],
+"Breast_cancer_subtype_information": {
+    "HR-positive subtypes (Luminal A and Luminal B)": "Anastrozole’s effects are stratified by breast cancer subtype. It is indicated only in HR-positive subtypes (Luminal A and Luminal B) .",
+    "Luminal A (ER-high, PR-positive, low Ki-67)": "In Luminal A (ER-high, PR-positive, low Ki-67), anastrozole is highly effective, exploiting these cells’ dependence on estrogen .",
+    "Luminal B tumors (often ER+/HER2– or ER+/HER2+)": "Luminal B tumors (often ER+/HER2– or ER+/HER2+) have higher proliferation and may harbor PI3K or TP53 alterations; they respond to anastrozole but more frequently develop resistance.",
+    "HER2-positive/ER-positive tumors": "In HER2-positive/ER-positive tumors, endocrine therapy (anastrozole) is used in combination with HER2-targeted therapy; upregulated HER2 signaling in these cancers can drive partial resistance .",
+    "Triple-negative (basal-like) and HR-negative subtypes": "Triple-negative (basal-like) and HR-negative subtypes do not benefit, as they lack the estrogen target .",
+    "Germline BRCA1/2-mutant cancers": "Germline BRCA1/2-mutant cancers are usually triple-negative, so anastrozole is not used unless the tumor is paradoxically ER+ (rare).",
+    "HRD-positive tumors (often TNBC)": "Similarly, HRD-positive tumors (often TNBC) generally do not rely on estrogen, so no endocrine sensitivity is seen.",
+    "HR+/HER2– (Luminal A/B) disease": "In summary, all evidence points to benefit of anastrozole in HR+/HER2– (Luminal A/B) disease; when HER2 is also positive, combined regimens are used.",
+    "ER– (TNBC/basal) subtypes": "No clinical efficacy is seen in ER– (TNBC/basal) subtypes ."
+  },
 "citations": [
 "Anastrozole: Uses, Interactions, Mechanism of Action | DrugBank Online",
 "[https://go.drugbank.com/drugs/DB01217](https://go.drugbank.com/drugs/DB01217)",

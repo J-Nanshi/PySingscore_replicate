@@ -95,6 +95,12 @@
 "ESR1_mutation|confers_sensitivity_to|Elacestrant",
 "ESR1_loss|confers_resistance_to|Elacestrant"
 ],
+ "Breast_cancer_subtype_information": {
+    "HR+/HER2– (Luminal A/B)": "All robust elacestrant clinical data (phase I, EMERALD) and approvals are in ER+/HER2– advanced or metastatic disease. EMERALD: post-CDK4/6i population; elacestrant vs fulvestrant/AI, with PFS benefit overall and particularly in ESR1-mutated tumors. Preclinical PDX models encompass AI-resistant, fulvestrant-resistant, CDK4/6i-resistant ER+ tumors and support efficacy across ESR1 WT and mutant settings.",
+    "HER2-positive": "No approved indications or phase III trials of elacestrant in HER2-positive disease. HER2-amplified ER+ tumors may have reduced ER-dependence and greater reliance on ERBB signaling; endocrine/SERD benefit is context-dependent and generally secondary to anti-HER2 therapy. Evidence for elacestrant: insufficient → no validated sensitivity or resistance mechanisms specific to HER2-positive breast cancer.",
+    "Triple-negative breast cancer (TNBC)": "TNBC is generally ER-negative; ER is absent or negligible, eliminating the pharmacologic target for elacestrant. No meaningful clinical or preclinical evidence supports elacestrant use in TNBC; any observed ER expression in a “TNBC” label would likely reclassify the tumor biologically as ER+.",
+    "gBRCA1/2-mutated / HRD+": "While gBRCA/HRD status strongly predicts PARP inhibitor benefit, there is no evidence that it directly modulates elacestrant sensitivity beyond its association with luminal biology in some ER+ tumors. No specific elacestrant–BRCA/HRD interaction has been established."
+  },
 "citations": [
 "Bardia, A., et al. (2021). Phase I study of elacestrant (RAD1901) in ER-positive, HER2-\nnegative advanced breast cancer. Journal of Clinical Oncology, 39(12), 1360–1370. \nPMID: 33513026.",
 "Bidard, F.-C., et al. (2022). Elacestrant versus standard endocrine monotherapy for ER-\npositive, HER2-negative metastatic breast cancer (EMERALD): a phase 3 randomized \ntrial. Journal of Clinical Oncology. PMID: 35584336. NCT03778931.",

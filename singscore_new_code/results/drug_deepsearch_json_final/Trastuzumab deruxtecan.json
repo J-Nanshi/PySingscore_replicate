@@ -1,0 +1,230 @@
+{
+"drug_name": "Trastuzumab deruxtecan",
+"cancer_indication": "Advanced HER2-positive breast cancer that is unresectable or metastatic after prior anti-HER2 therapy; also approved for “HER2-low” breast cancer (IHC 1+ or 2+/ISH–) after prior chemotherapy, including HR-positive or HER2-ultralow (IHC 0/faint) tumors that have progressed on endocrine therapy.",
+"drug_category": "HER2-targeted",
+"drug_class": "HER2-directed antibody–drug conjugate (ADC)",
+"moa": "Trastuzumab deruxtecan (T-DXd) is a HER2-directed ADC composed of a humanized anti-HER2 (ERBB2) IgG1 antibody linked via a cleavable linker to deruxtecan (DXd), a topoisomerase I inhibitor. After binding HER2 on tumor cells, the ADC is internalized and the linker is cleaved in lysosomes to release DXd, which induces DNA damage and triggers apoptosis. The trastuzumab Fc region also engages immune effector mechanisms including Fcγ receptor–mediated antibody-dependent cellular phagocytosis (ADCP) and may elicit ADCC, and T-DXd can induce immunogenic cell death with innate immune activation. Activity requires HER2 expression; loss of HER2 is associated with resistance.",
+"chembl_id": "CHEMBL4297844",
+"drugbank_id": "DB14962",
+"synonyms": [
+"fam-trastuzumab deruxtecan-nxki",
+"trastuzumab deruxtecan (USAN/INN)",
+"DS-8201",
+"DS-8201A",
+"DS8201",
+"DS8201a",
+"T-DXd",
+"TDXd",
+"Enhertu"
+],
+"primary_targets": [
+"ERBB2",
+"TOP1",
+"FCGR1A"
+],
+"pathway_sets": [
+"REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2",
+"HALLMARK_DNA_REPAIR",
+"HALLMARK_G2M_CHECKPOINT",
+"REACTOME_FCGAMMA_RECEPTOR_FCGR_DEPENDENT_PHAGOCYTOSIS",
+"GOBP_REGULATION_OF_PHAGOCYTOSIS",
+"HALLMARK_INTERFERON_GAMMA_RESPONSE",
+"GOBP_NEGATIVE_REGULATION_OF_EXECUTION_PHASE_OF_APOPTOSIS",
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+],
+"pathway_sets_annotations": {
+"REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2": {
+"description": "HER2/ERBB2 overexpression drives oncogenic signaling (including downstream RAS/MAPK and PI3K/AKT/mTOR) in a subset of breast cancers and provides the tumor antigen for HER2-directed therapies.",
+"interpretation": "HER2 expression/amplification is required for T-DXd binding and internalization; loss or downregulation of HER2 at progression is associated with resistance, while high HER2 supports strong activity."
+},
+"HALLMARK_DNA_REPAIR": {
+"description": "DNA damage response and repair programs (including homologous recombination and NHEJ) influence how tumor cells resolve DNA breaks caused by cytotoxic stress.",
+"interpretation": "DXd induces DNA damage; upregulation of DNA repair pathways (e.g., HR/NHEJ genes) is observed in resistant models, while defective DNA repair (HRD/DDR inhibition) is associated with increased sensitivity."
+},
+"HALLMARK_G2M_CHECKPOINT": {
+"description": "G2/M checkpoint control enables cell-cycle arrest in response to DNA damage before mitosis.",
+"interpretation": "Topo-I–payload DNA damage can activate G2/M arrest; enrichment/upregulation of G2/M checkpoint genes is reported in T-DXd–resistant cells and may facilitate survival by allowing time for repair."
+},
+"REACTOME_FCGAMMA_RECEPTOR_FCGR_DEPENDENT_PHAGOCYTOSIS": {
+"description": "Fcγ receptor–dependent phagocytosis is an immune effector mechanism in which IgG-opsonized targets are engulfed by myeloid cells via Fcγ receptor engagement.",
+"interpretation": "The trastuzumab Fc region can engage Fcγ receptors (including FCGR1A) to promote ADCP/ADCC-like activity and contribute to antitumor effects alongside payload-mediated cytotoxicity."
+},
+"GOBP_REGULATION_OF_PHAGOCYTOSIS": {
+"description": "Processes that regulate the magnitude or frequency of phagocytosis by immune cells.",
+"interpretation": "Phagocytosis contributes to the immune effector component of T-DXd; tumor upregulation of CD47 is described as limiting macrophage phagocytosis, whereas enhanced FcγR activity supports phagocytic clearance."
+},
+"HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+"description": "Interferon-γ–associated immune activation programs characteristic of immune-inflamed tumor microenvironments.",
+"interpretation": "Higher baseline interferon signatures (including IFNγ response) are reported to correlate with better outcomes to T-DXd in HER2-low metastatic breast cancer, consistent with an immune-active state supporting efficacy."
+},
+"GOBP_NEGATIVE_REGULATION_OF_EXECUTION_PHASE_OF_APOPTOSIS": {
+"description": "Mechanisms that reduce or prevent activation of the execution phase of apoptosis.",
+"interpretation": "T-DXd-induced DNA damage triggers apoptosis, but resistant tumors are described as upregulating anti-apoptotic factors (e.g., MCL1 and BCL-2 family), effectively suppressing apoptosis and contributing to treatment failure."
+},
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+"description": "PI3K/AKT/mTOR survival and growth signaling, a major downstream effector pathway of HER2 signaling.",
+"interpretation": "This pathway is described as downstream of HER2 with context-dependent effects: activated PI3K/AKT can promote survival and resistance, whereas pathway inhibition/downregulation can facilitate apoptosis and sensitivity."
+}
+},
+"sensitivity_genes_up": [
+"ERBB2",
+"FCGR1A",
+"TLR4",
+"TMEM173"
+],
+"sensitivity_genes_down": [
+"BRCA1",
+"BRCA2",
+"RAD51",
+"ATR",
+"CHEK1",
+"WEE1",
+"CD47"
+],
+"resistance_genes_up": [
+"RAD21",
+"RAD52",
+"TOP2A",
+"ATR",
+"CHEK1",
+"MCL1",
+"BCL2",
+"CD47"
+],
+"resistance_genes_down": [
+"ERBB2",
+"TLR4",
+"TMEM173",
+"TP53"
+],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "ERBB2",
+"interpretation": "Higher HER2 (ERBB2) expression/amplification provides more binding/internalization of T-DXd and is described as required for efficacy."
+},
+{
+"gene": "FCGR1A",
+"interpretation": "Engagement of high-affinity Fcγ receptors such as FCGR1A is described as supporting antibody-dependent cellular phagocytosis, contributing to antitumor activity."
+},
+{
+"gene": "TLR4",
+"interpretation": "Innate immune sensing through TLR4 is described as part of the immunogenic cell-death response induced by T-DXd; intact/active signaling supports immune activation."
+},
+{
+"gene": "TMEM173",
+"interpretation": "STING (TMEM173) pathway activation is described after T-DXd–induced immunogenic cell death and is linked to type-I interferon responses supporting antitumor immunity."
+}
+],
+"sensitivity_genes_down_annotations": [
+{
+"gene": "BRCA1",
+"interpretation": "Defective DNA repair/HRD (including BRCA loss) is described as increasing sensitivity to DXd-induced DNA damage."
+},
+{
+"gene": "BRCA2",
+"interpretation": "Defective DNA repair/HRD (including BRCA loss) is described as increasing sensitivity to DXd-induced DNA damage."
+},
+{
+"gene": "RAD51",
+"interpretation": "Loss-of-function in HR genes such as RAD51 is described as sensitizing to DXd-induced damage by reducing repair capacity."
+},
+{
+"gene": "ATR",
+"interpretation": "ATR-mediated DNA damage response inhibition is described as synergizing with T-DXd and enhancing efficacy in resistant HER2+ models."
+},
+{
+"gene": "CHEK1",
+"interpretation": "CHK1 inhibition (CHEK1) is described alongside ATR inhibition as increasing T-DXd potency by impairing DNA-damage checkpoint/repair signaling."
+},
+{
+"gene": "WEE1",
+"interpretation": "WEE1 inhibition is described as enhancing cancer cell death with T-DXd by reducing checkpoint-mediated arrest and forcing damaged cells into lethal mitosis."
+},
+{
+"gene": "CD47",
+"interpretation": "Downregulation or blockade of CD47 is described as enhancing T-DXd activity by increasing macrophage phagocytosis (reducing the “don’t eat me” signal)."
+}
+],
+"resistance_genes_up_annotations": [
+{
+"gene": "RAD21",
+"interpretation": "Upregulation/amplification of DNA repair genes such as RAD21 is described in resistant contexts, consistent with enhanced repair of DXd-induced damage."
+},
+{
+"gene": "RAD52",
+"interpretation": "Upregulation/amplification of DNA repair genes such as RAD52 is described in resistant contexts, consistent with enhanced repair of DXd-induced damage."
+},
+{
+"gene": "TOP2A",
+"interpretation": "Amplifications of DNA repair-associated genes including TOP2A are described in tumors post–anti-HER2 therapy, suggesting adaptive enhancement of DNA damage response capacity."
+},
+{
+"gene": "ATR",
+"interpretation": "Upregulation of DDR signaling components including ATR is described as a key resistance mechanism enabling repair of DXd-induced DNA breaks."
+},
+{
+"gene": "CHEK1",
+"interpretation": "Upregulation of ATR/CHK1 signaling components (CHEK1) is described as supporting resistance by enabling checkpoint arrest and DNA repair."
+},
+{
+"gene": "MCL1",
+"interpretation": "MCL1 amplification/upregulation is described in resistant tumors as an anti-apoptotic mechanism that blocks DXd-induced apoptosis."
+},
+{
+"gene": "BCL2",
+"interpretation": "Upregulation of anti-apoptotic BCL-2 family factors is described in resistant cells as suppressing apoptosis machinery accompanying treatment failure."
+},
+{
+"gene": "CD47",
+"interpretation": "T-DXd is described as inducing tumor CD47 upregulation, which inhibits macrophage phagocytosis and acts as an immune-evasion resistance mechanism."
+}
+],
+"resistance_genes_down_annotations": [
+{
+"gene": "ERBB2",
+"interpretation": "Downregulation or loss of HER2 (ERBB2) expression is described in a substantial fraction of biopsies at progression and prevents ADC binding/internalization, causing resistance."
+},
+{
+"gene": "TLR4",
+"interpretation": "Lack of TLR4 in macrophages is described as abolishing T-DXd–induced innate activation, implying reduced immune-mediated effects and resistance."
+},
+{
+"gene": "TMEM173",
+"interpretation": "Lack of STING (TMEM173) in macrophages is described as abolishing T-DXd–induced innate activation, implying reduced immune-mediated effects and resistance."
+},
+{
+"gene": "TP53",
+"interpretation": "Reduction of pro-death pathways such as p53-mediated apoptosis is described as potentially conferring chemoresistance even with high DNA damage."
+}
+],
+"kg_gene_relationships": [
+"Trastuzumab deruxtecan|binds|ERBB2",
+"Trastuzumab deruxtecan|inhibits|TOP1",
+"Trastuzumab deruxtecan|engages|FCGR1A",
+"ERBB2_overexpression|confers_sensitivity_to|Trastuzumab deruxtecan",
+"ERBB2_loss|confers_resistance_to|Trastuzumab deruxtecan",
+"RAD21_upregulation|confers_resistance_to|Trastuzumab deruxtecan",
+"RAD52_upregulation|confers_resistance_to|Trastuzumab deruxtecan",
+"MCL1_amplification|confers_resistance_to|Trastuzumab deruxtecan",
+"CD47_upregulation|confers_resistance_to|Trastuzumab deruxtecan"
+],
+"Breast_cancer_subtype_information": {
+"HER2-positive (IHC3+) Breast Cancer": "T-DXd is highly active; DESTINY-Breast03 in HER2+ metastatic breast cancer (second-line) showed clear PFS and ORR benefit over T-DM1. Intrinsic HER2-enriched tumors are particularly sensitive due to abundant HER2, and resistance often involves acquired HER2 loss.",
+"HR-positive, HER2-negative (Luminal A/B)": "Only HER2-low tumors benefit from T-DXd; DESTINY-Breast04 established efficacy in HR+/HER2-low metastatic breast cancer, and U.S. labeling specifies HR+ HER2-low or ultralow tumors after endocrine failure. True HR+ HER2− (IHC0) without HER2 expression gain no direct benefit.",
+"Triple-negative (TNBC) / Basal-like": "A substantial fraction of DESTINY-Breast04 patients had TNBC (HER2-low) and derived similar PFS/OS benefit as HR+; basal-like tumors with low HER2 would benefit similarly. Ongoing trials are exploring T-DXd ± immunotherapy in TNBC; PD-L1 expression has not precluded benefit, with emerging retrospective observations noted.",
+"gBRCA-mutated / HRD-positive": "The impact of germline BRCA1/2 on T-DXd efficacy is described as unclear; one real-world report suggested no enhanced benefit (possibly worse), while preclinical rationale suggests HRD tumors might be more vulnerable to DNA-damaging payloads; clinical data are limited with no definitive guidance.",
+"HER2-enriched Subtype": "Tumors classified as HER2-enriched by gene expression (often HER2-amplified) show robust T-DXd responses akin to classic HER2+ disease, consistent with high HER2/ERBB2 signaling and high sensitivity."
+},
+"citations": [
+"[https://go.drugbank.com/drugs/DB14962](https://go.drugbank.com/drugs/DB14962)",
+"[https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761139s032s035lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/761139s032s035lbl.pdf)",
+"[https://pubmed.ncbi.nlm.nih.gov/35320644/](https://pubmed.ncbi.nlm.nih.gov/35320644/)",
+"[https://pubmed.ncbi.nlm.nih.gov/35665782/](https://pubmed.ncbi.nlm.nih.gov/35665782/)",
+"[https://drugmapper.helsinki.fi/CompoundInfo?compound_id=2128523](https://drugmapper.helsinki.fi/CompoundInfo?compound_id=2128523)",
+"[https://www.nature.com/articles/s41467-025-58266-8?error=cookies_not_supported&code=6a599f39-1273-4b21-9619-\nee1dbe5eac47](https://www.nature.com/articles/s41467-025-58266-8?error=cookies_not_supported&code=6a599f39-1273-4b21-9619-\nee1dbe5eac47)",
+"[https://pubmed.ncbi.nlm.nih.gov/41212147/](https://pubmed.ncbi.nlm.nih.gov/41212147/)",
+"[https://jeccr.biomedcentral.com/articles/10.1186/s13046-024-03143-3](https://jeccr.biomedcentral.com/articles/10.1186/s13046-024-03143-3)",
+"[https://aacrjournals.org/cancerres/article/85/8_Supplement_1/882/755088/Abstract-882-Soluble-TNF-blockade-enhances](https://aacrjournals.org/cancerres/article/85/8_Supplement_1/882/755088/Abstract-882-Soluble-TNF-blockade-enhances)"
+],
+"notes": "PI3K/AKT/mTOR effects are described as context-dependent (“Mixed”) and include an explicit note that some sensitization statements are hypothesized with limited specific evidence for T-DXd. Clinical impact of gBRCA/HRD status is described as unclear with limited data. Source files:  "
+}

@@ -1,0 +1,178 @@
+{
+"drug_name": "Letrozole",
+"cancer_indication": "Estrogen receptor–positive (ER+) breast cancer in postmenopausal women (including luminal A/B); used across stages and in HR+/HER2− metastatic disease (often in combination with targeted agents such as CDK4/6 inhibitors).",
+"drug_category": "Endocrine therapy",
+"drug_class": "Aromatase inhibitor",
+"moa": "Letrozole is a third-generation non-steroidal aromatase inhibitor that competitively inhibits aromatase (CYP19A1), blocking conversion of androgens to estrogens. In postmenopausal women, this causes profound estrogen depletion and reduces ERα-driven tumor growth signals. Estrogen deprivation leads to suppression of estrogen-responsive transcriptional programs and reduced proliferation, with tumor regression in ER+ breast cancer.",
+"chembl_id": "CHEMBL1444",
+"drugbank_id": "DB01006",
+"synonyms": [
+"Letrozol",
+"Femara",
+"CGS-20267"
+],
+"primary_targets": [
+"CYP19A1"
+],
+"pathway_sets": [
+"HALLMARK_ESTROGEN_RESPONSE_LATE",
+"KEGG_STEROID_HORMONE_BIOSYNTHESIS",
+"HALLMARK_E2F_TARGETS",
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+"KEGG_MAPK_SIGNALING_PATHWAY",
+"HALLMARK_APOPTOSIS",
+"PID_FOXM1_PATHWAY",
+"PID_PLK1_PATHWAY",
+"REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",
+"REACTOME_DEGRADATION_OF_THE_EXTRACELLULAR_MATRIX",
+"HALLMARK_ANGIOGENESIS",
+"HALLMARK_HYPOXIA",
+"HALLMARK_INTERFERON_GAMMA_RESPONSE"
+],
+"pathway_sets_annotations": {
+"HALLMARK_ESTROGEN_RESPONSE_LATE": {
+"description": "Estrogen-responsive transcriptional program reflecting ERα-regulated gene expression.",
+"interpretation": "ER-driven gene expression is central to growth and survival of hormone receptor–positive breast cancer, and changes in estrogen/ER signaling are core determinants of endocrine therapy response."
+},
+"KEGG_STEROID_HORMONE_BIOSYNTHESIS": {
+"description": "Steroidogenic pathway that generates steroid hormones, including estrogens, through sequential enzymatic conversions.",
+"interpretation": "Estrogen production is a key upstream driver of ER signaling in postmenopausal HR+ breast cancer, making steroid hormone biosynthesis directly relevant to endocrine dependence."
+},
+"HALLMARK_E2F_TARGETS": {
+"description": "Gene program controlled by E2F transcription factors associated with cell-cycle progression and DNA replication.",
+"interpretation": "Proliferation in ER+ breast cancer is linked to cell-cycle gene expression; modulation of E2F-associated programs reflects changes in tumor proliferative state."
+},
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+"description": "Growth and survival signaling network centered on PI3K, AKT, and mTOR pathway activity.",
+"interpretation": "PI3K/AKT/mTOR signaling is a major survival/proliferation axis in ER+ breast cancer and is implicated as an alternative growth pathway in endocrine therapy escape."
+},
+"KEGG_MAPK_SIGNALING_PATHWAY": {
+"description": "Mitogen-activated protein kinase cascade regulating proliferation and survival through RAF/MEK/ERK signaling.",
+"interpretation": "MAPK/ERK signaling can support tumor proliferation and may act as a bypass growth pathway when estrogen-driven signaling is reduced."
+},
+"HALLMARK_APOPTOSIS": {
+"description": "Core intrinsic and extrinsic cell-death machinery reflected by apoptotic gene programs.",
+"interpretation": "Apoptotic competency influences whether hormone deprivation leads to tumor cell death versus survival under endocrine stress."
+},
+"PID_FOXM1_PATHWAY": {
+"description": "FOXM1-associated transcriptional network promoting cell-cycle progression, particularly G2/M control.",
+"interpretation": "FOXM1-driven transcriptional programs are associated with proliferative capacity and were highlighted as activated in non-responder/resistant contexts."
+},
+"PID_PLK1_PATHWAY": {
+"description": "PLK1-centered signaling controlling G2/M transition and mitotic progression.",
+"interpretation": "Mitotic kinase control (including PLK1-related activity) is linked to proliferative drive and was identified as a pathway activated in letrozole-resistant/non-responder contexts."
+},
+"REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION": {
+"description": "Processes governing extracellular matrix assembly, remodeling, and cell–matrix interactions.",
+"interpretation": "ECM remodeling and cell–matrix signaling are associated with invasive behavior and were discussed in the context of aggressive or endocrine-resistant ER+ tumors."
+},
+"REACTOME_DEGRADATION_OF_THE_EXTRACELLULAR_MATRIX": {
+"description": "Proteolytic degradation of ECM components, including remodeling mediated by matrix metalloproteinases.",
+"interpretation": "Protease-driven ECM remodeling (including MMP-associated activity) was described as linked to invasion/metastasis and endocrine resistance signatures."
+},
+"HALLMARK_ANGIOGENESIS": {
+"description": "Gene program reflecting formation and maintenance of tumor vasculature, including VEGF-related signaling outputs.",
+"interpretation": "Angiogenic activity is relevant to tumor growth and adaptation; VEGFA was highlighted in resistant signatures in the source material."
+},
+"HALLMARK_HYPOXIA": {
+"description": "Cellular transcriptional response to low oxygen tension, often involving HIF-associated programs.",
+"interpretation": "Hypoxia-associated programs can shape aggressive tumor behavior and adaptation; the source material described HIF-1α network changes in resistant/non-responder settings."
+},
+"HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+"description": "Immune and inflammatory transcriptional program induced by interferon-γ signaling, reflecting immune activation states.",
+"interpretation": "Immune activity (including interferon-related pathways and tumor-infiltrating lymphocytes) was described as being modulated during letrozole therapy and linked to response patterns."
+}
+},
+"sensitivity_genes_up": [],
+"sensitivity_genes_down": [],
+"resistance_genes_up": [
+"AKT1",
+"AKT2",
+"FGFR3",
+"SDC1",
+"MMP2",
+"MMP9",
+"VEGFA",
+"PRDX4",
+"ESR1"
+],
+"resistance_genes_down": [],
+"sensitivity_genes_up_annotations": [],
+"sensitivity_genes_down_annotations": [],
+"resistance_genes_up_annotations": [
+{
+"gene": "AKT1",
+"interpretation": "Listed as part of compensatory PI3K/AKT pathway activation associated with letrozole resistance/non-response."
+},
+{
+"gene": "AKT2",
+"interpretation": "Listed as part of compensatory PI3K/AKT pathway activation associated with letrozole resistance/non-response."
+},
+{
+"gene": "FGFR3",
+"interpretation": "Cited as an example within PI3K/AKT/mTOR hyperactivation in resistant contexts, consistent with alternative growth/survival signaling during endocrine escape."
+},
+{
+"gene": "SDC1",
+"interpretation": "Described as activated in resistant ER+ tumors and associated with cell–matrix and growth-factor signaling that may promote invasion and reduced endocrine dependence."
+},
+{
+"gene": "MMP2",
+"interpretation": "Described as upregulated in resistant or aggressive ER+ cancers and noted as a marker associated with endocrine resistance and invasive behavior."
+},
+{
+"gene": "MMP9",
+"interpretation": "Described as upregulated in resistant or aggressive ER+ cancers and noted as a marker associated with endocrine resistance and invasive behavior."
+},
+{
+"gene": "VEGFA",
+"interpretation": "Highlighted as a top target within a resistant signature and discussed in relation to angiogenic factor changes in adaptive/resistant settings."
+},
+{
+"gene": "PRDX4",
+"interpretation": "Mentioned as an oxidative stress/autophagy-related marker that can rise in resistant cells, consistent with stress adaptation under estrogen deprivation."
+},
+{
+"gene": "ESR1",
+"interpretation": "ESR1 gain-of-function mutations were described as mediating endocrine escape by reactivating ER signaling despite aromatase inhibition."
+}
+],
+"resistance_genes_down_annotations": [],
+"kg_gene_relationships": [
+"Letrozole|inhibits|CYP19A1",
+"ESR1_gain_of_function_mutation|confers_resistance_to|Letrozole",
+"AKT1_upregulation|confers_resistance_to|Letrozole",
+"AKT2_upregulation|confers_resistance_to|Letrozole",
+"SDC1_activation|confers_resistance_to|Letrozole",
+"MMP2_overexpression|confers_resistance_to|Letrozole",
+"MMP9_overexpression|confers_resistance_to|Letrozole",
+"VEGFA_upregulation|associated_with|Letrozole_resistance",
+"PRDX4_upregulation|associated_with|Letrozole_resistance"
+],
+"Breast_cancer_subtype_information": {
+"HR⁺/HER2⁻ (Luminal A/B)": "The primary indication group; letrozole is standard first-line in postmenopausal HR⁺/HER2⁻ advanced or adjuvant settings, and can be used with CDK4/6 inhibitors in metastatic disease.",
+"HR⁺/HER2⁺": "Used only if ER⁺; benefit described with combined HER2-targeted and endocrine therapy (e.g., trastuzumab+letrozole in ER⁺/HER2⁺ metastatic BC), with note that HER2-driven signaling may reduce AI sensitivity and estrogen-independent growth can occur.",
+"HER2⁺/HR⁻": "HER2⁺/HR⁻ tumors do not benefit from aromatase inhibition.",
+"Triple-Negative (HR⁻/HER2⁻)": "Letrozole has no target (no ER), so it is not used; TNBC is described as inherently resistant to aromatase inhibition.",
+"gBRCA1/2 Mutation Carriers": "No specific sensitivity beyond hormone status; most BRCA1-related BC are triple-negative, while BRCA2 tumors are often HR⁺, and endocrine treatment follows standard guidelines for HR⁺ disease."
+},
+"citations": [
+"[https://www.breastcancer.org/treatment/hormonal-therapy/femara](https://www.breastcancer.org/treatment/hormonal-therapy/femara)",
+"[https://go.drugbank.com/drugs/DB01006](https://go.drugbank.com/drugs/DB01006)",
+"[https://www.mdpi.com/1467-3045/46/7/424](https://www.mdpi.com/1467-3045/46/7/424)",
+"[https://www.sciencedirect.com/science/article/abs/pii/S0303720721002707](https://www.sciencedirect.com/science/article/abs/pii/S0303720721002707)",
+"[https://breast-cancer-research.biomedcentral.com/articles/10.1186/s13058-020-01285-8](https://breast-cancer-research.biomedcentral.com/articles/10.1186/s13058-020-01285-8)",
+"[https://www.accessdata.fda.gov/drugsatfda_docs/label/2014/020726s027lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2014/020726s027lbl.pdf)",
+"[https://www.cancer.org/cancer/types/breast-cancer/treatment/hormone-therapy-for-breast-cancer.html](https://www.cancer.org/cancer/types/breast-cancer/treatment/hormone-therapy-for-breast-cancer.html)",
+"[https://www.sciencedirect.com/science/article/pii/S2059702921000454](https://www.sciencedirect.com/science/article/pii/S2059702921000454)",
+"[https://www.tandfonline.com/doi/full/10.2217/fon-2020-0504](https://www.tandfonline.com/doi/full/10.2217/fon-2020-0504)",
+"[https://www.esmoopen.com/article/S2059-7029(25)00926-3/fulltext](https://www.esmoopen.com/article/S2059-7029%2825%2900926-3/fulltext)",
+"[https://sciencecodex.com/10-year-results-nrg-oncologynsabp-b-42-trial-636794](https://sciencecodex.com/10-year-results-nrg-oncologynsabp-b-42-trial-636794)",
+"[https://pubmed.ncbi.nlm.nih.gov/16730271/](https://pubmed.ncbi.nlm.nih.gov/16730271/)",
+"[https://www.pfizer.com/news/press-release/press-release-detail/pfizer-announces-overall-survival-results-phase-3-paloma-2](https://www.pfizer.com/news/press-release/press-release-detail/pfizer-announces-overall-survival-results-phase-3-paloma-2)",
+"[https://ecancer.org/en/news/17068-sabcs-2019-extended-letrozole-therapy-improves-disease-free-survival-in-postmenopausal women-with-hr-positive-breast-cancer](https://ecancer.org/en/news/17068-sabcs-2019-extended-letrozole-therapy-improves-disease-free-survival-in-postmenopausal women-with-hr-positive-breast-cancer)",
+"[https://www.nrgoncology.org/News/News-Post-Template/extended-letrozole-therapy-improves-disease-free-survival-dfs-in postmenopausal-women-with-hr-breast-cancer-10-year-results-of-nrg-oncologynsabp-b-42-trial](https://www.nrgoncology.org/News/News-Post-Template/extended-letrozole-therapy-improves-disease-free-survival-dfs-in postmenopausal-women-with-hr-breast-cancer-10-year-results-of-nrg-oncologynsabp-b-42-trial)",
+"[https://www.mycancergenome.org/content/drugs/letrozole/](https://www.mycancergenome.org/content/drugs/letrozole/)"
+],
+"notes": "Sensitivity-direction gene biomarkers were not explicitly reported as gene-level (↑/↓) predictors in the provided deep-research output; only pathway-level response patterns and resistance-associated signatures/markers were described. Contraindications/cautions explicitly mentioned include contraindication in pregnancy and avoidance in premenopausal women unless combined with ovarian suppression. Source files:  "
+}

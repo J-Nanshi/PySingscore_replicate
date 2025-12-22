@@ -1,0 +1,235 @@
+{
+"drug_name": "Everolimus",
+"cancer_indication": "Hormone receptor-positive, HER2-negative (HR+/HER2–) metastatic breast cancer in combination with endocrine therapy after prior aromatase inhibitor failure.",
+"drug_category": "PI3K/AKT/mTOR targeted therapy",
+"drug_class": "Rapamycin analog (rapalog) mTORC1 inhibitor",
+"moa": "Everolimus is an oral inhibitor of the mTOR kinase that allosterically inhibits the mTORC1 complex. It binds FKBP12 to form a drug–protein complex that docks on mTORC1 and prevents mTOR activation, reducing phosphorylation of S6K1 and 4E-BP1 and suppressing protein synthesis and cell-cycle progression. In HR+ breast cancer, PI3K/AKT/mTOR signaling is frequently hyperactivated as an adaptive escape from hormone dependence; inhibiting mTORC1 can interrupt this survival pathway and restore sensitivity to endocrine therapy. In ER+ models, everolimus treatment reduced ER mRNA/protein and transcriptional activity, supporting synergy with endocrine therapy.",
+"chembl_id": "CHEMBL1908360",
+"drugbank_id": "DB01590",
+"synonyms": [
+"40-O-(2-hydroxyethyl)-rapamycin (42-O-(2-hydroxy)ethyl rapamycin)",
+"Afinitor",
+"Afinitor Disperz",
+"Zortress",
+"Votubia",
+"Certican",
+"RAD001",
+"RAD-001",
+"RAD 666"
+],
+"primary_targets": [
+"MTOR",
+"FKBP1A"
+],
+"pathway_sets": [
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+"HALLMARK_MTORC1_SIGNALING",
+"WP_ESTROGEN_SIGNALING",
+"HALLMARK_E2F_TARGETS",
+"GOBP_PROCESS_UTILIZING_AUTOPHAGIC_MECHANISM",
+"HALLMARK_MYC_TARGETS_V1",
+"KEGG_MEDICUS_REFERENCE_IGF_IGF1R_PI3K_SIGNALING_PATHWAY",
+"HALLMARK_ANGIOGENESIS",
+"KEGG_MEDICUS_REFERENCE_PDL_PD1_SHP_PI3K_SIGNALING_PATHWAY"
+],
+"pathway_sets_annotations": {
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+"description": "Core growth and survival signaling cascade linking PI3K and AKT to mTOR, regulating proliferation, metabolism, and survival.",
+"interpretation": "Frequently dysregulated in breast cancer (e.g., via PIK3CA mutation or PTEN loss) and implicated in proliferation and endocrine therapy resistance."
+},
+"HALLMARK_MTORC1_SIGNALING": {
+"description": "mTORC1 downstream output program controlling cap-dependent translation, ribosomal biogenesis, and growth-related protein synthesis (e.g., via S6K and 4E-BP1).",
+"interpretation": "Represents the translational and proliferative output of mTORC1 activity that supports breast tumor growth and cell-cycle progression."
+},
+"WP_ESTROGEN_SIGNALING": {
+"description": "Estrogen receptor (ER) signaling program driving estrogen-responsive transcription and ER-dependent proliferation in hormone receptor-positive breast cancer.",
+"interpretation": "A central dependency in HR+ breast cancer and a key axis of endocrine response/resistance with documented cross-talk to PI3K/AKT/mTOR signaling."
+},
+"HALLMARK_E2F_TARGETS": {
+"description": "E2F-regulated transcriptional program supporting DNA replication and cell-cycle progression (G1/S and S-phase gene expression).",
+"interpretation": "Reflects proliferative cell-cycle activity in breast tumors and is modulated downstream of growth and translation control pathways."
+},
+"GOBP_PROCESS_UTILIZING_AUTOPHAGIC_MECHANISM": {
+"description": "Autophagy-related cellular process enabling degradation and recycling of cellular components under stress conditions.",
+"interpretation": "Acts as an adaptive stress-response program in breast cancer cells under therapeutic pressure and can support survival under mTORC1 inhibition."
+},
+"HALLMARK_MYC_TARGETS_V1": {
+"description": "MYC-driven transcriptional program regulating metabolism, biosynthesis, and proliferation-associated gene expression.",
+"interpretation": "MYC pathway activity is implicated in sustaining growth programs that can bypass growth-inhibitory signaling constraints in breast cancer models under targeted therapy."
+},
+"KEGG_MEDICUS_REFERENCE_IGF_IGF1R_PI3K_SIGNALING_PATHWAY": {
+"description": "Growth-factor signaling from IGF ligands through IGF1R to PI3K/AKT pathway activation.",
+"interpretation": "A growth-factor input into PI3K/AKT signaling that can be engaged as a compensatory route when downstream mTORC1 signaling is inhibited."
+},
+"HALLMARK_ANGIOGENESIS": {
+"description": "Angiogenesis program involving hypoxia-driven and VEGF-associated pathways that support neovascularization and tumor perfusion.",
+"interpretation": "Tumor vascularization supports nutrient delivery and growth, and angiogenic signaling can influence tumor progression across breast cancer contexts."
+},
+"KEGG_MEDICUS_REFERENCE_PDL_PD1_SHP_PI3K_SIGNALING_PATHWAY": {
+"description": "Immune checkpoint signaling centered on the PD-1/PD-L1 axis associated with suppression of anti-tumor immune activity.",
+"interpretation": "Immune evasion through checkpoint signaling is relevant to tumor microenvironment control in breast cancer, particularly in immune-infiltrated contexts."
+}
+},
+"sensitivity_genes_up": [
+"PIK3CA",
+"ESR1"
+],
+"sensitivity_genes_down": [
+"PTEN"
+],
+"resistance_genes_up": [
+"MYC",
+"IGF1R",
+"EGFR",
+"ERBB2",
+"ERBB3",
+"BCL2",
+"BIRC5"
+],
+"resistance_genes_down": [
+"ESR1"
+],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "PIK3CA",
+"interpretation": "PI3K pathway alterations (including PIK3CA mutation) are described as hyperactivating PI3K/AKT/mTOR signaling in breast cancer, a context in which tumors can be more dependent on the pathway targeted downstream by mTORC1 inhibition."
+},
+{
+"gene": "ESR1",
+"interpretation": "Retention of ER signaling/ER expression in HR+ disease is described as part of the endocrine-responsive context in which everolimus is used to overcome endocrine resistance when combined with endocrine therapy."
+}
+],
+"sensitivity_genes_down_annotations": [
+{
+"gene": "PTEN",
+"interpretation": "PTEN loss is described as a frequent event (notably in TNBC) that leads to unchecked AKT/mTOR pathway activation and was cited as a feature of tumors most likely to benefit in the everolimus + carboplatin TNBC trial context."
+}
+],
+"resistance_genes_up_annotations": [
+{
+"gene": "MYC",
+"interpretation": "Acquired everolimus resistance in ER+ breast cancer models is described as being driven by upregulation of c-MYC and enrichment of MYC target signatures; MYC knockdown resensitized resistant cells."
+},
+{
+"gene": "IGF1R",
+"interpretation": "Upregulation of IGF1R and related upstream signaling is described as contributing to compensatory AKT rephosphorylation after mTORC1 inhibition, supporting resistance."
+},
+{
+"gene": "EGFR",
+"interpretation": "EGFR is listed among receptor tyrosine kinases that can be upregulated as part of compensatory signaling leading to AKT/parallel pathway activation and resistance."
+},
+{
+"gene": "ERBB2",
+"interpretation": "HER2 signaling is described as a potential upstream driver whose compensatory activity can contribute to PI3K/AKT reactivation and reduced response to everolimus in certain contexts."
+},
+{
+"gene": "ERBB3",
+"interpretation": "Increased HER3–PI3K signaling is described as correlating with everolimus non-response in HER2+ tumors, consistent with RTK/AKT upregulation as a resistance driver."
+},
+{
+"gene": "BCL2",
+"interpretation": "Anti-apoptotic proteins such as BCL-2 are described as being overexpressed in some everolimus-resistant cells, supporting survival under therapeutic stress."
+},
+{
+"gene": "BIRC5",
+"interpretation": "Survivin (BIRC5) is described as upregulated in everolimus-resistant breast cancer cells and contributing to resistance by helping cells avoid death."
+}
+],
+"resistance_genes_down_annotations": [
+{
+"gene": "ESR1",
+"interpretation": "Downregulation or loss of ER signaling in formerly ER+ disease is described as conferring resistance to everolimus plus endocrine therapy because the combination relies on concurrent hormone blockade to be effective in ER+ cancer."
+}
+],
+"kg_gene_relationships": [
+"Everolimus|inhibits|MTOR",
+"Everolimus|binds|FKBP1A",
+"PIK3CA_activation|associated_with_sensitivity_to|Everolimus",
+"PTEN_loss|associated_with_sensitivity_to|Everolimus",
+"MYC_upregulation|confers_resistance_to|Everolimus",
+"IGF1R_upregulation|confers_resistance_to|Everolimus",
+"ERBB3_upregulation|confers_resistance_to|Everolimus",
+"ESR1_loss|confers_resistance_to|Everolimus"
+],
+"Breast_cancer_subtype_information": {
+"HR+/HER2– (Luminal A/B) Subtype": "Postmenopausal women with HR+ HER2– advanced breast cancer that progressed on nonsteroidal AIs benefited from everolimus + exemestane, as shown in the BOLERO-2 trial; everolimus is integrated into guidelines for endocrine-resistant HR+ disease.",
+"HER2-Positive Subtype": "Everolimus has been studied in combination with anti-HER2 therapy in resistant cases; BOLERO-3 showed a modest but significant PFS improvement and exploratory analyses suggested benefit concentrated in HR-negative/HER2+ tumors.",
+"Triple-Negative (TNBC) Subtype": "Everolimus is not an established treatment in TNBC outside clinical trials; a randomized phase II study of everolimus + carboplatin vs carboplatin reported improved PFS and noted tumors most likely to benefit were those with mTOR pathway activation (e.g., PTEN loss).",
+"BRCA-mutated/HRD Subtype": "There is no dedicated trial of everolimus in BRCA-mutant patients and no specific evidence that BRCA/HRD status predicts better or worse response; the text emphasizes PI3K pathway status as more relevant than HRD itself.",
+"Basal-like vs. Luminal vs. HER2-enriched vs. Claudin-low (intrinsic subtypes)": "Basal-like overlaps with TNBC (with PTEN loss in subsets); HER2-enriched overlaps with HER2+/HR– where a signal of benefit was observed; luminal A/B overlaps with HR+ where everolimus has the most established role."
+},
+"citations": [
+"Everolimus: Uses, Interactions, Mechanism of Action | DrugBank Online",
+"[https://go.drugbank.com/drugs/DB01590](https://go.drugbank.com/drugs/DB01590)",
+"Definition of everolimus - NCI Drug Dictionary - NCI",
+"[https://www.cancer.gov/publications/dictionaries/cancer-drug/def/everolimus](https://www.cancer.gov/publications/dictionaries/cancer-drug/def/everolimus)",
+"Everolimus in postmenopausal hormone-receptor-positive advanced breast cancer -",
+"PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/22149876/](https://pubmed.ncbi.nlm.nih.gov/22149876/)",
+"Overcoming the Adverse Effects of Everolimus to Achieve Maximum Efficacy in the Treatment",
+"of Inoperable Breast Cancer: A Review of 11 Cases at Our Hospital | Case Reports in Oncology | Karger",
+"Publishers",
+"[https://karger.com/cro/article/11/2/511/90200/Overcoming-the-Adverse-Effects-of-Everolimus-to](https://karger.com/cro/article/11/2/511/90200/Overcoming-the-Adverse-Effects-of-Everolimus-to)",
+"BOLERO-1: Everolimus Plus Trastuzumab/Paclitaxel Misses the Mark in First-Line",
+"HER2-Positive Advanced Breast Cancer - The ASCO Post",
+"[https://ascopost.com/issues/january-25-2015/bolero-1-everolimus-plus-trastuzumabpaclitaxel-misses-the-mark-in-first-line-her2-](https://ascopost.com/issues/january-25-2015/bolero-1-everolimus-plus-trastuzumabpaclitaxel-misses-the-mark-in-first-line-her2-)",
+"positive-advanced-breast-cancer/",
+"Added Everolimus Reduces Risk for Advanced TNBC - The ASCO Post",
+"[https://ascopost.com/news/august-2025/added-everolimus-reduces-risk-for-advanced-tnbc/](https://ascopost.com/news/august-2025/added-everolimus-reduces-risk-for-advanced-tnbc/)",
+"Compound: EVEROLIMUS (CHEMBL1908360) - ChEMBL - EMBL-EBI",
+"[https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1908360](https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1908360)",
+"New Drug Approvals - Pt. V - Everolimus (Afinitor)",
+"[http://chembl.github.io/new-drug-approvals-pt-v-everolimus/](http://chembl.github.io/new-drug-approvals-pt-v-everolimus/)",
+"Everolimus downregulates estrogen receptor and induces autophagy in",
+"aromatase inhibitor-resistant breast cancer cells | BMC Cancer | Full Text",
+"[https://bmccancer.biomedcentral.com/articles/10.1186/s12885-016-2490-z](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-016-2490-z)",
+"Everolimus downregulates STAT3/HIF-1α/VEGF pathway to inhibit angiogenesis and",
+"lymphangiogenesis in TP53 mutant head and neck squamous cell... | Oncotarget",
+"[https://www.oncotarget.com/article/28355/text/](https://www.oncotarget.com/article/28355/text/)",
+"4 9",
+"1 11 16",
+"2 12 13 15 33",
+"3 41 42 59 63",
+"4 5 24 37",
+"6 36 44 45 60 61 64",
+"7 8 9 46",
+"10",
+"14 17",
+"18 19 20 21 26 27 28 65",
+"22 23",
+"ONC201/TIC10 enhances durability of mTOR inhibitor everolimus in ...",
+"[https://elifesciences.org/articles/85898](https://elifesciences.org/articles/85898)",
+"Resistance to everolimus driven by epigenetic regulation of MYC in ER+ breast cancers |",
+"Oncotarget",
+"[https://www.oncotarget.com/article/2964/text/](https://www.oncotarget.com/article/2964/text/)",
+"Everolimus combined with PD-1 blockade inhibits progression of triple-negative breast cancer -",
+"PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/37257766/](https://pubmed.ncbi.nlm.nih.gov/37257766/)",
+"Resistance to the mTOR inhibitor everolimus is reversed by the ...",
+"[https://www.spandidos-publications.com/10.3892/ol.2017.6597](https://www.spandidos-publications.com/10.3892/ol.2017.6597)",
+"prompt1_updated_drug_effect.docx",
+"file://file_000000000f647206b3cb5791fed11bde",
+"Expert consensus on treating HR+/HER2- metastatic breast cancer ...",
+"[https://pmc.ncbi.nlm.nih.gov/articles/PMC12138406/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12138406/)",
+"DailyMed - EVEROLIMUS tablet",
+"[https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59cb86d5-8706-4619-b074-af253d3e0b68](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59cb86d5-8706-4619-b074-af253d3e0b68)",
+"AFINITOR (everolimus) tablets",
+"[https://www.accessdata.fda.gov/drugsatfda_docs/label/2012/022334s016lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2012/022334s016lbl.pdf)",
+"overall survival results from BOLERO-2 - Annals of Oncology",
+"[https://www.annalsofoncology.org/article/S0923-7534(19)36905-4/fulltext](https://www.annalsofoncology.org/article/S0923-7534%2819%2936905-4/fulltext)",
+"Long-Term Results with Everolimus in Advanced Hormone Receptor ...",
+"[https://www.mdpi.com/2072-6694/15/4/1191](https://www.mdpi.com/2072-6694/15/4/1191)",
+"25 32",
+"29 30 31",
+"34 35 47",
+"38",
+"39 40",
+"43",
+"48",
+"49 50 51 52 53 54 55 56 57 58 62",
+"66",
+"67",
+"36"
+],
+"notes": "Some pathway names in the provided PATHWAY_LIST are annotated using the corresponding concepts explicitly discussed in the source (e.g., ER signaling, autophagy, IGF1R/PI3K feedback, PD-1/PD-L1 immune checkpoint), without adding components not stated. Source documents: Everolimus.pdf ; prompt schema/instructions: prompt2_final.docx ."
+}

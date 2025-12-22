@@ -1,0 +1,192 @@
+{
+"drug_name": "Exemestane",
+"cancer_indication": "Hormone receptor (HR)–positive breast cancer in postmenopausal women (adjuvant therapy after 2–3 years of tamoxifen and for advanced/metastatic ER+ breast cancer after tamoxifen); with ovarian suppression (OFS) in premenopausal HR+ disease (SOFT/TEXT trials).",
+"drug_category": "Endocrine (aromatase inhibition)",
+"drug_class": "Steroidal, irreversible aromatase inhibitor",
+"moa": "Exemestane is a steroidal, irreversible (“suicide”) aromatase inhibitor that permanently inactivates CYP19A1 (aromatase), blocking conversion of androgens to estrogens and sharply reducing estrogen levels. Estrogen deprivation suppresses estrogen receptor–mediated transcription, leading to G1 arrest and apoptosis in ER+ breast tumor cells. In premenopausal women, exemestane requires concurrent ovarian suppression to be effective. Resistance can arise via upregulation of alternate growth pathways (e.g., HER/EGFR, PI3K/AKT/mTOR) or ESR1 mutations, whereas high ER expression and intact hormone signaling sensitize tumors to exemestane.",
+"chembl_id": "CHEMBL1200374",
+"drugbank_id": "DB00990",
+"synonyms": [
+"6-methyleneandrosta-1,4-diene-3,17-dione",
+"Exemestane",
+"Exemestano",
+"Exemestanum",
+"Aromasin®",
+"FCE-24304",
+"PNU-155971"
+],
+"primary_targets": [
+"CYP19A1"
+],
+"pathway_sets": [
+"REACTOME_ESTROGEN_BIOSYNTHESIS",
+"REACTOME_ESTROGEN_DEPENDENT_GENE_EXPRESSION",
+"WP_ESTROGEN_SIGNALING",
+"REACTOME_METABOLISM_OF_STEROID_HORMONES",
+"KEGG_ERBB_SIGNALING_PATHWAY",
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+"HALLMARK_ANDROGEN_RESPONSE",
+"HALLMARK_E2F_TARGETS",
+"HALLMARK_APOPTOSIS",
+"HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+"HALLMARK_IL6_JAK_STAT3_SIGNALING"
+],
+"pathway_sets_annotations": {
+"REACTOME_ESTROGEN_BIOSYNTHESIS": {
+"description": "Covers enzymatic conversion of androgens to estrogens, including the aromatase (CYP19A1) step producing estrone/estradiol.",
+"interpretation": "Provides the estrogen ligand supply that supports growth and transcriptional programs in ER+ breast cancer."
+},
+"REACTOME_ESTROGEN_DEPENDENT_GENE_EXPRESSION": {
+"description": "Represents estrogen-dependent transcriptional activation driven by estrogen receptor signaling programs that regulate downstream gene expression.",
+"interpretation": "Sustains ER-driven proliferative gene programs in ER+ breast cancer that are central to endocrine dependence."
+},
+"WP_ESTROGEN_SIGNALING": {
+"description": "Broad estrogen signaling encompassing nuclear (“genomic”) and membrane-associated (“non-genomic”) estrogen receptor pathways.",
+"interpretation": "Key driver of ER-associated proliferation and differentiation programs in ER+ breast cancer."
+},
+"REACTOME_METABOLISM_OF_STEROID_HORMONES": {
+"description": "Steroid hormone metabolic network from cholesterol-derived intermediates through sex steroid production and interconversion.",
+"interpretation": "Shapes the steroid hormone environment that influences ER-driven tumor biology and endocrine responsiveness."
+},
+"KEGG_ERBB_SIGNALING_PATHWAY": {
+"description": "Growth factor receptor signaling via ERBB family members (including EGFR/HER2) and downstream proliferative pathways (e.g., MAPK).",
+"interpretation": "Can provide alternative proliferative/survival signaling that bypasses ER dependence in breast cancer."
+},
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+"description": "Core survival and growth signaling axis involving PI3K, AKT, and mTOR that regulates metabolism, protein synthesis, and proliferation.",
+"interpretation": "A major pro-survival/proliferation program frequently activated in breast cancer and linked to endocrine escape mechanisms."
+},
+"HALLMARK_ANDROGEN_RESPONSE": {
+"description": "Gene-expression program induced by androgen receptor (AR) signaling and androgen-responsive transcriptional outputs.",
+"interpretation": "Modulates endocrine biology in ER+ breast cancer and can interact with ER programs affecting tumor behavior."
+},
+"HALLMARK_E2F_TARGETS": {
+"description": "E2F-driven transcriptional program controlling DNA replication and cell-cycle progression, reflecting active proliferation machinery.",
+"interpretation": "Represents proliferation state and ER-linked cell-cycle control that is relevant to endocrine-dependent growth."
+},
+"HALLMARK_APOPTOSIS": {
+"description": "Programmed cell death machinery and transcriptional outputs associated with apoptotic signaling cascades.",
+"interpretation": "Apoptotic competence influences tumor cell fate under endocrine perturbation in ER+ breast cancer."
+},
+"HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+"description": "Transcriptional program associated with EMT, including loss of epithelial traits, increased motility, and invasive phenotypes.",
+"interpretation": "Associated with invasion/metastasis and therapy resistance and can coincide with reduced estrogen dependence."
+},
+"HALLMARK_IL6_JAK_STAT3_SIGNALING": {
+"description": "Cytokine-driven signaling program centered on IL-6 activation of JAK/STAT3 and downstream inflammatory transcriptional outputs.",
+"interpretation": "Inflammatory and cytokine signaling can support survival and progression programs in breast cancer."
+}
+},
+"sensitivity_genes_up": [
+"ESR1",
+"AR"
+],
+"sensitivity_genes_down": [
+"EGFR",
+"ERBB2"
+],
+"resistance_genes_up": [
+"AREG",
+"EGFR",
+"ERBB2",
+"PIK3CA"
+],
+"resistance_genes_down": [
+"ESR1",
+"TP53"
+],
+"sensitivity_genes_up_annotations": [
+{
+"gene": "ESR1",
+"interpretation": "High estrogen receptor expression and intact hormone signaling are described as sensitizing tumors to estrogen depletion with exemestane."
+},
+{
+"gene": "AR",
+"interpretation": "Increased androgen receptor signaling (including AR overexpression in ER+ breast cancer) is described as correlating with better outcomes on aromatase inhibitors and may oppose ER activity and induce apoptosis in AI-sensitive cells."
+}
+],
+"sensitivity_genes_down_annotations": [
+{
+"gene": "EGFR",
+"interpretation": "Tumors lacking EGFR activation are described as relying more on ER signaling and being more responsive to estrogen blockade."
+},
+{
+"gene": "ERBB2",
+"interpretation": "Low HER2/ERBB signaling (i.e., lacking HER2 activation) is described as increasing reliance on ER signaling and improving responsiveness to estrogen blockade."
+}
+],
+"resistance_genes_up_annotations": [
+{
+"gene": "AREG",
+"interpretation": "Amphiregulin (AREG) is described as being induced in an ER-dependent loop in exemestane-resistant cells, activating EGFR and downstream MAPK/ERK signaling to drive growth despite estrogen loss."
+},
+{
+"gene": "EGFR",
+"interpretation": "Upregulation/activation of EGFR signaling is described as a bypass pathway that promotes proliferation despite estrogen deprivation and contributes to aromatase-inhibitor resistance."
+},
+{
+"gene": "ERBB2",
+"interpretation": "HER2/ERBB pathway activity is described as mediating resistance in HR+/HER2+ contexts and as part of alternate growth pathways that can bypass ER dependency."
+},
+{
+"gene": "PIK3CA",
+"interpretation": "PI3K/AKT/mTOR activation is described as bypassing ER dependence, with PI3K/AKT upregulation linked to AI resistance and noted to occur via PIK3CA mutation or RTK-driven activation."
+}
+],
+"resistance_genes_down_annotations": [
+{
+"gene": "ESR1",
+"interpretation": "Loss/downregulation of estrogen receptor expression or signaling is described as causing resistance because exemestane has no target when estrogen signaling is absent."
+},
+{
+"gene": "TP53",
+"interpretation": "Downregulation of apoptotic pathways is described as blunting exemestane’s effect, with p53 loss given as an example mechanism that would reduce apoptosis."
+}
+],
+"kg_gene_relationships": [
+"Exemestane|inhibits|CYP19A1",
+"ESR1_high_expression|confers_sensitivity_to|Exemestane",
+"AR_overexpression|confers_sensitivity_to|Exemestane",
+"EGFR_activation|confers_resistance_to|Exemestane",
+"ERBB2_activation|confers_resistance_to|Exemestane",
+"AREG_overexpression|confers_resistance_to|Exemestane",
+"PIK3CA_activation|confers_resistance_to|Exemestane",
+"ESR1_loss|confers_resistance_to|Exemestane",
+"TP53_loss|confers_resistance_to|Exemestane",
+"ESR1_mutation|confers_resistance_to|Exemestane"
+],
+"Breast_cancer_subtype_information": {
+"HR+/HER2– (Luminal)": "Exemestane is standard therapy in this group. Adjuvant trials (e.g. IES/TEAM) demonstrated benefit for switching to exemestane after tamoxifen. In metastatic HR+/HER2– disease, exemestane with targeted agents (e.g. everolimus or CDK4/6 inhibitors) is recommended.",
+"HR+/HER2+ (Luminal B/HER2)": "HR+/HER2+ tumors may receive both endocrine and HER2-targeted therapy. Exemestane can be used in HR+/HER2+ cases (often after initial HER2 blockade); HER2 pathway activity can mediate resistance, so combined approaches are studied. For example, combining endocrine therapy with anti-HER2 agents (trastuzumab, lapatinib) may overcome dual signaling.",
+"TNBC (HR–/HER2–)": "Exemestane is ineffective in triple-negative disease, as there is no estrogen signaling to block. It has no role in standard TNBC therapy.",
+"gBRCA1/2-mutated": "A recent case report described a gBRCA2-mutated, heavily pretreated HR+/HER2– patient who achieved a 37-month remission on combined PARP inhibitor (fluzoparib) plus exemestane, highlighting that exemestane remains useful if the tumor is ER+. No data suggest that BRCA status alone alters aromatase inhibitor efficacy.",
+"Other contexts": "Exemestane was studied for breast cancer prevention: in postmenopausal women at risk, exemestane reduced invasive breast cancer incidence by ~65% (off-label use per some guidelines). Exemestane plus ovarian suppression significantly improved disease-free survival in premenopausal HR+ patients compared to tamoxifen."
+},
+"citations": [
+"A review of the use of exemestane in early breast cancer - PMC",
+"[https://pmc.ncbi.nlm.nih.gov/articles/PMC2697518/](https://pmc.ncbi.nlm.nih.gov/articles/PMC2697518/)",
+"Exemestane in the adjuvant treatment of breast cancer in postmenopausal women - PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/22084574/](https://pubmed.ncbi.nlm.nih.gov/22084574/)",
+"Exemestane: Uses, Interactions, Mechanism of Action | DrugBank Online",
+"[https://go.drugbank.com/drugs/DB00990](https://go.drugbank.com/drugs/DB00990)",
+"Reactome | CYP19A1 binds Aromatase inhibitors",
+"[https://reactome.org/content/detail/R-HSA-9707353](https://reactome.org/content/detail/R-HSA-9707353)",
+"label",
+"[https://www.accessdata.fda.gov/drugsatfda_docs/label/2011/020753s009s011s012lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2011/020753s009s011s012lbl.pdf)",
+"Exemestane - Wikipedia",
+"[https://en.wikipedia.org/wiki/Exemestane](https://en.wikipedia.org/wiki/Exemestane)",
+"Reactome | Metabolism of steroid hormones",
+"[http://reactome.org/content/detail/R-HSA-196071](http://reactome.org/content/detail/R-HSA-196071)",
+"Reactome | ESR-mediated signaling",
+"[https://reactome.org/content/detail/R-HSA-8939211](https://reactome.org/content/detail/R-HSA-8939211)",
+"KEGG PATHWAY: Estrogen signaling pathway - Homo sapiens (human)",
+"[https://www.kegg.jp/pathway/hsa04915](https://www.kegg.jp/pathway/hsa04915)",
+"The role of amphiregulin in exemestane-resistant breast cancer cells: evidence of an autocrine loop -",
+"PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/18381432/](https://pubmed.ncbi.nlm.nih.gov/18381432/)",
+"Case Report: Fluzoparib combined Exemestane in gBRCA2-mutated HR+/HER2- advanced breast cancer -",
+"PubMed",
+"[https://pubmed.ncbi.nlm.nih.gov/41142243/](https://pubmed.ncbi.nlm.nih.gov/41142243/)"
+],
+"notes": "Deep-research output indicates exemestane activity is centered on ER/estrogen dependence (HR+ disease) and is ineffective in TNBC due to absent estrogen signaling. Resistance is described via upregulation of bypass growth/survival pathways (EGFR/HER2-MAPK, PI3K/AKT/mTOR), inflammatory signaling (IL-6/STAT3, TNF/NF-κB), EMT programs, and via ESR1 mutations; loss of ER signaling or reduced apoptosis (e.g., p53 loss) would blunt effect. Contraindications described include premenopausal status without ovarian suppression and pregnancy/nursing."
+}
