@@ -1,0 +1,791 @@
+{
+  "drug_name": "Palbociclib",
+  "cancer_indication": "Hormone receptor–positive (HR+), HER2-negative advanced or metastatic breast cancer, in combination with endocrine therapy (aromatase inhibitor or fulvestrant).",
+  "drug_category": "CDK4/6",
+  "drug_class": "CDK4/6 inhibitor",
+  "moa": "Palbociclib is an oral, selective inhibitor of CDK4 and CDK6 that blocks the G1–S cell-cycle transition by preventing RB phosphorylation and thereby keeping E2F transcription factors inactive. In ER+ breast cancer cells, palbociclib combined with endocrine therapy produces greater RB dephosphorylation and suppression of E2F signaling than either agent alone, leading to durable G1 arrest and often cellular senescence. Cancers lacking RB are intrinsically resistant because RB loss abolishes palbociclib’s mechanism of action.",
+  "chembl_id": "CHEMBL189963",
+  "drugbank_id": "DB09073",
+  "synonyms": [
+    "Ibrance",
+    "PD-0332991",
+    "PD-332991",
+    "PD0332991",
+    "PD332991"
+  ],
+  "primary_targets": [
+    "CDK4",
+    "CDK6"
+  ],
+  "pathway_sets": [
+    "REACTOME_CELL_CYCLE",
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_G2M_CHECKPOINT",
+    "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER",
+    "REACTOME_FGFR_LIGAND_BINDING_AND_ACTIVATION",
+    "KEGG_MAPK_SIGNALING_PATHWAY",
+    "HALLMARK_MYC_TARGETS_V1",
+    "GOBP_CELLULAR_SENESCENCE",
+    "HALLMARK_MTORC1_SIGNALING"
+  ],
+  "pathway_sets_annotations": {
+    "REACTOME_CELL_CYCLE": {
+      "description": "Core pathway controlling cell-cycle progression, including the G1/S transition driven by cyclin D–CDK4/6 activity and RB phosphorylation.",
+      "interpretation": "Cell-cycle dysregulation drives proliferation in HR+ breast cancer; dependence on CDK4/6–RB–E2F axis underlies clinical utility of CDK4/6 inhibition.",
+      "Administration_of_palbociclib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High cell-cycle activity in HR+/HER2− breast cancer often reflects Cyclin D–CDK4/6–RB axis dependence; with intact RB, CDK4/6 blockade suppresses G1→S entry and controls disease.",
+                  "FDA label (IBRANCE): https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/212436s008lbl.pdf; NCT01740427; PMID:27959613"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: High proliferation can still be CDK4/6-independent if RB1 is lost/mutated or if CCNE1/CDK2 bypass is active, preventing durable G1 arrest with palbociclib.",
+                  "PMID:29236940; PMID:30511015; PMID:32307447"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: A low-proliferation baseline may still benefit if the tumor is poised to re-enter cycle under endocrine pressure; adding CDK4/6 inhibition can prevent re-entry and maintain control (more cytostatic than cytotoxic).",
+                  "FDA label (IBRANCE): https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/212436s008lbl.pdf; PMID:27959613"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: If baseline cycling is already low because growth is driven by non–cell-cycle-limited programs (or near-quiescence), a G1-arrest drug can add little incremental effect.",
+                  "FDA label (IBRANCE): https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/212436s008lbl.pdf"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: On-target CDK4/6 inhibition reduces RB phosphorylation and downstream cycling signatures, producing durable cytostatic control in RB-intact disease.",
+                  "FDA label (IBRANCE): https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/212436s008lbl.pdf; PMID:27959613"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Early on-target suppression may occur but tumor persists via drug-tolerant states and later escapes (e.g., re-wiring into alternative CDK usage or RTK signaling), yielding clinical resistance despite transient pathway drop.",
+                  "PMID:32307447; PMID:29236940"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (as a direct effect): Palbociclib cannot directly increase cell-cycle progression while remaining effective; an ‘Up’ post-treatment cell-cycle state implies failure of CDK4/6 pathway suppression.",
+                  "FDA label (IBRANCE): https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/212436s008lbl.pdf"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Post-treatment rebound/maintenance of cycling reflects bypass (RB1 loss, CCNE1/CDK2, RTK→MAPK/PI3K), a hallmark of acquired CDK4/6 inhibitor resistance.",
+                  "PMID:29236940; PMID:30511015; PMID:32307447"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_E2F_TARGETS": {
+      "description": "E2F transcriptional program supporting S-phase entry and DNA replication machinery.",
+      "interpretation": "E2F-driven transcription reflects proliferative state and RB pathway control in ER+ tumors; this proliferative program is central to tumor growth biology.",
+      "Administration_of_palbociclib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Elevated E2F targets often indicate an active RB–E2F proliferative circuit; if RB is functional, CDK4/6 inhibition suppresses pRB and reduces E2F-driven transcription.",
+                  "FDA label (IBRANCE): https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/212436s008lbl.pdf; PMID:27959613"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: High E2F targets driven by RB1 loss or CDK2 hyperactivity will not be shut down by CDK4/6 inhibition, predicting resistance.",
+                  "PMID:29236940; PMID:30511015; PMID:32307447"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Low E2F transcription may still allow benefit if residual cycling remains RB-dependent and combination endocrine therapy prevents adaptive re-entry into the E2F program.",
+                  "PMID:27959613"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: A weak E2F program suggests limited reliance on the CDK4/6–RB–E2F axis, reducing palbociclib impact.",
+                  "FDA label (IBRANCE): https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/212436s008lbl.pdf"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: On-target palbociclib lowers RB phosphorylation, suppressing E2F target expression as part of G1 arrest and clinical disease control.",
+                  "FDA label (IBRANCE): https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/212436s008lbl.pdf"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: E2F targets can drop with cytostasis yet resistance emerges via survival signaling and persistence (no cell death), enabling eventual regrowth despite continued CDK4/6 blockade.",
+                  "PMID:32307447"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (for response): Increased E2F targets after treatment indicates ongoing RB–E2F output and failure of effective CDK4/6 pathway suppression.",
+                  "FDA label (IBRANCE): https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/212436s008lbl.pdf"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Rebound E2F targets reflects bypass through CDK2/CCNE1 or RTK→MAPK signaling, consistent with acquired resistance.",
+                  "PMID:32307447; PMID:30511015"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_G2M_CHECKPOINT": {
+      "description": "Gene set controlling mitotic entry and G2/M progression, including mitotic regulators such as PLK1, Aurora kinases, and WEE1 as described in resistant contexts.",
+      "interpretation": "Activation of late cell-cycle programs can support continued proliferation and cell-cycle escape programs in breast cancer when upstream checkpoints are constrained.",
+      "Administration_of_palbociclib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High G2/M checkpoint signature is a surrogate for high cycling; if upstream entry is CDK4/6–RB dependent, blocking G1 reduces the flow into S/G2/M and improves response.",
+                  "PMID:27959613; FDA label (IBRANCE): https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/212436s008lbl.pdf"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: A high G2/M program can persist if the tumor uses CDK4/6-independent drivers (RB1 loss, CDK2/CCNE), making G1 blockade insufficient.",
+                  "PMID:29236940; PMID:32307447"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Low G2/M may still respond if residual proliferation is RB-dependent and palbociclib prevents re-entry into cycling under endocrine pressure.",
+                  "PMID:27959613"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low G2/M suggests minimal active cycling; CDK4/6 blockade is less impactful when the tumor is already slow-cycling.",
+                  "FDA label (IBRANCE): https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/212436s008lbl.pdf"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: By enforcing G1 arrest, palbociclib indirectly reduces downstream S/G2/M transcriptional programs, consistent with response.",
+                  "FDA label (IBRANCE): https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/212436s008lbl.pdf"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: G2/M signatures may fall transiently with cytostasis but resistance can still develop through persistence and later pathway reactivation.",
+                  "PMID:32307447"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (for benefit): Increased G2/M checkpoint activity after treatment implies ongoing cycling and lack of effective G1 blockade.",
+                  "FDA label (IBRANCE): https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/212436s008lbl.pdf"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Maintenance/increase of G2/M activity post-therapy indicates cell-cycle escape (e.g., EGFR/MAPK re-wiring, CDK2 up), consistent with resistance.",
+                  "PMID:32307447"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER": {
+      "description": "Survival and growth signaling axis encompassing PI3K/AKT and downstream mTOR-related outputs.",
+      "interpretation": "PI3K/AKT/mTOR signaling provides pro-survival and proliferative inputs that can reduce reliance on cell-cycle checkpoint control in breast cancer.",
+      "Administration_of_palbociclib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some ER+ tumors have PI3K-driven Cyclin D1 expression yet remain RB-dependent; they can still show benefit from CDK4/6 blockade despite PI3K activation.",
+                  "Reactome:R-HSA-2219528; PMID:27959613"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Up PI3K/AKT/mTOR signaling supports survival and can facilitate CDK2/CCNE bypass and endocrine resistance, reducing CDK4/6 inhibitor efficacy.",
+                  "PMID:32307447; PMID:36042494"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Lower baseline PI3K survival signaling (with intact RB) can make tumors more reliant on canonical Cyclin D–CDK4/6 cycling, improving palbociclib benefit.",
+                  "PMID:27959613"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: If PI3K is low but other mitogenic circuits dominate (e.g., MAPK/FGFR), CDK4/6 blockade may be bypassed and efficacy reduced.",
+                  "PMID:32307447; PMID:30914635"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare (indirect): Palbociclib does not directly inhibit PI3K, but effective growth arrest and reduced RTK signaling output can secondarily reduce PI3K/AKT pathway activity in sensitive tumors.",
+                  "FDA label (IBRANCE): https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/212436s008lbl.pdf"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: A drop in PI3K/AKT signals with persistent resistance would imply alternative non-PI3K escape routes (e.g., MAPK/CDK2), despite reduced PI3K readouts.",
+                  "PMID:32307447"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: AKT1 activity can be required for a full palbociclib-induced senescence program; in select contexts, adaptive AKT signaling may couple to senescence/SASP rather than proliferation.",
+                  "PMID:35165227; PMID:33356791"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Therapy-induced RTK/PI3K/mTOR upshift is a common survival adaptation; S6K1/mTORC1–MYC axis and kinome re-wiring support escape from CDK4/6 blockade.",
+                  "PMID:32307447; PMID:36042494"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_FGFR_LIGAND_BINDING_AND_ACTIVATION": {
+      "description": "FGFR pathway signaling that promotes proliferation and cyclin D-related growth programs (including FGFR1-associated signaling described in resistant models).",
+      "interpretation": "Growth-factor receptor signaling can sustain breast tumor proliferation by promoting cyclin D-linked programs and growth signaling.",
+      "Administration_of_palbociclib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: FGFR activity can increase Cyclin D/CDK4/6 drive; if RB remains intact and FGFR signaling is not strong enough to activate CDK2 escape, palbociclib can still arrest cells.",
+                  "Reactome:R-HSA-190242; PMID:30914635"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: FGFR1 amplification/activation mediates resistance to endocrine therapy ± CDK4/6 inhibitors (including palbociclib), and can be reversed by FGFR inhibition in models.",
+                  "PMID:30914635; DOI:10.1038/s41467-019-09068-2; PMID:34831231; DOI:10.3390/cells10113008"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low FGFR drive reduces an RTK-based bypass route, increasing the chance that proliferation is CDK4/6–RB dependent and thus palbociclib-sensitive.",
+                  "PMID:27959613"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Even without FGFR activation, resistance can arise from RB1 loss or other bypass (CDK2/CCNE), so low FGFR does not guarantee sensitivity.",
+                  "PMID:29236940; PMID:32307447"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare (indirect): Palbociclib does not directly inhibit FGFR signaling; a ‘Down’ state post-therapy would more likely reflect reduced ligand/RTK output secondary to growth arrest in responders.",
+                  "PMID:30914635"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Suppressed FGFR signaling with resistance suggests alternative dominant escape circuits (e.g., EGFR/MAPK or CDK2), rather than FGFR-mediated resistance.",
+                  "PMID:32307447"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Transient FGFR upregulation could occur as a stress response, but durable benefit would require that FGFR signaling does not successfully reactivate cycling (RB remains dominant).",
+                  "PMID:30914635"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Treatment can select for/induce RTK escape; FGFR signaling is a validated mechanism of CDK4/6 inhibitor resistance in ER+ breast cancer models.",
+                  "PMID:30914635; PMID:34831231"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_MAPK_SIGNALING_PATHWAY": {
+      "description": "Growth-factor/MAPK signaling cascade (RAS–RAF–MEK–ERK) that increases cyclin D and supports proliferation, as described for MAPK cascade activity in resistant cells.",
+      "interpretation": "MAPK signaling is a major proliferative pathway in breast cancer and can support tumor growth through mitogenic transcription and cyclin regulation.",
+      "Administration_of_palbociclib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: MAPK up can drive Cyclin D1 and proliferation that still funnels through CDK4/6–RB; if RB remains intact and CDK2 bypass is limited, palbociclib may still arrest growth.",
+                  "KEGG:hsa04010; PMID:27959613"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: MAPK/EGFR pathway activation is implicated in palbociclib resistance via kinome re-wiring and induction of CDK2/CCNE programs.",
+                  "PMID:32307447"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low MAPK mitogenic drive reduces an important bypass route, increasing reliance on CDK4/6-mediated G1 progression.",
+                  "PMID:27959613"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Resistance can still occur through MAPK-independent mechanisms (RB1 loss, CCNE1/CDK2, PI3K/mTOR), so low MAPK does not ensure sensitivity.",
+                  "PMID:29236940; PMID:36042494"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare (indirect): In responders, reduced growth factor signaling output and cycling can secondarily reduce MAPK pathway readouts, though palbociclib is not a MAPK inhibitor.",
+                  "PMID:32307447"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Suppressed MAPK with resistance implies other escape circuits dominate (e.g., mTORC1/S6K1–MYC or RB loss).",
+                  "PMID:36042494; PMID:29236940"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: A transient compensatory MAPK rise could occur, but continued sensitivity would require that MAPK does not restore CDK2/CCNE-driven cycling.",
+                  "PMID:32307447"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Acquired resistance to palbociclib is associated with increased EGFR/MAPK signaling and broader kinase-network re-wiring.",
+                  "PMID:32307447"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_MYC_TARGETS_V1": {
+      "description": "c-MYC-associated transcriptional program (MYC target gene enrichment described in less responsive tumors).",
+      "interpretation": "MYC-driven transcription is associated with aggressive proliferative states in breast cancer biology, particularly in less responsive tumor contexts described.",
+      "Administration_of_palbociclib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: High MYC targets can reflect strong proliferative drive that still requires CDK4/6–RB gating; if RB is intact and CDK2 bypass is not established, palbociclib may still enforce arrest.",
+                  "PMID:27959613"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: mTORC1/S6K1-driven MYC activation (and MYC-amplified states) can promote resistance and escape from CDK4/6 blockade.",
+                  "PMID:36042494"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Lower MYC transcriptional output may reduce aggressive bypass biology and align with RB-dependent, endocrine-responsive disease where CDK4/6 inhibition is beneficial.",
+                  "PMID:27959613"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Even with low MYC, resistance may arise via RB loss or RTK/MAPK-driven cycling programs that do not require MYC-high states.",
+                  "PMID:29236940; PMID:32307447"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare (indirect): Effective growth arrest can reduce MYC target expression downstream of halted cycling and reduced mitogenic signaling in responders.",
+                  "PMID:27959613"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: MYC targets may decrease during transient cytostasis, yet resistant clones can persist and later reactivate MYC programs via alternative signaling.",
+                  "PMID:32307447"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (for durable benefit): Sustained MYC target upregulation generally restores proliferation and metabolic programs, opposing effective CDK4/6-induced arrest.",
+                  "PMID:36042494"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: MYC reactivation is a plausible downstream consequence of mTORC1/S6K1 or RTK signaling during acquired CDK4/6 inhibitor resistance.",
+                  "PMID:36042494; PMID:32307447"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "GOBP_CELLULAR_SENESCENCE": {
+      "description": "Cellular senescence program characterized by senescence-like arrest and induction of senescence markers (e.g., p21Cip1 and p16INK4A described).",
+      "interpretation": "Senescence-like arrest represents a durable antiproliferative state relevant to therapeutic growth control in HR+ breast cancer models.",
+      "Administration_of_palbociclib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: A pre-existing senescence/stress program can limit proliferative capacity; CDK4/6 inhibition can further lock cells into irreversible arrest and stabilize disease.",
+                  "GO:0090398 (AmiGO): https://amigo.geneontology.org/amigo/term/GO:0090398; PMID:33356791"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Senescent-like tumor states can be drug-tolerant and persist (SASP-driven microenvironmental support), allowing eventual progression despite cytostasis.",
+                  "PMID:33356791"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low baseline senescence (more actively cycling) can mean more immediate on-target growth arrest when CDK4/6 is blocked, producing clinical benefit in RB-intact disease.",
+                  "FDA label (IBRANCE): https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/212436s008lbl.pdf"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Lack of senescence does not guarantee sensitivity; resistance can still occur via RB loss or mitogenic re-wiring that maintains proliferation under CDK4/6 blockade.",
+                  "PMID:29236940; PMID:32307447"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Palbociclib can induce a senescence program; sustained mTORC1 activity and AKT1 signaling have been implicated in establishing aspects of CDK4/6 inhibitor–induced senescence.",
+                  "PMID:33356791; PMID:35165227"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Therapy-induced senescence can also be a persistence mechanism (cytostatic tolerance) enabling survival and eventual outgrowth of resistant clones.",
+                  "PMID:33356791; PMID:32307447"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: A strong response to CDK4/6 blockade often increases senescence markers; a ‘Down’ senescence state is less consistent with durable CDK4/6-induced arrest biology.",
+                  "PMID:33356791"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Failure to engage senescence/irreversible arrest implies mainly reversible quiescence or ongoing cycling—both compatible with resistance and later progression.",
+                  "PMID:32307447"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_MTORC1_SIGNALING": {
+      "description": "mTORC1-related signaling outputs; mTOR pathway components and mTORC1 targets were described as activated in resistant models.",
+      "interpretation": "mTOR signaling supports growth and metabolic programs that can maintain tumor cell fitness and proliferative capacity in breast cancer.",
+      "Administration_of_palbociclib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some tumors may still be RB-dependent despite elevated mTORC1 (pro-growth) signaling; CDK4/6 blockade can arrest proliferation even when mTORC1 is high.",
+                  "PMID:27959613"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: High mTORC1/S6K1 signaling can support resistance (metabolic survival + MYC output) and is linked to reduced CDK4/6 inhibitor efficacy in ER+ models.",
+                  "PMID:36042494; PMID:32307447"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Lower baseline mTORC1 survival signaling may align with endocrine-responsive, RB-intact disease where CDK4/6 inhibition is effective.",
+                  "PMID:27959613"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Resistance can arise via RTK/MAPK or RB loss even if mTORC1 is low, so low mTORC1 is not sufficient to guarantee sensitivity.",
+                  "PMID:29236940; PMID:32307447"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (context-dependent): Palbociclib-induced senescence can require sustained mTORC1 activity; in some settings, mTORC1 supports the senescence phenotype rather than proliferation.",
+                  "PMID:33356791"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: mTORC1/S6K1 activation can also drive escape by promoting growth programs and MYC output under CDK4/6 blockade.",
+                  "PMID:36042494"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare (indirect): Palbociclib does not directly inhibit mTORC1, but responders may show reduced mTORC1 readouts secondary to growth arrest and reduced upstream mitogenic signaling.",
+                  "PMID:32307447"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: If mTORC1 is suppressed yet resistance persists, escape likely relies on MAPK/EGFR or cell-cycle bypass circuits rather than mTORC1-driven survival.",
+                  "PMID:32307447"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "CCND1",
+    "RB1"
+  ],
+  "sensitivity_genes_down": [
+    "CCNE1",
+    "CDK2",
+    "CDKN2A"
+  ],
+  "resistance_genes_up": [
+    "AURKB",
+    "CCNE1",
+    "CDK2",
+    "CDK6",
+    "FGFR1",
+    "KRAS",
+    "MTOR",
+    "MYC",
+    "PDPK1",
+    "PLK1",
+    "WEE1"
+  ],
+  "resistance_genes_down": [
+    "RB1"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "CCND1",
+      "interpretation": "High Cyclin D1 was described as correlating with sensitivity, consistent with reliance on Cyclin D–CDK4/6 activity for G1–S progression."
+    },
+    {
+      "gene": "RB1",
+      "interpretation": "Only RB-proficient cancers were described as responding; intact RB enables palbociclib to suppress E2F signaling via RB hypophosphorylation."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [
+    {
+      "gene": "CCNE1",
+      "interpretation": "High Cyclin E1 was described as a negative predictor of response; conversely, low cyclin E was described as a biomarker of sensitivity."
+    },
+    {
+      "gene": "CDK2",
+      "interpretation": "High CDK2 (often coupled with Cyclin E) was described as a bypass mechanism for CDK4/6 blockade; lower CDK2 activity aligns with sensitivity."
+    },
+    {
+      "gene": "CDKN2A",
+      "interpretation": "Low p16 was described as correlating with sensitivity in the biomarker notes."
+    }
+  ],
+  "resistance_genes_up_annotations": [
+    {
+      "gene": "CCNE1",
+      "interpretation": "High Cyclin E1 was described as a negative predictor and as enabling bypass of CDK4/6 blockade with CDK2."
+    },
+    {
+      "gene": "CDK2",
+      "interpretation": "High CDK2 was described as a bypass driver of resistance by allowing cell-cycle progression despite CDK4/6 inhibition."
+    },
+    {
+      "gene": "MYC",
+      "interpretation": "High c-MYC was described as correlating with poor palbociclib response and as part of a mechanism elevating CDK6 via the c-MYC/miR-29b-3p/CDK6 axis."
+    },
+    {
+      "gene": "CDK6",
+      "interpretation": "CDK6 upregulation was described in the c-MYC→miR-29b-3p→CDK6 axis as inhibiting palbociclib-induced G1 arrest."
+    },
+    {
+      "gene": "FGFR1",
+      "interpretation": "FGFR1 upregulation/amplification was described in resistant breast cancers and linked to proliferative signaling that mediates palbociclib escape."
+    },
+    {
+      "gene": "KRAS",
+      "interpretation": "KRAS was described as upregulated in resistant lines within the RAS–MAPK cascade, supporting proliferation and undermining CDK4/6 dependence."
+    },
+    {
+      "gene": "PDPK1",
+      "interpretation": "PDK1 was described as among PI3K pathway activators upregulated in resistant lines, aligning with increased growth/survival signaling."
+    },
+    {
+      "gene": "MTOR",
+      "interpretation": "mTOR was described as among pathway components upregulated/activated in resistant models, supporting compensatory growth signaling."
+    },
+    {
+      "gene": "PLK1",
+      "interpretation": "PLK1 was described as a G2/M entry regulator upregulated in resistant cells, enabling bypass of the G1/S block."
+    },
+    {
+      "gene": "AURKB",
+      "interpretation": "AURKB was described among mitotic regulators upregulated in resistant cells, contributing to G2/M-related escape programs."
+    },
+    {
+      "gene": "WEE1",
+      "interpretation": "WEE1 was described among G2/M entry regulators upregulated in resistant cells, consistent with mitotic program reactivation during resistance."
+    }
+  ],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "RB1",
+      "interpretation": "RB loss was described as causing intrinsic resistance because the drug’s mechanism requires RB-mediated repression of E2F transcription."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Palbociclib|inhibits|CDK4",
+    "Palbociclib|inhibits|CDK6",
+    "RB1_loss|confers_resistance_to|Palbociclib",
+    "CCNE1_high|confers_resistance_to|Palbociclib",
+    "CDK2_high|confers_resistance_to|Palbociclib",
+    "FGFR1_upregulation|confers_resistance_to|Palbociclib",
+    "MYC_high|confers_resistance_to|Palbociclib",
+    "CDK6_upregulation|confers_resistance_to|Palbociclib"
+  ],
+  "Breast_cancer_subtype_information": {
+    "HR+ (luminal A/B) / HR+/HER2−": "HR+ (luminal A/B) tumors were described as most sensitive to palbociclib because they usually retain functional RB; palbociclib is FDA-approved for HR+/HER2− advanced or metastatic disease with endocrine therapy.",
+    "HER2+ (with HR+)": "Subtype data were described as limited; some studies suggest potential benefit in HR+/HER2+ contexts, but HER2 signaling may confer resistance without concurrent ER blockade, and palbociclib is not routinely approved for HER2+ disease unless HR+.",
+    "Triple-negative/basal-like": "Triple-negative/basal-like tumors were described as often RB-deficient and MYC-driven with low sensitivity; RB loss and MYC upregulation were described as hallmarks of intrinsic resistance.",
+    "BRCA1/2-mutated or HRD+": "Described as often overlapping with basal-like phenotype; no clear evidence was described that HRD directly alters palbociclib sensitivity, and clinical use in BRCA-mutant cases was described as not established.",
+    "Luminal A vs B": "Both luminal A and luminal B were described as ER+ and responsive to CDK4/6 inhibition in trials; luminal B may have higher Cyclin E/CDK2 expression potentially reducing response.",
+    "Endocrine-resistant/ESR1-mutant": "Palbociclib was described as remaining effective in ESR1-mutant and wild-type cohorts; PALOMA-3 showed PFS benefit regardless of ESR1 mutation status."
+  },
+  "citations": [
+    "[https://go.drugbank.com/drugs/DB09073](https://go.drugbank.com/drugs/DB09073)",
+    "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207103s021,212436s009lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2025/207103s021,212436s009lbl.pdf)",
+    "[https://en.wikipedia.org/wiki/Palbociclib](https://en.wikipedia.org/wiki/Palbociclib)",
+    "[https://pubmed.ncbi.nlm.nih.gov/32934206/](https://pubmed.ncbi.nlm.nih.gov/32934206/)",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC4128689/](https://pmc.ncbi.nlm.nih.gov/articles/PMC4128689/)",
+    "[https://www.nature.com/articles/s41598-025-11052-4?error=cookies_not_supported&code=eb0b53f1-6789-47c0-b244-aa2bfa5d76f3](https://www.nature.com/articles/s41598-025-11052-4?error=cookies_not_supported&code=eb0b53f1-6789-47c0-b244-aa2bfa5d76f3)"
+  ],
+  "notes": "Pathway identifiers in the source material include Reactome R-HSA IDs, GO:0090398 for senescence, and MYC targets referenced as HALLMARK_MYC_TARGETS_V2; the requested <PATHWAY_NAME> list was used as the output keyset without adding new pathway IDs beyond what was described. Source files:  "
+}

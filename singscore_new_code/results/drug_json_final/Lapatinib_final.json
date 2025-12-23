@@ -1,0 +1,1225 @@
+{
+  "drug_name": "Lapatinib",
+  "cancer_indication": "HER2-positive metastatic breast cancer in combination regimens (with capecitabine after progression on anthracycline, taxane, and trastuzumab therapy; or with letrozole in postmenopausal patients whose tumors co-express hormone receptors).",
+  "drug_category": "HER2-targeted",
+  "drug_class": "Dual EGFR/HER2 tyrosine kinase inhibitor",
+  "moa": "Lapatinib is an oral small-molecule tyrosine kinase inhibitor that reversibly inhibits EGFR (ERBB1) and HER2 (ERBB2) by binding the intracellular ATP-binding site, preventing autophosphorylation and downstream signaling. In HER2-driven breast cancer, this interrupts key oncogenic cascades including PI3K–AKT–mTOR and MAPK signaling, leading to G1 cell-cycle arrest and reduced proliferation, with apoptosis in some contexts. In ER+/HER2+ tumors, HER2 and estrogen receptor pathways can cross-talk, and HER2 blockade can shift reliance toward ER signaling, supporting combination with endocrine therapy.",
+  "chembl_id": "CHEMBL554",
+  "drugbank_id": "DB01259",
+  "synonyms": [
+    "Tykerb",
+    "Tyverb",
+    "GW572016",
+    "GW-572016",
+    "GSK-572016",
+    "FMM"
+  ],
+  "primary_targets": [
+    "ERBB2",
+    "EGFR"
+  ],
+  "pathway_sets": [
+    "KEGG_ERBB_SIGNALING_PATHWAY",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+    "NAGASHIMA_NRG1_SIGNALING_UP",
+    "REACTOME_GRB7_EVENTS_IN_ERBB2_SIGNALING",
+    "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+    "REACTOME_SIGNALING_BY_MET",
+    "REACTOME_FOXO_MEDIATED_TRANSCRIPTION",
+    "BIOCARTA_G1_PATHWAY",
+    "HALLMARK_OXIDATIVE_PHOSPHORYLATION",
+    "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+    "BIOCARTA_PTEN_PATHWAY",
+    "HALLMARK_APOPTOSIS"
+  ],
+  "pathway_sets_annotations": {
+    "KEGG_ERBB_SIGNALING_PATHWAY": {
+      "description": "Growth factor receptor signaling through ERBB family receptors (including EGFR and HER2) that activates downstream MAPK and PI3K pathway outputs controlling proliferation and survival.",
+      "interpretation": "ERBB signaling is a dominant oncogenic driver in HER2-amplified breast cancers and strongly influences tumor growth and therapeutic response to HER2-directed strategies.",
+      "Administration_of_lapatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: HER2-amplified/ERBB-driven breast cancers show high ERBB signaling “oncogene addiction,” making dual EGFR/HER2 TKI blockade effective.",
+                  "PMID:17192538; NCT00078572; PMID:18283035; FDA label: TYKERB (lapatinib) NDA 022059; DrugBank:DB01259; ChEMBL:CHEMBL554; KEGG:hsa04012; MSigDB:KEGG_ERBB_SIGNALING_PATHWAY (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: ERBB signaling can be high yet ineffective inhibition occurs when downstream PI3K-pathway lesions (e.g., low PTEN/PIK3CA mutation) or bypass RTKs blunt dependence on ERBB kinase output.",
+                  "PMID:29110152; PMID:17192538; PMID:24044505; Reactome: R-HSA-6806834 (bypass concept)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some HER2-nonamplified tumors with meaningful EGFR dependency (subset TNBC/basal-like) could show ERBB pathway activity not captured as “Up” yet still respond to EGFR/HER2 inhibition.",
+                  "PMID:18283035; DrugBank:DB01259; FDA label: NDA 022059"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: If ERBB signaling is low (HER2− / EGFR-low), there is little target engagement and lapatinib has minimal activity in HER2-negative breast cancer.",
+                  "PMID:18283035; FDA label: NDA 022059"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Lapatinib directly inhibits EGFR/HER2 kinase activity, reducing ERBB pathway signaling and slowing tumor growth in HER2+ breast cancer.",
+                  "PMID:17192538; FDA label: NDA 022059; DrugBank:DB01259"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Partial ERBB signaling reduction can occur, yet tumors persist via parallel drivers (PI3K lesions, MET/NRG1-HER3 axis) causing clinical resistance despite pathway “downshift.”",
+                  "PMID:29110152; PMID:24044505; PMID:23229346"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: A true increase in functional ERBB kinase signaling is inconsistent with effective on-target EGFR/HER2 inhibition producing sensitivity.",
+                  "DrugBank:DB01259; FDA label: NDA 022059"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (adaptive rebound): Non-responders can show ERBB network rebound (e.g., HER3 ligand-driven reactivation) that restores downstream signaling and resistance.",
+                  "PMID:24044505; PMID:25691057; PMID:17192538"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+      "description": "Core survival and growth signaling axis involving PI3K activation, AKT signaling, and mTOR-driven translational and metabolic programs.",
+      "interpretation": "This pathway is a major downstream effector of HER2 signaling in breast cancer and supports tumor cell survival, proliferation, and adaptation under targeted therapy pressure.",
+      "Administration_of_lapatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: When PI3K/AKT/mTOR activation is primarily ERBB2-driven (no strong downstream PI3K lesions), upstream HER2 blockade can collapse PI3K signaling and yield response.",
+                  "PMID:17192538; DrugBank:DB01259; MSigDB:HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: PI3K-pathway activation via low PTEN and/or PIK3CA mutations predicts resistance to anti-HER2 therapy without chemotherapy, including lapatinib.",
+                  "PMID:29110152; PMID:17192538"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Tumors with modest PI3K signature but strong ERBB→MAPK dependence may still respond to lapatinib via ERBB blockade and proliferation arrest.",
+                  "KEGG:hsa04012; PMID:17192538"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low PI3K signaling plus low ERBB dependence suggests alternative drivers; lapatinib is unlikely to be effective.",
+                  "PMID:18283035; FDA label: NDA 022059"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: In HER2-driven cells, lapatinib reduces downstream PI3K/AKT signaling, contributing to growth arrest and apoptosis.",
+                  "PMID:17192538; PMID:17308062; DrugBank:DB01259"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Bulk PI3K signature may fall, yet resistant clones persist through pathway re-wiring (e.g., mTOR/RTK feedback or parallel survival programs).",
+                  "PMID:29110152; PMID:24216290"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Sustained PI3K/AKT upregulation generally counteracts lapatinib’s intended downstream suppression in sensitive disease.",
+                  "DrugBank:DB01259; FDA label: NDA 022059"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Adaptive signaling (HER3 ligands, IGF axis, MET) can re-activate PI3K/AKT/mTOR despite ERBB2 inhibition, driving resistance.",
+                  "PMID:24044505; PMID:29110152; Reactome:R-HSA-6806834"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_E2F_TARGETS": {
+      "description": "Transcriptional program driven by E2F factors that promotes DNA replication and S-phase entry, reflecting active G1/S cell-cycle progression.",
+      "interpretation": "Elevated E2F-target activity marks proliferative breast cancer states and is tightly linked to growth control mechanisms that determine tumor expansion and treatment responsiveness.",
+      "Administration_of_lapatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Highly proliferative HER2-driven tumors (high E2F targets) are often susceptible to HER2 blockade–induced G1 arrest.",
+                  "PMID:23907131; PMID:17192538; MSigDB:HALLMARK_E2F_TARGETS"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: If E2F activation is driven by RB-pathway disruption or cyclin/CDK alterations independent of ERBB signaling, ERBB inhibition may not suppress proliferation.",
+                  "PMID:23907131; PMID:30305055"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some HER2-driven tumors are not strongly cycling at sampling but remain ERBB2-addicted and can still respond to kinase blockade.",
+                  "PMID:17192538; PMID:18283035"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low E2F/proliferation signatures can reflect alternative biology (quiescent, non-ERBB driven) with poor TKI responsiveness.",
+                  "PMID:18283035"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Lapatinib induces p27-dependent G1 arrest and suppresses cell-cycle transcriptional programs including E2F targets in HER2+ breast cancer cells.",
+                  "PMID:23907131; PMID:17192538"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Resistant cells can show partial E2F suppression yet survive via anti-apoptotic or metabolic rewiring, yielding clinical resistance.",
+                  "PMID:30305055; PMID:39403185"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Persistent/upregulated E2F targets imply continued proliferation, which contradicts lapatinib sensitivity.",
+                  "PMID:23907131"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Acquired resistance can restore cell-cycle progression and E2F programs through bypass signaling and checkpoint escape.",
+                  "PMID:26883193; PMID:24044505"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+      "description": "Early transcriptional response program induced by estrogen receptor signaling that regulates hormone-responsive proliferation and survival genes.",
+      "interpretation": "Estrogen signaling is a key lineage driver in ER-positive breast cancer and can interact with HER2 signaling in ER+/HER2+ disease, shaping tumor biology and treatment outcomes.",
+      "Administration_of_lapatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (ER+/HER2+ context): In HR+/HER2+ metastatic breast cancer, ER pathway activity supports benefit from combined endocrine therapy + lapatinib.",
+                  "PMID:19786658; NCT00073528; FDA label: NDA 022059; MSigDB:HALLMARK_ESTROGEN_RESPONSE_EARLY"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Strong ER transcriptional dominance with relatively lower HER2 dependence can reduce single-agent lapatinib efficacy (needs co-targeting with endocrine therapy).",
+                  "PMID:19786658; PMID:18283035"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low ER signaling (often HER2-enriched biology) aligns with higher HER2 pathway dependence and better response to HER2 kinase inhibition.",
+                  "PMID:17192538; PMID:18283035"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: If ER signaling is low because the tumor is also HER2-negative (immune/basal-like without EGFR dependence), lapatinib is unlikely to work.",
+                  "PMID:18283035"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare (combination-dependent): HER2 blockade can shift tumors toward ER dependence; with concurrent endocrine therapy this adaptive ER “unmasking” can still yield sensitivity.",
+                  "PMID:19786658; NCT00073528"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Adaptive ER signaling can compensate for HER2 inhibition and drive resistance if ER is not simultaneously suppressed.",
+                  "PMID:19786658"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: In responders, proliferation arrest and reduced growth-factor crosstalk can dampen ER-driven transcription in bulk tumor profiles.",
+                  "PMID:19786658; PMID:17192538"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: ER-response may fall yet tumors persist via non-ER, non-ERBB bypass programs (e.g., EMT/MET/PI3K lesions).",
+                  "PMID:26883193; PMID:29110152"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "NAGASHIMA_NRG1_SIGNALING_UP": {
+      "description": "Signature reflecting neuregulin-1 (NRG1/heregulin) signaling activity, associated with HER3- and EGFR-linked downstream pathway activation.",
+      "interpretation": "NRG1-driven signaling can provide growth-factor ligand input into ERBB network activity in breast cancer models, affecting pathway utilization and adaptive signaling states.",
+      "Administration_of_lapatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: If heregulin/ERBB3 signaling is HER2-dependent (HER2-HER3 dimers), HER2 kinase inhibition can still collapse the axis and induce response.",
+                  "Reactome:R-HSA-1306955 (ERBB2 complex context); MSigDB:NAGASHIMA_NRG1_SIGNALING_UP"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: A heregulin (NRG1)–EGFR/HER3 autocrine loop is a documented mechanism of acquired lapatinib resistance in HER2+ breast cancer models.",
+                  "PMID:24044505; PMID:25691057; MSigDB:NAGASHIMA_NRG1_SIGNALING_UP"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low NRG1/HER3-ligand drive reduces a major bypass route, increasing reliance on HER2 kinase signaling and sensitivity to lapatinib.",
+                  "PMID:17192538; PMID:24044505"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Even without NRG1 drive, resistance can arise via other bypass RTKs (e.g., MET) or downstream PI3K lesions.",
+                  "PMID:29110152; Reactome:R-HSA-6806834"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Induction of NRG1/HER3-ligand programs after HER2 blockade generally reflects adaptive escape rather than sensitivity.",
+                  "PMID:24044505"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Lapatinib can select for/induce NRG1-HER3 signaling rebound that restores downstream PI3K/MAPK and drives resistance.",
+                  "PMID:24044505; PMID:25691057; Nat Cancer 2025 (NRG1–HER3 plasticity): DOI:10.1038/s43018-024-00882-2"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: In responders (or with HER3-ligand blockade combinations), NRG1/HER3-driven compensatory signaling is suppressed alongside ERBB kinase inhibition.",
+                  "PMID:25691057; PMID:17192538"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: NRG1 programs may be low yet resistance persists via alternative bypass (MET/IGF) or intrinsic PI3K activation.",
+                  "PMID:29110152; PMID:33976188"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_GRB7_EVENTS_IN_ERBB2_SIGNALING": {
+      "description": "Adaptor-mediated events in ERBB2 signaling involving GRB7, which can connect receptor signaling to downstream survival, migration, and focal adhesion-related programs.",
+      "interpretation": "GRB7 is co-expressed with HER2 in HER2-amplified contexts and participates in signaling architectures that support tumor cell behavior and pathway rewiring.",
+      "Administration_of_lapatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: GRB7 pathway activity tracks with ERBB2 amplicon signaling and contributes to proliferative ERBB2 signaling, supporting sensitivity to HER2 kinase inhibition.",
+                  "Reactome:R-HSA-1306955; PMID:23593540; MSigDB:REACTOME_GRB7_EVENTS_IN_ERBB2_SIGNALING"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: GRB7-dependent signaling can persist in lapatinib-resistant models, implying adaptor-driven buffering or parallel RTK inputs to migration/survival.",
+                  "PMID:26945445; PMID:31197024 (GRB7 in resistant lines, concept); Reactome:R-HSA-1306955"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some HER2+ tumors may not show high GRB7 signature at sampling yet remain ERBB2-addicted and respond to lapatinib.",
+                  "PMID:17192538; Reactome:R-HSA-1227986 context"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low GRB7/ERBB2-complex signaling suggests limited HER2 pathway engagement, reducing TKI benefit.",
+                  "PMID:18283035"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: By inhibiting ERBB2 phosphorylation, lapatinib reduces GRB7 recruitment and downstream ERBB2 signaling output.",
+                  "Reactome:R-HSA-1306955; DrugBank:DB01259"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: GRB7/ERBB2 signaling can drop yet resistance persists through downstream PI3K lesions or alternate RTKs maintaining growth.",
+                  "PMID:29110152; Reactome:R-HSA-6806834"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Increasing GRB7 events within ERBB2 signaling is inconsistent with effective HER2 kinase blockade yielding sensitivity.",
+                  "Reactome:R-HSA-1306955; DrugBank:DB01259"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Pathway “up” after treatment can reflect ERBB network rebound/adaptive rephosphorylation that re-engages GRB7 and resistance.",
+                  "PMID:24044505; Reactome:R-HSA-1306955"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+      "description": "Cell-state transition program characterized by loss of epithelial features and gain of mesenchymal traits, associated with motility, invasion, and altered signaling dependencies.",
+      "interpretation": "EMT-like states in breast cancer are linked to invasive phenotypes and broad signaling changes that influence tumor progression and therapy response patterns.",
+      "Administration_of_lapatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Partial EMT states may still retain HER2 addiction; a subset can respond if ERBB2 remains the dominant driver.",
+                  "PMID:26883193; PMID:17192538"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: EMT programs can reduce ERBB2 dependence (including epigenetic HER2 silencing) and are linked to de novo resistance to trastuzumab/lapatinib in HER2+ breast cancer models.",
+                  "PMID:34575017; PMID:26883193; MSigDB:HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: An epithelial state is consistent with strong RTK-driven proliferation and better response to HER2 kinase blockade.",
+                  "PMID:17192538; PMID:23907131"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: EMT-low tumors can still resist via PI3K lesions or NRG1-HER3 adaptive signaling.",
+                  "PMID:29110152; PMID:24044505"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective HER2 inhibition can reduce invasion/survival signaling that sustains EMT-like programs, shifting toward a less mesenchymal profile.",
+                  "PMID:26883193; PMID:17192538"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: EMT signatures may decrease in bulk while resistant subclones persist through non-EMT bypass mechanisms.",
+                  "PMID:29110152"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: EMT induction generally correlates with reduced dependence on HER2 signaling and would not be expected in sensitive response.",
+                  "PMID:34575017"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Lapatinib can select for EMT-like resistant states (plasticity-driven escape), supporting resistance phenotypes.",
+                  "PMID:26883193; PMID:34575017"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_SIGNALING_BY_MET": {
+      "description": "Signaling downstream of the MET receptor tyrosine kinase (HGF receptor) that activates PI3K and MAPK pathways to promote survival, proliferation, and motility.",
+      "interpretation": "MET signaling can function as an alternative receptor-driven growth pathway in breast cancer models and is relevant to tumor cell survival and invasive behavior.",
+      "Administration_of_lapatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: MET signaling can be present but non-essential; if ERBB2 remains dominant, lapatinib can still produce response.",
+                  "PMID:17192538; Reactome:R-HSA-6806834"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (cross-cancer → breast-relevant): MET activation is a known bypass RTK route that can confer resistance to lapatinib-class ERBB inhibition.",
+                  "PMID:22238368 (gastric; tag cross-cancer); PMID:26883193 (breast resistance pathways); Reactome:R-HSA-6806834"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low MET bypass signaling increases reliance on ERBB2 signaling, improving likelihood of response to lapatinib.",
+                  "PMID:17192538; Reactome:R-HSA-6806834"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: MET-low tumors may still be resistant via downstream PI3K lesions or NRG1-HER3 rebound.",
+                  "PMID:29110152; PMID:24044505"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Upregulated MET bypass signaling after ERBB inhibition is an escape pattern, not a sensitivity marker.",
+                  "Reactome:R-HSA-6806834"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Adaptive MET/HGF signaling can restore downstream PI3K/MAPK survival signaling despite HER2 kinase inhibition, driving resistance.",
+                  "PMID:22238368 (cross-cancer); PMID:26883193 (breast resistance pathways); Reactome:R-HSA-6806834"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: In responders without MET bypass, MET signaling remains low (or falls secondarily), allowing sustained ERBB-pathway suppression to dominate.",
+                  "PMID:17192538"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: MET can remain low yet resistance persists via PI3K lesions (PTEN/PIK3CA) or ER signaling escape in ER+/HER2+ disease.",
+                  "PMID:29110152; PMID:19786658"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_FOXO_MEDIATED_TRANSCRIPTION": {
+      "description": "Transcriptional regulation mediated by FOXO family factors, typically activated when AKT activity is reduced, promoting cell-cycle inhibition and stress-response gene expression.",
+      "interpretation": "FOXO-mediated programs are part of tumor-suppressive and adaptive transcriptional responses in breast cancer, influencing cell-cycle control and lineage signaling interactions.",
+      "Administration_of_lapatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Higher FOXO transcriptional activity can reflect lower AKT suppression and intact tumor-suppressive stress responses that may synergize with HER2 blockade–induced arrest.",
+                  "Reactome:R-HSA-9614085; PMID:23907131"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: FOXO programs can induce feedback upregulation of RTKs (e.g., IGF/ERBB3 axis) that buffers HER2 inhibition and promotes resistance.",
+                  "PMID:33976188; Reactome:R-HSA-9614085"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: In HER2-driven tumors with high AKT, FOXO is functionally suppressed; lapatinib reduces AKT signaling allowing FOXO-mediated p27 induction and arrest.",
+                  "PMID:23907131; Reactome:R-HSA-9614085"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: If FOXO remains suppressed despite therapy (e.g., persistent PI3K activity), cells fail to engage FOXO-dependent arrest/apoptosis programs and resist.",
+                  "PMID:29110152; PMID:23907131"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Lapatinib can activate FOXO transcriptional output (via AKT suppression), inducing p27 and pro-death/cell-cycle arrest genes contributing to response.",
+                  "PMID:23907131; Reactome:R-HSA-9614085"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: FOXO activation can also drive adaptive RTK feedback (e.g., IGF axis) that restores survival signaling and supports acquired resistance.",
+                  "PMID:33976188; PMID:24044505"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some responders may show lower FOXO signatures in bulk due to rapid tumor cell loss/contraction of transcriptional programs despite sensitivity.",
+                  "PMID:17192538"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Persistently low FOXO output after treatment indicates failure to suppress AKT (or FOXO pathway impairment), aligning with resistance.",
+                  "PMID:29110152; Reactome:R-HSA-9614085"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "BIOCARTA_G1_PATHWAY": {
+      "description": "G1-phase cell-cycle control pathway involving cyclins/CDKs and checkpoint regulators that govern progression toward S phase.",
+      "interpretation": "G1 control is central to breast cancer proliferation biology, and shifts in G1 regulatory circuitry impact tumor growth dynamics and responses to growth-factor pathway perturbations.",
+      "Administration_of_lapatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Active G1/S machinery with HER2-driven proliferation is vulnerable to lapatinib-induced p27-mediated G1 arrest.",
+                  "PMID:23907131; PMID:17192538; MSigDB:BIOCARTA_G1_PATHWAY"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: If G1 progression is uncoupled from RTK control (e.g., CDK/p27-axis disruption), ERBB inhibition may not enforce durable arrest.",
+                  "PMID:23907131; PMID:31720077 (review context)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Slow-cycling HER2-addicted tumor cells can still respond through survival-signal withdrawal and apoptosis induction.",
+                  "PMID:17308062; PMID:17192538"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low baseline cycling can reflect alternate dependencies where lapatinib-mediated G1 control provides limited benefit.",
+                  "PMID:18283035"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Lapatinib induces p27Kip1-dependent G1 arrest in HER2-overexpressing breast cancer cells, suppressing G1 pathway activity.",
+                  "PMID:23907131; PMID:17192538"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: G1 signatures may decrease, but resistant cells survive via compensatory survival programs (NFκB, metabolic shift) despite cytostasis.",
+                  "PMID:24216290; PMID:39403185"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Increased G1 pathway activity indicates continued proliferation, inconsistent with sensitivity to HER2 blockade.",
+                  "PMID:23907131"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Resistant tumors can re-establish G1 progression after initial response via bypass signaling and cell-cycle escape.",
+                  "PMID:26883193; PMID:24044505"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_OXIDATIVE_PHOSPHORYLATION": {
+      "description": "Mitochondrial respiration and electron transport chain program supporting ATP production through oxidative metabolism.",
+      "interpretation": "Oxidative phosphorylation reflects metabolic state and can be modulated during targeted therapy responses, contributing to tumor cell energetic adaptation in breast cancer models.",
+      "Administration_of_lapatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: OXPHOS-high tumors can still be HER2-addicted and respond to kinase blockade despite elevated mitochondrial programs.",
+                  "PMID:17192538; PMID:39403185"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Metabolic plasticity/OXPHOS reliance is associated with drug-tolerant states in breast cancer and can support resistance to targeted therapies.",
+                  "PMID:39403185; DOI:10.3389/fcell.2022.717881 (OXPHOS in breast cancer); MSigDB:HALLMARK_OXIDATIVE_PHOSPHORYLATION"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Lower OXPHOS (often more glycolytic/high-growth phenotypes) can be more vulnerable to HER2 signal withdrawal and apoptosis.",
+                  "PMID:17308062; PMID:17192538"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: OXPHOS-low tumors may still resist via PI3K lesions or EMT programs independent of mitochondrial state.",
+                  "PMID:29110152; PMID:34575017"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (reported MOA feature): Lapatinib has been shown to enhance cellular respiration/mitochondrial function in HER2+ breast cancer cells, which can contribute to stress/ROS and anti-tumor effects.",
+                  "PMID:39403185; MSigDB:HALLMARK_OXIDATIVE_PHOSPHORYLATION"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Surviving persister cells can shift toward OXPHOS as an adaptive tolerance program, supporting resistance despite ERBB inhibition.",
+                  "PMID:39403185; DOI:10.3389/fcell.2022.717881"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective growth arrest can reduce biosynthetic demand and mitochondrial pathway expression in bulk tumors responding to therapy.",
+                  "PMID:17192538"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: OXPHOS may fall, yet resistance persists via NFκB survival, EMT, or PI3K genetic activation.",
+                  "PMID:24216290; PMID:29110152"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+      "description": "Inflammatory signaling program induced by TNF and mediated by NF-κB transcriptional activity, regulating cytokines and pro-survival responses.",
+      "interpretation": "NF-κB–linked inflammation pathways can influence tumor cell survival signaling and microenvironmental interactions, affecting breast cancer progression and stress responses.",
+      "Administration_of_lapatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In HER2-driven contexts where NFκB is downstream of HER2 signaling, tumors may still respond if lapatinib can suppress upstream HER2→NFκB activation.",
+                  "PMID:23229346; PMID:17192538; MSigDB:HALLMARK_TNFA_SIGNALING_VIA_NFKB"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Baseline NFκB/TNF survival signaling supports anti-apoptotic programs and has been implicated in lapatinib resistance biology.",
+                  "PMID:24216290; PMID:23229346"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low NFκB pro-survival signaling reduces an escape route, facilitating lapatinib-induced apoptosis and growth arrest.",
+                  "PMID:17308062; PMID:17192538"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: NFκB-low tumors may still resist via PI3K lesions (PTEN/PIK3CA) or NRG1-HER3 adaptive signaling.",
+                  "PMID:29110152; PMID:24044505"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Lapatinib can inhibit NFκB activation in HER2-overexpressing breast cancer cells via blocking PI3K/AKT→IκB signaling, supporting sensitivity.",
+                  "PMID:23229346; PMID:17192538"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: NFκB decreases, but resistance persists through other compensatory pathways (NRG1-HER3, MET, or intrinsic PI3K activation).",
+                  "PMID:24044505; PMID:29110152"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Upregulating NFκB/TNF survival signaling typically antagonizes apoptosis and is inconsistent with a sensitive response pattern.",
+                  "PMID:24216290"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Lapatinib-induced stress can activate NFκB in some settings and this adaptive survival response can underlie resistance; NFκB pathway increases are seen in resistance-associated contexts.",
+                  "PMID:24216290; DOI:10.1186/s13058-021-01390-2 (RANK/NFκB after anti-HER2); MSigDB:HALLMARK_TNFA_SIGNALING_VIA_NFKB"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "BIOCARTA_PTEN_PATHWAY": {
+      "description": "Tumor suppressor pathway centered on PTEN-mediated negative regulation of PI3K signaling, limiting AKT pathway activation.",
+      "interpretation": "PTEN status and PI3K negative regulation are important determinants of signaling balance in breast cancer and shape downstream survival pathway activity.",
+      "Administration_of_lapatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Intact PTEN pathway function constrains PI3K signaling and is associated with better response to upstream HER2 inhibition.",
+                  "PMID:29110152; MSigDB:BIOCARTA_PTEN_PATHWAY"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Despite preserved PTEN function, resistance can arise through other bypass routes (NRG1-HER3, MET, EMT).",
+                  "PMID:24044505; PMID:26883193"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: PTEN loss can still allow benefit when combined regimens (chemo/dual HER2 blockade) overcome partial TKI resistance; single-agent lapatinib benefit is typically reduced.",
+                  "PMID:17192538; PMID:29110152"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low PTEN and/or PIK3CA mutations (PI3K pathway activation) predict resistance to lapatinib-based anti-HER2 therapy without chemotherapy.",
+                  "PMID:29110152"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Lapatinib does not directly “upregulate PTEN pathway” in a durable genomic sense; any increase would be indirect and not a primary mechanistic effect.",
+                  "DrugBank:DB01259; FDA label: NDA 022059"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically not possible: Increased PTEN pathway activity would be expected to oppose PI3K survival signaling, not drive resistance to ERBB inhibition.",
+                  "PMID:29110152"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Post-treatment PTEN pathway loss reflects selection of resistant clones, not sensitivity.",
+                  "PMID:29110152"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (selection): Therapy can enrich for PI3K-activated/PTEN-low resistant populations that maintain survival despite ERBB blockade.",
+                  "PMID:29110152"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_APOPTOSIS": {
+      "description": "Program encompassing intrinsic and extrinsic cell-death signaling, including caspase activation and regulation by BCL2-family proteins.",
+      "interpretation": "Apoptosis competency influences whether breast cancer cells undergo cell death versus survival under therapeutic and signaling stress conditions.",
+      "Administration_of_lapatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Baseline apoptotic priming increases likelihood of tumor cell death upon HER2/EGFR signal withdrawal by lapatinib.",
+                  "PMID:17308062; PMID:17192538; MSigDB:HALLMARK_APOPTOSIS"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Apoptosis signatures can be present yet buffered by strong anti-apoptotic programs; resistance can still occur despite apparent priming.",
+                  "PMID:30305055"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Even with low apoptosis baseline, strong on-target HER2 dependence can allow lapatinib to induce apoptosis after inhibition.",
+                  "PMID:17308062"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Poor apoptotic priming/blocked death pathways reduce lapatinib-induced killing and associate with resistance phenotypes.",
+                  "PMID:30305055; PMID:29110152"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Lapatinib induces apoptosis in HER2-overexpressing breast cancer models (including trastuzumab-resistant derivatives), consistent with sensitivity.",
+                  "PMID:17308062; PMID:17192538"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Some resistant states show partial apoptosis induction but survive due to adaptation (e.g., anti-apoptotic buffering), motivating combination pro-death strategies.",
+                  "PMID:30305055"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In effective responders with rapid tumor clearance, bulk apoptosis gene expression can contract after initial killing despite overall sensitivity.",
+                  "PMID:17192538"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Failure to induce apoptosis after HER2/EGFR inhibition is a hallmark of resistance (often due to PI3K activation, NFκB survival, EMT, or bypass RTKs).",
+                  "PMID:29110152; PMID:23229346; PMID:34575017; PMID:24044505"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "RB1CC1",
+    "FOXO3A",
+    "CDKN1B"
+  ],
+  "sensitivity_genes_down": [
+    "IGF1R"
+  ],
+  "resistance_genes_up": [
+    "ERBB3",
+    "NRG1",
+    "ESR1",
+    "GRB7",
+    "AXL",
+    "MET",
+    "PIK3CA",
+    "EGFR",
+    "PTGS2",
+    "BIRC5",
+    "BCL2",
+    "BCL2L1",
+    "MCL1"
+  ],
+  "resistance_genes_down": [
+    "PTEN",
+    "RB1",
+    "CDKN1B",
+    "BCL2L11",
+    "ERBB2"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "RB1CC1",
+      "interpretation": "Reported as upregulated in lapatinib-sensitive breast cancer cell lines and described as reinforcing RB-mediated G1 arrest and cell-cycle inhibition."
+    },
+    {
+      "gene": "FOXO3A",
+      "interpretation": "Described as upregulated and/or activated when PI3K–AKT signaling is inhibited, inducing anti-proliferative programs (including CDK inhibitors) in responsive contexts."
+    },
+    {
+      "gene": "CDKN1B",
+      "interpretation": "p27Kip1 is described as induced downstream of PI3K/AKT inhibition, contributing to G1 arrest in sensitive HER2-driven settings."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [
+    {
+      "gene": "IGF1R",
+      "interpretation": "Low IGF1R activity is described as correlating with greater dependence on HER2 signaling and better susceptibility to HER2 pathway blockade."
+    }
+  ],
+  "resistance_genes_up_annotations": [
+    {
+      "gene": "ERBB3",
+      "interpretation": "Upregulation/activation of HER3 signaling is described as participating in adaptive ERBB network signaling that sustains downstream pathway activity despite HER2 inhibition."
+    },
+    {
+      "gene": "NRG1",
+      "interpretation": "Increased heregulin (NRG1) production is described as driving an autocrine signaling axis involving ERBB receptors that supports downstream signaling under HER2 inhibition pressure."
+    },
+    {
+      "gene": "ESR1",
+      "interpretation": "In ER+/HER2+ contexts, ER pathway reactivation/upregulation is described as an adaptive route that can maintain tumor cell growth when HER2 signaling is inhibited."
+    },
+    {
+      "gene": "GRB7",
+      "interpretation": "GRB7 is described as being induced as an adaptive response linked to ERBB2 signaling circuitry and associated with survival/migration signaling complexes."
+    },
+    {
+      "gene": "AXL",
+      "interpretation": "AXL upregulation is described in EMT-associated states and linked to alternative RTK signaling that can maintain PI3K/MAPK outputs independent of HER2."
+    },
+    {
+      "gene": "MET",
+      "interpretation": "MET signaling is described as an alternative RTK pathway capable of supporting PI3K/MAPK activation and tumor cell survival when HER2 signaling is disrupted."
+    },
+    {
+      "gene": "PIK3CA",
+      "interpretation": "Activating alterations and hyperactivation of PI3K signaling through PIK3CA are described as enabling persistent AKT pathway activity that is less dependent on upstream HER2 input."
+    },
+    {
+      "gene": "EGFR",
+      "interpretation": "EGFR is a direct target of lapatinib and is also described as part of ERBB receptor signaling configurations that can contribute to adaptive ERBB network activity."
+    },
+    {
+      "gene": "PTGS2",
+      "interpretation": "COX-2 (PTGS2) induction is described in an EGFR-positive TNBC model context alongside NF-κB activation and increased motility/metastasis-associated behavior."
+    },
+    {
+      "gene": "BIRC5",
+      "interpretation": "Survivin (BIRC5) is described as part of anti-apoptotic signaling that remains elevated in resistant models, corresponding to failure to execute apoptosis."
+    },
+    {
+      "gene": "BCL2",
+      "interpretation": "BCL-2 is referenced as an anti-apoptotic factor within survival circuitry that can counteract apoptosis execution in resistant contexts."
+    },
+    {
+      "gene": "BCL2L1",
+      "interpretation": "BCL-XL (BCL2L1) is described as an anti-apoptotic factor that can blunt cell death pathways when survival signaling dominates."
+    },
+    {
+      "gene": "MCL1",
+      "interpretation": "MCL1 is referenced as an anti-apoptotic protein maintained by growth factor signaling outputs, contributing to reduced apoptosis when not suppressed."
+    }
+  ],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "PTEN",
+      "interpretation": "Loss/downregulation of PTEN is described as removing negative regulation of PI3K signaling, enabling AKT pathway hyperactivity despite HER2 blockade."
+    },
+    {
+      "gene": "RB1",
+      "interpretation": "Loss/inactivation of RB1 pathway enforcement is described as undermining the ability to enforce G1 arrest, allowing continued cycling under growth-factor pathway inhibition."
+    },
+    {
+      "gene": "CDKN1B",
+      "interpretation": "Downregulation or failure to induce p27Kip1 (CDKN1B) is described as reducing checkpoint enforcement of G1 arrest, weakening cytostatic effects."
+    },
+    {
+      "gene": "BCL2L11",
+      "interpretation": "Reduced expression of BIM (BCL2L11) is described as blunting intrinsic apoptosis execution, enabling survival under kinase pathway inhibition."
+    },
+    {
+      "gene": "ERBB2",
+      "interpretation": "Loss of HER2 expression/amplification is described as eliminating the therapeutic target, resulting in lack of utility for continued HER2-directed inhibition."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Lapatinib|inhibits|ERBB2",
+    "Lapatinib|inhibits|EGFR",
+    "NRG1_overexpression|confers_resistance_to|Lapatinib",
+    "ERBB3_upregulation|confers_resistance_to|Lapatinib",
+    "PIK3CA_activation|confers_resistance_to|Lapatinib",
+    "PTEN_loss|confers_resistance_to|Lapatinib",
+    "ESR1_upregulation|confers_resistance_to|Lapatinib",
+    "AXL_overexpression|confers_resistance_to|Lapatinib",
+    "MET_activation|confers_resistance_to|Lapatinib",
+    "RB1CC1_upregulation|confers_sensitivity_to|Lapatinib",
+    "FOXO3A_upregulation|confers_sensitivity_to|Lapatinib",
+    "CDKN1B_upregulation|confers_sensitivity_to|Lapatinib",
+    "BCL2L11_downregulation|confers_resistance_to|Lapatinib"
+  ],
+  "Breast_cancer_subtype_information": {
+    "HER2-Positive (HER2+) Breast Cancer": "This is the primary subtype for lapatinib use. It includes HER2-enriched (ER/PR-negative, HER2+) and Luminal B HER2+ (ER/PR-positive, HER2+) tumors. Lapatinib significantly benefits HER2+ patients and is used in metastatic settings, including combinations such as lapatinib + capecitabine and lapatinib + letrozole.",
+    "HR+/HER2– (Luminal A/B that are HER2-negative)": "Lapatinib is not used in these subtypes because the target (HER2) is not overexpressed. Clinical trials in unselected HER2-negative breast cancer were uniformly negative, and guidelines do not recommend lapatinib in HER2-negative disease.",
+    "Triple-Negative Breast Cancer (TNBC)": "TNBC lacks ER, PR, and HER2; therefore, HER2-targeted drugs like lapatinib are generally ineffective. Although TNBC often overexpresses EGFR in basal-like cases, clinical trials of lapatinib in EGFR-positive TNBC showed minimal benefit and TNBC is not treated with lapatinib.",
+    "HER2-Low Breast Cancer": "HER2-low (IHC 1+ or 2+ non-amplified) can benefit from antibody-drug conjugates, but lapatinib has no demonstrated benefit because HER2 is not overexpressed and the TKI does not have a strong target.",
+    "Brain Metastatic HER2+ Breast Cancer": "Lapatinib can cross the blood–brain barrier to some extent and was used (usually with capecitabine) in HER2+ breast cancer with brain metastases, showing CNS responses in some patients, though newer agents have become preferred in many algorithms."
+  },
+  "citations": [
+    "Breast Cancer Treatments: Drugs Targeting the PI3K/AKT/mTOR Pathway, TNBC Therapy\nand Future Directions: A Review - PMC",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC12565733/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12565733/)",
+    "TYKERB (lapatinib) tablets",
+    "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2010/022059s007lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2010/022059s007lbl.pdf)",
+    "Lapatinib: Uses, Interactions, Mechanism of Action | DrugBank Online",
+    "[https://go.drugbank.com/drugs/DB01259](https://go.drugbank.com/drugs/DB01259)",
+    "Heregulin induces resistance to lapatinib-mediated growth inhibition ...",
+    "[https://pubmed.ncbi.nlm.nih.gov/24112719/](https://pubmed.ncbi.nlm.nih.gov/24112719/)",
+    "lapatinib | Ligand page | IUPHAR/BPS Guide to PHARMACOLOGY",
+    "[https://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId=5692](https://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId=5692)",
+    "Frontiers | Lapatinib-induced enhancement of mitochondrial respiration in HER2-positive SK BR-3 cells: mechanism revealed by analysis of proteomic but not transcriptomic data",
+    "[https://www.frontiersin.org/journals/molecular-biosciences/articles/10.3389/fmolb.2024.1470496/full](https://www.frontiersin.org/journals/molecular-biosciences/articles/10.3389/fmolb.2024.1470496/full)",
+    "An heregulin-EGFR-HER3 autocrine signaling axis can mediate acquired lapatinib\nresistance in HER2+ breast cancer models | Breast Cancer Research | Full Text",
+    "[https://breast-cancer-research.biomedcentral.com/articles/10.1186/bcr3480](https://breast-cancer-research.biomedcentral.com/articles/10.1186/bcr3480)",
+    "Grb7 Upregulation Is a Molecular Adaptation to HER2 Signaling Inhibition Due\nto Removal of Akt-Mediated Gene Repression | PLOS One",
+    "[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0009024](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0009024)",
+    "Sensitivity to targeted therapy differs between HER2-amplified breast cancer cells harboring kinase and\nhelical domain mutations in PIK3CA | Breast Cancer Research | Full Text",
+    "[https://breast-cancer-research.biomedcentral.com/articles/10.1186/s13058-021-01457-0](https://breast-cancer-research.biomedcentral.com/articles/10.1186/s13058-021-01457-0)",
+    "The AXL receptor tyrosine kinase is associated with adverse prognosis and distant metastasis in\nesophageal squamous cell carcinoma | Oncotarget",
+    "[https://www.oncotarget.com/article/9231/text/](https://www.oncotarget.com/article/9231/text/)",
+    "Gene expression changes as markers of early lapatinib response in a panel of breast\ncancer cell lines - PMC",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC3439312/](https://pmc.ncbi.nlm.nih.gov/articles/PMC3439312/)",
+    "Mechanisms of lapatinib resistance in HER2-driven breast cancer - Cancer\nTreatment Reviews",
+    "[https://www.cancertreatmentreviews.com/article/S0305-7372(15)00151-6/abstract](https://www.cancertreatmentreviews.com/article/S0305-7372%2815%2900151-6/abstract)",
+    "Off-Target Activity of Lapatinib Sensitizes Triple-Negative Breast ...",
+    "[https://www.annalsofoncology.org/article/S0923-7534(19)66408-2/fulltext](https://www.annalsofoncology.org/article/S0923-7534%2819%2966408-2/fulltext)",
+    "Lapatinib-Mediated Cyclooxygenase-2 Expression via Epidermal ...",
+    "[https://molpharm.aspetjournals.org/article/S0026-895X(24)03689-7/fulltext](https://molpharm.aspetjournals.org/article/S0026-895X%2824%2903689-7/fulltext)",
+    "Combining lapatinib and pertuzumab to overcome ... - Oncotarget",
+    "[https://www.oncotarget.com/article/3296/text/](https://www.oncotarget.com/article/3296/text/)",
+    "PI3K Hyperactivation Results in Lapatinib Resistance that is ... - NIH",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC2587064/](https://pmc.ncbi.nlm.nih.gov/articles/PMC2587064/)",
+    "PIK3CA mutations are associated with reduced pathological ...",
+    "[https://www.annalsofoncology.org/article/S0923-7534(19)34735-0/fulltext](https://www.annalsofoncology.org/article/S0923-7534%2819%2934735-0/fulltext)",
+    "Loss of Phosphatase and Tensin Homolog or Phosphoinositol ... - NIH",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC3058274/](https://pmc.ncbi.nlm.nih.gov/articles/PMC3058274/)",
+    "Lapatinib induces p27Kip1-dependent G₁ arrest through both ... - NIH",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC3865056/](https://pmc.ncbi.nlm.nih.gov/articles/PMC3865056/)",
+    "Lapatinib plus Capecitabine for HER2-Positive Advanced Breast ...",
+    "[https://www.nejm.org/doi/abs/10.1056/NEJMoa064320](https://www.nejm.org/doi/abs/10.1056/NEJMoa064320)",
+    "An open-label, pilot study of veliparib and lapatinib in patients with ...",
+    "[https://pubmed.ncbi.nlm.nih.gov/33663560/](https://pubmed.ncbi.nlm.nih.gov/33663560/)",
+    "NCCN Updated Guideline Adds Treatment Options for HER2 ...",
+    "[https://theoncologypharmacist.com/web-exclusives/nccn-updated-guideline-adds](https://theoncologypharmacist.com/web-exclusives/nccn-updated-guideline-adds)",
+    "A Study of Lapatinib in Combination With Everolimus in Patients ...",
+    "[https://clinicaltrials.gov/study/NCT01272141](https://clinicaltrials.gov/study/NCT01272141)",
+    "Combinatorial Effects of Lapatinib and Rapamycin in Triple ...",
+    "[https://aacrjournals.org/mct/article/10/8/1460/91120/Combinatorial-Effects-of-Lapatinib-and-Rapamycin](https://aacrjournals.org/mct/article/10/8/1460/91120/Combinatorial-Effects-of-Lapatinib-and-Rapamycin)",
+    "HER2-positive MBC: Fourth-line and Beyond - ESMO",
+    "[https://www.esmo.org/guidelines/living-guidelines/esmo-living-guideline-metastatic-breast-cancer/her2-positive-breast-cancer/](https://www.esmo.org/guidelines/living-guidelines/esmo-living-guideline-metastatic-breast-cancer/her2-positive-breast-cancer/)",
+    "her2-positive-mbc-fourth-line-and-beyond/her2-positive-mbc-fourth-line-and-beyond",
+    "[PDF] 2999707 This label may not be the latest approved by FDA. For ...",
+    "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2011/022059s011s012lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2011/022059s011s012lbl.pdf)",
+    "Pan-Asian adapted ESMO Clinical Practice Guidelines for the ...",
+    "[https://www.sciencedirect.com/science/article/pii/S2059702923007676](https://www.sciencedirect.com/science/article/pii/S2059702923007676)"
+  ],
+  "notes": "Safety/contraindication-related content explicitly described includes severe hypersensitivity (formal contraindication), boxed warning for hepatotoxicity with discontinuation for severe liver injury, pregnancy/breastfeeding avoidance, and cautions regarding QT prolongation risk and strong CYP3A4 inhibitor/inducer drug interactions. Gene-level sensitivity/resistance entries above are limited to genes and directions explicitly described in the deep-research output. Sources:  "
+}

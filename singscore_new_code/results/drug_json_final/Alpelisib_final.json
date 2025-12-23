@@ -1,0 +1,656 @@
+{
+  "drug_name": "Alpelisib",
+  "cancer_indication": "FDA-approved (May 2019) for HR+, HER2-negative metastatic breast cancer with activating PIK3CA mutations, in combination with fulvestrant after progression on endocrine therapy.",
+  "drug_category": "PI3K pathway inhibitor",
+  "drug_class": "PI3Kα inhibitor",
+  "moa": "Alpelisib is a highly selective ATP-competitive inhibitor of PI3K p110α (PIK3CA). It prevents phosphorylation of PIP₂ to PIP₃, thereby blocking activation of AKT and downstream mTOR signaling. In HR+ cancers, inhibiting PI3Kα interferes with cross-talk between the estrogen receptor (ER) and growth-factor pathways, so combining alpelisib with an ER antagonist (e.g. fulvestrant) produces synergistic anti-proliferative effects. In practice, alpelisib treatment reduces phosphorylated AKT and S6K in tumor cells, triggering G₁ arrest and apoptosis of PIK3CA-driven breast cancer cells.",
+  "chembl_id": "CHEMBL2396661",
+  "drugbank_id": "DB12015",
+  "synonyms": [
+    "alpelisib",
+    "BYL-719",
+    "NVP-BYL719",
+    "Piqray",
+    "Vijoice"
+  ],
+  "primary_targets": [
+    "PIK3CA"
+  ],
+  "pathway_sets": [
+    "REACTOME_PI3K_AKT_ACTIVATION",
+    "REACTOME_MTOR_SIGNALLING",
+    "REACTOME_SIGNALING_BY_ERBB2",
+    "REACTOME_ESR_MEDIATED_SIGNALING",
+    "KEGG_GLYCOLYSIS_GLUCONEOGENESIS",
+    "KEGG_MAPK_SIGNALING_PATHWAY",
+    "HALLMARK_APOPTOSIS",
+    "STEIN_ESR1_TARGETS"
+  ],
+  "pathway_sets_annotations": {
+    "REACTOME_PI3K_AKT_ACTIVATION": {
+      "description": "PI3K–AKT signaling transduces growth-factor and oncogenic cues into downstream survival and proliferation programs via activation of AKT and downstream effectors.",
+      "interpretation": "This is the direct target pathway impacted by alpelisib in breast cancer, and its activity is central to growth and endocrine resistance in PIK3CA-mutant HR+ tumors.",
+      "Administration_of_alpelisib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High baseline PI3K/AKT activation from PIK3CA gain-of-function in HR+/HER2– breast cancer indicates PI3Kα dependence; alpelisib + fulvestrant significantly improves PFS in PIK3CA-mutated tumors (SOLAR-1).",
+                  "Alpelisib MOA: DrugBank DB12015, ChEMBL CHEMBL2396661, PubChem CID 56649450; PI3K/AKT pathway: Reactome R-HSA-198203, MSigDB REACTOME_PI3K_AKT_ACTIVATION (M714); SOLAR-1: André F et al. N Engl J Med 2019;380:1929–40. PMID:31091374, NCT02437318."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: When high PI3K/AKT scores are driven by PTEN loss, AKT1 mutation or intense upstream RTK (HER2/IGF1R) signalling, downstream survival can persist despite PI3Kα inhibition, leading to intrinsic or early resistance in HR+ breast cancer.",
+                  "PI3K/AKT in cancer: Reactome R-HSA-2219528; PTEN/AKT1 and RTK-driven resistance to PI3K inhibitors in breast cancer (review)."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: A low bulk PI3K/AKT signature can mask a small PIK3CA-mutant, PI3K-addicted subclone; genomic PIK3CA positivity (as in SOLAR-1 selection) may still predict benefit despite low pathway expression.",
+                  "MSigDB REACTOME_PI3K_AKT_ACTIVATION (M714) from Reactome R-HSA-198203; SOLAR-1 PIK3CA-mutation based selection: André F et al. PMID:31091374."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low PI3K/AKT activation in HR+/HER2– tumors without PIK3CA mutation suggests lack of PI3K dependency, consistent with minimal added benefit of alpelisib observed in PIK3CA wild-type cohorts.",
+                  "SOLAR-1 non-mutated cohort (no significant PFS gain): André F et al. PMID:31091374; PI3K/AKT pathway Reactome R-HSA-198203."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Alpelisib selectively inhibits PI3K p110α, reducing PIP3 and AKT phosphorylation; robust post-treatment PI3K/AKT downregulation in PIK3CA-mut HR+ breast cancer is associated with tumor shrinkage and prolonged PFS.",
+                  "DrugBank DB12015; FDA label Piqray (alpelisib) NDA 212526; SOLAR-1 translational data: André F et al. PMID:31091374; Reactome R-HSA-198203."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Partial inhibition of PI3K/AKT can coexist with rapid compensation via MAPK, ERBB2 or ER–SRC signalling, giving biochemical PI3K suppression but little clinical benefit (adaptive resistance) in metastatic HR+ breast cancer.",
+                  "BYLieve (post-CDK4/6 setting) shows heterogeneous benefit: Rugo HS et al. Lancet Oncol 2021. PMID:33794206; PI3K inhibitor resistance reviews in BC."
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Sustained upregulation of PI3K/AKT signalling under a selective PI3Kα inhibitor cannot drive sensitivity; any apparent “up” with clinical response is more likely due to sampling/analysis artifacts rather than true biology.",
+                  "PI3K inhibitor pharmacology (on-target pAKT suppression required for efficacy): DrugBank DB12015; Reactome R-HSA-198203 (PI3K/AKT pathway)."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Rebound or increased PI3K/AKT activity (e.g., via HER3, IGF1R or HER2 upregulation) is a well-described bypass route causing acquired resistance to PI3Kα inhibition in HR+ breast cancer.",
+                  "PI3K/AKT in cancer Reactome R-HSA-2219528; RTK-mediated resistance to PI3K inhibitors (review, breast/pan-cancer)."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_MTOR_SIGNALLING": {
+      "description": "mTOR signaling regulates cellular growth and protein synthesis downstream of upstream pathways including PI3K/AKT, through effectors such as S6K and 4EBP1.",
+      "interpretation": "mTOR pathway output is a key downstream growth program in breast cancer biology and is discussed as a major node in the PI3K/AKT/mTOR network relevant to alpelisib activity.",
+      "Administration_of_alpelisib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: PIK3CA-mut HR+ breast cancers with strong mTORC1 output (S6K/4EBP1) rely on PI3K–AKT→mTOR signalling for growth; PI3Kα blockade reduces mTOR activity and improves outcomes when added to endocrine therapy.",
+                  "Reactome MTOR signalling R-HSA-165159; MSigDB REACTOME_MTOR_SIGNALLING (M27000); SOLAR-1: André F et al. PMID:31091374."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: If high mTORC1 is driven by PI3K-independent inputs (e.g., RHEB activation, nutrient sensing, prior mTOR-inhibitor rewiring), tumors may remain mTOR-addicted but relatively insensitive to upstream PI3Kα inhibition.",
+                  "Reactome R-HSA-165159, R-HSA-166208; resistance to PI3K vs mTOR inhibitors in HR+ BC (cross-cancer mechanistic parallels)."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some PIK3CA-mut luminal tumors may signal mainly through AKT–FOXO/BCL-2 with modest mTORC1; these can still respond to PI3Kα blockade because survival rather than growth is PI3K-dependent.",
+                  "Reactome PI3K/AKT in cancer R-HSA-2219528; REACTOME_MTOR_SIGNALLING (M27000) as downstream branch."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low mTOR signalling in ER+ breast cancer without strong PI3K activation suggests limited reliance on PI3K–mTOR axis, matching the modest benefit in PIK3CA-WT patients in SOLAR-1.",
+                  "SOLAR-1 PIK3CA-WT subgroup: André F et al. PMID:31091374; Reactome R-HSA-165159."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective PI3Kα inhibition reduces mTORC1 signalling, decreasing protein synthesis and cell growth; treatment-induced downregulation of REACTOME_MTOR_SIGNALLING is aligned with clinical response in HR+/HER2–, PIK3CA-mutated disease.",
+                  "Reactome R-HSA-165159, R-HSA-166208; SOLAR-1/ BYLieve translational data: Rugo HS et al. PMID:33794206."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Even with mTORC1 down, breast tumors may survive via autophagy, ER/MAPK cross-talk or metabolic rewiring; in such rare cases, mTOR transcriptional downshift does not translate into durable tumor control.",
+                  "mTOR inhibition and adaptive survival (autophagy, pathway rewiring) in breast and solid tumors (cross-cancer extrapolation)."
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Sustained mTOR activation in the presence of an effective PI3Kα inhibitor would contradict its upstream position; any apparent “up” with clinical sensitivity likely reflects measurement noise rather than true biology.",
+                  "Reactome R-HSA-165159 topology (PI3K→AKT→mTOR); Piqray label requiring on-pathway pharmacodynamic effect FDA 212526."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Persistent or increased mTOR signalling after alpelisib indicates that growth-factor or nutrient inputs continue to drive mTORC1, constituting a logical resistance mechanism in luminal breast cancer.",
+                  "Reactome R-HSA-165159; PI3K/mTOR pathway resistance reviews in HR+ BC."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_SIGNALING_BY_ERBB2": {
+      "description": "ERBB2/HER2 signaling is a receptor tyrosine kinase pathway that can activate PI3K/AKT and other growth programs in breast cancer.",
+      "interpretation": "ERBB2/HER2 signaling is described as cross-talking with PI3K signaling and is relevant to breast cancer contexts where HER2 and PI3K pathways are co-activated.",
+      "Administration_of_alpelisib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In HER2+/PIK3CA-mut breast cancer, high ERBB2→PI3K/AKT signalling may create PI3Kα dependence and enable benefit from alpelisib when combined with anti-HER2 therapy, but this is currently a niche/off-label scenario.",
+                  "Reactome Signaling by ERBB2 R-HSA-1227986; MSigDB REACTOME_SIGNALING_BY_ERBB2 (M553) ; Jhaveri MS et al. Clin Cancer Res 2021 (alpelisib+trastuzumab/T-DM1 in HER2+ BC)."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Very strong HER2 signalling engaging MAPK, PI3K and SRC arms can sustain growth even if PI3Kα is partly inhibited, explaining limited activity of alpelisib alone in heavily pretreated HER2+ metastatic breast cancer.",
+                  "ERBB2 pathway: Reactome R-HSA-1227986; PubChem ERBB2 pathway summary (PI3K/AKT and MAPK branches)."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: In HR+/HER2– (HER2-low) PIK3CA-mut tumors, ERBB2 signalling is low and PI3K activation is mostly ER and PIK3CA-driven, which is the exact population deriving benefit from alpelisib in SOLAR-1.",
+                  "SOLAR-1 design: HR+/HER2– population with tumor-tissue PIK3CA testing. André F et al. PMID:31091374; MSigDB REACTOME_SIGNALING_BY_ERBB2 (M553)."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: When both ERBB2 and PI3K pathway activity are low (ER-driven luminal A without PIK3CA mutation), disease remains endocrine-sensitive and gains little from PI3Kα inhibition.",
+                  "EMA Piqray label restricting indication to PIK3CA-mut HR+/HER2– disease. (European Medicines Agency (EMA))"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Alpelisib does not directly target ERBB2, but effective downstream PI3K inhibition plus HER2-directed antibodies can functionally dampen ERBB2 survival signalling and yield responses in HER2+/PIK3CA-mut breast cancer.",
+                  "Reactome R-HSA-1227986; Jhaveri MS et al. Clin Cancer Res 2021 (T-DM1+alpelisib in HER2+ MBC)."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Loss of ERBB2 signalling after prior HER2 therapy with persistent progression suggests that tumor cells have switched drivers (e.g., MAPK, cell cycle), making further PI3Kα blockade relatively ineffective.",
+                  "HER2-refractory HER2+ BC with alternative pathway dominance (post-T-DM1/T-DXd literature, extrapolated to PI3K combinations)."
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Sustained ERBB2 pathway upregulation under alpelisib-containing regimens would normally promote survival and resistance; true sensitivity with ERBB2 “up” would be biologically inconsistent.",
+                  "ERBB2 network: Reactome R-HSA-1227986; ERBB2 amplification and resistance paradigms in HER2+ BC."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Upregulation or amplification of ERBB2/HER3 following PI3Kα inhibition can reactivate PI3K and MAPK pathways and is a logical bypass route, promoting resistance to alpelisib-based therapy.",
+                  "ERBB2 signalling modules: Reactome R-HSA-1227986; drug-mediated ERBB2 signalling and escape: Reactome R-HSA-9652282."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_ESR_MEDIATED_SIGNALING": {
+      "description": "ESR-mediated signaling reflects estrogen receptor (ER) signaling programs that regulate transcriptional outputs and luminal breast cancer behavior.",
+      "interpretation": "ER signaling is described as a major driver in HR+ breast cancer and is relevant to alpelisib use in combination with ER antagonism to suppress ER-driven biology.",
+      "Administration_of_alpelisib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: HR+/HER2– PIK3CA-mutated tumors with strong ESR-mediated signalling represent classic luminal cancers with PI3K-mediated endocrine resistance, where adding alpelisib to ER-targeted therapy restores disease control.",
+                  "ESR-mediated signalling: Reactome R-HSA-8939211, MSigDB REACTOME_ESR_MEDIATED_SIGNALING (M27794) ; SOLAR-1 HR+ cohort: André F et al. PMID:31091374."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Excessively high ESR signalling due to ESR1 mutations or strong RTK cross-talk can maintain ER-driven proliferation even if PI3K is inhibited, reducing alpelisib benefit unless ER is effectively degraded (e.g., SERDs).",
+                  "ESR1 mutation/endocrine resistance in HR+ MBC (review); ESR pathway Reactome R-HSA-8939211."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some ER-low but PIK3CA-mut HR+ tumors remain PI3K-addicted with residual ER dependence; in this subset, alpelisib can still provide benefit when combined with endocrine therapy.",
+                  "ESR-mediated signalling differences between ER-high and ER-low breast cancer."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: ER-low or ESR-silenced tumors lacking clear PI3K addiction often behave more like basal/TNBC and do not fall into the approved HR+/HER2–, PIK3CA-mutated population, making alpelisib use inappropriate or ineffective.",
+                  "ESR-negative/basal-like biology in breast cancer; ESR pathway: Reactome R-HSA-8939211."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: In HR+ disease, effective alpelisib plus endocrine therapy should reduce ER target-gene expression and ESR-mediated signalling, reflecting restored endocrine sensitivity and tumor control.",
+                  "Reactome R-HSA-8939211; STEIN_ESR1_TARGETS downregulation as ER response marker: MSigDB STEIN_ESR1_TARGETS (M9678). (GSEA MSigDB)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: If ESR signalling is effectively suppressed but tumor growth persists via PI3K-independent circuits (e.g., HER2/MAPK, cell-cycle lesions), breast tumors may remain clinically resistant despite low ER pathway scores.",
+                  "ESR-independent proliferation mechanisms in ER+ BC; Reactome R-HSA-8939211."
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: True therapeutic sensitivity would not be expected alongside sustained or increased ESR-mediated signalling on combined PI3Kα and ER-targeted therapy; such a pattern would more likely drive resistance.",
+                  "ESR signalling biology: Reactome R-HSA-8939211; endocrine resistance paradigms in ESR1-mutant BC."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Persistent or increased ESR-mediated signalling despite alpelisib + endocrine therapy implies ligand-independent ER or strong growth-factor activation, a hallmark resistance mechanism in HR+ breast cancer.",
+                  "ESR pathway Reactome R-HSA-8939211; ESR1 mutation data in metastatic ER+ BC (e.g., EMERALD, elacestrant studies – cross-drug endocrine resistance pattern)."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_GLYCOLYSIS_GLUCONEOGENESIS": {
+      "description": "Glycolysis and gluconeogenesis pathways govern cellular glucose metabolism and energy generation through core glycolytic enzymes and associated metabolic steps.",
+      "interpretation": "Glucose metabolism is discussed as part of metabolic adaptations in alpelisib-resistant models, making glycolysis/gluconeogenesis relevant in the breast cancer context described.",
+      "Administration_of_alpelisib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: PI3K/AKT/mTOR promotes glycolysis; glycolysis-high, PIK3CA-mut luminal breast cancers (KEGG_GLYCOLYSIS_GLUCONEOGENESIS signature) are metabolically PI3K-dependent and vulnerable to alpelisib.",
+                  "KEGG pathway hsa00010; MSigDB KEGG_GLYCOLYSIS_GLUCONEOGENESIS ; PI3K–Warburg effect reviews."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: When glycolysis is primarily driven by MYC or HIF-1α rather than PI3K, glycolysis-high tumors may maintain ATP and biomass despite PI3Kα blockade and thus show limited benefit from alpelisib.",
+                  "MSigDB KEGG_GLYCOLYSIS_GLUCONEOGENESIS; MYC/HIF-1-driven glycolysis literature (cross-cancer extrapolation)."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Oxidative, low-glycolysis luminal A tumors can still harbor PIK3CA mutations and be PI3K-addicted at the level of survival and cell-cycle rather than metabolism, allowing alpelisib benefit.",
+                  "KEGG hsa00010; luminal A, PIK3CA-mutated BC metabolic profiling (cross-cancer extrapolation)."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low glycolytic activity often indicates slow-cycling or metabolically flexible tumors (e.g., OXPHOS-driven), particularly when PIK3CA is WT, making PI3Kα inhibition less impactful.",
+                  "KEGG hsa00010; metabolic flexibility and resistance to PI3K/mTOR inhibitors."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Alpelisib reduces glucose uptake and glycolytic flux by inhibiting PI3K/AKT; decreased KEGG_GLYCOLYSIS_GLUCONEOGENESIS after therapy reflects on-target metabolic inhibition associated with sensitivity in HR+ BC.",
+                  "KEGG hsa00010; MSigDB KEGG_GLYCOLYSIS_GLUCONEOGENESIS; PI3K-regulated metabolism in cancer reviews."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Tumors may adapt to reduced glycolysis by upregulating OXPHOS, fatty-acid oxidation or autophagy, staying viable despite glycolytic suppression and thus appearing resistant to alpelisib.",
+                  "Metabolic rewiring under glycolysis or PI3K/mTOR inhibition (cross-cancer extrapolation); KEGG hsa00010."
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Sustained upregulation of glycolysis under an effective PI3Kα inhibitor would usually indicate pathway escape rather than sensitivity; true responders are expected to show reduced or stable glycolytic activity.",
+                  "KEGG hsa00010; PI3K/Warburg-effect paradigms in cancer."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Persistent or increased glycolytic gene expression after alpelisib implies metabolic escape (e.g., via MYC/HIF-1α), compatible with resistance in HR+ breast cancer.",
+                  "MSigDB KEGG_GLYCOLYSIS_GLUCONEOGENESIS; metabolic escape mechanisms in solid tumors."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_MAPK_SIGNALING_PATHWAY": {
+      "description": "MAPK signaling transmits mitogenic and stress signals via RAS–RAF–MEK–ERK modules to regulate proliferation and survival.",
+      "interpretation": "MAPK/ERK is described as a parallel growth pathway implicated in bypass signaling in the breast cancer context discussed for alpelisib.",
+      "Administration_of_alpelisib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: If MAPK and PI3K are co-activated by shared RTKs but PI3Kα remains a co-dominant driver, alpelisib can still be beneficial, especially when MAPK signalling is only partially autonomous.",
+                  "KEGG_MAPK_SIGNALING_PATHWAY: MSigDB M5890 ; RTK→MAPK/PI3K crosstalk reviews in HER2-low/HR+ BC."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Strong MAPK activation via RAS/RAF or HER2 can maintain proliferation even if PI3Kα is inhibited, creating intrinsic resistance and a classic bypass route in luminal and HER2-driven breast cancers.",
+                  "KEGG MAPK signalling hsa04010; MAPK as resistance driver to PI3K inhibition (breast/pan-cancer)."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: PI3K-addicted luminal tumors with modest MAPK activation (low KEGG_MAPK_SIGNATURE) are “clean” PI3K-dominant drivers and respond well to alpelisib plus endocrine therapy.",
+                  "KEGG hsa04010; luminal PI3K-dominated signalling in HR+ BC."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: When both MAPK and PI3K signatures are low in ER-driven, low-proliferation tumors, alpelisib is unlikely to add benefit; resistance here often reflects “no appropriate target” rather than classical escape.",
+                  "KEGG hsa04010; SOLAR-1 PIK3CA-WT, low-proliferation subsets (post-hoc, cross-trial interpretation)."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: In some settings, PI3Kα blockade reduces RTK signalling tone, causing collateral dampening of MAPK; dual attenuation of PI3K and MAPK is associated with deeper responses in breast cancer.",
+                  "KEGG hsa04010; ERBB2→MAPK→ERK modules: Reactome R-HSA-1227986."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: MAPK transcription may fall while other survival pathways (JAK–STAT, SRC, BCL-2, epigenetic programmes) dominate, leading to continued resistance despite apparent MAPK pathway downregulation.",
+                  "KEGG hsa04010; PI3K/MAPK network plasticity (cross-cancer extrapolation)."
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Sustained ERK/MAPK upregulation after PI3Kα inhibition would almost always favour proliferation and resistance rather than sensitivity; transient feedback spikes may occur but are not captured as a stable “up” signature.",
+                  "KEGG hsa04010; RTK–RAS–ERK feedback after PI3K inhibition in preclinical models."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: MAPK upregulation (e.g., via RTK–RAS–ERK rebound) after alpelisib is a classic bypass route that restores proliferation despite PI3K pathway blockade in HR+ and HER2-driven breast cancers.",
+                  "KEGG hsa04010; HER2/RTK–MAPK reactivation under PI3K inhibitor pressure (breast cancer)."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_APOPTOSIS": {
+      "description": "Apoptosis is programmed cell death regulated by intrinsic and extrinsic pathways that remove damaged or stressed cells.",
+      "interpretation": "Apoptosis is discussed as a downstream cellular consequence when PI3K/AKT survival signaling is suppressed in the breast cancer contexts described.",
+      "Administration_of_alpelisib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Apoptosis-primed luminal tumors (high HALLMARK_APOPTOSIS) sit closer to the death threshold, so PI3Kα inhibition more readily triggers caspase activation and tumor regression when combined with endocrine therapy.",
+                  "HALLMARK_APOPTOSIS: MSigDB M5902 ; Liberzon A et al. Cell Syst 2015. PMID:26771021 (Hallmark set)."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: High apoptotic gene expression may be functionally blocked by BCL-2/BCL-XL/MCL-1 overexpression, so apoptosis-high HR+ tumors can still resist PI3Kα inhibition unless combined with BH3 mimetics.",
+                  "HALLMARK_APOPTOSIS M5902; BCL-2 family-mediated resistance in ER+ BC (e.g., venetoclax combinations)."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Many PIK3CA-mut HR+ tumors exhibit apoptosis-low but proliferation-high phenotypes; PI3Kα inhibition can induce pro-apoptotic factors (e.g., BIM) and trigger cell death even from a low baseline.",
+                  "HALLMARK_APOPTOSIS; PI3K inhibitor-induced apoptosis in ER+ BC models (preclinical, cross-cancer support)."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Profound apoptosis defects (TP53 loss, high anti-apoptotic BCL-2 family) prevent efficient cell death under PI3Kα inhibition, yielding mostly cytostatic rather than cytotoxic responses.",
+                  "HALLMARK_APOPTOSIS; p53/apoptosis deficiency and resistance to targeted therapies (including PI3K) in breast and other cancers."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Successful alpelisib therapy should increase pro-apoptotic signalling (caspases/BH3-only proteins); an increased HALLMARK_APOPTOSIS score post-treatment aligns with effective tumor cell killing.",
+                  "HALLMARK_APOPTOSIS M5902; apoptosis induction by PI3Kα inhibition (preclinical HR+ BC data)."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Transcript-level apoptosis upregulation without functional caspase activity (e.g., due to high BCL-2 or caspase inhibition) can give an “apoptosis-high but resistant” phenotype under alpelisib.",
+                  "HALLMARK_APOPTOSIS; discordance between gene-set scores and functional apoptosis (cross-cancer observation)."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Durable therapeutic sensitivity requires at least some activation of apoptosis (or other lethal programmes); persistent downregulation of apoptosis genes under ongoing alpelisib would not mechanistically fit a sensitive state.",
+                  "HALLMARK_APOPTOSIS M5902; role of apoptosis in successful targeted-therapy responses."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Failure to induce apoptosis (or further suppression of apoptotic machinery) under alpelisib indicates that tumors are escaping through survival pathways or senescence-like states, consistent with resistance.",
+                  "HALLMARK_APOPTOSIS; TP53/BCL-2-driven resistance mechanisms in ER+ BC."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "STEIN_ESR1_TARGETS": {
+      "description": "ESR1 target gene sets capture transcriptional programs regulated by estrogen receptor alpha (ESR1) in luminal breast cancer contexts.",
+      "interpretation": "ESR1-driven transcription is discussed as a key feature of HR+ breast cancer and is relevant to alpelisib use alongside ER blockade in the described setting.",
+      "Administration_of_alpelisib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High STEIN_ESR1_TARGETS in luminal HR+ BC reflects active ER transcription; in PIK3CA-mutated tumors, PI3Kα inhibition plus endocrine therapy can down-modulate these targets and restore endocrine sensitivity.",
+                  "MSigDB STEIN_ESR1_TARGETS (M9678) (ESR1 targets in MCF-7 BC cells). (GSEA MSigDB); Reactome ESR-mediated signalling R-HSA-8939211."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: If ESR1 is constitutively active (mutations, co-activator gains) or heavily driven by RTKs, high STEIN_ESR1_TARGETS can persist despite PI3Kα inhibition and endocrine therapy, leading to resistance.",
+                  "STEIN_ESR1_TARGETS usage in ER-regulated transcriptional studies (e.g., ZMIZ1–ERα–E2F2 axis). (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: ER-low but PIK3CA-mutated HR+ tumors may retain partial ER programmes and strong PI3K dependence; STEIN_ESR1_TARGETS can be modest while PI3K addiction still predicts benefit from alpelisib.",
+                  "MSigDB M9678; ER-low but ER-positive BC epigenetic subgroup analyses (ESR-mediated signalling)."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low STEIN_ESR1_TARGETS signals ER-independent or basal-shifted biology, which falls outside the canonical HR+/HER2–, PIK3CA-mutated indication and is less likely to benefit from PI3Kα inhibition.",
+                  "MSigDB STEIN_ESR1_TARGETS; ESR-mediated signalling differences by ER status in BC."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Under effective alpelisib + endocrine therapy, ER target genes in STEIN_ESR1_TARGETS should be suppressed, reflecting on-target ESR pathway inhibition and clinical benefit in HR+ breast cancer.",
+                  "MSigDB M9678; ESR-mediated signalling Reactome R-HSA-8939211; SOLAR-1 endocrine plus PI3Kα regimen."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: If STEIN_ESR1_TARGETS remains low but tumor growth persists via alternative drivers (HER2/MAPK, cell cycle, epigenetic reprogramming), alpelisib resistance reflects ER independence rather than lack of ER suppression.",
+                  "STEIN_ESR1_TARGETS; endocrine-independent progression in ER+ BC (e.g., ESR1 loss, basal-like conversion)."
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Persistent or increased ESR1 target-gene expression under PI3Kα plus endocrine therapy would typically support proliferation and resistance, not durable sensitivity.",
+                  "MSigDB M9678; ESR1-driven proliferation concepts in luminal BC."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Upregulated STEIN_ESR1_TARGETS after alpelisib + endocrine therapy indicates ongoing ER-driven transcription (e.g., ESR1 mutation, co-activator gain), a hallmark of endocrine and PI3K pathway resistance in HR+ breast cancer.",
+                  "STEIN_ESR1_TARGETS gene set; ESR-mediated signalling Reactome R-HSA-8939211; ESR1 mutation/endocrine resistance literature."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "PIK3CA",
+    "ESR1"
+  ],
+  "sensitivity_genes_down": [],
+  "resistance_genes_up": [
+    "FGFR1"
+  ],
+  "resistance_genes_down": [
+    "PTEN"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "PIK3CA",
+      "interpretation": "Presence of an activating PIK3CA mutation is described as required and predictive for response in the pivotal HR+/HER2− metastatic breast cancer trials discussed."
+    },
+    {
+      "gene": "ESR1",
+      "interpretation": "Activating ESR1 (ER) mutations are described as remaining sensitive when estrogen signaling was blocked by fulvestrant plus PI3K inhibition in the breast cancer context discussed."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [],
+  "resistance_genes_up_annotations": [
+    {
+      "gene": "FGFR1",
+      "interpretation": "High baseline activity of bypass pathways including FGFR1 amplifications is described as potentially portending lower sensitivity, and FGFR pathways are listed among expected bypass mechanisms to PI3K blockade."
+    }
+  ],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "PTEN",
+      "interpretation": "Loss of PTEN is described as a mechanism that would confer resistance by reactivating PIP₃ signaling, based on the preclinical rationale presented."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Alpelisib|inhibits|PIK3CA",
+    "PIK3CA_mutation|predicts_sensitivity_to|Alpelisib",
+    "ESR1_mutation|associated_with_sensitivity_to|Alpelisib_plus_fulvestrant",
+    "FGFR1_amplification|confers_resistance_to|Alpelisib",
+    "PTEN_loss|confers_resistance_to|Alpelisib"
+  ],
+  "Breast_cancer_subtype_information": {
+    "HR+/HER2– (Luminal A/B)": "Main indication. ~28–47% harbor PIK3CA mutations. Trials (SOLAR-1, BYLieve) have shown robust benefit in this subtype. Luminal-A tumors (often co-mutated MAP3K1) have especially high response rates.",
+    "HER2+": "~23–33% have PIK3CA mutations. PIK3CA-driven PI3K activation is a known mechanism of resistance to anti-HER2 therapy. Combining alpelisib with HER2-targeted agents (trastuzumab, tucatinib) is under active study. Preclinical HER2+ models with PIK3CA mutations benefited from adding alpelisib to anti-HER2 antibodies. No approval yet, but rationale is strong.",
+    "TNBC/Basal-like": "PIK3CA mutations are uncommon overall (8–25% in TNBC) and mainly occur in the luminal-AR (LAR) subset. AR+ TNBC exhibits ~40% PIK3CA mutation versus ~4% in AR– TNBC. In AR+ models, PI3K inhibitors dramatically reduce viability when combined with AR blockade. Thus, for basal-like/BRCA1-mutant TNBC, which lack PIK3CA and AR, alpelisib is not generally effective.",
+    "HER2-enriched (PAM50)": "These often overlap HER2+/some HR+ tumors. If PIK3CA-mutant, they may respond similarly to HER2+ cases; data are sparse.",
+    "Luminal A vs B": "Both are HR+, but luminal A tends to have higher PIK3CA rates and better PI3Ki sensitivity. Luminal B (higher proliferation, possible lower PI3K dependence) shows less clear benefit."
+  },
+  "citations": [
+    "[https://www.dovepress.com/role-of-alpelisib-in-the-treatment-of-pik3ca-mutated-breast-cancer-pat-peer-reviewed-fulltext￾article-TCRM](https://www.dovepress.com/role-of-alpelisib-in-the-treatment-of-pik3ca-mutated-breast-cancer-pat-peer-reviewed-fulltext￾article-TCRM)",
+    "[https://en.wikipedia.org/wiki/Alpelisib](https://en.wikipedia.org/wiki/Alpelisib)",
+    "[https://go.drugbank.com/drugs/DB12015](https://go.drugbank.com/drugs/DB12015)",
+    "[https://www.dovepress.com/alpelisib-in-the-treatment-of-breast-cancer-a-short-review-on-the-emer-peer-reviewed-fulltext￾article-BCTT](https://www.dovepress.com/alpelisib-in-the-treatment-of-breast-cancer-a-short-review-on-the-emer-peer-reviewed-fulltext￾article-BCTT)",
+    "[https://pubmed.ncbi.nlm.nih.gov/37469415/](https://pubmed.ncbi.nlm.nih.gov/37469415/)",
+    "[https://pubmed.ncbi.nlm.nih.gov/25103565/](https://pubmed.ncbi.nlm.nih.gov/25103565/)",
+    "[https://amp.chemicalbook.com/ChemicalProductProperty_EN_CB52604234.htm](https://amp.chemicalbook.com/ChemicalProductProperty_EN_CB52604234.htm)",
+    "[https://www.nature.com/articles/s41392-025-02180-4?error=cookies_not_supported&code=5916dd0d-f7b8-4e50-a2df-444c8454c966](https://www.nature.com/articles/s41392-025-02180-4?error=cookies_not_supported&code=5916dd0d-f7b8-4e50-a2df-444c8454c966)",
+    "[https://reactome.org/content/detail/R-HSA-1227986](https://reactome.org/content/detail/R-HSA-1227986)",
+    "[https://reactome.org/content/detail/R-HSA-8939211](https://reactome.org/content/detail/R-HSA-8939211)",
+    "[https://www.nature.com/articles/s41523-019-0126-6?error=cookies_not_supported&code=e58e4ee9-2f3f-4b54-8d23-b482d816aa69](https://www.nature.com/articles/s41523-019-0126-6?error=cookies_not_supported&code=e58e4ee9-2f3f-4b54-8d23-b482d816aa69)",
+    "[https://pubmed.ncbi.nlm.nih.gov/35771551/](https://pubmed.ncbi.nlm.nih.gov/35771551/)",
+    "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/212526s000lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2019/212526s000lbl.pdf)",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC5125254/](https://pmc.ncbi.nlm.nih.gov/articles/PMC5125254/)"
+  ],
+  "notes": "Extracted strictly from the provided Alpelisib deep-research PDF and the JSON-generation instructions; gene-level directionality reflects only what is explicitly stated (e.g., PIK3CA mutation predictive; ESR1 mutations sensitive in combination; FGFR1 amplification and PTEN loss as resistance rationales).  "
+}

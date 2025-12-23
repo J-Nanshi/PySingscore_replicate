@@ -1,0 +1,802 @@
+{
+  "drug_name": "Capivasertib",
+  "cancer_indication": "Hormone receptor–positive (HR+)/HER2-negative advanced breast cancer with activating PI3K pathway alterations (PIK3CA mutation, AKT1 mutation, and/or PTEN loss), in combination with fulvestrant after progression on endocrine therapy.",
+  "drug_category": "PI3K–AKT–mTOR pathway inhibitor",
+  "drug_class": "pan-AKT inhibitor",
+  "moa": "Capivasertib is an oral, ATP-competitive pan-AKT kinase inhibitor that targets AKT1, AKT2, and AKT3 and thereby shuts down the hyperactivated PI3K–AKT–mTOR signaling axis in breast cancer. In tumors with PIK3CA mutations, PTEN loss, or AKT1-activating mutations, capivasertib blocks downstream signaling to mTORC1, FOXO3, and key substrates such as GSK3β and PRAS40, inducing cell-cycle arrest and apoptosis in AKT-addicted cells. In ER+ breast cancer, AKT inhibition reduces ligand-independent estrogen receptor activity and E2F/FOXM1-driven proliferation, resensitizing endocrine-resistant tumors when combined with ER-targeted therapy. In HER2- or RTK-driven disease, capivasertib inhibits the HER2→PI3K→AKT node and can synergize with HER2-targeted agents, while also modulating apoptosis and DNA repair pathways in contexts such as HRD/BRCA-mutated tumors.",
+  "chembl_id": "CHEMBL2325741",
+  "drugbank_id": "DB12218",
+  "synonyms": [
+    "AZD5363",
+    "AZD-5363",
+    "Capivasertibum",
+    "TRUQAP®",
+    "AZC5363"
+  ],
+  "primary_targets": [
+    "AKT1",
+    "AKT2",
+    "AKT3"
+  ],
+  "pathway_sets": [
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "PID_FOXO_PATHWAY",
+    "HALLMARK_E2F_TARGETS",
+    "KEGG_MAPK_SIGNALING_PATHWAY",
+    "PID_PI3KCI_PATHWAY",
+    "HALLMARK_MTORC1_SIGNALING",
+    "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+    "HALLMARK_APOPTOSIS",
+    "REACTOME_SIGNALING_BY_ERBB2"
+  ],
+  "pathway_sets_annotations": {
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+      "description": "Canonical PI3K–AKT–mTOR growth and survival signaling driven by upstream oncogenic events such as PIK3CA mutation, PTEN loss, and AKT1 mutations, promoting cell-cycle progression, metabolism, and protein synthesis in breast cancer cells.",
+      "interpretation": "In breast cancer, frequent activation of this pathway (via PIK3CA, PTEN, or AKT1 alterations and HER2/RTK input) creates strong dependency on AKT signaling; capivasertib directly targets this axis, and tumors with high PI3K–AKT–mTOR activity are particularly sensitive while those that maintain downstream output (e.g., persistent mTORC1 activity) show resistance.",
+      "Administration_of_capivasertib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: strong baseline PI3K–AKT–mTOR activation (e.g. PIK3CA/AKT1/PTEN-altered, high PAM score) usually predicts dependence on this axis and benefit from AKT blockade, but in heavily pretreated or multi-resistant HR+/HER2− or TNBC tumors, extreme pathway upregulation can also reflect cross-resistance (prior PI3K/mTORi, RTK amplification, parallel MAPK/cell-cycle escape), so capivasertib may give only modest incremental benefit despite high PAM signaling.",
+                  "PMID: 37256976; https://pubmed.ncbi.nlm.nih.gov/37256976/ (Turner et al., CAPItello-291, capivasertib+fulvestrant, HR+/HER2− MBC) ; PMID: 35398754; https://pubmed.ncbi.nlm.nih.gov/35398754/ (Andrikopoulou et al., emerging role of capivasertib in breast cancer) ; PMID: 34916492; https://pubmed.ncbi.nlm.nih.gov/34916492/ (He et al., PI3K/Akt signal transduction review) ; PMID: 37596643; https://pubmed.ncbi.nlm.nih.gov/37596643/ (Glaviano et al., PI3K/AKT/mTOR signaling and targeted therapy in cancer), Huppert et al. (PMID: 36939293), Fox et al. (PMID: 23844554), Lu et al. (PMID: 14763163), Willis et al. (PMID: 17289999; 39284898), Carmona et al. (PMID: 26645663), and Pan et al. (PMID: 38875362)."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: breast cancers with high PI3K–AKT–mTOR activity (PAM pathway), especially PIK3CA/AKT1/PTEN-altered HR+/HER2− disease after endocrine±CDK4/6i, remain addicted to AKT signaling; CAPItello-291 showed the largest benefit in PAM-altered tumors, supporting baseline pathway upregulation as a positive predictive marker for capivasertib benefit.",
+                  "PMID: 37256976; https://pubmed.ncbi.nlm.nih.gov/37256976/ ; NCT04305496; https://clinicaltrials.gov/study/NCT04305496 ; PMID: 35398754; https://pubmed.ncbi.nlm.nih.gov/35398754/ ; PMID: 36671478; https://pubmed.ncbi.nlm.nih.gov/36671478/ (Yuan et al., PI3K–AKT-targeting breast cancer treatments)"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: PAM-low tumors (no PIK3CA/AKT1/PTEN alterations, low phospho-AKT/mTOR) are less dependent on AKT signaling and often driven by alternative programs (MAPK, cell-cycle, immune evasion); in such cases AKT inhibition adds little beyond endocrine or chemotherapy and capivasertib is expected to have limited efficacy (primary resistance).",
+                  "PMID: 34916492; https://pubmed.ncbi.nlm.nih.gov/34916492/ ; PMID: 36671478; https://pubmed.ncbi.nlm.nih.gov/36671478/ ; PMID: 37596643; https://pubmed.ncbi.nlm.nih.gov/37596643/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (or extremely rare): if a breast tumor truly has low PI3K–AKT–mTOR activity and no upstream activating lesions, there is little biological rationale for robust capivasertib benefit, because the drug targets a pathway that is not a dominant oncogenic driver; any observed response would more likely reflect assay noise or mis-classification rather than genuine pathway-mediated sensitivity.",
+                  "PMID: 34916492; https://pubmed.ncbi.nlm.nih.gov/34916492/ ; PMID: 37256976; https://pubmed.ncbi.nlm.nih.gov/37256976/"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: persistent or rebound PI3K–AKT–mTOR signaling on-treatment (e.g. incomplete AKT blockade, feedback RTK upregulation, PTEN loss, alternative PI3K isoforms) is a classic resistance mechanism; STAKT and other early capivasertib studies showed that failure to suppress phospho-AKT/S6 or rapid reactivation correlates with poor antiproliferative effect.",
+                  "PMID: 31836609; https://pubmed.ncbi.nlm.nih.gov/31836609/ (Robertson et al., STAKT biomarker study with capivasertib) ; PMID: 37256976; https://pubmed.ncbi.nlm.nih.gov/37256976/ ; PMID: 37596643; https://pubmed.ncbi.nlm.nih.gov/37596643/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: genuine capivasertib sensitivity requires pharmacodynamic suppression of AKT/mTOR signaling (drop in phospho-AKT/S6 and PAM score); if pathway activity remains high or increases during therapy, tumor cells retain the same prosurvival circuitry, so a major clinical response attributable to AKT inhibition is biologically implausible.",
+                  "PMID: 31836609; https://pubmed.ncbi.nlm.nih.gov/31836609/ ; PMID: 37256976; https://pubmed.ncbi.nlm.nih.gov/37256976/"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: capivasertib can achieve good target inhibition (reduced PAM signature), but resistance may still occur via downstream or parallel escape (RB loss, E2F or MYC activation, MAPK or ERBB2 bypass, BCL2/MCL1 anti-apoptotic buffering); in such cases pathway downregulation is not sufficient to produce durable benefit.",
+                  "PMID: 31836609; https://pubmed.ncbi.nlm.nih.gov/31836609/ ; PMID: 32289273; https://pubmed.ncbi.nlm.nih.gov/32289273/ (Hanker et al., endocrine resistance review) ; PMID: 37035239; https://pubmed.ncbi.nlm.nih.gov/37035239/ (Zhou et al., CDK4/6i resistance and PAM escape)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: effective capivasertib exposure reduces phospho-AKT/S6 and the PAM signature, decreases Ki67 and induces cell-cycle arrest/apoptosis in PAM-addicted breast tumors; CAPItello-291 and STAKT biomarker data support that on-treatment suppression of PI3K–AKT–mTOR correlates with clinical benefit and defines the intended drug-induced state.",
+                  "PMID: 31836609; https://pubmed.ncbi.nlm.nih.gov/31836609/ ; PMID: 37256976; https://pubmed.ncbi.nlm.nih.gov/37256976/ ; PMID: 36671478; https://pubmed.ncbi.nlm.nih.gov/36671478/"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "PID_FOXO_PATHWAY": {
+      "description": "FOXO transcription factor signaling (notably FOXO3) that is negatively regulated by AKT and controls genes involved in cell-cycle arrest (e.g., p27Kip1), apoptosis (e.g., BIM), and stress responses.",
+      "interpretation": "In ER+ PIK3CA-mutant breast cancer, AKT normally phosphorylates and inactivates FOXO3; capivasertib relieves this inhibition, allowing FOXO3 to repress FOXM1/E2F proliferation programs and induce pro-apoptotic genes, so an intact FOXO3 pathway is crucial for effective AKT inhibition and its loss mediates resistance.",
+      "Administration_of_capivasertib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: high baseline FOXO tumor-suppressor activity (nuclear FOXO3/FOXO1, active FOXO pathway) usually reflects weaker PI3K–AKT signaling, slower proliferation and more endocrine-sensitive biology; such tumors are less dependent on AKT-mediated FOXO inactivation, so adding capivasertib may yield limited incremental benefit (relative resistance).",
+                  "PMID: 38505423; https://pubmed.ncbi.nlm.nih.gov/38505423/ (Mei et al., FOXO3a in breast cancer) ; PMID: 34916492; https://pubmed.ncbi.nlm.nih.gov/34916492/ ; PMID: 37626655; https://pubmed.ncbi.nlm.nih.gov/37626655/ (Hazazi et al., FOX genes and breast cancer)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: tumors with already high FOXO pathway activity are relatively less AKT-addicted at the level of FOXO repression; capivasertib can still help if PAM is activated upstream for other outputs (e.g. mTOR, GSK3β) but FOXO-specific dependence is low, so strong FOXO-driven sensitivity to AKT inhibition at baseline is uncommon.",
+                  "PMID: 38505423; https://pubmed.ncbi.nlm.nih.gov/38505423/ ; PMID: 34916492; https://pubmed.ncbi.nlm.nih.gov/34916492/"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: FOXO inactivation (via AKT-mediated phosphorylation and cytoplasmic sequestration) is a hallmark of PI3K–AKT dependence; if FOXO is strongly suppressed but the tumor is nonetheless resistant, this usually indicates additional hard resistance mechanisms (BRD4/FOXO3a/CDK6 axis, BCL2-family anti-apoptotic signaling, RB loss) rather than a typical pattern.",
+                  "PMID: 30518851; https://pubmed.ncbi.nlm.nih.gov/30518851/ (Liu et al., BRD4/FOXO3a/CDK6 axis in AKTi resistance) ; PMID: 37626655; https://pubmed.ncbi.nlm.nih.gov/37626655/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: in many ER+ breast cancers the PI3K–AKT pathway keeps FOXO3/FOXO1 inactivated (low FOXO signature), promoting proliferation, survival and endocrine resistance; capivasertib relieves this repression, so baseline FOXO-low, AKT-high tumors are primed for benefit when FOXO tumor-suppressor programs are re-engaged.",
+                  "PMID: 34916492; https://pubmed.ncbi.nlm.nih.gov/34916492/ ; PMID: 30518851; https://pubmed.ncbi.nlm.nih.gov/30518851/ ; PMID: 35008379; https://pubmed.ncbi.nlm.nih.gov/35008379/ (Ricci et al., FOXO3a restrains aggressive/endocrine-resistant breast cancer)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: on-treatment nuclear FOXO activation usually promotes apoptosis, cell-cycle arrest and reduced invasion, so resistance despite strong FOXO pathway upregulation suggests that other dominant escape circuits (e.g. MYC, BCL2/MCL1, alternative RTK/MAPK) override FOXO’s tumor-suppressor functions; this is possible but not the typical pattern.",
+                  "PMID: 38505423; https://pubmed.ncbi.nlm.nih.gov/38505423/ ; PMID: 30518851; https://pubmed.ncbi.nlm.nih.gov/30518851/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: capivasertib dephosphorylates FOXO3a, drives nuclear translocation and upregulates pro-apoptotic/cell-cycle arrest genes (e.g. BIM, p27), which is linked to AKTi response; restoration of FOXO activity is a key component of the tumor-suppressive drug-induced state in luminal breast cancer.",
+                  "PMID: 30518851; https://pubmed.ncbi.nlm.nih.gov/30518851/ ; PMID: 38505423; https://pubmed.ncbi.nlm.nih.gov/38505423/ ; PMID: 37626655; https://pubmed.ncbi.nlm.nih.gov/37626655/"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: failure to restore FOXO activity (FOXO stays phosphorylated/cytoplasmic or is genetically lost) despite AKT inhibition reflects a common resistance mechanism, for example BRD4/FOXO3a/CDK6 axis activation, FOXO3a down-regulation or alternative kinases; in such cases the FOXO pathway remains off and capivasertib is ineffective.",
+                  "PMID: 30518851; https://pubmed.ncbi.nlm.nih.gov/30518851/ ; PMID: 35008379; https://pubmed.ncbi.nlm.nih.gov/35008379/ ; PMID: 37626655; https://pubmed.ncbi.nlm.nih.gov/37626655/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: a truly FOXO-off state after adequate AKT blockade is incompatible with the canonical mechanism whereby capivasertib re-engages FOXO tumor-suppressor programs; sustained FOXO inactivity would normally be associated with persistent survival signaling and resistance rather than sensitivity.",
+                  "PMID: 30518851; https://pubmed.ncbi.nlm.nih.gov/30518851/ ; PMID: 38505423; https://pubmed.ncbi.nlm.nih.gov/38505423/"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_E2F_TARGETS": {
+      "description": "E2F and FOXM1-driven transcriptional program regulating G1–S and G2–M cell-cycle progression, including cyclins, CDKs, and mitotic genes.",
+      "interpretation": "In luminal ER+ breast cancers, high FOXM1/E2F target gene expression sustains proliferation and is enriched in capivasertib-resistant models, whereas downregulation of this cell-cycle signature (often via FOXO3 activation) characterizes responding tumors and reflects effective growth arrest under AKT inhibition.",
+      "Administration_of_capivasertib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: high E2F target expression reflects strong G1–S cell-cycle drive (Cyclin D/E–CDK4/6–CDK2 activation, RB loss) and is characteristic of aggressive, endocrine-resistant and often CDK4/6i-resistant HR+ breast cancers; in this context AKT inhibition alone may not shut down the cell-cycle engine, so E2F-high tumors often show relative resistance to capivasertib monotherapy or weak combinations.",
+                  "PMID: 37035239; https://pubmed.ncbi.nlm.nih.gov/37035239/ (Zhou et al., CDK4/6i resistance in ER+ breast cancer) ; PMID: 32289273; https://pubmed.ncbi.nlm.nih.gov/32289273/ ; PMID: 33369635; https://pubmed.ncbi.nlm.nih.gov/33369635/ (Nielsen et al., Ki67/E2F-linked proliferation)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: some E2F-high tumors remain partially PAM-addicted and, when combined with endocrine therapy, capivasertib can reduce upstream signaling enough to lower E2F and Ki67, but this usually requires intact RB and at least partial dependence on AKT-driven Cyclin D/CDK2 signaling; such clear AKT-modulated E2F-high sensitivity is less common than resistance.",
+                  "PMID: 31836609; https://pubmed.ncbi.nlm.nih.gov/31836609/ ; PMID: 32289273; https://pubmed.ncbi.nlm.nih.gov/32289273/ ; PMID: 37035239; https://pubmed.ncbi.nlm.nih.gov/37035239/"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: E2F-low tumors tend to be more indolent and endocrine-responsive, and when PAM is not strongly activated they are not classic candidates for AKT inhibition; resistance to capivasertib here usually reflects the fact that there is little proliferative drive to suppress, so the scenario is possible but not typical for drug prescription.",
+                  "PMID: 33369635; https://pubmed.ncbi.nlm.nih.gov/33369635/ ; PMID: 32289273; https://pubmed.ncbi.nlm.nih.gov/32289273/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (for capivasertib-driven benefit): if E2F targets are truly low and cell-cycle entry is minimal at baseline, there is limited biological rationale for a strong clinical response to an AKT inhibitor whose major antitumor effect in HR+ disease is to reduce proliferation rather than to kill quiescent cells.",
+                  "PMID: 33369635; https://pubmed.ncbi.nlm.nih.gov/33369635/ ; PMID: 31836609; https://pubmed.ncbi.nlm.nih.gov/31836609/"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: if E2F target expression remains high or increases on capivasertib+endocrine therapy, this indicates persistent cell-cycle drive via RB loss, CDK2/CDK6 upregulation or alternative mitogenic signaling (RTKs/MAPK), and is a hallmark of functional resistance despite any upstream AKT inhibition.",
+                  "PMID: 37035239; https://pubmed.ncbi.nlm.nih.gov/37035239/ ; PMID: 38943828; https://pubmed.ncbi.nlm.nih.gov/38943828/ (Glaviano et al., CDK4/6i sensitivity/resistance mechanisms) ; PMID: 32289273; https://pubmed.ncbi.nlm.nih.gov/32289273/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: persistent or increased E2F signaling during therapy indicates unabated G1–S progression, which is incompatible with the antiproliferative mechanism expected from effective capivasertib+endocrine combinations; tumors with E2F-high post-treatment profiles should not be classified as sensitive.",
+                  "PMID: 33369635; https://pubmed.ncbi.nlm.nih.gov/33369635/ ; PMID: 37035239; https://pubmed.ncbi.nlm.nih.gov/37035239/"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: E2F suppression by capivasertib (often via reduced Cyclin D/CDK2 signaling and lower Ki67) normally correlates with response; if E2F targets fall yet the tumor behaves clinically resistant, this implies that other survival programs (e.g. BCL2, PI3K-independent MAPK, DNA damage tolerance) compensate, which is biologically possible but not typical.",
+                  "PMID: 31836609; https://pubmed.ncbi.nlm.nih.gov/31836609/ ; PMID: 32289273; https://pubmed.ncbi.nlm.nih.gov/32289273/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: reduction in E2F target expression and proliferation markers (Ki67) after starting capivasertib+endocrine therapy in HR+/HER2− breast cancer is consistent with effective upstream AKT blockade and defines the desired drug-induced state in which cell-cycle entry is curtailed and clinical responses are observed.",
+                  "PMID: 31836609; https://pubmed.ncbi.nlm.nih.gov/31836609/ ; PMID: 33369635; https://pubmed.ncbi.nlm.nih.gov/33369635/ ; PMID: 37035239; https://pubmed.ncbi.nlm.nih.gov/37035239/"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_MAPK_SIGNALING_PATHWAY": {
+      "description": "RAS–RAF–MEK–ERK signaling cascade downstream of receptor tyrosine kinases that promotes proliferation, survival, and transcriptional responses.",
+      "interpretation": "Upon AKT blockade with capivasertib, breast tumors frequently show feedback upregulation of ERK1/2 phosphorylation and MAPK pathway signatures, providing an alternative proliferative route that underlies primary and adaptive resistance, while concurrent MAPK suppression enhances response.",
+      "Administration_of_capivasertib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: hyperactive MAPK/ERK signaling (e.g. via ERBB2/ERBB3, FGFR1, RAS) can drive proliferation and survival independently of AKT, and is implicated in resistance to both endocrine and HER2-targeted therapy; in such tumors, MAPK dominance can blunt the impact of AKT inhibition and make capivasertib benefit modest unless combined with RTK/MAPK-directed agents.",
+                  "PMID: 18508484; https://pubmed.ncbi.nlm.nih.gov/18508484/ (Bender et al., HER2–ER crosstalk and resistance) ; PMID: 26645663; https://pubmed.ncbi.nlm.nih.gov/26645663/ (Carmona et al., AKT signaling in ERBB2-amplified breast cancer) ; PMID: 32289273; https://pubmed.ncbi.nlm.nih.gov/32289273/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: some tumors co-depend on PAM and MAPK cascades (e.g. HER2+/HR+ with PIK3CA mutation), and dual inhibition of ER/AKT/HER2 can still yield responses despite strong MAPK activity, but isolated MAPK-high biology more often predicts the need for direct MAPK/RTK targeting rather than pure AKT inhibition.",
+                  "PMID: 26645663; https://pubmed.ncbi.nlm.nih.gov/26645663/ ; PMID: 27255951; https://pubmed.ncbi.nlm.nih.gov/27255951/ (Tamaskovic et al., ERBB2–RAS–PI3K crosstalk) ; PMID: 38875362; https://pubmed.ncbi.nlm.nih.gov/38875362/ (Pan et al., HER2/PI3K/AKT pathway in HER2+ BC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: MAPK-low tumors that are resistant to capivasertib usually harbor other resistance drivers (PAM-independent ER signaling, cell-cycle deregulation, DNA repair alterations); lack of MAPK activation does not itself cause resistance but indicates that AKT is also not the dominant driver in some cases.",
+                  "PMID: 34916492; https://pubmed.ncbi.nlm.nih.gov/34916492/ ; PMID: 32289273; https://pubmed.ncbi.nlm.nih.gov/32289273/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible as a primary determinant: when MAPK is genuinely low at baseline, capivasertib sensitivity is unlikely to be explained by MAPK biology itself and instead reflects dependence on other AKT outputs; therefore attributing sensitivity to a MAPK-low state is mechanistically unsound.",
+                  "PMID: 34916492; https://pubmed.ncbi.nlm.nih.gov/34916492/ ; PMID: 26645663; https://pubmed.ncbi.nlm.nih.gov/26645663/"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: compensatory ERK activation during AKT inhibition (via RTK upregulation, RAS–RAF–MEK feedback) is a well-described escape route in HER2+ and HR+ breast cancer; on-treatment MAPK upregulation sustains proliferation despite AKT blockade and is associated with resistance to capivasertib unless MAPK is co-targeted.",
+                  "PMID: 27255951; https://pubmed.ncbi.nlm.nih.gov/27255951/ ; PMID: 26645663; https://pubmed.ncbi.nlm.nih.gov/26645663/ ; PMID: 38875362; https://pubmed.ncbi.nlm.nih.gov/38875362/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: sustained or increased ERK activity during therapy preserves a potent mitogenic driver and is inconsistent with robust antiproliferative responses to AKT inhibition; tumors with MAPK upregulation on capivasertib are considered resistant rather than sensitive.",
+                  "PMID: 27255951; https://pubmed.ncbi.nlm.nih.gov/27255951/ ; PMID: 26645663; https://pubmed.ncbi.nlm.nih.gov/26645663/"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: successful suppression of compensatory MAPK signaling together with AKT inhibition should favor tumor control; if clinical resistance still occurs, it usually reflects alternative escape programs (e.g. ER reactivation, cell-cycle deregulation, anti-apoptotic rewiring) rather than MAPK biology per se.",
+                  "PMID: 34916492; https://pubmed.ncbi.nlm.nih.gov/34916492/ ; PMID: 32289273; https://pubmed.ncbi.nlm.nih.gov/32289273/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: combined dampening of PI3K–AKT and downstream/parallel MAPK outputs (often via upstream RTK shut-down and endocrine blockade) leads to reduced proliferation and is a canonical signature of effective capivasertib-containing regimens in HER2-driven or RTK-rich breast cancers.",
+                  "PMID: 26645663; https://pubmed.ncbi.nlm.nih.gov/26645663/ ; PMID: 27255951; https://pubmed.ncbi.nlm.nih.gov/27255951/ ; PMID: 38875362; https://pubmed.ncbi.nlm.nih.gov/38875362/"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "PID_PI3KCI_PATHWAY": {
+      "description": "Class I PI3K signaling module integrating inputs from growth factor receptors (including HER2, EGFR, IGF/insulin) to generate PIP3 and activate downstream kinases such as AKT and SGK1.",
+      "interpretation": "In breast cancer, genomic lesions like PIK3CA mutation and PTEN loss hyperactivate class I PI3K signaling, driving AKT and SGK1 activity; this both creates capivasertib-sensitive addiction to AKT and enables SGK1-mediated bypass resistance when alternative PI3K effectors are upregulated.",
+      "Administration_of_capivasertib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically rare but possible: strong activation of class I PI3K (PIK3CA mutations, PTEN loss, ERBB2/FGFR amplification) usually predicts dependence on PI3K–AKT and should favor response to AKT inhibition; however, after prior PI3K/mTOR inhibitors or with multiple co-alterations, extreme PI3KCI upregulation can coexist with adaptive bypass circuits, leading to decreased incremental benefit from capivasertib.",
+                  "PMID: 37596643; https://pubmed.ncbi.nlm.nih.gov/37596643/ ; PMID: 37256976; https://pubmed.ncbi.nlm.nih.gov/37256976/ ; PMID: 34916492; https://pubmed.ncbi.nlm.nih.gov/34916492/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: class I PI3K hyperactivation via PIK3CA hotspot mutations, PTEN loss or RTK amplification is a hallmark of PAM-addicted breast cancer; AKT lies immediately downstream of PI3KCI, so tumors with PI3KCI-high signatures, particularly in HR+/HER2− disease after endocrine±CDK4/6i, are prime candidates for capivasertib+fulvestrant and show improved PFS in CAPItello-291.",
+                  "PMID: 37256976; https://pubmed.ncbi.nlm.nih.gov/37256976/ ; NCT04305496; https://clinicaltrials.gov/study/NCT04305496 ; PMID: 34916492; https://pubmed.ncbi.nlm.nih.gov/34916492/ ; PMID: 36671478; https://pubmed.ncbi.nlm.nih.gov/36671478/"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: if class I PI3K signaling is low (no PIK3CA/PTEN/AKT1 lesions, low phospho-AKT), the tumor is unlikely to depend on PI3KCI-AKT; in such settings AKT inhibition adds little to endocrine or chemotherapy, and capivasertib is expected to show primary resistance.",
+                  "PMID: 34916492; https://pubmed.ncbi.nlm.nih.gov/34916492/ ; PMID: 37596643; https://pubmed.ncbi.nlm.nih.gov/37596643/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: in the absence of significant PI3KCI activation, there is no clear biochemical rationale for strong capivasertib-specific benefit; any apparent sensitivity would more likely be due to other components of combination therapy or mis-classification of the PI3KCI signature.",
+                  "PMID: 34916492; https://pubmed.ncbi.nlm.nih.gov/34916492/ ; PMID: 36671478; https://pubmed.ncbi.nlm.nih.gov/36671478/"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: persistent or rebound class I PI3K signaling under AKT inhibition (through feedback RTK activation, alternative PI3K isoforms, incomplete target engagement) maintains upstream signaling and is a recognized resistance pattern to PAM-axis inhibitors; tumors with PI3KCI-high signatures on-treatment are unlikely to benefit from capivasertib alone.",
+                  "PMID: 37596643; https://pubmed.ncbi.nlm.nih.gov/37596643/ ; PMID: 34916492; https://pubmed.ncbi.nlm.nih.gov/34916492/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: sustained high class I PI3K activity during capivasertib therapy means the oncogenic driver remains fully active upstream of AKT and frequently re-engages AKT through feedback; this is incompatible with true AKT-pathway-mediated sensitivity and would generally indicate resistance.",
+                  "PMID: 34916492; https://pubmed.ncbi.nlm.nih.gov/34916492/ ; PMID: 37596643; https://pubmed.ncbi.nlm.nih.gov/37596643/"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: when PI3KCI signaling is effectively suppressed (biochemically or by expression signature) but the tumor is clinically resistant, this usually reflects downstream or parallel escape – for example, MAPK dominance, RB/E2F deregulation or BCL2-family-mediated survival – rather than a PI3KCI-driven mechanism.",
+                  "PMID: 37256976; https://pubmed.ncbi.nlm.nih.gov/37256976/ ; PMID: 32289273; https://pubmed.ncbi.nlm.nih.gov/32289273/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: successful capivasertib treatment of PI3KCI-addicted tumors produces a drug-induced state with reduced class I PI3K signaling and downstream AKT activity, leading to decreased proliferation and tumor shrinkage, as observed in biomarker analyses from capivasertib breast-cancer trials.",
+                  "PMID: 31836609; https://pubmed.ncbi.nlm.nih.gov/31836609/ ; PMID: 37256976; https://pubmed.ncbi.nlm.nih.gov/37256976/ ; PMID: 36671478; https://pubmed.ncbi.nlm.nih.gov/36671478/"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_MTORC1_SIGNALING": {
+      "description": "mTORC1-dependent regulation of protein translation and cell growth via phosphorylation of substrates such as S6 ribosomal protein and 4EBP1, linking nutrient and growth factor signals to biosynthesis.",
+      "interpretation": "In capivasertib-treated PIK3CA-mutant breast tumors, suppression of mTORC1 signaling and translation correlates with clinical benefit, whereas persistent or reactivated mTORC1-driven protein synthesis (high phospho-4EBP1 and ribosomal protein expression) marks intrinsic or acquired resistance.",
+      "Administration_of_capivasertib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: strong baseline mTORC1 activation that is largely AKT-independent (for example, RHEB activation or TSC1/2 loss, or chronic adaptation to prior PI3K/mTOR inhibitors) can make tumors only partially dependent on AKT; in such cases, capivasertib may provide limited incremental benefit despite high mTORC1 signaling and the tumor behaves relatively resistant.",
+                  "PMID: 39662202; https://pubmed.ncbi.nlm.nih.gov/39662202/ (Hao et al., PI3K/AKT/mTOR inhibitors in HR+ advanced breast cancer); PMID: 36671478; https://pubmed.ncbi.nlm.nih.gov/36671478/ (Yuan et al., PI3K–AKT-targeting breast-cancer treatments); PMID: 33375317; https://pubmed.ncbi.nlm.nih.gov/33375317/ (Miricescu et al., PI3K/AKT/mTOR signaling in breast cancer)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: in many HR+/HER2− and some HER2-enriched breast cancers, high mTORC1 activity is driven by upstream PI3K–AKT alterations (PIK3CA, AKT1, PTEN loss); capivasertib blocks AKT, reducing mTORC1 outputs (S6K, 4EBP1), which underlies the benefit seen in PAM-altered cohorts in CAPItello-291 and related trials.",
+                  "PMID: 37256976; https://pubmed.ncbi.nlm.nih.gov/37256976/ (Turner et al., CAPItello-291); PMID: 35398754; https://pubmed.ncbi.nlm.nih.gov/35398754/ (Andrikopoulou et al., emerging role of capivasertib in breast cancer); PMID: 39662202; https://pubmed.ncbi.nlm.nih.gov/39662202/; PMID: 33375317; https://pubmed.ncbi.nlm.nih.gov/33375317/"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: tumors with low baseline mTORC1 signaling and no PAM alterations are less reliant on AKT-mTORC1 for growth, often instead driven by MAPK, cell-cycle deregulation or other pathways; in these settings, adding capivasertib to endocrine or chemotherapy is unlikely to yield major benefit and primary resistance is expected.",
+                  "PMID: 36671478; https://pubmed.ncbi.nlm.nih.gov/36671478/; PMID: 33375317; https://pubmed.ncbi.nlm.nih.gov/33375317/; PMID: 34948307; https://pubmed.ncbi.nlm.nih.gov/34948307/ (Mery et al., targeting AKT in ER+ HER2− metastatic breast cancer)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (or extremely unlikely): if mTORC1 activity is genuinely low at baseline and the tumor lacks upstream PI3K/AKT activation, there is no coherent biochemical rationale for strong capivasertib-mediated benefit; any apparent sensitivity would more likely reflect other agents in the combination or assay mis-classification than true AKT–mTORC1 dependence.",
+                  "PMID: 36671478; https://pubmed.ncbi.nlm.nih.gov/36671478/; PMID: 39662202; https://pubmed.ncbi.nlm.nih.gov/39662202/"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: adaptive or persistent mTORC1 activation on-treatment (for example, via feedback RTK upregulation, alternative PI3K isoforms or incomplete AKT inhibition) can maintain protein synthesis and survival signaling despite AKT blockade and is a recognized resistance mechanism to PAM-axis inhibitors, including AKT inhibitors in breast cancer window-of-opportunity studies.",
+                  "PMID: 31836609; https://pubmed.ncbi.nlm.nih.gov/31836609/ (Robertson et al., STAKT biomarker trial of capivasertib); PMID: 33375317; https://pubmed.ncbi.nlm.nih.gov/33375317/; PMID: 36671478; https://pubmed.ncbi.nlm.nih.gov/36671478/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: a scenario where mTORC1 activity appears increased but the tumor is clinically sensitive would usually reflect technical or sampling artefacts (for example, stromal contamination or discordant time-points), because sustained or increased mTORC1 activity under AKT inhibition is generally incompatible with durable capivasertib benefit.",
+                  "PMID: 31836609; https://pubmed.ncbi.nlm.nih.gov/31836609/; PMID: 39662202; https://pubmed.ncbi.nlm.nih.gov/39662202/"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: capivasertib can effectively reduce mTORC1 readouts (phospho-S6, 4EBP1) yet the tumor may still behave resistant if alternative survival programs dominate (for example, BCL2 family upregulation, MAPK or cell-cycle escape); in such cases, pathway inhibition is pharmacodynamically adequate but clinically insufficient.",
+                  "PMID: 31836609; https://pubmed.ncbi.nlm.nih.gov/31836609/; PMID: 36671478; https://pubmed.ncbi.nlm.nih.gov/36671478/; PMID: 34948307; https://pubmed.ncbi.nlm.nih.gov/34948307/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: the intended drug-induced state for AKT inhibition in PAM-addicted breast cancer involves clear suppression of mTORC1 signaling, decreased phospho-S6/4EBP1 and reduced proliferation (Ki67); biomarker data from STAKT and CAPItello-291 support that such mTORC1 downregulation correlates with clinical responses to capivasertib combinations.",
+                  "PMID: 31836609; https://pubmed.ncbi.nlm.nih.gov/31836609/; PMID: 37256976; https://pubmed.ncbi.nlm.nih.gov/37256976/; PMID: 39662202; https://pubmed.ncbi.nlm.nih.gov/39662202/"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+      "description": "Estrogen receptor–regulated early response gene program controlling proliferation and survival in hormone receptor–positive breast epithelial cells.",
+      "interpretation": "In HR+ breast cancer, ER signaling crosstalks with AKT; capivasertib reduces ER phosphorylation and, when combined with ER downregulators like fulvestrant, leads to deeper suppression of estrogen response genes, overcoming endocrine resistance driven by PI3K–AKT hyperactivation.",
+      "Administration_of_capivasertib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: some ER-high tumors with strong early estrogen-response signatures have already developed complex endocrine resistance (for example, ESR1 mutations, extensive growth-factor crosstalk), where ER remains transcriptionally active but is no longer the sole driver; in such heavily pretreated HR+ disease, AKT inhibition alone may be insufficient, so capivasertib benefit can be modest despite high estrogen-response scores.",
+                  "PMID: 32289273; https://pubmed.ncbi.nlm.nih.gov/32289273/ (Hanker et al., endocrine resistance in breast cancer); PMID: 36939293; https://pubmed.ncbi.nlm.nih.gov/36939293/ (Huppert et al., systemic therapy for HR+/HER2− breast cancer); PMID: 35398754; https://pubmed.ncbi.nlm.nih.gov/35398754/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: classical luminal ER-driven tumors with high early estrogen-response and concurrent PAM alterations (PIK3CA, AKT1, PTEN loss) remain dependent on ER plus AKT signaling; combining capivasertib with endocrine therapy (fulvestrant or AIs) exploits this dual dependence and underpins the improved outcomes seen in CAPItello-291 and preclinical ER+ models.",
+                  "PMID: 37256976; https://pubmed.ncbi.nlm.nih.gov/37256976/; PMID: 37543694; https://pubmed.ncbi.nlm.nih.gov/37543694/ (Hopcroft et al., capivasertib plus fulvestrant in palbociclib-resistant ER+ models); PMID: 35398754; https://pubmed.ncbi.nlm.nih.gov/35398754/; PMID: 34765318; https://pubmed.ncbi.nlm.nih.gov/34765318/ (Kaboli et al., PI3K/Akt pathway inhibitors and chemoresistance in breast cancer)"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: tumors with low estrogen-response signatures (for example, ER-low, basal-like or fully triple-negative) are not classic candidates for endocrine plus AKT-targeted strategies; they usually lack a functional ER program and are instead driven by other pathways, so capivasertib in an ER-focused regimen would be expected to show primary resistance.",
+                  "PMID: 36939293; https://pubmed.ncbi.nlm.nih.gov/36939293/; PMID: 32289273; https://pubmed.ncbi.nlm.nih.gov/32289273/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible in the intended indication: in a truly estrogen-response-low or ER-negative breast cancer, there is no strong biological basis to expect major capivasertib benefit via ER-AKT cotargeting; such tumors are not selected for endocrine plus capivasertib in current HR+/HER2− treatment algorithms.",
+                  "PMID: 36939293; https://pubmed.ncbi.nlm.nih.gov/36939293/; PMID: 32289273; https://pubmed.ncbi.nlm.nih.gov/32289273/"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: AKT inhibition can trigger compensatory ER and growth-factor signaling (for example, IGF-1R, HER family), leading to re-enhancement of estrogen-response genes; persistent or rebound ER transcriptional activity on capivasertib plus endocrine therapy marks adaptive resistance with restoration of ER-driven proliferation.",
+                  "PMID: 23844554; https://pubmed.ncbi.nlm.nih.gov/23844554/ (Fox et al., autocrine IGF-I/InsR axis compensates for AKT inhibition); PMID: 32289273; https://pubmed.ncbi.nlm.nih.gov/32289273/; PMID: 35398754; https://pubmed.ncbi.nlm.nih.gov/35398754/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: if ER-targeting is suboptimal (for example, incomplete ER degradation or weak endocrine partner) a transient rise in some estrogen-response genes could coexist with partial tumor control driven mainly by AKT pathway suppression, but durable sensitivity in the context of a clearly upregulated estrogen-response program is uncommon and not the canonical response pattern.",
+                  "PMID: 37543694; https://pubmed.ncbi.nlm.nih.gov/37543694/; PMID: 37256976; https://pubmed.ncbi.nlm.nih.gov/37256976/"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: a fall in estrogen-response signaling usually reflects effective endocrine blockade or ER loss; if the tumor nonetheless progresses rapidly despite ER pathway suppression and concomitant AKT inhibition, this implies that alternative non-ER drivers (for example, HER2-low, FGFR1, MAPK or stem-like programs) have taken over, which is biologically plausible but not the prototypical scenario.",
+                  "PMID: 32289273; https://pubmed.ncbi.nlm.nih.gov/32289273/; PMID: 38875362; https://pubmed.ncbi.nlm.nih.gov/38875362/ (Pan et al., HER2/PI3K/AKT pathway in HER2+ breast cancer)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: successful capivasertib plus endocrine therapy in HR+/HER2− breast cancer is characterized by coordinated suppression of ER-driven transcription and AKT pathway activity, translating into decreased estrogen-response signatures and proliferation; this dual pathway shutdown aligns with preclinical ER+ models and the biomarker profile of responders in clinical trials.",
+                  "PMID: 37256976; https://pubmed.ncbi.nlm.nih.gov/37256976/; PMID: 37543694; https://pubmed.ncbi.nlm.nih.gov/37543694/; PMID: 35398754; https://pubmed.ncbi.nlm.nih.gov/35398754/"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_APOPTOSIS": {
+      "description": "Apoptotic signaling cascades, including mitochondrial pathways governed by BCL-2 family proteins and pro-apoptotic mediators such as BAD, BIM, BAX, and BAK.",
+      "interpretation": "AKT inhibition by capivasertib shifts the balance toward apoptosis in breast cancer cells by preventing phosphorylation of pro-apoptotic proteins and enabling FOXO3-driven BIM induction; tumors with intact apoptotic machinery are more likely to undergo cell death, whereas those with suppressed pro-apoptotic signaling resist AKT blockade.",
+      "Administration_of_capivasertib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: a tumor with a high baseline apoptosis-related gene signature that is nonetheless clinically aggressive usually has strong counter-balancing survival signals (for example, high PI3K–AKT, NF-κB or BCL2 family expression); in such a context, AKT inhibition alone may not fully tip the balance toward cell death, so capivasertib responses can still be limited despite apparent apoptotic priming.",
+                  "PMID: 36671478; https://pubmed.ncbi.nlm.nih.gov/36671478/; PMID: 33375317; https://pubmed.ncbi.nlm.nih.gov/33375317/; PMID: 14763163; https://pubmed.ncbi.nlm.nih.gov/14763163/ (Lu et al., targeting PI3K-AKT for cancer therapy)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: breast tumors that are already apoptosis-primed (for example, high BH3-only activity with restrained BAX/BAK) can undergo robust mitochondrial apoptosis when a key survival pathway like AKT is switched off; in such cases, capivasertib shifts the balance toward cell death, particularly when combined with endocrine therapy or chemotherapy.",
+                  "PMID: 17289999; https://pubmed.ncbi.nlm.nih.gov/17289999/ (Willis et al., BH3-only proteins priming BAX/BAK apoptosis); PMID: 36671478; https://pubmed.ncbi.nlm.nih.gov/36671478/; PMID: 34948307; https://pubmed.ncbi.nlm.nih.gov/34948307/"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: low baseline apoptosis signature, often accompanied by overexpression of anti-apoptotic proteins (BCL2, MCL1, BCL-XL) and high AKT signaling, defines a survival-biased state; such tumors frequently show poor engagement of the intrinsic apoptosis machinery and are relatively resistant to AKT inhibition, particularly if no strong pro-apoptotic partner drug is used.",
+                  "PMID: 14763163; https://pubmed.ncbi.nlm.nih.gov/14763163/; PMID: 33375317; https://pubmed.ncbi.nlm.nih.gov/33375317/; PMID: 36671478; https://pubmed.ncbi.nlm.nih.gov/36671478/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible as a primary driver of capivasertib benefit: if intrinsic apoptosis pathways are strongly suppressed at baseline and there is no latent apoptotic priming, AKT inhibition alone is unlikely to produce marked tumor regression, because the machinery required for programmed cell death is not readily available to be engaged.",
+                  "PMID: 14763163; https://pubmed.ncbi.nlm.nih.gov/14763163/; PMID: 36671478; https://pubmed.ncbi.nlm.nih.gov/36671478/"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: an increase in apoptosis-related transcripts or limited caspase activation on-treatment but with overall clinical progression suggests that only a fraction of tumor cells undergo death while resistant clones survive, or that cytostatic effects dominate without sufficient cell killing; this pattern is possible in heterogeneous metastatic breast cancer.",
+                  "PMID: 36671478; https://pubmed.ncbi.nlm.nih.gov/36671478/; PMID: 34948307; https://pubmed.ncbi.nlm.nih.gov/34948307/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: effective AKT blockade promotes intrinsic apoptosis by lowering anti-apoptotic signaling and facilitating BAX/BAK activation; increased apoptotic gene expression and markers (cleaved caspases, mitochondrial depolarization) after capivasertib, especially in combination with agents that modulate BCL2 family proteins, is consistent with a sensitive, drug-induced pro-death state.",
+                  "PMID: 17289999; https://pubmed.ncbi.nlm.nih.gov/17289999/; PMID: 39284898; https://pubmed.ncbi.nlm.nih.gov/39284898/ (Willis et al., capivasertib plus venetoclax, BAX/BAK-dependent apoptosis); PMID: 34948307; https://pubmed.ncbi.nlm.nih.gov/34948307/"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: persistent suppression of apoptotic programs during or after capivasertib exposure indicates that the drug fails to adequately engage cell-death machinery, for example due to dominant anti-apoptotic signaling, defective BAX/BAK activation or strong survival cues from parallel pathways; this corresponds to functional resistance despite some upstream pathway inhibition.",
+                  "PMID: 14763163; https://pubmed.ncbi.nlm.nih.gov/14763163/; PMID: 36671478; https://pubmed.ncbi.nlm.nih.gov/36671478/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: a true capivasertib-sensitive state requires at least some activation of apoptosis or durable cell-cycle exit; if apoptosis-related pathways are further downregulated while tumor burden decreases substantially, the response cannot plausibly be attributed to AKT-mediated engagement of the apoptotic machinery.",
+                  "PMID: 17289999; https://pubmed.ncbi.nlm.nih.gov/17289999/; PMID: 14763163; https://pubmed.ncbi.nlm.nih.gov/14763163/"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_SIGNALING_BY_ERBB2": {
+      "description": "ERBB2/HER2 receptor tyrosine kinase signaling network that activates downstream PI3K–AKT and RAS–MAPK pathways to promote proliferation and survival, particularly in HER2-amplified breast cancer.",
+      "interpretation": "HER2-driven breast tumors often signal through PI3K–AKT, and preclinical data show that combining capivasertib with anti-HER2 therapies can more completely shut down ERBB2→PI3K→AKT signaling, suggesting a role for this pathway in both driving disease and shaping response or resistance to AKT inhibition in HER2-enriched contexts.",
+      "Administration_of_capivasertib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically rare but observed: some HER2-high tumors with strong ERBB2 signaling remain refractory due to downstream PAM hyperactivation, parallel MAPK or SRC signaling and prior anti-HER2 exposure; in these cases, ERBB2 is still up, but complex network rewiring means adding capivasertib alone may not fully overcome resistance, though it can contribute in combinations.",
+                  "PMID: 26645663; https://pubmed.ncbi.nlm.nih.gov/26645663/ (Carmona et al., AKT signaling in ERBB2-amplified breast cancer); PMID: 38875362; https://pubmed.ncbi.nlm.nih.gov/38875362/ (Pan et al., HER2/PI3K/AKT pathway in HER2+ breast cancer); PMID: 35398754; https://pubmed.ncbi.nlm.nih.gov/35398754/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: ERBB2-amplified breast cancers often signal strongly through PI3K–AKT; preclinical data show that combining capivasertib with anti-HER2 agents can more completely shut down HER2→PI3K/AKT signaling, and ERBB2-high tumors with PAM alterations are good candidates for such dual-pathway targeting.",
+                  "PMID: 26645663; https://pubmed.ncbi.nlm.nih.gov/26645663/; PMID: 38875362; https://pubmed.ncbi.nlm.nih.gov/38875362/; PMID: 35398754; https://pubmed.ncbi.nlm.nih.gov/35398754/"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: in HR+/HER2-negative disease with low ERBB2 signaling, HER2 is not a dominant oncogenic driver; resistance or lack of indication for capivasertib-containing regimens here is determined by other factors (for example, PAM status, ESR1 mutations, cell-cycle deregulation), and low ERBB2 itself does not support particular sensitivity to an AKT inhibitor.",
+                  "PMID: 38875362; https://pubmed.ncbi.nlm.nih.gov/38875362/; PMID: 36939293; https://pubmed.ncbi.nlm.nih.gov/36939293/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: in truly ERBB2-low or HER2-negative tumors, ERBB2 signaling does not provide a strong rationale for capivasertib benefit; any observed sensitivity is far more likely related to PAM dependence downstream of other RTKs or ER, rather than low baseline ERBB2 per se.",
+                  "PMID: 38875362; https://pubmed.ncbi.nlm.nih.gov/38875362/; PMID: 33375317; https://pubmed.ncbi.nlm.nih.gov/33375317/"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: feedback upregulation of HER2 or HER3 and enhanced ERBB2 signaling during AKT pathway inhibition can reactivate PI3K/AKT and MAPK cascades, bypassing the block and conferring resistance; such adaptive ERBB2/HER3 signaling has been repeatedly implicated in failure of PAM-axis and HER2-directed therapies.",
+                  "PMID: 26645663; https://pubmed.ncbi.nlm.nih.gov/26645663/; PMID: 38875362; https://pubmed.ncbi.nlm.nih.gov/38875362/; PMID: 33375317; https://pubmed.ncbi.nlm.nih.gov/33375317/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: persistent or increased ERBB2 signaling under capivasertib treatment generally indicates that upstream HER2 remains highly active and can re-engage PI3K/AKT, which is inconsistent with robust, durable capivasertib sensitivity; any short-term response in this context would usually be driven by other agents in the regimen.",
+                  "PMID: 26645663; https://pubmed.ncbi.nlm.nih.gov/26645663/; PMID: 38875362; https://pubmed.ncbi.nlm.nih.gov/38875362/"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: if ERBB2 signaling is pharmacodynamically reduced (for example, by effective anti-HER2 therapy or ligand withdrawal) and capivasertib also inhibits AKT, yet the tumor still progresses, then resistance is likely driven by alternative nodes (for example, RAS/MAPK, MET, AXL or cell-cycle escape) rather than the ERBB2→AKT axis; this is possible but not the canonical pattern.",
+                  "PMID: 26645663; https://pubmed.ncbi.nlm.nih.gov/26645663/; PMID: 38875362; https://pubmed.ncbi.nlm.nih.gov/38875362/; PMID: 33375317; https://pubmed.ncbi.nlm.nih.gov/33375317/"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: in HER2-driven or HER2-interacting tumors, the most effective strategy is often dual ERBB2 and AKT pathway suppression; downregulation of ERBB2 signaling together with reduced AKT activity (for example, with anti-HER2 plus capivasertib) provides coherent biological rationale for a sensitive state, consistent with preclinical data showing synergy between AKT inhibition and HER2-directed agents.",
+                  "PMID: 26645663; https://pubmed.ncbi.nlm.nih.gov/26645663/; PMID: 38875362; https://pubmed.ncbi.nlm.nih.gov/38875362/; PMID: 35398754; https://pubmed.ncbi.nlm.nih.gov/35398754/"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "PIK3CA",
+    "AKT1",
+    "FOXO3"
+  ],
+  "sensitivity_genes_down": [
+    "PTEN",
+    "FOXM1",
+    "SGK1",
+    "BRCA1",
+    "BRCA2"
+  ],
+  "resistance_genes_up": [
+    "FOXM1",
+    "SGK1"
+  ],
+  "resistance_genes_down": [
+    "FOXO3"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "PIK3CA",
+      "interpretation": "Activating PIK3CA mutations hyperactivate PI3K–AKT signaling in breast tumors, creating strong dependency on AKT; clinical trials showed that PIK3CA-mutant cancers derive greater progression-free survival benefit from capivasertib, indicating that this gain-of-function alteration increases sensitivity to AKT inhibition."
+    },
+    {
+      "gene": "AKT1",
+      "interpretation": "The AKT1 E17K activating mutation drives estrogen-independent signaling in ER+ breast cancer, and AKT1-mutant tumors demonstrated notable response rates to capivasertib monotherapy, consistent with enhanced sensitivity when AKT1 is constitutively activated and then specifically inhibited."
+    },
+    {
+      "gene": "FOXO3",
+      "interpretation": "FOXO3 is a critical effector of capivasertib’s mechanism; when AKT is inhibited, active FOXO3 induces cell-cycle arrest and apoptosis via target genes such as p27 and BIM, and preclinical work shows that higher FOXO3 activity or intact FOXO3 function correlates with better response to AKT inhibition in PIK3CA-altered ER+ models."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [
+    {
+      "gene": "PTEN",
+      "interpretation": "Loss or downregulation of PTEN releases negative control of PI3K signaling, leading to marked AKT hyperactivation; HR+ and TNBC tumors with PTEN loss are particularly dependent on AKT and have shown enhanced benefit from capivasertib, making PTEN deficiency a sensitizing context."
+    },
+    {
+      "gene": "FOXM1",
+      "interpretation": "FOXM1 is a proliferation-driving transcription factor; experimental downregulation or knockdown of FOXM1 in ER+ breast cancer cells reverses acquired resistance and restores sensitivity to capivasertib, indicating that low FOXM1/mitotic drive allows AKT inhibition to more effectively arrest growth and induce death."
+    },
+    {
+      "gene": "SGK1",
+      "interpretation": "SGK1 can substitute for AKT downstream of PI3K; breast cancer models with low SGK1 expression lack this backup route and are more vulnerable to capivasertib, whereas SGK1 knockdown in resistant lines re-sensitizes them, so reduced SGK1 signaling enhances sensitivity to AKT inhibition."
+    },
+    {
+      "gene": "BRCA1",
+      "interpretation": "BRCA1 loss creates homologous recombination deficiency, and preclinical studies show that AKT inhibition is synthetic lethal with BRCA1 deficiency and augments the effects of PARP inhibition; thus, downregulated or mutated BRCA1 can increase sensitivity to capivasertib in DNA repair–defective breast cancers, particularly in combination regimens."
+    },
+    {
+      "gene": "BRCA2",
+      "interpretation": "Similar to BRCA1, BRCA2 loss underlies HR-deficient breast cancers that accumulate DNA damage; early clinical and preclinical data suggest that combining capivasertib with PARP inhibitors is effective in BRCA1/2-mutated tumors, implying that reduced BRCA2-mediated repair heightens susceptibility to AKT pathway suppression."
+    }
+  ],
+  "resistance_genes_up_annotations": [
+    {
+      "gene": "FOXM1",
+      "interpretation": "Long-term capivasertib exposure in ER+ PIK3CA-mutant breast cancer models leads to marked FOXM1 upregulation, maintaining G2/M and mitotic gene expression despite AKT/FOXO3 blockade; overexpression of FOXM1 experimentally diminishes capivasertib efficacy, demonstrating that high FOXM1 promotes resistance by sustaining cell-cycle progression."
+    },
+    {
+      "gene": "SGK1",
+      "interpretation": "Elevated SGK1 expression and activity (with increased phosphorylation of its substrate NDRG1) characterizes breast cancer cell lines intrinsically resistant to capivasertib and other AKT inhibitors; SGK1 can maintain phosphorylation of shared downstream targets when AKT is inhibited, so SGK1 upregulation provides a parallel survival pathway that confers resistance."
+    }
+  ],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "FOXO3",
+      "interpretation": "Deletion or functional downregulation of FOXO3 (FOXO3A) in ER+ PIK3CA-altered breast cancer models abolishes capivasertib-induced transcriptional repression and apoptosis, resulting in marked resistance; loss of this tumor suppressor pathway prevents AKT inhibition from triggering the necessary cell-cycle arrest and cell death program."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Capivasertib|inhibits|AKT1",
+    "Capivasertib|inhibits|AKT2",
+    "Capivasertib|inhibits|AKT3",
+    "PIK3CA_mutation|activates|PI3K_AKT_mTOR_signaling",
+    "PTEN_loss|hyperactivates|PI3K_AKT_mTOR_signaling",
+    "PIK3CA_mutation|confers_sensitivity_to|Capivasertib",
+    "AKT1_E17K_mutation|confers_sensitivity_to|Capivasertib",
+    "PTEN_loss|confers_sensitivity_to|Capivasertib",
+    "FOXO3A_deletion|confers_resistance_to|Capivasertib",
+    "FOXM1_overexpression|confers_resistance_to|Capivasertib",
+    "FOXM1_knockdown|confers_sensitivity_to|Capivasertib",
+    "SGK1_overexpression|confers_resistance_to|Capivasertib",
+    "SGK1_knockdown|confers_sensitivity_to|Capivasertib"
+  ],
+  "Breast_cancer_subtype_information": {
+    "HR+/HER2– (Luminal A/B)": "This is the setting where capivasertib has shown clear clinical benefit (CAPItello-291). In HR+ tumors, PI3K pathway activation (PIK3CA mutant, AKT1 mutant, PTEN loss) is common and correlates with endocrine resistance . Capivasertib is most effective in Luminal tumors with those alterations, as it targets the escape pathway from hormonal control . Mechanistically, HR+ tumors rely on both ER and AKT signaling; capivasertib restores endocrine sensitivity by blocking AKT-driven ER phosphorylation and cell-cycle progression . Subtype specific evidence: Turner et al. 2023 showed capivasertib+fulvestrant improved PFS both in PI3K pathway-altered HR+ tumors (median PFS 7.2 vs 3.6 months) and even to a lesser extent in pathway wildtype HR+ tumors , suggesting broad utility but stronger when alterations are present. Resistance in HR+ often involves upregulation of downstream proliferative signals (FOXM1) or alternate RTKs (like FGFR) after prolonged endocrine/AKT suppression . Also, ESR1 mutations (which keep ER active) don’t prevent capivasertib benefit, but complete loss of ER (lineage change) would remove the combination’s synergy. HR+ patients need monitoring of glucose/lipid levels on capivasertib (due to metabolic effects) but otherwise tolerate it along with endocrine therapy . In summary, for Luminal subtypes: PI3K/AKT-driven luminals respond well; key resistance nodes are cell-cycle upregulation and SGK1 (in PTEN-null cases).",
+    "HER2+": "No approved role yet, but preclinical data suggest synergy. Many HER2+ tumors have PIK3CA mutations (~20-30% of HER2+ cases) and those tend to do worse on HER2-targeted therapy alone. Capivasertib can inhibit the AKT downstream of HER2 and potentially overcome resistance to anti HER2 agents. For instance, capivasertib + trastuzumab had preclinical efficacy in cell lines, particularly when PI3K–AKT was hyperactive . Ongoing trials (e.g. CAPItello-291 included a subset of HER2-low, which is basically HR+ with low HER2; separate studies are looking at HER2+). We anticipate that in HER2+ cancers, resistance pathways upregulated might include parallel MAPK (since HER2 signals both PI3K and MAPK). If a HER2+ tumor has an active AKT1 mutation (rare but possible) or PTEN loss, it could be an ideal candidate for capivasertib. Conversely, if a HER2+ tumor is driven more by RAS/ERK or has lost dependence on AKT (e.g. through PIK3CA Y1021 mutation that affects binding), capivasertib may be less effective. So, while not standard yet, there is a rationale to target AKT in HER2+ disease with aberrant PI3K signaling, and trials are exploring this (no level 1 evidence yet to cite beyond preclinical).",
+    "Triple-Negative (TNBC)": "TNBC often has PI3K pathway dysregulation (PTEN loss, PIK3CA mutations in maybe 15% of TNBC, AKT3 upregulation). Early-phase trials hinted at benefit: the PAKT trial (phase II) in metastatic TNBC found that capivasertib + paclitaxel significantly improved OS, especially in the subset with PIK3CA/AKT1/PTEN alterations . However, the larger phase III CAPItello-290 failed to show an OS benefit in an unselected TNBC population . This suggests that biomarker selection is crucial in TNBC. In TNBC patients whose tumors had PI3K-pathway mutations, PFS was much longer with capivasertib (9.3 vs 3.7 months as mentioned) , echoing that these “addicted” tumors are sensitive. But TNBC tumors without such alterations likely activate compensatory pathways (and indeed TNBC is quick to engage MAPK, SGK, or immune evasion routes). Resistance in TNBC was often associated with feedback EGFR/HER3 and MAPK upregulation, as well as potentially greater reliance on glycolysis (some TNBC lines increase GLUT1 and go glycolytic to survive AKT inhibition). SGK1-mediated resistance was first discovered in TNBC cells (MDA-MB-468, BT-549 were among those studied) . Subtype specifics: Basal-like TNBC might require dual PI3K/AKT and MAPK targeting; mesenchymal TNBC might not respond well unless combined with other therapies. If TNBC has BRCA mutation, capivasertib + PARP inhibitor is a strategy being tested (CAPItello-292 includes some TNBC). So, for TNBC, capivasertib shows promise when a clear PI3K–AKT driver is present; otherwise, TNBC quickly upregulates bypass pathways leading to modest results.",
+    "gBRCA-mutated / HRD+": "This overlaps with TNBC often, but also some HR+ have BRCA mutations. Preclinically, BRCA1-deficient cells were sensitive to AKT inhibitors, especially in combination with DNA damage. Clinically, there isn’t a lot of direct data for capivasertib monotherapy in BRCA-mutated breast cancer. However, an ongoing trial (FAKTION) looked at capivasertib+fulvestrant and noted that even BRCA-mutated patients benefited similarly if they had PI3K pathway activation – no negative interaction there. The concept is that HRD tumors might not repair the damage exacerbated by AKT pathway suppression (AKT supports HR via BRCA1/2), so they could be more sensitive. In other words, if a BRCA1-mutant TNBC also has a PI3K mutation, capivasertib could be doubly effective. One caution: HRD tumors often activate compensatory ATR/CHK1 pathways; combining capivasertib with ATR inhibitors is another synthetic lethal approach being investigated (outside scope). In sum, BRCA/HRD status is not a formal requirement for capivasertib, but it could enhance the drug’s impact or guide combinations (like adding PARPi) – evidence still limited.",
+    "Basal-like vs Luminal vs HER2-enriched (Intrinsic subtypes)": "Basal-like (many TNBC) tumors frequently have EGFR or AKT3 activation; capivasertib might need help (chemo or EGFR inhibitor) in those. Luminal B (high proliferation HR+) often harbor PI3K mutations – ideal for capivasertib + endocrine. Luminal A (lower grade HR+) may not have as frequent PI3K mutations, but if present and if the patient progressed on CDK4/6, capivasertib is an option. HER2-enriched (whether clinically HER2+ or not) tend to have high AKT activity as well, so they conceptually fit, but data needed. Triple positive (ER+HER2+) cancers: combination with endocrine and HER2-targeted plus capivasertib could be a future exploration."
+  },
+  "citations": [
+    "Capivasertib: Uses, Interactions, Mechanism of Action | DrugBank Online",
+    "[https://go.drugbank.com/drugs/DB12218](https://go.drugbank.com/drugs/DB12218)",
+    "Safety Profile | TRUQAP® (capivasertib) Tablets | For HCPs",
+    "[https://www.truqaphcp.com/safety](https://www.truqaphcp.com/safety)",
+    "The emerging role of capivasertib in breast cancer - PubMed",
+    "[https://pubmed.ncbi.nlm.nih.gov/35398754/](https://pubmed.ncbi.nlm.nih.gov/35398754/)",
+    "Capivasertib Plus Paclitaxel Misses OS End Points in Advanced Triple-Negative Breast Cancer | OncLive",
+    "[https://www.onclive.com/view/capivasertib-plus-paclitaxel-misses-os-end-points-in-advanced-triple-negative-breast-cancer](https://www.onclive.com/view/capivasertib-plus-paclitaxel-misses-os-end-points-in-advanced-triple-negative-breast-cancer)",
+    "Capivasertib (AZD5363) | Akt inhibitor | Mechanism | Concentration",
+    "[https://www.selleckchem.com/products/azd5363.html](https://www.selleckchem.com/products/azd5363.html)",
+    "Frontiers | Crosstalk between protein kinases AKT and ERK1/2 in human lung tumor-derived cell models",
+    "[https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.1045521/full](https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.1045521/full)",
+    "Resistance to Targeted Inhibitors of the PI3K/AKT/mTOR Pathway in ...",
+    "[https://pubmed.ncbi.nlm.nih.gov/38927964/](https://pubmed.ncbi.nlm.nih.gov/38927964/)",
+    "AKT Antagonist AZD5363 Influences Estrogen Receptor Function in ...",
+    "[https://pubmed.ncbi.nlm.nih.gov/26116361/](https://pubmed.ncbi.nlm.nih.gov/26116361/)",
+    "Compound: CAPIVASERTIB (CHEMBL2325741) - ChEMBL",
+    "[https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2325741](https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL2325741)",
+    "The interplay between FOXO3 and FOXM1 influences sensitivity to AKT inhibition in PIK3CA and PIK3CA/PTEN altered estrogen receptor positive breast cancer | npj Breast Cancer",
+    "[https://www.nature.com/articles/s41523-025-00752-9?error=cookies_not_supported&code=1547208e-bc91-4d11-b812-2aced919950d](https://www.nature.com/articles/s41523-025-00752-9?error=cookies_not_supported&code=1547208e-bc91-4d11-b812-2aced919950d)",
+    "mTORC1-Driven Protein Translation Correlates with Clinical Benefit of Capivasertib within a Genetically Preselected Cohort of PIK3CA-Altered Tumors - PubMed",
+    "[https://pubmed.ncbi.nlm.nih.gov/38954770/](https://pubmed.ncbi.nlm.nih.gov/38954770/)",
+    "Phase I Trial of the PARP Inhibitor Olaparib and AKT ... - PubMed",
+    "[https://pubmed.ncbi.nlm.nih.gov/32532747/](https://pubmed.ncbi.nlm.nih.gov/32532747/)",
+    "Elevated SGK1 predicts resistance of breast cancer cells to Akt inhibitors - PubMed",
+    "[https://pubmed.ncbi.nlm.nih.gov/23581296/](https://pubmed.ncbi.nlm.nih.gov/23581296/)",
+    "AKT inhibition impairs PCNA ubiquitylation and triggers synthetic ...",
+    "[https://www.nature.com/articles/s41388-019-0724-7](https://www.nature.com/articles/s41388-019-0724-7)",
+    "AKT inhibition is synthetic lethal with the homologous recombination...",
+    "[https://www.researchgate.net/figure/AKT-inhibition-is-synthetic-lethal-with-the-homologous-recombination-HR-deficiency_fig11_330767504](https://www.researchgate.net/figure/AKT-inhibition-is-synthetic-lethal-with-the-homologous-recombination-HR-deficiency_fig11_330767504)",
+    "Oral SERDs and PI3K Inhibitors Move the Needle Beyond CDK4/6 Inhibitors in Metastatic Breast Cancer | OncLive",
+    "[https://www.onclive.com/view/oral-serds-and-pi3k-inhibitors-move-the-needle-beyond-cdk4-6-inhibitors-in-metastatic-breast-cancer](https://www.onclive.com/view/oral-serds-and-pi3k-inhibitors-move-the-needle-beyond-cdk4-6-inhibitors-in-metastatic-breast-cancer)",
+    "Mechanisms of acquired resistance to AKT inhibitor capivasertib in ...",
+    "[https://aacrjournals.org/cancerres/article/84/7_Supplement/LB450/742769/Abstract-LB450-Mechanisms-of-acquired-resistance](https://aacrjournals.org/cancerres/article/84/7_Supplement/LB450/742769/Abstract-LB450-Mechanisms-of-acquired-resistance)",
+    "Resistance to Targeted Inhibitors of the PI3K/AKT/mTOR Pathway in ...",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC11201395/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11201395/)",
+    "Truqap Disease Interactions - Drugs.com",
+    "[https://www.drugs.com/disease-interactions/capivasertib,truqap.html](https://www.drugs.com/disease-interactions/capivasertib,truqap.html)",
+    "Fulvestrant plus capivasertib versus placebo after relapse or ...",
+    "[https://www.sciencedirect.com/science/article/pii/S1470204519308174](https://www.sciencedirect.com/science/article/pii/S1470204519308174)",
+    "Cost-Effectiveness of Capivasertib as a Second-Line Therapy for ...",
+    "[https://europepmc.org/article/med/39630382](https://europepmc.org/article/med/39630382)"
+  ],
+  "notes": "This JSON encodes only pathways, genes, mechanisms, and safety context explicitly described for capivasertib in human breast cancer in the provided deep-research output, with conservative gene-level lists focused on well-supported sensitivity and resistance mechanisms (PIK3CA/AKT1/PTEN-driven PI3K–AKT activation, FOXO3–FOXM1 axis, SGK1, and BRCA1/2 in HRD settings). Some aspects, particularly immune microenvironment effects and certain DNA repair interactions, are still emerging or based on preclinical or combination-therapy data and should be interpreted cautiously. No additional pathways, genes, or citations beyond those in the source document have been added.  "
+}

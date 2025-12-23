@@ -1,0 +1,829 @@
+{
+  "drug_name": "Everolimus",
+  "cancer_indication": "Hormone receptor-positive, HER2-negative (HR+/HER2–) metastatic breast cancer in combination with endocrine therapy after prior aromatase inhibitor failure.",
+  "drug_category": "PI3K/AKT/mTOR targeted therapy",
+  "drug_class": "Rapamycin analog (rapalog) mTORC1 inhibitor",
+  "moa": "Everolimus is an oral inhibitor of the mTOR kinase that allosterically inhibits the mTORC1 complex. It binds FKBP12 to form a drug–protein complex that docks on mTORC1 and prevents mTOR activation, reducing phosphorylation of S6K1 and 4E-BP1 and suppressing protein synthesis and cell-cycle progression. In HR+ breast cancer, PI3K/AKT/mTOR signaling is frequently hyperactivated as an adaptive escape from hormone dependence; inhibiting mTORC1 can interrupt this survival pathway and restore sensitivity to endocrine therapy. In ER+ models, everolimus treatment reduced ER mRNA/protein and transcriptional activity, supporting synergy with endocrine therapy.",
+  "chembl_id": "CHEMBL1908360",
+  "drugbank_id": "DB01590",
+  "synonyms": [
+    "40-O-(2-hydroxyethyl)-rapamycin (42-O-(2-hydroxy)ethyl rapamycin)",
+    "Afinitor",
+    "Afinitor Disperz",
+    "Zortress",
+    "Votubia",
+    "Certican",
+    "RAD001",
+    "RAD-001",
+    "RAD 666"
+  ],
+  "primary_targets": [
+    "MTOR",
+    "FKBP1A"
+  ],
+  "pathway_sets": [
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "HALLMARK_MTORC1_SIGNALING",
+    "WP_ESTROGEN_SIGNALING",
+    "HALLMARK_E2F_TARGETS",
+    "GOBP_PROCESS_UTILIZING_AUTOPHAGIC_MECHANISM",
+    "HALLMARK_MYC_TARGETS_V1",
+    "KEGG_MEDICUS_REFERENCE_IGF_IGF1R_PI3K_SIGNALING_PATHWAY",
+    "HALLMARK_ANGIOGENESIS",
+    "KEGG_MEDICUS_REFERENCE_PDL_PD1_SHP_PI3K_SIGNALING_PATHWAY"
+  ],
+  "pathway_sets_annotations": {
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+      "description": "Core growth and survival signaling cascade linking PI3K and AKT to mTOR, regulating proliferation, metabolism, and survival.",
+      "interpretation": "Frequently dysregulated in breast cancer (e.g., via PIK3CA mutation or PTEN loss) and implicated in proliferation and endocrine therapy resistance.",
+      "Administration_of_everolimus": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Baseline hyperactive PI3K–AKT–mTOR suggests growth dependence on mTORC1 outputs; mTORC1 inhibition is more likely to suppress proliferation in HR+ settings (often with endocrine partner).:contentReference[oaicite:3]{index=3}",
+                  "NCT00863655; PMID:22149876; DrugBank:DB01590; ChEMBL:CHEMBL1908360"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: “Up” may reflect strong upstream RTK/AKT signaling poised for feedback rebound; PI3K/AKT reactivation can maintain survival despite mTORC1 blockade (classic rapalog escape).:contentReference[oaicite:4]{index=4}:contentReference[oaicite:5]{index=5}",
+                  "PMID:25537515 (MYC escape context); DrugBank:DB01590"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Low pathway score yet residual mTORC1-addiction can still exist (e.g., translational control) and respond; uncommon because most responders show pathway engagement.",
+                  "NCT00863655; PMID:22149876"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: If PI3K–AKT–mTOR is not a driver, mTORC1 inhibition is less impactful and other oncogenic programs dominate.",
+                  "NCT00863655; PMID:22149876"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Everolimus suppresses mTORC1 downstream signaling → reduced proliferation/translation programs (on-target pharmacodynamics).:contentReference[oaicite:6]{index=6}",
+                  "DrugBank:DB01590; PMID:22149876"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Even with apparent pathway downshift, tumors can persist via bypass (MYC programs, autophagic survival, or alternate RTK routes), producing clinical resistance despite target inhibition.:contentReference[oaicite:7]{index=7}:contentReference[oaicite:8]{index=8}",
+                  "PMID:25537515; PMID:27421652"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically unlikely: Post-treatment ‘Up’ usually represents compensatory feedback rather than effective killing; sensitivity despite upshift would typically require strong combination suppression elsewhere (rare).:contentReference[oaicite:9]{index=9}",
+                  "NCT00863655; PMID:22149876"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: mTORC1 inhibition relieves S6K–IRS1 feedback → AKT/RTK rebound and PI3K pathway reactivation, driving escape/resistance.:contentReference[oaicite:10]{index=10}:contentReference[oaicite:11]{index=11}",
+                  "DrugBank:DB01590"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_MTORC1_SIGNALING": {
+      "description": "mTORC1 downstream output program controlling cap-dependent translation, ribosomal biogenesis, and growth-related protein synthesis (e.g., via S6K and 4E-BP1).",
+      "interpretation": "Represents the translational and proliferative output of mTORC1 activity that supports breast tumor growth and cell-cycle progression.",
+      "Administration_of_everolimus": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High mTORC1 output indicates target engagement/addiction; rapalog inhibition is more likely to yield antiproliferative benefit.:contentReference[oaicite:12]{index=12}",
+                  "PMID:22149876; NCT00863655; DrugBank:DB01590"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (common limitation): mTORC1 ‘Up’ can coexist with incomplete 4EBP1 control and/or rapid bypass activation (AKT/MYC/autophagy), limiting depth/duration of response.:contentReference[oaicite:13]{index=13}",
+                  "PMID:25537515; PMID:27421652"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Low signature but residual mTORC1 dependency can remain at protein/translation level; uncommon.",
+                  "PMID:22149876"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: If baseline mTORC1 is not active, an mTORC1 inhibitor has less leverage on growth.",
+                  "PMID:22149876"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Direct on-target suppression of mTORC1 signaling is the intended therapeutic mechanism.:contentReference[oaicite:14]{index=14}",
+                  "DrugBank:DB01590; PMID:22149876"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Target is inhibited but tumor survives using escape programs (MYC-driven proliferation, autophagy-mediated stress tolerance, upstream RTK/AKT rebound).:contentReference[oaicite:15]{index=15}:contentReference[oaicite:16]{index=16}",
+                  "PMID:25537515; PMID:27421652"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (direct effect): Everolimus inhibits mTORC1; a true sustained ‘Up’ would imply no effective drug exposure or assay artifact.",
+                  "DrugBank:DB01590"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (if observed): Apparent ‘Up’ indicates lack of target inhibition (PK/PD failure) → resistance by definition.",
+                  "DrugBank:DB01590"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "WP_ESTROGEN_SIGNALING": {
+      "description": "Estrogen receptor (ER) signaling program driving estrogen-responsive transcription and ER-dependent proliferation in hormone receptor-positive breast cancer.",
+      "interpretation": "A central dependency in HR+ breast cancer and a key axis of endocrine response/resistance with documented cross-talk to PI3K/AKT/mTOR signaling.",
+      "Administration_of_everolimus": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (HR+ context): Active ER signaling provides endocrine synergy; everolimus + endocrine therapy can restore/augment hormone sensitivity after AI failure.:contentReference[oaicite:17]{index=17}:contentReference[oaicite:18]{index=18}",
+                  "NCT00863655; PMID:22149876"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: If ER activity is driven by strong ligand-independent programs and co-drivers (RTKs/MYC), mTORC1 blockade may not fully suppress ER output → reduced benefit.",
+                  "PMID:27421652 :contentReference[oaicite:19]{index=19}"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: ER-low tumors are not the classic everolimus + endocrine population; sensitivity here would typically depend on non-ER mTOR addiction (less common).",
+                  "PMID:22149876"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (HR+ regimen logic): Absence/downregulation of ER signaling undermines endocrine synergy and is associated with poor benefit in endocrine-augmentation use-cases.:contentReference[oaicite:20]{index=20}",
+                  "PMID:22149876; NCT00863655"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Everolimus can reduce ER expression/activity (mTOR-dependent translation/chaperoning), supporting endocrine re-sensitization in ER+ disease.:contentReference[oaicite:21]{index=21} :contentReference[oaicite:22]{index=22}",
+                  "PMID:27421652; NCT00863655"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: If ER pathway becomes suppressed due to phenotypic switch/ER loss, the endocrine partner loses efficacy and the combo strategy fails (clinical resistance scenario).:contentReference[oaicite:23]{index=23}",
+                  "PMID:22149876"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically unlikely: Everolimus does not directly activate ER signaling; sensitivity with ER ‘Up’ would more likely reflect endocrine partner effects rather than everolimus.",
+                  "NCT00863655"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically plausible: Compensatory ER transcriptional rebound can sustain growth despite mTORC1 inhibition, particularly if upstream cues remain strong.",
+                  "PMID:27421652"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_E2F_TARGETS": {
+      "description": "E2F-regulated transcriptional program supporting DNA replication and cell-cycle progression (G1/S and S-phase gene expression).",
+      "interpretation": "Reflects proliferative cell-cycle activity in breast tumors and is modulated downstream of growth and translation control pathways.",
+      "Administration_of_everolimus": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High E2F/proliferation implies reliance on biosynthetic/cell-cycle programs supported by mTORC1; inhibition often yields G1 arrest and reduced proliferation.:contentReference[oaicite:24]{index=24}",
+                  "PMID:22149876"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: If E2F is driven by RB1 loss/uncoupled cell-cycle control, mTORC1 inhibition may not enforce durable arrest → reduced sensitivity.",
+                  "PMID:22149876"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Low proliferation tumors can still respond if survival depends on mTORC1 translation outputs rather than cell-cycle speed.",
+                  "PMID:22149876"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Cytostatic benefit is limited when baseline proliferation is already low; pathway not a dependency.",
+                  "PMID:22149876"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Everolimus suppresses cell-cycle drivers (including E2F target programs) consistent with antiproliferative on-target effects.:contentReference[oaicite:25]{index=25}",
+                  "DrugBank:DB01590"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: E2F reduction can be cytostatic without tumor clearance; survival escape (autophagy/MYC/AKT rebound) still yields resistance.:contentReference[oaicite:26]{index=26}",
+                  "PMID:25537515; PMID:27421652"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically unlikely: Persistent/high E2F after mTORC1 inhibition usually indicates failure to arrest, not sensitivity.",
+                  "DrugBank:DB01590"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Lack of E2F suppression reflects ineffective cell-cycle control under therapy → resistance.",
+                  "DrugBank:DB01590"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "GOBP_PROCESS_UTILIZING_AUTOPHAGIC_MECHANISM": {
+      "description": "Autophagy-related cellular process enabling degradation and recycling of cellular components under stress conditions.",
+      "interpretation": "Acts as an adaptive stress-response program in breast cancer cells under therapeutic pressure and can support survival under mTORC1 inhibition.",
+      "Administration_of_everolimus": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In select contexts, very high autophagy can become cytotoxic (‘autophagic cell death’) when further induced; uncommon in breast cancer under rapalogs.",
+                  "PMID:27421652 :contentReference[oaicite:27]{index=27}"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Baseline high autophagy provides stress tolerance and can blunt mTORC1-inhibitor efficacy (survival adaptation).:contentReference[oaicite:28]{index=28}",
+                  "PMID:27421652 :contentReference[oaicite:29]{index=29}"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low autophagy capacity reduces ability to buffer metabolic stress from mTORC1 inhibition → higher likelihood of response.",
+                  "PMID:27421652 :contentReference[oaicite:30]{index=30}"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Tumor may rely on alternate stress programs (MYC/AKT) independent of autophagy; autophagy-low yet resistant is possible but not the classic pattern.",
+                  "PMID:25537515"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: If autophagy induction is excessive and pushes cells beyond tolerance, it can contribute to cell death; not the dominant breast-cancer phenotype under everolimus.:contentReference[oaicite:31]{index=31}",
+                  "PMID:27421652"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Everolimus induces autophagy by relieving mTORC1 repression; in breast cancer this often functions as a survival mechanism promoting resistance.:contentReference[oaicite:32]{index=32} :contentReference[oaicite:33]{index=33}",
+                  "PMID:27421652"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Autophagy down after everolimus would usually require co-therapy (autophagy inhibitors), which can enhance sensitivity (combination-dependent).",
+                  "PMID:27421652"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically plausible: Even if autophagy is suppressed, resistance can persist via MYC/AKT-driven escape programs.",
+                  "PMID:25537515"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_MYC_TARGETS_V1": {
+      "description": "MYC-driven transcriptional program regulating metabolism, biosynthesis, and proliferation-associated gene expression.",
+      "interpretation": "MYC pathway activity is implicated in sustaining growth programs that can bypass growth-inhibitory signaling constraints in breast cancer models under targeted therapy.",
+      "Administration_of_everolimus": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: High MYC tumors are usually aggressive and may show transient cytostasis from mTORC1 inhibition, but durable sensitivity is uncommon if MYC remains dominant.",
+                  "PMID:25537515 :contentReference[oaicite:34]{index=34}"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: High MYC activity (or MYC amplification/signature) is a validated escape/bypass program associated with everolimus resistance in ER+ models.:contentReference[oaicite:35]{index=35} :contentReference[oaicite:36]{index=36}",
+                  "PMID:25537515"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low MYC reduces bypass capacity; tumors may be more reliant on mTORC1-controlled growth programs and respond better.",
+                  "PMID:22149876; PMID:25537515"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: MYC-low yet resistant can occur if other bypass pathways dominate (RTK/AKT feedback, etc.).",
+                  "PMID:22149876"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically unlikely: Therapy-induced MYC upshift typically marks adaptation/escape rather than sensitivity.",
+                  "PMID:25537515"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Everolimus pressure can select/induce MYC program activation (epigenetic BRD4→MYC) sustaining proliferation despite mTORC1 blockade.:contentReference[oaicite:37]{index=37} :contentReference[oaicite:38]{index=38}",
+                  "PMID:25537515"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare (combination-dependent): If MYC is suppressed (e.g., via BET/BRD4 targeting), tumors can be resensitized to everolimus.",
+                  "PMID:25537515 :contentReference[oaicite:39]{index=39}"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically plausible: Even with MYC controlled, resistance can arise from PI3K/AKT rebound or immune-evasion/autophagy programs.",
+                  "PMID:27421652; DrugBank:DB01590"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_MEDICUS_REFERENCE_IGF_IGF1R_PI3K_SIGNALING_PATHWAY": {
+      "description": "Growth-factor signaling from IGF ligands through IGF1R to PI3K/AKT pathway activation.",
+      "interpretation": "A growth-factor input into PI3K/AKT signaling that can be engaged as a compensatory route when downstream mTORC1 signaling is inhibited.",
+      "Administration_of_everolimus": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically plausible: Upstream IGF/IGF1R signaling feeds PI3K; if tumor remains mTORC1-dependent downstream, everolimus may still suppress growth (often partial).",
+                  "NCT00863655; PMID:22149876"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: High IGF1R/RTK activity predisposes to feedback-driven AKT hyperactivation on rapalog therapy, a known resistance route.:contentReference[oaicite:40]{index=40}:contentReference[oaicite:41]{index=41}",
+                  "DrugBank:DB01590"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low IGF1R drive reduces likelihood of strong AKT rebound; mTORC1 inhibition is more likely to translate into growth suppression.",
+                  "PMID:22149876"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically plausible: Resistance can still occur via MYC or autophagy even without IGF1R dependence.",
+                  "PMID:25537515; PMID:27421652"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically plausible (context-dependent): If upstream IGF signaling is not induced (or is co-inhibited), AKT rebound is blunted and response improves.",
+                  "DrugBank:DB01590"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically plausible: Even with IGF axis low, tumors can escape via HER-family signaling or MYC/autophagy programs.",
+                  "PMID:25537515"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically unlikely: IGF1R/PI3K upregulation after therapy usually represents compensatory escape rather than sensitivity.",
+                  "DrugBank:DB01590"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Everolimus relieves feedback inhibition on insulin/IGF and HER receptors, increasing AKT phosphorylation and driving resistance.:contentReference[oaicite:42]{index=42}",
+                  "DrugBank:DB01590"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_ANGIOGENESIS": {
+      "description": "Angiogenesis program involving hypoxia-driven and VEGF-associated pathways that support neovascularization and tumor perfusion.",
+      "interpretation": "Tumor vascularization supports nutrient delivery and growth, and angiogenic signaling can influence tumor progression across breast cancer contexts.",
+      "Administration_of_everolimus": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically plausible: Highly angiogenic tumors may be more impacted by mTOR–HIF–VEGF suppression, reducing vascular support and growth (supporting sensitivity).",
+                  "PMID:36745547 :contentReference[oaicite:43]{index=43}"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically plausible: Angiogenesis can be driven by non-mTOR programs (e.g., alternate pro-angiogenic cytokines), so baseline ‘Up’ does not guarantee everolimus benefit.",
+                  "PMID:36745547"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Low angiogenesis is not a specific sensitizer; sensitivity would come from direct tumor-cell mTOR addiction rather than vascular effects.",
+                  "PMID:22149876"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically plausible: If angiogenesis is already low, vascular suppression adds little; resistance depends on other drivers.",
+                  "PMID:22149876"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Everolimus can downregulate HIF-1α/VEGF signaling, decreasing microvessel support as part of antitumor effect.:contentReference[oaicite:44]{index=44} :contentReference[oaicite:45]{index=45}",
+                  "PMID:36745547"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically plausible: Despite reduced angiogenesis signature, tumors may survive via metabolic adaptation/autophagy or alternative angiogenic routes.",
+                  "PMID:27421652"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically unlikely: Post-treatment angiogenesis upshift usually indicates failure of vascular suppression and predicts poor response.",
+                  "PMID:36745547"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Reactivation/compensation of angiogenic programs undermines growth suppression and supports resistance.:contentReference[oaicite:46]{index=46}",
+                  "PMID:36745547"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_MEDICUS_REFERENCE_PDL_PD1_SHP_PI3K_SIGNALING_PATHWAY": {
+      "description": "Immune checkpoint signaling centered on the PD-1/PD-L1 axis associated with suppression of anti-tumor immune activity.",
+      "interpretation": "Immune evasion through checkpoint signaling is relevant to tumor microenvironment control in breast cancer, particularly in immune-infiltrated contexts.",
+      "Administration_of_everolimus": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Baseline checkpoint activation does not sensitize to everolimus; any apparent sensitivity would be indirect (e.g., vascular/PI3K effects) rather than immune-checkpoint biology.",
+                  "PMID:22149876"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: An immune-evasive (PD-1/PD-L1-high) microenvironment plus everolimus immunosuppressive effects can blunt anti-tumor immunity, aligning with resistance risk.:contentReference[oaicite:47]{index=47}",
+                  "PMID:37257766 :contentReference[oaicite:48]{index=48}"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically plausible: Lower baseline checkpoint signaling implies less immune evasion; everolimus’ immune suppression is less likely to be the dominant limiting factor (context-dependent).",
+                  "PMID:22149876"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically plausible: Even PD-L1-low tumors can be resistant through tumor-intrinsic MYC/autophagy/AKT escape mechanisms.",
+                  "PMID:25537515; PMID:27421652"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically plausible (combination-dependent): If PD-1/PD-L1 signaling is functionally neutralized (e.g., with anti–PD-1), sensitivity can improve in preclinical TNBC contexts.",
+                  "PMID:37257766 :contentReference[oaicite:49]{index=49}"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically plausible: Checkpoint pathway may be ‘down’ yet tumor still escapes via intrinsic resistance (MYC/AKT/autophagy).",
+                  "PMID:25537515"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically unlikely: Everolimus-associated PD-L1 upregulation generally marks immune escape unless countered by checkpoint blockade.",
+                  "PMID:37257766"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Everolimus can increase PD-L1 and reduce CD8+ infiltration (preclinical TNBC), creating an immune-evasive state associated with resistance unless PD-1 blockade is added.:contentReference[oaicite:50]{index=50} :contentReference[oaicite:51]{index=51}",
+                  "PMID:37257766"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "PIK3CA",
+    "ESR1"
+  ],
+  "sensitivity_genes_down": [
+    "PTEN"
+  ],
+  "resistance_genes_up": [
+    "MYC",
+    "IGF1R",
+    "EGFR",
+    "ERBB2",
+    "ERBB3",
+    "BCL2",
+    "BIRC5"
+  ],
+  "resistance_genes_down": [
+    "ESR1"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "PIK3CA",
+      "interpretation": "PI3K pathway alterations (including PIK3CA mutation) are described as hyperactivating PI3K/AKT/mTOR signaling in breast cancer, a context in which tumors can be more dependent on the pathway targeted downstream by mTORC1 inhibition."
+    },
+    {
+      "gene": "ESR1",
+      "interpretation": "Retention of ER signaling/ER expression in HR+ disease is described as part of the endocrine-responsive context in which everolimus is used to overcome endocrine resistance when combined with endocrine therapy."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [
+    {
+      "gene": "PTEN",
+      "interpretation": "PTEN loss is described as a frequent event (notably in TNBC) that leads to unchecked AKT/mTOR pathway activation and was cited as a feature of tumors most likely to benefit in the everolimus + carboplatin TNBC trial context."
+    }
+  ],
+  "resistance_genes_up_annotations": [
+    {
+      "gene": "MYC",
+      "interpretation": "Acquired everolimus resistance in ER+ breast cancer models is described as being driven by upregulation of c-MYC and enrichment of MYC target signatures; MYC knockdown resensitized resistant cells."
+    },
+    {
+      "gene": "IGF1R",
+      "interpretation": "Upregulation of IGF1R and related upstream signaling is described as contributing to compensatory AKT rephosphorylation after mTORC1 inhibition, supporting resistance."
+    },
+    {
+      "gene": "EGFR",
+      "interpretation": "EGFR is listed among receptor tyrosine kinases that can be upregulated as part of compensatory signaling leading to AKT/parallel pathway activation and resistance."
+    },
+    {
+      "gene": "ERBB2",
+      "interpretation": "HER2 signaling is described as a potential upstream driver whose compensatory activity can contribute to PI3K/AKT reactivation and reduced response to everolimus in certain contexts."
+    },
+    {
+      "gene": "ERBB3",
+      "interpretation": "Increased HER3–PI3K signaling is described as correlating with everolimus non-response in HER2+ tumors, consistent with RTK/AKT upregulation as a resistance driver."
+    },
+    {
+      "gene": "BCL2",
+      "interpretation": "Anti-apoptotic proteins such as BCL-2 are described as being overexpressed in some everolimus-resistant cells, supporting survival under therapeutic stress."
+    },
+    {
+      "gene": "BIRC5",
+      "interpretation": "Survivin (BIRC5) is described as upregulated in everolimus-resistant breast cancer cells and contributing to resistance by helping cells avoid death."
+    }
+  ],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "ESR1",
+      "interpretation": "Downregulation or loss of ER signaling in formerly ER+ disease is described as conferring resistance to everolimus plus endocrine therapy because the combination relies on concurrent hormone blockade to be effective in ER+ cancer."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Everolimus|inhibits|MTOR",
+    "Everolimus|binds|FKBP1A",
+    "PIK3CA_activation|associated_with_sensitivity_to|Everolimus",
+    "PTEN_loss|associated_with_sensitivity_to|Everolimus",
+    "MYC_upregulation|confers_resistance_to|Everolimus",
+    "IGF1R_upregulation|confers_resistance_to|Everolimus",
+    "ERBB3_upregulation|confers_resistance_to|Everolimus",
+    "ESR1_loss|confers_resistance_to|Everolimus"
+  ],
+  "Breast_cancer_subtype_information": {
+    "HR+/HER2– (Luminal A/B) Subtype": "Postmenopausal women with HR+ HER2– advanced breast cancer that progressed on nonsteroidal AIs benefited from everolimus + exemestane, as shown in the BOLERO-2 trial; everolimus is integrated into guidelines for endocrine-resistant HR+ disease.",
+    "HER2-Positive Subtype": "Everolimus has been studied in combination with anti-HER2 therapy in resistant cases; BOLERO-3 showed a modest but significant PFS improvement and exploratory analyses suggested benefit concentrated in HR-negative/HER2+ tumors.",
+    "Triple-Negative (TNBC) Subtype": "Everolimus is not an established treatment in TNBC outside clinical trials; a randomized phase II study of everolimus + carboplatin vs carboplatin reported improved PFS and noted tumors most likely to benefit were those with mTOR pathway activation (e.g., PTEN loss).",
+    "BRCA-mutated/HRD Subtype": "There is no dedicated trial of everolimus in BRCA-mutant patients and no specific evidence that BRCA/HRD status predicts better or worse response; the text emphasizes PI3K pathway status as more relevant than HRD itself.",
+    "Basal-like vs. Luminal vs. HER2-enriched vs. Claudin-low (intrinsic subtypes)": "Basal-like overlaps with TNBC (with PTEN loss in subsets); HER2-enriched overlaps with HER2+/HR– where a signal of benefit was observed; luminal A/B overlaps with HR+ where everolimus has the most established role."
+  },
+  "citations": [
+    "Everolimus: Uses, Interactions, Mechanism of Action | DrugBank Online",
+    "[https://go.drugbank.com/drugs/DB01590](https://go.drugbank.com/drugs/DB01590)",
+    "Definition of everolimus - NCI Drug Dictionary - NCI",
+    "[https://www.cancer.gov/publications/dictionaries/cancer-drug/def/everolimus](https://www.cancer.gov/publications/dictionaries/cancer-drug/def/everolimus)",
+    "Everolimus in postmenopausal hormone-receptor-positive advanced breast cancer -",
+    "PubMed",
+    "[https://pubmed.ncbi.nlm.nih.gov/22149876/](https://pubmed.ncbi.nlm.nih.gov/22149876/)",
+    "Overcoming the Adverse Effects of Everolimus to Achieve Maximum Efficacy in the Treatment",
+    "of Inoperable Breast Cancer: A Review of 11 Cases at Our Hospital | Case Reports in Oncology | Karger",
+    "Publishers",
+    "[https://karger.com/cro/article/11/2/511/90200/Overcoming-the-Adverse-Effects-of-Everolimus-to](https://karger.com/cro/article/11/2/511/90200/Overcoming-the-Adverse-Effects-of-Everolimus-to)",
+    "BOLERO-1: Everolimus Plus Trastuzumab/Paclitaxel Misses the Mark in First-Line",
+    "HER2-Positive Advanced Breast Cancer - The ASCO Post",
+    "[https://ascopost.com/issues/january-25-2015/bolero-1-everolimus-plus-trastuzumabpaclitaxel-misses-the-mark-in-first-line-her2-](https://ascopost.com/issues/january-25-2015/bolero-1-everolimus-plus-trastuzumabpaclitaxel-misses-the-mark-in-first-line-her2-)",
+    "positive-advanced-breast-cancer/",
+    "Added Everolimus Reduces Risk for Advanced TNBC - The ASCO Post",
+    "[https://ascopost.com/news/august-2025/added-everolimus-reduces-risk-for-advanced-tnbc/](https://ascopost.com/news/august-2025/added-everolimus-reduces-risk-for-advanced-tnbc/)",
+    "Compound: EVEROLIMUS (CHEMBL1908360) - ChEMBL - EMBL-EBI",
+    "[https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1908360](https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL1908360)",
+    "New Drug Approvals - Pt. V - Everolimus (Afinitor)",
+    "[http://chembl.github.io/new-drug-approvals-pt-v-everolimus/](http://chembl.github.io/new-drug-approvals-pt-v-everolimus/)",
+    "Everolimus downregulates estrogen receptor and induces autophagy in",
+    "aromatase inhibitor-resistant breast cancer cells | BMC Cancer | Full Text",
+    "[https://bmccancer.biomedcentral.com/articles/10.1186/s12885-016-2490-z](https://bmccancer.biomedcentral.com/articles/10.1186/s12885-016-2490-z)",
+    "Everolimus downregulates STAT3/HIF-1α/VEGF pathway to inhibit angiogenesis and",
+    "lymphangiogenesis in TP53 mutant head and neck squamous cell... | Oncotarget",
+    "[https://www.oncotarget.com/article/28355/text/](https://www.oncotarget.com/article/28355/text/)",
+    "4 9",
+    "1 11 16",
+    "2 12 13 15 33",
+    "3 41 42 59 63",
+    "4 5 24 37",
+    "6 36 44 45 60 61 64",
+    "7 8 9 46",
+    "10",
+    "14 17",
+    "18 19 20 21 26 27 28 65",
+    "22 23",
+    "ONC201/TIC10 enhances durability of mTOR inhibitor everolimus in ...",
+    "[https://elifesciences.org/articles/85898](https://elifesciences.org/articles/85898)",
+    "Resistance to everolimus driven by epigenetic regulation of MYC in ER+ breast cancers |",
+    "Oncotarget",
+    "[https://www.oncotarget.com/article/2964/text/](https://www.oncotarget.com/article/2964/text/)",
+    "Everolimus combined with PD-1 blockade inhibits progression of triple-negative breast cancer -",
+    "PubMed",
+    "[https://pubmed.ncbi.nlm.nih.gov/37257766/](https://pubmed.ncbi.nlm.nih.gov/37257766/)",
+    "Resistance to the mTOR inhibitor everolimus is reversed by the ...",
+    "[https://www.spandidos-publications.com/10.3892/ol.2017.6597](https://www.spandidos-publications.com/10.3892/ol.2017.6597)",
+    "prompt1_updated_drug_effect.docx",
+    "file://file_000000000f647206b3cb5791fed11bde",
+    "Expert consensus on treating HR+/HER2- metastatic breast cancer ...",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC12138406/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12138406/)",
+    "DailyMed - EVEROLIMUS tablet",
+    "[https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59cb86d5-8706-4619-b074-af253d3e0b68](https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=59cb86d5-8706-4619-b074-af253d3e0b68)",
+    "AFINITOR (everolimus) tablets",
+    "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2012/022334s016lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2012/022334s016lbl.pdf)",
+    "overall survival results from BOLERO-2 - Annals of Oncology",
+    "[https://www.annalsofoncology.org/article/S0923-7534(19)36905-4/fulltext](https://www.annalsofoncology.org/article/S0923-7534%2819%2936905-4/fulltext)",
+    "Long-Term Results with Everolimus in Advanced Hormone Receptor ...",
+    "[https://www.mdpi.com/2072-6694/15/4/1191](https://www.mdpi.com/2072-6694/15/4/1191)",
+    "25 32",
+    "29 30 31",
+    "34 35 47",
+    "38",
+    "39 40",
+    "43",
+    "48",
+    "49 50 51 52 53 54 55 56 57 58 62",
+    "66",
+    "67",
+    "36"
+  ],
+  "notes": "Some pathway names in the provided PATHWAY_LIST are annotated using the corresponding concepts explicitly discussed in the source (e.g., ER signaling, autophagy, IGF1R/PI3K feedback, PD-1/PD-L1 immune checkpoint), without adding components not stated. Source documents: Everolimus.pdf ; prompt schema/instructions: prompt2_final.docx ."
+}

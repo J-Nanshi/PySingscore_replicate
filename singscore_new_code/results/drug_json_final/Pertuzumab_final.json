@@ -1,0 +1,596 @@
+{
+  "drug_name": "Pertuzumab",
+  "cancer_indication": "HER2-positive breast cancer in combination with trastuzumab and chemotherapy (including metastatic, neoadjuvant, and adjuvant settings).",
+  "drug_category": "HER2-targeted",
+  "drug_class": "Humanized IgG1 monoclonal antibody",
+  "moa": "Pertuzumab is a humanized IgG1 monoclonal antibody targeting HER2/ERBB2. It binds HER2’s dimerization domain (subdomain II) and prevents ligand-dependent HER2 heterodimerization, reducing downstream PI3K/AKT and RAS/MAPK signaling. This leads to reduced proliferation (cell-cycle/E2F) and increased apoptosis in HER2-driven tumor cells. Its Fc region engages immune effector cells to mediate antibody-dependent cellular cytotoxicity (ADCC).",
+  "chembl_id": "CHEMBL2007641",
+  "drugbank_id": "DB06366",
+  "synonyms": [
+    "2C4 Antibody",
+    "rhuMAb-2C4",
+    "BCD-178",
+    "MOAB-2C4",
+    "R1273",
+    "RG-1273",
+    "SYSA1901",
+    "Perjeta",
+    "Perjeta–Herceptin",
+    "Phesgo",
+    "Phesgo SC"
+  ],
+  "primary_targets": [
+    "ERBB2"
+  ],
+  "pathway_sets": [
+    "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "KEGG_MAPK_SIGNALING_PATHWAY",
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_APOPTOSIS",
+    "GOBP_FC_GAMMA_RECEPTOR_SIGNALING_PATHWAY",
+    "REACTOME_SIGNALING_BY_ERBB2_IN_CANCER"
+  ],
+  "pathway_sets_annotations": {
+    "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2": {
+      "description": "Represents signaling output driven by HER2 (ERBB2) overexpression, including receptor dimerization-dependent activation of downstream growth and survival pathways.",
+      "interpretation": "In HER2-positive breast cancer, HER2 overexpression drives oncogenic signaling programs that sustain proliferation and survival.",
+      "Administration_of_pertuzumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: In HER2-amplified breast cancer, strong ligand-independent ERBB2 overexpression signaling indicates HER2 “addiction”; dual HER2 blockade including pertuzumab (HER2 dimerization inhibitor) is effective, especially in standard pertuzumab+trastuzumab regimens.",
+                  "Reactome:R-HSA-9634285; MSigDB:M29814 (REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2); PMID:24715843; PMID:22149875; NCT00567190; PMID:22153890; FDA:PERJETA label (Apr 2, 2025); DrugBank:DB06366. (reactome.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Even with high ERBB2 signaling, downstream “hardwiring” (e.g., PI3K activation via PTEN loss/PIK3CA mutation) or MAPK-pathway dependence can make tumors less dependent on HER2 inhibition → relative resistance to pertuzumab-based therapy.",
+                  "Reactome:R-HSA-9634285; PMID:15324695; PMID:20813970; PMID:24715843; (HER2+ resistance via MAPK alterations) PMCID:PMC8602441. (reactome.org)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some clinically HER2+ tumors can show a lower bulk “signature” (sampling/heterogeneity or prior therapy) yet still have sufficient surface HER2 for antibody binding and benefit from pertuzumab+trastuzumab regimens.",
+                  "HER2 testing/selection principle; PMID:22153890; FDA:PERJETA label (HER2+ indication). (NCBI)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low ERBB2-overexpression signaling typically reflects HER2-low/negative or non–HER2-driven disease, leaving little actionable target biology for pertuzumab (approved for HER2+ settings).",
+                  "FDA:PERJETA label (HER2+ use); HER2 testing/selection principle. (FDA Access Data)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Pertuzumab binds HER2 domain II and blocks HER2/HER3 dimerization, decreasing ERBB2-driven signaling and improving outcomes when added to trastuzumab+chemo in HER2+ breast cancer.",
+                  "PMID:24715843; PMID:22149875; NCT00567190; FDA:PERJETA label. (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Even if bulk ERBB2 signaling drops, resistant subclones can persist via alternative pathway dependence (e.g., MAPK shift) or downstream PI3K activation, yielding clinical resistance despite apparent pathway suppression.",
+                  "PMCID:PMC8602441 (MAPK dependence switch); PMID:15324695; PMID:20813970. (PMC)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (direct): Pertuzumab cannot increase functional ERBB2 overexpression signaling; any “up” score would be a signature artifact (e.g., tumor-cell proportion changes), not true drug-driven activation.",
+                  "PMID:24715843 (MOA); Reactome:R-HSA-9634285. (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (adaptive): Non-responders can show compensatory HER family signaling (e.g., HER3 rebound) or incomplete blockade, manifesting as persistent/upregulated ERBB2-network signaling and resistance.",
+                  "PMID:24715843; (HER2+ resistance mechanisms) PMCID:PMC9600208; PMCID:PMC7293079 (acquired resistance models including trastuzumab/pertuzumab). (PMC)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+      "description": "Growth and survival signaling axis downstream of receptor tyrosine kinases, involving PI3K-mediated AKT activation and downstream pro-survival/metabolic programs.",
+      "interpretation": "PI3K/AKT signaling is a key downstream effector of HER2 activity in HER2-positive tumors and supports tumor cell survival and metabolism.",
+      "Administration_of_pertuzumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: In many HER2+ tumors, PI3K/AKT/mTOR activation is driven by HER2/HER3 signaling; blocking HER2 dimerization can reduce this survival pathway and improve response in HER2-driven disease.",
+                  "MSigDB:M5923; PMID:24715843. (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Baseline PI3K pathway activation via PTEN loss and/or PIK3CA mutation is linked to poorer response to HER2 antibody therapy (class effect), and can blunt benefit from pertuzumab-based regimens.",
+                  "MSigDB:M5923; PMID:15324695; PMID:20813970; (PIK3CA mutation and lower pCR to anti-HER2 therapy) PMCID:PMC10458974. (gsea-msigdb.org)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Low PI3K signature (with high HER2 dependence through other effectors) can still respond strongly to HER2 blockade because the key driver is upstream ERBB2, not PI3K hardwiring.",
+                  "PMID:24715843; PMID:22153890. (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: If PI3K signaling is low because growth is driven by non-HER2 pathways (and HER2 is not the dominant oncogene), pertuzumab benefit is limited.",
+                  "FDA:PERJETA label (HER2+ requirement); HER2 testing/selection principle. (FDA Access Data)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Successful pertuzumab-mediated HER2/HER3 blockade reduces downstream PI3K/AKT/mTOR survival signaling, supporting tumor control in HER2+ breast cancer.",
+                  "PMID:24715843; MSigDB:M5923. (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Even with reduced PI3K output, resistant clones may survive via alternative signaling (e.g., MAPK) or microenvironmental protection, yielding resistance without PI3K rebound.",
+                  "PMCID:PMC8602441. (PMC)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare (signature-level): Bulk tumors can show an “up” hallmark score from stromal/immune composition changes, even while tumor-cell HER2 signaling is inhibited; this does not necessarily contradict clinical sensitivity.",
+                  "MSigDB:M5923; MSigDB Hallmark background. (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Adaptive feedback (e.g., IGF/RTK bypass) or constitutive PI3K alterations can sustain/increase PI3K signaling despite HER2 blockade, producing resistance.",
+                  "PMID:15324695; PMID:20813970. (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_MAPK_SIGNALING_PATHWAY": {
+      "description": "Mitogen-activated protein kinase signaling cascade (e.g., RAS/RAF/MEK/ERK) that drives proliferation and differentiation downstream of receptor tyrosine kinases.",
+      "interpretation": "HER2-driven MAPK signaling contributes to mitogenic signaling and tumor proliferation in HER2-positive breast cancer.",
+      "Administration_of_pertuzumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: In HER2-driven tumors, MAPK output can be downstream of HER2 dimers; high MAPK signaling can still be HER2-dependent and thus suppressible by effective HER2 blockade.",
+                  "KEGG:hsa04010; MSigDB:KEGG_MAPK_SIGNALING_PATHWAY; PMID:24715843. (KEGG)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: MAPK-pathway genomic alterations are enriched in refractory HER2+ disease and can drive a dependence switch to MEK/ERK, promoting resistance to anti-HER2 therapies including pertuzumab-based regimens.",
+                  "KEGG:hsa04010; PMCID:PMC8602441. (KEGG)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Low MAPK signaling with strong HER2/HER3→PI3K dependence can still respond well to pertuzumab because the actionable driver is HER2 dimerization.",
+                  "PMID:24715843. (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: If MAPK is low because tumors are non-HER2-driven (or HER2-low) and proliferate via other programs, pertuzumab is ineffective.",
+                  "FDA:PERJETA label; HER2 testing/selection principle. (FDA Access Data)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Pertuzumab-mediated inhibition of HER2 dimerization can reduce downstream RAS/MAPK signaling in HER2-dependent tumors, contributing to response.",
+                  "PMID:24715843; KEGG:hsa04010. (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: MAPK suppression may occur transiently, yet tumors can persist through alternate survival routes (e.g., PI3K hardwiring or lineage plasticity), yielding resistance despite low MAPK output.",
+                  "PMID:15324695; PMID:20813970. (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare (bulk): An apparent MAPK signature increase can reflect immune/stromal composition or stress responses while tumor burden declines; sensitivity can still occur if tumor-cell HER2 signaling is effectively blocked.",
+                  "MSigDB:KEGG_MAPK_SIGNALING_PATHWAY. (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: MAPK rebound or persistent MEK/ERK dependence after anti-HER2 therapy is a recognized resistance mode in HER2+ breast cancer.",
+                  "PMCID:PMC8602441. (PMC)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_E2F_TARGETS": {
+      "description": "Transcriptional program associated with E2F activity and cell-cycle progression, reflecting proliferative signaling and G1/S transition.",
+      "interpretation": "E2F-driven cell-cycle transcription reflects proliferative output downstream of HER2/MAPK signaling and is relevant to tumor growth in HER2-positive disease.",
+      "Administration_of_pertuzumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High E2F/proliferation programs in HER2+ disease often track with high tumor cycling; in trastuzumab-based neoadjuvant regimens, high proliferation (e.g., Ki-67 high) is associated with higher pCR, and pertuzumab intensifies HER2 blockade in similar settings.",
+                  "MSigDB:M5925; PMID:25752727; PMID:22153890. (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: If E2F activation is driven by downstream cell-cycle deregulation rather than HER2 (e.g., RB–E2F axis uncoupling), tumors may remain proliferative despite HER2 blockade, reducing pertuzumab benefit.",
+                  "MSigDB:M5925; (E2F biology background) PMCID:PMC12142822. (gsea-msigdb.org)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Lower baseline cycling can still respond if survival signaling is HER2-dependent (tumor control via signaling shutdown and immune mechanisms rather than dramatic cell-cycle arrest).",
+                  "PMID:24715843. (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low E2F/cell-cycle activity alongside low HER2-driven signaling suggests limited oncogene addiction and weaker response to HER2-directed antibodies.",
+                  "FDA:PERJETA label; HER2 testing/selection principle. (FDA Access Data)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective HER2 blockade reduces mitogenic signaling, leading to decreased proliferation programs (E2F targets) and tumor growth inhibition in HER2-dependent tumors.",
+                  "PMID:24715843; MSigDB:M5925. (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Some resistant tumors enter slow-cycling states (low E2F) yet persist, producing clinical resistance despite reduced proliferation markers.",
+                  " PMID: 40481544"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In early effective therapy, immune infiltration and wound/healing programs can coexist with ongoing tumor cycling in a shrinking lesion; sensitivity can still occur if net tumor burden decreases.",
+                  "MSigDB:M5925. (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Persistent E2F-high proliferation after pertuzumab indicates inadequate pathway suppression or HER2-independent cycling, aligning with resistance.",
+                  "MSigDB:M5925; pertuzumab MOA context. (gsea-msigdb.org)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_APOPTOSIS": {
+      "description": "Programmed cell death pathway activities, including caspase activation and pro-apoptotic signaling balance.",
+      "interpretation": "Apoptosis is a key tumor-suppressive process; shifts toward apoptosis occur when HER2-driven survival signaling is reduced.",
+      "Administration_of_pertuzumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Tumors with higher apoptotic priming are more likely to undergo cell death when HER2 survival signaling is blocked by anti-HER2 therapy, supporting sensitivity to pertuzumab-based regimens.",
+                  "MSigDB:M5902; (HER2 suppresses apoptosis) PMCID:PMC4830426; PMID:24715843. (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: A high apoptosis “signature” can sometimes reflect stress/inflammation rather than effective execution (e.g., caspase-independent survival), leading to limited added benefit from pertuzumab.",
+                  "MSigDB:M5902; apoptosis/targeted therapy context. (gsea-msigdb.org)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Even apoptosis-low tumors can respond if HER2 blockade mainly induces durable growth arrest and immune-mediated killing rather than strong intrinsic apoptosis.",
+                  "PMID:24715843. (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low apoptosis programs (strong anti-apoptotic wiring) reduce the ability of HER2 blockade to trigger tumor-cell death, contributing to resistance.",
+                  "MSigDB:M5902; apoptosis role in targeted therapy sensitivity. (gsea-msigdb.org)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: By inhibiting HER2/HER3 signaling, pertuzumab can relieve HER2-mediated anti-apoptotic signaling and promote apoptotic cell death in HER2-dependent tumors.",
+                  "PMID:24715843; PMCID:PMC4830426; MSigDB:M5902. (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Apoptosis markers may rise transiently, yet tumors can survive through parallel survival signals or incomplete cell death, resulting in resistance despite an “up” signature.",
+                  "PMID: 22959036"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare (bulk): In major responders, reduced tumor cellularity after therapy can lower measured apoptosis signatures even though the tumor was sensitive and cleared.",
+                  "PMID: 22153890"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Failure to induce apoptosis after HER2 blockade (persistently low apoptosis) supports non-response/resistance.",
+                  "MSigDB:M5902; apoptosis role in targeted therapy sensitivity. (gsea-msigdb.org)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "GOBP_FC_GAMMA_RECEPTOR_SIGNALING_PATHWAY": {
+      "description": "Immune effector signaling triggered by antibody Fc engagement of Fcγ receptors on immune cells, enabling cytotoxic responses such as ADCC.",
+      "interpretation": "Fcγ receptor signaling supports immune-mediated tumor killing when therapeutic antibodies engage immune effector cells.",
+      "Administration_of_pertuzumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Higher FcγR signaling/immune effector engagement (e.g., NK/macrophage activity) supports antibody-dependent cell-mediated cytotoxicity (ADCC) by IgG1 anti-HER2 antibodies; this can enhance sensitivity to pertuzumab-containing HER2 antibody therapy.",
+                  "MSigDB:M42777; GO:0038094; PMID:24715843 (ADCC noted); PMID:27812689 (FCGR3A polymorphism predicts trastuzumab benefit; class-relevant). (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: FcγR signaling can be high but functionally suppressed by immune-exclusion or inhibitory myeloid/Treg dominance, limiting effective ADCC despite an “up” pathway signature.",
+                  "FcγR biology definition; anti-HER2 immune mechanism context. (EMBL-EBI)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Even with low baseline FcγR signaling, strong HER2 oncogene addiction can yield sensitivity via direct signaling inhibition when pertuzumab is combined with trastuzumab/chemo.",
+                  "PMID:22149875; PMID:22153890. (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low FcγR signaling implies weak immune effector engagement (reduced ADCC potential), which can contribute to poorer responses to HER2 antibodies.",
+                  "MSigDB:M42777; GO:0038094; PMID:27812689 (FcγR genetics and trastuzumab efficacy). (gsea-msigdb.org)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Pertuzumab is an anti-HER2 IgG1 that can activate immune effector functions such as ADCC via Fcγ receptors; increased FcγR signaling after dosing aligns with effective immune-mediated tumor killing.",
+                  "PMID:24715843; MSigDB:M42777; GO:0038094. (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: FcγR activation can occur but be insufficient for clearance if tumors evade immune killing (e.g., immune suppression/exclusion), producing resistance despite an “up” pathway readout.",
+                  "FcγR biology definition; anti-HER2 immune mechanism context. (EMBL-EBI)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In deep responders, effector-cell infiltration and FcγR signaling can contract after tumor clearance, giving a lower post-treatment pathway score despite sensitivity.",
+                  "PMID: 22149875"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Persistently low FcγR signaling after therapy indicates limited ADCC engagement, contributing to resistance to antibody-based HER2 therapy.",
+                  "MSigDB:M42777; GO:0038094. (gsea-msigdb.org)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_SIGNALING_BY_ERBB2_IN_CANCER": {
+      "description": "Cancer-relevant signaling downstream of ERBB2/HER2, integrating activation of pathways such as PI3K/AKT and MAPK that promote tumor growth and survival.",
+      "interpretation": "ERBB2 signaling is central to the oncogenic program of HER2-positive breast cancer and is directly relevant to therapeutic targeting.",
+      "Administration_of_pertuzumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High ERBB2-oncogenic signaling in HER2+ breast cancer predicts benefit from intensified HER2 blockade; clinical trials show improved efficacy with pertuzumab added to trastuzumab-based regimens.",
+                  "Reactome:R-HSA-1227990; PMID:22149875; NCT00567190; PMID:22153890; NCT00545688. (reactome.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Upstream ERBB2 signaling can coexist with strong downstream escape (PI3K activation, MAPK alterations), reducing dependence on ERBB2 blockade and limiting pertuzumab benefit.",
+                  "Reactome:R-HSA-1227990; PMID:15324695; PMID:20813970; PMCID:PMC8602441. (reactome.org)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some HER2+ tumors may have lower pathway transcriptomics but still respond due to adequate HER2 protein amplification/overexpression and reliance on HER2 signaling at the receptor level.",
+                  "Reactome:R-HSA-1227990; HER2 testing/selection principle. (reactome.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low ERBB2-oncogenic signaling generally indicates non-HER2-driven biology, where pertuzumab targeting is ineffective.",
+                  "FDA:PERJETA label (HER2+ indication). (FDA Access Data)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective pertuzumab action suppresses ERBB2 dimerization-dependent signaling, contributing to improved outcomes in metastatic (CLEOPATRA) and neoadjuvant/adjuvant HER2+ breast cancer settings.",
+                  "PMID:24715843; PMID:22149875; NCT00567190; PMID:28581356; NCT01358877. (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Despite ERBB2 suppression, tumors can persist through bypass tracks (MEK/ERK shift) or constitutive PI3K signaling, producing resistance without restored ERBB2 output.",
+                  "PMCID:PMC8602441; PMID:15324695. (PMC)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (direct): Pertuzumab does not activate ERBB2 signaling; “up” cannot be a true drug-driven oncogenic increase.",
+                  "PMID:24715843 (MOA). (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Persistent ERBB2-network activity after treatment implies inadequate blockade or adaptive rewiring (e.g., HER3 compensation), aligning with resistance phenotypes.",
+                  "PMID:24715843; PMCID:PMC7293079. (PMC)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "ERBB2"
+  ],
+  "sensitivity_genes_down": [],
+  "resistance_genes_up": [
+    "IGF1R",
+    "MET",
+    "PIK3CA"
+  ],
+  "resistance_genes_down": [
+    "PTEN"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "ERBB2",
+      "interpretation": "Pertuzumab benefit is confined to tumors that overexpress HER2 (ERBB2), consistent with HER2 being the sole direct target and the biomarker defining indicated breast cancer populations."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [],
+  "resistance_genes_up_annotations": [
+    {
+      "gene": "PIK3CA",
+      "interpretation": "PIK3CA mutations are described as a potential resistance mechanism that can activate PI3K/AKT signaling independent of HER2, attenuating response to HER2 blockade."
+    },
+    {
+      "gene": "IGF1R",
+      "interpretation": "Alternate receptor tyrosine kinase signaling is described as a potential resistance mechanism; IGF-1R is cited as an example of such bypass signaling."
+    },
+    {
+      "gene": "MET",
+      "interpretation": "Alternate receptor tyrosine kinase signaling is described as a potential resistance mechanism; MET is cited as an example of such bypass signaling."
+    }
+  ],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "PTEN",
+      "interpretation": "PTEN loss is described as a potential resistance mechanism by activating PI3K/AKT signaling independent of HER2, which may attenuate response to HER2 blockade."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Pertuzumab|inhibits|ERBB2",
+    "PIK3CA_mutation|may_attenuate_response_to|Pertuzumab",
+    "PTEN_loss|may_attenuate_response_to|Pertuzumab",
+    "IGF1R_activation|may_attenuate_response_to|Pertuzumab",
+    "MET_activation|may_attenuate_response_to|Pertuzumab"
+  ],
+  "Breast_cancer_subtype_information": {
+    "HER2-positive breast cancers": "In summary, all HER2+ subtypes benefit from pertuzumab (Luminal B [HR+/HER2+], HER2-enriched [HR–/HER2+] alike ).",
+    "hormone-receptor-positive HER2+": "Pertuzumab plus trastuzumab and chemo is a standard component of therapy in tumors that overexpress HER2 (either hormone-receptor-positive HER2+ or triple-negative HER2+ subtypes ).",
+    "triple-negative HER2+": "Pertuzumab plus trastuzumab and chemo is a standard component of therapy in tumors that overexpress HER2 (either hormone-receptor-positive HER2+ or triple-negative HER2+ subtypes ).",
+    "HER2-negative subtypes": "In contrast, HER2-negative subtypes derive no benefit: triple-negative breast cancer (TNBC, HR–/HER2–) or hormone-positive/HER2– cancers are not indicated for pertuzumab."
+  },
+  "citations": [
+    "[https://pubmed.ncbi.nlm.nih.gov/22149875/](https://pubmed.ncbi.nlm.nih.gov/22149875/)",
+    "[https://pubmed.ncbi.nlm.nih.gov/22153890/](https://pubmed.ncbi.nlm.nih.gov/22153890/)",
+    "[https://pubmed.ncbi.nlm.nih.gov/39259927/](https://pubmed.ncbi.nlm.nih.gov/39259927/)",
+    "[https://go.drugbank.com/drugs/DB06366](https://go.drugbank.com/drugs/DB06366)",
+    "[https://www.genome.jp/dbget-bin/www_bget?pathway](https://www.genome.jp/dbget-bin/www_bget?pathway):hsa04012",
+    "[https://reactome.org/content/detail/R-HSA-9006934](https://reactome.org/content/detail/R-HSA-9006934)",
+    "[https://www.kegg.jp/pathway/hsa04151](https://www.kegg.jp/pathway/hsa04151)",
+    "[https://reactome.org/content/detail/R-HSA-1257604](https://reactome.org/content/detail/R-HSA-1257604)",
+    "[https://www.kegg.jp/pathway/hsa04010](https://www.kegg.jp/pathway/hsa04010)",
+    "[https://www.kegg.jp/pathway/hsa04110](https://www.kegg.jp/pathway/hsa04110)",
+    "[https://www.kegg.jp/pathway/hsa04210](https://www.kegg.jp/pathway/hsa04210)",
+    "[https://urgi.versailles.inrae.fr/OakMine_PM1N/report.do?id=6431389](https://urgi.versailles.inrae.fr/OakMine_PM1N/report.do?id=6431389)",
+    "[https://www.genome.jp/dbget-bin/www_bget?pathway](https://www.genome.jp/dbget-bin/www_bget?pathway):hsa05224",
+    "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2012/125409lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2012/125409lbl.pdf)",
+    "[https://ec.europa.eu/health/documents/community-register/2016/20161027136303/anx_136303_en.pdf](https://ec.europa.eu/health/documents/community-register/2016/20161027136303/anx_136303_en.pdf)"
+  ],
+  "notes": "Primary target stated as ERBB2 only; no other direct human protein targets reported. Potential resistance mechanisms explicitly mentioned include PIK3CA mutations, PTEN loss, and alternate RTK signaling (e.g., IGF-1R, MET). Contraindications/cautions explicitly mentioned include hypersensitivity, avoidance in pregnancy/breastfeeding with embryo–fetal toxicity warning, and monitoring for cardiac dysfunction (LVEF decreases).  "
+}

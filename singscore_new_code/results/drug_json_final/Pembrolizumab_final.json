@@ -1,0 +1,753 @@
+{
+  "drug_name": "Pembrolizumab",
+  "cancer_indication": "In breast cancer, pembrolizumab has been approved primarily for triple-negative breast cancer (TNBC): as neoadjuvant therapy (with chemotherapy) followed by adjuvant use in high-risk early-stage TNBC, and as first-line therapy (with chemotherapy) in metastatic TNBC expressing PD-L1 (combined positive score ≥10). It also has tissue-agnostic FDA approvals for MSI-H/dMMR tumors and for tumor mutational burden–high (≥10 mut/Mb) solid tumors, although these indications are rare in breast cancer.",
+  "drug_category": "Immune checkpoint",
+  "drug_class": "PD-1 inhibitor",
+  "moa": "Pembrolizumab (Keytruda) is a humanized IgG4 monoclonal antibody that targets the PD-1 checkpoint on T cells. By blocking PD-1, pembrolizumab prevents binding of its ligands (PD-L1/PD-L2) and thereby reactivates anti-tumor T-cell responses. PD-1 signaling normally inhibits T-cell activation and cytokine production; pembrolizumab antagonizes this checkpoint to promote cytotoxic T-cell infiltration and cytokine release within tumors, with particular clinical efficacy in TNBC.",
+  "chembl_id": "CHEMBL3137343",
+  "drugbank_id": "DB09037",
+  "synonyms": [
+    "Keytruda",
+    "MK-3475",
+    "SCH-900475"
+  ],
+  "primary_targets": [
+    "PDCD1"
+  ],
+  "pathway_sets": [
+    "REACTOME_CO_INHIBITION_BY_PD_1",
+    "WP_CANCER_IMMUNOTHERAPY_BY_PD1_BLOCKADE",
+    "REACTOME_TCR_SIGNALING",
+    "GOBP_T_CELL_ACTIVATION",
+    "KEGG_JAK_STAT_SIGNALING_PATHWAY",
+    "KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION",
+    "HALLMARK_TGF_BETA_SIGNALING",
+    "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+    "REACTOME_SIGNALING_BY_VEGF"
+  ],
+  "pathway_sets_annotations": {
+    "REACTOME_CO_INHIBITION_BY_PD_1": {
+      "description": "PD-1 engagement inhibits T-cell receptor signaling and IL-2 production, suppressing T-cell activation and function.",
+      "interpretation": "This immune-checkpoint pathway is central to tumor immune evasion; blocking PD-1 can restore anti-tumor T-cell responses in breast cancer.",
+      "Administration_of_pembrolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: “PD-1 co-inhibition” up (PD-1/PD-L1 axis engaged) usually reflects an inflamed, checkpoint-restrained TME; in PD-L1+ TNBC, this predicts better benefit from pembrolizumab + chemo.",
+                  "MSigDB M18810; Reactome R-HSA-389948. FDA TNBC approvals/label; KEYNOTE-355 (NCT02819518). (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: PD-1 axis up can also mark terminal exhaustion / suppressive myeloid dominance where blockade alone is insufficient (needs priming/combos).",
+                  "Stem-like vs exhausted T cells in ICI response (cross-cancer); PD-1 inhibition mechanisms. (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: low PD-1 axis yet sensitive can occur if tumor is already strongly immunogenic (e.g., very high antigenicity/TILs) and PD-1 is not the dominant brake.",
+                  "General PD-1 biology + ICI response frameworks (cross-cancer). (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: “PD-1 co-inhibition” down often indicates immune desert/exclusion (few functional T cells to reinvigorate), a common resistance state in breast cancer.",
+                  "Breast cancer PD-1/PD-L1 review; FDA TNBC context. (PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (as signaling): pembrolizumab blocks PD-1, so net PD-1 inhibitory signaling cannot be increased; however PD-1/PD-L1 expression signatures may rise while the inhibitory interaction is blocked.",
+                  "FDA MOA (PD-1 blockade) + PD-1→SHP2 signaling details. (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: apparent “PD-1 axis up” after therapy can reflect adaptive upregulation of PD-L1/PD-1 markers but clinical resistance via alternate checkpoints (e.g., TIM-3/LAG-3) or antigen-presentation loss.",
+                  "Acquired resistance mechanisms (JAK1/2, B2M) (cross-cancer). (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: drug functionally down-weights PD-1 inhibitory signaling by blocking PD-1–ligand interaction → restores TCR/CD28 signaling and effector function.",
+                  "FDA MOA; PD-1 inhibition of T cell activation review. (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: even with PD-1 inhibition relieved, resistance occurs if tumor can’t be recognized/respond (e.g., B2M/HLA loss, JAK1/2 LOF → IFN-γ resistance).",
+                  "PMID: 27433843, 27903500; B2M LOH associations. (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "WP_CANCER_IMMUNOTHERAPY_BY_PD1_BLOCKADE": {
+      "description": null,
+      "interpretation": null,
+      "Administration_of_pembrolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: baseline enrichment of “PD-1 blockade immunotherapy program” implies pre-existing antigen presentation/T cell engagement—more likely pembrolizumab benefit in TNBC.",
+                  "MSigDB M39843; WikiPathways WP4585; KEYNOTE-355 TNBC (NCT02819518). (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: signature up yet resistant if immune-suppressive cytokines (TGF-β/IL-10) or myeloid barriers dominate despite T cell presence.",
+                  "TGF-β immune exclusion; breast ICI review. (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: signature low but still sensitive if chemo strongly primes immunity (ICD, neoantigen release) and pembrolizumab sustains responses.",
+                  "TNBC chemo+pembro clinical benefit context. (U.S. Food and Drug Administration)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: low pathway suggests absent priming/poor T cell recruitment—common primary resistance state.",
+                  "Breast cancer PD-1/PD-L1 review. (PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: pembrolizumab activates the PD-1 blockade program (reinvigoration, cytokines, cytotoxicity), consistent with responders in TNBC trials.",
+                  "FDA TNBC approvals + KEYNOTE-355/522 outcomes. (U.S. Food and Drug Administration)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: pathway turns on but tumor escapes via antigen-presentation loss or IFN pathway defects.",
+                  "PMID: 27433843, 27903500. (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: after major tumor clearance, immune activation signatures can fall (“immune normalization”) while outcome remains sensitive.",
+                  "ICI response kinetics frameworks (cross-cancer). (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: no induction of the PD-1 blockade response program (no T cell reinvigoration) → clinical non-response.",
+                  "FDA MOA + breast ICI review. (FDA Access Data)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_TCR_SIGNALING": {
+      "description": "Activation of the T-cell receptor triggers downstream signaling cascades (including NF-κB) leading to T-cell proliferation and effector function.",
+      "interpretation": "TCR signaling supports anti-tumor immunity; higher activity of T-cell signaling programs is relevant to effective PD-1 blockade in breast cancer.",
+      "Administration_of_pembrolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: intact/high TCR signaling (with TILs) provides substrate for PD-1 blockade to restore effector function.",
+                  "MSigDB M15381; Reactome R-HSA-202403; PD-1 inhibition of T cell activation. (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: TCR signaling up but ineffective if dominated by Tregs or exhausted clones without stem-like pool.",
+                  "Stem-like TCF1+ PD-1+ T cells in ICI response (cross-cancer). (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: low TCR signaling yet sensitive if chemo/radiation creates priming and recruits T cells during treatment.",
+                  "TNBC chemo+pembro paradigm (clinical). (U.S. Food and Drug Administration)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: low TCR signaling = weak antigen recognition/priming → poor response to PD-1 blockade.",
+                  "Breast PD-1/PD-L1 review. (PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: PD-1 blockade restores proximal signaling (TCR/CD28) leading to expansion of functional CD8 T cells.",
+                  "PD-1 MOA + CD28/TCR signaling links. (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: signaling increases but tumor remains resistant via downstream immune escape (e.g., B2M loss).",
+                  "PMID: 27433843, 29070816. (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: falling TCR signaling after response can reflect reduced antigen load post-clearance.",
+                  "ICI response dynamics (cross-cancer). (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: no TCR reinvigoration (or early collapse via suppressive cytokines) → non-response.",
+                  "PD-1 inhibition mechanisms review. (PMC)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "GOBP_T_CELL_ACTIVATION": {
+      "description": "General biological process of activating T cells, driven by antigen receptor and co-stimulatory signals and shaped by cytokines.",
+      "interpretation": "T-cell activation is a core requirement for immune-mediated tumor killing and is a key biological context for checkpoint inhibitor activity in breast cancer.",
+      "Administration_of_pembrolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: baseline T-cell activation (hot TNBC) aligns with pembrolizumab benefit (PD-L1 CPS≥10 enriched responders).",
+                  "FDA TNBC approval + KEYNOTE-355 PD-L1 CPS≥10. (U.S. Food and Drug Administration)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: activation present but ineffective due to exclusion barriers (TGF-β) or suppressive myeloid cells.",
+                  "TGF-β exclusion; breast ICI review. (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: low activation yet sensitive if treatment induces de-novo priming (chemo-driven).",
+                  "KEYNOTE-522/355 regimen context. (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: absent T-cell activation = no effector pool to rescue → PD-1 blockade resistance.",
+                  "Breast PD-1/PD-L1 review. (PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: pembrolizumab increases functional activation/expansion of tumor-reactive T cells in responders.",
+                  "PD-1 blockade biology + stem-like progenitors enable expansion (cross-cancer). (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: T-cell activation increases but tumor evades via antigen presentation loss/IFN resistance.",
+                  "PMID: 27433843, 27903500. (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: activation decreases after tumor control (less antigen stimulation).",
+                  "ICI response kinetics (cross-cancer). (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: failure to activate T cells under therapy indicates non-response.",
+                  "Breast ICI review + FDA TNBC context. (PMC)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_JAK_STAT_SIGNALING_PATHWAY": {
+      "description": "Cytokine signaling (including interferons) activates JAK/STAT modules; IFN-γ receptor engagement triggers JAK1/2 and STAT1 phosphorylation and transcription of immune-effector genes.",
+      "interpretation": "Cytokine-driven JAK/STAT signaling contributes to immune effector programs within tumors and is relevant to anti-tumor immune activity during PD-1 blockade.",
+      "Administration_of_pembrolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: “immune IFN/JAK-STAT1” inflammation supports antigen presentation and T-cell recruitment → better ICI response likelihood.",
+                  "MSigDB M17411; IFN/JAK pathway importance (cross-cancer) + breast ICI review. (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (context-dependent): JAK-STAT up can also reflect IL-6/STAT3 immunosuppressive signaling promoting PD-L1 and myeloid suppression.",
+                  "IL-6/STAT3 and PD-L1/immune suppression (breast/oncology). (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: low baseline JAK-STAT but sensitive if therapy induces IFN signaling during response.",
+                  "PD-1 blockade MOA context. (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: tumor JAK1/2 LOF abrogates IFN-γ response → primary resistance to PD-1 blockade.",
+                  "PMID: 27903500; PMID: 27433843 (cross-cancer). (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: responders show increased IFN-γ signaling (JAK-STAT1 programs) after PD-1 blockade.",
+                  "PD-1 blockade biology + breast ICI review. (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: JAK-STAT up but resistant if skewed to STAT3/IL-6 dominant immunosuppression.",
+                  "IL-6/STAT3 immunosuppression review. (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: post-response immune “cooling” can reduce IFN signatures while maintaining control.",
+                  "Stem-like/response dynamics (cross-cancer). (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: persistent IFN-pathway silence due to JAK1/2 defects → no response despite PD-1 blockade.",
+                  "PMID: 27903500, 27433843. (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION": {
+      "description": "Broad network of cytokines (e.g., IL-2, interferons, chemokines) and receptors coordinating innate and adaptive immune responses.",
+      "interpretation": "Cytokine and chemokine signaling shapes immune-cell recruitment and activation in the tumor microenvironment, influencing immune engagement in breast cancer.",
+      "Administration_of_pembrolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: high chemokine/cytokine signaling can reflect an inflamed TME with immune cell recruitment (often correlates with ICI benefit when pro-immune cytokines dominate).",
+                  "MSigDB M9809; KEGG hsa04060; breast ICI review. (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: cytokine network up but immunosuppressive cytokines (IL-6/IL-10/TGF-β) dominate → resistance phenotype.",
+                  "IL-6/STAT3 immunosuppression; TGF-β exclusion. (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: low cytokine signaling yet sensitive if chemo induces inflammation/neoantigen release enabling subsequent immune recruitment.",
+                  "TNBC pembrolizumab+chemo approvals/trials. (U.S. Food and Drug Administration)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: low cytokine/chemokine gradients → poor immune recruitment (immune-cold TNBC) → ICI resistance.",
+                  "Breast ICI review. (PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: PD-1 blockade can increase effector cytokines (e.g., IFN-γ) and chemokines that reinforce recruitment/activation in responders.",
+                  "PD-1 blockade inhibition/activation mechanisms. (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: treatment-induced cytokines can also fuel counter-regulation (e.g., IL-6/STAT3, TNF-driven dysfunction) leading to non-durable responses.",
+                  "IL-6/STAT3 review; TNFα limits responses (cross-cancer). (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: after deep response, cytokine programs can drop as inflammation resolves.",
+                  "Response dynamics (cross-cancer). (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: failure to induce pro-immune cytokine networks indicates absent immune engagement → resistance.",
+                  "Breast ICI review. (PMC)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_TGF_BETA_SIGNALING": {
+      "description": "TGF-β signaling through receptor/SMAD pathways fosters immune tolerance and can exclude cytotoxic T cells from the tumor microenvironment.",
+      "interpretation": "TGF-β–driven immune suppression and exclusion are relevant tumor-microenvironment features that can counter anti-tumor immunity in breast cancer.",
+      "Administration_of_pembrolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: despite TGF-β up (usually exclusionary), some TNBC still respond if strong T-cell priming overrides (more common with combination strategies).",
+                  "MSigDB M5896; TGF-β as resistance axis (cross-cancer). (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: TGF-β program up drives T-cell exclusion/fibroblast barrier, a well-described ICI resistance mechanism.",
+                  "PMID: 29443960 (Mariathasan 2018) (cross-cancer). (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: low TGF-β exclusion permits T-cell infiltration → higher probability of PD-1 blockade benefit.",
+                  "TGF-β exclusion evidence; breast ICI overview. (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: TGF-β low but resistant if other escape mechanisms dominate (B2M/JAK defects, myeloid suppression).",
+                  "Acquired/primary resistance mechanisms. (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: TGF-β signaling may rise as part of wound-healing/remodeling during response, yet clinical benefit persists.",
+                  "TGF-β/ICI resistance literature (cross-cancer). (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: adaptive increase in TGF-β programs can re-exclude T cells and blunt pembrolizumab efficacy (escape).",
+                  "TGF-β attenuates PD-(L)1 responses. (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare (indirect): pembrolizumab does not directly inhibit TGF-β, but responders can show reduced TGF-β signatures secondary to TME remodeling/tumor shrinkage.",
+                  "Combination/indirect modulation concepts. (Europe PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically not possible (direct MOA): PD-1 blockade cannot be relied upon to downregulate TGF-β as a primary mechanism; persistent resistance would need other explanations.",
+                  "Pembrolizumab MOA is PD-1 blockade. (FDA Access Data)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+      "description": "NF-κB transcription factor signaling drives inflammatory gene expression and is activated by cytokines and antigen (TCR) signals in T cells.",
+      "interpretation": "Inflammatory signaling programs are part of immune activation states in tumors and are relevant to immune regulation in breast cancer.",
+      "Administration_of_pembrolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: some TNF/NF-κB inflammation supports immune infiltration and antigen presentation, occasionally correlating with ICI benefit.",
+                  "MSigDB M5890; NF-κB in TME review. (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: chronic TNF/NF-κB can sustain immunosuppressive, myeloid-rich inflammation and may contribute to PD-1 therapy resistance.",
+                  "TNFα limits anti-PD-1 responses (cross-cancer). (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: low TNF/NF-κB yet sensitive if immune response is driven by other axes (IFN-γ/TCR) and tumor is inflamed.",
+                  "Breast ICI review. (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: low inflammatory signaling can indicate immune-cold tumors with poor immune recruitment.",
+                  "Breast ICI review. (PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: PD-1 blockade can increase inflammatory effector programs (including TNF/NF-κB components) as T cells reactivate.",
+                  "PD-1 blockade mechanisms. (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: excess TNF can promote dysfunction/AICD and induce compensatory inhibitory molecules; TNF blockade can synergize with anti-PD-1 in models.",
+                  "PMID: 29273790. (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: after response, inflammatory signatures may decline as tumor burden drops.",
+                  "Response dynamics (cross-cancer). (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: failure to mount inflammatory/effector programs under PD-1 blockade indicates poor immune engagement.",
+                  "Breast ICI review. (PMC)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_SIGNALING_BY_VEGF": {
+      "description": "VEGF and its receptors promote angiogenesis and vascular permeability, supporting tumor blood vessel formation and tumor growth.",
+      "interpretation": "VEGF-driven angiogenesis is associated with immune evasion features in the tumor microenvironment and is relevant to immune context in breast cancer.",
+      "Administration_of_pembrolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: VEGF signaling is usually immunosuppressive; sensitivity despite VEGF up may occur if strong PD-L1+ immune infiltration outweighs angiogenic suppression (or if chemo primes).",
+                  "MSigDB M27077; VEGF immunosuppression background. (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: VEGF promotes abnormal vasculature and immune suppression (DC inhibition, exclusion), decreasing ICI efficacy.",
+                  "Anti-VEGF + ICI rationale reviews; VEGF immunosuppression. (Nature)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: low VEGF/angiogenic suppression supports immune infiltration and improves chance of pembrolizumab benefit.",
+                  "VEGF immunosuppression framework. (Nature)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: VEGF low but resistant if antigen presentation/IFN pathways are defective or TGF-β exclusion dominates.",
+                  "JAK/B2M resistance; TGF-β exclusion. (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (direct): pembrolizumab does not directly activate VEGF signaling; if VEGF rises during response it is incidental, not a therapeutic mechanism.",
+                  "Pembrolizumab MOA is PD-1 blockade. (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: VEGF can increase as an adaptive resistance program → worsened immune exclusion; combining anti-VEGF with checkpoint blockade is a rational strategy (evidence mainly cross-cancer).",
+                  "Anti-VEGF + ICI rationale; VEGF-A drives exhaustion (cross-cancer). (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare (indirect): PD-1 blockade doesn’t directly suppress VEGF, but responders may show reduced angiogenic signaling secondary to tumor control/TME remodeling.",
+                  "Anti-VEGF + ICI biology reviews (context). (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically not possible (as attribution to pembrolizumab): resistance with “VEGF down” would not be explained by pembrolizumab’s MOA; look to antigen presentation/IFN defects or alternative checkpoints.",
+                  "PD-1 blockade MOA + resistance mechanisms. (FDA Access Data)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "CXCL9",
+    "CXCL10"
+  ],
+  "sensitivity_genes_down": [],
+  "resistance_genes_up": [
+    "LAG3"
+  ],
+  "resistance_genes_down": [
+    "PTEN",
+    "JAK1",
+    "JAK2",
+    "STAT1"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "CXCL9",
+      "interpretation": "IFN-γ–induced chemokine expression (including CXCL9) is reported to rise in tumors responding to pembrolizumab."
+    },
+    {
+      "gene": "CXCL10",
+      "interpretation": "IFN-γ–induced chemokine expression (including CXCL10) is reported to rise in tumors responding to pembrolizumab."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [],
+  "resistance_genes_up_annotations": [
+    {
+      "gene": "LAG3",
+      "interpretation": "Alternative immune checkpoint pathways parallel to PD-1 (e.g., LAG3) are described as potential escape routes that may be co-upregulated in non-responders."
+    }
+  ],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "PTEN",
+      "interpretation": "Loss of PTEN is described as an example of a change that can blunt tumor immunogenicity and contribute to checkpoint resistance."
+    },
+    {
+      "gene": "JAK1",
+      "interpretation": "Defects in IFN-γ/JAK-STAT signaling are described as mechanisms that can blunt immunogenicity and underlie resistance to pembrolizumab."
+    },
+    {
+      "gene": "JAK2",
+      "interpretation": "Defects in IFN-γ/JAK-STAT signaling are described as mechanisms that can blunt immunogenicity and underlie resistance to pembrolizumab."
+    },
+    {
+      "gene": "STAT1",
+      "interpretation": "Defects in IFN-γ/JAK-STAT signaling are described as mechanisms that can blunt immunogenicity and underlie resistance to pembrolizumab."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Pembrolizumab|binds|PDCD1"
+  ],
+  "Breast_cancer_subtype_information": {
+    "TNBC": "Pembrolizumab has clear efficacy. Early-stage high-risk TNBC achieves higher pathologic complete response and longer disease-free survival when pembrolizumab is added to neoadjuvant chemotherapy. In metastatic TNBC, KEYNOTE-355 showed that pembrolizumab + chemo improves PFS and OS in patients with PD-L1 CPS≥10; PD-L1 testing (CPS) is routine in metastatic TNBC to select therapy.",
+    "HR+/HER2– BC": "Clinical benefit of pembrolizumab is not established; current guidelines note no definitive role for PD-1 inhibitors in HR+/HER2– breast cancer and evidence is insufficient, so immune therapies are generally not recommended outside trials.",
+    "HER2+ BC": "There is no approved use of pembrolizumab for HER2-positive breast cancer; trials combining PD-1 blockade with HER2-targeted therapy are ongoing, and routine use is not supported by current data.",
+    "gBRCA1/2-mutated BC": "Pembrolizumab has no specific indication tied to BRCA status in breast cancer; trials are exploring pembrolizumab plus chemotherapy in HER2–/BRCA-mutant metastatic breast cancer, but BRCA status is not presently an independent predictor of pembrolizumab response in breast cancer."
+  },
+  "citations": [
+    "Definition of pembrolizumab - NCI Drug Dictionary - NCI",
+    "[https://www.cancer.gov/publications/dictionaries/cancer-drug/def/pembrolizumab](https://www.cancer.gov/publications/dictionaries/cancer-drug/def/pembrolizumab)",
+    "Keytruda | European Medicines Agency (EMA)",
+    "[https://www.ema.europa.eu/en/medicines/human/EPAR/keytruda](https://www.ema.europa.eu/en/medicines/human/EPAR/keytruda)",
+    "FDA approves pembrolizumab for high-risk early-stage triple-negative breast cancer | FDA",
+    "[https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-high-risk-early-stage-triple negative-breast-cancer](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pembrolizumab-high-risk-early-stage-triple negative-breast-cancer)",
+    "label",
+    "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/125514s096lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2021/125514s096lbl.pdf)",
+    "Reactome | Co-inhibition by PD-1",
+    "[https://reactome.org/content/detail/R-HSA-389948](https://reactome.org/content/detail/R-HSA-389948)",
+    "KEGG PATHWAY: PD-L1 expression and PD-1 checkpoint pathway in cancer - Homo sapiens (human)",
+    "[https://www.kegg.jp/pathway/hsa05235](https://www.kegg.jp/pathway/hsa05235)",
+    "Reactome | Regulation of NF-kappa B signaling",
+    "[https://reactome.org/content/detail/R-HSA-9758274](https://reactome.org/content/detail/R-HSA-9758274)",
+    "KEGG PATHWAY: hsa04630",
+    "[https://www.genome.jp/dbget-bin/www_bget?pathway](https://www.genome.jp/dbget-bin/www_bget?pathway):hsa04630",
+    "KEGG PATHWAY: Cytokine-cytokine receptor interaction - Homo sapiens (human)",
+    "[https://www.kegg.jp/pathway/hsa04060](https://www.kegg.jp/pathway/hsa04060)",
+    "High TGF-β signature predicts immunotherapy resistance in gynecologic cancer patients treated with",
+    "immune checkpoint inhibition | npj Precision Oncology",
+    "[https://www.nature.com/articles/s41698-021-00242-8?error=cookies_not_supported&code=176f03ea-e220-4793-8890-](https://www.nature.com/articles/s41698-021-00242-8?error=cookies_not_supported&code=176f03ea-e220-4793-8890-)",
+    "ac3057d85436",
+    "Reactome | Signaling by VEGF",
+    "[https://reactome.org/content/detail/R-HSA-194138](https://reactome.org/content/detail/R-HSA-194138)",
+    "1 Recommendations | Pembrolizumab for neoadjuvant and adjuvant treatment of triple-negative",
+    "early or locally advanced breast cancer | Guidance | NICE",
+    "[https://www.nice.org.uk/guidance/ta851/chapter/1-Recommendations](https://www.nice.org.uk/guidance/ta851/chapter/1-Recommendations)",
+    "1 Recommendations | Pembrolizumab plus chemotherapy for untreated, triple-negative, locally",
+    "recurrent unresectable or metastatic breast cancer | Guidance | NICE",
+    "[https://www.nice.org.uk/guidance/ta801/chapter/1-Recommendations](https://www.nice.org.uk/guidance/ta801/chapter/1-Recommendations)",
+    "Expert consensus on the clinical application of immunotherapy in breast cancer: 2024 - PMC",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC11094404/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11094404/)"
+  ],
+  "notes": "Primary breast-cancer approvals described are for TNBC (perioperative high-risk early-stage TNBC with chemotherapy, and first-line metastatic TNBC with chemotherapy for PD-L1 CPS≥10). Tissue-agnostic approvals for MSI-H/dMMR and TMB-high (≥10 mut/Mb) solid tumors are described as rare in breast cancer. The FDA label is described as having no absolute contraindications; key safety issues noted include immune-related adverse events, infusion reactions, and embryofetal risk (fetal harm) with contraception recommended for women of childbearing potential."
+}

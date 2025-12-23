@@ -1,0 +1,846 @@
+{
+  "drug_name": "Olaparib",
+  "cancer_indication": "FDA-approved for HER2-negative breast cancers in both metastatic and early-stage (adjuvant) settings, contingent on a deleterious germline BRCA1/2 mutation; used after standard therapies (including chemotherapy, and endocrine therapy if ER-positive).",
+  "drug_category": "Targeted therapy",
+  "drug_class": "PARP inhibitor (PARP1/2 inhibitor; PARP3 minor target)",
+  "moa": "Inhibits PARP1 and PARP2 catalytic activity and traps PARP1 on DNA, impairing base-excision/single-strand break repair; unrepaired SSBs convert into DSBs during replication, which become lethal in tumors with homologous recombination repair defects (synthetic lethality), driving apoptosis and growth arrest in HRD/BRCA-mutant breast cancers.",
+  "chembl_id": "CHEMBL521686",
+  "drugbank_id": "DB09074",
+  "synonyms": [
+    "Lynparza",
+    "AZD-2281",
+    "KU-0059436",
+    "MK-7339"
+  ],
+  "primary_targets": [
+    "PARP1",
+    "PARP2",
+    "PARP3"
+  ],
+  "pathway_sets": [
+    "REACTOME_HOMOLOGOUS_RECOMBINATION",
+    "REACTOME_NONHOMOLOGOUS_END_JOINING_NHEJ",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+    "REACTOME_ABCFAMILY_PROTEINS_MEDIATED_TRANSPORT",
+    "REACTOME_ACTIVATION_OF_ATR_IN_RESPONSE_TO_REPLICATION_STRESS",
+    "HALLMARK_APOPTOSIS",
+    "HALLMARK_P53_PATHWAY",
+    "REACTOME_FANCONI_ANEMIA_PATHWAY",
+    "REACTOME_BASE_EXCISION_REPAIR"
+  ],
+  "pathway_sets_annotations": {
+    "REACTOME_HOMOLOGOUS_RECOMBINATION": {
+      "description": "High-fidelity double-strand break repair pathway requiring BRCA1/BRCA2 and other HR factors (e.g., RAD51) to repair replication-associated DNA damage.",
+      "interpretation": "Olaparib's therapeutic rationale in breast cancer is strongly tied to tumors with homologous recombination repair dysfunction (HRD) and the capacity (or lack thereof) to resolve DSBs created downstream of PARP inhibition; tumors can evolve adaptations that restore HR capacity.",
+      "Administration_of_olaparib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare (signature–function mismatch): HR genes can appear “up” transcriptionally, yet functional HR remains defective (e.g., low RAD51 foci/HRD phenotype), still enabling PARPi sensitivity.",
+                  "PMID:32471999; PMID:31015319"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: True HR proficiency repairs PARPi-induced DSBs → loss of synthetic lethality → relative resistance.",
+                  "PMID:28578601; PMID:22915752"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Baseline HRD (e.g., gBRCA1/2/PALB2 pathway loss) creates PARP-dependence; PARP inhibition → lethal DSB accumulation.",
+                  "PMID:28578601; NCT02000622; PMID:34081848; NCT02032823"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Apparent HR “down” can reflect low proliferation/quiescence (fewer replication-associated lesions) or parallel tolerance mechanisms, reducing PARPi cytotoxicity despite HR-low state.",
+                  "PMID:32245699; PMID:30116283"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Olaparib “functionally enforces” HR requirement (PARP trapping/SSB→DSB); if HR cannot execute repair, damage is catastrophic.",
+                  "PMID:23118055; PMID:28578601"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Resistance can occur even with HR-low signatures via fork protection/tolerance and reduced lethal lesion conversion (not classic, but described as non-reversion resistance).",
+                  "PMID:32245699; PMID:30116283"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Drug-induced DDR can upregulate HR pathway signaling/genes, but if HR is still functionally defective (no effective RAD51 repair), tumors remain sensitive.",
+                  "PMID:23118055; PMID:32471999"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: HR restoration (e.g., BRCA reversion; resection pathway rewiring such as 53BP1-loss contexts) re-establishes repair → PARPi resistance.",
+                  "PMID:32245699; PMID:23103855; PMID:24085845"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_NONHOMOLOGOUS_END_JOINING_NHEJ": {
+      "description": "Error-prone DSB repair pathway influenced by 53BP1/RIF1/Shieldin-mediated control of DNA end resection and pathway choice between NHEJ vs HR.",
+      "interpretation": "Alterations in NHEJ pathway components can shift repair pathway choice and modulate the functional HR state in BRCA1-deficient contexts, impacting how tumors tolerate DNA lesions associated with PARP inhibition.",
+      "Administration_of_olaparib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (HRD context): In HR-defective cells, reliance on error-prone NHEJ drives lethal mis-repair/genomic chaos under PARP inhibition.",
+                  "PMID:21300883"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: In HR-proficient tumors with manageable damage loads, stronger DSB end-joining capacity can partially buffer PARPi-induced lesions.",
+                  "PMID:21300883; PMID:28578601"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: If both HR and NHEJ are weak (global DSB repair deficit), even modest PARPi-induced DSBs can trigger collapse → sensitivity.",
+                  "PMID:21300883; PMID:23118055"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: If HR is intact and DSB load is limited, low NHEJ does not create PARP dependency → relative resistance.",
+                  "PMID:28578601"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: If PARPi-treated cells fail to mount NHEJ (e.g., impaired DNA-PK/NHEJ execution), unrepaired DSBs accumulate → sensitivity.",
+                  "PMID:21300883; PMID:23118055"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically not possible (in most biology): Lowering DSB end-joining typically increases unrepaired breaks and should not directly cause resistance unless lesion formation is simultaneously reduced (a different mechanism).",
+                  "PMID:21300883"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (HRD): PARPi can stimulate DNA-PK/NHEJ engagement; in HRD this yields toxic end-joining and lethality.",
+                  "PMID:21300883; PMID:23118055"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (HR-proficient): If HR is restored/proficient, increased NHEJ can serve as auxiliary DSB repair, limiting cytotoxicity → resistance.",
+                  "PMID:32245699; PMID:28578601"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+      "description": "Core growth/survival signaling axis (PI3K→AKT→mTOR) that promotes cellular survival programs and can influence DNA-damage tolerance and repair-associated transcriptional states.",
+      "interpretation": "This pathway is relevant to breast-cancer cell survival under genotoxic stress and is discussed as a compensatory survival network in the setting of PARP inhibition, providing rationale for combination strategies that co-target PI3K/AKT signaling in selected contexts.",
+      "Administration_of_olaparib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some PI3K-pathway altered tumors exhibit replication stress/“BRCAness-like” contexts and may show PARPi vulnerability, but this is not the canonical predictor.",
+                  "PMID:7509090; PMID:30116283"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: PI3K/AKT/mTOR activation promotes survival/DDR tolerance and can support PARPi resistance phenotypes.",
+                  "PMID:32106627; PMID:28578601"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (contextual): PI3K blockade can reduce BRCA1/2 expression/HR capacity and sensitize BRCA-proficient TNBC to PARPi (i.e., “induced HRD”).",
+                  "PMID:22915752"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Low PI3K signaling may accompany low proliferation/metabolic activity → fewer replication-associated lesions → reduced PARPi kill.",
+                  "PMID:30116283"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (in combinations/biology): Suppressing PI3K/AKT reduces HR capacity and survival signaling, amplifying olaparib lethality (sensitization mechanism).",
+                  "PMID:22915752"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: If tumors escape via alternate survival programs (e.g., MAPK), PI3K/AKT suppression alone may not ensure PARPi response.",
+                  "PMID:7509090"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: A transient PI3K/AKT surge may be an acute stress response, yet HRD damage burden can still dominate → sensitivity.",
+                  "PMID:23118055; PMID:7509090"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: PARPi can induce compensatory pro-survival PI3K/AKT activation, contributing to acquired resistance.",
+                  "PMID:32106627"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_INTERFERON_ALPHA_RESPONSE": {
+      "description": "Type I interferon gene program reflecting innate immune activation, including interferon-stimulated genes downstream of cGAS-STING signaling.",
+      "interpretation": "PARP inhibitor-associated DNA damage can engage innate immune sensing pathways and Type I interferon signaling, supporting immune-mediated tumor control and providing rationale for combinations involving immunotherapy or STING-pathway activation (notably highlighted in BRCA-associated breast cancer models).",
+      "Administration_of_olaparib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (immune + HRD enrichment): Baseline type I IFN/cGAS–STING tone often tracks with cytosolic DNA/DDR states and can support anti-tumor immunity aiding PARPi efficacy (esp. TNBC models).",
+                  "PMID:31015319"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Chronic IFN signaling can drive adaptive immune resistance programs (e.g., checkpoint upregulation), potentially blunting benefit without combination immunotherapy.",
+                  "PMID:30540933"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: IFN-low tumors can still be PARPi-sensitive if HRD is strong; immune tone is not required for direct synthetic lethality.",
+                  "PMID:28578601"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (immune-cold): Lack of innate immune activation may remove an immune-mediated component of response; in borderline HRD, this can associate with poorer outcomes.",
+                  "PMID:31015319; PMID:30116283"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: If IFN response fails (e.g., STING-axis impairment), direct cytotoxicity can still occur in HRD tumors → sensitivity persists.",
+                  "PMID:28578601; PMID:23118055"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: If tumors disable cGAS–STING/type I IFN induction, they can lose immune-amplified efficacy and drift toward resistance (especially in combination contexts).",
+                  "PMID:31015319; PMID:30540933"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Olaparib can trigger cytosolic DNA sensing and STING-dependent type I IFN signaling, recruiting/activating T cells and improving antitumor effect in BRCA-deficient TNBC models.",
+                  "PMID:31015319; PMID:30540933"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: IFN-driven adaptive resistance (checkpoint induction/exhaustion) can emerge; may require ICI to convert into durable benefit.",
+                  "PMID:30540933"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_ABCFAMILY_PROTEINS_MEDIATED_TRANSPORT": {
+      "description": "ATP-binding cassette (ABC) transporter-mediated drug transport/efflux processes (e.g., ABCB1/P-gp, ABCG2) that reduce intracellular exposure to substrates.",
+      "interpretation": "Drug-efflux mechanisms are a key pharmacologic determinant of tumor drug exposure and are highlighted as an important resistance-related process that can also drive cross-resistance with other agents.",
+      "Administration_of_olaparib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not likely: High ABC efflux generally lowers intracellular PARPi exposure and should not increase sensitivity.",
+                  "PMID:27415012"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (often cross-cancer): ABC transporters (e.g., ABCB1/P-gp) can reduce effective olaparib exposure → resistance.",
+                  "PMID:27415012"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low efflux → higher intracellular olaparib → stronger PARP trapping/DDR collapse in susceptible tumors.",
+                  "PMID:28578601; PMID:23118055"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Resistance can still occur via HR restoration or fork protection even when drug exposure is adequate.",
+                  "PMID:32245699; PMID:23103855"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Sustained low efflux during therapy maintains drug pressure → continued PARP trapping and cytotoxicity in HRD contexts.",
+                  "PMID:23118055"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Despite low efflux, resistance can arise through genetic reversion/DDR rewiring.",
+                  "PMID:32245699"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Early ABC induction may be insufficient to prevent lethal damage when HRD is profound and lesion load is high.",
+                  "PMID:23118055; PMID:28578601"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Therapy can select for ABCB1-mediated acquired resistance (documented as a PARPi resistance mechanism, sometimes shown outside breast but mechanistically applicable).",
+                  "PMID:27415012; PMID:30116283"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_ACTIVATION_OF_ATR_IN_RESPONSE_TO_REPLICATION_STRESS": {
+      "description": "Replication-stress response pathway centered on ATR-dependent checkpoint signaling (including CHK1) that stabilizes stalled replication forks and coordinates cell-cycle arrest/repair.",
+      "interpretation": "Because PARP inhibition induces replication stress and DNA lesions, ATR-mediated checkpoint activation is a major tumor stress-response pathway discussed in the report as relevant to how tumor cells survive ongoing DNA damage and as a combination target (e.g., ATR/DDR inhibition strategies).",
+      "Administration_of_olaparib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High replication stress can increase reliance on ATR/CHK1 and PARP-mediated repair; if HRD co-exists, PARPi sensitivity is enhanced.",
+                  "PMID:29899559; PMID:28578601"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Strong ATR pathway activity can buffer replication stress and help tolerate PARPi-induced stalled forks → resistance tendency.",
+                  "PMID:29899559; PMID:32245699"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (synthetic vulnerability): Impaired ATR response reduces fork stabilization/checkpoint capacity, making cells more vulnerable to PARPi-induced replication catastrophe.",
+                  "PMID:29899559"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: If proliferation is low and replication stress is minimal, weak ATR signaling may not matter → reduced PARPi effect.",
+                  "PMID:30116283"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: If ATR signaling is not activated/functional during olaparib exposure, cells fail to manage stalled forks/ssDNA → lethal damage.",
+                  "PMID:29899559"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Resistance with ATR-low would generally require other dominant mechanisms (e.g., reduced lesion formation/efflux), not ATR biology itself.",
+                  "PMID:32245699"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (overload): Olaparib increases replication stress and triggers ATR; if damage exceeds checkpoint capacity (esp. HRD), cells still die.",
+                  "PMID:23118055; PMID:29899559"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: ATR activation is a key survival axis under PARPi stress; clinical rationale for ATR+PARPi combinations in TNBC reflects this buffering role.",
+                  "PMID:37773077; PMID:29899559"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_APOPTOSIS": {
+      "description": "Programmed cell-death execution programs, including intrinsic apoptotic priming and pro-apoptotic effectors (e.g., BAX, PUMA, BIM) downstream of DNA damage signaling.",
+      "interpretation": "The report frames apoptosis competence as an important determinant of whether PARP-inhibitor-induced DNA damage culminates in irreversible tumor cell death, with subtype context noted (e.g., functional p53 in some ER+ settings; alternative death routes in p53-mutant tumors).",
+      "Administration_of_olaparib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Baseline apoptotic priming (lower anti-apoptotic buffering, intact execution) increases likelihood of cell death after PARPi-induced DNA damage.",
+                  "PMID:7509090; PMID:23118055"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: If damage is efficiently repaired (HR proficient), apoptosis priming may not be engaged despite pathway “up.”",
+                  "PMID:28578601"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Even apoptosis-low tumors can be killed by overwhelming replication catastrophe/mitotic failure in deep HRD.",
+                  "PMID:23118055"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Anti-apoptotic states (e.g., high BCL2 family buffering) enable survival/tolerance of PARPi-induced damage → resistance.",
+                  "PMID:7509090"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some HRD cells die via non-apoptotic catastrophe; apoptosis signature may remain low while cytotoxicity occurs.",
+                  "PMID:23118055"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: If therapy fails to trigger apoptosis (strong pro-survival signaling, HR restoration), tumors persist → resistance.",
+                  "PMID:32106627; PMID:32245699"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Olaparib-induced DNA damage/PARP trapping promotes apoptotic execution in susceptible (HRD) breast cancer.",
+                  "PMID:23118055; PMID:28578601"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Transient apoptosis signaling can be counterbalanced by strong survival pathways or repair restoration, allowing escape.",
+                  "PMID:32106627; PMID:32245699"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_P53_PATHWAY": {
+      "description": "p53-mediated DNA damage response program integrating checkpoint control and apoptosis induction following genotoxic stress.",
+      "interpretation": "The report emphasizes p53 pathway status as relevant to how tumors respond to accumulated DNA damage (cell-cycle arrest vs apoptosis vs tolerance), noting that p53 loss is common in TNBC and can influence damage tolerance and evolutionary routes under treatment pressure.",
+      "Administration_of_olaparib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (WT p53 context): Intact p53 DDR facilitates apoptosis/senescence following DNA damage, supporting PARPi response.",
+                  "PMID:10008729; PMID:7509090"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: If HR proficiency prevents lethal damage, p53 pathway activation may not translate to killing.",
+                  "PMID:28578601"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Even with weak p53, severe HRD can still drive lethal replication catastrophe; p53 is not strictly required for synthetic lethality.",
+                  "PMID:23118055; PMID:28578601"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: p53 dysfunction can impair DNA-damage-triggered apoptosis/checkpoint enforcement, enabling tolerance and resistance phenotypes.",
+                  "PMID:10008729; PMID:3056900? (see Ireno)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: p53-independent death can occur if PARPi-induced lesions are overwhelming (mitotic catastrophe).",
+                  "PMID:23118055"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: With p53 pathway nonfunctional, cells may tolerate damage and accrue resistance mechanisms (repair rewiring/survival signaling).",
+                  "PMID:324079? (Ireno 2014); PMID:32245699"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Olaparib-driven DNA damage activates DDR; when p53 is functional, this supports apoptosis/terminal arrest → sensitivity.",
+                  "PMID:23118055; PMID:10008729"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: p53 activation may drive cell-cycle arrest/senescence without eradication, allowing persistence and later escape (context-dependent).",
+                  "PMID:10008729; PMID:7509090"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_FANCONI_ANEMIA_PATHWAY": {
+      "description": "Fanconi anemia DNA repair network that resolves interstrand crosslinks and interfaces with homologous recombination processes (e.g., via FANCA/FANCD2 and related factors).",
+      "interpretation": "FA pathway integrity is discussed as relevant to broader DNA repair vulnerability states in breast cancer (HRD/DDR deficiency contexts) that intersect with PARP inhibitor mechanisms.",
+      "Administration_of_olaparib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: FA up can coexist with HRD elsewhere (e.g., BRCA defects) where PARPi sensitivity remains, despite compensatory FA signaling.",
+                  "PMID:20484397; PMID:28578601"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Robust FA/ICL repair and fork protection supports genome maintenance and can contribute to PARPi resistance/tolerance.",
+                  "PMID:7142266; PMID:32245699"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: FA pathway defects impair HR-associated repair and fork stability → increased PARPi vulnerability.",
+                  "PMID:20484397; PMID:7142266; PMID:34489172"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: If growth is slow and lesions are few, FA deficiency may not translate to strong PARPi cytotoxicity (context dependent).",
+                  "PMID:30116283"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Under olaparib-induced replication stress, inability to execute FA repair/fork management accelerates collapse and death.",
+                  "PMID:7142266; PMID:29899559"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Resistance would generally require dominant alternate mechanisms (HR restoration/efflux), not FA-down itself.",
+                  "PMID:32245699; PMID:27415012"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (compensation fails): FA signaling may increase as compensation during PARPi stress, yet HRD damage can remain lethal.",
+                  "PMID:7142266; PMID:23118055"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Enhanced FA/fork protection programs can promote tolerance and acquired resistance under sustained PARPi exposure.",
+                  "PMID:32245699; PMID:7142266"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_BASE_EXCISION_REPAIR": {
+      "description": "Base excision repair/single-strand break repair processes in which PARP1/2 detect DNA damage and recruit repair factors via PARylation.",
+      "interpretation": "This is the direct mechanistic repair pathway perturbed by olaparib through PARP1/2 inhibition and PARP trapping, linking upstream repair blockade to downstream accumulation of cytotoxic lesions in susceptible tumor contexts.",
+      "Administration_of_olaparib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High BER/SSBR activity implies dependence on PARP1/2 for efficient SSB repair; PARP inhibition converts SSB/BER intermediates into lethal lesions in HRD settings.",
+                  "PMID:29467415; PMID:3683898"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: If HR is fully functional and replication stress is low, BER up may be tolerated without strong PARPi lethality.",
+                  "PMID:28578601"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: BER weakness can elevate baseline DNA damage and replication stress; added PARPi pressure can push cells over the edge.",
+                  "PMID:29467415; PMID:29899559"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: If BER/SSB lesion burden is low (or tumors are slowly cycling), PARP dependence may be limited → reduced PARPi efficacy.",
+                  "PMID:30116283"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Olaparib inhibits PARP1/2 function critical for SSBR/BER coordination; unrepaired SSB/BER intermediates accumulate and become toxic (esp. HRD).",
+                  "PMID:29467415; PMID:23118055"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Resistance with BER suppressed would require reduced lesion formation or dominant alternate mechanisms (efflux/HR restoration).",
+                  "PMID:32245699; PMID:27415012"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Cells may attempt to upregulate BER genes under damage stress, yet PARP inhibition prevents effective BER completion → sensitivity.",
+                  "PMID:29467415; PMID:23118055"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (workaround): If BER/SSBR can be rerouted and DSB repair is restored (HR restoration), tumors can tolerate PARPi-induced lesions → resistance.",
+                  "PMID:32245699; PMID:23103855; PMID:24085845"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "SLFN11",
+    "BAX",
+    "BBC3",
+    "BCL2L11",
+    "TP53"
+  ],
+  "sensitivity_genes_down": [
+    "BRCA1",
+    "BRCA2",
+    "PALB2",
+    "RAD51C",
+    "RAD51D",
+    "ATM",
+    "FANCA",
+    "FANCD2",
+    "ATR",
+    "CHEK1"
+  ],
+  "resistance_genes_up": [
+    "ABCB1",
+    "ABCG2",
+    "RAD51",
+    "ATR",
+    "CHEK1",
+    "PIK3CA",
+    "POLQ",
+    "RADX",
+    "BCL2L1"
+  ],
+  "resistance_genes_down": [
+    "TP53BP1",
+    "RIF1",
+    "MAD2L2",
+    "PAXIP1",
+    "PARP1",
+    "SLFN11",
+    "TP53",
+    "PTEN"
+  ],
+  "kg_gene_relationships": [
+    "Olaparib|inhibits|PARP1",
+    "Olaparib|inhibits|PARP2",
+    "Olaparib|inhibits|PARP3",
+    "BRCA1|loss_of_function_confers_sensitivity_to|Olaparib",
+    "BRCA2|loss_of_function_confers_sensitivity_to|Olaparib",
+    "RAD51|increased_function_confers_resistance_to|Olaparib",
+    "ABCB1|effluxes|Olaparib",
+    "ABCG2|effluxes|Olaparib",
+    "TP53BP1|loss_of_function_confers_resistance_to|Olaparib",
+    "PAXIP1|loss_of_function_confers_resistance_to|Olaparib",
+    "SLFN11|silencing_confers_resistance_to|Olaparib",
+    "ATR|activation_promotes_resistance_to|Olaparib"
+  ],
+  "Breast_cancer_subtype_information": [
+    {
+      "subtype": "TNBC / basal-like (especially gBRCA1-associated)",
+      "description": "Highlighted as the archetype of responsiveness in the report: BRCA-mutant TNBC is emphasized as inherently HR-deficient, with olaparib inducing profound DNA damage, apoptosis, and growth arrest. The report also notes subtype-specific immune context where BRCA-mutant TNBC can show stronger cGAS-STING/Type I interferon signaling and immune recruitment, supporting response and combination rationale. It additionally notes TP53 pathway suppression is common in TNBC and can affect damage tolerance/evolution under PARP inhibition."
+    },
+    {
+      "subtype": "HR+/HER2- (Luminal; including BRCA2-mutant and selected luminal B with HRD)",
+      "description": "The report states hormone receptor-positive HER2-negative cancers with BRCA2 mutations can benefit, while ER+/HER2- tumors without HRD are inherently insensitive. It also describes that luminal tumors may be more immunologically “cold,” potentially limiting benefit from IFN/immune-inflammatory mechanisms relative to TNBC."
+    },
+    {
+      "subtype": "HER2-positive",
+      "description": "The report indicates that HER2+ tumors without HRD essentially do not benefit and are not indicated. It separately notes that some HER2+ tumors with high TILs could potentially exploit immune-inflammatory signaling pathways in the context of combination strategies, but HRD remains central for benefit."
+    },
+    {
+      "subtype": "gBRCA1/2-mutated / HRD-positive (biomarker-defined across subtypes)",
+      "description": "Across subtypes, the report emphasizes olaparib as targeted therapy for the DNA repair-defective subset (germline BRCA1/2-mutant; broader HRD/BRCAness contexts). It states FDA approval in HER2-negative metastatic and adjuvant early-stage settings contingent on deleterious BRCA mutation and describes guideline-driven patient selection via germline BRCA testing."
+    }
+  ],
+  "citations": [
+    "[https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-olaparib-germline-brca-mutated-metastatic-breast-cancer](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-olaparib-germline-brca-mutated-metastatic-breast-cancer)",
+    "[https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-olaparib-adjuvant-treatment-high-risk-early-breast-cancer](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-olaparib-adjuvant-treatment-high-risk-early-breast-cancer)",
+    "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/208558s023lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/208558s023lbl.pdf)",
+    "[https://molecular-cancer.biomedcentral.com/articles/10.1186/s12943-025-02355-1](https://molecular-cancer.biomedcentral.com/articles/10.1186/s12943-025-02355-1)",
+    "[https://www.oncnursingnews.com/view/new-asco-guideline-recommends-adjuvant-olaparib-for-patients-with-hereditary-breast-cancer](https://www.oncnursingnews.com/view/new-asco-guideline-recommends-adjuvant-olaparib-for-patients-with-hereditary-breast-cancer)",
+    "[https://depmap.org/portal/compound/OLAPARIB](https://depmap.org/portal/compound/OLAPARIB)",
+    "[https://go.drugbank.com/drugs/DB09074](https://go.drugbank.com/drugs/DB09074)",
+    "[https://clinicaltrials.med.nyu.edu/clinicaltrial/954/phase-2-study-olaparib/](https://clinicaltrials.med.nyu.edu/clinicaltrial/954/phase-2-study-olaparib/)",
+    "[https://aacrjournals.org/cancerdiscovery/article/9/6/722/42107/PARP-Inhibitor-Efficacy-Depends-on-CD8-T-cell](https://aacrjournals.org/cancerdiscovery/article/9/6/722/42107/PARP-Inhibitor-Efficacy-Depends-on-CD8-T-cell)",
+    "[https://www.nature.com/articles/s41523-022-00471-5](https://www.nature.com/articles/s41523-022-00471-5)",
+    "[https://www.nature.com/articles/s41523-022-00471-5?error=cookies_not_supported&code=5b7c34c4-69e2-42e8-b864-b63b0eed3733](https://www.nature.com/articles/s41523-022-00471-5?error=cookies_not_supported&code=5b7c34c4-69e2-42e8-b864-b63b0eed3733)",
+    "[https://www.mdpi.com/2218-273X/13/10/1480](https://www.mdpi.com/2218-273X/13/10/1480)",
+    "[https://www.sciencedirect.com/science/article/pii/S1048891X24009411](https://www.sciencedirect.com/science/article/pii/S1048891X24009411)",
+    "[https://pubmed.ncbi.nlm.nih.gov/31015319/](https://pubmed.ncbi.nlm.nih.gov/31015319/)",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC6510951/](https://pmc.ncbi.nlm.nih.gov/articles/PMC6510951/)",
+    "[https://www.cell.com/molecular-therapy-family/molecular-therapy/fulltext/S1525-0016(20)30491-3](https://www.cell.com/molecular-therapy-family/molecular-therapy/fulltext/S1525-0016%2820%2930491-3)",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC3378149/](https://pmc.ncbi.nlm.nih.gov/articles/PMC3378149/)",
+    "[https://www.nature.com/articles/s41523-024-00671-1](https://www.nature.com/articles/s41523-024-00671-1)",
+    "[https://www.aacr.org/about-the-aacr/newsroom/news-releases/olaparib-plus-ceralasertib-may-benefit-pediatric-cancer-patients-with-dna-repair-deficient-tumors/](https://www.aacr.org/about-the-aacr/newsroom/news-releases/olaparib-plus-ceralasertib-may-benefit-pediatric-cancer-patients-with-dna-repair-deficient-tumors/)",
+    "[https://onlinelibrary.wiley.com/doi/10.1111/jcmm.17037](https://onlinelibrary.wiley.com/doi/10.1111/jcmm.17037)",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC7139751/](https://pmc.ncbi.nlm.nih.gov/articles/PMC7139751/)",
+    "[https://www.nature.com/articles/bjc2016203](https://www.nature.com/articles/bjc2016203)",
+    "[https://dailynews.ascopubs.org/do/asco-releases-rapid-guideline-recommendation-update-certain-patients-hereditary-breast](https://dailynews.ascopubs.org/do/asco-releases-rapid-guideline-recommendation-update-certain-patients-hereditary-breast)",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC10322138/](https://pmc.ncbi.nlm.nih.gov/articles/PMC10322138/)",
+    "[https://biomarkerres.biomedcentral.com/articles/10.1186/s40364-022-00427-8](https://biomarkerres.biomedcentral.com/articles/10.1186/s40364-022-00427-8)",
+    "[https://www.merck.com/news/lynparza-olaparib-tablets-receive-eu-approval-for-the-treatment-of-platinum-sensitive-relapsed-ovarian-cancer/](https://www.merck.com/news/lynparza-olaparib-tablets-receive-eu-approval-for-the-treatment-of-platinum-sensitive-relapsed-ovarian-cancer/)",
+    "[https://www.medicines.org.uk/emc/product/9204/smpc](https://www.medicines.org.uk/emc/product/9204/smpc)",
+    "[https://www.lynparzahcp.com/](https://www.lynparzahcp.com/)",
+    "[https://www.ema.europa.eu/en/documents/product-information/lynparza-epar-product-information_en.pdf](https://www.ema.europa.eu/en/documents/product-information/lynparza-epar-product-information_en.pdf)",
+    "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2014/206162lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2014/206162lbl.pdf)",
+    "[https://jnccn.org/view/journals/jnccn/22/5/article-p331.xml?&redirect=false&print](https://jnccn.org/view/journals/jnccn/22/5/article-p331.xml?&redirect=false&print)",
+    "[https://www.facingourrisk.org/XRAY/olaparib-for-early-stage-breast-cancer](https://www.facingourrisk.org/XRAY/olaparib-for-early-stage-breast-cancer)",
+    "[https://community.the-hospitalist.org/content/rapid-update-asco-breast-cancer-guidelines-after-olympia-data](https://community.the-hospitalist.org/content/rapid-update-asco-breast-cancer-guidelines-after-olympia-data)",
+    "[https://www.merck.com/news/u-s-fda-approves-lynparza-olaparib-in-germline-brca-mutated-metastatic-breast-cancer/](https://www.merck.com/news/u-s-fda-approves-lynparza-olaparib-in-germline-brca-mutated-metastatic-breast-cancer/)",
+    "[https://aacrjournals.org/cancerres/article/82/12_Supplement/5338/703205/Abstract-5338-Pamiparib-as-a-non-P-glycoprotein](https://aacrjournals.org/cancerres/article/82/12_Supplement/5338/703205/Abstract-5338-Pamiparib-as-a-non-P-glycoprotein)",
+    "[https://www.nature.com/articles/s41467-021-23463-8](https://www.nature.com/articles/s41467-021-23463-8)",
+    "file://file_00000000ed00720682404013bb950ca7"
+  ],
+  "notes": "Some pathway labels in the report appear in closely related naming forms (e.g., ATR/CHK1 checkpoint signaling for ATR replication-stress response; Fanconi anemia/DNA crosslink repair for FA pathway; PARP1-BER/Base excision repair for BER; TP53 pathway for p53). Safety/contraindications noted in the report include no absolute FDA contraindications beyond hypersensitivity, with breastfeeding contraindicated per EMA and practical avoidance in pregnancy; caution/avoidance in severe renal/hepatic impairment and with strong CYP3A4 modulators."
+}

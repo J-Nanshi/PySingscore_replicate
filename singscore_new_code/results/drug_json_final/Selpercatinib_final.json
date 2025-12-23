@@ -1,0 +1,434 @@
+{
+  "drug_name": "Selpercatinib",
+  "cancer_indication": "Breast cancer with RET fusions (metastatic disease; NCCN “useful in certain circumstances”).",
+  "drug_category": "Tyrosine kinase inhibitor",
+  "drug_class": "Highly selective RET kinase inhibitor",
+  "moa": "Selpercatinib binds directly to the ATP site of the RET kinase, preventing autophosphorylation and activation. In RET fusion–positive cells, this shuts off constitutive RET signaling that drives downstream MAPK/ERK and PI3K/AKT pathways, reducing tumor cell proliferation and survival. In ER+ breast cancer, RET activation is linked to endocrine resistance; by inhibiting RET, selpercatinib can restore sensitivity to endocrine therapy and has shown re-sensitization effects in endocrine/CDK4/6 inhibitor–resistant models.",
+  "chembl_id": "CHEMBL4559134",
+  "drugbank_id": "DB15685",
+  "synonyms": [
+    "Selpercatinib (INN)",
+    "LOXO-292",
+    "LY3527723",
+    "Retevmo®",
+    "Retsevmo®",
+    "LY-3527723",
+    "LOXO292",
+    "WHO10967"
+  ],
+  "primary_targets": [
+    "RET",
+    "FLT1",
+    "FLT4",
+    "FGFR1",
+    "FGFR2",
+    "FGFR3"
+  ],
+  "pathway_sets": [
+    "KEGG_MEDICUS_VARIANT_RET_FUSION_KINASE_TO_RAS_ERK_SIGNALING_PATHWAY",
+    "KEGG_MEDICUS_VARIANT_MUTATION_ACTIVATED_RET_TO_PI3K_SIGNALING_PATHWAY",
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_G2M_CHECKPOINT",
+    "PID_RET_PATHWAY"
+  ],
+  "pathway_sets_annotations": {
+    "KEGG_MEDICUS_VARIANT_RET_FUSION_KINASE_TO_RAS_ERK_SIGNALING_PATHWAY": {
+      "description": "Constitutively active RET fusions drive downstream RAS/MAPK (MAPK/ERK) signaling.",
+      "interpretation": "RET fusion–driven MAPK/ERK signaling is a core proliferative pathway in RET-altered breast cancers and is a major downstream axis of oncogenic RET activity.",
+      "Administration_of_selpercatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (rare in breast cancer): a RET-fusion–driven tumor with high RET→RAS–ERK output is “oncogene-addicted,” so RET-selective inhibition is expected to be effective.",
+                  "FDA label (RETEVMO; tumor-agnostic RET fusion): FDA 213246; NCT03157128; PMID:30446652; KEGG MEDICUS N00008; ChEMBL:CHEMBL4559134; DrugBank:DB15685 (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: ERK pathway “Up” in breast cancer is often driven by non-RET oncogenes (e.g., ERBB2/EGFR/RAS/RAF), so RET inhibition may not suppress the dominant ERK driver.",
+                  "PMID:30446652; ERK/MAPK signaling review; KEGG MEDICUS N00008 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: a RET fusion may be present but underrepresented in bulk expression (low signature) or confined to a subclone; RET blockade can still produce benefit if the driver clone is clinically relevant.",
+                  "FDA label (RET fusion solid tumors); PMID:30446652 (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: absence of RET-fusion ERK signaling implies no actionable RET dependence, so selpercatinib is unlikely to help in typical breast cancer.",
+                  "Breast RET alterations context; pan-tumor RET fusion frequency (breast ~0.1%); PMID:30446652 (ScienceDirect)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: selpercatinib inhibits RET kinase activity, suppressing RET-fusion downstream MAPK (RAS–RAF–MEK–ERK) signaling and tumor proliferation/survival in RET-driven cancers.",
+                  "FDA Approval Summary; FDA label; NCT03157128; KEGG MEDICUS N00008 (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: pathway suppression can be observed, yet clinical resistance may persist due to parallel survival programs (e.g., PI3K dependency, anti-apoptotic rewiring) or inadequate exposure/PK in a heterogeneous tumor.",
+                  "FDA label (exposure/toxicities); RET resistance reviews (FDA Access Data)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (direct effect): a RET-selective inhibitor cannot increase functional RET→ERK signaling; any “Up” signature would reflect infiltrating/selected RET+ cells rather than increased signaling through inhibited RET.",
+                  "FDA Approval Summary (MOA); selpercatinib binding/inhibition (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: acquired resistance can restore/maintain ERK output via on-target RET solvent-front mutations (e.g., G810) or RET-independent bypass (e.g., MET/KRAS amplification), yielding high ERK signaling with progression.",
+                  "PMID:31988000; PMID:33007380; PMID:33082208; KEGG MEDICUS N00008 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_MEDICUS_VARIANT_MUTATION_ACTIVATED_RET_TO_PI3K_SIGNALING_PATHWAY": {
+      "description": "Activated RET triggers downstream PI3K/AKT signaling that supports tumor cell survival and growth.",
+      "interpretation": "PI3K/AKT signaling is a key survival pathway downstream of RET activation in RET-driven breast cancer contexts.",
+      "Administration_of_selpercatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (rare in breast cancer): if activated/altered RET drives PI3K–AKT survival signaling, pathway activation indicates RET dependence that is targetable by selpercatinib.",
+                  "FDA label; FDA Approval Summary; KEGG “Mutation-activated RET to PI3K” network; ChEMBL/DrugBank IDs (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: PI3K signaling is frequently driven by PIK3CA/PTEN/RTKs in breast cancer; “Up” PI3K does not imply RET is the dominant driver, so RET inhibition may fail.",
+                  "PI3K pathway background; breast RET context (KEGG)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: PI3K signature may be low in bulk despite RET dependence (e.g., subclonal RET activation, compensatory negative feedback); RET blockade can still be beneficial in true RET-driven disease.",
+                  "FDA label (RET-driven solid tumors); breast RET alterations (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: low RET→PI3K signaling implies no RET-addiction; typical breast cancers will not respond to selpercatinib in this context.",
+                  "Pan-tumor RET fusion rarity in breast; breast RET alterations (ScienceDirect)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: RET inhibition reduces downstream PI3K–AKT pro-survival signaling, contributing to tumor control in RET-altered cancers (tumor-agnostic RET fusion indication).",
+                  "FDA Approval Summary; FDA label; NCT03157128 (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: even with reduced RET→PI3K output, tumors may persist via alternative PI3K inputs (e.g., ERBB2/IGF1R) or downstream lesions (PIK3CA/PTEN) that uncouple survival from RET.",
+                  "PI3K pathway background; RET resistance (bypass) (KEGG)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (direct effect): selpercatinib cannot increase RET-driven PI3K signaling; “Up” would represent compensatory/bypass activation rather than RET signaling enhancement by the drug.",
+                  "FDA Approval Summary (RET inhibition MOA) (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: resistance frequently emerges through RET-independent bypass (e.g., MET amplification) that reactivates PI3K–AKT survival despite RET inhibition, yielding progressive disease with high PI3K signaling.",
+                  "PMID:33007380; PMID:33082208; MET-dependent resistance evidence (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_E2F_TARGETS": {
+      "description": "Cell-cycle transcriptional program driven by E2F-associated genes linked to proliferation.",
+      "interpretation": "E2F-driven cell-cycle activity reflects proliferative state in breast cancer models and is reported as suppressed in endocrine-resistant ER+ models upon RET inhibition.",
+      "Administration_of_selpercatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (rare, RET-driven subset): high proliferation/E2F program can reflect mitogenic RET signaling in RET-altered tumors; blocking RET can reduce E2F-driven cycling and produce response.",
+                  "MSigDB HALLMARK_E2F_TARGETS (M5925); RET alterations in breast; selpercatinib MOA (GSEA MSigDB)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: strong E2F signaling may be driven by RB-pathway disruption/CDK activation or other oncogenes, making proliferation relatively RET-independent and limiting benefit from RET inhibition.",
+                  "MSigDB HALLMARK_E2F_TARGETS (M5925); breast RET biology review context (GSEA MSigDB)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: low E2F signature (low cycling) can still coexist with an actionable RET fusion/driver in a subclone; selpercatinib may still shrink the RET-driven compartment.",
+                  "FDA label (RET fusion solid tumors); breast RET alterations (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: low E2F activity plus no RET-driver implies limited dependence on RET-mediated mitogenic signaling and poor likelihood of response.",
+                  "RET fusion rarity in breast; breast RET alterations (ScienceDirect)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: effective RET blockade suppresses mitogenic signaling, decreasing E2F target expression (cell-cycle entry) as part of a sensitive on-target response.",
+                  "FDA Approval Summary (RET inhibition → downstream signaling blockade); MSigDB E2F set (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: a cytostatic decrease in proliferation can occur without durable tumor regression if survival is maintained via bypass pathways or downstream lesions, producing stable disease or early regrowth.",
+                  "RET resistance mechanisms (RET-independent bypass common) (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (direct effect): selpercatinib does not directly induce an E2F proliferation program; any “Up” would reflect clonal selection rather than a sensitivity mechanism.",
+                  "FDA Approval Summary; MSigDB E2F set (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: resistant clones can sustain/increase E2F cycling via RET on-target mutations (e.g., G810) or bypass (MET/KRAS amplification), uncoupling proliferation from RET inhibition.",
+                  "PMID:31988000; PMID:33007380; MSigDB E2F set (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_G2M_CHECKPOINT": {
+      "description": "Gene program associated with G2/M checkpoint control and mitotic progression.",
+      "interpretation": "G2/M checkpoint regulators contribute to mitotic progression in breast cancer models and are reported as suppressed in resistant ER+ cell lines upon selpercatinib treatment.",
+      "Administration_of_selpercatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (rare, RET-driven subset): high G2/M checkpoint signature reflects rapid cycling that can be driven by RET→MAPK/PI3K mitogenic input; RET inhibition can reduce cycling in RET-addicted tumors.",
+                  "MSigDB HALLMARK_G2M_CHECKPOINT (M5901); selpercatinib MOA; breast RET alterations (GSEA MSigDB)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: high G2/M activity often reflects general aggressive biology (and non-RET drivers); if cycling is RET-independent, selpercatinib will not meaningfully impact the tumor.",
+                  "MSigDB G2M set; breast RET biology review context (GSEA MSigDB)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: a less-proliferative tumor can still harbor an actionable RET fusion/driver; inhibition may benefit the RET-driven compartment even if G2/M signature is low.",
+                  "FDA label; breast RET alterations (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: low G2/M plus absent RET driver suggests no RET-addiction and poor response likelihood in breast cancer.",
+                  "RET fusion rarity in breast; breast RET alterations (ScienceDirect)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: on-target RET inhibition reduces proliferative signaling, lowering G2/M checkpoint gene expression as part of a sensitive pharmacodynamic response.",
+                  "FDA Approval Summary; MSigDB G2M set (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: decreased cycling can occur yet resistance emerges through persistence/dormancy and later outgrowth driven by RET-independent survival or microenvironmental support.",
+                  "RET resistance mechanisms overview (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (direct effect): selpercatinib does not directly increase G2/M progression; “Up” would not be a mechanistic sensitivity outcome.",
+                  "FDA Approval Summary; MSigDB G2M set (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: resistant disease maintains/increases cycling via on-target RET mutations or bypass signaling, preserving high G2/M activity despite therapy.",
+                  "PMID:31988000; PMID:33007380; MSigDB G2M set (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "PID_RET_PATHWAY": {
+      "description": "RET (rearranged during transfection) receptor tyrosine kinase signaling pathway.",
+      "interpretation": "Aberrant RET activity (fusions or amplifications/overexpression) can drive oncogenic signaling and is linked to therapeutic resistance (including endocrine resistance) in breast cancer contexts described.",
+      "Administration_of_selpercatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (rare in breast cancer): active RET signaling (including RET alterations reported in breast cancer) indicates potential RET dependence and susceptibility to selective RET inhibition.",
+                  "MSigDB PID_RET_PATHWAY (M82; source PMID:18832364); breast RET alterations (PMID:30446652); selpercatinib MOA (GSEA MSigDB)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: RET-pathway gene expression can be elevated via ligand/paracrine RET activation in ER+ contexts (endocrine resistance biology) without being the dominant oncogenic driver, limiting response to RET TKIs alone.",
+                  "ER+ RET/endocrine resistance; breast RET biology (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: low bulk RET pathway may still mask an actionable RET fusion/driver present in a subclone; selective RET inhibition can still yield benefit if that clone drives progression.",
+                  "FDA label; breast RET alterations (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: low RET signaling and no RET alteration implies no target engagement benefit, so selpercatinib is unlikely to be effective in most breast cancers.",
+                  "Pan-tumor RET fusion rarity in breast; breast RET alterations (ScienceDirect)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: selpercatinib directly inhibits RET kinase, reducing RET-pathway signaling as the intended pharmacodynamic effect associated with response in RET-driven tumors.",
+                  "FDA Approval Summary; FDA label; MSigDB PID_RET_PATHWAY (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: RET pathway suppression can occur, but progression can be driven by RET-independent mechanisms (e.g., MET/KRAS amplification) that sustain growth without RET signaling.",
+                  "PMID:33007380; MET-dependent resistance evidence (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (direct effect): a RET inhibitor cannot increase functional RET signaling; observed “Up” would reflect sampling/clonal composition rather than drug-induced RET activation.",
+                  "FDA Approval Summary; MSigDB PID_RET_PATHWAY (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: resistance can present with preserved/increased RET-pathway output via on-target resistance mutations or adaptive rewiring, correlating with lack of durable control.",
+                  "PMID:31988000; PMID:33007380; MSigDB PID_RET_PATHWAY (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "RET"
+  ],
+  "sensitivity_genes_down": [],
+  "resistance_genes_up": [],
+  "resistance_genes_down": [
+    "TP53"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "RET",
+      "interpretation": "RET fusion–positive breast cancers and RET-driven tumor contexts are described as sensitive to RET inhibition, with clinical responses reported and mechanistic suppression of downstream MAPK/ERK and PI3K/AKT signaling upon RET blockade."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [],
+  "resistance_genes_up_annotations": [],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "TP53",
+      "interpretation": "TP53 is frequently co-mutated in RET-altered breast cancer (~80%), inactivating the p53 pathway; the deep-research output associates downregulated p53 pathway activity with increased resistance."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Selpercatinib|inhibits|RET",
+    "Selpercatinib|inhibits|FLT1",
+    "Selpercatinib|inhibits|FLT4",
+    "Selpercatinib|inhibits|FGFR1",
+    "Selpercatinib|inhibits|FGFR2",
+    "Selpercatinib|inhibits|FGFR3"
+  ],
+  "Breast_cancer_subtype_information": {
+    "HR⁺/HER2⁻ (Luminal A/B)": "RET is more commonly overexpressed in ER⁺ tumors that have acquired endocrine resistance. Selpercatinib shows activity in this context (ER⁺ endocrine-resistant models and organoids were resensitized), and NCCN guidelines recognize RET fusions as actionable in HR⁺ metastatic disease (RET fusion → selpercatinib).",
+    "HER2⁺": "RET genomic alterations have been identified in a subset of HER2⁺ tumors, though clinical data are limited. One index case with HER2+ breast cancer had a NCOA4-RET fusion and responded to RET inhibition (cabozantinib); the role of selpercatinib specifically in HER2+ cases is not documented.",
+    "Triple-negative (Basal-like/HER2-enriched)": "A majority (~65%) of RET-altered breast cancers were ER⁻, implying many fall into the triple-negative category. Data in TNBC are sparse; selpercatinib’s tumor-agnostic approval suggests any RET fusion TNBC could respond, but no TNBC-specific trial results have been published.",
+    "BRCA1/2-mutated / HRD+": "There is no known interaction between selpercatinib and BRCA status; no evidence links BRCA/HRD status to selpercatinib response."
+  },
+  "citations": [
+    "[https://go.drugbank.com/drugs/DB15685](https://go.drugbank.com/drugs/DB15685)",
+    "[https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-selpercatinib-locally-advanced-or-metastatic ret-fusion-positive-solid-tumors](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-selpercatinib-locally-advanced-or-metastatic ret-fusion-positive-solid-tumors)",
+    "[https://www.nature.com/articles/s41467-018-07341-4?error=cookies_not_supported&code=43cfec8a b557-4afd-9895-8e55587b34d4](https://www.nature.com/articles/s41467-018-07341-4?error=cookies_not_supported&code=43cfec8a b557-4afd-9895-8e55587b34d4)",
+    "[https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2024.1497093/full](https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2024.1497093/full)",
+    "[https://pubmed.ncbi.nlm.nih.gov/40688508/](https://pubmed.ncbi.nlm.nih.gov/40688508/)",
+    "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/213246s008lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/213246s008lbl.pdf)",
+    "[https://www.ema.europa.eu/en/documents/product-information/retsevmo-epar-product-information_en.pdf](https://www.ema.europa.eu/en/documents/product-information/retsevmo-epar-product-information_en.pdf)",
+    "[https://ascopost.com/issues/may-25-2025/nccn-clinical-practice-guidelines-in-oncology-2025-updates/](https://ascopost.com/issues/may-25-2025/nccn-clinical-practice-guidelines-in-oncology-2025-updates/)",
+    "[https://education.nccn.org/node/95857](https://education.nccn.org/node/95857)"
+  ],
+  "notes": "Breast-cancer–specific profiling data post-selpercatinib are described as scarce; several subtype statements are based on limited reports and extrapolation within the deep-research output. Contraindications: none listed in the deep-research output. Source files:  "
+}

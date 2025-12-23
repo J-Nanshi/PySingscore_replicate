@@ -1,0 +1,1007 @@
+{
+  "drug_name": "Trastuzumab emtansine (T-DM1)",
+  "cancer_indication": "HER2-positive breast cancer (metastatic disease after prior trastuzumab/taxane therapy, or adjuvant therapy for residual invasive disease after neoadjuvant treatment).",
+  "drug_category": "HER2-targeted",
+  "drug_class": "antibody–drug conjugate",
+  "moa": "Trastuzumab emtansine (T-DM1) combines the anti-HER2 antibody trastuzumab with the microtubule inhibitor DM1 via a stable linker. It binds HER2 (ERBB2) on cancer cells, blocks HER2-driven signaling and can elicit ADCC, then the HER2–T-DM1 complex is internalized via receptor-mediated endocytosis. In lysosomes, DM1 is released and binds β-tubulin to inhibit microtubule function, inducing mitotic arrest and triggering apoptosis.",
+  "chembl_id": "CHEMBL1743082",
+  "drugbank_id": "DB05773",
+  "synonyms": [
+    "Kadcyla",
+    "ado‐trastuzumab emtansine",
+    "trastuzumab‐DM1",
+    "trastuzumab‐MCC-DM1",
+    "T-DM1",
+    "TDM1",
+    "RG-3502",
+    "PRO-132365"
+  ],
+  "primary_targets": [
+    "ERBB2",
+    "TUBB"
+  ],
+  "pathway_sets": [
+    "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2",
+    "REACTOME_SIGNALING_BY_ERBB2_IN_CANCER",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "HALLMARK_KRAS_SIGNALING_UP",
+    "HALLMARK_G2M_CHECKPOINT",
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_APOPTOSIS",
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+    "GOBP_RECEPTOR_MEDIATED_ENDOCYTOSIS",
+    "GOBP_LYSOSOMAL_TRANSPORT",
+    "KEGG_ABC_TRANSPORTERS",
+    "GOBP_CAVEOLIN_MEDIATED_ENDOCYTOSIS"
+  ],
+  "pathway_sets_annotations": {
+    "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2": {
+      "description": "Constitutive downstream signaling driven by overexpressed ERBB2 (HER2) receptor activity.",
+      "interpretation": "HER2 overexpression is the key biomarker for T-DM1 activity in breast cancer, and HER2-driven signaling underpins tumor proliferation and survival in HER2-positive disease.",
+      "Administration_of_trastuzumab_emtansine": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High HER2 overexpression/signaling indicates abundant target for T-DM1 binding and internalization, enabling efficient intracellular delivery of DM1 and trastuzumab-like signaling blockade.",
+                  "PMID:24967516; PMID:23020162"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: HER2 pathway “up” can still be functionally bypassed by downstream/parallel survival signaling (e.g., PI3K–AKT activation) or HER2 heterogeneity/selection, reducing dependence on HER2 and blunting benefit.",
+                  "PMID:29695635; PMID:33941592; PMID:28687619"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some HER2+ tumors show weaker “signaling” signatures yet retain high surface HER2 protein for ADC binding/internalization, allowing DM1 payload killing despite muted pathway readouts.",
+                  "PMID:24967516; PMID:23020162"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low/heterogeneous HER2 biology (low effective target density) reduces ADC binding and internalization, yielding primary resistance.",
+                  "PMID:33941592; PMID:28687619"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare (signature-level): Adaptive HER2 upregulation can occur under pressure, but if HER2 remains targetable and internalization/lysosomal processing is intact, higher target can still coincide with response.",
+                  "PMID:29695635; PMID:24967516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (signature-level): Non-responders can show compensatory reactivation/upregulation of HER2 signaling (or selection of HER2-high clones) while resistance is maintained via downstream bypass or defective intracellular processing.",
+                  "PMID:29695635; PMID:28687619; PMID:28687619"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: T-DM1 engagement reduces effective HER2 signaling (trastuzumab component) while delivering DM1 that disrupts microtubules → cytotoxicity and clinical benefit in HER2+ breast cancer.",
+                  "PMID:24967516; PMID:23020162"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Apparent HER2 pathway downshift can still be resistant if payload delivery is blocked (impaired endocytosis/lysosomal proteolysis/lysosomal export) or if strong bypass signaling prevents apoptosis.",
+                  "PMID:28687619; PMID:29054985; PMID:36741448"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_SIGNALING_BY_ERBB2_IN_CANCER": {
+      "description": "Cancer-associated ERBB2 (HER2) receptor signaling and its downstream proliferative and survival pathways.",
+      "interpretation": "ERBB2 signaling is central to HER2-positive breast cancer biology and is directly engaged by the trastuzumab component of T-DM1.",
+      "Administration_of_trastuzumab_emtansine": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: ERBB2-in-cancer pathway up reflects HER2-driven biology with sufficient receptor density for T-DM1 binding/internalization and DM1-mediated mitotic catastrophe.",
+                  "PMID:23020162; PMID:24967516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: ERBB2 pathway up does not guarantee response if HER2 is heterogeneous or intracellular trafficking/lysosomal processing is defective, limiting active catabolite exposure.",
+                  "PMID:33941592; PMID:28687619"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Tumors with lower pathway transcription but preserved HER2 protein expression can still respond because ADC efficacy depends heavily on antigen-mediated uptake rather than pathway “activity” signatures.",
+                  "PMID:24967516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Down ERBB2-in-cancer signaling commonly tracks with low/patchy HER2 target availability, lowering ADC binding/internalization and causing resistance.",
+                  "PMID:33941592"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare (signature-level): Therapy can increase apparent ERBB2 signatures via feedback or immune/stromal admixture; if ADC processing remains intact, response can still occur.",
+                  "PMID:29695635"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Rebound ERBB2 signaling or selection for ERBB2-high clones plus downstream bypass can sustain growth despite T-DM1 exposure.",
+                  "PMID:29695635; PMID:28687619"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective target engagement and internalization decrease functional ERBB2 signaling and deliver DM1, improving outcomes in HER2+ disease (e.g., EMILIA/KATHERINE).",
+                  "PMID:23020162; PMID:30516102"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: ERBB2 signaling down with resistance can reflect target loss/heterogeneity or intracellular resistance nodes (low lysosomal proteolysis, SLC46A3 loss), preventing DM1 from reaching tubulin.",
+                  "PMID:33941592; PMID:28687619; PMID:36741448"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+      "description": "PI3K–AKT–mTOR survival and growth signaling downstream of receptor tyrosine kinases, including HER2.",
+      "interpretation": "This pathway is described as a key downstream HER2 axis in HER2-positive breast cancer and is mechanistically relevant to the anti-proliferative effects associated with HER2 targeting.",
+      "Administration_of_trastuzumab_emtansine": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Highly PI3K-AKT-driven tumors may still respond if they remain HER2-high and proliferative, making them vulnerable to DM1’s anti-mitotic payload despite survival signaling.",
+                  "PMID:23020162; PMID:4058749"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: PI3K–AKT–mTOR hyperactivation can reduce dependence on HER2 and raise apoptosis threshold, contributing to reduced ADC efficacy in some settings.",
+                  "PMID:28687619; PMID:29695635"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Lower PI3K survival tone makes cells less able to tolerate mitotic stress from DM1, favoring apoptosis/mitotic catastrophe after T-DM1 uptake.",
+                  "PMID:4058749; PMID:24967516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Even with low PI3K signaling, resistance can occur via non-PI3K mechanisms (poor internalization, lysosomal dysfunction, drug efflux), limiting DM1 exposure.",
+                  "PMID:28687619; PMID:29054985"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare (adaptive): Transient PI3K activation from stress/feedback can appear early after treatment, yet adequate intracellular DM1 delivery can still trigger mitotic catastrophe and response.",
+                  "PMID:4058749"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Persistent PI3K–AKT–mTOR activation (e.g., PTEN loss/PIK3CA-driven survival) can enable escape from DM1-induced death and is a common bypass theme in HER2 therapy resistance.",
+                  "PMID:28687619; PMID:29110152"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: T-DM1’s trastuzumab component can dampen PI3K signaling downstream of HER2 while DM1 kills dividing cells, reinforcing sensitivity.",
+                  "PMID:24967516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Even when PI3K readouts fall, resistance can persist if lysosomal processing/export is impaired (no cytosolic catabolite) or if ABC efflux prevents effective intracellular DM1.",
+                  "PMID:28687619; PMID:4058749"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_KRAS_SIGNALING_UP": {
+      "description": "RAS–MAPK signaling programs associated with KRAS/RAS pathway activation and proliferative signaling.",
+      "interpretation": "RAS/MAPK signaling is described as a downstream pathway linked to HER2 signaling, relevant to proliferation and potential pathway bypass in HER2-driven tumors.",
+      "Administration_of_trastuzumab_emtansine": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: KRAS/MAPK-up tumors can still be sensitive if they remain highly proliferative and HER2-targetable, making them susceptible to anti-microtubule payload effects.",
+                  "PMID:4058749; PMID:24967516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: MAPK-driven signaling can act as a HER2-bypass growth axis, reducing reliance on HER2 inhibition and contributing to diminished response.",
+                  "PMID:29695635"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low baseline MAPK bypass signaling increases dependence on HER2 biology and makes cells less able to compensate for trastuzumab-like signaling blockade plus DM1 cytotoxicity.",
+                  "PMID:23020162; PMID:24967516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Resistance with low MAPK signatures can occur via trafficking/lysosomal defects or drug efflux, independent of KRAS/MAPK activity.",
+                  "PMID:28687619; PMID:29054985"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare (stress response): A transient KRAS/MAPK “up” signature can reflect treatment stress while cells still undergo mitotic catastrophe from sufficient DM1 exposure.",
+                  "PMID:4058749"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Adaptive MAPK reactivation is a classic bypass route after HER2 engagement and can support survival/proliferation despite ADC exposure.",
+                  "PMID:29695635; PMID:28687619"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective HER2 engagement can reduce downstream MAPK signaling while payload-induced mitotic arrest drives tumor cell death.",
+                  "PMID:24967516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: MAPK down with resistance can occur if the main resistance node is intracellular (lysosomal catabolism/export loss) rather than signaling bypass.",
+                  "PMID:28687619; PMID:36741448"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_G2M_CHECKPOINT": {
+      "description": "Regulation of mitotic entry and the G2/M checkpoint machinery that controls progression through mitosis.",
+      "interpretation": "The DM1 payload induces mitotic arrest; pathway activity reflecting mitotic cycling is mechanistically relevant to DM1-mediated cytotoxicity in tumor cells.",
+      "Administration_of_trastuzumab_emtansine": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High G2/M checkpoint/mitotic activity indicates rapid cycling, increasing vulnerability to DM1-mediated microtubule disruption and mitotic arrest.",
+                  "PMID:4058749; PMID:24967516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Some highly cycling tumors evade death via mitotic slippage/checkpoint adaptation or defective apoptosis, yielding reduced response despite a strong G2/M program.",
+                  "PMID:28687619"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Even with lower baseline cycling, substantial HER2-mediated ADC uptake can still deliver enough DM1 to trigger lethal mitotic errors in the dividing fraction.",
+                  "PMID:24967516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Slow-cycling/low-mitotic tumors have fewer cells traversing mitosis, reducing susceptibility to anti-microtubule payloads.",
+                  "PMID:4058749"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: DM1 catabolites bind tubulin and disrupt spindle formation, increasing mitotic checkpoint signaling (G2/M arrest) and driving mitotic catastrophe.",
+                  "PMID:4058749; PMID:24967516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Mitotic arrest can be prolonged without effective apoptosis (e.g., survival pathway dominance), allowing eventual escape and resistance.",
+                  "PMID:28687619"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Strong responders can show a drop in bulk G2/M signatures due to rapid tumor cell elimination and reduced proliferative fraction.",
+                  "PMID:23020162"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Failure to induce mitotic arrest can reflect insufficient intracellular DM1 exposure (poor internalization/lysosomal release or drug efflux), leading to resistance.",
+                  "PMID:28687619; PMID:4058749"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_E2F_TARGETS": {
+      "description": "E2F-driven transcriptional programs associated with cell-cycle progression and S-phase entry.",
+      "interpretation": "E2F activity is described as reflecting cell-cycle progression, which is mechanistically relevant because T-DM1 requires dividing cells for DM1-mediated mitotic effects.",
+      "Administration_of_trastuzumab_emtansine": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High E2F target expression indicates active proliferation and S-phase entry, correlating with susceptibility to downstream mitotic disruption by DM1 in cycling cells.",
+                  "PMID:4058749"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Proliferative tumors can still resist if ADC trafficking is defective (low lysosomal catabolism/export) or if MDR transport limits intracellular payload accumulation.",
+                  "PMID:28687619; PMID:4058749"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some low-proliferation tumors respond if HER2-mediated uptake is very efficient and the dividing compartment is selectively eradicated by DM1.",
+                  "PMID:24967516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Quiescent/slow-cycling biology reduces dependence on mitotic processes targeted by DM1, favoring resistance.",
+                  "PMID:4058749"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare (timing): Early on-treatment samples may still show high E2F as cells attempt cycling before lethal mitotic failure occurs, yet overall response can follow.",
+                  "PMID:4058749"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Persistent E2F/proliferation after therapy implies inadequate DM1 action (efflux/processing defects) or strong bypass survival, consistent with resistance.",
+                  "PMID:28687619"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective DM1 action and trastuzumab-like signaling blockade reduce proliferative programs (including E2F targets) as cells arrest and die.",
+                  "PMID:24967516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: E2F down can coincide with resistance if tumor shifts to a slow-cycling drug-tolerant state while maintaining viability (minimal mitotic engagement).",
+                  "PMID:28687619"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_APOPTOSIS": {
+      "description": "Intrinsic apoptosis and execution programs mediated by caspases and BCL2-family regulated mitochondrial pathways.",
+      "interpretation": "Apoptotic machinery is described as enabling tumor cell death after DM1-induced damage and HER2 pathway effects.",
+      "Administration_of_trastuzumab_emtansine": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Baseline pro-apoptotic priming lowers the threshold for DM1-induced mitotic catastrophe to trigger executioner caspases and cell death.",
+                  "PMID:4058749"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Despite apoptosis signaling, resistance can occur if intracellular DM1 delivery is insufficient (endocytosis/lysosome/export defects) or if anti-apoptotic dominance persists.",
+                  "PMID:28687619; PMID:29054985"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some apoptosis-low tumors still respond when payload exposure is high enough to cause catastrophic spindle failure beyond salvage.",
+                  "PMID:4058749; PMID:24967516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low apoptotic competence (high survival/anti-apoptotic programs) supports persistence after mitotic stress, contributing to resistance.",
+                  "PMID:28687619"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Lysosomal release of DM1 catabolites disrupts microtubules → mitotic arrest/mitotic catastrophe and activation of apoptosis pathways.",
+                  "PMID:4058749; PMID:24967516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Apoptosis may be initiated but incomplete (e.g., strong PI3K survival or anti-apoptotic rewiring), yielding partial response and eventual resistance.",
+                  "PMID:28687619"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare (bulk effect): Bulk apoptosis signatures can fall after effective tumor debulking because fewer tumor cells remain to contribute transcript signal.",
+                  "PMID:23020162"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Failure to activate apoptosis after exposure indicates ineffective payload delivery (processing/export/efflux issues) or intrinsic apoptosis resistance.",
+                  "PMID:28687619; PMID:36741448"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+      "description": "Interferon-γ–associated immune activation and inflammatory transcriptional responses.",
+      "interpretation": "Immune activation is described as relevant to Fc-mediated immune effector functions (e.g., ADCC) associated with the trastuzumab component of T-DM1.",
+      "Administration_of_trastuzumab_emtansine": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: A pre-existing IFN-γ/TIL-inflamed microenvironment can enhance trastuzumab-mediated immune effector functions (ADCC) and may synergize with ADC-mediated tumor killing in HER2+ breast cancer.",
+                  "PMID:22056974; PMID:6439986"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: IFN-γ-high tumors may still resist if immune suppression dominates (e.g., checkpoint upregulation/exhaustion) and intracellular ADC resistance (lysosomal/efflux) limits tumor killing.",
+                  "PMID:28687619; PMID:27433843"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Even with low IFN-γ signaling, T-DM1 can be effective through direct HER2-targeted DM1 delivery and microtubule disruption (immune-independent cytotoxicity).",
+                  "PMID:24967516; PMID:23020162"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Profound immune-desert tumors can lose the added benefit of antibody-mediated effector functions and, if coupled with intracellular resistance nodes, exhibit poorer response.",
+                  "PMID:6439986; PMID:28687619"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: ADC-induced tumor cell stress/death can promote immune activation; immunogenic cell death features have been linked to improved T-DM1 response in HER2+ breast cancer models.",
+                  "PMID:38319231; PMID:4058749"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: IFN-γ increase can coexist with resistance if adaptive immune checkpoints or suppressive myeloid/Treg programs counteract immunity and tumor-intrinsic ADC resistance persists.",
+                  "PMID:28687619; PMID:6439986"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Successful tumor clearance can reduce IFN-γ signatures over time as antigen burden falls and immune infiltrates contract.",
+                  "PMID:30516102"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Persistent immune suppression/exclusion (no IFN-γ response) can mark non-response, especially when combined with limited tumor cell kill from intracellular ADC resistance.",
+                  "PMID:28687619; PMID:6439986"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "GOBP_RECEPTOR_MEDIATED_ENDOCYTOSIS": {
+      "description": "Internalization of receptor–ligand complexes through receptor-mediated endocytosis and vesicular trafficking.",
+      "interpretation": "T-DM1 requires HER2 binding followed by internalization for intracellular delivery of DM1, making endocytic uptake mechanistically central.",
+      "Administration_of_trastuzumab_emtansine": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High receptor-mediated endocytosis capacity supports HER2-bound T-DM1 internalization, a prerequisite for lysosomal catabolism and DM1 release.",
+                  "PMID:24967516; PMID:29054985"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Internalization can still be non-productive if HER2–ADC complexes preferentially recycle rather than traffic to lysosomes, limiting payload release.",
+                  "PMID:28687619; PMID:34992350"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Even with lower global endocytosis signatures, strong HER2 density and alternative uptake routes can permit enough ADC internalization for response.",
+                  "PMID:24967516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Poor internalization is a direct resistance mechanism for ADCs—insufficient intracellular delivery prevents formation of active DM1 catabolites.",
+                  "PMID:24967516; PMID:29695635"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Productive T-DM1 therapy requires and effectively engages endocytic uptake of HER2–ADC complexes, increasing intracellular trafficking toward lysosomes.",
+                  "PMID:24967516; PMID:34992350"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Endocytosis may increase yet still be resistant if downstream steps fail (lysosomal proteolysis, lysosomal export of lysine-MCC-DM1, or high efflux).",
+                  "PMID:28687619; PMID:36741448"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Reduced endocytosis signatures after response can reflect fewer viable HER2+ tumor cells remaining rather than impaired uptake.",
+                  "PMID:30516102"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Acquired resistance frequently involves decreased ADC internalization/altered trafficking, limiting lysosomal delivery and payload liberation.",
+                  "PMID:29054985; PMID:29695635"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "GOBP_LYSOSOMAL_TRANSPORT": {
+      "description": "Trafficking to lysosomes and transport processes that support lysosomal degradation and downstream handling of catabolites.",
+      "interpretation": "Lysosomal processing is described as necessary for DM1 release after internalization, linking lysosomal transport/function to payload availability.",
+      "Administration_of_trastuzumab_emtansine": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Efficient lysosomal trafficking/function supports proteolytic degradation of the antibody and liberation of lysine-MCC-DM1, enabling tubulin targeting.",
+                  "PMID:24967516; PMID:28687619"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Even with high lysosomal transport, resistance can occur if lysosomal proteolysis is impaired or if catabolite export to cytosol is blocked (e.g., SLC46A3 loss).",
+                  "PMID:28687619; PMID:36741448"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Partial lysosomal impairment may still allow response if sufficient catabolism/export occurs in a subset of cells with high HER2 uptake.",
+                  "PMID:24967516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Reduced lysosomal proteolytic activity/trafficking limits generation and cytosolic availability of active DM1 catabolites, a documented T-DM1 resistance mechanism.",
+                  "PMID:28687619; PMID:28687619"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: On-target action involves endosome→lysosome delivery and lysosomal processing; intact lysosomal transport correlates with effective payload activation.",
+                  "PMID:24967516; PMID:34992350"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Lysosomal trafficking may be intact, yet resistance persists if lysosomal membrane export of lysine-MCC-DM1 is defective (SLC46A3-related) or if ABC transport removes payload from cytosol.",
+                  "PMID:36741448; PMID:4058749"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Lysosomal signatures can decline after response due to reduced tumor cellularity and altered composition of the sampled tissue.",
+                  "PMID:30516102"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Acquired downregulation of lysosomal processing/export reduces active catabolite availability and is a central resistance axis for non-cleavable linker DM1 ADCs.",
+                  "PMID:28687619; PMID:36741448"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_ABC_TRANSPORTERS": {
+      "description": "ATP-binding cassette transporter-mediated efflux of xenobiotics and drugs (e.g., MDR1/P-gp).",
+      "interpretation": "Drug efflux is described as mechanistically relevant to intracellular DM1 exposure after payload release, impacting retention of the cytotoxic component.",
+      "Administration_of_trastuzumab_emtansine": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Despite ABC transporter expression, strong HER2-mediated uptake plus high intralysosomal catabolite production can sometimes overcome partial efflux and still yield response.",
+                  "PMID:4058749"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Maytansinoids (DM1) are substrates for efflux pumps such as MDR1/P-gp; high ABC transporter activity lowers intracellular payload exposure → resistance.",
+                  "PMID:4058749; PMID:4058749"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low efflux capacity increases intracellular retention of DM1 catabolites after lysosomal processing, favoring effective tubulin inhibition and cell death.",
+                  "PMID:4058749"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Even with low ABC transporter signatures, resistance can still arise from upstream failures (poor internalization/lysosomal catabolism/export) that prevent payload action.",
+                  "PMID:28687619; PMID:36741448"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some responders may show induced transporter expression as a stress response, yet payload exposure remains sufficient to cause mitotic catastrophe.",
+                  "PMID:4058749"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Therapy can select for clones with increased MDR1/ABC transporter activity, reducing effective intracellular DM1 and driving acquired resistance.",
+                  "PMID:4058749; PMID:29695635"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Reduced efflux after treatment is consistent with sustained intracellular payload exposure and effective tubulin inhibition/cell death.",
+                  "PMID:4058749"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Efflux down may still be resistant if the limiting step is payload activation (lysosomal proteolysis/export) rather than cytosolic drug retention.",
+                  "PMID:28687619; PMID:36741448"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "GOBP_CAVEOLIN_MEDIATED_ENDOCYTOSIS": {
+      "description": "Endocytic uptake mediated by caveolin-dependent vesicles and caveolae-associated internalization routes.",
+      "interpretation": "Caveolin-associated uptake is described as influencing T-DM1 internalization, linking this endocytosis route to intracellular delivery of DM1.",
+      "Administration_of_trastuzumab_emtansine": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Caveolin-1/caveolae-mediated endocytosis can enhance T-DM1 internalization and has been linked to greater chemosensitivity to T-DM1 in HER2+ breast cancer models.",
+                  "PMID:26172389; PMID:29054985"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Caveolar uptake may be non-productive if trafficking favors recycling or if lysosomal processing/export is defective downstream of internalization.",
+                  "PMID:34992350; PMID:28687619"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Low caveolin signatures can still allow response via alternative endocytic routes or high HER2 abundance enabling sufficient uptake.",
+                  "PMID:24967516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Reduced caveolae/lipid-raft uptake can lower T-DM1 internalization, limiting lysosomal delivery and payload release.",
+                  "PMID:34992350; PMID:29054985"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: On-treatment enhancement of caveolae-mediated uptake increases intracellular delivery of HER2-bound T-DM1, improving payload activation and response.",
+                  "PMID:29054985; PMID:34992350"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Uptake can increase yet resistance persists if lysosomal proteolysis/export (e.g., SLC46A3) is limiting or if ABC efflux dominates.",
+                  "PMID:36741448; PMID:28687619"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Caveolin signatures can drop after response due to reduced tumor content and altered tissue composition rather than causal resistance.",
+                  "PMID:30516102"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Loss/downregulation of caveolin-dependent internalization reduces productive T-DM1 uptake and is consistent with acquired resistance.",
+                  "PMID:29054985; PMID:26172389"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "CCNB1",
+    "CDC20",
+    "CAV1",
+    "SH3GL1",
+    "SLC46A3"
+  ],
+  "sensitivity_genes_down": [],
+  "resistance_genes_up": [
+    "ABCB1",
+    "PLK1",
+    "PIK3CA",
+    "KRAS"
+  ],
+  "resistance_genes_down": [
+    "ERBB2",
+    "CCNB1",
+    "CDC20",
+    "CAV1",
+    "SH3GL1",
+    "SLC46A3"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "CCNB1",
+      "interpretation": "High cyclin B1 expression is described as indicating active cycling into mitosis, where the DM1 payload is most effective at inducing mitotic arrest."
+    },
+    {
+      "gene": "CDC20",
+      "interpretation": "Higher CDC20 is described alongside cyclin B1 as supporting mitotic entry/progression, aligning with T-DM1’s requirement for dividing cells to enable DM1-mediated mitotic blockade."
+    },
+    {
+      "gene": "CAV1",
+      "interpretation": "Elevated caveolin-1 is described as enhancing T-DM1 uptake via caveolin-mediated endocytosis, increasing internalization and payload delivery."
+    },
+    {
+      "gene": "SH3GL1",
+      "interpretation": "Upregulation of SH3GL1 (endophilin A2) is described as promoting efficient HER2–T-DM1 internalization; reduced levels suppress cytotoxicity in the report."
+    },
+    {
+      "gene": "SLC46A3",
+      "interpretation": "Higher SLC46A3 is described as facilitating lysosomal export of DM1 into the cytosol, supporting payload release and cytotoxicity."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [],
+  "resistance_genes_up_annotations": [
+    {
+      "gene": "ABCB1",
+      "interpretation": "Overexpression of MDR1/P-gp (ABCB1) is described as effluxing the DM1 payload, reducing intracellular drug concentration and promoting lack of response."
+    },
+    {
+      "gene": "PLK1",
+      "interpretation": "High PLK1 activity is described in resistant models as promoting mitotic progression and dampening T-DM1 cytotoxicity; PLK1 inhibition can resensitize in the report."
+    },
+    {
+      "gene": "PIK3CA",
+      "interpretation": "Constitutive PI3K–AKT activation is described as a known resistance mechanism in HER2-positive breast cancer that can blunt HER2 inhibition effects relevant to T-DM1."
+    },
+    {
+      "gene": "KRAS",
+      "interpretation": "KRAS/RAS hyperactivation is described as bypassing HER2 blockade by sustaining RAS/MAPK signaling, which can undermine the anti-proliferative signaling impact of HER2 targeting."
+    }
+  ],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "ERBB2",
+      "interpretation": "Reduction or loss of HER2 expression is described as decreasing the available target for T-DM1 binding, impairing delivery of the DM1 payload and contributing to lack of response."
+    },
+    {
+      "gene": "CCNB1",
+      "interpretation": "Downregulation of cyclin B1 is described as preventing cells from entering mitosis where DM1 acts, reducing cytotoxic effect in the report."
+    },
+    {
+      "gene": "CDC20",
+      "interpretation": "Downregulation of CDC20 is described as preventing mitotic progression needed for DM1-mediated arrest and downstream apoptosis."
+    },
+    {
+      "gene": "CAV1",
+      "interpretation": "Reduced caveolin-1 is described as impairing T-DM1 internalization and lowering cytotoxicity through diminished endocytic uptake."
+    },
+    {
+      "gene": "SH3GL1",
+      "interpretation": "Reduced SH3GL1 is described as impairing HER2–T-DM1 internalization and suppressing cytotoxicity by limiting delivery to lysosomes."
+    },
+    {
+      "gene": "SLC46A3",
+      "interpretation": "Loss of SLC46A3 is described as preventing lysosomal export of DM1, trapping the payload and reducing tumor cell killing."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Trastuzumab emtansine|binds|ERBB2",
+    "Trastuzumab emtansine|targets|TUBB",
+    "ABCB1_overexpression|confers_resistance_to|Trastuzumab emtansine",
+    "PLK1_upregulation|confers_resistance_to|Trastuzumab emtansine",
+    "ERBB2_downregulation|confers_resistance_to|Trastuzumab emtansine",
+    "CAV1_upregulation|confers_sensitivity_to|Trastuzumab emtansine",
+    "SH3GL1_upregulation|confers_sensitivity_to|Trastuzumab emtansine",
+    "SLC46A3_loss|confers_resistance_to|Trastuzumab emtansine"
+  ],
+  "Breast_cancer_subtype_information": {
+    "HER2-positive subtypes": "Trastuzumab emtansine efficacy is strictly tied to HER2 status; it is effective in all HER2-positive subtypes (including HER2-enriched or Luminal B/HER2+ cancers) and is indifferent to hormone receptor or BRCA/HRD status per se.",
+    "HR-positive/HER2-negative (Luminal A/B)": "HR-positive/HER2-negative (Luminal A/B) tumors express little or no HER2 and are not targets of T-DM1; no trial evidence supports T-DM1 in these HER2-negative subtypes.",
+    "triple-negative/basal-like": "Triple-negative/basal-like tumors express little or no HER2 and are not targets of T-DM1; no trial evidence supports T-DM1 in these HER2-negative subtypes.",
+    "intratumoral HER2 heterogeneity": "Intratumoral heterogeneity of HER2 (e.g., mixed HER2+/HER2– regions) is described as predicting T-DM1 failure.",
+    "germline BRCA1/2–mutated tumors": "Germline BRCA1/2–mutated tumors are often triple-negative; the absence of HER2 in these cases means T-DM1 is inactive, and there is no known interaction between HRD status and T-DM1 sensitivity described."
+  },
+  "citations": [
+    "Mechanisms of resistance to trastuzumab",
+    "emtansine (T-DM1) in HER2-positive breast cancer | British Journal of Cancer",
+    "[https://www.nature.com/articles/s41416-019-0635-y?error=cookies_not_supported&code=c83e8097-](https://www.nature.com/articles/s41416-019-0635-y?error=cookies_not_supported&code=c83e8097-)",
+    "a223-4887-90f9-2449e06f9b38",
+    "Trastuzumab emtansine: Uses, Interactions, Mechanism of Action | DrugBank",
+    "Online",
+    "[https://go.drugbank.com/drugs/DB05773](https://go.drugbank.com/drugs/DB05773)",
+    "FDA Approval Summary: Ado-Trastuzumab Emtansine for the Adjuvant Treatment of HER2-positive",
+    "Early Breast Cancer - PubMed",
+    "[https://pubmed.ncbi.nlm.nih.gov/32217612/](https://pubmed.ncbi.nlm.nih.gov/32217612/)",
+    "Trastuzumab deruxtecan versus trastuzumab emtansine in HER2-positive metastatic breast cancer:",
+    "long-term survival analysis of the DESTINY-Breast03 trial | Nature Medicine",
+    "[https://www.nature.com/articles/s41591-024-03021-7?error=cookies_not_supported&code=3b7fc151-](https://www.nature.com/articles/s41591-024-03021-7?error=cookies_not_supported&code=3b7fc151-)",
+    "b354-4288-906b-3cd9c82c4f71",
+    "KADCYLA (ado-trastuzumab emtansine) Label",
+    "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/125427lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2013/125427lbl.pdf)",
+    "1 Recommendations | Trastuzumab emtansine for adjuvant treatment of HER2-positive early breast",
+    "cancer | Guidance | NICE",
+    "[https://www.nice.org.uk/guidance/ta632/chapter/1-Recommendations](https://www.nice.org.uk/guidance/ta632/chapter/1-Recommendations)"
+  ],
+  "notes": "The report describes T-DM1 as FDA- and EMA-approved for HER2-positive breast cancer and emphasizes dependence on high HER2 expression for efficacy, with no activity in HER2-negative subtypes. Safety cautions described include black-box warnings for serious hepatotoxicity and cardiac toxicity and embryo-fetal risk, along with the need for monitoring. Source files:  "
+}

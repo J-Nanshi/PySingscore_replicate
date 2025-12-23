@@ -1,0 +1,587 @@
+{
+  "drug_name": "Margetuximab",
+  "cancer_indication": "Metastatic HER2-positive breast cancer after ≥2 prior anti-HER2 regimens (≥1 in the metastatic setting), given in combination with chemotherapy.",
+  "drug_category": "HER2-targeted",
+  "drug_class": "Fc-engineered anti-HER2 IgG1κ monoclonal antibody",
+  "moa": "Margetuximab binds the HER2 (ERBB2) extracellular domain (same epitope as trastuzumab) and inhibits HER2 signaling, reducing downstream pathway activation. Its Fc region is engineered to increase affinity for activating FcγRIIIa (CD16A; FCGR3A) and decrease affinity for inhibitory FcγRIIb (CD32B; FCGR2B), enhancing NK cell- and macrophage-mediated tumor killing (ADCC and phagocytosis). Fc-mediated immune activation is linked to cytokine release (e.g., IFN-γ) and interferon-stimulated signaling in the tumor microenvironment.",
+  "chembl_id": "CHEMBL2364649",
+  "drugbank_id": "DB14967",
+  "synonyms": [
+    "MARGENZA",
+    "MGAH22",
+    "margetuximab-cmkb"
+  ],
+  "primary_targets": [
+    "ERBB2",
+    "FCGR3A",
+    "FCGR2B"
+  ],
+  "pathway_sets": [
+    "KEGG_ERBB_SIGNALING_PATHWAY",
+    "REACTOME_ERBB2_SIGNALING",
+    "REACTOME_DOWNREGULATION_OF_ERBB2_SIGNALING",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY",
+    "REACTOME_FCGAMMA_RECEPTOR_FCGR_DEPENDENT_PHAGOCYTOSIS",
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE"
+  ],
+  "pathway_sets_annotations": {
+    "KEGG_ERBB_SIGNALING_PATHWAY": {
+      "description": "Canonical HER family receptor signaling (including HER2) that propagates growth and survival signals through RAS–MAPK and PI3K–AKT nodes.",
+      "interpretation": "ERBB signaling is the core oncogenic driver in HER2-amplified breast cancers and underpins dependence on HER2-directed antibody therapy.",
+      "Administration_of_margetuximab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: HER2/ERBB2-driven ErbB signaling (HER2 amplification/overexpression) indicates on-target dependency; anti-HER2 mAbs can suppress growth and recruit Fc-effector killing.",
+                  "KEGG:hsa04012 (ErbB signaling); FDA (MARGENZA) label 761150 (2020) “margetuximab-cmkb” (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (bypass): Despite high ERBB signaling, downstream PI3K activation (e.g., PIK3CA mutation/PTEN loss) or parallel RTKs can maintain survival and blunt anti-HER2 mAb benefit.",
+                  "FDA Approval Summary margetuximab (MGAH22) PMID:34916216 (Europe PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: “Low” ERBB signature from sampling/heterogeneity but focal HER2-high clones still present can remain targetable and benefit from Fc-mediated clearance.",
+                  "NCT02492711 (SOPHIA) (ClinicalTrials)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low HER2/ERBB pathway activity usually reflects HER2-nonaddicted disease (or HER2-low by IHC) → insufficient target engagement for margetuximab benefit.",
+                  "FDA indication requires HER2-positive metastatic breast cancer; label 761150 (FDA Access Data)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: On-target HER2 antagonism reduces ERBB signaling flux and—together with ADCC/ADCP—drives tumor control in HER2+ breast cancer.",
+                  "FDA label 761150; SOPHIA NCT02492711; JCO update PMID:36332179 (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: ERBB signaling is suppressed, but tumor persists via HER2-independent survival programs (e.g., EMT/stemness, alternative RTKs) → clinical resistance despite ERBB downshift.",
+                  "Review (HER2-targeted resistance context) PMID:34916216 (Europe PMC)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (direct drug effect): Margetuximab is a HER2 antagonist and should not increase functional ERBB signaling; any “up” reflects compensatory transcriptional feedback, not productive signaling.",
+                  "FDA label 761150 (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (adaptive rebound): Compensatory HER3/ligand-driven signaling or ERBB2 alterations can restore ERBB pathway output despite antibody presence → resistant phenotype.",
+                  "Reactome “Signaling by ERBB2 in Cancer” R-HSA-1227990 (Reactome)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_ERBB2_SIGNALING": {
+      "description": "HER2/ERBB2-driven signaling network in cancer, including receptor dimerization and downstream kinase cascades controlling proliferation and survival.",
+      "interpretation": "ERBB2 signaling is central to the malignant phenotype in HER2-positive breast cancer and provides the primary biological context for anti-HER2 antibodies.",
+      "Administration_of_margetuximab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High ERBB2/HER2 signaling in HER2-amplified breast cancer provides the on-target context for anti-HER2 mAbs (growth antagonism + Fc effector recruitment).",
+                  "Reactome:R-HSA-1227986; FDA label 761150 (Reactome)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: ERBB2 signaling can be uncoupled from antibody benefit by downstream alterations (PI3K/AKT constitutive activation) or RTK bypass, yielding de novo resistance.",
+                  "FDA Approval Summary PMID:34916216 (Europe PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: HER2 expression/signaling may be underestimated (tumor heterogeneity/assay discordance), yet sufficient HER2 surface density remains to trigger Fc-mediated killing.",
+                  "SOPHIA trial population defined by HER2+ criteria; NCT02492711 (ClinicalTrials)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low ERBB2 pathway activity usually indicates lack of HER2 addiction/target → margetuximab has limited biologic leverage.",
+                  "FDA indication (HER2-positive only) (U.S. Food and Drug Administration)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Blocking HER2 signaling and engaging immune effector mechanisms reduces ERBB2 pathway activity and supports response.",
+                  "Reactome:R-HSA-1227986; FDA label 761150 (Reactome)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: ERBB2 pathway is suppressed but tumor survives via non-ERBB2 programs (e.g., lineage plasticity), leading to resistance despite on-target pathway inhibition.",
+                  "Review (margetuximab evidence) PMC9059982 (PMC)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (direct): Functional ERBB2 signaling should not be increased by an antagonistic anti-HER2 antibody.",
+                  "FDA label 761150 (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (compensation): Upregulated ERBB2-network transcripts can reflect rebound signaling through ERBB family partners/ligands or mutant ERBB2 signaling → resistant state.",
+                  "Reactome:R-HSA-1227990; Reactome ERBB2 mutant modules (Reactome)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_DOWNREGULATION_OF_ERBB2_SIGNALING": {
+      "description": "Processes that attenuate HER2 signaling via receptor internalization, ubiquitination, trafficking, and degradation, limiting receptor availability and signaling output.",
+      "interpretation": "Regulation of HER2 receptor abundance and signaling duration is relevant to antibody-based HER2 targeting, where receptor down-modulation can contribute to pathway suppression.",
+      "Administration_of_margetuximab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Elevated intrinsic ERBB2 downregulation (ubiquitination/phosphatase control) can coexist with HER2 dependence and still permit benefit if enough HER2 remains on surface for Fc effector killing.",
+                  "Reactome:R-HSA-8863795 (Reactome)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Strong baseline ERBB2 downregulation can reduce HER2 surface density/antigen availability, undermining antibody binding and effector engagement.",
+                  "Reactome:R-HSA-8863795 (Reactome)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Weak ERBB2 downregulation tends to preserve high HER2 surface expression (typical in HER2-amplified tumors), supporting margetuximab binding and activity.",
+                  "Reactome:R-HSA-8863795; FDA HER2+ indication (Reactome)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Even with low downregulation and high HER2, downstream pathway lesions or immune-excluded microenvironment can still drive resistance.",
+                  "FDA Approval Summary PMID:34916216 (Europe PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (signature-level): Antibody engagement can promote ERBB2 internalization/turnover and attenuate signaling, contributing to response.",
+                  "Reactome:R-HSA-8863795 (Reactome)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Excessive target downregulation/antigen loss under treatment can enable escape (HER2-low/negative progression) → resistance.",
+                  "SOPHIA context (treated HER2+ MBC); NCT02492711 (ClinicalTrials)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Response can still occur primarily via Fc-mediated cytotoxicity even if ERBB2 downregulation programs are not strongly induced.",
+                  "Fc-engineering rationale (activating FcγR bias) PMID:34992090 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Failure to downregulate/attenuate ERBB2 signaling (or rapid reactivation via heterodimers) supports persistent oncogenic signaling and resistance.",
+                  "Reactome:R-HSA-8863795; Reactome:R-HSA-1227990 (Reactome)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+      "description": "Gene set reflecting PI3K–AKT–mTOR pathway activity governing cellular growth, metabolism, and survival signaling programs.",
+      "interpretation": "PI3K–AKT–mTOR signaling is a major downstream survival axis of HER2 that shapes tumor biology in HER2-positive breast cancer.",
+      "Administration_of_margetuximab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In some HER2-driven tumors, high PI3K/AKT activity is still upstream HER2-dependent, so HER2 blockade can collapse signaling and yield sensitivity.",
+                  "FDA label 761150 (HER2 antagonist context); Reactome ERBB2 signaling (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Constitutive PI3K/AKT/mTOR activation downstream (e.g., PIK3CA/PTEN alterations) can bypass HER2 blockade, a classic resistance axis in HER2+ breast cancer.",
+                  "FDA Approval Summary PMID:34916216 (Europe PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low baseline PI3K/AKT/mTOR bypass suggests greater reliance on HER2 signaling and fewer downstream escape routes → improved likelihood of benefit.",
+                  "SOPHIA (HER2+ selection) NCT02492711; Reactome ERBB2 signaling (ClinicalTrials)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Tumors can be HER2-independent through MAPK/other RTKs even with low PI3K signature, yielding resistance to HER2 antibodies.",
+                  "Reactome “Signaling by ERBB2 in Cancer” R-HSA-1227990 (Reactome)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective HER2 antagonism reduces downstream PI3K/AKT signaling in HER2-driven tumors, contributing to growth inhibition and response.",
+                  "Reactome:R-HSA-1227986; FDA label 761150 (Reactome)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: PI3K/AKT signature may drop while tumor persists via alternative survival programs (e.g., MAPK, EMT), causing resistance despite pathway downshift.",
+                  "Review (margetuximab evidence) PMC9059982 (PMC)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Immune-cell influx can raise bulk PI3K pathway transcripts even when tumor ERBB2 signaling is controlled, so “up” may not equal tumor resistance.",
+                  "FcγR biology & immune effects review PMID:34992090 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Feedback rebound (HER3/IGF1R) or downstream lesions can reactivate PI3K/AKT/mTOR under HER2 antibody pressure → acquired resistance.",
+                  "Reactome:R-HSA-1227990; FDA Approval Summary PMID:34916216 (Reactome)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY": {
+      "description": "NK-cell activation and cytotoxic effector mechanisms (including Fc receptor-triggered activation) that mediate killing of antibody-opsonized target cells.",
+      "interpretation": "NK-cell effector function is mechanistically relevant to IgG1 anti-HER2 therapies that leverage antibody-dependent cellular cytotoxicity as part of anti-tumor activity.",
+      "Administration_of_margetuximab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High NK cytotoxicity/TIL activity supports Fc-driven ADCC; margetuximab’s Fc engineering is designed to enhance activating FcγR engagement and ADCC.",
+                  "Fc-engineered binding (↑FcγRIIIa, ↓FcγRIIb) PMID:34992090 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: NK signatures can be present but functionally suppressed (TGF-β, checkpoints, myeloid suppression), limiting ADCC efficacy.",
+                  "Review (FcγR / effector limitations) PMID:34992090 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Immune-cold tumors can still respond if antibody rapidly recruits/activates Fc effector cells after dosing.",
+                  "FDA Approval Summary PMID:34916216 (Europe PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low NK cytotoxicity implies limited effector availability for ADCC, contributing to poor response to Fc-dependent antibodies.",
+                  "FcγR/ADCC framework PMID:34992090 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Margetuximab biases toward activating FcγRs, enhancing NK-mediated ADCC and associating with tumor control when effectors are present.",
+                  "Fc engineering statement PMID:34992090; FDA Approval Summary PMID:34916216 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: NK activation occurs but is countered by adaptive immune resistance (e.g., PD-L1 upregulation) or antigen heterogeneity → incomplete response.",
+                  "SOPHIA context NCT02492711; JCO update PMID:36332179 (ClinicalTrials)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In deep responders, tumor clearance can reduce immune-cell abundance in bulk RNA (“contraction”), lowering NK signatures despite sensitivity.",
+                  "Immune-response dynamics concept (trial context) NCT02492711 (ClinicalTrials)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Failure to recruit/activate NK effectors (immune exclusion or myeloid suppression) leads to weak ADCC and resistance.",
+                  "FcγR/effector dependence PMID:34992090 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_FCGAMMA_RECEPTOR_FCGR_DEPENDENT_PHAGOCYTOSIS": {
+      "description": "Fcγ receptor-dependent recognition and engulfment of antibody-opsonized targets by phagocytes, including signaling events downstream of FcγR engagement.",
+      "interpretation": "FcγR-dependent phagocytosis is relevant to anti-HER2 antibodies by supporting macrophage-mediated clearance of opsonized tumor cells as an immune effector mechanism.",
+      "Administration_of_margetuximab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High FcγR-dependent phagocytosis (macrophage ADCP potential) supports antibody-mediated clearance; Fc-optimization favors activating FcγR interactions.",
+                  "Reactome:R-HSA-2029480; Fc-engineering PMID:34992090 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Myeloid cells may be abundant but immunosuppressive (M2/TAM program) or dominated by inhibitory FcγR signaling, limiting effective phagocytosis.",
+                  "FcγR biology review PMID:34992090 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Even with low baseline ADCP signatures, NK-driven ADCC can dominate and still yield sensitivity in HER2+ disease.",
+                  "FDA Approval Summary PMID:34916216 (Europe PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low FcγR-dependent phagocytosis implies weak macrophage-mediated effector function, reducing antibody efficacy.",
+                  "Reactome FcγR phagocytosis module context; FcγR review PMID:34992090 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Fc-engineering (↑binding to activating FcγRIIIa; ↓binding to inhibitory FcγRIIb) increases Fc effector function, enabling stronger ADCP/ADCC and response.",
+                  "PMID:34992090; FDA Approval Summary PMID:34916216 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: FcγR pathways rise, but macrophage checkpoints (“don’t-eat-me” signaling) or suppressive cytokines blunt productive phagocytosis.",
+                  "FcγR biology review PMID:34992090 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Clinical benefit can still occur via direct HER2 antagonism and NK ADCC even if phagocytosis programs are not transcriptionally induced.",
+                  "FDA label 761150 (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Lack of FcγR-dependent phagocytosis after therapy indicates failure of effector engagement → resistant phenotype.",
+                  "Reactome:R-HSA-2029480; Fc-engineering rationale PMID:34992090 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+      "description": "Interferon-γ-induced gene program reflecting cytokine-driven immune activation and interferon-stimulated transcriptional responses.",
+      "interpretation": "IFN-γ-linked immune signaling can reflect immune activation associated with antibody-triggered effector responses in the tumor microenvironment.",
+      "Administration_of_margetuximab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: A pre-existing IFN-γ–inflamed microenvironment (antigen presentation/effector activity) supports antibody effector mechanisms and better outcomes in immune-infiltrated HER2+ tumors.",
+                  "FcγR/effector context PMID:34992090 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Chronic IFN-γ can drive adaptive immune resistance programs (e.g., PD-L1 induction), limiting durable benefit despite inflammation.",
+                  "Immune adaptation concept (trial context) NCT02492711 (ClinicalTrials)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Even IFN-γ-low tumors can respond if Fc-mediated cytotoxicity is rapidly induced after dosing and HER2 is strongly expressed.",
+                  "FDA label 761150; Fc-engineering PMID:34992090 (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: IFN-γ-low immune-desert tumors typically lack effective effector recruitment and antigen presentation, reducing Fc-mediated antibody efficacy.",
+                  "FcγR/effector dependence review PMID:34992090 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Enhanced ADCC/ADCP can increase local effector activation and IFN-γ signaling, reinforcing anti-tumor immunity in responders.",
+                  "Fc-engineering PMID:34992090; FDA Approval Summary PMID:34916216 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: IFN-γ upregulation occurs but is accompanied by adaptive immune resistance (e.g., checkpoint upregulation), yielding mixed/poor clinical response.",
+                  "SOPHIA NCT02492711; JCO update PMID:36332179 (ClinicalTrials)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In rapid responders, tumor burden drops and immune activation signatures can contract, lowering IFN-γ response despite sensitivity.",
+                  "NCT02492711 (SOPHIA) (ClinicalTrials)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Failure to induce IFN-γ response after antibody dosing suggests minimal effector engagement/immune activation → resistant state.",
+                  "FcγR/effector dependence PMID:34992090 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "ERBB2",
+    "FCGR3A"
+  ],
+  "sensitivity_genes_down": [],
+  "resistance_genes_up": [],
+  "resistance_genes_down": [
+    "PTEN"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "ERBB2",
+      "interpretation": "High HER2 expression/amplification is a prerequisite for clinical use because pivotal trials restrict to HER2-positive tumors (IHC 3+ or ISH-amplified)."
+    },
+    {
+      "gene": "FCGR3A",
+      "interpretation": "Clinical analyses describe improved relative outcomes with margetuximab vs trastuzumab concentrated in patients carrying at least one CD16A-158F allele, consistent with Fc-engineering designed to enhance CD16A engagement."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [],
+  "resistance_genes_up_annotations": [],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "PTEN",
+      "interpretation": "PTEN loss is described as a classical HER2-targeted resistance mechanism (class-level) linked to reduced dependence on extracellular HER2 signaling via downstream pathway activation; margetuximab-specific gene-level resistance datasets are noted as lacking."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Margetuximab|binds|ERBB2",
+    "Margetuximab|increases_affinity_for|FCGR3A",
+    "Margetuximab|decreases_affinity_for|FCGR2B",
+    "ERBB2_high_expression|is_prerequisite_for|Margetuximab",
+    "FCGR3A_CD16A-158F_allele|associated_with_greater_relative_benefit_with|Margetuximab",
+    "PTEN_loss|linked_to_resistance_to|HER2_targeted_antibodies"
+  ],
+  "Breast_cancer_subtype_information": {
+    "Metastatic HER2-positive breast cancer (all HR subtypes)": "SOPHIA and the Chinese phase II bridging study included HER2-positive advanced/metastatic breast cancer with mixed HR-positive and HR-negative patients; reports describe similar relative benefit across HR strata, and margetuximab is used regardless of hormone receptor status in HER2-positive metastatic disease after prior anti-HER2 regimens.",
+    "Early-stage HER2-positive breast cancer": "As of 2024–2025, no approved early-stage indication is stated; a phase II neoadjuvant trial (MARGOT, NCT04425018) comparing paclitaxel/margetuximab/pertuzumab vs paclitaxel/trastuzumab/pertuzumab is described with results not yet mature.",
+    "HER2-low (HR+ or HR−)": "No published dedicated margetuximab trials are described; no clinically meaningful HER2-low breast cancer cohorts with outcome data are noted.",
+    "Triple-negative (HER2-negative) breast cancer": "Margetuximab is described as appearing in early-phase basket trials that included TNBC and other tumors, but without clear breast-specific efficacy reporting; no current rationale to use in HER2-negative TNBC outside a trial is stated."
+  },
+  "citations": [
+    "1. Nordstrom JL, Gorlatov S, Zhang W, et al, Anti-tumor activity and \ntoxicokinetics analysis of MGAH22, an anti-HER2 monoclonal antibody with \nenhanced Fcγ receptor binding properties, Breast Cancer Res \n2011;13(6):R123, PMID:22129105. (PubMed)",
+    "2. Bang YJ, Giaccone G, Im SA, et al, First-in-human phase 1 study of \nmargetuximab (MGAH22), an Fc-modified chimeric monoclonal antibody, in \npatients with HER2-positive advanced solid tumors, Ann Oncol \n2017;28(4):855–861, PMID:28119295, NCT01148849. (PubMed)",
+    "3. Rugo HS, Im SA, Cardoso F, et al, Efficacy of margetuximab vs trastuzumab \nin patients with pretreated ERBB2-positive advanced breast cancer: a phase \n3 randomized clinical trial (SOPHIA), JAMA Oncol 2021;7(4):573–584, \nPMID:33480963, NCT02492711. (PubMed)",
+    "4. Rugo HS, Im SA, Cardoso F, et al, Margetuximab versus trastuzumab in \npatients with previously treated HER2-positive advanced breast cancer \n(SOPHIA): final overall survival results from a randomized phase 3 trial, J Clin \nOncol 2023;41(2):198–205, PMID:36332179, NCT02492711. (PubMed)",
+    "5. Royce M, Osgood CL, Amatya AK, et al, FDA approval summary: \nmargetuximab plus chemotherapy for advanced or metastatic HER2-positive \nbreast cancer, Clin Cancer Res 2022;28(8):1487–1492, PMID:34916216. \n(PubMed)",
+    "6. Zhang Q, Li H, Zhang J, et al, Efficacy and safety of margetuximab plus \nchemotherapy vs trastuzumab plus chemotherapy in Chinese patients with \npretreated HER2-positive advanced metastatic breast cancer: results from a \nrandomized, open-label, multicenter phase II bridging study, Transl Breast \nCancer Res 2022;3:Article 29, ClinicalTrials.gov identifier NCT04262804. \n(PubMed)",
+    "7. Chang H, Hu T, Hu J, et al, Complete response in patient with liver \nmetastasis of HER2-positive breast cancer following therapy with \nmargetuximab: a case report, Anticancer Drugs 2023;34(7):883–887, \nPMID:36730303. (PubMed)",
+    "8. Li J, Liao N, Huang J, et al, Significant response to margetuximab in Chinese \nHER2-positive metastatic breast cancer patient who progressed after \nsecond-line targeted therapy: a case report, Anticancer Drugs \n2023;34(7):892–895, PMID:36729856. (PubMed)",
+    "9. Tang Z, Zhang Y, Liu Z, et al, Economic evaluation of margetuximab vs \ntrastuzumab for pretreated ERBB2-positive advanced breast cancer in the \nUnited States and China, Front Public Health 2022;10:942767, \ndoi:10.3389/fpubh.2022.942767. (Frontiers)",
+    "10. Feng M, Yang Y, Liao W, Li Q, Margetuximab versus trastuzumab in patients \nwith advanced breast cancer: a cost-effectiveness analysis, Clin Breast \nCancer 2022;22(5):e629–e635, PMID:35418312. (PubMed)",
+    "11.Alasmari MM, A review of margetuximab-based therapies in patients with \nHER2-positive metastatic breast cancer, Cancers (Basel) 2023;15(1):38, \ndoi:10.3390/cancers15010038. (PMC)",
+    "12.Gradishar WJ, Margetuximab in HER2-positive metastatic breast cancer, \nFuture Oncol 2023;19(2):153–167 (online ahead of print pagination may vary). \n(Taylor & Francis Online)",
+    "13. Zhou Y, Liu X, Li H, et al, Margetuximab: an active alternative for later-line \ntherapy in HER2-positive metastatic breast cancer, Med Comm (2020) Oncol \n2023;3(2):e322, doi:10.1002/mco2.322. (Wiley Online Library)",
+    "14. Musolino A, Gradishar WJ, Rugo HS, et al, Role of Fcγ receptors in HER2-\ntargeted breast cancer therapy, J Immunother Cancer 2022;10(1):e003171, \nPMID:34992090. (PubMed)",
+    "15.Kanehisa M, Furumichi M, Tanabe M, Sato Y, Morishima K, KEGG: new \nperspectives on genomes, pathways, diseases and drugs, Nucleic Acids Res \n2017;45(D1):D353–D361, PMID:27899662. (PubMed)",
+    "16.Jassal B, Matthews L, Viteri G, et al, The Reactome pathway knowledgebase, \nNucleic Acids Res 2020;48(D1):D498–D503, PMID:31691815. (PubMed)",
+    "17. Liberzon A, Birger C, Thorvaldsdottir H, et al, The Molecular Signatures \nDatabase (MSigDB) hallmark gene set collection, Cell Syst 2015;1(6):417–\n425, PMID:26771021. (gsea-msigdb.org)",
+    "18.National Comprehensive Cancer Network, NCCN Clinical Practice \nGuidelines in Oncology (NCCN Guidelines®): Breast Cancer, Version 1.2022, \nNCCN.org (accessed 2024). (tbcr.amegroups.org)",
+    "19.Jiang Z, Li J, Chen J, et al, Chinese Society of Clinical Oncology (CSCO) \nBreast Cancer Guidelines 2022, Transl Breast Cancer Res 2022;3:13. \n(tbcr.amegroups.org)",
+    "20.Swain SM, Krop IE, Kim SB, et al, Targeting HER2-positive breast cancer: \nadvances and future directions, Nat Rev Drug Discov 2023;22(2):101–126, \nPMID:36653265. (Nature)",
+    "21.ClinicalTrials.gov, NCT02492711: Margetuximab plus chemotherapy vs \ntrastuzumab plus chemotherapy in patients with HER2-positive metastatic \nbreast cancer (SOPHIA), available at ClinicalTrials.gov (accessed 2025). \n(ClinicalTrials.gov)",
+    "22.ClinicalTrials.gov, NCT01148849: Safety study of MGAH22 in HER2-positive \ncarcinomas (first-in-human phase 1 margetuximab study), available at \nClinicalTrials.gov (accessed 2025). (ClinicalTrials.gov)",
+    "23.ClinicalTrials.gov, NCT04262804: Margetuximab plus chemotherapy vs \ntrastuzumab plus chemotherapy in Chinese patients with pretreated HER2-\npositive metastatic breast cancer (phase II bridging study), available at \nClinicalTrials.gov (accessed 2025). (tbcr.amegroups.org)"
+  ],
+  "notes": "Gene-level sensitivity is explicitly described for ERBB2 (HER2 positivity as a prerequisite) and FCGR3A (CD16A-158F allele subgroup benefit); other putative biomarkers are described as conceptual and not rigorously quantified. Dedicated resistance-omics datasets specific to margetuximab in breast cancer are explicitly described as lacking; PTEN loss is mentioned only as a class-level HER2-targeted resistance mechanism. Source documents:  "
+}

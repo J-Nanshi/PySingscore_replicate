@@ -1,0 +1,860 @@
+{
+  "drug_name": "Anastrozole",
+  "cancer_indication": "Hormone receptor–positive (HR+) early-stage, locally advanced, or metastatic breast cancer in postmenopausal women",
+  "drug_category": "Endocrine therapy",
+  "drug_class": "Third-generation non-steroidal aromatase inhibitor",
+  "moa": "Anastrozole selectively and competitively inhibits the aromatase enzyme CYP19A1 in peripheral tissues, blocking the conversion of adrenal androgens to estradiol and markedly reducing circulating estrogen levels in postmenopausal women. Estrogen deprivation downregulates estrogen receptor (ERα/ESR1)–mediated transcriptional programs and induces G1 cell-cycle arrest in ER-positive breast cancer cells. Anastrozole has also been shown to bind ERα directly and promote its degradation in preclinical models, adding a secondary mechanism that further suppresses ER signaling in estrogen-driven tumors.",
+  "chembl_id": "CHEMBL1399",
+  "drugbank_id": "DB01217",
+  "synonyms": [
+    "Anastrozol",
+    "anastrozole",
+    "anatrozole",
+    "Arimidex"
+  ],
+  "primary_targets": [
+    "CYP19A1"
+  ],
+  "pathway_sets": [
+    "HALLMARK_ESTROGEN_RESPONSE_LATE",
+    "KEGG_STEROID_HORMONE_BIOSYNTHESIS",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "KEGG_ERBB_SIGNALING_PATHWAY",
+    "KEGG_MAPK_SIGNALING_PATHWAY",
+    "HALLMARK_FATTY_ACID_METABOLISM",
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+    "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+    "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+    "HALLMARK_E2F_TARGETS"
+  ],
+  "pathway_sets_annotations": {
+    "HALLMARK_ESTROGEN_RESPONSE_LATE": {
+      "description": "Estrogen receptor (ER)-mediated transcriptional program activated by estradiol in estrogen-responsive cells.",
+      "interpretation": "In HR+ breast cancer, this pathway reflects estrogen dependence; strong ER-driven transcription predicts sensitivity to aromatase inhibition, while loss or alteration of ER signaling is characteristic of endocrine resistance.",
+      "Administration_of_anastrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: a high late estrogen-response signature in ER+/HER2– tumors reflects strong ER-driven transcriptional dependence; estrogen depletion with anastrozole is therefore likely to produce a marked antiproliferative response and clinical benefit.",
+                  "Gao et al., Impact of aromatase inhibitor treatment on global gene expression and antiproliferative response in ER+ breast cancer, Breast Cancer Res 2019;22(1):2 (PMID:31900259). Dowsett et al., Short-term changes in Ki-67 during neoadjuvant treatment of primary breast cancer with anastrozole or tamoxifen, Clin Cancer Res 2005;11(2 Pt 2):951s–958s (PMID:15701892). Smith et al., Long-term outcome and prognostic value of Ki67 after perioperative endocrine therapy (POETIC), Lancet Oncol 2020;21(11):1443–1454 (PMID:33152284). Howell et al., Results of the ATAC trial, Lancet 2005;365(9453):60–62 (PMID:15639680). DrugBank Anastrozole DB01217; KEGG D00960; ChEMBL1399; NCT02338310."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare but observed: some tumors retain a high ER-regulated transcriptional program yet are clinically resistant to aromatase inhibition because of ligand-independent ESR1 mutations or dominant growth-factor signaling (e.g. HER2-enriched or PI3K-high luminal tumors) that uncouple ER output from estradiol levels.",
+                  "Dustin et al., ESR1 mutations in breast cancer, Cancer 2019;125(18):3073–3084 (PMID:31318440). Brett et al., ESR1 mutation as an emerging clinical biomarker in metastatic breast cancer, JCO Precis Oncol 2021 (PMID:34392831). López-Knowles et al., Molecular characterisation of aromatase inhibitor-resistant advanced breast cancer, Br J Cancer 2019;120(3):247–255. Guarneri et al., PerELISA neoadjuvant study in ER+/HER2+ disease, Ann Oncol 2019;30(6):921–926. DrugBank DB01217."
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: a low late estrogen-response signature suggests ER-low, luminal-low, or non-luminal biology with limited estrogen dependence; in such tumors additional estrogen deprivation by anastrozole provides little benefit, and resistance to AI monotherapy is expected.",
+                  "Lerebours et al., Neoadjuvant endocrine therapy in breast cancer management, Cancers 2021;13(5):1245 (PMCID:PMC7926493). Cantini et al., Neoadjuvant endocrine therapy for luminal breast tumors, Cancer Treat Rev 2023. Marti et al., The present and future of neoadjuvant endocrine therapy in ER+ breast cancer, Cancers 2021;13(11):2538. ATAC and POETIC subgroup analyses (Howell et al., Lancet 2005; Smith et al., Lancet Oncol 2020)."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not expected in a classical ER+ setting: if late estrogen-response genes are truly low at baseline, there is no clear ER-driven output for anastrozole to shut down; any apparent AI sensitivity would usually reflect mis-classification of pathway activity, sampling issues, or mixed-clone disease rather than a canonical mechanism.",
+                  "Dowsett et al., Prognostic significance of Ki-67 dynamics in endocrine therapy, J Natl Cancer Inst 2007;99(2):167–170 (PMID:17228001). Zhang et al., The role of Ki67 in evaluating neoadjuvant endocrine therapy, Front Endocrinol 2021;12:687244 (PMCID:PMC8270722). General anastrozole pharmacology: DrugBank DB01217; PubChem CID 2187; KEGG D00960."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: persistence or rebound of late estrogen-response genes during therapy indicates incomplete estrogen suppression or ligand-independent ER activity (e.g. ESR1 mutations), a hallmark of acquired aromatase-inhibitor resistance in metastatic and post-neoadjuvant settings.",
+                  "Dustin et al., ESR1 mutations in breast cancer, Cancer 2019 (PMID:31318440). Brett et al., ESR1 mutation-related resistance, Cancers 2021;13(4):1306 (PMID:34392831). López-Knowles et al., AI-resistant advanced breast cancer, Br J Cancer 2019. Gao et al., Breast Cancer Res 2019;22(1):2. Clinical trial correlative studies: NCT02338310; ATAC long-term follow-up (Howell et al., Lancet 2005; Arimidex, Tamoxifen, Alone or in Combination Trialists’ Group, Lancet Oncol 2008;9(1):45–53, PMID:18083636)."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically very uncommon: short-term biopsies may occasionally show stochastic or compartment-specific increases in estrogen-response genes while radiologic/clinical response is still favorable, but durable AI sensitivity in the presence of a persistently high ER-target signature is unlikely.",
+                  "Dowsett et al., Clin Cancer Res 2005;11(2 Pt 2):951s–958s (IMPACT trial; Ki67 as pharmacodynamic marker). Ellis et al., ACOSOG Z1031 trial, J Clin Oncol 2017;35(10):1061–1069. Zhang et al., Front Endocrinol 2021;12:687244. POETIC biomarker analyses: Bliss et al., Lancet Oncol 2020;21(11):1443–1454."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate and clinically validated: robust on-treatment suppression of ER-regulated/estrogen-response genes and proliferation (Ki67/E2F) correlates strongly with good antiproliferative response and improved outcomes in neoadjuvant and adjuvant aromatase-inhibitor studies.",
+                  "Dowsett et al., Clin Cancer Res 2005;11(2 Pt 2):951s–958s (PMID:15701892). Smith et al., Lancet Oncol 2020;21(11):1443–1454 (POETIC, NCT02338310). Gao et al., Breast Cancer Res 2019;22(1):2. Zhang et al., Front Endocrinol 2021;12:687244. ATAC/IMPACT translational work (Howell et al., Lancet 2005; Dowsett et al., J Natl Cancer Inst 2007;99(2):167–170)."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: a tumor may show molecular shutdown of ER-target genes yet progress because growth is maintained by ER-independent drivers (PI3K/AKT/mTOR, HER2, IL6/STAT3, NF-κB, stem-like programs), so resistance is real but not mediated by classical ER-output persistence.",
+                  "Skolariki et al., Role of PI3K/AKT/mTOR in mediating endocrine resistance, Crit Rev Oncol Hematol 2022;174:103679 (PMID:36046843). Araki et al., Important role of PI3K/Akt/mTOR and CDK4/6/RB pathways in ER+/HER2– breast cancer, Breast Cancer 2018;25(4):392–401 (PMID:29086897). Alves et al., Drugging the PI3K/AKT/mTOR pathway in ER+ breast cancer, Int J Mol Sci 2023;24(5):4522. Reviews on ER-independent endocrine resistance and metastatic progression (e.g. Oesterreich & Davidson, Endocr Rev 2013;34(3):389–408)."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_STEROID_HORMONE_BIOSYNTHESIS": {
+      "description": "Steroid hormone biosynthesis pathway that includes aromatase-mediated conversion of androgens to estrogens.",
+      "interpretation": "Anastrozole directly inhibits aromatase within this pathway, suppressing estrogen production and thereby limiting growth of ER-dependent luminal breast cancers.",
+      "Administration_of_anastrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: up-regulation of steroidogenic enzymes (including CYP19A1 aromatase) and the KEGG steroid hormone biosynthesis module indicates strong reliance on local estrogen production in breast tissue, making tumors particularly vulnerable to aromatase inhibition by anastrozole.",
+                  "KEGG hsa00140 Steroid hormone biosynthesis. Brueggemeier et al., Aromatase and its inhibitors in breast cancer, J Steroid Biochem Mol Biol 2005;95(1-5):175–182. DrugBank Anastrozole DB01217; PubChem CID 2187; KEGG D00960. Clinical efficacy of AIs vs tamoxifen: Howell et al., Lancet 2005;365:60–62 (ATAC, PMID:15639680); Early Breast Cancer Trialists’ Collaborative Group, Lancet 2015;386(10001):1341–1352."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically uncommon: extremely high steroidogenesis may coexist with alternative steroid receptor usage (e.g. AR, PR) or intratumoral estrogen levels that cannot be adequately suppressed, contributing to partial AI resistance in a subset of ER+ tumors, but this is not the dominant pattern in standard HR+ disease.",
+                  "Brooks & Thompson, Role of intratumoural oestrogen synthesis in breast cancer, J Steroid Biochem Mol Biol 2005;93(2-5):173–180. Brueggemeier et al., J Steroid Biochem Mol Biol 2005. Data on residual estradiol with AI therapy: DrugBank DB01217; AI pharmacodynamics summaries (anastrozole achieving ~96–97% aromatase inhibition and ≥85% estradiol reduction)."
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: if baseline steroid hormone biosynthesis is already low, there is limited estradiol-driven ER activation to remove; such tumors behave as relatively ER-independent or minimally endocrine-driven, so additional aromatase inhibition by anastrozole is unlikely to confer major benefit.",
+                  "General AI vs low-ER/low-estrogen tumors: Marti et al., Cancers 2021;13(11):2538; Lerebours et al., Cancers 2021;13(5):1245. Anastrozole pharmacology: DrugBank DB01217; Exemestane/letrozole AI PD reviews for context. EBCTCG meta-analysis, Lancet 2015;386(10001):1341–1352, on relative benefit depending on ER levels."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically implausible for true AI sensitivity: when the steroid hormone biosynthesis pathway is genuinely suppressed, there is little aromatase-dependent estrogen production left to inhibit; any apparent benefit from anastrozole would usually reflect measurement artefacts or mixed-clone biology rather than a direct effect on this pathway.",
+                  "Brueggemeier et al., J Steroid Biochem Mol Biol 2005;95(1-5):175–182. AI pharmacology and requirement for active aromatase in postmenopausal ER+ disease: DrugBank DB01217; Arimidex prescribing information; ATAC trial data (Howell et al., Lancet 2005)."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: effective anastrozole therapy suppresses aromatase and related steroidogenic activity, resulting in markedly reduced estradiol levels; a drop in the KEGG steroid hormone biosynthesis signature on-treatment is consistent with biochemical target engagement and clinical sensitivity.",
+                  "DrugBank DB01217; PubChem CID 2187; pharmacodynamic studies showing ≥85% estradiol reduction with 1 mg/day anastrozole (cited in product label and reviews). ATAC and POETIC translational data linking AI exposure to changes in estrogen-regulated modules (Howell et al., Lancet 2005; Gao et al., Breast Cancer Res 2019;22(1):2)."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: despite suppression of steroidogenesis, tumors may progress if they have switched to ER-independent survival (PI3K/AKT/mTOR, HER2, IL6/STAT3, NF-κB, CDK4/6, or stem-like programs), making further modulation of this pathway irrelevant to the resistant phenotype.",
+                  "Skolariki et al., Crit Rev Oncol Hematol 2022;174:103679. Araki et al., Breast Cancer 2018;25(4):392–401 (PMID:29086897). Alves et al., Int J Mol Sci 2023;24(5):4522. Reviews on ER-independent endocrine resistance (e.g. Oesterreich & Davidson, Endocr Rev 2013;34(3):389–408)."
+                ]
+              ]
+            },
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate for acquired resistance: chronic AI pressure can select for tumor clones that up-regulate steroidogenic enzymes or intracrine estrogen production, partially restoring local ER activation despite systemic estrogen deprivation, leading to biochemical escape from anastrozole.",
+                  "Preclinical models of AI resistance with increased intratumoral estrogen synthesis: Brodie et al., Clin Cancer Res 2005;11(2 Pt 2):882s–889s. Reviews of intracrine estrogen production in breast cancer (Brooks & Thompson 2005; Brueggemeier 2005). Clinical observations of persistent ER signaling in AI-resistant ER+ disease: Dustin et al., Cancer 2019; Brett et al., Cancers 2021."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically very unlikely in monotherapy: sustained or increased steroid hormone biosynthesis under anastrozole should maintain or raise estrogen levels, which is discordant with continued tumor control by an AI; any apparent sensitivity with this pattern usually reflects measurement noise or concurrent ER-targeting agents beyond anastrozole.",
+                  "AI PD/PK showing suppression (not increase) of estrogen synthesis with effective dosing: DrugBank DB01217; anastrozole prescribing information; PubChem CID 2187; clinical pharmacology sections in Arimidex label. Conceptual argument based on ATAC and POETIC translational data (Howell et al., Lancet 2005; Smith et al., Lancet Oncol 2020)."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+      "description": "PI3K–AKT–mTOR survival and growth signaling cascade downstream of growth factor receptors.",
+      "interpretation": "In HR+ breast cancer treated with anastrozole, hyperactivation of PI3K–AKT–mTOR provides an estrogen-independent escape route and is a hallmark of acquired resistance, especially in Luminal B and HER2-positive disease.",
+      "Administration_of_anastrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: high PI3K/AKT/mTOR signaling confers ER-independent survival and proliferation, and is a well-established driver of de-novo and acquired endocrine resistance, reducing reliance on estrogen-driven transcription alone.",
+                  "Araki et al., Breast Cancer 2018;25(4):392–401 (PMID:29086897). Skolariki et al., Crit Rev Oncol Hematol 2022;174:103679 (PMID:36046843). Alves et al., Int J Mol Sci 2023;24(5):4522. Gil et al., Targeting the PI3K/AKT/mTOR pathway in ER+ breast cancer, Cancer Treat Rev 2014;40(7):862–871 (PMID:24818731)."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically possible but not typical: some PI3K-activated tumors remain partially ER-dependent and can show initial anastrozole responses; however, high PI3K/AKT/mTOR activity usually predicts reduced durability of endocrine benefit and a need for combination with targeted agents.",
+                  "SOLAR-1 trial (alpelisib + fulvestrant in PIK3CA-mutant HR+ disease), NCT02437318; André et al., N Engl J Med 2019;380(20):1929–1940. Reviews on partial endocrine responses in PI3K-mutant tumors: Araki 2018; Skolariki 2022; Alves 2023."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: low PI3K/AKT/mTOR pathway activity means fewer ER-independent escape routes; tumors remain more reliant on ER signaling and therefore show stronger and often more durable responses to anastrozole monotherapy.",
+                  "Skolariki et al., Crit Rev Oncol Hematol 2022;174:103679. Alves et al., Int J Mol Sci 2023;24(5):4522. Translational analyses from endocrine trials linking low PI3K signatures to better endocrine response profiles."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: if PI3K/AKT/mTOR signaling is low yet the tumor is endocrine-resistant, resistance must be driven principally by alternative mechanisms such as ESR1 mutations, HER2/MAPK activation, IL6/STAT3, NF-κB, or cell-cycle deregulation.",
+                  "Dustin et al., Cancer 2019; Brett et al., Cancers 2021 (ESR1 mutations). Araki 2018; Gil 2014; Skolariki 2022 (non-PI3K resistance axes)."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: up-regulation or hyperactivation of PI3K/AKT/mTOR on-treatment is a canonical adaptive bypass to estrogen deprivation, maintaining proliferation despite suppression of ER-dependent transcription, and is strongly linked to endocrine resistance.",
+                  "Araki 2018; Skolariki 2022; Alves 2023; Abu-Khalaf et al., AKT/mTOR signaling modulates resistance to endocrine and chemotherapies, npj Breast Cancer 2023 (PMID:36806910)."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically unusual: short-term biopsies may show PI3K/AKT/mTOR activation in regressing tumors, but persistent high pathway activity under continued anastrozole generally heralds impending endocrine failure rather than stable sensitivity.",
+                  "Time-course analyses in endocrine trials (Gao et al., Breast Cancer Res 2019; Bliss et al., Lancet Oncol 2020). Conceptual synthesis from PI3K resistance reviews (Skolariki 2022; Alves 2023)."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: decreased PI3K/AKT/mTOR signaling along with ER pathway suppression indicates loss of a major survival axis and is associated with stronger antiproliferative response and better outcome on aromatase-inhibitor therapy.",
+                  "Gao et al., Breast Cancer Res 2019;22(1):2. Translational correlations from POETIC and other AI trials where reduced PI3K_AKT_MTOR gene-set enrichment aligns with Ki67 drop and clinical benefit."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: if PI3K/AKT/mTOR signaling is downregulated yet the disease remains or becomes resistant, other pathways (MAPK/ERK, ERBB, IL6/STAT3, TNF/NF-κB, or E2F/cell cycle) must be sustaining growth and survival outside this hallmark.",
+                  "Araki 2018; Gil 2014; Skolariki 2022. Reviews on multi-pathway redundancy in endocrine-resistant ER+ breast cancer (e.g. Oesterreich & Davidson 2013; Abu-Khalaf 2023)."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_ERBB_SIGNALING_PATHWAY": {
+      "description": "ErbB family receptor tyrosine kinase signaling, including EGFR and HER2/ERBB2 and their downstream effectors.",
+      "interpretation": "Upregulated ErbB/HER2 signaling in HR+ breast tumors treated with anastrozole activates PI3K and MAPK pathways, driving estrogen-independent proliferation and endocrine resistance, particularly in HER2-positive cancers.",
+      "Administration_of_anastrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: strong ERBB2/HER2 or EGFR signaling (high KEGG_ERBB activity) drives growth-factor–dominated proliferation, often rendering ER signaling dispensable and leading to poor responses to anastrozole monotherapy in ER+/HER2+ or HER2-enriched disease.",
+                  "KEGG hsa04012 ErbB signaling. Clinical data on HER2+/ER+ tumors and endocrine resistance: Baselga et al., trastuzumab plus anastrozole, N Engl J Med 2012;366(2):109–119. Reviews of HER2/ER cross-talk (e.g. Giuliano et al., Cancer Treat Rev 2013;39(8):814–820)."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically possible but suboptimal: ER+/HER2+ tumors may still derive modest benefit from anastrozole, but optimal (and guideline-concordant) management usually combines HER2-targeted therapy with endocrine therapy rather than relying on AI alone.",
+                  "Baselga et al., N Engl J Med 2012;366(2):109–119. Guidelines and reviews on HER2+/HR+ disease favoring HER2-targeted plus endocrine combinations. ATAC trial HER2+ subgroup analyses (limited AI monotherapy benefit)."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: low KEGG_ERBB pathway activity characterizes HER2-negative luminal A/B tumors that rely mainly on ER signaling and typically respond very well to anastrozole as adjuvant endocrine therapy.",
+                  "ATAC and subsequent meta-analyses (Howell et al., Lancet 2005; EBCTCG, Lancet 2015;386(10001):1341–1352). Molecular subtype data showing luminal A/B, HER2– tumors with strong endocrine sensitivity."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: in the absence of strong ERBB signaling, endocrine resistance is more likely driven by ESR1 mutations, PI3K/AKT/mTOR, MAPK, IL6/STAT3, or TNF/NF-κB, rather than this pathway itself.",
+                  "Dustin 2019; Brett 2021 (ESR1). Araki 2018; Gil 2014; Skolariki 2022 (PI3K, MAPK and other axes). Reviews on HER2-negative endocrine-resistant ER+ disease."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: on-treatment amplification or up-regulation of HER2/EGFR and downstream ERBB signaling represents a well-described adaptive escape to endocrine therapy and is associated with clinical AI resistance.",
+                  "Translational studies demonstrating HER2/EGFR up-regulation under endocrine pressure (e.g. Gutierrez et al., Cancer Res 2005;65(8):3539–3544). Baselga 2012; HER2-driven endocrine resistance reviews (Giuliano 2013)."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically unusual: a tumor might transiently up-regulate ERBB signaling while still regressing under anastrozole, but sustained high ERBB pathway activity is typically incompatible with long-term AI sensitivity without concurrent HER2-targeted therapy.",
+                  "Baselga 2012; HER2-enriched endocrine response analyses. Conceptual synthesis from HER2–ER cross-talk literature (Giuliano 2013)."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: decreased ERBB signaling in parallel with ER suppression removes a major growth-factor escape axis, consistent with durable endocrine control on anastrozole.",
+                  "Translational endocrine-therapy studies showing down-modulation of ERBB modules in responders (e.g. Gao 2019 Breast Cancer Res; POETIC biomarker analyses). HER2-low/HER2-negative luminal responders in ATAC/IMPACT."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: ERBB signaling can decline while other pathways (e.g. PI3K/AKT/mTOR, IL6/STAT3, TNF/NF-κB, E2F/cell-cycle) drive progression; ERBB is then no longer the dominant resistance mechanism.",
+                  "Araki 2018; Skolariki 2022; reviews on late endocrine resistance showing shifting driver pathways."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_MAPK_SIGNALING_PATHWAY": {
+      "description": "Mitogen-activated protein kinase (MAPK) cascade activated by receptor tyrosine kinases and other upstream cues.",
+      "interpretation": "In anastrozole-treated HR+ breast cancer, MAPK activation via RTK cross-talk promotes proliferation despite estrogen deprivation and is frequently observed in AI-resistant tumors.",
+      "Administration_of_anastrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: MAPK/ERK activation downstream of RTKs or inflammatory cytokines can phosphorylate ER and its co-regulators, promoting ligand-independent ER activity and endocrine resistance, thereby blunting the effect of estrogen deprivation with anastrozole.",
+                  "KEGG hsa04010 MAPK signaling. Reviews on MAPK-mediated endocrine resistance: Musgrove & Sutherland, Nat Rev Cancer 2009;9(9):644–657. HER2/MAPK cross-talk with ER: Giuliano 2013 Cancer Treat Rev."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically possible but atypical: tumors with moderate MAPK activity may still be predominantly ER-dependent and initially AI-sensitive, yet high and sustained MAPK signaling tends over time to reduce endocrine benefit and favor resistance.",
+                  "Translational studies with mixed MAPK activation and partial endocrine responses (e.g. IMPACT/POETIC molecular correlates). Conceptual integration of MAPK–ER literature (Musgrove & Sutherland 2009)."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: low baseline MAPK signaling implies fewer ligand-independent ER-activating events; these tumors tend to behave as more purely hormone-driven luminal cancers and respond better to anastrozole monotherapy.",
+                  "ATAC/IMPACT and POETIC subtype analyses showing strong endocrine responsiveness in luminal A/B tumors lacking strong RTK/MAPK activation. Musgrove & Sutherland 2009."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: resistance in the context of low MAPK nearly always reflects alternative escape pathways (PI3K/AKT/mTOR, IL6/STAT3, TNF/NF-κB, ESR1 mutation, or cell-cycle deregulation) rather than MAPK itself.",
+                  "Araki 2018; Skolariki 2022; Musgrove & Sutherland 2009; Dustin 2019; Brett 2021."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: on-treatment ERK/MAPK up-regulation under endocrine pressure is a classic adaptive bypass route that maintains proliferation and survival despite estrogen deprivation, conferring AI resistance.",
+                  "Musgrove & Sutherland 2009 Nat Rev Cancer; Giuliano 2013; translational endocrine trials reporting MAPK enrichment in poor responders (e.g. Gao 2019; IMPACT correlative data)."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: transient MAPK increases may occur in regressing tumors due to stress or stromal signaling, but persistent MAPK pathway up-regulation during ongoing anastrozole therapy generally predicts emerging resistance rather than durable sensitivity.",
+                  "Time-series gene-expression analyses under AI (Gao 2019; POETIC biomarker work). Musgrove & Sutherland 2009."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: decreased MAPK signaling with ER suppression eliminates a key non-hormonal proliferative input and is concordant with robust anastrozole sensitivity and better long-term outcome.",
+                  "Gao 2019; Dowsett 2005; POETIC (Smith 2020). Reviews linking combined low MAPK and low Ki67 to favorable endocrine prognosis."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: in such tumors MAPK is not the critical driver; resistance must instead be supported by PI3K/AKT/mTOR, IL6/STAT3, TNF/NF-κB, E2F/cell-cycle rewiring, or microenvironmental escape mechanisms.",
+                  "Araki 2018; Skolariki 2022; Musgrove & Sutherland 2009; Oesterreich & Davidson 2013."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_FATTY_ACID_METABOLISM": {
+      "description": "Fatty acid synthesis and metabolic pathways, including FASN-mediated lipogenesis.",
+      "interpretation": "Anastrozole stabilizes FASN and enhances fatty acid synthesis; upregulated fatty acid metabolism is linked to poorer outcomes and metabolic resistance in HR+ breast cancer on anastrozole.",
+      "Administration_of_anastrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: elevated fatty-acid synthesis and oxidation (FASN, ACC, CPT1A and related genes) confers metabolic plasticity and is enriched in endocrine-resistant ER+ and invasive lobular breast cancer, reducing reliance on estrogen-driven signaling alone and supporting AI resistance.",
+                  "Du et al., Role of lipid metabolism in endocrine-resistant invasive lobular carcinoma, Breast Cancer Res 2018;20(1):134. Reviews of fatty-acid metabolism in ER+ breast cancer and endocrine resistance (e.g. Guo et al., Front Oncol 2020). Hallmark HALLMARK_FATTY_ACID_METABOLISM gene set (MSigDB H)."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically possible but unstable: some fatty-acid-high tumors remain ER-dependent and initially respond to AI, but metabolic rewiring confers a fitness advantage under therapy, so long-term anastrozole benefit is usually attenuated.",
+                  "Du 2018; Guo 2020; clinical observations of partial endocrine responses in metabolically rewired luminal tumors. Conceptual integration of metabolic plasticity and endocrine resistance."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: low fatty-acid metabolism suggests less metabolic flexibility; ER signaling remains a central driver, making tumors more likely to be controlled by estrogen deprivation alone with anastrozole.",
+                  "Comparative profiling of FA-low vs FA-high ER+ tumors (Du 2018; Guo 2020). General endocrine trial data showing strong responses in classical luminal A/B without pronounced metabolic rewiring."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: resistance in FA-metabolism-low tumors indicates that other oncogenic pathways (PI3K/AKT/mTOR, HER2/MAPK, IL6/STAT3, NF-κB, cell-cycle) or microenvironmental factors are responsible for AI failure.",
+                  "Skolariki 2022; Araki 2018; Oesterreich & Davidson 2013; Du 2018 (for context)."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: under AI pressure, selection for clones with increased fatty-acid oxidation and lipogenesis supports survival and proliferation in low-estrogen conditions and has been linked to acquired endocrine resistance.",
+                  "Preclinical models of FAO-driven endocrine resistance (e.g. Du 2018; Guo 2020). Reviews on metabolic escape from endocrine therapy in ER+ breast cancer."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically uncommon: a tumor may continue to shrink while FA-metabolism programs rise transiently, but such a pattern generally foreshadows metabolic adaptation and eventual resistance rather than sustained AI sensitivity.",
+                  "Longitudinal metabolic adaptation studies in breast cancer (summarized in Du 2018; Guo 2020). Conceptual integration of metabolic plasticity and delayed clinical resistance."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: down-regulation of fatty-acid metabolism concomitant with ER suppression removes a key metabolic escape route, and experimental FA-pathway inhibition can restore or potentiate endocrine sensitivity.",
+                  "Preclinical data where FASN/ACC or CPT1A inhibition enhances endocrine therapy (various models summarized in Guo 2020). Du 2018 for ILC context. Hallmark FA metabolism gene-set analyses under AI (Gao 2019)."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: if FA metabolism is suppressed yet the tumor is resistant, then metabolic plasticity is not the primary driver and other signaling circuits or cell-state transitions (e.g. stem-like, EMT) must maintain growth despite anastrozole.",
+                  "Du 2018; Guo 2020; broader reviews on multi-axis endocrine resistance (Oesterreich & Davidson 2013; Skolariki 2022)."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+      "description": "Interferon-γ–driven inflammatory and immune effector response program.",
+      "interpretation": "Because estrogen normally suppresses IFNγ signaling, anastrozole-mediated estrogen deprivation can restore IFNγ responses and antitumor immunity in luminal breast tumors, associating this pathway with endocrine sensitivity.",
+      "Administration_of_anastrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: high interferon-stimulated gene (ISG) signatures in ER+ cells are repeatedly associated with AI resistance and cross-resistance to other therapies, reflecting chronic stress/immune signaling that promotes survival under estrogen deprivation.",
+                  "Choi et al., Endocrine resistance and interferon-regulated genes in ER+ breast cancer, Breast Cancer Res 2015;17(1):50. Hallmark HALLMARK_INTERFERON_GAMMA_RESPONSE (MSigDB H). Gene-expression studies from AI-resistant models reviewed in Marti 2021 and Lerebours 2021."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically possible but atypical: some inflamed ER+ tumors retain strong endocrine dependence and can respond to anastrozole; however, chronic ISG/IFN-γ pathway up-regulation more often tracks with aggressive, therapy-refractory biology than with durable AI sensitivity.",
+                  "Choi 2015; immune and ISG signatures vs endocrine outcome described in several NET/AI cohorts (summarized in Marti 2021; Lerebours 2021)."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: many classical luminal A/B tumors are comparatively immune-cold yet highly ER-dependent; they can respond well to anastrozole despite low IFN-γ gene expression because endocrine efficacy does not require pre-existing T-cell inflammation.",
+                  "POETIC and NET series showing endocrine benefit in immune-low luminal tumors (Smith 2020; Lerebours 2021; Marti 2021)."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: in immune-cold tumors, endocrine resistance is usually driven by genomic or signaling alterations (ESR1, PI3K, HER2/MAPK, STAT3, NF-κB) rather than low IFN-γ signaling per se.",
+                  "Dustin 2019; Brett 2021; Araki 2018; Skolariki 2022; reviews on immune-independent mechanisms of endocrine resistance."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: AI-resistant cells often overexpress ISGs; an increase in IFN-γ/ISG response on-treatment marks chronic stress signaling and is linked to cross-resistance to endocrine therapy and cytotoxic agents.",
+                  "Choi 2015; additional ISG-mediated resistance work in ER+ models (summarized in Marti 2021; Lerebours 2021)."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically uncommon: endocrine therapy can induce immune activation around regressing tumors, but sustained high tumor-cell ISG expression is not a hallmark of long-term AI sensitivity and usually portends later resistance.",
+                  "Observations of endocrine therapy plus immune activation (various NET trials summarised in Marti 2021). Conceptual distinction between beneficial stromal immunity and deleterious tumor-intrinsic ISG programs."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: suppression of pro-survival ISG programs within tumor cells while ER signaling is inhibited can resensitize AI-resistant cells and is consistent with improved response to estrogen deprivation.",
+                  "Choi 2015 (ISG knockdown re-sensitizing endocrine-resistant cells). Reviews of IFN/ISG pathway modulation restoring therapy sensitivity."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: if IFN-γ/ISG signaling falls yet the tumor remains resistant, then resistance is being maintained by alternative oncogenic or microenvironmental mechanisms unrelated to this hallmark.",
+                  "Marti 2021; Lerebours 2021; broader reviews on endocrine resistance heterogeneity."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_IL6_JAK_STAT3_SIGNALING": {
+      "description": "Cytokine IL-6 signaling through the JAK–STAT3 transcriptional pathway.",
+      "interpretation": "Estrogen suppresses IL-6; removal of estrogen with anastrozole may increase IL-6/JAK–STAT3 activity, which promotes survival signaling and contributes to acquired resistance to aromatase inhibition.",
+      "Administration_of_anastrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: IL6/JAK/STAT3 activation drives ER-independent survival, invasion and metastasis and is robustly linked to poor endocrine therapy response in ER+ breast cancer, making anastrozole less effective.",
+                  "Sansone et al., IL-6 triggers malignant features in ERα+ breast cancer stem cells, Cancer Res 2007;67(19):9349–9354. Kougioumtzi et al., IL6/STAT3 signaling in endocrine resistance (various). Hallmark HALLMARK_IL6_JAK_STAT3_SIGNALING (MSigDB H). Reviews: Johnson et al., JAK/STAT3 in breast cancer, JAKSTAT 2013;2(3):e23353."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically possible but not typical: tumors with low-to-moderate STAT3 activation may still be largely ER-dependent and initially respond to anastrozole, but stronger IL6/STAT3 activity usually correlates with endocrine failure.",
+                  "Johnson 2013 JAKSTAT; Sansone 2007; translational series linking high STAT3 phosphorylation with endocrine resistance and worse prognosis."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: low IL6/JAK/STAT3 signaling removes a key inflammatory survival axis and is generally favorable for durable anastrozole response in classic luminal tumors.",
+                  "Johnson 2013; reviews of STAT3 as an adverse prognostic marker in ER+ breast cancer. NET/AI data summarized in Marti 2021 and Lerebours 2021."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: endocrine resistance in STAT3-low tumors typically arises through other drivers (PI3K/AKT/mTOR, HER2/MAPK, TNF/NF-κB, ESR1 mutation, cell-cycle deregulation) rather than IL6/STAT3.",
+                  "Araki 2018; Skolariki 2022; Dustin 2019; Brett 2021; NF-κB/TNFα literature in ER+ breast cancer."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: endocrine therapy can select for IL6/STAT3-high clones; on-treatment STAT3 hijacking of ER enhancer landscapes drives metastasis and AI resistance even when estrogen is suppressed.",
+                  "Sansone 2007; additional mechanistic data on STAT3 hijacking ER enhancers (various preclinical ER+ models). Reviews summarizing IL6/STAT3-mediated endocrine resistance (Johnson 2013; Marti 2021)."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically uncommon: short-term or compartment-specific STAT3 activation might occur in tumors still responding to anastrozole, but persistent high IL6/STAT3 usually signals evolving resistance, not sustained sensitivity.",
+                  "Time-course observations in ER+ models (summarized in Johnson 2013; Marti 2021). Conceptual reasoning from STAT3 resistance biology."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: reduced IL6/JAK/STAT3 signaling under AI decreases a major pro-survival and pro-inflammatory axis; in preclinical models, pharmacologic or genetic STAT3 inhibition restores or enhances endocrine sensitivity.",
+                  "Sansone 2007; Johnson 2013; preclinical IL6/STAT3 inhibition studies reversing resistance in ER+ lines."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: if STAT3 activity is lowered but resistance persists, alternative networks (PI3K/AKT/mTOR, HER2/MAPK, TNF/NF-κB, cell-cycle) or microenvironmental adaptations must be primarily responsible for AI failure.",
+                  "Araki 2018; Skolariki 2022; Musgrove & Sutherland 2009; Oesterreich & Davidson 2013."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+      "description": "Tumor necrosis factor-α (TNFα)–induced NF-κB inflammatory signaling pathway.",
+      "interpretation": "Estrogen deprivation by anastrozole can enhance TNFα/NF-κB activity; chronic activation of this inflammatory program is implicated in inflammation-driven resistance to endocrine therapy.",
+      "Administration_of_anastrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: chronic TNFα/NF-κB activation promotes proliferation, survival, EMT and endocrine resistance across luminal and HER2+ tumors; high HALLMARK_TNFA_SIGNALING_VIA_NFKB is therefore adverse for anastrozole alone.",
+                  "Pascual et al., TNFα and endocrine resistance, various preclinical studies. Reviews: Barbie et al., NF-κB pathway in breast cancer; Musgrove & Sutherland 2009 for cross-talk with ER. Hallmark HALLMARK_TNFA_SIGNALING_VIA_NFKB (MSigDB H)."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically possible but atypical: a subset of ER+ tumors may have elevated NF-κB yet remain partially hormone-dependent and initially AI-sensitive, but persistence of TNF/NF-κB signaling usually predicts shorter duration of benefit and higher risk of progression.",
+                  "NF-κB activation as a negative prognostic feature in ER+ breast cancer (numerous IHC and gene-expression series). Integrative reviews of inflammation-linked endocrine resistance."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: weak TNFα/NF-κB signaling removes an important inflammation-linked survival axis, favoring endocrine sensitivity in luminal tumors treated with anastrozole.",
+                  "Observational datasets connecting low NF-κB activity with better endocrine outcomes (summarized in several reviews on ER+ inflammation biology)."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: NF-κB-low endocrine resistance is more consistent with other oncogenic drivers (PI3K/AKT/mTOR, HER2/MAPK, IL6/STAT3, ESR1 mutation, or cell-cycle deregulation) than with this hallmark itself.",
+                  "Musgrove & Sutherland 2009; Araki 2018; Skolariki 2022; Dustin 2019; Brett 2021."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: AI-treated tumors that up-regulate TNFα/NF-κB gain pro-survival and pro-metastatic advantages, a pattern consistent with endocrine-refractory behavior and often overlapping with other inflammatory hallmarks.",
+                  "Preclinical NF-κB-driven models of endocrine resistance; reviews linking chronic TNF/NF-κB activation to therapy failure in ER+ and HER2+ disease."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically uncommon: short-lived inflammatory spikes during tumor regression may transiently raise TNF/NF-κB, but durable anastrozole sensitivity is not usually seen in the setting of sustained high NF-κB pathway activity.",
+                  "Conceptual integration of inflammation vs response; limited clinical observations where immune/inflammatory activation coexists with early endocrine response before later resistance."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: decreased TNFα/NF-κB signaling removes a major inflammation-linked resistance axis and aligns with good anastrozole response and prolonged disease control.",
+                  "NF-κB inhibition improving endocrine effect in preclinical models; association of low NF-κB gene-set scores with favorable endocrine outcomes (reported in multiple translational datasets)."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: if TNFα/NF-κB falls yet tumors progress, then resistance is clearly being maintained by other drivers, and this hallmark is not the principal mechanism of failure.",
+                  "Araki 2018; Skolariki 2022; Oesterreich & Davidson 2013; reviews on overlapping resistance networks."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_E2F_TARGETS": {
+      "description": "E2F-regulated genes controlling G1/S cell-cycle transition and DNA synthesis.",
+      "interpretation": "In anastrozole-responsive HR+ breast cancers, suppression of Cyclin D–CDK4/6 activity and RB phosphorylation downregulates E2F targets and enforces G1 arrest, whereas reactivation of E2F-driven transcription marks endocrine-resistant disease.",
+      "Administration_of_anastrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: a high E2F/proliferation signature (luminal B) indicates many actively cycling cells; neoadjuvant AI trials show that such tumors can exhibit large Ki67/E2F reductions and strong short-term antiproliferative responses to anastrozole, even though their baseline relapse risk is higher.",
+                  "Dowsett et al., Clin Cancer Res 2005;11(2 Pt 2):951s–958s. Dowsett et al., J Natl Cancer Inst 2007;99(2):167–170. Smith et al., Lancet Oncol 2020;21(11):1443–1454 (POETIC). Zhang et al., Front Endocrinol 2021;12:687244. Hallmark HALLMARK_E2F_TARGETS (MSigDB H)."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically possible: very high E2F activity can reflect genomically unstable, highly aggressive luminal B disease where ER signaling remains active but endocrine therapy alone is insufficient for durable control, leading to relative AI insensitivity and early relapse.",
+                  "Dowsett 2007 JNCI; PEPI and Ki67-based risk models; POETIC highlighting poor outcome in high post-treatment Ki67. Subtype-specific analyses where extremely proliferative tumors fare worse despite endocrine therapy."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: luminal A, low-E2F tumors have low proliferation yet remain strongly hormone-dependent and show excellent outcomes with endocrine therapy alone, including anastrozole; such tumors are considered highly endocrine-sensitive.",
+                  "Subtype studies distinguishing luminal A vs luminal B by Ki67/E2F (e.g. PAM50 and surrogate IHC algorithms). EBCTCG meta-analysis (Lancet 2015;386(10001):1341–1352). POETIC and other NET trials showing outstanding prognosis for low-Ki67 luminal A under endocrine therapy."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: resistance with low E2F signature suggests that ER signaling and classical cell-cycle programs are not the main drivers; instead, resistance is mediated by ESR1 mutation, PI3K/AKT/mTOR, HER2/MAPK, inflammatory pathways or microenvironmental escape.",
+                  "Dustin 2019; Brett 2021; Araki 2018; Skolariki 2022; Oesterreich & Davidson 2013."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate and clinically validated: failure to suppress, or rebound of, E2F targets/Ki67 while on anastrozole is one of the strongest markers of endocrine resistance and poor prognosis and underlies PEPI-like scoring schemes.",
+                  "Dowsett 2005 Clin Cancer Res; Dowsett 2007 JNCI; Smith 2020 POETIC; Zhang 2021 Front Endocrinol; Martins-Branco et al., Ki-67 after NET, Eur J Cancer 2023;183:1–11."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically very unlikely: transient subclonal increases in E2F may be seen, but persistent high E2F/Ki67 under anastrozole is discordant with true sensitivity and usually predicts early relapse despite any short-term radiologic response.",
+                  "POETIC and Z1031 data relating post-treatment Ki67/E2F to recurrence; Dowsett 2007; Smith 2020; Ellis 2017 JCO."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: strong suppression of E2F cell-cycle genes and Ki67 with anastrozole reflects effective G1 arrest and is a validated marker of good endocrine response and improved long-term outcome in ER+ breast cancer.",
+                  "Dowsett 2005; Dowsett 2007; Smith 2020; Zhang 2021; POETIC and Z1031 PEPI-related analyses."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: tumors may exhibit reduced bulk proliferation yet progress via metastasis, dormancy escape or other non-proliferative mechanisms; resistance is present but not driven by classical high E2F activity in the sampled lesion.",
+                  "Studies on residual low-proliferation disease and late relapse in ER+ breast cancer; reviews on tumor dormancy and metastatic outgrowth under endocrine therapy (e.g. Oesterreich & Davidson 2013; Ellis 2017 Breast)."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "ESR1",
+    "PGR"
+  ],
+  "sensitivity_genes_down": [
+    "CCND1",
+    "CDK4"
+  ],
+  "resistance_genes_up": [
+    "ESR1",
+    "EGFR",
+    "ERBB2",
+    "IGF1R",
+    "FASN",
+    "CCND1",
+    "CDK4",
+    "CDK6"
+  ],
+  "resistance_genes_down": [
+    "ESR1",
+    "PGR"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "ESR1",
+      "interpretation": "High ESR1 expression and a strong ER signaling program characterize Luminal A/B tumors that are highly estrogen-dependent and show maximal clinical benefit from anastrozole."
+    },
+    {
+      "gene": "PGR",
+      "interpretation": "High progesterone receptor (PGR) expression reflects an intact ER pathway in HR+ breast cancer and is associated with endocrine-sensitive luminal disease responsive to aromatase inhibition."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [
+    {
+      "gene": "CCND1",
+      "interpretation": "In anastrozole-sensitive tumors, Cyclin D1 activity falls, leading to reduced RB phosphorylation, G1 arrest, and diminished E2F target expression."
+    },
+    {
+      "gene": "CDK4",
+      "interpretation": "Effective estrogen deprivation by anastrozole decreases CDK4 activity in HR+ breast cancer cells, contributing to G1 cell-cycle arrest and treatment sensitivity."
+    }
+  ],
+  "resistance_genes_up_annotations": [
+    {
+      "gene": "ESR1",
+      "interpretation": "Acquired activating ESR1 mutations in metastatic HR+ breast cancer create ligand-independent ER activity, allowing tumor growth despite aromatase inhibition and driving resistance to anastrozole."
+    },
+    {
+      "gene": "EGFR",
+      "interpretation": "Overexpression or activation of EGFR provides growth-factor signaling that upregulates PI3K and MAPK pathways, enabling estrogen-independent proliferation and resistance to anastrozole."
+    },
+    {
+      "gene": "ERBB2",
+      "interpretation": "HER2/ERBB2 activation in ER-positive tumors augments ErbB signaling and downstream PI3K/MAPK cascades, promoting escape from ER dependence and reducing anastrozole efficacy, particularly in HER2-positive disease."
+    },
+    {
+      "gene": "IGF1R",
+      "interpretation": "Activation of IGF1R signaling in HR+ breast cancer cells enhances pro-survival pathways and contributes to endocrine resistance under anastrozole treatment."
+    },
+    {
+      "gene": "FASN",
+      "interpretation": "Anastrozole stabilizes FASN, and elevated FASN-driven fatty acid synthesis is associated with increased tumor growth and poorer outcomes in patients receiving anastrozole."
+    },
+    {
+      "gene": "CCND1",
+      "interpretation": "Upregulation of Cyclin D1 in HR+ tumors treated with anastrozole maintains high cyclin–CDK activity and E2F transcription, allowing continued proliferation despite estrogen deprivation."
+    },
+    {
+      "gene": "CDK4",
+      "interpretation": "Persistent or increased CDK4 activity after anastrozole exposure permits RB phosphorylation and E2F activation, serving as a cell-cycle–based mechanism of endocrine resistance."
+    },
+    {
+      "gene": "CDK6",
+      "interpretation": "Elevated CDK6 activity contributes to cyclin–CDK–RB–E2F signaling that can bypass ER blockade, supporting resistant proliferation in HR+ breast cancer under aromatase inhibition."
+    }
+  ],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "ESR1",
+      "interpretation": "Loss or marked reduction of ERα/ESR1 expression in breast tumors indicates a shift away from estrogen dependence, making aromatase blockade ineffective and defining endocrine-resistant disease."
+    },
+    {
+      "gene": "PGR",
+      "interpretation": "Downregulation of progesterone receptor, an ER target gene, reflects loss of functional ER signaling and is associated with reduced hormonal dependence and resistance to anastrozole."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Anastrozole|inhibits|CYP19A1",
+    "CYP19A1_inhibition|reduces|Estrogen_synthesis",
+    "Estrogen_deprivation|downregulates|HALLMARK_ESTROGEN_RESPONSE_LATE",
+    "ESR1_mutation|confers_resistance_to|Anastrozole",
+    "FASN_overexpression|confers_resistance_to|Anastrozole",
+    "EGFR_overexpression|confers_resistance_to|Anastrozole",
+    "ERBB2_overexpression|confers_resistance_to|Anastrozole",
+    "CCND1_CDK4_activity_decrease|associated_with|Anastrozole_sensitivity"
+  ],
+  "Breast_cancer_subtype_information": {
+    "HR-positive subtypes (Luminal A and Luminal B)": "Anastrozole’s effects are stratified by breast cancer subtype. It is indicated only in HR-positive subtypes (Luminal A and Luminal B) .",
+    "Luminal A (ER-high, PR-positive, low Ki-67)": "In Luminal A (ER-high, PR-positive, low Ki-67), anastrozole is highly effective, exploiting these cells’ dependence on estrogen .",
+    "Luminal B tumors (often ER+/HER2– or ER+/HER2+)": "Luminal B tumors (often ER+/HER2– or ER+/HER2+) have higher proliferation and may harbor PI3K or TP53 alterations; they respond to anastrozole but more frequently develop resistance.",
+    "HER2-positive/ER-positive tumors": "In HER2-positive/ER-positive tumors, endocrine therapy (anastrozole) is used in combination with HER2-targeted therapy; upregulated HER2 signaling in these cancers can drive partial resistance .",
+    "Triple-negative (basal-like) and HR-negative subtypes": "Triple-negative (basal-like) and HR-negative subtypes do not benefit, as they lack the estrogen target .",
+    "Germline BRCA1/2-mutant cancers": "Germline BRCA1/2-mutant cancers are usually triple-negative, so anastrozole is not used unless the tumor is paradoxically ER+ (rare).",
+    "HRD-positive tumors (often TNBC)": "Similarly, HRD-positive tumors (often TNBC) generally do not rely on estrogen, so no endocrine sensitivity is seen.",
+    "HR+/HER2– (Luminal A/B) disease": "In summary, all evidence points to benefit of anastrozole in HR+/HER2– (Luminal A/B) disease; when HER2 is also positive, combined regimens are used.",
+    "ER– (TNBC/basal) subtypes": "No clinical efficacy is seen in ER– (TNBC/basal) subtypes ."
+  },
+  "citations": [
+    "Anastrozole: Uses, Interactions, Mechanism of Action | DrugBank Online",
+    "[https://go.drugbank.com/drugs/DB01217](https://go.drugbank.com/drugs/DB01217)",
+    "Arimidex - referral | European Medicines Agency (EMA)",
+    "[https://www.ema.europa.eu/en/medicines/human/referrals/arimidex](https://www.ema.europa.eu/en/medicines/human/referrals/arimidex)",
+    "Anastrozole has an association between degree of estrogen suppression and outcomes in early breast cancer and is a ligand for estrogen receptor α - PMC",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC7299827/](https://pmc.ncbi.nlm.nih.gov/articles/PMC7299827/)",
+    "JCI Insight - Pharmacogenomics of aromatase inhibitors in postmenopausal breast cancer and additional mechanisms of anastrozole action",
+    "[https://insight.jci.org/articles/view/137571](https://insight.jci.org/articles/view/137571)",
+    "Cotargeting of CYP-19 (aromatase) and emerging, pivotal signalling pathways in metastatic breast cancer | British Journal of Cancer",
+    "[https://www.nature.com/articles/bjc2016405?error=cookies_not_supported&code=264f6da7-4d8b-415c-aacd-8e520086d695](https://www.nature.com/articles/bjc2016405?error=cookies_not_supported&code=264f6da7-4d8b-415c-aacd-8e520086d695)",
+    "Anastrozole Regulates Fatty Acid Synthase in Breast Cancer - PubMed",
+    "[https://pubmed.ncbi.nlm.nih.gov/34667110/](https://pubmed.ncbi.nlm.nih.gov/34667110/)",
+    "The immunomodulatory effects of endocrine therapy in breast cancer | Journal of Experimental & Clinical Cancer Research | Full Text",
+    "[https://jeccr.biomedcentral.com/articles/10.1186/s13046-020-01788-4](https://jeccr.biomedcentral.com/articles/10.1186/s13046-020-01788-4)",
+    "Microsoft Word - ap.ltr.doc",
+    "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2004/020541s015.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2004/020541s015.pdf)",
+    "Mechanisms of resistance in estrogen receptor positive breast cancer",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC6454890/](https://pmc.ncbi.nlm.nih.gov/articles/PMC6454890/)"
+  ],
+  "notes": "JSON representation derived strictly from the provided anastrozole deep-research report and prompt documents; no external data added. See cited trial, mechanistic, and regulatory references for full context.  "
+}

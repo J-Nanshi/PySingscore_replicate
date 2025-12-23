@@ -1,0 +1,926 @@
+{
+  "drug_name": "Trastuzumab",
+  "cancer_indication": "HER2-overexpressing (HER2+) breast cancer in both early (adjuvant/neoadjuvant) and metastatic settings.",
+  "drug_category": "HER2-targeted",
+  "drug_class": "humanized IgG1 monoclonal antibody",
+  "moa": "Trastuzumab binds the extracellular domain of the HER2 (ERBB2) receptor on tumor cells, causing receptor downmodulation and blockade of downstream signaling. This inhibits proliferative pathways (MAPK/ERK, PI3K/AKT) and induces cell-cycle arrest (including via p27^Kip1 upregulation). Through its Fc region, it recruits immune effector mechanisms by engaging Fcγ receptors on immune cells to mediate antibody-dependent cellular cytotoxicity (ADCC) against HER2+ tumor cells. It has also been shown to inhibit tumor angiogenesis.",
+  "chembl_id": "CHEMBL1201585",
+  "drugbank_id": "DB00072",
+  "synonyms": [
+    "GB221",
+    "RHUMAB HER2",
+    "trastuzumab-anns",
+    "trastuzumab-dkst",
+    "trastuzumab-dttb",
+    "trastuzumab-herw",
+    "trastuzumab-pkrb",
+    "trastuzumab-qyyp",
+    "trastuzumab-strf",
+    "trastuzumab-zerc",
+    "Herceptin (intravenous)",
+    "Herceptin Hylecta (subcutaneous hyaluronidase formulation)",
+    "Herzuma",
+    "Kanjinti",
+    "Ogivri",
+    "Ontruzant",
+    "Trazimera",
+    "Zercepac",
+    "Phesgo, a pertuzumab+trastuzumab SC formulation"
+  ],
+  "primary_targets": [
+    "ERBB2",
+    "FCGR2A",
+    "FCGR3A"
+  ],
+  "pathway_sets": [
+    "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "KEGG_MAPK_SIGNALING_PATHWAY",
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_APOPTOSIS",
+    "GOBP_FC_GAMMA_RECEPTOR_SIGNALING_PATHWAY",
+    "KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY",
+    "HALLMARK_ANGIOGENESIS",
+    "HALLMARK_NOTCH_SIGNALING",
+    "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+    "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION"
+  ],
+  "pathway_sets_annotations": {
+    "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2": {
+      "description": "Represents oncogenic HER2 (ERBB2) receptor signaling driven by HER2 overexpression/amplification, including receptor activation and downstream proliferative/survival signaling outputs.",
+      "interpretation": "HER2-driven signaling is a key dependency in HER2-amplified breast cancer and is the central disease driver that trastuzumab targets at the receptor level.",
+      "Administration_of_trastuzumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: HER2 (ERBB2) amplification/overexpression drives oncogenic signaling (oncogene addiction), creating a direct target for trastuzumab and predicting clinical benefit.",
+                  "PMID:11248153; PMID:15634697"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Despite high ERBB2 signaling, resistance can occur via impaired antibody access/processing (e.g., p95HER2, MUC4 masking) or strong downstream bypass signaling that makes growth less HER2-dependent.",
+                  "PMID:11248153; PMID:15634697; PMID:21153051; PMID:22295219"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Low ERBB2 signaling generally indicates lack of the therapeutic target for trastuzumab in breast cancer (outside of HER2-amplified/overexpressed disease).",
+                  "PMID:11248153; PMID:15634697"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: HER2-non-amplified tumors have insufficient ERBB2 target engagement, so trastuzumab is ineffective.",
+                  "PMID:11248153; PMID:15634697"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Trastuzumab blocks HER2 signaling and promotes receptor down-modulation, reducing ERBB2-driven proliferative/survival signaling and yielding tumor control when dependence is high.",
+                  "PMID:11248153; PMID:15634697; PMID:21153051"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Even if ERBB2 pathway activity falls, tumors can persist through downstream PI3K activation (e.g., PTEN loss) or alternate RTKs, producing resistance despite HER2 blockade.",
+                  "PMID:11248153; PMID:15634697; PMID:17936563; PMID:22819326"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Immune-mediated killing can dominate; inflammatory/stress responses may transiently elevate HER2-pathway transcripts while Fc-mediated clearance still produces sensitivity.",
+                  "PMID:11248153; PMID:15634697; PMID:24330813; PMID:18485193"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Compensatory HER family/RTK signaling or selection for HER2 signaling reactivation under drug pressure can raise ERBB2 pathway signatures and mark acquired resistance.",
+                  "PMID:11248153; PMID:15634697; PMID:21153051; PMID:25327561"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+      "description": "Core survival and growth signaling axis downstream of receptor tyrosine kinases, integrating PI3K, AKT, and mTOR activity to promote proliferation and resistance to cell death.",
+      "interpretation": "PI3K/AKT/mTOR pathway activity is a major determinant of tumor survival in HER2+ breast cancer and is highlighted as a critical bypass/resistance axis when it remains active despite HER2 blockade.",
+      "Administration_of_trastuzumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: If PI3K activity is primarily driven downstream of HER2 with intact PTEN control, trastuzumab can still suppress HER2→PI3K flux and remain effective.",
+                  "PMID:15324695; PMID:17936563; PMID:22819326"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Constitutive PI3K activation (e.g., PTEN loss/PIK3CA mutations) reduces reliance on HER2 signaling and is a well-described mechanism of trastuzumab resistance.",
+                  "PMID:15324695; PMID:17936563; PMID:22819326"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low baseline PI3K/AKT/mTOR signaling implies fewer downstream bypass routes, increasing dependence on HER2-driven signaling and likelihood of response.",
+                  "PMID:15324695; PMID:17936563; PMID:22819326; PMID:11248153"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Tumors may be HER2-driven via parallel pathways (e.g., MAPK) or have PK/immune limitations, leading to non-response even with low PI3K signaling.",
+                  "PMID:15324695; PMID:17936563; PMID:22819326; PMID:21153051"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Trastuzumab can reduce PI3K/AKT signaling via HER2 blockade and PTEN-dependent mechanisms, contributing to growth inhibition and response.",
+                  "PMID:15324695; PMID:17936563; PMID:22819326"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: If PI3K/AKT falls but MAPK or EMT/STAT3 programs sustain survival, resistance can persist despite pathway suppression.",
+                  "PMID:15324695; PMID:17936563; PMID:22819326; PMID:22992620; PMID:25327561"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: FcγR engagement on immune effectors activates PI3K signaling in NK/myeloid cells; immune-cell PI3K signatures may rise while tumor remains sensitive via ADCC/ADCP.",
+                  "PMID:15324695; PMID:17936563; PMID:22819326; PMID:10742152; PMID:24330813"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Feedback/compensatory activation of PI3K/AKT under HER2 blockade supports survival and is a hallmark of acquired resistance.",
+                  "PMID:15324695; PMID:17936563; PMID:22819326; PMID:22819326; PMID:17936563"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_MAPK_SIGNALING_PATHWAY": {
+      "description": "Mitogenic signaling cascade (RAS/RAF/MEK/ERK) that transduces growth factor receptor inputs into transcriptional programs that drive proliferation and differentiation.",
+      "interpretation": "MAPK signaling functions as a major HER2-linked growth pathway supporting tumor proliferation; sustained MAPK signaling is noted as a contributor to reduced response.",
+      "Administration_of_trastuzumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: When MAPK/ERK activity is driven by HER2 signaling, it reflects HER2 pathway addiction and predicts sensitivity to HER2 blockade.",
+                  "PMID:11248153; PMID:21153051"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: MAPK hyperactivation from alternative RTKs or downstream alterations can maintain proliferation despite HER2 blockade, contributing to trastuzumab resistance.",
+                  "PMID:11248153; PMID:21153051; PMID:29743588; PMID:22295219"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some HER2+ tumors signal predominantly through PI3K rather than MAPK; low MAPK does not preclude trastuzumab benefit.",
+                  "PMID:11248153; PMID:21153051; PMID:15324695"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Low MAPK signatures with parallel survival programs (STAT3/EMT) can still yield primary resistance.",
+                  "PMID:11248153; PMID:21153051; PMID:25327561; PMID:22992620"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective trastuzumab target engagement reduces HER2-driven RAS-RAF-MEK-ERK signaling, contributing to anti-proliferative effects.",
+                  "PMID:11248153; PMID:21153051; PMID:21153051"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: MAPK suppression can be insufficient if tumors rely on PI3K activation or EMT/stemness programs to survive.",
+                  "PMID:11248153; PMID:21153051; PMID:17936563; PMID:22992620"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: During early on-treatment dynamics (especially with chemotherapy), stress/inflammatory signaling can transiently elevate MAPK signatures while tumor burden declines.",
+                  "PMID:11248153; PMID:21153051; PMID:11248153"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Reactivation of ERK signaling (e.g., via Notch1–PTEN–ERK axis or RTK switching) is a common adaptive route to trastuzumab resistance.",
+                  "PMID:11248153; PMID:21153051; PMID:29743588; PMID:22295219"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_E2F_TARGETS": {
+      "description": "Gene program reflecting E2F-driven transcription required for S-phase entry and DNA replication, typically downstream of RB phosphorylation and cell-cycle progression.",
+      "interpretation": "E2F target activity serves as a proliferation readout in HER2+ tumors; trastuzumab’s anti-proliferative effects are linked to cell-cycle arrest and reduced proliferation-associated gene expression.",
+      "Administration_of_trastuzumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High E2F/proliferation can reflect HER2-driven cell-cycle progression that trastuzumab can suppress via G1 arrest mechanisms.",
+                  "PMID:12700233; PMID:15382077; PMID:21321214"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: E2F-high tumors can be resistant if proliferation is maintained via cyclin E/CDK2 activation or RB-pathway dysfunction that bypasses HER2 control.",
+                  "PMID:12700233; PMID:15382077; PMID:21321214; PMID:21321214; PMID:15173011"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Lower baseline E2F programs can indicate less cell-cycle bypass and greater vulnerability to HER2 signaling inhibition.",
+                  "PMID:12700233; PMID:15382077; PMID:21321214; PMID:11248153"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Low proliferation may coexist with intrinsic resistance driven by PI3K/STAT3 signaling, EMT, or immune exclusion.",
+                  "PMID:12700233; PMID:15382077; PMID:21321214; PMID:17936563; PMID:22819326"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Trastuzumab increases/stabilizes p27Kip1 and suppresses CDK2 activity, enforcing G1 arrest and decreasing E2F target expression in sensitive HER2+ cells.",
+                  "PMID:12700233; PMID:15382077; PMID:21321214; PMID:12700233; PMID:16861913"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: E2F suppression may occur without durable response if residual tumor survives through STAT3/EMT or other survival programs.",
+                  "PMID:12700233; PMID:15382077; PMID:21321214; PMID:25327561; PMID:22992620"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Bulk E2F signatures may remain high early (or due to sampling) yet clinical response occurs, particularly with combination chemotherapy plus trastuzumab.",
+                  "PMID:12700233; PMID:15382077; PMID:21321214; PMID:11248153"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Failure to suppress E2F programs after HER2 blockade (often via cyclin E/CDK2 upregulation) indicates cell-cycle escape and resistance.",
+                  "PMID:12700233; PMID:15382077; PMID:21321214; PMID:21321214; PMID:33054513"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_APOPTOSIS": {
+      "description": "Programs governing intrinsic and extrinsic apoptotic signaling that execute regulated cell death through caspase activation and death receptor/mitochondrial pathways.",
+      "interpretation": "Apoptotic competence is relevant to HER2 blockade because trastuzumab can sensitize HER2+ tumor cells to apoptotic death, whereas anti-apoptotic signaling is described in resistant states.",
+      "Administration_of_trastuzumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: An apoptosis-primed state can increase susceptibility to HER2 signaling withdrawal and Fc-mediated immune cytotoxicity after trastuzumab.",
+                  "PMID:15570009; PMID:12700233; PMID:17936563; PMID:18485193"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Apoptosis-related transcripts may coexist with dominant anti-apoptotic defenses or ineffective immune killing, limiting response.",
+                  "PMID:15570009; PMID:12700233; PMID:17936563; PMID:15570009; PMID:22295219"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some tumors respond mainly through cytostatic G1 arrest rather than strong baseline apoptosis signatures.",
+                  "PMID:15570009; PMID:12700233; PMID:17936563; PMID:12700233"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low apoptotic priming with strong survival signaling (PI3K/STAT3) reduces cell-death induction and supports resistance.",
+                  "PMID:15570009; PMID:12700233; PMID:17936563; PMID:17936563; PMID:25327561"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Trastuzumab can down-regulate anti-apoptotic programs (e.g., BCL-2) and enhance immune killing, increasing apoptosis in responders.",
+                  "PMID:15570009; PMID:12700233; PMID:17936563; PMID:15570009; PMID:18485193"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Therapy-induced stress can raise apoptosis markers transiently without eliminating resistant clones sustained by bypass signaling.",
+                  "PMID:15570009; PMID:12700233; PMID:17936563; PMID:25327561; PMID:22295219"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Clinical benefit may be dominated by cytostatic arrest with minimal detectable apoptosis induction in bulk transcriptomes.",
+                  "PMID:15570009; PMID:12700233; PMID:17936563; PMID:12700233"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Resistant tumors often fail to trigger apoptosis after HER2 blockade due to sustained PI3K/STAT3 signaling or EMT/stemness survival programs.",
+                  "PMID:15570009; PMID:12700233; PMID:17936563; PMID:22819326; PMID:22992620"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "GOBP_FC_GAMMA_RECEPTOR_SIGNALING_PATHWAY": {
+      "description": "Immune effector signaling initiated by Fcγ receptor engagement on immune cells, triggering activation cascades that promote antibody-dependent cytotoxic and phagocytic responses.",
+      "interpretation": "Fcγ receptor signaling underlies trastuzumab’s immune mechanism (ADCC) and is described as an important component of effective tumor clearance in HER2+ disease.",
+      "Administration_of_trastuzumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Pre-existing activating FcγR signaling competence in NK/monocytes supports trastuzumab ADCC/ADCP and predicts benefit.",
+                  "PMID:10742152; PMID:18485193; PMID:27812689; PMID:24330813"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: High FcγR signatures can still fail if effector cells are dysfunctional/exhausted or inhibitory FcγR balance dominates.",
+                  "PMID:10742152; PMID:18485193; PMID:27812689; PMID:24330813; PMID:27812689"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Even with modest FcγR programs, strong HER2 oncogene addiction allows direct signaling blockade to drive response.",
+                  "PMID:10742152; PMID:18485193; PMID:27812689; PMID:24330813; PMID:11248153"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low FcγR pathway activity (immune-cold tumors) reduces Fc-mediated killing and worsens trastuzumab efficacy.",
+                  "PMID:10742152; PMID:18485193; PMID:27812689; PMID:24330813; PMID:18485193"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Trastuzumab Fc engagement activates FcγR signaling on effector cells, driving ADCC/ADCP and contributing to anti-tumor response.",
+                  "PMID:10742152; PMID:18485193; PMID:27812689; PMID:24330813; PMID:24330813"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Despite FcγR activation, host genetics (FCGR polymorphisms) or suppressive myeloid programs can blunt killing and yield resistance.",
+                  "PMID:10742152; PMID:18485193; PMID:27812689; PMID:24330813; PMID:21109570; PMID:27812689"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: With deep tumor clearance, less antigen/opsonization can reduce FcγR engagement signatures while sensitivity is evident clinically.",
+                  "PMID:10742152; PMID:18485193; PMID:27812689; PMID:24330813; PMID:24330813"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Failure to activate FcγR programs after dosing (poor antibody exposure or low effector infiltration) is consistent with non-response.",
+                  "PMID:10742152; PMID:18485193; PMID:27812689; PMID:24330813; PMID:18485193"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY": {
+      "description": "NK cell activation and cytotoxic effector mechanisms (including perforin/granzyme-mediated killing) that eliminate antibody-opsonized target cells.",
+      "interpretation": "NK-mediated cytotoxicity is mechanistically tied to trastuzumab-driven ADCC and is described as correlating with response when robust immune activation is present.",
+      "Administration_of_trastuzumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: NK cytotoxicity programs support trastuzumab-mediated ADCC and correlate with better responses in HER2+ breast cancer.",
+                  "PMID:18485193; PMID:24330813; PMID:10742152"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: NK-high tumors can remain resistant if immunosuppressive signals or FcγR inhibitory balance blocks effective ADCC.",
+                  "PMID:18485193; PMID:24330813; PMID:10742152; PMID:27812689"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Tumors can still respond via direct HER2 blockade, especially with concomitant chemotherapy, even when NK activity is low.",
+                  "PMID:18485193; PMID:24330813; PMID:10742152; PMID:11248153; PMID:15634697"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low NK cytotoxicity reduces the immune effector contribution to trastuzumab activity, increasing likelihood of resistance.",
+                  "PMID:18485193; PMID:24330813; PMID:10742152; PMID:18485193"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Trastuzumab opsonization promotes NK activation and cytotoxic killing of HER2+ cells, increasing NK pathway activity in responders.",
+                  "PMID:18485193; PMID:24330813; PMID:10742152; PMID:24330813"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: NK pathways may activate but be insufficient if tumor uses strong intrinsic resistance (PI3K/EMT) or immune suppression persists.",
+                  "PMID:18485193; PMID:24330813; PMID:10742152; PMID:17936563; PMID:22992620"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Successful tumor debulking can reduce ongoing NK engagement signatures while clinical sensitivity remains.",
+                  "PMID:18485193; PMID:24330813; PMID:10742152; PMID:24330813"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Persistently low NK cytotoxicity after treatment indicates poor immune effector recruitment/activation and supports resistance.",
+                  "PMID:18485193; PMID:24330813; PMID:10742152; PMID:18485193"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_ANGIOGENESIS": {
+      "description": "Gene program reflecting angiogenic signaling and neovascularization processes that support tumor perfusion, growth, and progression.",
+      "interpretation": "Angiogenesis is described as a tumor-supportive process that can be inhibited by trastuzumab and may counteract therapy when high.",
+      "Administration_of_trastuzumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: If angiogenesis is driven by HER2 signaling (HER2→HIF-1/VEGF), HER2 blockade can reduce VEGF output and contribute to response.",
+                  "PMID:11907566; PMID:11359907; PMID:16715132"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Angiogenesis driven by hypoxia/inflammatory cues can persist despite HER2 blockade, supporting progression and resistance.",
+                  "PMID:11907566; PMID:11359907; PMID:16715132; PMID:11907566"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low baseline angiogenic signaling can reflect less aggressive vascular remodeling and may associate with better trastuzumab response.",
+                  "PMID:11907566; PMID:11359907; PMID:16715132; PMID:11248153"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Tumors may be resistant through PI3K/EMT/STAT3 routes even if angiogenesis programs are low.",
+                  "PMID:11907566; PMID:11359907; PMID:16715132; PMID:17936563; PMID:25327561"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Trastuzumab can decrease HER2-driven VEGF expression and exert anti-angiogenic effects, aiding tumor control in responders.",
+                  "PMID:11907566; PMID:11359907; PMID:16715132; PMID:16715132; PMID:11907566"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Angiogenesis signatures may fall without durable response if intrinsic tumor survival pathways remain dominant.",
+                  "PMID:11907566; PMID:11359907; PMID:16715132; PMID:17936563; PMID:22992620"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Inflammatory immune influx during effective therapy can raise angiogenesis-related transcripts (wound-healing programs) despite overall sensitivity.",
+                  "PMID:11907566; PMID:11359907; PMID:16715132; PMID:24330813"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Compensatory VEGF/angiogenic program upregulation under HER2 blockade can support acquired resistance and progression.",
+                  "PMID:11907566; PMID:11359907; PMID:16715132; PMID:11907566"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_NOTCH_SIGNALING": {
+      "description": "Developmental signaling pathway controlling cell fate, stemness, and survival via NOTCH receptor activation and downstream transcriptional programs.",
+      "interpretation": "Notch signaling is described as a compensatory survival/stemness pathway that can increase after HER2 blockade and contribute to resistance biology.",
+      "Administration_of_trastuzumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Notch activity is more often linked to stemness and resistance; sensitivity with Notch-high tumors would usually require dominant HER2 addiction overriding Notch-mediated survival.",
+                  "PMID:29743588; PMID:22819326; PMID:11248153"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Notch/Jagged programs promote cancer stem cell maintenance and have been implicated in trastuzumab resistance.",
+                  "PMID:29743588; PMID:22819326; PMID:29743588; PMID:22819326"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low Notch signaling reduces stemness-associated bypass survival, supporting trastuzumab sensitivity in HER2-addicted tumors.",
+                  "PMID:29743588; PMID:22819326; PMID:11248153; PMID:21153051"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Even with low Notch, resistance can occur via PI3K activation or immune/PK limitations.",
+                  "PMID:29743588; PMID:22819326; PMID:17936563; PMID:18485193"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Notch may rise as an adaptive response even in partial responders; clinical benefit can still occur before resistant clones dominate.",
+                  "PMID:29743588; PMID:22819326; PMID:22819326"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Therapy-induced Jagged/Notch activation (often coupled to IL-6/STAT3) is reported as a route to acquired trastuzumab resistance.",
+                  "PMID:29743588; PMID:22819326; PMID:22819326; PMID:25327561"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Notch suppression may accompany effective tumor control (reduced stem-like fraction) in responders, though not a primary direct effect of trastuzumab.",
+                  "PMID:29743588; PMID:22819326; PMID:22819326"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Notch can be low yet resistance persists via PI3K/EMT; thus Notch downregulation alone is not sufficient for response.",
+                  "PMID:29743588; PMID:22819326; PMID:17936563; PMID:22992620"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_IL6_JAK_STAT3_SIGNALING": {
+      "description": "Cytokine-driven signaling axis in which IL-6 activates JAK kinases and STAT3 transcriptional programs that promote inflammation, survival, and immune regulation.",
+      "interpretation": "IL-6/JAK/STAT3 signaling is described as implicated in resistance and survival programs (often linked with Notch/STAT3 and inflammatory signaling) in the trastuzumab context.",
+      "Administration_of_trastuzumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Baseline IL-6/STAT3 inflammation is generally pro-survival and predicts resistance; sensitivity would typically require strong HER2 addiction and/or immune-effective context overcoming STAT3 signaling.",
+                  "PMID:22819326; PMID:25327561; PMID:26234940; PMID:11248153"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: IL-6–JAK–STAT3 inflammatory loops expand stem-like cells and promote trastuzumab resistance in HER2+ breast cancer.",
+                  "PMID:22819326; PMID:25327561; PMID:26234940"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low IL-6/STAT3 activity reduces pro-survival inflammation and stemness programs, supporting trastuzumab responsiveness.",
+                  "PMID:22819326; PMID:25327561; PMID:26234940; PMID:11248153"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Tumors can remain resistant through PI3K activation or EMT even if IL-6/STAT3 signaling is low.",
+                  "PMID:22819326; PMID:25327561; PMID:26234940; PMID:17936563; PMID:22992620"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: STAT3 can activate as a stress response during treatment; transient STAT3 elevation may not prevent short-term clinical benefit in some patients.",
+                  "PMID:22819326; PMID:25327561; PMID:26234940; PMID:25327561"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Feedback activation of STAT3 and IL-6 loops under HER2 blockade is a documented mechanism of acquired trastuzumab resistance.",
+                  "PMID:22819326; PMID:25327561; PMID:26234940; PMID:25327561; PMID:22819326"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective therapy can reduce tumor-derived IL-6 signaling and dampen STAT3 programs alongside tumor regression.",
+                  "PMID:22819326; PMID:25327561; PMID:26234940; PMID:24330813"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Even if IL-6/STAT3 programs diminish, resistance may persist via PI3K or EMT-driven survival.",
+                  "PMID:22819326; PMID:25327561; PMID:26234940; PMID:17936563; PMID:22992620"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+      "description": "Phenotypic transition program involving loss of epithelial features and gain of mesenchymal traits, associated with invasiveness, stem-like behavior, and therapy resistance.",
+      "interpretation": "EMT is described as linked to a stem-like, trastuzumab-resistant phenotype and is noted as relevant even if not a direct trastuzumab target pathway.",
+      "Administration_of_trastuzumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: EMT-high states often reduce HER2 dependence and immune susceptibility; sensitivity would typically require concurrent strong HER2 amplification and effective immune engagement.",
+                  "PMID:22992620; PMID:26522776; PMID:11248153"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: EMT programs are repeatedly linked to primary resistance to trastuzumab and to acquisition of resistant phenotypes.",
+                  "PMID:22992620; PMID:26522776"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: An epithelial phenotype (low EMT) is consistent with HER2-driven, trastuzumab-responsive disease and less stemness/bypass signaling.",
+                  "PMID:22992620; PMID:26522776; PMID:11248153"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Tumors can be epithelial yet resistant via PI3K activation, cyclin E/CDK2 escape, or limited immune effector activity.",
+                  "PMID:22992620; PMID:26522776; PMID:17936563; PMID:21321214"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: EMT signatures may rise transiently during remodeling/inflammation even in responders, but sustained EMT is more typical of resistance.",
+                  "PMID:22992620; PMID:26522776; PMID:22992620"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Chronic trastuzumab pressure can select for EMT/mesenchymal states (especially with PTEN loss), driving acquired resistance.",
+                  "PMID:22992620; PMID:26522776; PMID:26522776"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective therapy can reduce EMT programs by shrinking invasive/mesenchymal subclones, supporting sensitivity.",
+                  "PMID:22992620; PMID:26522776; PMID:24330813"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: EMT can be low yet resistance persists via PI3K/STAT3/cell-cycle escape mechanisms; EMT suppression alone is not sufficient for response.",
+                  "PMID:22992620; PMID:26522776; PMID:17936563; PMID:25327561"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "FCGR3A",
+    "CDKN1B"
+  ],
+  "sensitivity_genes_down": [],
+  "resistance_genes_up": [
+    "PIK3CA",
+    "STAT3",
+    "NOTCH1",
+    "JAG1",
+    "ERBB3",
+    "EGFR",
+    "IGF1R",
+    "SRC",
+    "IL6",
+    "MET"
+  ],
+  "resistance_genes_down": [
+    "PTEN",
+    "CDKN1B"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "FCGR3A",
+      "interpretation": "High FCGR3A (CD16) expression on NK cells is stated to correlate with trastuzumab sensitivity, consistent with effective ADCC as a key mechanism."
+    },
+    {
+      "gene": "CDKN1B",
+      "interpretation": "p27^Kip1 (CDKN1B) upregulation is described as enforcing G1 arrest after trastuzumab exposure; baseline association with response is noted via CDK inhibitor/apoptotic context."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [],
+  "resistance_genes_up_annotations": [
+    {
+      "gene": "PIK3CA",
+      "interpretation": "Activating mutations in PIK3CA are stated to reactivate PI3K/AKT signaling downstream of HER2 and confer trastuzumab resistance."
+    },
+    {
+      "gene": "STAT3",
+      "interpretation": "STAT3-mediated survival/anti-apoptotic signaling is described as becoming upregulated in resistant contexts (often linked to Notch/inflammatory signaling)."
+    },
+    {
+      "gene": "NOTCH1",
+      "interpretation": "Notch signaling (including Notch1) is described as a compensatory pathway that can increase after HER2 blockade and promote survival/stemness and resistance."
+    },
+    {
+      "gene": "JAG1",
+      "interpretation": "Jagged1 (JAG1) is described as part of a Jagged1/Notch1 axis that can become upregulated following HER2 blockade and contribute to resistance biology."
+    },
+    {
+      "gene": "ERBB3",
+      "interpretation": "Activation of HER3 (ERBB3) is described as providing bypass proliferative/survival signaling that can undermine trastuzumab effects."
+    },
+    {
+      "gene": "EGFR",
+      "interpretation": "Increased signaling through EGFR is described as an alternate receptor tyrosine kinase input that can provide bypass growth signals and contribute to resistance."
+    },
+    {
+      "gene": "IGF1R",
+      "interpretation": "IGF1R signaling is described as a bypass pathway that can engage alternate proliferation/survival signals and reduce trastuzumab effectiveness."
+    },
+    {
+      "gene": "SRC",
+      "interpretation": "SRC kinase signaling is described as frequently upregulated in resistant cells as part of bypass/survival signaling downstream of RTK cross-talk."
+    },
+    {
+      "gene": "IL6",
+      "interpretation": "IL-6/JAK-STAT signaling is described as implicated in resistance and survival/inflammatory programs (linked to Notch/STAT3 context)."
+    },
+    {
+      "gene": "MET",
+      "interpretation": "MET is described as a growth factor cross-talk RTK whose increased signaling can engage bypass pathways that undermine trastuzumab effects."
+    }
+  ],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "PTEN",
+      "interpretation": "Loss of PTEN is stated to reactivate PI3K/AKT signaling and confer trastuzumab resistance."
+    },
+    {
+      "gene": "CDKN1B",
+      "interpretation": "Resistant cells are described as often losing p27 (CDKN1B), allowing cell-cycle progression despite trastuzumab-associated arrest mechanisms."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Trastuzumab|binds|ERBB2",
+    "Trastuzumab|engages|FCGR2A",
+    "Trastuzumab|engages|FCGR3A",
+    "PIK3CA_mutation|confers_resistance_to|Trastuzumab",
+    "PTEN_loss|confers_resistance_to|Trastuzumab",
+    "CDKN1B_loss|confers_resistance_to|Trastuzumab"
+  ],
+  "Breast_cancer_subtype_information": {
+    "HER2-Positive (ERBB2-amplified) Breast Cancer": "Trastuzumab is effective only in tumors overexpressing HER2 (approx. 15–20% of breast cancers). It improves outcomes in both hormone receptor–positive (often “Luminal B HER2+”) and hormone receptor–negative HER2+ tumors.",
+    "HER2-Negative Subtypes (TNBC, Luminal A/B without HER2)": "Trastuzumab is not indicated because the target is absent. Clinical trials show no benefit in pure HER2-negative disease.",
+    "BRCA1/2-Mutated Cancers": "There is no specific role for trastuzumab based on BRCA status. HER2+ cancers should be treated with HER2-targeted therapy regardless of BRCA, and BRCA-mutant TNBC are managed with platinum/PARP inhibitors rather than trastuzumab."
+  },
+  "citations": [
+    "[https://go.drugbank.com/drugs/DB00072](https://go.drugbank.com/drugs/DB00072)",
+    "[https://webs.iiitd.edu.in/raghava/herceptinr/articles/15173011.pdf](https://webs.iiitd.edu.in/raghava/herceptinr/articles/15173011.pdf)",
+    "[https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.1006429/full](https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2022.1006429/full)",
+    "[https://www.nejm.org/doi/full/10.1056/NEJMoa2203690](https://www.nejm.org/doi/full/10.1056/NEJMoa2203690)",
+    "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/103792s5354lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/103792s5354lbl.pdf)",
+    "[https://www.kegg.jp/pathway/hsa04012](https://www.kegg.jp/pathway/hsa04012)"
+  ],
+  "notes": "No absolute contraindications were stated; key safety issues described include cardiotoxicity (LVEF decline/heart failure risk), infusion reactions, embryo-fetal toxicity, and pulmonary toxicity. Evidence for EMT and IL-6/JAK/STAT is described as indirect/limited in the pathway table. Sources:  "
+}

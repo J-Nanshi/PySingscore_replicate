@@ -20,7 +20,7 @@
 "HALLMARK_ESTROGEN_RESPONSE_EARLY",
 "REACTOME_CYCLIN_D_ASSOCIATED_EVENTS_IN_G1",
 "REACTOME_CYCLIN_E_ASSOCIATED_EVENTS_DURING_G1_S_TRANSITION",
-"REACTOME_ABERRANT_REGULATION_OF_MITOTIC_G_S_TRANSITION_IN_CANCER_DUE_TO_RB1_DEFECTS",
+"REACTOME_ABERRANT_REGULATION_OF_MITOTIC_G1_S_TRANSITION_IN_CANCER_DUE_TO_RB1_DEFECTS",
 "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
 "REACTOME_SIGNALING_BY_FGFR1",
 "KEGG_MEDICUS_REFERENCE_P16_CELL_CYCLE_G1_S",
@@ -45,7 +45,7 @@
 "description": "Reactome pathway describing Cyclin E–CDK2-mediated events controlling the G1/S transition.",
 "interpretation": "Cyclin E–CDK2 provides an alternative mechanism to promote S-phase entry and can maintain G1/S progression independent of cyclin D–CDK4/6 signaling."
 },
-"REACTOME_ABERRANT_REGULATION_OF_MITOTIC_G_S_TRANSITION_IN_CANCER_DUE_TO_RB1_DEFECTS": {
+"REACTOME_ABERRANT_REGULATION_OF_MITOTIC_G1_S_TRANSITION_IN_CANCER_DUE_TO_RB1_DEFECTS": {
 "description": "Reactome pathway describing dysregulated G1/S control in cancer caused by RB1 defects.",
 "interpretation": "RB1 dysfunction removes a key tumor-suppressive checkpoint in breast cancer, leading to uncontrolled G1/S transition and altering the relevance of RB1-dependent cell-cycle control."
 },

@@ -19,7 +19,7 @@
 "HALLMARK_ESTROGEN_RESPONSE_LATE",
 "KEGG_STEROID_HORMONE_BIOSYNTHESIS",
 "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
-"EGG_ERBB_SIGNALING_PATHWAY",
+"KEGG_ERBB_SIGNALING_PATHWAY",
 "KEGG_MAPK_SIGNALING_PATHWAY",
 "HALLMARK_FATTY_ACID_METABOLISM",
 "HALLMARK_INTERFERON_GAMMA_RESPONSE",
@@ -40,7 +40,7 @@
 "description": "PI3K–AKT–mTOR survival and growth signaling cascade downstream of growth factor receptors.",
 "interpretation": "In HR+ breast cancer treated with anastrozole, hyperactivation of PI3K–AKT–mTOR provides an estrogen-independent escape route and is a hallmark of acquired resistance, especially in Luminal B and HER2-positive disease."
 },
-"EGG_ERBB_SIGNALING_PATHWAY": {
+"KEGG_ERBB_SIGNALING_PATHWAY": {
 "description": "ErbB family receptor tyrosine kinase signaling, including EGFR and HER2/ERBB2 and their downstream effectors.",
 "interpretation": "Upregulated ErbB/HER2 signaling in HR+ breast tumors treated with anastrozole activates PI3K and MAPK pathways, driving estrogen-independent proliferation and endocrine resistance, particularly in HER2-positive cancers."
 },

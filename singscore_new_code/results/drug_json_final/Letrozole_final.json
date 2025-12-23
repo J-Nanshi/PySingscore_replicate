@@ -1,0 +1,1036 @@
+{
+  "drug_name": "Letrozole",
+  "cancer_indication": "Estrogen receptor–positive (ER+) breast cancer in postmenopausal women (including luminal A/B); used across stages and in HR+/HER2− metastatic disease (often in combination with targeted agents such as CDK4/6 inhibitors).",
+  "drug_category": "Endocrine therapy",
+  "drug_class": "Aromatase inhibitor",
+  "moa": "Letrozole is a third-generation non-steroidal aromatase inhibitor that competitively inhibits aromatase (CYP19A1), blocking conversion of androgens to estrogens. In postmenopausal women, this causes profound estrogen depletion and reduces ERα-driven tumor growth signals. Estrogen deprivation leads to suppression of estrogen-responsive transcriptional programs and reduced proliferation, with tumor regression in ER+ breast cancer.",
+  "chembl_id": "CHEMBL1444",
+  "drugbank_id": "DB01006",
+  "synonyms": [
+    "Letrozol",
+    "Femara",
+    "CGS-20267"
+  ],
+  "primary_targets": [
+    "CYP19A1"
+  ],
+  "pathway_sets": [
+    "HALLMARK_ESTROGEN_RESPONSE_LATE",
+    "KEGG_STEROID_HORMONE_BIOSYNTHESIS",
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "KEGG_MAPK_SIGNALING_PATHWAY",
+    "HALLMARK_APOPTOSIS",
+    "PID_FOXM1_PATHWAY",
+    "PID_PLK1_PATHWAY",
+    "REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",
+    "REACTOME_DEGRADATION_OF_THE_EXTRACELLULAR_MATRIX",
+    "HALLMARK_ANGIOGENESIS",
+    "HALLMARK_HYPOXIA",
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE"
+  ],
+  "pathway_sets_annotations": {
+    "HALLMARK_ESTROGEN_RESPONSE_LATE": {
+      "description": "Estrogen-responsive transcriptional program reflecting ERα-regulated gene expression.",
+      "interpretation": "ER-driven gene expression is central to growth and survival of hormone receptor–positive breast cancer, and changes in estrogen/ER signaling are core determinants of endocrine therapy response.",
+      "Administration_of_letrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate:  High ER/estrogen transcriptional output implies ER-dependence; aromatase inhibition (↓estrogen) is more likely to suppress tumor growth.",
+                  "BIG 1-98 (NEJM 2005; DOI:10.1056/NEJMoa052258); NCT00004205; DrugBank:DB01006 (New England Journal of Medicine)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  “ER-high” signature can still be AI-resistant if ligand-independent ER activation (e.g., acquired ESR1 LBD mutations) sustains ER signaling despite estrogen depletion.",
+                  "PMID:26560360; PMID:31318440 (Europe PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  Low late-ER signature but endocrine sensitivity can occur if tumor remains hormone-driven via earlier ER programs or sampling/stromal dilution obscures ER output.",
+                  "PMID:22089970; PMID:23181527 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  Low ER transcriptional activity suggests ER-independence (growth factor–driven luminal B / “ER-low functional”), reducing benefit from estrogen deprivation alone.",
+                  "PMID:31371343; PMID:21420991 (PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate:  Letrozole inhibits CYP19A1 aromatase → ↓estrogen → ↓ER target gene programs (including late ER response) consistent with response.",
+                  "DrugBank:DB01006; ChEMBL:CHEMBL1444; PMID:22089970 (DrugBank)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  Late ER genes may drop, yet tumor persists via escape pathways (PI3K/MAPK/FGFR1) or ESR1 mutations causing estrogen-independent proliferation.",
+                  "PMID:26560360; PMID:21420991; PMID:31371343 (Europe PMC)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: AI does not mechanistically “raise estrogen”; apparent “up” would usually be timing/batch effects—true drug-driven increase is not expected in responders.",
+                  "DrugBank:DB01006 (DrugBank)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  Paradoxical ER-program reactivation can occur with ESR1 activating mutations or strong RTK cross-talk, yielding apparent ER transcription despite estrogen depletion.",
+                  "PMID:26560360; PMID:25588716 (Europe PMC)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_STEROID_HORMONE_BIOSYNTHESIS": {
+      "description": "Steroidogenic pathway that generates steroid hormones, including estrogens, through sequential enzymatic conversions.",
+      "interpretation": "Estrogen production is a key upstream driver of ER signaling in postmenopausal HR+ breast cancer, making steroid hormone biosynthesis directly relevant to endocrine dependence.",
+      "Administration_of_letrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate:  Higher aromatase/steroid conversion capacity (tumor/stroma) increases reliance on estrogen production; aromatase inhibition should be more impactful.",
+                  "KEGG Drug:D00964; DrugBank:DB01006 (Genome.jp)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  Steroidogenic activity may not translate to AI benefit if downstream is ER-independent or if alternative estrogen sourcing dominates (e.g., estrone-sulfate uptake).",
+                  "PMID:31318440; PMID:31440208 (Springer)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  Even with low intrinsic steroidogenesis, postmenopausal tumors can still depend on systemic/peripheral aromatase estrogen; AI can still work.",
+                  "DrugBank:DB01006; PMID:23181527 (DrugBank)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  Low steroid/estrogen synthesis program plus low ER drive suggests minimal dependence on estrogen production, limiting AI efficacy.",
+                  "PMID:21420991; PMID:31371343 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate:  Direct pharmacology: letrozole competitively inhibits aromatase → ↓estrogen synthesis pathway output consistent with response.",
+                  "DrugBank:DB01006; ChEMBL:CHEMBL1444 (DrugBank)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  Estrogen synthesis can be suppressed yet resistance persists via ligand-independent ER (ESR1 mutations) or RTK-driven growth.",
+                  "PMID:26560360; PMID:16755107 (Europe PMC)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  Compensatory upregulation of steroidogenic transcripts may be a feedback attempt; some tumors still respond if suppression of estrogen is pharmacodynamically adequate.",
+                  "PMID:22089970; DrugBank:DB01006 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  Feedback induction of aromatase/steroidogenesis (tumor/stroma) can partially restore estrogenic signaling and contribute to endocrine escape.",
+                  "PMID:31318440; PMID:31440208 (Springer)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_E2F_TARGETS": {
+      "description": "Gene program controlled by E2F transcription factors associated with cell-cycle progression and DNA replication.",
+      "interpretation": "Proliferation in ER+ breast cancer is linked to cell-cycle gene expression; modulation of E2F-associated programs reflects changes in tumor proliferative state.",
+      "Administration_of_letrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  If proliferation is still ER-driven (Cyclin D–CDK4/6 axis), endocrine therapy can reduce E2F output; however this is less common than resistance patterns.",
+                  "PMID:23181527; PMID:3005? (Ghazoui 2011 context via endocrine deprivation response) (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  High E2F/proliferation (luminal B-like) is linked to de novo endocrine resistance and often needs combination (e.g., CDK4/6i), not AI alone.",
+                  "PMID:31371343; PMID:21420991 (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate:  Low proliferation/E2F activity is typical of luminal A biology, generally more endocrine responsive to estrogen deprivation.",
+                  "BIG 1-98 DOI:10.1056/NEJMoa052258; PMID:23181527 (New England Journal of Medicine)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  Slow-cycling tumors can still be resistant if growth is supported by TME/RTK survival or dormant resistant clones that are ER-independent.",
+                  "PMID:31440208; PMID:26677432 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate:  Estrogen deprivation suppresses ER-driven Cyclin D signaling → ↓RB phosphorylation → ↓E2F targets, consistent with clinical response biology.",
+                  "PMID:23181527; DrugBank:DB01006 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  E2F can drop yet tumor persists through non-proliferative survival states (e.g., adaptive stress programs/TME) and later regrows.",
+                  "PMID:26677432; PMID:31440208 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: A sustained increase in E2F while on effective estrogen deprivation is not expected in responders; would usually indicate inadequate estrogen suppression or mixed lesions.",
+                  "PMID:2977-80 (JCO 2012 BMI-estrogen suppression); DrugBank:DB01006 (Research Edinburgh)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  Maintenance/increase of E2F targets on therapy indicates cell-cycle escape (RTK/PI3K/MAPK/CCNE/CDK2) and predicts endocrine resistance.",
+                  "PMID:21420991; PMID:16755107 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+      "description": "Growth and survival signaling network centered on PI3K, AKT, and mTOR pathway activity.",
+      "interpretation": "PI3K/AKT/mTOR signaling is a major survival/proliferation axis in ER+ breast cancer and is implicated as an alternative growth pathway in endocrine therapy escape.",
+      "Administration_of_letrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  Some ER+ tumors remain endocrine-responsive despite PI3K activation, but this typically signals need for combination rather than AI monotherapy.",
+                  "PMID:21420991; PMID:23181527 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  Activated PI3K/AKT promotes estrogen-independent survival and is associated with endocrine resistance; predicts reduced benefit from AI alone.",
+                  "PMID:16755107; PMID:21420991 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate:  Low PI3K/AKT signaling reduces a key bypass route, increasing likelihood of dependence on ER signaling and AI response.",
+                  "PMID:21420991; BIG 1-98 DOI:10.1056/NEJMoa052258 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  Even with low PI3K signature, resistance can occur via MAPK/FGFR1 or ESR1 mutation–driven estrogen independence.",
+                  "PMID:31371343; PMID:26560360 (PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  AI does not directly inhibit PI3K, but responders can show downstream pathway reduction secondarily to decreased growth factor/ER crosstalk.",
+                  "PMID:21420991; DrugBank:DB01006 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  Transient suppression may occur, yet resistant clones survive via alternate routes (MAPK/ECM/TME) and later reactivate PI3K signaling.",
+                  "PMID:31440208; PMID:26677432 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Upregulation of PI3K on AI is typically a resistance adaptation; “up + sensitive” is uncommon unless the rise is mild/early and still below a functional threshold.",
+                  "PMID:21420991 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  Estrogen deprivation selects for RTK/PI3K dependence; increased PI3K/AKT signaling is a classic endocrine escape phenotype.",
+                  "PMID:16755107; PMID:21420991 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_MAPK_SIGNALING_PATHWAY": {
+      "description": "Mitogen-activated protein kinase cascade regulating proliferation and survival through RAF/MEK/ERK signaling.",
+      "interpretation": "MAPK/ERK signaling can support tumor proliferation and may act as a bypass growth pathway when estrogen-driven signaling is reduced.",
+      "Administration_of_letrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  Some ER+ tumors with modest MAPK activity still respond to AI if ER remains dominant; higher MAPK often shifts toward resistance.",
+                  "PMID:31371343; PMID:23181527 (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  Growth factor/MAPK activation (e.g., FGFR1/HER2) drives estrogen-independent proliferation, reducing AI efficacy.",
+                  "PMID:31371343; PMID:30914635 (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate:  Low MAPK bypass signaling supports a more ER-driven state, favoring response to estrogen deprivation.",
+                  "BIG 1-98 DOI:10.1056/NEJMoa052258; PMID:23181527 (New England Journal of Medicine)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  Resistance can persist even with low MAPK if ligand-independent ER (ESR1 mutation) or PI3K signaling substitutes for growth.",
+                  "PMID:26560360; PMID:21420991 (Europe PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  In responders, ER suppression can reduce ER-driven growth factor ligand expression, lowering MAPK signaling secondarily.",
+                  "PMID:31318440; DrugBank:DB01006 (Springer)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  MAPK may fall in bulk tumor, yet resistant subclones survive through PI3K/TME programs and re-emerge.",
+                  "PMID:21420991; PMID:31440208 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Persistent MAPK upshift on AI usually signals escape; “up + sensitive” is atypical unless therapy is combined (not applicable to letrozole alone).",
+                  "PMID:31371343 (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  MAPK induction reflects growth factor–driven adaptation (FGFR/ERBB), supporting endocrine resistance during estrogen deprivation.",
+                  "PMID:31371343; PMID:30914635 (PMC)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_APOPTOSIS": {
+      "description": "Core intrinsic and extrinsic cell-death machinery reflected by apoptotic gene programs.",
+      "interpretation": "Apoptotic competency influences whether hormone deprivation leads to tumor cell death versus survival under endocrine stress.",
+      "Administration_of_letrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate:  Pre-existing apoptotic priming/stress can make ER+ tumors more likely to undergo cell death upon estrogen withdrawal (subset-dependent).",
+                  "PMID:23181527; DrugBank:DB01006 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  Apoptosis signatures can reflect immune/stromal turnover rather than tumor-cell priming; tumor may still resist via survival pathways (PI3K/MAPK).",
+                  "PMID:21420991; PMID:31440208 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  Even with low baseline apoptosis, AI can still be effective via cytostatic suppression of proliferation rather than apoptosis.",
+                  "BIG 1-98 DOI:10.1056/NEJMoa052258 (New England Journal of Medicine)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  Low apoptotic readiness plus strong survival signaling predicts poorer response to endocrine monotherapy.",
+                  "PMID:16755107; PMID:21420991 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate:  Effective estrogen deprivation reduces ER survival signals and can increase pro-apoptotic programs in responsive ER+ tumors.",
+                  "DrugBank:DB01006; PMID:23181527 (DrugBank)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  Apoptosis-related transcripts can increase as a stress response while resistant clones avoid death (e.g., BCL2-family buffering) and persist.",
+                  "PMID:21420991; PMID:31440208 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  Some responses are dominantly cytostatic with minimal apoptosis induction; clinical benefit can still occur.",
+                  "BIG 1-98 DOI:10.1056/NEJMoa052258 (New England Journal of Medicine)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  Failure to activate apoptosis under estrogen deprivation supports endocrine resistance, often with PI3K/MAPK compensation.",
+                  "PMID:16755107; PMID:21420991 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "PID_FOXM1_PATHWAY": {
+      "description": "FOXM1-associated transcriptional network promoting cell-cycle progression, particularly G2/M control.",
+      "interpretation": "FOXM1-driven transcriptional programs are associated with proliferative capacity and were highlighted as activated in non-responder/resistant contexts.",
+      "Administration_of_letrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  If FOXM1 is ER-driven and not yet autonomous, ER blockade can lower FOXM1 and proliferation; however FOXM1-high more often signals resistance.",
+                  "PMID:16809346; PMID:25213081 (Europe PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  FOXM1 promotes proliferation/stemness and is linked to endocrine resistance; FOXM1-high ER+ tumors often respond poorly to endocrine monotherapy.",
+                  "PMID:25213081; PMID:16809346 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate:  Low FOXM1 is consistent with lower proliferative drive and typically better endocrine responsiveness.",
+                  "PMID:23181527; BIG 1-98 DOI:10.1056/NEJMoa052258 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  FOXM1-low tumors can still resist via RTK/PI3K escape or ESR1 mutation mechanisms unrelated to FOXM1.",
+                  "PMID:21420991; PMID:26560360 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate:  Estrogen deprivation can reduce ER-driven FOXM1 networks, aligning with decreased proliferation and response.",
+                  "PMID:16809346; DrugBank:DB01006 (Europe PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  FOXM1 may decrease in bulk tumor, but resistant subclones persist through PI3K/MAPK or TME-driven survival programs.",
+                  "PMID:21420991; PMID:31440208 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: FOXM1 increase on AI generally indicates cell-cycle escape; “up + sensitive” is not expected for letrozole monotherapy.",
+                  "PMID:25213081 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  FOXM1 induction sustains proliferation and endocrine escape under estrogen deprivation.",
+                  "PMID:25213081; PMID:21420991 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "PID_PLK1_PATHWAY": {
+      "description": "PLK1-centered signaling controlling G2/M transition and mitotic progression.",
+      "interpretation": "Mitotic kinase control (including PLK1-related activity) is linked to proliferative drive and was identified as a pathway activated in letrozole-resistant/non-responder contexts.",
+      "Administration_of_letrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  PLK1-high indicates proliferation; occasional endocrine response occurs if proliferation is still ER-dependent, but PLK1-high more often aligns with resistance.",
+                  "PMID:32792481 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  High PLK1/G2M activity is associated with aggressive biology and endocrine resistance/early relapse risk.",
+                  "PMID:32792481; PMID:36749874 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate:  Low PLK1 aligns with lower cycling fraction and typically better endocrine benefit.",
+                  "BIG 1-98 DOI:10.1056/NEJMoa052258 (New England Journal of Medicine)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  Low PLK1 does not exclude resistance driven by ESR1 mutation or RTK/PI3K escape that does not require high mitotic signaling at baseline.",
+                  "PMID:26560360; PMID:21420991 (Europe PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate:  Responders show reduced proliferation after estrogen deprivation, which should reduce PLK1-associated mitotic programs.",
+                  "PMID:23181527; DrugBank:DB01006 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  PLK1 can fall transiently while resistant residual disease survives via microenvironmental support and later reactivates cycling.",
+                  "PMID:31440208; PMID:26677432 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Sustained PLK1 rise on AI is inconsistent with response to estrogen deprivation (would usually indicate non-response).",
+                  "PMID:32792481 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  PLK1 persistence/induction under therapy signals ongoing mitosis despite estrogen deprivation → endocrine resistance.",
+                  "PMID:32792481; PMID:21420991 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION": {
+      "description": "Processes governing extracellular matrix assembly, remodeling, and cell–matrix interactions.",
+      "interpretation": "ECM remodeling and cell–matrix signaling are associated with invasive behavior and were discussed in the context of aggressive or endocrine-resistant ER+ tumors.",
+      "Administration_of_letrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  ECM-high tumors can still respond if ER-dependence dominates; however ECM remodeling more commonly supports invasion and therapy resistance.",
+                  "PMID:26677432; PMID:31440208 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  CAF/ECM remodeling enhances integrin/FAK and growth factor signaling, promoting endocrine resistance and metastatic phenotypes.",
+                  "PMID:26677432; PMID:31440208 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate:  Lower ECM remodeling aligns with more epithelial/luminal states and fewer stromal resistance cues, supporting endocrine sensitivity.",
+                  "PMID:31440208 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  ECM-low tumors can still be resistant if intrinsic (ESR1 mutation/PI3K) mechanisms dominate independent of stroma.",
+                  "PMID:26560360; PMID:21420991 (Europe PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  Letrozole is not a direct ECM drug, but responders can show reduced stromal activation/ECM programs secondary to tumor regression.",
+                  "PMID:31440208; PMID:33413549 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  Even if ECM programs drop, resistant epithelial clones may persist through PI3K/MAPK/ESR1 mechanisms.",
+                  "PMID:21420991; PMID:26560360 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Increased ECM remodeling on therapy usually indicates adaptation/invasion; “up + sensitive” is atypical for AI alone.",
+                  "PMID:26677432 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  Therapy-driven stromal/ECM remodeling can provide survival niches and growth factor signals that sustain endocrine-resistant disease.",
+                  "PMID:26677432; PMID:31440208 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_DEGRADATION_OF_THE_EXTRACELLULAR_MATRIX": {
+      "description": "Proteolytic degradation of ECM components, including remodeling mediated by matrix metalloproteinases.",
+      "interpretation": "Protease-driven ECM remodeling (including MMP-associated activity) was described as linked to invasion/metastasis and endocrine resistance signatures.",
+      "Administration_of_letrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  High MMP/ECM-degradation signatures can coexist with ER dependence; some patients still respond, though prognosis may be worse.",
+                  "PMID:31440208; PMID:26677432 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  Elevated ECM degradation reflects invasive TME activity and can support endocrine escape via cytokines/growth factors and altered cell–matrix signaling.",
+                  "PMID:26677432; PMID:31440208 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate:  Lower proteolysis/remodeling suggests fewer stromal resistance cues and a more luminal endocrine-responsive context.",
+                  "PMID:31440208 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  ECM-degradation low does not prevent intrinsic resistance (ESR1 mutations, PI3K activation).",
+                  "PMID:26560360; PMID:21420991 (Europe PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  Not directly targeted by AI, but decreased tumor burden can reduce inflammatory protease/ECM-degradation signals in responders.",
+                  "PMID:31440208; PMID:33413549 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  ECM-degradation may drop yet resistant clones survive via cell-intrinsic bypass pathways and later recur.",
+                  "PMID:21420991; PMID:31371343 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Increased ECM degradation during AI therapy is more consistent with adaptation/metastatic progression than sensitivity.",
+                  "PMID:26677432 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  Continued/progressive ECM degradation indicates invasive remodeling and TME-driven endocrine resistance.",
+                  "PMID:26677432; PMID:31440208 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_ANGIOGENESIS": {
+      "description": "Gene program reflecting formation and maintenance of tumor vasculature, including VEGF-related signaling outputs.",
+      "interpretation": "Angiogenic activity is relevant to tumor growth and adaptation; VEGFA was highlighted in resistant signatures in the source material.",
+      "Administration_of_letrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  Some ER+ tumors with angiogenic signals still respond, but high VEGF/angiogenesis is often linked to poorer endocrine response.",
+                  "PMID:14601081; PMID:16954439 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  High VEGF/angiogenesis correlates with decreased responsiveness to antiestrogen therapy and worse outcomes.",
+                  "PMID:14601081; PMID:16954439 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate:  Lower angiogenic drive reduces a known aggressive feature associated with endocrine failure, supporting better AI outcomes.",
+                  "PMID:14601081 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  Even with low angiogenesis, resistance can occur via ESR1 mutations or PI3K/MAPK escape mechanisms.",
+                  "PMID:26560360; PMID:21420991 (Europe PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate:  Estrogen can promote pro-angiogenic programs; effective estrogen deprivation can reduce angiogenic signaling in responders.",
+                  "PMID:16954439; DrugBank:DB01006 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  Angiogenesis may decrease without eliminating resistant tumor cells; relapse can still occur via cell-intrinsic survival programs.",
+                  "PMID:21420991; PMID:31440208 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Rising angiogenesis during AI therapy generally indicates non-response/progression rather than sensitivity to letrozole alone.",
+                  "PMID:14601081 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  Therapy-associated hypoxia/VEGF induction supports vascular adaptation and endocrine-resistant progression.",
+                  "PMID:14601081; PMID:11676860 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_HYPOXIA": {
+      "description": "Cellular transcriptional response to low oxygen tension, often involving HIF-associated programs.",
+      "interpretation": "Hypoxia-associated programs can shape aggressive tumor behavior and adaptation; the source material described HIF-1α network changes in resistant/non-responder settings.",
+      "Administration_of_letrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  Hypoxia-high tumors can sometimes respond, but hypoxia more commonly reduces ER function and promotes endocrine resistance.",
+                  "PMID:11676860; PMID:0226150 (PLOS ONE hypoxia/endocrine resistance context) (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  Hypoxia/HIF signaling can downregulate ERα expression/function and promote survival programs → reduced hormone responsiveness.",
+                  "PMID:11676860 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate:  Low hypoxia reduces HIF-driven survival and preserves ER function, supporting endocrine responsiveness.",
+                  "PMID:11676860; BIG 1-98 DOI:10.1056/NEJMoa052258 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  Resistance can still occur without hypoxia via ESR1 mutations or PI3K/MAPK pathway activation.",
+                  "PMID:26560360; PMID:21420991 (Europe PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  Tumor regression can improve perfusion and reduce hypoxia signaling in responders, aligning with improved hormone sensitivity.",
+                  "PMID:11676860; DrugBank:DB01006 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  Bulk hypoxia markers may fall, yet resistant minimal residual disease persists via intrinsic escape routes.",
+                  "PMID:21420991; PMID:26560360 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Increasing hypoxia on effective therapy is not expected for sensitivity; would more often imply progression or therapy-induced selection.",
+                  "PMID:32792481 (therapy-driven aggressive states); PMID:11676860 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  Hypoxia/HIF induction supports endocrine resistance, including reduced ER function and enhanced survival pathways under therapy.",
+                  "PMID:11676860; PMID:4496173 (HIF-1α endocrine resistance context) (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+      "description": "Immune and inflammatory transcriptional program induced by interferon-γ signaling, reflecting immune activation states.",
+      "interpretation": "Immune activity (including interferon-related pathways and tumor-infiltrating lymphocytes) was described as being modulated during letrozole therapy and linked to response patterns.",
+      "Administration_of_letrozole": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  An “immune-inflamed” IFN-γ state may reflect better immune surveillance and prognosis; endocrine response association is variable in ER+ disease.",
+                  "PMID:33413549 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  Chronic interferon-stimulated gene programs have been linked to AI-resistant states; IFN/STAT signaling can support survival and adaptation.",
+                  "PMID:25588716 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  Many ER+ tumors are “immune-cold” yet still highly endocrine-sensitive; low IFN-γ does not preclude AI benefit.",
+                  "BIG 1-98 DOI:10.1056/NEJMoa052258 (New England Journal of Medicine)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  IFN-γ-low tumors can be resistant if driven by intrinsic ESR1/PI3K/MAPK escape and lack immune pressure.",
+                  "PMID:21420991; PMID:26560360 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  Endocrine therapy can modulate immune context; IFN-γ increases may occur with immune engagement, but this is not a canonical direct mechanism of letrozole.",
+                  "PMID:33413549 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate:  IFN/ISG upregulation can mark AI-resistant adaptive programs, consistent with models where targeting interferon response genes re-sensitizes resistant cells.",
+                  "PMID:25588716 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare:  Some responders remain immune-cold; benefit can still derive from tumor-intrinsic ER deprivation rather than IFN-driven immunity.",
+                  "BIG 1-98 DOI:10.1056/NEJMoa052258 (New England Journal of Medicine)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare:  Immune quiescence plus intrinsic escape (PI3K/MAPK/ESR1 mutation) can maintain resistance despite estrogen suppression.",
+                  "PMID:21420991; PMID:26560360 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [],
+  "sensitivity_genes_down": [],
+  "resistance_genes_up": [
+    "AKT1",
+    "AKT2",
+    "FGFR3",
+    "SDC1",
+    "MMP2",
+    "MMP9",
+    "VEGFA",
+    "PRDX4",
+    "ESR1"
+  ],
+  "resistance_genes_down": [],
+  "sensitivity_genes_up_annotations": [],
+  "sensitivity_genes_down_annotations": [],
+  "resistance_genes_up_annotations": [
+    {
+      "gene": "AKT1",
+      "interpretation": "Listed as part of compensatory PI3K/AKT pathway activation associated with letrozole resistance/non-response."
+    },
+    {
+      "gene": "AKT2",
+      "interpretation": "Listed as part of compensatory PI3K/AKT pathway activation associated with letrozole resistance/non-response."
+    },
+    {
+      "gene": "FGFR3",
+      "interpretation": "Cited as an example within PI3K/AKT/mTOR hyperactivation in resistant contexts, consistent with alternative growth/survival signaling during endocrine escape."
+    },
+    {
+      "gene": "SDC1",
+      "interpretation": "Described as activated in resistant ER+ tumors and associated with cell–matrix and growth-factor signaling that may promote invasion and reduced endocrine dependence."
+    },
+    {
+      "gene": "MMP2",
+      "interpretation": "Described as upregulated in resistant or aggressive ER+ cancers and noted as a marker associated with endocrine resistance and invasive behavior."
+    },
+    {
+      "gene": "MMP9",
+      "interpretation": "Described as upregulated in resistant or aggressive ER+ cancers and noted as a marker associated with endocrine resistance and invasive behavior."
+    },
+    {
+      "gene": "VEGFA",
+      "interpretation": "Highlighted as a top target within a resistant signature and discussed in relation to angiogenic factor changes in adaptive/resistant settings."
+    },
+    {
+      "gene": "PRDX4",
+      "interpretation": "Mentioned as an oxidative stress/autophagy-related marker that can rise in resistant cells, consistent with stress adaptation under estrogen deprivation."
+    },
+    {
+      "gene": "ESR1",
+      "interpretation": "ESR1 gain-of-function mutations were described as mediating endocrine escape by reactivating ER signaling despite aromatase inhibition."
+    }
+  ],
+  "resistance_genes_down_annotations": [],
+  "kg_gene_relationships": [
+    "Letrozole|inhibits|CYP19A1",
+    "ESR1_gain_of_function_mutation|confers_resistance_to|Letrozole",
+    "AKT1_upregulation|confers_resistance_to|Letrozole",
+    "AKT2_upregulation|confers_resistance_to|Letrozole",
+    "SDC1_activation|confers_resistance_to|Letrozole",
+    "MMP2_overexpression|confers_resistance_to|Letrozole",
+    "MMP9_overexpression|confers_resistance_to|Letrozole",
+    "VEGFA_upregulation|associated_with|Letrozole_resistance",
+    "PRDX4_upregulation|associated_with|Letrozole_resistance"
+  ],
+  "Breast_cancer_subtype_information": {
+    "HR⁺/HER2⁻ (Luminal A/B)": "The primary indication group; letrozole is standard first-line in postmenopausal HR⁺/HER2⁻ advanced or adjuvant settings, and can be used with CDK4/6 inhibitors in metastatic disease.",
+    "HR⁺/HER2⁺": "Used only if ER⁺; benefit described with combined HER2-targeted and endocrine therapy (e.g., trastuzumab+letrozole in ER⁺/HER2⁺ metastatic BC), with note that HER2-driven signaling may reduce AI sensitivity and estrogen-independent growth can occur.",
+    "HER2⁺/HR⁻": "HER2⁺/HR⁻ tumors do not benefit from aromatase inhibition.",
+    "Triple-Negative (HR⁻/HER2⁻)": "Letrozole has no target (no ER), so it is not used; TNBC is described as inherently resistant to aromatase inhibition.",
+    "gBRCA1/2 Mutation Carriers": "No specific sensitivity beyond hormone status; most BRCA1-related BC are triple-negative, while BRCA2 tumors are often HR⁺, and endocrine treatment follows standard guidelines for HR⁺ disease."
+  },
+  "citations": [
+    "[https://www.breastcancer.org/treatment/hormonal-therapy/femara](https://www.breastcancer.org/treatment/hormonal-therapy/femara)",
+    "[https://go.drugbank.com/drugs/DB01006](https://go.drugbank.com/drugs/DB01006)",
+    "[https://www.mdpi.com/1467-3045/46/7/424](https://www.mdpi.com/1467-3045/46/7/424)",
+    "[https://www.sciencedirect.com/science/article/abs/pii/S0303720721002707](https://www.sciencedirect.com/science/article/abs/pii/S0303720721002707)",
+    "[https://breast-cancer-research.biomedcentral.com/articles/10.1186/s13058-020-01285-8](https://breast-cancer-research.biomedcentral.com/articles/10.1186/s13058-020-01285-8)",
+    "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2014/020726s027lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2014/020726s027lbl.pdf)",
+    "[https://www.cancer.org/cancer/types/breast-cancer/treatment/hormone-therapy-for-breast-cancer.html](https://www.cancer.org/cancer/types/breast-cancer/treatment/hormone-therapy-for-breast-cancer.html)",
+    "[https://www.sciencedirect.com/science/article/pii/S2059702921000454](https://www.sciencedirect.com/science/article/pii/S2059702921000454)",
+    "[https://www.tandfonline.com/doi/full/10.2217/fon-2020-0504](https://www.tandfonline.com/doi/full/10.2217/fon-2020-0504)",
+    "[https://www.esmoopen.com/article/S2059-7029(25)00926-3/fulltext](https://www.esmoopen.com/article/S2059-7029%2825%2900926-3/fulltext)",
+    "[https://sciencecodex.com/10-year-results-nrg-oncologynsabp-b-42-trial-636794](https://sciencecodex.com/10-year-results-nrg-oncologynsabp-b-42-trial-636794)",
+    "[https://pubmed.ncbi.nlm.nih.gov/16730271/](https://pubmed.ncbi.nlm.nih.gov/16730271/)",
+    "[https://www.pfizer.com/news/press-release/press-release-detail/pfizer-announces-overall-survival-results-phase-3-paloma-2](https://www.pfizer.com/news/press-release/press-release-detail/pfizer-announces-overall-survival-results-phase-3-paloma-2)",
+    "[https://ecancer.org/en/news/17068-sabcs-2019-extended-letrozole-therapy-improves-disease-free-survival-in-postmenopausal women-with-hr-positive-breast-cancer](https://ecancer.org/en/news/17068-sabcs-2019-extended-letrozole-therapy-improves-disease-free-survival-in-postmenopausal women-with-hr-positive-breast-cancer)",
+    "[https://www.nrgoncology.org/News/News-Post-Template/extended-letrozole-therapy-improves-disease-free-survival-dfs-in postmenopausal-women-with-hr-breast-cancer-10-year-results-of-nrg-oncologynsabp-b-42-trial](https://www.nrgoncology.org/News/News-Post-Template/extended-letrozole-therapy-improves-disease-free-survival-dfs-in postmenopausal-women-with-hr-breast-cancer-10-year-results-of-nrg-oncologynsabp-b-42-trial)",
+    "[https://www.mycancergenome.org/content/drugs/letrozole/](https://www.mycancergenome.org/content/drugs/letrozole/)"
+  ],
+  "notes": "Sensitivity-direction gene biomarkers were not explicitly reported as gene-level (↑/↓) predictors in the provided deep-research output; only pathway-level response patterns and resistance-associated signatures/markers were described. Contraindications/cautions explicitly mentioned include contraindication in pregnancy and avoidance in premenopausal women unless combined with ovarian suppression. Source files:  "
+}

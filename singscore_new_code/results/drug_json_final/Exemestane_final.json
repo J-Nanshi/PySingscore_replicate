@@ -1,0 +1,918 @@
+{
+  "drug_name": "Exemestane",
+  "cancer_indication": "Hormone receptor (HR)–positive breast cancer in postmenopausal women (adjuvant therapy after 2–3 years of tamoxifen and for advanced/metastatic ER+ breast cancer after tamoxifen); with ovarian suppression (OFS) in premenopausal HR+ disease (SOFT/TEXT trials).",
+  "drug_category": "Endocrine (aromatase inhibition)",
+  "drug_class": "Steroidal, irreversible aromatase inhibitor",
+  "moa": "Exemestane is a steroidal, irreversible (“suicide”) aromatase inhibitor that permanently inactivates CYP19A1 (aromatase), blocking conversion of androgens to estrogens and sharply reducing estrogen levels. Estrogen deprivation suppresses estrogen receptor–mediated transcription, leading to G1 arrest and apoptosis in ER+ breast tumor cells. In premenopausal women, exemestane requires concurrent ovarian suppression to be effective. Resistance can arise via upregulation of alternate growth pathways (e.g., HER/EGFR, PI3K/AKT/mTOR) or ESR1 mutations, whereas high ER expression and intact hormone signaling sensitize tumors to exemestane.",
+  "chembl_id": "CHEMBL1200374",
+  "drugbank_id": "DB00990",
+  "synonyms": [
+    "6-methyleneandrosta-1,4-diene-3,17-dione",
+    "Exemestane",
+    "Exemestano",
+    "Exemestanum",
+    "Aromasin®",
+    "FCE-24304",
+    "PNU-155971"
+  ],
+  "primary_targets": [
+    "CYP19A1"
+  ],
+  "pathway_sets": [
+    "REACTOME_ESTROGEN_BIOSYNTHESIS",
+    "REACTOME_ESTROGEN_DEPENDENT_GENE_EXPRESSION",
+    "WP_ESTROGEN_SIGNALING",
+    "REACTOME_METABOLISM_OF_STEROID_HORMONES",
+    "KEGG_ERBB_SIGNALING_PATHWAY",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "HALLMARK_ANDROGEN_RESPONSE",
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_APOPTOSIS",
+    "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+    "HALLMARK_IL6_JAK_STAT3_SIGNALING"
+  ],
+  "pathway_sets_annotations": {
+    "REACTOME_ESTROGEN_BIOSYNTHESIS": {
+      "description": "Covers enzymatic conversion of androgens to estrogens, including the aromatase (CYP19A1) step producing estrone/estradiol.",
+      "interpretation": "Provides the estrogen ligand supply that supports growth and transcriptional programs in ER+ breast cancer.",
+      "Administration_of_exemestane": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Upregulated aromatase/estrogen biosynthesis in ER+ luminal breast cancer indicates strong dependence on CYP19A1-derived estrogen, so irreversible aromatase inhibition by exemestane produces marked ER pathway shutdown and clinical benefit.",
+                  "DrugBank:DB00990; ChEMBL:CHEMBL1200374; Reactome:R-HSA-193144; FDA label:020753"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Some ER+ tumors with high estrogen biosynthesis also harbor dominant HER2/PI3K signaling or ESR1 mutations, making growth only partially aromatase-dependent and reducing AI benefit despite an “up” biosynthesis signature.",
+                  "Reactome:R-HSA-193144; KEGG:hsa04012; MSigDB:HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Bulk profiling may show modest estrogen biosynthesis even when a tumor relies on low-level local aromatase activity, so further CYP19A1 blockade can still produce benefit in some ER+ breast cancers.",
+                  "DrugBank:DB00990; Reactome:R-HSA-193144"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: ER-low or endocrine-independent breast cancers often exhibit low estrogen biosynthesis pathway activity and are intrinsically resistant to aromatase inhibitors because there is little CYP19A1-driven estrogen to remove.",
+                  "Reactome:R-HSA-193144; MSigDB:HALLMARK_ESTROGEN_RESPONSE_EARLY"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Exemestane irreversibly inactivates CYP19A1, sharply downregulating estrogen biosynthesis and depriving ER+ tumor cells of ligand, which underlies clinical responses in postmenopausal HR+ breast cancer.",
+                  "DrugBank:DB00990; ChEMBL:CHEMBL1200374; Reactome:R-HSA-193144"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: In resistant clones, exemestane still suppresses estrogen biosynthesis but survival is maintained via HER2/EGFR or PI3K/mTOR escape pathways, so pathway downregulation alone does not ensure sensitivity.",
+                  "DrugBank:DB00990; Reactome:R-HSA-193144; KEGG:hsa04012"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: An irreversible aromatase inhibitor cannot increase functional estrogen biosynthesis in sensitive tumors; any apparent “up” signature would reflect stromal contamination or assay noise rather than true pathway activation.",
+                  "DrugBank:DB00990; Reactome:R-HSA-193144"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Chronic AI therapy may induce compensatory upregulation of steroidogenic enzymes or aromatase transcription, but CYP19A1 remains covalently inhibited so apparent biosynthesis “up” mainly reflects adaptive resistant clones using extra-aromatase estrogen sources.",
+                  "DrugBank:DB00990; Reactome:R-HSA-193144; MSigDB:HALLMARK_STEROID_HORMONE_BIOSYNTHESIS"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_ESTROGEN_DEPENDENT_GENE_EXPRESSION": {
+      "description": "Represents estrogen-dependent transcriptional activation driven by estrogen receptor signaling programs that regulate downstream gene expression.",
+      "interpretation": "Sustains ER-driven proliferative gene programs in ER+ breast cancer that are central to endocrine dependence.",
+      "Administration_of_exemestane": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High estrogen-dependent gene expression (ESR1 target programs) indicates strong ER signaling, so estrogen deprivation with exemestane efficiently downregulates these genes and halts proliferation in luminal tumors.",
+                  "Reactome:R-HSA-8939211; MSigDB:HALLMARK_ESTROGEN_RESPONSE_EARLY"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Tumors with very high ER programs but concurrent HER2/PI3K activation or ESR1 ligand-independent mutations may maintain ER target transcription despite estrogen loss, resulting in AI resistance despite an “up” signature.",
+                  "Reactome:R-HSA-8939211; KEGG:hsa04012; MSigDB:HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: After prior endocrine therapy, some partially ER-suppressed tumors remain modestly ER-driven and can still derive benefit from further estrogen depletion with exemestane.",
+                  "Reactome:R-HSA-8939211; DrugBank:DB00990"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low ESR1 target gene expression indicates ER-independence or ER loss, so blocking estrogen synthesis with exemestane has minimal impact on tumor growth.",
+                  "Reactome:R-HSA-8939211; MSigDB:HALLMARK_ESTROGEN_RESPONSE_LATE"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective exemestane treatment collapses estrogen-dependent transcriptional programs, reflected as downregulation of ESR1 target gene sets and reduction in proliferation-related transcripts.",
+                  "Reactome:R-HSA-8939211; MSigDB:HALLMARK_ESTROGEN_RESPONSE_EARLY; DrugBank:DB00990"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: In some resistant tumors, ER programs are partially repressed by estrogen loss but growth is sustained via parallel HER2/EGFR or PI3K/mTOR pathways, so decreased ESR signaling does not translate to sensitivity.",
+                  "Reactome:R-HSA-8939211; KEGG:hsa04012; MSigDB:HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: True estrogen-dependent gene expression should not increase in a biologically sensitive tumor when ligand supply is cut off by aromatase inhibition; any “up” ESR signature with response would be artifactual.",
+                  "Reactome:R-HSA-8939211; DrugBank:DB00990"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Acquired ESR1 activating mutations or growth factor cross-talk can reactivate ER target gene expression despite estrogen depletion, producing an “up” ESR signature and clinical resistance to AIs.",
+                  "Reactome:R-HSA-8939211; MSigDB:STEIN_ESR1_TARGETS; PMID:24752075"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "WP_ESTROGEN_SIGNALING": {
+      "description": "Broad estrogen signaling encompassing nuclear (“genomic”) and membrane-associated (“non-genomic”) estrogen receptor pathways.",
+      "interpretation": "Key driver of ER-associated proliferation and differentiation programs in ER+ breast cancer.",
+      "Administration_of_exemestane": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Upregulated estrogen signaling networks (membrane and nuclear ER modules) in HR+ breast cancer reflect estrogen addiction, so blocking estrogen synthesis with exemestane effectively shuts down this pathway.",
+                  "WikiPathways:WP_ESTROGEN_SIGNALING; DrugBank:DB00990; MSigDB:WP_ESTROGEN_SIGNALING"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Some tumors with high estrogen signaling also exhibit dominant HER2/IGF1R–PI3K signaling, allowing partial bypass of estrogen dependence and limiting AI efficacy.",
+                  "WikiPathways:WP_ESTROGEN_SIGNALING; KEGG:hsa04012; KEGG:hsa04151"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Borderline ER+ tumors with modest estrogen signaling can still benefit from additional suppression of intracrine estrogens via exemestane, especially after tamoxifen.",
+                  "WikiPathways:WP_ESTROGEN_SIGNALING; NCT00066573 (IES trial)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Tumors with low estrogen signaling (e.g., ER−/basal-like or heavily pretreated endocrine-refractory clones) are unlikely to respond because exemestane targets a largely inactive pathway.",
+                  "WikiPathways:WP_ESTROGEN_SIGNALING; MSigDB:HALLMARK_ESTROGEN_RESPONSE_LATE"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Exemestane reduces estrogen levels to near-zero, leading to broad downregulation of estrogen signaling components across nuclear and membrane ER modules in responding HR+ disease.",
+                  "DrugBank:DB00990; WikiPathways:WP_ESTROGEN_SIGNALING; Reactome:R-HSA-8939211"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Estrogen signaling can still be transcriptionally dampened by exemestane even when cells survive via HER2/EGFR/PI3K escape, so pathway downregulation may coexist with resistance.",
+                  "WikiPathways:WP_ESTROGEN_SIGNALING; KEGG:hsa04012; MSigDB:HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: In a truly sensitive tumor, estrogen signaling should not increase while aromatase is covalently inhibited; an “up” pathway score with response would not reflect genuine exemestane biology.",
+                  "WikiPathways:WP_ESTROGEN_SIGNALING; DrugBank:DB00990"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Chronic AI exposure plus ESR1 mutation or strong growth factor cross-talk may lead to apparent re-activation of estrogen signaling despite therapy, marking acquired resistance.",
+                  "WikiPathways:WP_ESTROGEN_SIGNALING; MSigDB:STEIN_ESR1_TARGETS; PMID:24752075"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_METABOLISM_OF_STEROID_HORMONES": {
+      "description": "Steroid hormone metabolic network from cholesterol-derived intermediates through sex steroid production and interconversion.",
+      "interpretation": "Shapes the steroid hormone environment that influences ER-driven tumor biology and endocrine responsiveness.",
+      "Administration_of_exemestane": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Upregulated steroid hormone metabolism provides abundant androgen substrate for aromatase, reinforcing estrogen production and ER-driven growth that can be effectively blocked by exemestane.",
+                  "Reactome:R-HSA-196071; Reactome:R-HSA-193144; DrugBank:DB00990"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Strong steroidogenic activity may also fuel alternative receptor pathways (e.g., progesterone or androgen receptor) or permit local estrogen production even after partial aromatase block, contributing to AI resistance in some tumors.",
+                  "Reactome:R-HSA-196071; MSigDB:HALLMARK_ANDROGEN_RESPONSE"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Breast cancers with modest steroidogenic signatures but intact ER can still rely on low-level circulating estrogens, such that additional aromatase inhibition remains beneficial.",
+                  "Reactome:R-HSA-196071; DrugBank:DB00990"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Tumors with low steroid hormone metabolism are less dependent on intracrine estrogen synthesis and often behave endocrine-resistant, limiting exemestane’s impact.",
+                  "Reactome:R-HSA-196071; MSigDB:HALLMARK_ESTROGEN_RESPONSE_LATE"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Exemestane interrupts the androgen-to-estrogen branch of steroid metabolism, lowering downstream estrone/estradiol and contributing to tumor regression in ER+ disease.",
+                  "Reactome:R-HSA-196071; Reactome:R-HSA-193144; DrugBank:DB00990"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Even when exemestane suppresses estrogenic steroid metabolism, resistant clones may exploit other steroid pathways (e.g., androgenic signaling or glucocorticoid responses) to maintain growth.",
+                  "Reactome:R-HSA-196071; MSigDB:HALLMARK_ANDROGEN_RESPONSE"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: The specific estrogenic branch of steroid metabolism should not be functionally increased by a suicide aromatase inhibitor in sensitive tumors; any apparent “up” reflects measurement artifact.",
+                  "Reactome:R-HSA-196071; DrugBank:DB00990"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Adaptive rewiring of steroidogenic enzymes (e.g., increased upstream androgen production) under AI pressure may produce an apparent global increase in steroid metabolism while tumors escape via non-ER pathways.",
+                  "Reactome:R-HSA-196071; MSigDB:HALLMARK_ANDROGEN_RESPONSE"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_ERBB_SIGNALING_PATHWAY": {
+      "description": "Growth factor receptor signaling via ERBB family members (including EGFR/HER2) and downstream proliferative pathways (e.g., MAPK).",
+      "interpretation": "Can provide alternative proliferative/survival signaling that bypasses ER dependence in breast cancer.",
+      "Administration_of_exemestane": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Moderately upregulated HER2/EGFR signaling can coexist with strong ER dependence, so some HER2-low/ER+ tumors still respond well to aromatase inhibition with exemestane.",
+                  "KEGG:hsa04012; Reactome:R-HSA-1227986"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: High ERBB2/EGFR pathway activation in ER+ breast cancer drives ligand-independent proliferation and is a well-described mechanism of endocrine and AI resistance.",
+                  "KEGG:hsa04012; Reactome:R-HSA-1227986; PMID:18381432"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low ERBB signaling leaves ER as the dominant driver of growth, making tumors more dependent on estrogen and typically more responsive to exemestane.",
+                  "KEGG:hsa04012; Reactome:R-HSA-8939211"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: ERBB-low tumors can still be resistant to AI due to downstream PI3K/mTOR activation or loss of ER, despite a “down” HER2/EGFR signature.",
+                  "KEGG:hsa04012; MSigDB:HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Estrogen deprivation can secondarily reduce expression of some ER-regulated growth factor ligands/receptors, leading to partial downregulation of ERBB signaling in responders.",
+                  "KEGG:hsa04012; MSigDB:HALLMARK_ESTROGEN_RESPONSE_EARLY"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: ERBB signaling may transiently fall after estrogen depletion but rebound or be bypassed via other RTKs, so sustained resistance is maintained despite initial pathway downregulation.",
+                  "KEGG:hsa04012; Reactome:R-HSA-1227986"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In a highly inflamed or regressing tumor, increased infiltration of ERBB-expressing non-malignant cells could artifactually raise pathway signatures while the malignant ERBB-driven signaling remains controlled by endocrine therapy.",
+                  "KEGG:hsa04012; MSigDB:REACTOME_ERBB2_SIGNALING"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: In exemestane-resistant cells, amphiregulin/EGFR autocrine loops and HER2 activation upregulate MAPK signaling, allowing growth despite estrogen depletion.",
+                  "KEGG:hsa04012; PMID:18381432; Reactome:R-HSA-1227986"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+      "description": "Core survival and growth signaling axis involving PI3K, AKT, and mTOR that regulates metabolism, protein synthesis, and proliferation.",
+      "interpretation": "A major pro-survival/proliferation program frequently activated in breast cancer and linked to endocrine escape mechanisms.",
+      "Administration_of_exemestane": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some ER+ tumors with PI3K pathway activation remain ER-addicted, so AIs like exemestane can still be effective, although combination with mTOR/PI3K inhibitors yields deeper responses.",
+                  "MSigDB:HALLMARK_PI3K_AKT_MTOR_SIGNALING; NCT00863655 (BOLERO-2)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Hyperactivated PI3K/AKT/mTOR signaling provides estrogen-independent survival and is a classic mechanism of resistance to aromatase inhibition in ER+ breast cancer.",
+                  "MSigDB:HALLMARK_PI3K_AKT_MTOR_SIGNALING; PMID:18381432"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low PI3K/AKT/mTOR signaling reflects reliance on ER-driven mitogenic cues, so depriving estrogen with exemestane is usually highly effective.",
+                  "MSigDB:HALLMARK_PI3K_AKT_MTOR_SIGNALING; Reactome:R-HSA-8939211"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Some ER-low tumors with low bulk PI3K signatures may still resist AIs via alternative pathways (e.g., cyclin E overexpression or EMT), despite a “down” PI3K/AKT score.",
+                  "MSigDB:HALLMARK_PI3K_AKT_MTOR_SIGNALING; MSigDB:HALLMARK_E2F_TARGETS"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Exemestane does not directly target PI3K, but in AI-sensitive tumors, upstream ER withdrawal can secondarily reduce PI3K/mTOR activity accompanying tumor shrinkage.",
+                  "MSigDB:HALLMARK_PI3K_AKT_MTOR_SIGNALING; DrugBank:DB00990"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: In some resistant tumors, proliferation may be maintained via MAPK or cell-cycle alterations even if PI3K pathway activity modestly falls after endocrine therapy.",
+                  "MSigDB:HALLMARK_PI3K_AKT_MTOR_SIGNALING; KEGG:hsa04010"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Sustained upregulation of PI3K/AKT/mTOR signaling in malignant cells is incompatible with durable endocrine sensitivity, as this pathway provides an ER-bypass route; any transient “up” with response is likely non-tumor signal.",
+                  "MSigDB:HALLMARK_PI3K_AKT_MTOR_SIGNALING; NCT00863655"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Adaptive PI3K/AKT/mTOR activation during AI therapy is a hallmark of acquired resistance and rationale for combining exemestane with mTOR/PI3K inhibitors.",
+                  "MSigDB:HALLMARK_PI3K_AKT_MTOR_SIGNALING; NCT00863655; PMID:22169801"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_ANDROGEN_RESPONSE": {
+      "description": "Gene-expression program induced by androgen receptor (AR) signaling and androgen-responsive transcriptional outputs.",
+      "interpretation": "Modulates endocrine biology in ER+ breast cancer and can interact with ER programs affecting tumor behavior.",
+      "Administration_of_exemestane": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: In ER+ breast cancer, robust AR signaling can antagonize ER and promote differentiation, and AR-high status has been associated with better outcomes on AIs including exemestane.",
+                  "MSigDB:HALLMARK_ANDROGEN_RESPONSE; PMID:25667980"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: In some contexts AR can act as an oncogenic driver (e.g., molecular apocrine tumors), where strong androgen-response signatures may correlate with reduced dependence on ER and weaker AI benefit.",
+                  "MSigDB:HALLMARK_ANDROGEN_RESPONSE; PMID:22112903"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Many classical ER+ tumors show modest AR signaling yet remain highly estrogen-dependent, so AIs are effective even with a “down” androgen-response signature.",
+                  "MSigDB:HALLMARK_ANDROGEN_RESPONSE; Reactome:R-HSA-8939211"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: AR-low/ER-low or AR-low/ESR1-mutant tumors may be more aggressive and less endocrine-responsive, producing resistance despite low androgen-response scores.",
+                  "MSigDB:HALLMARK_ANDROGEN_RESPONSE; PMID:22112903"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Exemestane’s mild androgenic activity usually preserves or enhances AR tone; a net drop in androgen-response genes with sensitivity is more likely an indirect effect of tumor regression than a driver.",
+                  "DrugBank:DB00990; MSigDB:HALLMARK_ANDROGEN_RESPONSE"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Loss of AR signaling under AI pressure may remove a counterbalancing brake on proliferation, facilitating outgrowth of more aggressive, endocrine-resistant clones.",
+                  "MSigDB:HALLMARK_ANDROGEN_RESPONSE; PMID:22112903"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Exemestane’s steroidal structure confers weak androgenic activity, and increased AR signaling in ER+ cells can oppose ER and promote apoptosis, enhancing AI sensitivity.",
+                  "DrugBank:DB00990; MSigDB:HALLMARK_ANDROGEN_RESPONSE; PMID:25667980"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: In AR-driven luminal-apocrine–like disease, further androgen-response upregulation may support tumor survival, yielding resistance despite exemestane exposure.",
+                  "MSigDB:HALLMARK_ANDROGEN_RESPONSE; PMID:22112903"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_E2F_TARGETS": {
+      "description": "E2F-driven transcriptional program controlling DNA replication and cell-cycle progression, reflecting active proliferation machinery.",
+      "interpretation": "Represents proliferation state and ER-linked cell-cycle control that is relevant to endocrine-dependent growth.",
+      "Administration_of_exemestane": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: High E2F target expression indicates rapid proliferation; some highly cycling, ER-addicted luminal tumors remain sensitive to estrogen withdrawal with exemestane.",
+                  "MSigDB:HALLMARK_E2F_TARGETS; Reactome:R-HSA-8939211"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Strong E2F-driven cell-cycle activity, often from RB pathway lesions or HER2/PI3K activation, is associated with reduced endocrine control and can mediate resistance to AIs.",
+                  "MSigDB:HALLMARK_E2F_TARGETS; KEGG:hsa04110"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Lower E2F activity in indolent luminal A tumors aligns with strong hormone dependence; such tumors frequently respond well to aromatase inhibition.",
+                  "MSigDB:HALLMARK_E2F_TARGETS; MSigDB:HALLMARK_ESTROGEN_RESPONSE_LATE"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Some endocrine-refractory tumors may appear quiescent at sampling yet harbor resistant clones that expand later, resulting in apparent low E2F signature but poor AI response.",
+                  "MSigDB:HALLMARK_E2F_TARGETS; PMID:25667980"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Estrogen deprivation reduces cyclin D/CDK activity and E2F target expression, causing G1 arrest and contributing to response to exemestane.",
+                  "MSigDB:HALLMARK_E2F_TARGETS; Reactome:R-HSA-8939211; DrugBank:DB00990"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Partial reduction in E2F programs may occur while other survival pathways (PI3K, anti-apoptotic signaling) maintain viability, yielding resistance despite some cell-cycle slowing.",
+                  "MSigDB:HALLMARK_E2F_TARGETS; MSigDB:HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Sustained upregulation of E2F targets in tumor cells is inconsistent with effective growth arrest by endocrine therapy; any increase with sensitivity likely reflects infiltrating non-malignant cycling cells.",
+                  "MSigDB:HALLMARK_E2F_TARGETS; Reactome:R-HSA-8939211"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Failure of cell-cycle arrest with maintained or increased E2F target expression indicates endocrine resistance despite AI therapy.",
+                  "MSigDB:HALLMARK_E2F_TARGETS; KEGG:hsa04110"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_APOPTOSIS": {
+      "description": "Programmed cell death machinery and transcriptional outputs associated with apoptotic signaling cascades.",
+      "interpretation": "Apoptotic competence influences tumor cell fate under endocrine perturbation in ER+ breast cancer.",
+      "Administration_of_exemestane": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Tumors with pre-existing pro-apoptotic priming (high apoptosis gene expression) may be more poised to undergo cell death once estrogen is withdrawn by exemestane.",
+                  "MSigDB:HALLMARK_APOPTOSIS; PMID:18381432"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: High apoptosis signatures can also mark stressed but genomically unstable clones that rapidly adapt and survive AI therapy.",
+                  "MSigDB:HALLMARK_APOPTOSIS; MSigDB:HALLMARK_P53_PATHWAY"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Many ER+ tumors show low baseline apoptosis but are highly dependent on estrogen; AI therapy tips the balance toward apoptosis even from a low starting level.",
+                  "MSigDB:HALLMARK_APOPTOSIS; Reactome:R-HSA-8939211"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Strong anti-apoptotic signaling (e.g., BCL2, survivin) and low apoptosis gene expression confer endocrine resistance, limiting cell death after aromatase inhibition.",
+                  "MSigDB:HALLMARK_APOPTOSIS; MSigDB:HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective exemestane treatment activates intrinsic apoptotic programs in ER+ tumor cells following cell-cycle arrest, reflected by increased apoptosis hallmark activity.",
+                  "MSigDB:HALLMARK_APOPTOSIS; DrugBank:DB00990"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Some non-responding tumors may show partial induction of apoptosis genes without sufficient execution due to strong survival signals, resulting in limited clinical effect.",
+                  "MSigDB:HALLMARK_APOPTOSIS; MSigDB:HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Following profound tumor debulking, bulk apoptosis signatures can fall simply because fewer dying tumor cells remain, even though the tumor was sensitive earlier.",
+                  "MSigDB:HALLMARK_APOPTOSIS"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Lack of apoptosis induction or further suppression of apoptosis genes during exemestane therapy indicates endocrine resistance.",
+                  "MSigDB:HALLMARK_APOPTOSIS; PMID:18381432"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+      "description": "Transcriptional program associated with EMT, including loss of epithelial traits, increased motility, and invasive phenotypes.",
+      "interpretation": "Associated with invasion/metastasis and therapy resistance and can coincide with reduced estrogen dependence.",
+      "Administration_of_exemestane": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some ER+ tumors with partial EMT features can still respond to endocrine therapy, but these are generally less endocrine-responsive than purely epithelial luminal cancers.",
+                  "MSigDB:HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION; PMID:25667980"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: EMT programs are linked to invasion, stemness, and endocrine resistance; EMT-high ER+ tumors frequently show poor responses to AIs.",
+                  "MSigDB:HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION; PMID:25667980"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Classic luminal A tumors with low EMT signatures are more hormone-dependent and typically sensitive to aromatase inhibition.",
+                  "MSigDB:HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION; MSigDB:HALLMARK_ESTROGEN_RESPONSE_LATE"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Endocrine resistance can still arise via ESR1 mutations or PI3K activation in tumors that remain largely epithelial.",
+                  "MSigDB:HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION; MSigDB:HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Successful endocrine therapy can reduce EMT-associated transcription as proliferative, stem-like subclones are pruned, favoring a more epithelial, less invasive state.",
+                  "MSigDB:HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION; DrugBank:DB00990"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Modest EMT signature decreases may occur in some resistant tumors due to clonal shifts, yet key EMT drivers and escape pathways remain active enough to sustain resistance.",
+                  "MSigDB:HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION; PMID:25667980"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Sustained EMT upregulation is incompatible with a durable, endocrine-sensitive luminal phenotype; any EMT increase with apparent response likely reflects transient inflammation or stromal remodeling.",
+                  "MSigDB:HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Under AI pressure, surviving clones often acquire or enhance EMT programs that support invasion, metastasis, and endocrine resistance.",
+                  "MSigDB:HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION; PMID:25667980"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_IL6_JAK_STAT3_SIGNALING": {
+      "description": "Cytokine-driven signaling program centered on IL-6 activation of JAK/STAT3 and downstream inflammatory transcriptional outputs.",
+      "interpretation": "Inflammatory and cytokine signaling can support survival and progression programs in breast cancer.",
+      "Administration_of_exemestane": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some ER+ tumors with inflamed microenvironments (high IL6/STAT3) can still respond to aromatase inhibition, especially if ER dependence remains dominant.",
+                  "MSigDB:HALLMARK_IL6_JAK_STAT3_SIGNALING; GO:0006954"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Chronic IL-6/JAK/STAT3 activation promotes survival, stemness, and endocrine resistance, so IL6-high ER+ tumors often respond poorly to AI monotherapy.",
+                  "MSigDB:HALLMARK_IL6_JAK_STAT3_SIGNALING; PMID:25667980"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low IL-6/STAT3 signaling aligns with a less inflamed, more endocrine-responsive luminal phenotype, favoring good responses to exemestane.",
+                  "MSigDB:HALLMARK_IL6_JAK_STAT3_SIGNALING; MSigDB:HALLMARK_ESTROGEN_RESPONSE_LATE"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Endocrine resistance may still arise via PI3K, ERBB2, or cell-cycle alterations even in tumors with low IL-6 inflammatory signaling.",
+                  "MSigDB:HALLMARK_IL6_JAK_STAT3_SIGNALING; MSigDB:HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Exemestane does not directly target JAK/STAT, but in tumors that shrink, reduced tumor burden and cytokine production can secondarily lower IL6/STAT3 signaling.",
+                  "MSigDB:HALLMARK_IL6_JAK_STAT3_SIGNALING; DrugBank:DB00990"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Some resistant tumors may exhibit stable or slightly reduced IL6 signaling due to microenvironmental changes while maintaining resistance through other pathways.",
+                  "MSigDB:HALLMARK_IL6_JAK_STAT3_SIGNALING; GO:0006954"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: A sustained increase in pro-survival IL6/STAT3 activity in malignant cells is inconsistent with durable endocrine sensitivity; any rise with response likely reflects transient immune activation.",
+                  "MSigDB:HALLMARK_IL6_JAK_STAT3_SIGNALING; GO:0006954"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Adaptive upregulation of IL-6/JAK/STAT3 during AI therapy can promote survival, stemness, and resistance, especially in conjunction with EMT and PI3K activation.",
+                  "MSigDB:HALLMARK_IL6_JAK_STAT3_SIGNALING; MSigDB:HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION; PMID:25667980"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "ESR1",
+    "AR"
+  ],
+  "sensitivity_genes_down": [
+    "EGFR",
+    "ERBB2"
+  ],
+  "resistance_genes_up": [
+    "AREG",
+    "EGFR",
+    "ERBB2",
+    "PIK3CA"
+  ],
+  "resistance_genes_down": [
+    "ESR1",
+    "TP53"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "ESR1",
+      "interpretation": "High estrogen receptor expression and intact hormone signaling are described as sensitizing tumors to estrogen depletion with exemestane."
+    },
+    {
+      "gene": "AR",
+      "interpretation": "Increased androgen receptor signaling (including AR overexpression in ER+ breast cancer) is described as correlating with better outcomes on aromatase inhibitors and may oppose ER activity and induce apoptosis in AI-sensitive cells."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [
+    {
+      "gene": "EGFR",
+      "interpretation": "Tumors lacking EGFR activation are described as relying more on ER signaling and being more responsive to estrogen blockade."
+    },
+    {
+      "gene": "ERBB2",
+      "interpretation": "Low HER2/ERBB signaling (i.e., lacking HER2 activation) is described as increasing reliance on ER signaling and improving responsiveness to estrogen blockade."
+    }
+  ],
+  "resistance_genes_up_annotations": [
+    {
+      "gene": "AREG",
+      "interpretation": "Amphiregulin (AREG) is described as being induced in an ER-dependent loop in exemestane-resistant cells, activating EGFR and downstream MAPK/ERK signaling to drive growth despite estrogen loss."
+    },
+    {
+      "gene": "EGFR",
+      "interpretation": "Upregulation/activation of EGFR signaling is described as a bypass pathway that promotes proliferation despite estrogen deprivation and contributes to aromatase-inhibitor resistance."
+    },
+    {
+      "gene": "ERBB2",
+      "interpretation": "HER2/ERBB pathway activity is described as mediating resistance in HR+/HER2+ contexts and as part of alternate growth pathways that can bypass ER dependency."
+    },
+    {
+      "gene": "PIK3CA",
+      "interpretation": "PI3K/AKT/mTOR activation is described as bypassing ER dependence, with PI3K/AKT upregulation linked to AI resistance and noted to occur via PIK3CA mutation or RTK-driven activation."
+    }
+  ],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "ESR1",
+      "interpretation": "Loss/downregulation of estrogen receptor expression or signaling is described as causing resistance because exemestane has no target when estrogen signaling is absent."
+    },
+    {
+      "gene": "TP53",
+      "interpretation": "Downregulation of apoptotic pathways is described as blunting exemestane’s effect, with p53 loss given as an example mechanism that would reduce apoptosis."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Exemestane|inhibits|CYP19A1",
+    "ESR1_high_expression|confers_sensitivity_to|Exemestane",
+    "AR_overexpression|confers_sensitivity_to|Exemestane",
+    "EGFR_activation|confers_resistance_to|Exemestane",
+    "ERBB2_activation|confers_resistance_to|Exemestane",
+    "AREG_overexpression|confers_resistance_to|Exemestane",
+    "PIK3CA_activation|confers_resistance_to|Exemestane",
+    "ESR1_loss|confers_resistance_to|Exemestane",
+    "TP53_loss|confers_resistance_to|Exemestane",
+    "ESR1_mutation|confers_resistance_to|Exemestane"
+  ],
+  "Breast_cancer_subtype_information": {
+    "HR+/HER2– (Luminal)": "Exemestane is standard therapy in this group. Adjuvant trials (e.g. IES/TEAM) demonstrated benefit for switching to exemestane after tamoxifen. In metastatic HR+/HER2– disease, exemestane with targeted agents (e.g. everolimus or CDK4/6 inhibitors) is recommended.",
+    "HR+/HER2+ (Luminal B/HER2)": "HR+/HER2+ tumors may receive both endocrine and HER2-targeted therapy. Exemestane can be used in HR+/HER2+ cases (often after initial HER2 blockade); HER2 pathway activity can mediate resistance, so combined approaches are studied. For example, combining endocrine therapy with anti-HER2 agents (trastuzumab, lapatinib) may overcome dual signaling.",
+    "TNBC (HR–/HER2–)": "Exemestane is ineffective in triple-negative disease, as there is no estrogen signaling to block. It has no role in standard TNBC therapy.",
+    "gBRCA1/2-mutated": "A recent case report described a gBRCA2-mutated, heavily pretreated HR+/HER2– patient who achieved a 37-month remission on combined PARP inhibitor (fluzoparib) plus exemestane, highlighting that exemestane remains useful if the tumor is ER+. No data suggest that BRCA status alone alters aromatase inhibitor efficacy.",
+    "Other contexts": "Exemestane was studied for breast cancer prevention: in postmenopausal women at risk, exemestane reduced invasive breast cancer incidence by ~65% (off-label use per some guidelines). Exemestane plus ovarian suppression significantly improved disease-free survival in premenopausal HR+ patients compared to tamoxifen."
+  },
+  "citations": [
+    "A review of the use of exemestane in early breast cancer - PMC",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC2697518/](https://pmc.ncbi.nlm.nih.gov/articles/PMC2697518/)",
+    "Exemestane in the adjuvant treatment of breast cancer in postmenopausal women - PubMed",
+    "[https://pubmed.ncbi.nlm.nih.gov/22084574/](https://pubmed.ncbi.nlm.nih.gov/22084574/)",
+    "Exemestane: Uses, Interactions, Mechanism of Action | DrugBank Online",
+    "[https://go.drugbank.com/drugs/DB00990](https://go.drugbank.com/drugs/DB00990)",
+    "Reactome | CYP19A1 binds Aromatase inhibitors",
+    "[https://reactome.org/content/detail/R-HSA-9707353](https://reactome.org/content/detail/R-HSA-9707353)",
+    "label",
+    "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2011/020753s009s011s012lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2011/020753s009s011s012lbl.pdf)",
+    "Exemestane - Wikipedia",
+    "[https://en.wikipedia.org/wiki/Exemestane](https://en.wikipedia.org/wiki/Exemestane)",
+    "Reactome | Metabolism of steroid hormones",
+    "[http://reactome.org/content/detail/R-HSA-196071](http://reactome.org/content/detail/R-HSA-196071)",
+    "Reactome | ESR-mediated signaling",
+    "[https://reactome.org/content/detail/R-HSA-8939211](https://reactome.org/content/detail/R-HSA-8939211)",
+    "KEGG PATHWAY: Estrogen signaling pathway - Homo sapiens (human)",
+    "[https://www.kegg.jp/pathway/hsa04915](https://www.kegg.jp/pathway/hsa04915)",
+    "The role of amphiregulin in exemestane-resistant breast cancer cells: evidence of an autocrine loop -",
+    "PubMed",
+    "[https://pubmed.ncbi.nlm.nih.gov/18381432/](https://pubmed.ncbi.nlm.nih.gov/18381432/)",
+    "Case Report: Fluzoparib combined Exemestane in gBRCA2-mutated HR+/HER2- advanced breast cancer -",
+    "PubMed",
+    "[https://pubmed.ncbi.nlm.nih.gov/41142243/](https://pubmed.ncbi.nlm.nih.gov/41142243/)"
+  ],
+  "notes": "Deep-research output indicates exemestane activity is centered on ER/estrogen dependence (HR+ disease) and is ineffective in TNBC due to absent estrogen signaling. Resistance is described via upregulation of bypass growth/survival pathways (EGFR/HER2-MAPK, PI3K/AKT/mTOR), inflammatory signaling (IL-6/STAT3, TNF/NF-κB), EMT programs, and via ESR1 mutations; loss of ER signaling or reduced apoptosis (e.g., p53 loss) would blunt effect. Contraindications described include premenopausal status without ovarian suppression and pregnancy/nursing."
+}

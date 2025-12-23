@@ -1,0 +1,1114 @@
+{
+  "drug_name": "Atezolizumab",
+  "cancer_indication": "PD-L1–positive unresectable locally advanced or metastatic triple-negative breast cancer (TNBC) in combination with nab-paclitaxel (IMpassion130; indication withdrawn in the US in 2021).",
+  "drug_category": "Immune checkpoint inhibitor",
+  "drug_class": "Anti–PD-L1 humanized IgG1 monoclonal antibody",
+  "moa": "Atezolizumab is a humanized IgG1 monoclonal antibody that blocks PD-L1 (CD274) on tumor and immune cells, preventing PD-L1 from engaging PD-1 on T cells. In breast cancer, its activity is most established in immunogenic TNBC where PD-L1 expression and tumor-infiltrating lymphocytes are present, enabling reactivation of anti-tumor T-cell function. The drug does not directly kill tumor cells; tumor control occurs via restored immune recognition and killing in tumors with a pre-existing but restrained anti-tumor immune response.",
+  "chembl_id": "CHEMBL3707227",
+  "drugbank_id": "DB11595",
+  "synonyms": [
+    "Tecentriq",
+    "Tecentriq Hybryza",
+    "Atezo",
+    "MPDL3280A",
+    "MPDL 3280A",
+    "RG7446"
+  ],
+  "primary_targets": [
+    "CD274"
+  ],
+  "pathway_sets": [
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+    "HALLMARK_ALLOGRAFT_REJECTION",
+    "WP_CANCER_IMMUNOTHERAPY_BY_PD1_BLOCKADE",
+    "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+    "HALLMARK_TGF_BETA_SIGNALING",
+    "GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION",
+    "GOBP_REGULATION_OF_T_CELL_ACTIVATION",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "HALLMARK_HYPOXIA",
+    "KEGG_HOMOLOGOUS_RECOMBINATION",
+    "GOBP_KYNURENINE_METABOLIC_PROCESS",
+    "GOBP_REGULATION_OF_T_CELL_COSTIMULATION"
+  ],
+  "pathway_sets_annotations": {
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+      "description": "Interferon-γ–driven immune activation program that includes interferon-responsive genes involved in antigen presentation and immune chemokine signaling.",
+      "interpretation": "This pathway reflects an immune-inflamed tumor microenvironment in breast cancer, supporting antigen presentation and immune-cell recruitment that underpins response to PD-L1 blockade.",
+      "Administration_of_atezolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: A high IFN-γ/T cell–inflamed signature (CXCL9/10, IDO1, HLA genes; MSigDB HALLMARK_INTERFERON_GAMMA_RESPONSE) reflects pre-existing cytotoxic TILs and antigen presentation, which in TNBC is associated with better response to PD-1/PD-L1 blockade including atezolizumab.",
+                  "Ayers et al., “IFN-γ–related mRNA profile predicts clinical response to PD-1 blockade.” J Clin Invest 2017;127:2930–2940. PMID: 28650338.(PubMed) Keenan et al., genomic correlates of response to ICIs in breast cancer. Nat Med 2019. PMID: 31308507.(Europe PMC) MSigDB HALLMARK_INTERFERON_GAMMA_RESPONSE (M5913).(GSEA MSigDB)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: IFN-γ–high tumors can still be resistant if chronic IFN-γ drives compensatory upregulation of multiple checkpoints (PD-L1, IDO1, LAG3, TIGIT) and T cell exhaustion, a failure pattern described across ICI-treated cancers and occasionally seen in breast cancer.",
+                  "Benci et al., “Opposing Functions of Interferon Coordinate Adaptive and Innate Immune Responses to Cancer Immune Checkpoint Blockade.” Cell 2019. PMID: 30683432.(Cell) Ayers et al. JCI 2017, PMID: 28650338.(PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: IFN-γ–low (“non–T-cell-inflamed”) TNBC lacks primed CD8⁺ T cells and chemokines, predicting primary resistance to PD-1/PD-L1 inhibitors despite PD-L1 testing.",
+                  "Ayers et al. JCI 2017, PMID: 28650338.(PubMed) Keenan et al. Nat Med 2019, breast ICI correlates.(Europe PMC)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: In breast cancer, robust benefit from atezolizumab without pre-existing IFN-γ/T cell–inflamed features is exceedingly unlikely, as cold tumors rarely convert to responders with PD-L1 monotherapy or atezolizumab–chemotherapy alone.",
+                  "Ayers et al. JCI 2017, PMID: 28650338.(PubMed) Han et al., “PD-1/PD-L1 pathway: current researches in cancer.” Cancer Treat Rev 2020. PMID: 32004790."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective PD-L1 blockade reinvigorates tumor-resident T cells, increasing IFN-γ production and expanding the IFN-γ gene signature alongside responses in TNBC (e.g., PD-L1⁺ cohorts in IMpassion130).",
+                  "Schmid et al., “Atezolizumab and nab-paclitaxel in advanced TNBC.” N Engl J Med 2018;379:2108–2121. PMID: 30345906, NCT02425891.(New England Journal of Medicine) Ayers et al. JCI 2017, PMID: 28650338.(PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Some tumors show on-treatment IFN-γ/immune activation but still progress due to adaptive upregulation of alternate checkpoints or myeloid suppressive programs, a pattern reported in melanoma and likely relevant to a subset of TNBC.",
+                  "Benci et al. Cell 2019, PMID: 30683432 (adaptive IFN-γ–driven resistance; cross-cancer extrapolation).(Cell)"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Persistently low or further decreased IFN-γ signature after atezolizumab indicates failure to recruit/activate T cells, corresponding to primary or early acquired resistance in TNBC.",
+                  "Ayers et al. JCI 2017, PMID: 28650338.(PubMed) Keenan et al. Nat Med 2019, PMID: 31308507.(Europe PMC)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In responders, IFN-γ metrics may fall at late timepoints after substantial tumor clearance because antigen load and TCR stimulation drop, even though earlier IFN-γ induction was required for atezolizumab sensitivity.",
+                  "Tumeh et al., “PD-1 blockade induces responses by inhibiting adaptive immune resistance.” Nature 2014. PMID: 24619099 (dynamic CD8/IFN-γ changes; cross-cancer).(Portland Press) Schmid et al. NEJM 2018, PMID: 30345906.(PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_ALLOGRAFT_REJECTION": {
+      "description": "Immune cytotoxicity and lymphocyte activation signature enriched for T-cell and NK-cell effector programs.",
+      "interpretation": "In breast tumors, this signature captures the presence and activity of cytotoxic immune infiltrates that are central to checkpoint inhibitor efficacy.",
+      "Administration_of_atezolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: The HALLMARK_ALLOGRAFT_REJECTION gene set captures a broad T cell–inflamed transcriptional program (Th1 cytokines, cytotoxic genes) that overlaps with IFN-γ/TIS signatures predicting PD-1/PD-L1 benefit, including in TNBC.",
+                  "MSigDB HALLMARK_ALLOGRAFT_REJECTION (C2, Mxxxx).(GSEA MSigDB) Ayers et al. JCI 2017, PMID: 28650338.(PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Strong allo-like immune activation with concurrent dominant suppressive mechanisms (Tregs, MDSCs, multiple checkpoints) may yield a transcriptionally “hot” yet functionally ineffective immune infiltrate.",
+                  "Ayers et al. JCI 2017, PMID: 28650338.(PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low allograft-rejection signature reflects lack of effector T-cell recruitment and inflammatory chemokines, typical of immunologically cold breast tumors that fare poorly with PD-L1 blockade.",
+                  "Han et al., Cancer Treat Rev 2020, PMID: 32004790. Keenan et al. Nat Med 2019.(Europe PMC)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: In the absence of any T cell/allograft-rejection–like transcriptional activity, atezolizumab lacks effector cells to unleash, making true sensitivity highly implausible in breast cancer.",
+                  "Keenan et al. Nat Med 2019 (T cell–inflamed vs non-inflamed ICIs).(Europe PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Clinical responders to PD-1/PD-L1 blockade show expansion and activation of effector T cell/allograft-rejection–like programs on treatment, consistent with atezolizumab-induced immune activation.",
+                  "Tumeh et al. Nature 2014. PMID: 24619099.(Portland Press) Schmid et al. NEJM 2018, PMID: 30345906.(PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: A paradoxical scenario where transcriptomics show allo-rejection–like activation but radiologic progression suggests either immune-excluded niches or compensatory immune escape.",
+                  "Benci et al. Cell 2019, PMID: 30683432 (adaptive resistance; cross-cancer).(Cell)"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Lack of increase or loss of allo-rejection/T cell–inflamed genes under atezolizumab indicates absent or exhausted T-cell engagement and correlates with non-response.",
+                  "Ayers et al. JCI 2017, PMID: 28650338.(PubMed)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: After initial tumor control and immune activation, late samples from responders may show contraction of allo-rejection gene expression as antigen burden decreases.",
+                  "Tumeh et al. Nature 2014. PMID: 24619099 (dynamic immune changes; cross-cancer).(Portland Press)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "WP_CANCER_IMMUNOTHERAPY_BY_PD1_BLOCKADE": {
+      "description": "Checkpoint signaling pathway describing PD-1/PD-L1–mediated inhibition of T-cell activation and its therapeutic blockade.",
+      "interpretation": "This pathway is the core axis targeted by atezolizumab (via PD-L1), and its activity defines immune suppression that can be released by PD-L1 blockade in breast cancer.",
+      "Administration_of_atezolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High expression of genes in WP_CANCER_IMMUNOTHERAPY_BY_PD1_BLOCKADE (WP4585; MSigDB M39843) reflects engaged PD-1 axis and activated T cells, a prerequisite for benefit from PD-L1 blockade in TNBC.",
+                  "MSigDB WP_CANCER_IMMUNOTHERAPY_BY_PD1_BLOCKADE (C2:CP:WIKIPATHWAYS).(New England Journal of Medicine) Han et al. Cancer Treat Rev 2020, PMID: 32004790."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Highly engaged PD-1/PD-L1 signaling can still coexist with intrinsic tumor escape mechanisms (e.g., β-catenin or PTEN loss) that blunt response despite pathway engagement.",
+                  "Spranger et al., β-catenin–driven immune exclusion (melanoma; cross-cancer).(GSEA MSigDB) Keenan et al. Nat Med 2019.(Europe PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low PD-1-axis pathway engagement implies minimal PD-L1/PD-1 interaction at baseline, limiting the therapeutic target for atezolizumab in breast tumors.",
+                  "Han et al. Cancer Treat Rev 2020, PMID: 32004790."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Without PD-1-axis activation, blocking PD-L1 has little mechanistic basis to produce major benefit in TNBC outside of rare stochastic immune re-priming events.",
+                  "Han et al. Cancer Treat Rev 2020."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Atezolizumab (anti-PD-L1 IgG1; DrugBank DB11595, ChEMBL CHEMBL3707227) blocks PD-L1–PD-1/CD80 and promotes expansion of effector T cells and associated PD-1-axis pathway genes when therapy is effective.",
+                  "DrugBank Atezolizumab (DB11595).(DrugBank) ChEMBL CHEMBL3707227.(EMBL-EBI) Roche Tecentriq PD-L1 MOA.(Roche)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: On-treatment PD-1-axis gene upregulation with progression reflects partial re-activation of exhausted T cells that is insufficient to overcome alternative immune checkpoints or stromal exclusion.",
+                  "Benci et al. Cell 2019, PMID: 30683432.(Cell)"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Persistently low or paradoxically decreased PD-1-axis signaling after atezolizumab corresponds to immune-desert TNBC where therapy fails to recruit or maintain effector T cells.",
+                  "Keenan et al. Nat Med 2019.(Europe PMC)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Following an initial phase of pathway hyperactivation and tumor regression, contraction of PD-1-axis gene expression can occur as antigen burden falls while clinical responses are maintained.",
+                  "Tumeh et al. Nature 2014. PMID: 24619099 (dynamic PD-1-axis activation; cross-cancer).(Portland Press)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_WNT_BETA_CATENIN_SIGNALING": {
+      "description": "Wnt ligand–driven β-catenin signaling program implicated in tumor cell state and stromal interactions.",
+      "interpretation": "In breast cancer, Wnt/β-catenin activity is linked to immune exclusion and reduced permissiveness of the tumor microenvironment to effective anti-tumor T-cell infiltration.",
+      "Administration_of_atezolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Tumor-intrinsic Wnt/β-catenin activation excludes BATF3⁺ dendritic cells, preventing CD8⁺ T-cell priming and creating non-T-cell-inflamed tumors resistant to PD-1/PD-L1 blockade; this immune-excluded program, though best shown in melanoma, is also observed in TNBC subsets.",
+                  "Spranger et al., “Tumor-resident β-catenin prevents anti-tumour immunity.” Nature 2015. PMID: 26123020 (melanoma; cross-cancer).(MDPI)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Wnt/β-catenin-high TNBC might still respond if parallel pathways (e.g., strong neoantigen load, HRD) overcome dendritic cell exclusion, but such co-occurrence is atypical.",
+                  "Spranger et al. Nature 2015, PMID: 26123020 (cross-cancer extrapolation).(MDPI)"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: Low Wnt/β-catenin removes one barrier to T-cell priming; resistance in this setting usually implies other dominant suppressive programs (e.g., TGF-β–rich stroma or IDO1).",
+                  "Luke et al., JCO 2019 review on Wnt/β-catenin and ICI resistance (cross-cancer).(GSEA MSigDB)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Wnt/β-catenin-low breast tumors are more permissive for BATF3⁺ dendritic-cell recruitment and CD8⁺ T-cell infiltration, supporting atezolizumab sensitivity when other inflamed features are present.",
+                  "Spranger et al. Nature 2015, PMID: 26123020 (mechanism; cross-cancer).(MDPI)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Under ICI pressure, outgrowth of Wnt/β-catenin-high clones can re-establish dendritic-cell exclusion and drive acquired resistance to PD-L1 blockade.",
+                  "Spranger et al. Nature 2015, PMID: 26123020 (adaptive Wnt-high immune exclusion; cross-cancer).(MDPI)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Sustained upregulation of Wnt/β-catenin after PD-L1 blockade would be expected to counteract T-cell priming and is inconsistent with durable atezolizumab sensitivity in breast cancer.",
+                  "Luke et al. JCO 2019 (Wnt/β-catenin & ICI resistance).(GSEA MSigDB)"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: If Wnt/β-catenin decreases but tumors remain resistant, other pathways (e.g., TGF-β, hypoxia) must dominantly maintain immune exclusion.",
+                  "Mariathasan et al. Nature 2018, PMID: 29443960 (TGF-β immune exclusion; cross-cancer).(PubMed)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Combination strategies or clonal selection that reduce Wnt/β-catenin activity can restore dendritic-cell recruitment and intratumoral CD8⁺ T cells, potentiating atezolizumab benefit.",
+                  "Spranger et al. Nature 2015, PMID: 26123020 (cross-cancer).(MDPI)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_TGF_BETA_SIGNALING": {
+      "description": "TGF-β signaling program regulating fibroblast activation, extracellular matrix remodeling, and immune suppression.",
+      "interpretation": "This pathway contributes to immune-excluded tumor states in breast cancer by promoting stromal barriers and immunosuppressive cues that limit effective immune-cell penetration.",
+      "Administration_of_atezolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: High stromal TGF-β signaling defines an immune-excluded phenotype with peritumoral but not intratumoral CD8⁺ T cells and is associated with poor response to atezolizumab in urothelial cancer and immune-excluded TNBC.",
+                  "Mariathasan et al., “TGFβ attenuates tumour response to PD-L1 blockade by contributing to exclusion of T cells.” Nature 2018. PMID: 29443960 (urothelial, cross-cancer but mechanistically relevant).(PubMed)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: A subset of TGF-β–high TNBC may respond if coexisting features (e.g., very high TMB or strong HRD-driven immunogenicity) partially overcome stromal exclusion, but this is atypical.",
+                  "Mariathasan et al. Nature 2018, PMID: 29443960 (cross-cancer extrapolation).(PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: Low TGF-β removes one barrier to T-cell infiltration; resistance in this context usually reflects alternative suppressive axes (e.g., Wnt/β-catenin, IDO1).",
+                  "Mariathasan et al. Nature 2018, PMID: 29443960.(PubMed)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: TGF-β–low TNBC is less likely to exhibit stromal trapping of T cells and more likely to permit intratumoral CD8⁺ infiltration, favoring atezolizumab sensitivity when PD-L1 and TILs are present.",
+                  "Mariathasan et al. Nature 2018, PMID: 29443960.(PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: On-treatment upregulation of TGF-β/EMT programs under PD-L1 blockade can maintain immune exclusion and is a hallmark of acquired resistance in immune-excluded breast tumors.",
+                  "Mariathasan et al. Nature 2018, PMID: 29443960 (combo anti-TGF-β + anti-PD-L1 restores CD8⁺ infiltration).(PubMed)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Persistent or increasing TGF-β signaling after therapy would be expected to trap T cells in peritumoral stroma and undermine durable atezolizumab benefit.",
+                  "Mariathasan et al. Nature 2018, PMID: 29443960.(PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: If TGF-β signaling decreases but tumors still progress, this implies that other dominant mechanisms (e.g., Wnt, hypoxia, or HR restoration) substitute for TGF-β–mediated exclusion.",
+                  "Clark et al., “Harnessing DNA repair defects to augment immune-based cancer therapy.” Front Oncol 2021. PMID: 34307267 (cross-cancer)."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Decrease in TGF-β signaling, whether by combination therapy or therapy-induced remodeling, correlates with improved CD8⁺ T-cell infiltration and synergy with PD-L1 blockade.",
+                  "Mariathasan et al. Nature 2018, PMID: 29443960.(PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION": {
+      "description": "Processes enabling antigen processing and presentation (including MHC class I presentation) required for T-cell recognition of tumor antigens.",
+      "interpretation": "Effective antigen presentation is fundamental to T-cell–mediated killing in breast cancer immunotherapy; defects in this process enable immune escape despite checkpoint blockade.",
+      "Administration_of_atezolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High expression of MHC-I/II, B2M, TAP, and immunoproteasome genes indicates intact antigen processing/presentation, which supports TIL recruitment and better response to PD-1/PD-L1 inhibitors in TNBC.",
+                  "GO:0019882 antigen processing and presentation.(GSEA MSigDB) Silva et al., “Immune checkpoint inhibitors in tumors harboring HRD.” Cancers 2022. PMID: 35267947 (HRD/antigenicity; cross-cancer).(PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Even with robust antigen presentation, resistance can arise if downstream immune steps fail (e.g., T-cell exclusion via Wnt or TGF-β), but this discordant pattern is uncommon.",
+                  "Zaretsky et al., “Mutations associated with acquired resistance to PD-1 blockade.” NEJM 2016. PMID: 27433843 (B2M/JAK mutations; cross-cancer).(MGI Mouse Genome Informatics)"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low expression of HLA/B2M/TAP in breast tumors mirrors antigen-presentation defects linked to primary resistance to ICIs.",
+                  "Zaretsky et al. NEJM 2016, PMID: 27433843 (B2M loss).(MGI Mouse Genome Informatics)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Without sufficient baseline antigen presentation, there is no efficient TCR recognition, making robust atezolizumab sensitivity implausible outside rare cases of rapid epigenetic re-expression.",
+                  "Han et al. Cancer Treat Rev 2020, PMID: 32004790."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: IFN-γ produced by reinvigorated T cells under PD-L1 blockade upregulates HLA/B2M/TAP and immunoproteasome genes, amplifying antigen presentation and atezolizumab efficacy.",
+                  "Ayers et al. JCI 2017, PMID: 28650338.(PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Restoration of antigen presentation with persistent resistance suggests alternative immune escape (e.g., loss of IFN-γ receptor, dominant myeloid/TGF-β suppression).",
+                  "Zaretsky et al. NEJM 2016, PMID: 27433843.(MGI Mouse Genome Informatics)"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: On-treatment selection for B2M or HLA loss-of-function clones abrogates antigen presentation and leads to acquired resistance to PD-1/PD-L1 blockade.",
+                  "Zaretsky et al. NEJM 2016, PMID: 27433843 (B2M loss under PD-1).(MGI Mouse Genome Informatics)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In principle, effective early responses could eliminate highly antigenic clones, leaving residual low-presentation cells while the patient remains clinically responsive, but this is an uncommon and unstable state.",
+                  "Han et al. Cancer Treat Rev 2020, PMID: 32004790."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "GOBP_REGULATION_OF_T_CELL_ACTIVATION": {
+      "description": "Biological processes that regulate T-cell activation states through cytokines, antigen presentation, and receptor–ligand interactions.",
+      "interpretation": "T-cell activation programs shape whether breast tumors are immune-inflamed versus immune suppressed, influencing the capacity of checkpoint blockade to restore cytotoxic function.",
+      "Administration_of_atezolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Upregulation of genes regulating T-cell activation (GO:0050863; costimulatory receptors, cytokines) in TNBC correlates with high TILs and better outcomes with checkpoint blockade.",
+                  "GO BP: regulation of T-cell activation (GO:0050863).(GSEA MSigDB) Dixon-Douglas et al., “Integrating immunotherapy into the treatment landscape of TNBC.” ASCO Ed Book 2022."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Some breast tumors show high expression of activation regulators but dominance of negative regulators (e.g., CTLA-4, PD-1, LAG3), leading to exhausted T cells and resistance.",
+                  "Han et al. Cancer Treat Rev 2020, PMID: 32004790."
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low expression of genes regulating T-cell activation indicates poor priming and anergic or absent T cells, a typical profile of cold TNBC poorly responsive to atezolizumab.",
+                  "De Santis et al., “Early-stage TNBC: current landscape.” Exploration Targeted Anti-Tumor Therapy 2024."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Without transcriptional evidence of T-cell activation, PD-L1 blockade has no substantial T-cell population to re-engage, making true sensitivity highly unlikely.",
+                  "Ayers et al. JCI 2017, PMID: 28650338.(PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Responders typically show on-treatment upregulation of activation-related genes (CD27, IFNG, GZMB) indicating successful T-cell priming and expansion under PD-L1 blockade.",
+                  "Ayers et al. JCI 2017, PMID: 28650338; “T cell–inflamed GEP.”(PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Persistent expression of activation markers with no tumor shrinkage suggests ineffective or misdirected activation (e.g., Treg or non-tumor-specific T-cell expansion).",
+                  "Benci et al. Cell 2019, PMID: 30683432 (adaptive resistance; cross-cancer).(Cell)"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Failure to induce or sustain T-cell activation genes under atezolizumab indicates lack of immune engagement and matches non-responder transcriptional profiles.",
+                  "Keenan et al. Nat Med 2019.(Europe PMC)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: After a strong but transient activation wave and tumor clearance, late samples can show reduced activation signatures while clinical benefit persists.",
+                  "Tumeh et al. Nature 2014. PMID: 24619099.(Portland Press)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+      "description": "Oncogenic PI3K–AKT–mTOR signaling program controlling cell survival, growth, metabolism, and microenvironmental signaling.",
+      "interpretation": "In breast cancer, PI3K/AKT/mTOR activity is described as contributing to an immune-suppressive milieu and reduced tumor immune infiltration, impacting responsiveness to PD-L1 blockade.",
+      "Administration_of_atezolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Tumor-intrinsic PI3K/AKT/mTOR activation (e.g., PTEN loss, PIK3CA mutations) promotes PD-L1 expression, reduces MHC, and fosters immunosuppressive cytokines, contributing to ICI resistance in breast cancer.",
+                  "Pan-cancer PD-L1 regulation by AKT–mTOR: “Control of PD-L1 expression by oncogenic activation of the AKT–mTOR pathway.” Cancer Res 2016. PMID: 26677869. Prabhu et al., PI3K/AKT/mTOR in breast cancer. Naunyn Schmiedebergs Arch Pharmacol 2025."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Highly proliferative PI3K-activated TNBC may still respond if immunogenic (e.g., HRD, high TMB) and heavily infiltrated by T cells, but oncogenic PI3K generally biases toward immune escape.",
+                  "Silva et al. Cancers 2022 (HRD, PD-L1, ICI).(PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: Low PI3K signaling removes a major oncogenic immune-evasion driver; resistance in this setting usually reflects independent suppressive pathways (e.g., TGF-β, Wnt, IDO1).",
+                  "Quan et al., “Clinical implications of the interaction between PD-1/PD-L1 and PI3K/AKT/mTOR pathway.” J Cancer 2022. PMID: 35370918 (NSCLC; cross-cancer)."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: PI3K-low tumors lack this specific PD-L1-inducing immune-escape axis, so if other inflamed features are present, they are more permissive to atezolizumab response.",
+                  "Prabhu et al. 2025 review PI3K/AKT/mTOR in breast cancer."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: On-treatment hyperactivation of PI3K/AKT/mTOR can upregulate PD-L1 and survival signaling, enabling tumor immune escape and acquired resistance to PD-L1 blockade.",
+                  "Pan et al., “Control of PD-L1 expression by oncogenic activation of the AKT–mTOR pathway.” Cancer Res 2016. PMID: 26677869."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Sustained PI3K/AKT/mTOR upregulation underlies immune evasion and counters the benefits of PD-L1 blockade, so true durable sensitivity with rising PI3K signaling is biologically inconsistent.",
+                  "Quan et al. J Cancer 2022, PMID: 35370918."
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: If PI3K signaling decreases (e.g., via combination with PI3K inhibitors) but resistance persists, other adaptive pathways (e.g., JAK/STAT defects, antigen-presentation loss) likely predominate.",
+                  "Garg et al., “Strategic advancements in targeting PI3K/AKT/mTOR in cancer.” Biochem Pharmacol 2025.(Nature)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Dual reduction in oncogenic PI3K/AKT/mTOR signaling and PD-L1-mediated immune evasion (e.g., via combination regimens) enhances T-cell function and supports atezolizumab sensitivity.",
+                  "Quan et al. J Cancer 2022, PMID: 35370918 (rationale for combining ICIs with PI3K pathway inhibitors)."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_HYPOXIA": {
+      "description": "Hypoxia-response transcriptional program driven by low oxygen stress and associated microenvironmental remodeling.",
+      "interpretation": "Hypoxia-related programs in breast cancer are associated with immune dysfunction and reduced immune-cell infiltration, shaping an environment less favorable for effective checkpoint inhibitor activity.",
+      "Administration_of_atezolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Hypoxia/HIF-1α upregulates PD-L1 and VEGF, recruits MDSCs, and impairs T- and NK-cell function, correlating with poor ICI responses in multiple tumors including TNBC.",
+                  "Chen et al., “Hypoxic microenvironment in cancer.” Sig Transduct Target Ther 2023. PMID: 36859563.(Cell) Khan et al., “Hypoxia: syndicating TNBC against modern therapeutics.” Front Oncol 2023."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: While hypoxia can increase PD-L1 expression (creating a target for atezolizumab), the net effect is typically immunosuppressive; sensitivity in strongly hypoxic TNBC is unusual without vascular/anti-VEGF modulation.",
+                  "Bailey et al., “Targeting HIF-1α abrogates PD-L1–mediated immune escape.” Cancer Immunol Res 2022. PMID: 35338055 (cross-cancer)."
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: Normoxic tumors lacking hypoxic suppression but still resistant to atezolizumab must harbor other dominant immune-evasion pathways.",
+                  "Chen et al. 2023 review, PMID: 36859563.(Cell)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low hypoxia/HIF-1α signaling reduces PD-L1 induction and immunosuppressive metabolites, favoring T-cell function and atezolizumab sensitivity in inflamed TNBC.",
+                  "Obeagu et al., “Hypoxia-inducible factors in breast cancer: prognostic implications.” Ann Med Surg 2025."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Persistent or increased hypoxia under treatment sustains HIF-1α–mediated PD-L1 and VEGF, supporting treatment resistance despite PD-L1 blockade.",
+                  "Chen et al. 2023, PMID: 36859563; Musleh Ud Din et al., hypoxia and immune escape. Int J Mol Sci 2024.(Cell)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Increased hypoxia/HIF-1α post-therapy would be expected to enhance PD-L1 and immunosuppression, opposing durable atezolizumab benefit in breast cancer.",
+                  "Bailey et al. Cancer Immunol Res 2022, PMID: 35338055."
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: If hypoxia lessens yet tumors progress, non-hypoxia-mediated escape (e.g., antigen loss or Wnt activation) must maintain resistance.",
+                  "Clark et al. Front Oncol 2021, PMID: 34307267 (DNA repair & immune; cross-cancer)."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Tumor debulking and vascular remodeling can reduce hypoxia and HIF-1α-driven PD-L1, improving effector T-cell function and consolidating atezolizumab responses.",
+                  "Chen et al. 2023, PMID: 36859563; Khan et al. 2023 TNBC hypoxia review.(Cell)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_HOMOLOGOUS_RECOMBINATION": {
+      "description": "Homologous recombination DNA double-strand break repair pathway (HR) that maintains genome integrity.",
+      "interpretation": "In breast cancer, homologous recombination deficiency is discussed as increasing genomic instability and tumor immunogenicity, providing context for immune engagement relevant to checkpoint inhibitor response.",
+      "Administration_of_atezolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: High expression of HR genes (BRCA1/2, RAD51; KEGG hsa03440) indicates HR-proficient tumors with lower mutational/neoantigen burden, which are generally less immunogenic and less likely to benefit from PD-L1 blockade.",
+                  "KEGG Homologous recombination – Homo sapiens (hsa03440).(Genome 日本) Pellegrino et al., “HRR deficiency and ICI efficacy.” Clin Lung Cancer 2020. PMID: 32035827 (cross-cancer).(Europe PMC)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: There are HR-proficient TNBCs with high TILs and PD-L1 where atezolizumab can still work, but HR proficiency itself does not drive sensitivity and may even oppose it.",
+                  "Telli et al., “HRD across TNBC subtypes and host immunity.” Breast Cancer Res 2018. PMID: 29301592."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: HRD/BRCA1/2-mutated TNBC exhibits genomic instability, higher TMB, more TILs and PD-L1 expression, providing a mechanistic basis for enhanced sensitivity to PD-1/PD-L1 blockade.",
+                  "Silva et al. Cancers 2022. PMID: 35267947.(PubMed) Yndestad et al., “HRD and TILs/PD-L1 across breast cancer.” Genes 2024. PMID: 38200807."
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: HRD with resistance to atezolizumab suggests that suppressive microenvironmental programs (e.g., TGF-β, Wnt, IDO1) can override HRD-driven immunogenicity.",
+                  "Clark et al. Front Oncol 2021, PMID: 34307267 (HRD + immune escape)."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Acquired restoration of HR (e.g., BRCA reversion) can reduce neoantigen generation and support immune escape, contributing to late resistance to ICI-containing regimens.",
+                  "Ali et al., “Genomic features of HRD across breast cancer.” Genes 2024. PMID: 38377965."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Sustained or increased HR capacity would usually diminish immunogenicity; any residual sensitivity likely reflects immune memory generated earlier in an HRD phase.",
+                  "Telli et al. Breast Cancer Res 2018, PMID: 29301592 (cross-cancer reasoning)."
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: Persistent HRD after therapy but progression suggests that immune editing or TME-mediated suppression (e.g., Tregs, MDSCs) outweigh HRD-related immunogenicity.",
+                  "Clark et al. Front Oncol 2021, PMID: 34307267."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Continued HRD maintains neoantigen generation and, combined with sustained immune engagement under PD-L1 blockade, supports durable responses or synergy with DNA-damaging chemotherapy in TNBC.",
+                  "Yndestad et al. Genes 2024, PMID: 38200807. De La Cruz et al., TNBC immune markers and prognosis."
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "GOBP_KYNURENINE_METABOLIC_PROCESS": {
+      "description": "Tryptophan catabolism to kynurenine and related metabolites, a metabolic axis that can modulate immune responses.",
+      "interpretation": "Kynurenine-pathway activity is described as creating a metabolically immunosuppressive environment that can dampen anti-tumor T-cell function in breast cancer.",
+      "Administration_of_atezolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Upregulated tryptophan–kynurenine metabolism (IDO1/TDO2) activates AhR in T cells and promotes Treg and MDSC expansion, which suppress effector immunity and mediate resistance to PD-1/PD-L1 inhibitors; this axis is active in TNBC.",
+                  "GO:0070189 kynurenine metabolic process.(GSEA MSigDB) Zhai et al., IDO1–kynurenine–AhR immune suppression (cross-cancer).(ScienceDirect)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Even though IFN-γ in responders can induce IDO1, pre-existing high kynurenine pathway activity usually signals strong immunosuppression and poor response, with sensitivity only possible if other pro-immune features dominate.",
+                  "Han et al. Cancer Treat Rev 2020, PMID: 32004790."
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low kynurenine metabolism reduces Treg induction and allows more effective CD8⁺ responses under PD-L1 blockade in breast tumors.",
+                  "Zhai et al. IDO1/AhR review (cross-cancer).(ScienceDirect)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Resistance despite low kynurenine signaling implies that other inhibitory circuits (e.g., TGF-β, Wnt, HR restoration) dominate the tumor–immune interface.",
+                  "Clark et al. Front Oncol 2021, PMID: 34307267."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: IFN-γ released after PD-L1 blockade can paradoxically induce IDO1/TDO2 and kynurenine, creating an adaptive resistance loop that dampens T-cell responses.",
+                  "Benci et al. Cell 2019, PMID: 30683432 (adaptive resistance; cross-cancer).(Cell)"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Any increase in kynurenine metabolism in responders would usually be transient and counterbalanced by strong effector T-cell expansion or concomitant IDO1 inhibition.",
+                  "Han et al. Cancer Treat Rev 2020, PMID: 32004790."
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: Reduced kynurenine signaling but continued resistance suggests alternative acquired escape such as antigen loss or stromal exclusion.",
+                  "Clark et al. Front Oncol 2021, PMID: 34307267."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Successful responses may be accompanied by reduced IDO1/TDO2 expression and lower kynurenine, as immunosuppressive feedback loops are disrupted and tumor burden decreases.",
+                  "Zhai et al. (IDO1/AhR; cross-cancer).(ScienceDirect)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "GOBP_REGULATION_OF_T_CELL_COSTIMULATION": {
+      "description": "Processes regulating co-stimulatory signaling necessary for full T-cell activation (e.g., CD28/B7 and cytokine support).",
+      "interpretation": "Adequate co-stimulation is necessary for effective T-cell activation; deficits in co-stimulatory signaling can limit the effectiveness of checkpoint blockade in breast tumors.",
+      "Administration_of_atezolizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High expression of genes regulating T-cell costimulation (CD28/B7 family, TNFR superfamily; GO:2000523) reflects robust antigen-presenting cell–T-cell interactions that favor strong responses to PD-L1 blockade in TNBC.",
+                  "GO BP: regulation of T-cell costimulation (GO:2000523).(GSEA MSigDB) Ayers et al. JCI 2017, costimulatory genes in T cell–inflamed GEP. PMID: 28650338.(PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Costimulatory regulation can be skewed toward inhibitory ligands or dysfunctional APC–T-cell contacts, so a minority of tumors with high costimulation-related transcripts still fail PD-L1 blockade.",
+                  "Han et al. Cancer Treat Rev 2020, PMID: 32004790."
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low costimulation signaling means T cells cannot be effectively primed, limiting the impact of PD-L1 blockade even when PD-L1 is expressed in TNBC.",
+                  "De Santis et al. 2024 TNBC review."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Without costimulatory support, TCR signals remain weak and PD-L1 blockade alone cannot fully activate cytotoxic responses in breast cancer.",
+                  "Han et al. Cancer Treat Rev 2020, PMID: 32004790."
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective atezolizumab can enhance costimulatory circuits (e.g., CD28–CD80/86, CD27, 4-1BB) by relieving PD-L1-mediated inhibition, promoting full T-cell activation.",
+                  "Ayers et al. JCI 2017 (CD27, costimulatory genes in responder signatures). PMID: 28650338.(PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: If costimulation genes rise but tumors still progress, this suggests co-dominant inhibitory receptors (TIM-3, TIGIT, LAG3) or physical exclusion blocking effective tumor killing.",
+                  "Benci et al. Cell 2019, PMID: 30683432.(Cell)"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Failure to sustain costimulatory signaling under therapy indicates T-cell anergy or deletion, consistent with non-response or early relapse after atezolizumab.",
+                  "Han et al. Cancer Treat Rev 2020, PMID: 32004790."
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: After effective tumor clearance, overall immune activation and costimulatory tone can contract while clinical responses persist due to immune memory and minimal residual disease.",
+                  "Tumeh et al. Nature 2014, PMID: 24619099 (dynamic T-cell responses under PD-1 blockade; cross-cancer).(Portland Press)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "CD274",
+    "CXCL9",
+    "CXCL10",
+    "CCL5"
+  ],
+  "sensitivity_genes_down": [
+    "BRCA1",
+    "BRCA2"
+  ],
+  "resistance_genes_up": [
+    "LAG3",
+    "HAVCR2",
+    "CTLA4",
+    "IDO1",
+    "IL10",
+    "VEGFA",
+    "HIF1A",
+    "MYC",
+    "FOXP3",
+    "ARG1",
+    "IL6",
+    "CCR4",
+    "CXCR2"
+  ],
+  "resistance_genes_down": [
+    "B2M",
+    "JAK1",
+    "JAK2",
+    "PTEN",
+    "TAP1",
+    "TAP2",
+    "CD274"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "CD274",
+      "interpretation": "PD-L1 (CD274) expression is described as required for atezolizumab to have a target in breast cancer, and PD-L1–positive TNBC showed benefit in IMpassion130."
+    },
+    {
+      "gene": "CXCL9",
+      "interpretation": "CXCL9 is listed among IFN-γ–responsive genes associated with a T-cell–inflamed tumor state that supports immune-cell recruitment in responding tumors."
+    },
+    {
+      "gene": "CXCL10",
+      "interpretation": "CXCL10 is listed among IFN-γ–responsive genes associated with chemokine-driven lymphocyte trafficking in immune-inflamed breast tumors."
+    },
+    {
+      "gene": "CCL5",
+      "interpretation": "CCL5 is described as a chemokine whose upregulation is associated with recruitment of immune cells into the tumor microenvironment in sensitivity contexts."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [
+    {
+      "gene": "BRCA1",
+      "interpretation": "BRCA1/2-mutated or HRD-high TNBC is described as more immunogenic (higher mutation load/neoantigens and TIL-rich, PD-L1–positive environment), consistent with improved responsiveness to checkpoint blockade in the subtype discussion."
+    },
+    {
+      "gene": "BRCA2",
+      "interpretation": "BRCA1/2-mutated or HRD-high TNBC is described as more immunogenic (higher mutation load/neoantigens and TIL-rich, PD-L1–positive environment), consistent with improved responsiveness to checkpoint blockade in the subtype discussion."
+    }
+  ],
+  "resistance_genes_up_annotations": [
+    {
+      "gene": "LAG3",
+      "interpretation": "Compensatory upregulation of alternative immune checkpoints such as LAG-3 is described as a resistance mechanism after PD-1/PD-L1 axis blockade."
+    },
+    {
+      "gene": "HAVCR2",
+      "interpretation": "TIM-3 (HAVCR2) is described as another checkpoint that can be upregulated in TNBC following PD-1/PD-L1 blockade, contributing to continued T-cell dysfunction."
+    },
+    {
+      "gene": "CTLA4",
+      "interpretation": "CTLA-4 is mentioned as an additional inhibitory pathway that could contribute to residual immune suppression when upregulated."
+    },
+    {
+      "gene": "IDO1",
+      "interpretation": "IDO1 is described as an immunosuppressive enzyme that increases kynurenine and suppresses T-cell proliferation, contributing to resistance under immune pressure."
+    },
+    {
+      "gene": "IL10",
+      "interpretation": "IL-10 is described as an anti-inflammatory cytokine that can dampen immune responses even when PD-L1 is blocked."
+    },
+    {
+      "gene": "VEGFA",
+      "interpretation": "VEGF-A is described as promoting angiogenesis and inhibiting immune-cell trafficking/function, correlating with poorer immunotherapy response."
+    },
+    {
+      "gene": "HIF1A",
+      "interpretation": "Hypoxia programs (linked to HIF-1α activity) are described as associated with immune exclusion and resistance to checkpoint blockade in breast cancer."
+    },
+    {
+      "gene": "MYC",
+      "interpretation": "MYC overexpression is described as fostering immune evasion, including suppression of immune responses and reduced efficacy of checkpoint blockade unless MYC-driven processes are addressed."
+    },
+    {
+      "gene": "FOXP3",
+      "interpretation": "FOXP3+ regulatory T-cell enrichment is described as part of an immunosuppressive tumor microenvironment that reduces atezolizumab efficacy."
+    },
+    {
+      "gene": "ARG1",
+      "interpretation": "ARG1 is listed among myeloid-derived suppressor cell–associated pathways that promote suppressive immune infiltrates and reduce checkpoint inhibitor efficacy."
+    },
+    {
+      "gene": "IL6",
+      "interpretation": "IL-6 is listed among pathways supporting immunosuppressive myeloid programs (MDSC-associated), contributing to resistance contexts."
+    },
+    {
+      "gene": "CCR4",
+      "interpretation": "CCR4 is referenced as a factor involved in Treg recruitment; higher Treg-associated pathways are described as reducing immunotherapy efficacy."
+    },
+    {
+      "gene": "CXCR2",
+      "interpretation": "CXCR2 is described in the context of myeloid/neutrophil (MDSC) recruitment pathways that can suppress effector T-cell activity and reduce checkpoint inhibitor response."
+    }
+  ],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "B2M",
+      "interpretation": "Loss of antigen presentation via B2M disruption is described as allowing tumors to evade T-cell recognition despite checkpoint blockade."
+    },
+    {
+      "gene": "JAK1",
+      "interpretation": "A JAK1 truncating mutation is described in a non-responding TNBC case, consistent with loss of interferon signaling and reduced immune-mediated tumor killing."
+    },
+    {
+      "gene": "JAK2",
+      "interpretation": "Loss of JAK1/2-mediated interferon signaling is described as a resistance route by preventing interferon-driven antigen presentation and related immune responses."
+    },
+    {
+      "gene": "PTEN",
+      "interpretation": "PTEN loss (with increased PI3K pathway signaling) is described as being linked to an immune-cold microenvironment and poorer response to PD-1/PD-L1 blockade."
+    },
+    {
+      "gene": "TAP1",
+      "interpretation": "Loss of antigen-processing machinery components such as TAP transporters is described as an example of antigen presentation pathway downregulation that can drive immune escape."
+    },
+    {
+      "gene": "TAP2",
+      "interpretation": "Loss of antigen-processing machinery components such as TAP transporters is described as an example of antigen presentation pathway downregulation that can drive immune escape."
+    },
+    {
+      "gene": "CD274",
+      "interpretation": "PD-L1–negative tumors are described as having no target for atezolizumab and did not benefit in the PD-L1–negative TNBC subgroup discussion, consistent with resistance when CD274 is low/absent."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Atezolizumab|binds|CD274",
+    "CD274_high|predicts_sensitivity_to|Atezolizumab",
+    "CD274_low|confers_resistance_to|Atezolizumab",
+    "BRCA1_loss|confers_sensitivity_to|Atezolizumab",
+    "BRCA2_loss|confers_sensitivity_to|Atezolizumab",
+    "B2M_loss|confers_resistance_to|Atezolizumab",
+    "JAK1_loss|confers_resistance_to|Atezolizumab",
+    "JAK2_loss|confers_resistance_to|Atezolizumab",
+    "PTEN_loss|confers_resistance_to|Atezolizumab",
+    "LAG3_upregulation|confers_resistance_to|Atezolizumab",
+    "HAVCR2_upregulation|confers_resistance_to|Atezolizumab",
+    "IDO1_upregulation|confers_resistance_to|Atezolizumab"
+  ],
+  "Breast_cancer_subtype_information": {
+    "Triple-Negative Breast Cancer (TNBC)": "This is the only subtype with proven clinical benefit from atezolizumab; IMpassion130 showed PD-L1–positive TNBC derived PFS benefit, with PD-L1 positivity on immune cells (≥1% IC by SP142 assay) required for efficacy.",
+    "Basal-like immune-activated (BLIA) TNBC": "Responded best; characterized by high TILs, PD-L1, and low EMT/stroma.",
+    "Basal-like immune-suppressed (BLIS) TNBC": "Responded poorly; characterized by high TGF-β and low immune infiltration, with immunosuppressive stroma and immune exclusion.",
+    "HR+/HER2– (Luminal) Breast Cancer": "Generally low PD-L1 expression and low TIL levels; trials have shown very low response rates and atezolizumab is not indicated for HR+ disease outside rare clinical trial anecdotes.",
+    "HER2-Positive Breast Cancer": "Combination immunotherapy strategies are investigational; KATE2 (T-DM1 ± atezolizumab) did not meet the primary PFS endpoint overall, with a numerical PFS improvement in the PD-L1+ subgroup reported as small-sample exploratory.",
+    "BRCA-Mutated/HRD+ Cancers": "A significant fraction of TNBC (and some luminal B) tumors have HRD; BRCA/HRD+ status is described as suggestive of an inflamed tumor microenvironment due to more neoantigens, potentially contributing to atezolizumab efficacy, though not all HRD+ tumors have TILs.",
+    "PD-L1–Negative TNBC": "Did not benefit in IMpassion130; described as an immune-cold subset often with low TILs and may require additional interventions to induce inflammation.",
+    "Tumor Mutational Burden (TMB) High Subset": "A minority of breast tumors have very high TMB; such tumors may respond better to PD-1/L1 inhibitors, but this is described as not specifically studied for atezolizumab in breast cancer and remains a rare subset."
+  },
+  "citations": [
+    "Atezolizumab: Uses, Interactions, Mechanism of Action | DrugBank Online",
+    "[https://go.drugbank.com/drugs/DB11595](https://go.drugbank.com/drugs/DB11595)",
+    "KEGG DRUG: Atezolizumab",
+    "[https://www.kegg.jp/entry/D10773](https://www.kegg.jp/entry/D10773)",
+    "Atezolizumab in metastatic triple-negative breast cancer - ESMO Open",
+    "[https://www.esmoopen.com/article/S2059-7029(20)32770-8/fulltext](https://www.esmoopen.com/article/S2059-7029%2820%2932770-8/fulltext)",
+    "Atezolizumab and Nab-Paclitaxel in Advanced Triple-Negative Breast Cancer -",
+    "PubMed",
+    "[https://pubmed.ncbi.nlm.nih.gov/30345906/](https://pubmed.ncbi.nlm.nih.gov/30345906/)",
+    "Roche Withdraws Atezolizumab PD-L1–Positive Metastatic TNBC Indication in the United",
+    "States | OncLive",
+    "[https://www.onclive.com/view/roche-withdraws-atezolizumab-pd-l1-positive-metastatic-tnbc-indication-in-the-united-states](https://www.onclive.com/view/roche-withdraws-atezolizumab-pd-l1-positive-metastatic-tnbc-indication-in-the-united-states)",
+    "Still the Standard of Care for Metastatic Triple-Negative Breast Cancer",
+    "[https://dailynews.ascopubs.org/do/chemoimmunotherapy-still-standard-care-metastatic-triple-negative-breast-cancer](https://dailynews.ascopubs.org/do/chemoimmunotherapy-still-standard-care-metastatic-triple-negative-breast-cancer)",
+    "Compound: ATEZOLIZUMAB (CHEMBL3707227) - ChEMBL",
+    "[https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL3707227](https://www.ebi.ac.uk/chembl/explore/compound/CHEMBL3707227)",
+    "atezolizumab | Ligand page | IUPHAR/BPS Guide to PHARMACOLOGY",
+    "[https://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId=7990](https://www.guidetopharmacology.org/GRAC/LigandDisplayForward?ligandId=7990)",
+    "Mechanisms of action and acquired resistance to",
+    "atezolizumab plus nab-paclitaxel in metastatic triple negative breast cancer (mTNBC)",
+    "[https://www.cuba.dialogoroche.com/content/dam/roche-dialogo/global-assets/downloadable-assets/congresos-y-eventos/](https://www.cuba.dialogoroche.com/content/dam/roche-dialogo/global-assets/downloadable-assets/congresos-y-eventos/)",
+    "oncology/roche-asco-2022/07-oncology-annual-meeting-2022-poster-molinero-mechanisms-of-action-and-acquired-resistance-to￾atezolizumab.pdf",
+    "[PDF] The Tumor Microenvironment and Atezolizumab + nab-Paclitaxel ...",
+    "[https://www.cuba.dialogoroche.com/content/dam/roche-dialogo/global-assets/downloadable-assets/oncology/roche-asco-2021/](https://www.cuba.dialogoroche.com/content/dam/roche-dialogo/global-assets/downloadable-assets/oncology/roche-asco-2021/)",
+    "presentaciones/oncology-annual-meeting-2021-presentation-emens-the-tumor-microenvironment-TME-and-atezolizumab-nab￾paclitaxel-A-nP-activity-in-metastatic-triple-negative-breast-cancer.pdf",
+    "PD-L1 Blockade by Atezolizumab Downregulates Signaling Pathways",
+    "Associated with Tumor Growth, Metastasis, and Hypoxia in Human Triple Negative Breast Cancer",
+    "[https://www.mdpi.com/2072-6694/11/8/1050](https://www.mdpi.com/2072-6694/11/8/1050)",
+    "Homologous Recombination Repair Deficiency and the Immune ...",
+    "[https://www.sciencedirect.com/science/article/pii/S1936523319304954](https://www.sciencedirect.com/science/article/pii/S1936523319304954)",
+    "First-Line Ipatasertib, Atezolizumab, and Taxane Triplet for ...",
+    "[https://aacrjournals.org/clincancerres/article/30/4/767/734225/First-Line-Ipatasertib-Atezolizumab-and-Taxane](https://aacrjournals.org/clincancerres/article/30/4/767/734225/First-Line-Ipatasertib-Atezolizumab-and-Taxane)",
+    "Frontiers | Wnt Inhibition Sensitizes PD-L1 Blockade Therapy by Overcoming Bone Marrow￾Derived Myofibroblasts-Mediated Immune Resistance in Tumors",
+    "[https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2021.619209/full](https://www.frontiersin.org/journals/immunology/articles/10.3389/fimmu.2021.619209/full)",
+    "PD-L1 Blockade by Atezolizumab Downregulates Signaling Pathways Associated with Tumor Growth,",
+    "Metastasis, and Hypoxia in Human Triple Negative Breast Cancer - PubMed",
+    "[https://pubmed.ncbi.nlm.nih.gov/31349612/](https://pubmed.ncbi.nlm.nih.gov/31349612/)",
+    "The role of tumor microenvironment and immune cell crosstalk in ...",
+    "[https://www.sciencedirect.com/science/article/pii/S030438352500432X](https://www.sciencedirect.com/science/article/pii/S030438352500432X)",
+    "DailyMed - TECENTRIQ- atezolizumab injection, solution",
+    "[https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee](https://dailymed.nlm.nih.gov/dailymed/lookup.cfm?setid=6fa682c9-a312-4932-9831-f286908660ee)",
+    "Recent progress in immune evasion mechanisms of triple-negative ...",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC12624998/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12624998/)",
+    "WNT signaling modulates PD-L1 expression in the stem cell ...",
+    "[https://www.nature.com/articles/s41388-019-0700-2](https://www.nature.com/articles/s41388-019-0700-2)",
+    "IDO Inhibition Facilitates Antitumor Immunity of Vγ9Vδ2 T Cells in ...",
+    "[https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2021.679517/full](https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2021.679517/full)",
+    "Mechanisms and Strategies to Overcome PD-1/PD-L1 Blockade ...",
+    "[https://www.mdpi.com/2072-6694/15/1/104](https://www.mdpi.com/2072-6694/15/1/104)",
+    "Combinatorial immunotherapies overcome MYC-driven immune ...",
+    "[https://www.nature.com/articles/s41467-022-31238-y](https://www.nature.com/articles/s41467-022-31238-y)",
+    "Immune-related biomarkers in triple-negative breast cancer",
+    "[https://link.springer.com/article/10.1007/s12282-021-01247-8](https://link.springer.com/article/10.1007/s12282-021-01247-8)",
+    "Genomic and Immune Profiling of a Patient With Triple-Negative ...",
+    "[https://ascopubs.org/doi/10.1200/PO.18.00335](https://ascopubs.org/doi/10.1200/PO.18.00335)",
+    "Genentech Withdraws Breast Cancer Indication From Tecentriq",
+    "[https://www.breastcancer.org/research-news/genentech-withdraws-breast-cancer-indication-from-tecentriq](https://www.breastcancer.org/research-news/genentech-withdraws-breast-cancer-indication-from-tecentriq)",
+    "5th ESO-ESMO international consensus guidelines for advanced ...",
+    "[https://www.annalsofoncology.org/article/S0923-7534(20)42460-3/fulltext](https://www.annalsofoncology.org/article/S0923-7534%2820%2942460-3/fulltext)",
+    "Peri-operative atezolizumab in early-stage triple-negative breast ...",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC12283416/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12283416/)",
+    "Adjuvant Atezolizumab Plus Chemo Does Not Add Survival Benefit ...",
+    "[https://www.cancernetwork.com/view/adjuvant-atezolizumab-plus-chemo-does-not-add-survival-benefit-in-tnbc](https://www.cancernetwork.com/view/adjuvant-atezolizumab-plus-chemo-does-not-add-survival-benefit-in-tnbc)",
+    "NCT06175390 | Tiragolumab, Atezolizumab and Chemotherapy in ...",
+    "[https://clinicaltrials.gov/study/NCT06175390](https://clinicaltrials.gov/study/NCT06175390)"
+  ],
+  "notes": "All fields were populated using only the provided deep-research output and the user-supplied pathway list; pathways not present in the curated PATHWAY_LIST were not included in pathway_sets. Source files:  "
+}

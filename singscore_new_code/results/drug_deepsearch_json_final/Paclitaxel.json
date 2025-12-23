@@ -20,7 +20,7 @@
 "HALLMARK_INTERFERON_GAMMA_RESPONSE",
 "REACTOME_NFKB_AND_MAP_KINASES_ACTIVATION_MEDIATED_BY_TLR4_SIGNALING_REPERTOIRE",
 "REACTOME_PI3K_AKT_SIGNALING",
-"KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION (incl. IL6/IL8)",
+"KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION",
 "KEGG_ABC_TRANSPORTERS",
 "REACTOME_CELL_CYCLE",
 "HALLMARK_ANGIOGENESIS"
@@ -50,7 +50,7 @@
 "description": "PI3K/AKT survival signaling that promotes cell survival and can protect cells from apoptosis.",
 "interpretation": "PI3K/AKT signaling is a major pro-survival axis in breast cancer that supports growth and cell survival under therapeutic stress."
 },
-"KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION (incl. IL6/IL8)": {
+"KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION": {
 "description": "Cytokine signaling network including IL-6/IL-8 and related cytokine–receptor interactions that can create autocrine signaling loops.",
 "interpretation": "Cytokine signaling can modulate tumor–microenvironment interactions and tumor cell survival/progression programs in breast cancer."
 },

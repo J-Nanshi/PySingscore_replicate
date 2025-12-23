@@ -1,0 +1,785 @@
+{
+  "drug_name": "Elacestrant",
+  "cancer_indication": "ER-positive, HER2-negative, ESR1-mutated advanced or metastatic breast cancer after progression on at least one line of endocrine therapy including prior CDK4/6 inhibitor exposure",
+  "drug_category": "Endocrine therapy",
+  "drug_class": "Selective estrogen receptor degrader (SERD)",
+  "moa": "Elacestrant is an oral, non-steroidal SERD that binds estrogen receptor alpha (ESR1/ERα), acts as a high-affinity antagonist, and promotes ubiquitin–proteasome–mediated degradation of ER in ER-positive breast-cancer cells. This reduces ER protein levels and estrogen-responsive transcriptional programs that drive proliferation and survival in luminal (HR+/HER2–) disease, including tumors with activating ESR1 ligand-binding domain mutations that emerge under aromatase inhibitor therapy. In preclinical ER+ models, including endocrine-resistant and CDK4/6 inhibitor–resistant patient-derived xenografts, elacestrant suppresses estrogen-response gene sets, downregulates cell-cycle effectors, induces cell-cycle arrest, and maintains antitumor activity where ER signaling remains a key dependency.",
+  "chembl_id": "CHEMBL4297509",
+  "drugbank_id": "DB06374",
+  "synonyms": [
+    "Orserdu",
+    "RAD1901",
+    "ER-306323"
+  ],
+  "primary_targets": [
+    "ESR1"
+  ],
+  "pathway_sets": [
+    "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+    "KEGG_MEDICUS_REFERENCE_NUCLEAR_INITIATED_ESTROGEN_SIGNALING_PATHWAY",
+    "WP_ESTROGEN_SIGNALING",
+    "HALLMARK_ESTROGEN_RESPONSE_LATE",
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_G2M_CHECKPOINT",
+    "HALLMARK_MTORC1_SIGNALING",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "KEGG_ERBB_SIGNALING_PATHWAY",
+    "HALLMARK_APOPTOSIS"
+  ],
+  "pathway_sets_annotations": {
+    "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+      "description": "Gene set representing estrogen-response transcriptional programs regulated by ERα in hormone-responsive breast-cancer cells.",
+      "interpretation": "In ER+/HER2– breast cancer, these early estrogen-response genes capture ER-dependent signaling that underlies luminal tumor proliferation; elacestrant antagonizes and degrades ERα, leading to broad suppression of these signatures in responsive and ESR1-mutated models.",
+      "Administration_of_elacestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High HALLMARK_ESTROGEN_RESPONSE_EARLY in ER+/HER2− luminal tumors reflects strong ER transcriptional dependence. Elacestrant, an oral SERD, degrades ERα and suppresses early estrogen-regulated genes, and EMERALD shows greatest benefit in ESR1-mut/ER-dependent disease.",
+                  "EMERALD: NCT03778931; PMID:35584336; PMID:28473534; PMID:36446866; PMID:27269946; MSigDB:HALLMARK_ESTROGEN_RESPONSE_EARLY"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Extremely high estrogen-response with co-existing ESR1 LBD mutations plus PI3K/AKT hyperactivation or RB1 loss can drive partial ER independence, so even with ER degradation tumors may remain endocrine-refractory.",
+                  "PMID:27986707; PMID:30205045; PMID:33375317; PMID:34298731; PMID:35584336"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some “low-ER-score” luminal A tumors may still retain functional ER in a subset of clones; elacestrant can suppress residual ER signaling and prevent outgrowth of ESR1-mut subclones, giving modest but real benefit.",
+                  "PMID:27269946; PMID:28473534; PMID:36446866; PMID:35584336"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: ER-low/basal-like or lineage-switched tumors show little estrogen-response at baseline and are largely ER-independent, so SERDs (including elacestrant) provide minimal benefit.",
+                  "PMID:30205045; PMID:6788940 (review of ESR1/ER loss); PMID:33375317"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: In responders, elacestrant degrades ERα, reduces ER binding and profoundly downregulates early estrogen-response genes in PDX and clinical biopsies, consistent with on-target SERD activity and tumor regression.",
+                  "PMID:28473534; PMID:36446866; PMID:33513026; PMID:35584336"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: ER program is suppressed but tumors escape via alternative survival circuits (e.g., PI3K/AKT, FGFR, cyclin E–CDK2), producing cytostatic but not cytotoxic effects and eventual progression despite a low estrogen-response signature.",
+                  "PMID:30205045; PMID:33375317; PMID:34298731; PMID:34298731"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Sustained increase in early ER-regulated transcription despite continuous SERD dosing implies lack of ER engagement or assay artifact; such a pattern would contradict true pharmacodynamic response and would not be associated with sensitivity.",
+                  "Conceptual PD argument; EMERALD PK/PD: PMID:32661909; label: ORSERDU FDA label 2023"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (signature-level): Persistent or rebound estrogen-response (e.g., due to ESR1 Y537S/D538G, ER splice variants or drug-tolerant ER pools) indicates pharmacodynamic failure; these tumors show primary or acquired resistance to elacestrant.",
+                  "PMID:27986707; PMID:36446866; PMID:27269946; PMID:30205045"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_MEDICUS_REFERENCE_NUCLEAR_INITIATED_ESTROGEN_SIGNALING_PATHWAY": {
+      "description": "KEGG-based nuclear estrogen signaling pathway encompassing ER-mediated regulation of gene expression in response to estrogen.",
+      "interpretation": "ER-driven estrogen signaling supports growth and survival of luminal ER+/HER2– tumors and often remains active in ESR1-mutated disease after aromatase inhibitors; elacestrant targets this nuclear ER signaling axis by degrading ERα and reducing estrogen-dependent transcription.",
+      "Administration_of_elacestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: Strong nuclear ER signaling (ligand-dependent ESR1 transcriptional program) typifies classical endocrine-sensitive ER+ disease; elacestrant effectively disrupts this nuclear ER axis and improves PFS vs SOC ET in such patients. ",
+                  " PMID:35584336; PMID:33513026; PMID:28473534 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Highly activated nuclear ER signaling driven by activating ESR1 mutations plus co-amplified co-activators (e.g., FOXA1, NCOR loss) can reduce SERD potency, conferring relative SERD resistance even with a high nuclear ER signature. ",
+                  " PMID:27986707; PMID:36446866; PMID:30205045; PMID:6788940 "
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Modestly low nuclear ER signaling but persistent ER dependence (e.g., low E2 environment, partial ER silencing) may still be exploitable by SERD therapy, especially in combination with CDK4/6 inhibition. ",
+                  " PMID:28473534; PMID:31852484; PMID:33513026 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: When nuclear ER signaling is already low from ER loss, promoter methylation or lineage switch (basal-like/NE-like), elacestrant has little target and is unlikely to provide benefit. ",
+                  " PMID:30205045; PMID:6788940 "
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: PD studies with FES-PET and biopsies show marked reduction of nuclear ER availability and downstream transcription after elacestrant, aligning with tumor responses and clinical benefit. ",
+                  " PMID:28473534; PMID:36446866; PMID:32661909; NCT03778931 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Nuclear ER signaling is suppressed but alternative transcriptional drivers (AP-1, NF-κB, growth-factor–driven ER-independent programs) maintain proliferation, yielding clinical resistance despite apparently adequate ER degradation. ",
+                  " PMID:30205045; PMID:33375317; PMID:34298731 "
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically not possible: A true increase in nuclear ER signaling in the presence of an active SERD would mean ER degradation is not occurring; sensitivity under these conditions is not biologically consistent. ",
+                  "PMID:35923930; PMID:30205045 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate (signature-level): Rebound nuclear ER signaling (e.g., via emergent ESR1 mutations or clonal selection) under elacestrant pressure is a hallmark of acquired SERD resistance and predicts poor outcomes. ",
+                  " PMID:27986707; PMID:36446866; PMID:27269946; PMID:30205045 "
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "WP_ESTROGEN_SIGNALING": {
+      "description": "Estrogen signaling pathway centered on ERα-dependent regulation of estrogen-responsive gene expression.",
+      "interpretation": "This pathway reflects the broader ER-regulated transcriptional network in ER+/HER2– breast cancer; its persistent activity, particularly in tumors with ESR1 mutations, marks continued ER dependence that can be disrupted by elacestrant-mediated ER degradation.",
+      "Administration_of_elacestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: High WP_ESTROGEN_SIGNALING (integrated genomic + non-genomic ER plus growth-factor crosstalk) in HR+ tumors still largely dependent on ER makes them ideal candidates for elacestrant, often with additional benefit from CDK4/6 or PI3K inhibition. ",
+                  " PMID:35584336; PMID:36446866; PMID:33375317 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Strong ER/non-genomic signaling plus HER2/EGFR activation and PI3K/AKT hyperactivity can drive partial ER independence; in such “hyper-wired” tumors, ER degradation alone gives limited control and combination targeted therapy is needed. ",
+                  " PMID:33375317; PMID:34298731; PMID:30205045; PMID:41523-023-00533-2 (HER2/ER crosstalk) "
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Some luminal tumors show modest estrogen-signaling scores due to prior AI exposure but remain partially ER-addicted; elacestrant can resuppress residual ER activity and delay outgrowth of resistant clones. ",
+                  " PMID:28473534; PMID:31852484; PMID:27269946 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: When both genomic and non-genomic ER signaling are low (e.g., ER-negative/basal or heavily dedifferentiated HR+ tumors), elacestrant lacks a meaningful target and response is unlikely. ",
+                  " PMID:30205045; PMID:6788940 "
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: Effective ER degradation reduces both nuclear signaling and membrane-proximal ER crosstalk with RTKs (e.g., HER2, IGF1R), lowering WP_ESTROGEN_SIGNALING scores and correlating with tumor control. ",
+                  " PMID:36446866; PMID:28473534; PMID:33375317; PMID:35584336 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: WP_ESTROGEN_SIGNALING falls, but tumors rapidly rewire to HER2, FGFR, or GPCR-driven growth independent of ER, producing resistant disease despite suppression of the canonical estrogen pathway. ",
+                  " PMID:30205045; PMID:33375317; PMID:34298731; PMID:41523-023-00533-2 "
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically not possible: True biological upregulation of net estrogen signaling in the presence of pharmacodynamically active elacestrant would mean failure of ER occupancy/degradation; such a profile is incompatible with genuine sensitivity. ",
+                  "PMID:35923930; PMID:30205045 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate (signature-level): Increased or persistent estrogen-signaling scores after treatment reflect ineffective ER targeting or emergence of ER variants, defining primary or acquired resistance. ",
+                  " PMID:27986707; PMID:36446866; PMID:27269946; PMID:30205045 "
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_ESTROGEN_RESPONSE_LATE": {
+      "description": "Gene set capturing late estrogen-response genes regulated downstream of sustained ERα activity.",
+      "interpretation": "Late estrogen-response signatures form part of the extended ER transcriptional program maintaining luminal identity and proliferation in ER+ disease; endocrine-relapsed tumors often show reduced activity of these gene sets, whereas elacestrant-responsive tumors exhibit marked on-treatment downregulation.",
+      "Administration_of_elacestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: High late estrogen-response (cell-cycle/proliferation-linked ER program) in luminal B–like tumors indicates ER-driven proliferation; SERD-mediated shutdown of this late program underlies elacestrant activity, especially with CDK4/6i. ",
+                  "PMID:35584336; PMID:28473534; PMID:36446866; PMID:31852484 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Very high late estrogen-response plus RB1 loss or CCNE1 amplification can render tumors E2F-driven and only partially ER-dependent, so SERD monotherapy may underperform without added CDK or PI3K pathway blockade. ",
+                  " PMID:30205045; PMID:34298731; PMID:33375317 "
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate (indolent luminal): Low late ER-response in luminal A tumors reflects slower cycling but preserved ER dependence; elacestrant can durably maintain suppression with relatively modest PD changes. ",
+                  " PMID:27269946; PMID:35584336; PMID:28473534 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Late ER program is low because the tumor has already shifted to ER-independent cell-cycle drivers (e.g., MAPK, HER2, PI3K); these tumors often show endocrine resistance and limited benefit from elacestrant. ",
+                  " PMID:30205045; PMID:33375317 "
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: In responding lesions, elacestrant reduces late estrogen-response and G1/S transition genes, consistent with arrest and regression, especially where ER-E2F coupling is intact. ",
+                  " PMID:36446866; PMID:28473534; PMID:33513026 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Late ER-response falls but parallel pathways (e.g., CDK2/cyclin E or MYC) maintain proliferation, yielding clinical resistance despite low hallmark scores. ",
+                  " PMID:30205045; PMID:33375317; PMID:34298731 "
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically not possible: Increased late ER-responsive transcription under SERD exposure would indicate lack of target engagement; such a pattern would be incompatible with true sensitivity to elacestrant. ",
+                  "PMID:35923930; PMID:32661909 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate (signature-level): Rebound in late ER-response and cycling genes after an initial drop indicates acquired resistance with restoration of ER signaling or E2F uncoupling from ER control. ",
+                  " PMID:27986707; PMID:30205045; PMID:36446866 "
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_E2F_TARGETS": {
+      "description": "Gene set of E2F transcription factor targets involved in G1–S transition, DNA replication, and cell-cycle progression.",
+      "interpretation": "In ER+/HER2– breast cancer, ER signaling promotes cyclin D–CDK4/6 and E2F-regulated cell-cycle programs; elacestrant downregulates key cell-cycle proteins and suppresses E2F-target gene expression in CDK4/6 inhibitor–resistant models, contributing to cell-cycle arrest.",
+      "Administration_of_elacestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Moderately high E2F targets in ER+ tumors with intact RB can still be ER-driven; SERD plus CDK4/6 blockade is particularly effective in this context, but elacestrant monotherapy alone may only partially control proliferation. ",
+                  "PMID:31852484; PMID:35584336; PMID:30205045 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Marked E2F upregulation driven by RB1 loss, CCNE1 amplification or CDK2 activation is a key endocrine-resistance mechanism; these tumors are poorly controlled by ER-directed agents including elacestrant. ",
+                  " PMID:30205045; PMID:36446866; PMID:33375317 "
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: Low E2F-target expression reflects indolent luminal A biology with intact cell-cycle checkpoints, where ER dependence is high and SERDs remain highly effective. ",
+                  " PMID:27269946; PMID:35584336 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Rare ER+ tumors with low cycling but strong survival signaling (e.g., PI3K, BCL2) may show endocrine resistance despite quiescent E2F signatures. ",
+                  " PMID:33375317; PMID:34298731 "
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: In sensitive tumors, elacestrant reduces E2F-target transcription as ER-driven cyclin D/CDK4/6 signaling is diminished, translating into cell-cycle arrest. ",
+                  " PMID:28473534; PMID:36446866; PMID:31852484 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Some cells enter a reversible quiescent state with low E2F but survive via autophagy or alternative survival pathways, leading to eventual regrowth despite suppressed E2F targets. ",
+                  " PMID:30205045; PMID:33375317 "
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically not possible: A durable increase in E2F-target expression after ER degradation is incompatible with true antiproliferative response; it would indicate that the dominant driver is no longer ER and that cells will not be genuinely sensitive. ",
+                  " Conceptual cell-cycle logic; ER+ resistance genomics: PMID:30205045 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Adaptive upregulation of E2F targets (via RB loss or cyclin E upregulation) after initial SERD exposure is a recognized escape route and marks acquired resistance. ",
+                  " PMID:30205045; PMID:36446866; PMID:33375317 "
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_G2M_CHECKPOINT": {
+      "description": "Gene set comprising regulators of the G2/M checkpoint and mitotic entry within the cell cycle.",
+      "interpretation": "Hyperactive G2/M checkpoint and cell-cycle gene sets support uncontrolled proliferation in ER+ tumors; elacestrant-induced ER blockade is associated with suppression of G2/M and broader cell-cycle signatures and with growth inhibition in ER+ and CDK4/6 inhibitor–resistant models.",
+      "Administration_of_elacestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Highly proliferative ER+ luminal B tumors with intact checkpoints may respond to ER removal, but maximal benefit often requires combination (CDK4/6 or chemo); elacestrant alone may yield partial sensitivity. ",
+                  "PMID:31852484; PMID:35584336 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Marked G2/M upregulation often reflects aggressive, genomically unstable disease with multiple non-ER drivers (e.g., TNBC-like or HER2-amp), where SERD monotherapy has limited impact. ",
+                  " PMID:30205045; PMID:33375317 "
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: ER+ tumors with low G2/M activity are less proliferative but still hormone-driven, so SERDs can maintain durable control without needing to counteract strong G2/M signaling. ",
+                  " PMID:27269946; PMID:35584336 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Some slow-cycling but endocrine-resistant clones (e.g., with ESR1 mutation plus PI3K activation) show low G2/M signatures yet do not respond to ER-directed therapy. ",
+                  " PMID:27269946; PMID:30205045; PMID:33375317 "
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: In responders, ER downregulation leads to reduced S-phase entry and G2/M checkpoint activation, consistent with decreased mitoses and tumor shrinkage. ",
+                  " PMID:28473534; PMID:36446866 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Even with decreased G2/M signaling, some cells may persist in a dormant state with later reactivation, producing radiologic stability followed by late progression. ",
+                  " PMID:30205045; PMID:33375317 "
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically not possible: Sustained increase in G2/M signature post-SERD, without other interventions, represents ongoing proliferation and is inconsistent with a truly sensitive phenotype. ",
+                  " General cell-cycle logic; endocrine resistance overviews: PMID:33375317; PMID:34298731 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: G2/M signature maintenance or increase after elacestrant indicates ER-independent proliferative control (e.g., via HER2 or PI3K/AKT), and associates with poor response. ",
+                  " PMID:30205045; PMID:33375317; PMID:34298731 "
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_MTORC1_SIGNALING": {
+      "description": "Gene set associated with mTORC1 pathway activation as part of the PI3K/AKT/mTOR signaling network.",
+      "interpretation": "PI3K/AKT/mTOR pathway activation is described as a canonical driver of endocrine resistance in ER+ breast cancer via ER-independent survival signaling; preclinical work combining elacestrant with mTOR inhibition (e.g., everolimus) shows enhanced antitumor activity, highlighting this pathway as an important resistance and combination target context.",
+      "Administration_of_elacestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Some ER+ tumors with moderate mTORC1 activation remain ER-addicted; they can benefit from elacestrant but are ideal candidates for combination with mTOR or PI3K/AKT inhibitors. ",
+                  "PMID:33375317; PMID:34298731; PMID:35584336 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Strong mTORC1 activation (via PIK3CA mutation, PTEN loss, RTK activation) is a classic endocrine-resistance pathway, blunting efficacy of ER-targeted agents including SERDs when used alone. ",
+                  " PMID:33375317; PMID:34298731; PMID:34298731; PMID:38561964 "
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: Low mTORC1 implies limited growth-factor or nutrient-sensing bypass; ER remains the dominant driver and SERD monotherapy can be highly effective. ",
+                  " PMID:33375317; PMID:35584336 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: A subset of endocrine-resistant tumors may evade ER targeting via MAPK/FGFR or epigenetic rewiring without overt mTORC1 activation, so low mTORC1 does not guarantee sensitivity. ",
+                  " PMID:30205045; PMID:33375317 "
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate (indirect): By shutting down ER-driven RTK and growth-factor signaling, elacestrant can secondarily decrease mTORC1 activity in sensitive tumors, aligning with improved outcomes. ",
+                  " PMID:28473534; PMID:36446866; PMID:33375317 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: mTORC1 falls but cells rely on alternative survival circuits (e.g., autophagy, MAPK), leading to disease stabilization rather than objective responses. ",
+                  " PMID:34298731; PMID:33375317 "
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically not possible: Persistent mTORC1 upregulation after SERD treatment promotes protein synthesis and survival, incompatible with genuine drug sensitivity. ",
+                  " Logic from PI3K/mTOR biology; PMID:33375317; PMID:34298731 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Adaptive mTORC1 upregulation (e.g., via insulin/IGF1R signaling) after ER blockade is a known escape route underlying poor response to endocrine therapy alone. ",
+                  " PMID:33375317; PMID:34298731; PMID:38561964 "
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+      "description": "Gene set summarizing activity of the PI3K–AKT–mTOR signaling axis in tumor cells.",
+      "interpretation": "PI3K/AKT/mTOR signaling is frequently altered in endocrine-resistant ER+ metastatic breast cancer and provides ER-independent survival signals; combination studies of elacestrant with PI3K or mTOR inhibitors and class-level endocrine-resistance data underscore the relevance of this pathway for both resistance biology and rational combinations.",
+      "Administration_of_elacestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Moderately elevated PI3K/AKT/mTOR signaling can coexist with ER dependence; such tumors often require ER plus PI3K/AKT pathway inhibition for optimal control, so elacestrant alone yields partial but not maximal sensitivity. ",
+                  "PMID:33375317; PMID:34298731; PMID:35584336 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Strong PI3K/AKT activation (PIK3CA mutation, PTEN loss) is a central endocrine-resistance driver; elacestrant monotherapy is commonly insufficient without co-targeting PI3K/AKT. ",
+                  "PMID:33375317; PMID:34298731; PMID:34298731; PMID:38561964 "
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: Low PI3K/AKT/mTOR signaling indicates minimal growth-factor bypass; ER remains dominant, and SERDs achieve robust and durable disease control. ",
+                  " PMID:33375317; PMID:35584336 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Rare tumors may be driven by alternative pathways (e.g., MAPK, FGFR) with low PI3K signal yet show endocrine resistance. ",
+                  " PMID:30205045; PMID:33375317 "
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate (indirect): In responding tumors, ER shutdown leads to reduced RTK signaling and downstream PI3K/AKT, aligning with improved PFS and deeper responses. ",
+                  " PMID:28473534; PMID:36446866; PMID:33375317 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: PI3K/AKT signature decreases modestly, but compensatory survival mechanisms (altered metabolism, autophagy) maintain viability, so clinical benefit is limited. ",
+                  " PMID:34298731; PMID:33375317 "
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically not possible: Sustained upregulation of PI3K/AKT/mTOR signaling promotes survival and is incompatible with genuine endocrine/SERD sensitivity. ",
+                  " Conceptual; PI3K resistance: PMID:33375317; PMID:34298731; PMID:38561964 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Adaptive activation of PI3K/AKT after ER blockade is a classic resistance loop that undermines elacestrant monotherapy. ",
+                  " PMID:33375317; PMID:34298731; PMID:34298731 "
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_ERBB_SIGNALING_PATHWAY": {
+      "description": "KEGG ErbB signaling pathway involving HER family receptors (e.g., HER2/ERBB2, EGFR) and their downstream cascades.",
+      "interpretation": "Endocrine-resistant ER+ breast cancers often show increased RTK/ERBB activity and HER2-enriched transcriptomic features, with reduced benefit from ER-targeted therapy; such RTK/ErbB signaling shifts are discussed as escape routes from ER dependence that may limit the impact of ER degradation by elacestrant when they dominate tumor biology.",
+      "Administration_of_elacestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: In HR+/HER2-low tumors with modest ERBB signaling, ER remains a key driver; elacestrant can be beneficial, especially when combined with HER2-directed agents in HR+/HER2+ disease. ",
+                  "PMID:37258523; PMID:35584336 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Strong HER2/ERBB activation (HER2+ or HER3-driven) promotes ligand-independent ER phosphorylation and endocrine resistance, making SERD monotherapy inadequate. ",
+                  " PMID:37258523; PMID:30205045; PMID:33375317 "
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: In HER2-negative, ER-driven tumors with low ERBB signaling, elacestrant effectively targets the dominant ER axis. ",
+                  " PMID:35584336; PMID:37258523 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Resistance may arise via non-ERBB drivers (PI3K, FGFR, MAPK) despite low ERBB signature, limiting elacestrant benefit. ",
+                  " PMID:30205045; PMID:33375317 "
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate (indirect): ER degradation can reduce ER-dependent HER2/HER3 transcription and feedback RTK signaling, leading to decreased ERBB pathway activity in sensitive HR+/HER2-low tumors. ",
+                  " PMID:36446866; PMID:37258523 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: ERBB signature decreases but parallel RTKs (e.g., FGFR, IGF1R) maintain downstream PI3K/AKT, producing only modest benefit. ",
+                  " PMID:33375317; PMID:34298731; PMID:37258523 "
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically not possible: True upregulation of HER2/ERBB signaling while maintaining durable sensitivity to ER degradation is biologically inconsistent; such tumors typically escape endocrine control. ",
+                  " Mechanistic logic; HER2/ER crosstalk review: PMID:37258523 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Adaptive ERBB upregulation after ER blockade (HER2/HER3 “bounce-back”) is a recognized escape route driving resistance to endocrine therapy and SERDs. ",
+                  " PMID:37258523; PMID:30205045; PMID:33375317 "
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_APOPTOSIS": {
+      "description": "Gene set including core mediators and regulators of programmed cell death pathways.",
+      "interpretation": "ER blockade via SERDs, including elacestrant, is associated with engagement of apoptotic machinery in ER-dependent models and tumor regression; endocrine-resistant states often show diminished pro-apoptotic signaling, indicating that effective activation of apoptosis downstream of ER and cell-cycle inhibition is an important determinant of treatment response.",
+      "Administration_of_elacestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: Tumors with a primed apoptotic machinery (e.g., intact p53, pro-apoptotic BH3 expression) can undergo apoptosis once ER-dependent survival signaling is removed by elacestrant. ",
+                  "PMID:28473534; PMID:36446866 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Despite a pro-apoptotic gene signature, high anti-apoptotic BCL2/BCL-XL or strong PI3K signaling can block cell death, yielding relative resistance to ER-directed therapy. ",
+                  " PMID:33375317; PMID:34298731 "
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Some ER+ tumors with low basal apoptosis can still be pushed into apoptosis when ER is removed, especially in combination with CDK4/6 or BCL2 inhibitors. ",
+                  " PMID:28473534; PMID:31852484 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Apoptosis-low, survival-high signatures (high BCL2, MCL1, XIAP) associate with poor endocrine response; elacestrant alone may mainly cause cytostasis. ",
+                  " PMID:33375317; PMID:34298731 "
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically not possible: A decrease in apoptotic signaling after ER deprivation would not plausibly underlie true sensitivity; durable benefit requires at least maintained, if not increased, apoptotic priming. ",
+                  " Class logic; SERD PD: PMID:35923930; PMID:28473534 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Tumors that upregulate anti-apoptotic programs (BCL2/BCL-XL, MCL1) or downregulate pro-apoptotic genes after SERD exposure evade cell death and present as resistant. ",
+                  " PMID:33375317; PMID:34298731 "
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: In responders, elacestrant reduces ER-mediated survival signaling and can increase expression or activation of pro-apoptotic effectors, leading to tumor cell apoptosis in PDX and clinical biopsies. ",
+                  " PMID:28473534; PMID:36446866; PMID:33513026 "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Transient apoptosis upregulation may occur in a subset of cells, but selection of resistant clones or strong compensatory survival signaling leads to overall clinical resistance. ",
+                  " PMID:30205045; PMID:33375317 "
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "ESR1"
+  ],
+  "sensitivity_genes_down": [],
+  "resistance_genes_up": [],
+  "resistance_genes_down": [
+    "ESR1"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "ESR1",
+      "interpretation": "Activating ESR1 ligand-binding domain mutations (for example Y537S and D538G) maintain high ER transcriptional activity and strong estrogen-response signatures under estrogen deprivation; in the phase III EMERALD trial, tumors with ESR1 mutations derived greater progression-free survival benefit from elacestrant than ESR1 wild-type disease, and ESR1-mutated, endocrine-resistant patient-derived xenografts showed marked suppression of estrogen-response programs and tumor growth on elacestrant, supporting mutant ERα signaling as a sensitivity-associated state."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [],
+  "resistance_genes_up_annotations": [],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "ESR1",
+      "interpretation": "Endocrine-relapsed ER+ breast cancers frequently show downregulation of early and late estrogen-response gene sets and may exhibit ER loss or marked ER downregulation, which is described as a mechanism of resistance to SERMs and SERDs; the deep-research output notes that elacestrant requires ERα for binding and degradation and that tumors evolving ER loss or very low estrogen-response activity are intrinsically resistant, implying that reduced ESR1 expression and signaling confers resistance to elacestrant."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Elacestrant|antagonizes_and_degrades|ESR1",
+    "ESR1_mutation|confers_sensitivity_to|Elacestrant",
+    "ESR1_loss|confers_resistance_to|Elacestrant"
+  ],
+  "Breast_cancer_subtype_information": {
+    "HR+/HER2– (Luminal A/B)": "All robust elacestrant clinical data (phase I, EMERALD) and approvals are in ER+/HER2– advanced or metastatic disease. EMERALD: post-CDK4/6i population; elacestrant vs fulvestrant/AI, with PFS benefit overall and particularly in ESR1-mutated tumors. Preclinical PDX models encompass AI-resistant, fulvestrant-resistant, CDK4/6i-resistant ER+ tumors and support efficacy across ESR1 WT and mutant settings.",
+    "HER2-positive": "No approved indications or phase III trials of elacestrant in HER2-positive disease. HER2-amplified ER+ tumors may have reduced ER-dependence and greater reliance on ERBB signaling; endocrine/SERD benefit is context-dependent and generally secondary to anti-HER2 therapy. Evidence for elacestrant: insufficient → no validated sensitivity or resistance mechanisms specific to HER2-positive breast cancer.",
+    "Triple-negative breast cancer (TNBC)": "TNBC is generally ER-negative; ER is absent or negligible, eliminating the pharmacologic target for elacestrant. No meaningful clinical or preclinical evidence supports elacestrant use in TNBC; any observed ER expression in a “TNBC” label would likely reclassify the tumor biologically as ER+.",
+    "gBRCA1/2-mutated / HRD+": "While gBRCA/HRD status strongly predicts PARP inhibitor benefit, there is no evidence that it directly modulates elacestrant sensitivity beyond its association with luminal biology in some ER+ tumors. No specific elacestrant–BRCA/HRD interaction has been established."
+  },
+  "citations": [
+    "Bardia, A., et al. (2021). Phase I study of elacestrant (RAD1901) in ER-positive, HER2-\nnegative advanced breast cancer. Journal of Clinical Oncology, 39(12), 1360–1370. \nPMID: 33513026.",
+    "Bidard, F.-C., et al. (2022). Elacestrant versus standard endocrine monotherapy for ER-\npositive, HER2-negative metastatic breast cancer (EMERALD): a phase 3 randomized \ntrial. Journal of Clinical Oncology. PMID: 35584336. NCT03778931.",
+    "Bardia, A., et al. (2024). Elacestrant in ER-positive, HER2-negative metastatic breast \ncancer with ESR1 mutations: Subgroup analyses from EMERALD. Clinical Cancer \nResearch, 30(19), 4299–4312. PMID: 39087959.",
+    "Bihani, T., et al. (2017). Elacestrant (RAD1901), a selective estrogen receptor degrader, \nhas antitumor activity in multiple ER-positive breast cancer models. Clinical Cancer \nResearch, 23(16), 4793–4804. PMID: 28473534.",
+    "Patel, H. K., et al. (2019). Elacestrant (RAD1901) demonstrates antitumor activity in \nCDK4/6 inhibitor–resistant ER-positive breast cancer models. Breast Cancer Research, \n21, 146. PMID: 31801598.",
+    "Pancholi, S., et al. (2022). Elacestrant shows strong anti-estrogenic activity in \nendocrine-resistant and fulvestrant-resistant ER-positive breast cancer patient-derived \nxenografts. NPJ Breast Cancer, 8, 121. PMID: 36317934.",
+    "Rani, A., et al. (2019). Endocrine resistance in hormone receptor-positive breast cancer: \nAn overview. Frontiers in Endocrinology, 10, 245. PMID: 31133803.",
+    "Li, Z., et al. (2024). The EstroGene2.0 database for endocrine therapy response and \nresistance in breast cancer. bioRxiv. [https://doi.org/10.1101/2024.06.28.601163](https://doi.org/10.1101/2024.06.28.601163).",
+    "Clusan, L., et al. (2023). A basic review on estrogen receptor signaling pathways in \nbreast cancer. International Journal of Molecular Sciences, 24(7), 6834. PMID: \n37048255.",
+    "Nath, A., et al. (2022). ENDORSE: A prognostic model for endocrine therapy in ER-\npositive breast cancer. Molecular Systems Biology, 18(4), e10558. PMID: 35318601.",
+    "Hoy, S. M. (2023). Elacestrant: First approval. Drugs, 83(7), 633–639. PMID: 36849468.",
+    "Varella, L., et al. (2023). Evaluating elacestrant in the management of ER-positive, \nHER2-negative metastatic breast cancer. Cancers (Basel), 15(6), 1779. PMID: \n36901578.",
+    "Shah, M., et al. (2024). Elacestrant for estrogen receptor–positive, human epidermal \ngrowth factor receptor 2–negative advanced breast cancer. The Oncologist, 29(3), e239–\ne248. PMID: 38376373.",
+    "Hageman, E., et al. (2024). Elacestrant for ER-positive, HER2-negative advanced breast \ncancer with ESR1 mutations. Annals of Pharmacotherapy, 58(11), 1193–1205. PMID: \n37994211.",
+    "Gheysen, M., et al. (2024). Oral SERDs changing the landscape in hormone receptor–\npositive metastatic breast cancer. Cancer Treatment Reviews. PMID: 39227547.",
+    "Fan, Z., et al. (2025). Post-marketing safety profile of elacestrant in breast cancer. BMC \nPharmacology and Toxicology, 26(x). PMID: 39929820.",
+    "Ribas, R., et al. (2015). AKT antagonist AZD5363 influences estrogen receptor function \nin endocrine-resistant breast cancer and synergizes with fulvestrant in vivo. Molecular \nCancer Therapeutics, 14(9), 2035–2048. PMID: 26206984.",
+    "Palaniappan, M., et al. (2024). Current therapeutic opportunities for estrogen receptor \nalpha–positive breast cancer. Biomedicines, 12(12), 2700. PMID: 39689175."
+  ],
+  "notes": "JSON fields are derived directly from the provided deep-research output for elacestrant in human ER+/HER2– breast cancer; ESR1 is the only gene with explicit, repeated gene-level sensitivity and resistance associations, while PI3K/AKT/mTOR and ERBB/RTK pathways are treated at the pathway/class level rather than as individual gene biomarkers. Most adaptive resistance and combination insights (e.g., with PI3K, mTOR, and CDK4/6 inhibitors) are supported by preclinical endocrine-resistance literature and early clinical data and should be interpreted in that context. "
+}

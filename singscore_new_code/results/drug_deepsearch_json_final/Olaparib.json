@@ -29,58 +29,48 @@
 "REACTOME_FANCONI_ANEMIA_PATHWAY",
 "REACTOME_BASE_EXCISION_REPAIR"
 ],
-"pathway_sets_annotations": [
-{
-"pathway_name": "REACTOME_HOMOLOGOUS_RECOMBINATION",
+"pathway_sets_annotations": {
+"REACTOME_HOMOLOGOUS_RECOMBINATION": {
 "description": "High-fidelity double-strand break repair pathway requiring BRCA1/BRCA2 and other HR factors (e.g., RAD51) to repair replication-associated DNA damage.",
-"interpretation": "Olaparib’s therapeutic rationale in breast cancer is strongly tied to tumors with homologous recombination repair dysfunction (HRD) and the capacity (or lack thereof) to resolve DSBs created downstream of PARP inhibition; tumors can evolve adaptations that restore HR capacity."
+"interpretation": "Olaparib's therapeutic rationale in breast cancer is strongly tied to tumors with homologous recombination repair dysfunction (HRD) and the capacity (or lack thereof) to resolve DSBs created downstream of PARP inhibition; tumors can evolve adaptations that restore HR capacity."
 },
-{
-"pathway_name": "REACTOME_NONHOMOLOGOUS_END_JOINING_NHEJ",
+"REACTOME_NONHOMOLOGOUS_END_JOINING_NHEJ": {
 "description": "Error-prone DSB repair pathway influenced by 53BP1/RIF1/Shieldin-mediated control of DNA end resection and pathway choice between NHEJ vs HR.",
 "interpretation": "Alterations in NHEJ pathway components can shift repair pathway choice and modulate the functional HR state in BRCA1-deficient contexts, impacting how tumors tolerate DNA lesions associated with PARP inhibition."
 },
-{
-"pathway_name": "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+"HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
 "description": "Core growth/survival signaling axis (PI3K→AKT→mTOR) that promotes cellular survival programs and can influence DNA-damage tolerance and repair-associated transcriptional states.",
 "interpretation": "This pathway is relevant to breast-cancer cell survival under genotoxic stress and is discussed as a compensatory survival network in the setting of PARP inhibition, providing rationale for combination strategies that co-target PI3K/AKT signaling in selected contexts."
 },
-{
-"pathway_name": "HALLMARK_INTERFERON_ALPHA_RESPONSE",
-"description": "Type I interferon gene program reflecting innate immune activation, including interferon-stimulated genes downstream of cGAS–STING signaling.",
-"interpretation": "PARP inhibitor–associated DNA damage can engage innate immune sensing pathways and Type I interferon signaling, supporting immune-mediated tumor control and providing rationale for combinations involving immunotherapy or STING-pathway activation (notably highlighted in BRCA-associated breast cancer models)."
+"HALLMARK_INTERFERON_ALPHA_RESPONSE": {
+"description": "Type I interferon gene program reflecting innate immune activation, including interferon-stimulated genes downstream of cGAS-STING signaling.",
+"interpretation": "PARP inhibitor-associated DNA damage can engage innate immune sensing pathways and Type I interferon signaling, supporting immune-mediated tumor control and providing rationale for combinations involving immunotherapy or STING-pathway activation (notably highlighted in BRCA-associated breast cancer models)."
 },
-{
-"pathway_name": "REACTOME_ABCFAMILY_PROTEINS_MEDIATED_TRANSPORT",
+"REACTOME_ABCFAMILY_PROTEINS_MEDIATED_TRANSPORT": {
 "description": "ATP-binding cassette (ABC) transporter-mediated drug transport/efflux processes (e.g., ABCB1/P-gp, ABCG2) that reduce intracellular exposure to substrates.",
 "interpretation": "Drug-efflux mechanisms are a key pharmacologic determinant of tumor drug exposure and are highlighted as an important resistance-related process that can also drive cross-resistance with other agents."
 },
-{
-"pathway_name": "REACTOME_ACTIVATION_OF_ATR_IN_RESPONSE_TO_REPLICATION_STRESS",
+"REACTOME_ACTIVATION_OF_ATR_IN_RESPONSE_TO_REPLICATION_STRESS": {
 "description": "Replication-stress response pathway centered on ATR-dependent checkpoint signaling (including CHK1) that stabilizes stalled replication forks and coordinates cell-cycle arrest/repair.",
 "interpretation": "Because PARP inhibition induces replication stress and DNA lesions, ATR-mediated checkpoint activation is a major tumor stress-response pathway discussed in the report as relevant to how tumor cells survive ongoing DNA damage and as a combination target (e.g., ATR/DDR inhibition strategies)."
 },
-{
-"pathway_name": "HALLMARK_APOPTOSIS",
+"HALLMARK_APOPTOSIS": {
 "description": "Programmed cell-death execution programs, including intrinsic apoptotic priming and pro-apoptotic effectors (e.g., BAX, PUMA, BIM) downstream of DNA damage signaling.",
-"interpretation": "The report frames apoptosis competence as an important determinant of whether PARP-inhibitor–induced DNA damage culminates in irreversible tumor cell death, with subtype context noted (e.g., functional p53 in some ER+ settings; alternative death routes in p53-mutant tumors)."
+"interpretation": "The report frames apoptosis competence as an important determinant of whether PARP-inhibitor-induced DNA damage culminates in irreversible tumor cell death, with subtype context noted (e.g., functional p53 in some ER+ settings; alternative death routes in p53-mutant tumors)."
 },
-{
-"pathway_name": "HALLMARK_P53_PATHWAY",
+"HALLMARK_P53_PATHWAY": {
 "description": "p53-mediated DNA damage response program integrating checkpoint control and apoptosis induction following genotoxic stress.",
 "interpretation": "The report emphasizes p53 pathway status as relevant to how tumors respond to accumulated DNA damage (cell-cycle arrest vs apoptosis vs tolerance), noting that p53 loss is common in TNBC and can influence damage tolerance and evolutionary routes under treatment pressure."
 },
-{
-"pathway_name": "REACTOME_FANCONI_ANEMIA_PATHWAY",
+"REACTOME_FANCONI_ANEMIA_PATHWAY": {
 "description": "Fanconi anemia DNA repair network that resolves interstrand crosslinks and interfaces with homologous recombination processes (e.g., via FANCA/FANCD2 and related factors).",
 "interpretation": "FA pathway integrity is discussed as relevant to broader DNA repair vulnerability states in breast cancer (HRD/DDR deficiency contexts) that intersect with PARP inhibitor mechanisms."
 },
-{
-"pathway_name": "REACTOME_BASE_EXCISION_REPAIR",
+"REACTOME_BASE_EXCISION_REPAIR": {
 "description": "Base excision repair/single-strand break repair processes in which PARP1/2 detect DNA damage and recruit repair factors via PARylation.",
 "interpretation": "This is the direct mechanistic repair pathway perturbed by olaparib through PARP1/2 inhibition and PARP trapping, linking upstream repair blockade to downstream accumulation of cytotoxic lesions in susceptible tumor contexts."
 }
-],
+},
 "sensitivity_genes_up": [
 "SLFN11",
 "BAX",
@@ -138,11 +128,11 @@
 "Breast_cancer_subtype_information": [
 {
 "subtype": "TNBC / basal-like (especially gBRCA1-associated)",
-"description": "Highlighted as the archetype of responsiveness in the report: BRCA-mutant TNBC is emphasized as inherently HR-deficient, with olaparib inducing profound DNA damage, apoptosis, and growth arrest. The report also notes subtype-specific immune context where BRCA-mutant TNBC can show stronger cGAS–STING/Type I interferon signaling and immune recruitment, supporting response and combination rationale. It additionally notes TP53 pathway suppression is common in TNBC and can affect damage tolerance/evolution under PARP inhibition."
+"description": "Highlighted as the archetype of responsiveness in the report: BRCA-mutant TNBC is emphasized as inherently HR-deficient, with olaparib inducing profound DNA damage, apoptosis, and growth arrest. The report also notes subtype-specific immune context where BRCA-mutant TNBC can show stronger cGAS-STING/Type I interferon signaling and immune recruitment, supporting response and combination rationale. It additionally notes TP53 pathway suppression is common in TNBC and can affect damage tolerance/evolution under PARP inhibition."
 },
 {
-"subtype": "HR+/HER2− (Luminal; including BRCA2-mutant and selected luminal B with HRD)",
-"description": "The report states hormone receptor–positive HER2-negative cancers with BRCA2 mutations can benefit, while ER+/HER2− tumors without HRD are inherently insensitive. It also describes that luminal tumors may be more immunologically “cold,” potentially limiting benefit from IFN/immune-inflammatory mechanisms relative to TNBC."
+"subtype": "HR+/HER2- (Luminal; including BRCA2-mutant and selected luminal B with HRD)",
+"description": "The report states hormone receptor-positive HER2-negative cancers with BRCA2 mutations can benefit, while ER+/HER2- tumors without HRD are inherently insensitive. It also describes that luminal tumors may be more immunologically “cold,” potentially limiting benefit from IFN/immune-inflammatory mechanisms relative to TNBC."
 },
 {
 "subtype": "HER2-positive",
@@ -150,7 +140,7 @@
 },
 {
 "subtype": "gBRCA1/2-mutated / HRD-positive (biomarker-defined across subtypes)",
-"description": "Across subtypes, the report emphasizes olaparib as targeted therapy for the DNA repair–defective subset (germline BRCA1/2-mutant; broader HRD/BRCAness contexts). It states FDA approval in HER2-negative metastatic and adjuvant early-stage settings contingent on deleterious BRCA mutation and describes guideline-driven patient selection via germline BRCA testing."
+"description": "Across subtypes, the report emphasizes olaparib as targeted therapy for the DNA repair-defective subset (germline BRCA1/2-mutant; broader HRD/BRCAness contexts). It states FDA approval in HER2-negative metastatic and adjuvant early-stage settings contingent on deleterious BRCA mutation and describes guideline-driven patient selection via germline BRCA testing."
 }
 ],
 "citations": [

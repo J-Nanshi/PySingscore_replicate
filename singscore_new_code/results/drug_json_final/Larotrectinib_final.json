@@ -1,0 +1,370 @@
+{
+  "drug_name": "Larotrectinib",
+  "cancer_indication": "Breast cancer with an NTRK gene fusion (notably secretory breast carcinoma with ETV6–NTRK3); otherwise off-label unless the tumor tests NTRK-fusion positive.",
+  "drug_category": "Targeted kinase inhibitor",
+  "drug_class": "TRK inhibitor",
+  "moa": "Larotrectinib is an orally available small-molecule inhibitor of TRKA/TRKB/TRKC (NTRK1/2/3) that occupies the ATP pocket of TRK fusion proteins, preventing autophosphorylation and downstream signaling. In NTRK fusion–positive breast cancers (most notably secretory breast carcinoma), constitutively active TRK signaling drives PI3K–AKT and RAS–MAPK pathways; larotrectinib blocks these oncogenic signals, leading to tumor growth arrest and apoptosis. Its activity is described as relevant only in tumors driven by an NTRK fusion, with minimal effect in tumors lacking NTRK fusions.",
+  "chembl_id": "CHEMBL3889654",
+  "drugbank_id": "DB14723",
+  "synonyms": [
+    "ARRY-470",
+    "BAY-2733344 (BAY-2757556)",
+    "LOXO-101",
+    "ARRY 470",
+    "Vitrakvi®"
+  ],
+  "primary_targets": [
+    "NTRK1",
+    "NTRK2",
+    "NTRK3"
+  ],
+  "pathway_sets": [
+    "REACTOME_SIGNALING_BY_NTRKS",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "HALLMARK_KRAS_SIGNALING_UP",
+    "HALLMARK_APOPTOSIS"
+  ],
+  "pathway_sets_annotations": {
+    "REACTOME_SIGNALING_BY_NTRKS": {
+      "description": "Canonical TRK receptor signaling pathway (TRKA/TRKB/TRKC) and downstream effectors including PI3K/AKT and RAS/MAPK signaling modules.",
+      "interpretation": "In NTRK fusion–positive breast cancers (e.g., secretory carcinoma), TRK signaling is constitutively active and functions as a dominant oncogenic driver pathway.",
+      "Administration_of_larotrectinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (breast cancer): NTRK fusion–driven breast tumors (classically secretory breast carcinoma with ETV6–NTRK3) show oncogene addiction to TRK signaling, predicting strong sensitivity to TRK inhibition.",
+                  "FDA label (VITRAKVI larotrectinib) 4/2025 (accessdata.fda.gov label 210861s012); PMID:29466156 (Drilon 2018, NEJM, NCT02122913/NCT02576431/NCT02637687); PMID:19011601 (secretory BC + ETV6-NTRK3); PMID:29623306 (ETV6-NTRK3 secretory BC case, TRK inhibitor); Reactome PMID:34788843; MSigDB PMID:26771021"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Apparent TRK-signaling-high tumors can still be resistant if they harbor primary downstream/bypass drivers (e.g., MAPK pathway activation independent of TRK) or pre-existing NTRK kinase-domain resistance mutations.",
+                  "PMID:30333516 (Cocco 2018 Nat Rev Clin Oncol, TRK therapy + resistance concepts); PMID:28578312 (Drilon 2017 Cancer Discov, resistance mutations/next-gen TRK inhibitor); FDA label 4/2025 (requires “no known acquired resistance mutation”)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Low bulk TRK-signaling signatures can occur in heterogeneous/low-purity samples even when an NTRK fusion clone is present, so response is still possible if the driver fusion is truly present.",
+                  "PMID:29466156 (pan-cancer TRK fusion efficacy); PMID:29623306 (secretory BC ETV6–NTRK3, targeted response); PMID:30333516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (breast cancer): Most breast cancers are NTRK-fusion–negative, so low TRK signaling implies absence of the actionable target → primary resistance expected.",
+                  "FDA label 4/2025 (indication requires NTRK fusion); PMID:30333516 (NTRK fusions are rare overall and define TRK inhibitor sensitivity); PMID:19011601 (fusion is characteristic mainly in secretory BC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Larotrectinib is a selective TRK (NTRK1/2/3) inhibitor that suppresses TRK signaling, producing tumor regression in NTRK fusion–positive disease.",
+                  "FDA label 4/2025; PMID:29466156; NCT02122913; NCT02576431; NCT02637687; ChEMBL:CHEMBL3889654; DrugBank:DB14723"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Even when TRK signaling is effectively suppressed, tumors can persist via off-target/bypass pathway dependence (e.g., alternative RTKs / PI3K / MAPK rewiring) → resistant phenotype despite “TRK down.”",
+                  "PMID:30333516 (bypass/off-target resistance overview); PMID:28578312 (resistance mechanisms/strategies); PMID:28751539 (Fuse 2017 Mol Cancer Ther, resistance mechanisms)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Functional TRK signaling should not increase because larotrectinib directly inhibits TRK; any “up” signature would reflect sampling/immune/stromal shifts rather than increased on-target signaling.",
+                  "FDA label 4/2025 (TRK inhibitor MOA); PMID:30333516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: On-target kinase-domain mutations (e.g., solvent-front/gatekeeper/xDFG) can restore TRK signaling under drug pressure → resistant disease with TRK-signaling reactivation.",
+                  "PMID:28578312 (Drilon 2017); PMID:28751539 (Fuse 2017); PMID:37941124 or PMID:34788843 (Reactome refs for pathway context); FDA label 4/2025 (excludes known acquired resistance mutation)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+      "description": "Core cell-survival and growth signaling program reflecting PI3K→AKT→mTOR pathway activity.",
+      "interpretation": "This pathway can be activated downstream of constitutively active TRK fusion signaling in NTRK fusion–positive tumors, supporting survival and proliferation programs in breast cancer contexts where the TRK axis is oncogenic.",
+      "Administration_of_larotrectinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (fusion-driven): In NTRK-fusion breast tumors, TRK activation commonly feeds PI3K–AKT–mTOR; high pathway activity can indicate TRK-driven survival signaling that collapses with TRK inhibition.",
+                  "PMID:30333516 (TRK downstream PI3K/MAPK); PMID:29466156; MSigDB hallmark PMID:26771021; MSigDB gene set page: HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (breast cancer): PI3K-pathway alterations (PIK3CA mutation, PTEN loss, HER2 signaling) are common in breast cancer and can provide bypass survival that reduces dependence on TRK signaling.",
+                  "PMID:23000897 (TCGA breast cancer); PMID:19055754 (PTEN/PI3K activation in breast); PMID:30333516 (bypass resistance framing)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: A TRK fusion tumor may be primarily MAPK-driven with relatively lower PI3K signature; TRK blockade can still be effective by shutting down the dominant downstream arm.",
+                  "PMID:30333516 (TRK downstream arms MAPK/PI3K); PMID:29466156"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (breast cancer): Low PI3K signature does not create TRK dependence; in typical NTRK-fusion–negative breast cancer, this pattern does not suggest an actionable TRK driver → resistance likely.",
+                  "FDA label 4/2025 (requires NTRK fusion); PMID:30333516"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: TRK inhibition reduces downstream PI3K–AKT–mTOR signaling, promoting growth arrest and tumor regression in TRK fusion–positive settings.",
+                  "PMID:30333516; PMID:29466156; FDA label 4/2025"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Tumors can remain resistant if survival is maintained through alternative pathways (e.g., ER/HER2 dependence) even when PI3K output from TRK is reduced.",
+                  "PMID:30333516; PMID:23000897 (breast oncogenic heterogeneity/PI3K landscape); FDA label 4/2025"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Early adaptive feedback (e.g., relief of negative feedback) can transiently increase PI3K/mTOR signatures while tumors still respond overall to TRK blockade.",
+                  "PMID:30333516 (adaptive signaling concepts in TRK therapy); MSigDB hallmark PMID:26771021"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Sustained PI3K–AKT–mTOR reactivation (via IGF1R/HER2/other RTKs, PTEN loss, PIK3CA mutation) can drive escape from TRK inhibition → resistance.",
+                  "PMID:19055754 (PTEN/PI3K in breast); PMID:23000897; PMID:30333516"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_KRAS_SIGNALING_UP": {
+      "description": "Gene-expression program consistent with activation of the RAS–RAF–MEK–ERK (MAPK) cascade.",
+      "interpretation": "TRK fusion kinases can activate RAS/MAPK signaling; in breast cancers driven by NTRK fusions, MAPK pathway activity reflects a key proliferative output of the TRK oncogenic driver.",
+      "Administration_of_larotrectinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: In TRK fusion–positive breast tumors, TRK commonly activates RAS–MAPK output, so high KRAS/MAPK transcriptional signatures can reflect TRK-driven signaling that is targetable by larotrectinib.",
+                  "PMID:30333516 (TRK→MAPK/PI3K); PMID:29466156; MSigDB hallmark PMID:26771021"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: If KRAS/MAPK activation is driven by downstream mutations/bypass RTKs independent of TRK, TRK inhibition won’t extinguish the pathway → primary resistance.",
+                  "PMID:30333516 (resistance/bypass); PMID:28578312 (resistance under TRK inhibitors)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some TRK fusion breast cancers may rely more on PI3K/other outputs than MAPK transcriptional programs; TRK inhibition can still be effective despite low KRAS hallmark signature.",
+                  "PMID:30333516; PMID:29466156"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (breast cancer): Low MAPK/KRAS output plus absent NTRK fusion generally indicates no TRK-driven oncogenic signaling, so response is unlikely.",
+                  "FDA label 4/2025; PMID:30333516"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: TRK blockade suppresses downstream MAPK transcriptional output, correlating with response in TRK fusion–positive cancers.",
+                  "PMID:30333516; PMID:29466156; FDA label 4/2025"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: MAPK output may drop while tumors persist via alternative survival programs (e.g., PI3K, lineage programs, microenvironmental support), yielding resistance despite KRAS hallmark down.",
+                  "PMID:30333516; PMID:23000897"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Transient stress/inflammation or stromal admixture can increase KRAS hallmark scores even during response, without reflecting true tumor-cell MAPK escape.",
+                  "PMID:30333516; MSigDB hallmark PMID:26771021"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Acquired resistance often involves MAPK pathway reactivation (via bypass RTKs or downstream alterations), producing KRAS/MAPK transcriptional rebound and clinical progression.",
+                  "PMID:30333516; PMID:28578312; PMID:28751539"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_APOPTOSIS": {
+      "description": "Programmed cell death signaling and execution machinery reflected by apoptosis-associated gene expression.",
+      "interpretation": "Apoptosis is typically suppressed in cancer; in TRK-driven breast tumors, restoration of apoptotic signaling is a key biological consequence associated with effective blockade of the TRK oncogenic driver.",
+      "Administration_of_larotrectinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: “Apoptosis-primed” tumors (higher basal pro-apoptotic tone) can undergo more rapid cell death when TRK survival signaling is blocked.",
+                  "PMID:30333516 (TRK as survival signaling driver); FDA label 4/2025 (TRK inhibition antitumor effect); MSigDB hallmark PMID:26771021"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Even with an apoptosis gene-set high state, defects in execution (e.g., strong anti-apoptotic buffering) can blunt killing, limiting benefit from TRK inhibition.",
+                  "PMID:23000897 (breast tumor heterogeneity); PMID:30333516 (general resistance concepts)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some TRK fusion tumors respond predominantly via cytostasis/differentiation rather than strong apoptosis signatures, so baseline apoptosis-low does not exclude response if TRK addiction is present.",
+                  "PMID:29466156 (clinical responses across histologies); PMID:30333516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Apoptosis-low states consistent with strong survival signaling and absence of an actionable TRK driver generally predict poor response to TRK inhibition in breast cancer.",
+                  "FDA label 4/2025 (needs NTRK fusion); PMID:30333516; MSigDB hallmark PMID:26771021"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective TRK blockade removes pro-survival signaling and can induce apoptosis, aligning with sensitivity/response.",
+                  "FDA label 4/2025; PMID:29466156; PMID:30333516"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Apoptosis signatures can rise due to partial tumor stress or non-tumor-cell death while resistant clones persist (net non-response).",
+                  "PMID:30333516; PMID:28578312"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Durable benefit can sometimes be cytostatic with limited apoptosis transcriptional increase (bulk signature decreases as proliferative fraction collapses), yet clinical sensitivity remains.",
+                  "PMID:29466156; MSigDB hallmark PMID:26771021"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Failure to trigger apoptosis after TRK inhibition (continued anti-apoptotic buffering / bypass signaling) is consistent with resistance.",
+                  "PMID:30333516; PMID:19055754 (PI3K survival signaling in breast); PMID:28578312"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "NTRK1",
+    "NTRK2",
+    "NTRK3"
+  ],
+  "sensitivity_genes_down": [],
+  "resistance_genes_up": [],
+  "resistance_genes_down": [],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "NTRK1",
+      "interpretation": "Oncogenic activation of TRKA signaling via NTRK fusions is described as the defining biological context for larotrectinib activity, since the drug directly inhibits TRK kinase signaling in fusion-driven tumors."
+    },
+    {
+      "gene": "NTRK2",
+      "interpretation": "Larotrectinib is described as a selective inhibitor of TRK kinases; tumors with constitutively active TRK signaling driven by NTRK fusions are the population in which responses are observed."
+    },
+    {
+      "gene": "NTRK3",
+      "interpretation": "Secretory breast carcinoma is noted as a rare subtype driven by ETV6–NTRK3 fusions, and reported breast-cancer responses to larotrectinib occur in TRK fusion–positive cases."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [],
+  "resistance_genes_up_annotations": [],
+  "resistance_genes_down_annotations": [],
+  "kg_gene_relationships": [
+    "Larotrectinib|inhibits|NTRK1",
+    "Larotrectinib|inhibits|NTRK2",
+    "Larotrectinib|inhibits|NTRK3"
+  ],
+  "Breast_cancer_subtype_information": {
+    "HR⁺/HER2⁻ (Luminal A/B)": "NTRK fusions are extremely rare (<0.1%) in hormone-receptor positive cancers; no specific studies of larotrectinib in this subtype exist, and it would only be effective if an NTRK fusion were incidentally present.",
+    "HER2⁺": "NTRK fusions are uncommon; no clinical data on larotrectinib in HER2-positive breast cancer, and standard HER2-targeted therapy is used unless an NTRK fusion is unexpectedly found (very unlikely).",
+    "Triple-Negative (TNBC)": "Includes secretory carcinoma, a rare TNBC subtype defined by ETV6–NTRK3 fusions; secretory breast carcinomas nearly all harbor NTRK3 fusions and case series document highly durable responses to larotrectinib in metastatic secretory breast cancer; conventional TNBC without secretory features has extremely low NTRK-fusion incidence.",
+    "gBRCA1/2-Mutated / HRD": "No reported interactions; larotrectinib’s action is independent of DNA repair status, and use is guided by NTRK fusion status, not by BRCA/HRD.",
+    "Basal-like": "Secretory carcinomas are often basal-like in immunophenotype; evidence in basal-like breast cancer is largely from secretory cases, with no data on other basal-like cancers.",
+    "HER2-enriched (by gene expression)": "No specific data; if such tumors carry an NTRK fusion (presumably virtually none), larotrectinib would apply per tumor-agnostic rule, but there is no evidence specific to this subtype."
+  },
+  "citations": [
+    "Larotrectinib: Uses, Interactions,",
+    "Mechanism of Action | DrugBank Online",
+    "[https://go.drugbank.com/drugs/DB14723](https://go.drugbank.com/drugs/DB14723)",
+    "NDA 211710 Oral Solution Vitrakvi Draft USPI_15May2020_Tracked_Bayer Internal",
+    "Sep2020",
+    "[https://labeling.bayerhealthcare.com/html/products/pi/vitrakvi_PI.pdf](https://labeling.bayerhealthcare.com/html/products/pi/vitrakvi_PI.pdf)",
+    "Locally Recurrent Secretory Carcinoma of the Breast with NTRK3 Gene Fusion - PubMed",
+    "[https://pubmed.ncbi.nlm.nih.gov/34176200/](https://pubmed.ncbi.nlm.nih.gov/34176200/)",
+    "TRK inhibitor in a patient with metastatic triple-negative breast cancer and NTRK",
+    "fusions identified via cell-free DNA analysis - PMC ",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC9893401/](https://pmc.ncbi.nlm.nih.gov/articles/PMC9893401/)",
+    "Larotrectinib | C21H22F2N6O2 | CID 46188928 - PubChem",
+    "[https://pubchem.ncbi.nlm.nih.gov/compound/Larotrectinib](https://pubchem.ncbi.nlm.nih.gov/compound/Larotrectinib)",
+    "Frontiers | Evaluation of NTRK Gene Fusion by Five Different Platforms in Triple-Negative Breast",
+    "Carcinoma",
+    "[https://www.frontiersin.org/journals/molecular-biosciences/articles/10.3389/fmolb.2021.654387/full](https://www.frontiersin.org/journals/molecular-biosciences/articles/10.3389/fmolb.2021.654387/full)",
+    "bayer.com",
+    "[https://www.bayer.com/sites/default/files/vitrakvi-capsules-smpc-jul-2020.pdf](https://www.bayer.com/sites/default/files/vitrakvi-capsules-smpc-jul-2020.pdf)",
+    "NTRK Gene Fusion Testing | VITRAKVI® (larotrectinib) | HCP Site",
+    "[https://www.vitrakvihcp.com/testing](https://www.vitrakvihcp.com/testing)"
+  ],
+  "notes": "Resistance gene-direction evidence specific to breast cancer is described as limited; the document notes known on-target resistance via kinase-domain point mutations in NTRK1/3 (e.g., NTRK1 G595R, NTRK3 G623R/G696A) and describes additional bypass mechanisms as hypothesized from other cancers. Safety notes include that the FDA label lists no on-label contraindications except hypersensitivity to larotrectinib or excipients, and warns about neurologic toxicities, hepatotoxicity, and embryofetal toxicity, with avoidance of strong CYP3A4 inhibitors/inducers.   "
+}

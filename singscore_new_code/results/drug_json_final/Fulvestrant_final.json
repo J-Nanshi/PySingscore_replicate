@@ -1,0 +1,890 @@
+{
+  "drug_name": "Fulvestrant",
+  "cancer_indication": "Advanced or metastatic hormone receptor–positive (HR+) breast cancer (typically HER2–), especially after progression on other endocrine therapy.",
+  "drug_category": "ER-targeted",
+  "drug_class": "steroidal selective estrogen receptor degrader (SERD)",
+  "moa": "Fulvestrant competitively binds estrogen receptor α (ERα), blocking estrogen binding and triggering receptor ubiquitination and proteasomal degradation. As a pure antiestrogen with no agonist activity, it causes complete shutdown of ER signaling. In ER+ breast cancer cells, this leads to G1 cell-cycle arrest and apoptosis. Its clinical effect is often combined with targeted agents such as CDK4/6 inhibitors or a PI3K inhibitor for synergistic benefit.",
+  "chembl_id": "CHEMBL1358",
+  "drugbank_id": "DB00947",
+  "synonyms": [
+    "Faslodex",
+    "ICI-182,780",
+    "ZD-9238"
+  ],
+  "primary_targets": [
+    "ESR1",
+    "ESR2"
+  ],
+  "pathway_sets": [
+    "GOBP_ESTROGEN_RECEPTOR_SIGNALING_PATHWAY",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "KEGG_ERBB_SIGNALING_PATHWAY",
+    "KEGG_MAPK_SIGNALING_PATHWAY",
+    "BIOCARTA_NFKB_PATHWAY",
+    "REACTOME_GPER1_SIGNALING",
+    "GOBP_CELL_CYCLE_G1_S_PHASE_TRANSITION",
+    "GOCC_RB_E2F_COMPLEX",
+    "REACTOME_INTERFERON_GAMMA_SIGNALING",
+    "REACTOME_APOPTOSIS"
+  ],
+  "pathway_sets_annotations": {
+    "GOBP_ESTROGEN_RECEPTOR_SIGNALING_PATHWAY": {
+      "description": "Estrogen receptor–driven signaling and transcriptional programs mediated by ERα (ESR1) (and to a lesser extent ERβ/ESR2) that promote luminal breast cancer growth.",
+      "interpretation": "ER-driven transcription is the core dependency in HR+ breast cancer that fulvestrant targets by degrading ERα and shutting down estrogen-responsive gene expression.",
+      "Administration_of_fulvestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High ER/estrogen-response dependency in ER+ breast cancer predicts benefit from ER downregulation/antagonism with fulvestrant.",
+                  "FDA label (FASLODEX) (FDA Access Data); DrugBank: DB00947 (DrugBank); ChEMBL: CHEMBL1358 (EMBL-EBI); PMID:27908454 (FALCON) (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: ER pathway can remain transcriptionally “high” yet be functionally bypassed by ESR1 activating alterations or growth-factor crosstalk, yielding relative endocrine resistance.",
+                  "PMID:16113098 (NFκB/endocrine resistance context) (PubMed); PMID:21501600 (SERD/ER turnover) (PubMed); PMID:4009946 (ESR1 mutations; PMC) (Europe PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Bulk ER signaling may look “down” due to sampling/heterogeneity, yet residual ER-addicted clones can still respond to fulvestrant.",
+                  "PMID:26178788 (sequential biopsies on fulvestrant) (PubMed); PMID:28680952 (fulvestrant review) (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low/absent ER signaling (ER-low/ER− phenotype) implies minimal drug target engagement → primary resistance.",
+                  "FDA label (ER-driven indication) (FDA Access Data); PMID:28680952 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Fulvestrant competitively antagonizes ER and promotes ER protein downregulation, suppressing ER-driven transcription and proliferation.",
+                  "FDA label MOA (FDA Access Data); DrugBank DB00947 (DrugBank); PMID:21501600 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Even with ER signaling suppressed, tumors can persist via ER-independent RTK/PI3K/MAPK or cell-cycle bypass programs.",
+                  "PMID:7572750 (PI3K/endocrine resistance review; PMC) (PMC); PMID:8379900 (HER2/endocrine resistance review; PMC) (PMC)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Fulvestrant cannot increase functional ER signaling; any “up” signature would reflect composition effects (e.g., more ER+ cells detected) rather than true activation under drug.",
+                  "FDA label MOA (FDA Access Data); PMID:28680952 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+      "description": "PI3K–AKT–mTOR growth and survival signaling that can be hyperactivated in HR+ breast cancer (e.g., via PIK3CA mutations).",
+      "interpretation": "This pathway provides pro-survival signaling and reduced dependence on ER signaling, contributing to endocrine resistance in breast cancer.",
+      "Administration_of_fulvestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some ER+ tumors have PI3K pathway activation yet remain ER-dependent enough that ER degradation still yields response (often improved with combination strategies).",
+                  "PMID:7572750 (PI3K in HR+ BC; PMC) (PMC); PMID:7388095 (PI3K/ER crosstalk review; PMC) (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: PI3K/AKT/mTOR hyperactivation supports ligand-independent survival/proliferation and is a major endocrine-resistance axis in ER+ breast cancer.",
+                  "PMID:7572750 (PMC); PMID:7388095 (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low PI3K/AKT/mTOR survival signaling is more consistent with “pure” ER addiction, favoring fulvestrant sensitivity.",
+                  "PMID:28680952 (fulvestrant review) (PubMed); PMID:7572750 (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Endocrine resistance can arise despite low PI3K signaling (e.g., ESR1 alterations, RB/E2F bypass, or other RTKs).",
+                  "PMID:3204388 (ER/E2F axis; PMC) (PMC); PMID:4009946 (ESR1 mutations; PMC) (Europe PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: In responders, ER shutdown can reduce ER-driven growth-factor programs and downstream PI3K survival tone, supporting tumor control.",
+                  "PMID:26178788 (biopsy signaling changes on fulvestrant) (PubMed); PMID:7572750 (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Even if PI3K signaling falls, tumors may persist via MAPK, NFκB, or cell-cycle escape.",
+                  "PMID:16113098 (PubMed); PMID:8379900 (PMC)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Transient feedback PI3K activation after ER blockade may occur but still be insufficient to prevent response in strongly ER-addicted disease.",
+                  "PMID:7572750 (PMC); PMID:7388095 (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Adaptive RTK→PI3K/AKT/mTOR upregulation is a canonical escape route after endocrine pressure, driving acquired resistance.",
+                  "PMID:7572750 (PMC); PMID:12109706 (endocrine resistance overview; PMC) (PMC)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_ERBB_SIGNALING_PATHWAY": {
+      "description": "ErbB/HER family receptor signaling (including HER2/ERBB2, ERBB3, ERBB4, and EGFR) that can drive proliferation and survival.",
+      "interpretation": "Growth factor receptor signaling can bypass ER blockade; ERBB-family upregulation is described as a resistance mechanism in the setting of endocrine blockade.",
+      "Administration_of_fulvestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Mild ERBB signaling can coexist with ER dependence (e.g., HER2-low/EGFR-low), allowing fulvestrant activity despite some RTK tone.",
+                  "PMID:8379900 (HER2 & endocrine resistance; PMC) (PMC); PMID:28680952 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Strong EGFR/HER2 (ERBB) signaling can bypass ER control, a well-described mechanism of endocrine resistance.",
+                  "PMID:8379900 (PMC); PMID:9254309 (HER2/endocrine resistance; PMC) (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low ERBB pathway activity supports an ER-driven luminal biology, favoring fulvestrant response.",
+                  "PMID:27908454 (FALCON) (PubMed); PMID:28680952 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: ERBB-low tumors can still be resistant via ESR1 mutations, NFκB survival signaling, or RB loss.",
+                  "PMID:4009946 (ESR1 mutations; PMC) (Europe PMC); PMID:16113098 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: In responders, ER downregulation can reduce ER-driven expression of growth factors/RTK ligands, lowering ERBB pathway output.",
+                  "PMID:26178788 (PubMed); PMID:28680952 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Despite low ERBB output, alternative pathways (PI3K/MAPK/NFκB) can maintain growth.",
+                  "PMID:7572750 (PMC); PMID:16113098 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some tumors show compensatory ERBB upshift yet remain controlled if ER remains the dominant driver and ERBB activation is modest.",
+                  "PMID:9254309 (PMC); PMID:28680952 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Adaptive EGFR/HER2 signaling after ER blockade is a classic acquired-resistance mechanism to endocrine therapy.",
+                  "PMID:8379900 (PMC); PMID:9254309 (PMC)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_MAPK_SIGNALING_PATHWAY": {
+      "description": "MAPK/ERK signaling downstream of growth factor receptors that sustains proliferative signaling.",
+      "interpretation": "MAPK/ERK activity can maintain proliferation and is described as increased in fulvestrant-resistant contexts.",
+      "Administration_of_fulvestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: MAPK activity can be elevated yet still subordinate to ER; fulvestrant can work if ER remains essential for the proliferative program.",
+                  "PMID:6712962 (endocrine resistance pathways; PMC) (Europe PMC); PMID:28680952 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: RAS/RAF/MEK/ERK signaling phosphorylates ER/co-activators and drives ER-independent proliferation → endocrine resistance.",
+                  "PMID:6712962 (Europe PMC); PMID:599586 (Frontiers endocrine resistance review) (Frontiers)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low MAPK escape signaling supports ER addiction and endocrine sensitivity.",
+                  "PMID:27908454 (PubMed); PMID:28680952 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Resistance can still occur via PI3K/mTOR, RB/E2F bypass, or ESR1 alterations even if MAPK is not dominant.",
+                  "PMID:3204388 (PMC); PMID:7572750 (PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: In responders, proliferation shutdown reduces growth-factor demand and downstream MAPK signaling output.",
+                  "PMID:26178788 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Even with MAPK low, tumors may survive through PI3K/NFκB anti-apoptotic signaling.",
+                  "PMID:7572750 (PMC); PMID:16113098 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: A compensatory MAPK rise may be observed early yet not prevent response if ER blockade remains effective and MAPK induction is limited.",
+                  "PMID:599586 (Frontiers)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: MAPK upregulation is a common adaptive bypass after endocrine therapy, sustaining proliferation despite ER suppression.",
+                  "PMID:599586 (Frontiers); PMID:6712962 (Europe PMC)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "BIOCARTA_NFKB_PATHWAY": {
+      "description": "NF-κB survival signaling that drives anti-apoptotic gene expression in tumor cells.",
+      "interpretation": "Active NF-κB is associated with survival/resistance, while its suppression is described as important for fulvestrant-induced apoptosis.",
+      "Administration_of_fulvestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some immune-infiltrated ER+ tumors may show NFκB/IFN programs that increase death signaling (e.g., IRF1 axis), supporting endocrine response.",
+                  "PMID:2925293 (IFNγ restores fulvestrant sensitivity; PMC) (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Constitutive NFκB promotes anti-apoptotic survival and has long been linked to endocrine resistance in ER+ breast cancer.",
+                  "PMID:16113098 (PubMed); PMID:15657351 (NFκB inhibitor restores fulvestrant apoptosis) (PubMed); PMID:32013374 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low NFκB pro-survival signaling reduces an anti-apoptotic barrier, favoring fulvestrant-induced growth arrest/apoptosis.",
+                  "PMID:15657351 (PubMed); PMID:28680952 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Tumors can be NFκB-low yet resistant via PI3K/MAPK bypass or RB/E2F deregulation.",
+                  "PMID:7572750 (PMC); PMID:3204388 (PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Effective endocrine control can reduce inflammatory signaling and secondarily dampen NFκB pathway output.",
+                  "PMID:7792133 (endocrine therapy immunomodulation; PMC) (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: NFκB may fall while resistance persists through other survival axes (PI3K/MAPK) or cell-cycle escape.",
+                  "PMID:7572750 (PMC); PMID:6712962 (Europe PMC)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Treatment-triggered immune activation can increase NFκB signatures (immune-cell composition) without implying tumor-cell survival dominance.",
+                  "PMID:7792133 (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: NFκB-driven anti-apoptotic adaptation can blunt fulvestrant-induced apoptosis; NFκB inhibition restores ICI 182,780 apoptosis in resistant cells.",
+                  "PMID:15657351 (PubMed); PMID:32013374 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_GPER1_SIGNALING": {
+      "description": "GPER1 (GPR30) signaling as an alternate membrane estrogen receptor pathway that can persist during fulvestrant treatment.",
+      "interpretation": "Loss of GPER1 signaling is described as associated with fulvestrant resistance; GPER1-mediated signaling may represent a potential resistance route during treatment.",
+      "Administration_of_fulvestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some tumors with GPER signaling still respond if classical nuclear ER signaling is the primary driver and dominates phenotype.",
+                  "PMID:28680952 (PubMed); PMID:30646517 (GPER in BC; EuropePMC) (Europe PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: GPER activation is implicated in endocrine resistance; antiestrogens (including fulvestrant) can act as GPER agonists, supporting pro-growth signaling in some contexts.",
+                  "PMID:30646517 (Europe PMC); PMID:32973677 (GPER & antiestrogens; EuropePMC) (Europe PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low GPER signaling reduces a potential non-genomic estrogen escape route, improving likelihood of fulvestrant benefit in ER-driven disease.",
+                  "PMID:32973677 (Europe PMC); PMID:28680952 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: GPER-low tumors may still be resistant via PI3K/ERBB/MAPK bypass or RB/E2F deregulation.",
+                  "PMID:7572750 (PMC); PMID:8379900 (PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (direct): Fulvestrant is not a GPER antagonist; any observed decrease in GPER signaling would be indirect (e.g., expression changes), not direct pharmacology.",
+                  "PMID:30646517 (Europe PMC); PMID:32973677 (Europe PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: If GPER signaling drops but disease progresses, resistance is likely mediated by other axes (ERBB/PI3K/MAPK).",
+                  "PMID:8379900 (PMC); PMID:7572750 (PMC)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Fulvestrant can act as a GPER agonist, but ER degradation may still dominate and yield response if GPER signaling is weak/limited.",
+                  "PMID:30646517 (Europe PMC); DrugBank DB00947 (DrugBank)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Fulvestrant-associated adaptation can involve GPER dysregulation; GPER activity may promote endocrine-resistant phenotypes and correlate with fulvestrant resistance mechanisms.",
+                  "PMID:24169358 (FUL resistance + GPER/CDK6) (PubMed); PMID:32973677 (Europe PMC)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "GOBP_CELL_CYCLE_G1_S_PHASE_TRANSITION": {
+      "description": "Regulatory processes controlling G1 cell-cycle arrest and progression through the G1/S checkpoint, including Cyclin D–CDK4/6 and RB/E2F control noted in the source.",
+      "interpretation": "Fulvestrant efficacy is linked to inducing G1 arrest; upregulation of G1/S drivers (e.g., Cyclin D/CDK6 activity) is described as a mechanism that can overcome ER blockade.",
+      "Administration_of_fulvestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Highly proliferative ER+ tumors can still respond if proliferation remains ER-driven (often less durable without addressing CDK4/6).",
+                  "PMID:26178788 (fulvestrant biopsies; Ki67 context) (PubMed); PMID:28680952 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: High G1/S drive (e.g., CDK6 up, RB pathway bypass) predicts endocrine resistance and shorter PFS on fulvestrant.",
+                  "PMID:27252418 (CDK6 predicts resistance to fulvestrant) (PubMed); PMID:3204388 (ER/E2F axis; PMC) (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low proliferation (luminal A-like) is classically more endocrine sensitive, consistent with fulvestrant benefit.",
+                  "PMID:27908454 (PubMed); PMID:26178788 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Low proliferation does not preclude resistance if ER is non-functional or if survival pathways (PI3K/NFκB) dominate.",
+                  "PMID:7572750 (PMC); PMID:32013374 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: ER degradation reduces cyclin D/E2F programs and induces G1 arrest, lowering G1/S transition activity in responders.",
+                  "PMID:26178788 (PubMed); PMID:28680952 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Despite ER suppression, CDK6-mediated bypass or RB dysfunction can maintain cell-cycle progression and drive resistance.",
+                  "PMID:27252418 (PubMed); PMID:3204388 (PMC)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible: Fulvestrant does not directly promote G1/S progression in tumor cells; increased “G1/S” signatures under therapy generally reflect non-response or sampling/composition artifacts.",
+                  "FDA label MOA (FDA Access Data); PMID:27252418 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Failure to suppress proliferation (persistent G1/S activity) indicates endocrine escape and clinical progression on fulvestrant.",
+                  "PMID:27252418 (PubMed); PMID:26178788 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "GOCC_RB_E2F_COMPLEX": {
+      "description": "RB/E2F control referenced as governing E2F target gene expression and the G1 checkpoint in breast cancer cells.",
+      "interpretation": "RB1 loss/downregulation is described as abrogating fulvestrant-induced G1 arrest, enabling unchecked proliferation despite ER loss.",
+      "Administration_of_fulvestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Presence of an intact RB–E2F suppressive complex (functional RB control) supports endocrine sensitivity because ER-driven cyclin D/CDK4 dependence remains targetable.",
+                  "PMID:3204388 (ER/E2F program; PMC) (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: RB can be intact yet tumors resist via ER-independent survival (PI3K/ERBB) or ESR1 alterations.",
+                  "PMID:7572750 (PMC); PMID:4009946 (Europe PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some RB/E2F deregulation may exist, yet if ER remains dominant and RB loss is incomplete, fulvestrant can still produce partial control.",
+                  "PMID:3204388 (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: RB pathway loss/dysfunction reduces reliance on ER→cyclin D control, enabling E2F-driven proliferation despite fulvestrant.",
+                  "PMID:3204388 (PMC); PMID:27252418 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: By suppressing ER-driven cyclin D/CDK activity, fulvestrant promotes RB hypophosphorylation and RB–E2F binding, consistent with growth arrest and sensitivity.",
+                  "PMID:3204388 (PMC); PMID:26178788 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Even with RB–E2F binding, tumors may persist via anti-apoptotic signaling or parallel mitogenic pathways.",
+                  "PMID:16113098 (PubMed); PMID:7572750 (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: If tumor burden rapidly falls, bulk cycling/complex assembly signatures can contract despite sensitivity (composition effect).",
+                  "PMID:7792133 (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Persistent loss of RB–E2F complex formation (RB loss or strong CDK bypass) aligns with fulvestrant resistance and ongoing proliferation.",
+                  "PMID:27252418 (PubMed); PMID:3204388 (PMC)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_INTERFERON_GAMMA_SIGNALING": {
+      "description": "IFNγ-driven signaling through STAT1 and IRF1 described as an immune/stress axis that can influence tumor apoptosis programs.",
+      "interpretation": "Activation of IFNγ–STAT1–IRF1 signaling is described as sensitizing breast cancer cells to fulvestrant by suppressing survival programs and promoting caspase-dependent apoptosis.",
+      "Administration_of_fulvestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: IFNγ→STAT1/IRF1 programs can suppress NFκB and pro-survival BCL2-family signaling, restoring antiestrogen (fulvestrant) sensitivity in resistant breast cancer models.",
+                  "PMID:2925293 (IFNγ restores fulvestrant sensitivity; PMC) (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (ER+ clinical context): High IFNγ signatures in ER+/HER2− can correlate with distinct biology and worse prognosis in some cohorts, potentially reflecting less endocrine-responsive disease.",
+                  "PMID:7582264 (IFNγ prognosis in ER+HER2−; PMC) (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Many endocrine-sensitive luminal tumors are relatively “immune-cold”; low IFNγ signaling does not prevent fulvestrant benefit when ER dependence is high.",
+                  "PMID:27908454 (PubMed); PMID:7792133 (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: IFNγ-low tumors can still be resistant due to tumor-intrinsic ER bypass (PI3K/ERBB/MAPK) rather than immune-state.",
+                  "PMID:7572750 (PMC); PMID:8379900 (PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Endocrine therapy can modulate the tumor immune microenvironment and antigen-presentation/IFN programs, which may support tumor control in a subset of ER+ disease.",
+                  "PMID:7792133 (endocrine therapy immunomodulation; PMC) (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: IFNγ signaling can coexist with immune-evasion programs or inflammation-associated progression; this is not a direct fulvestrant MOA and is typically context-dependent.",
+                  "PMID:7582264 (PMC); PMID:7792133 (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: With tumor regression, immune infiltration and IFNγ signals can contract, lowering bulk IFNγ signatures despite sensitivity.",
+                  "PMID:7792133 (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Persistently low IFNγ reflects an immune-desert state; progression on fulvestrant in this setting is usually driven by tumor-intrinsic resistance rather than IFNγ itself.",
+                  "PMID:7792133 (PMC); PMID:7572750 (PMC)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_APOPTOSIS": {
+      "description": "Apoptotic signaling described as caspase-dependent apoptosis activated as fulvestrant takes effect.",
+      "interpretation": "Apoptosis pathway activation is described as enhancing fulvestrant antitumor effect, particularly in ER+ tumor cells.",
+      "Administration_of_fulvestrant": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Baseline apoptotic priming increases likelihood that ER blockade triggers caspase-dependent death in ER-dependent breast cancer cells.",
+                  "PMID:28680952 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Tumors can show apoptosis signaling yet evade death via strong anti-apoptotic programs (e.g., NFκB/BCL2 family), yielding resistance.",
+                  "PMID:15657351 (PubMed); PMID:16113098 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Even with low baseline apoptosis, fulvestrant can induce apoptosis (or durable arrest) when ER dependence is high.",
+                  "FDA label MOA (FDA Access Data); PMID:28680952 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Strong suppression of apoptosis via NFκB/pro-survival signaling is a hallmark of endocrine-resistant states and blunts fulvestrant cytotoxicity.",
+                  "PMID:15657351 (PubMed); PMID:32013374 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: In responders, fulvestrant-driven ER downregulation leads to growth arrest and can activate apoptotic programs in ER+ breast cancer tissue/cells.",
+                  "PMID:26178788 (biopsy study) (PubMed); PMID:28680952 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Apoptosis genes may rise transiently, but anti-apoptotic escape (NFκB/BCL2) prevents execution, yielding resistant persistence.",
+                  "PMID:15657351 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some endocrine responses are dominated by cytostatic quiescence/senescence rather than overt apoptosis, lowering bulk apoptosis signatures despite benefit.",
+                  "PMID:26178788 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Failure to engage apoptosis under fulvestrant pressure (persistent survival signaling) aligns with non-response/progression.",
+                  "PMID:15657351 (PubMed); PMID:7572750 (PMC)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "GATA3",
+    "TFF1",
+    "STAT1",
+    "IRF1",
+    "BAX",
+    "BAK1",
+    "CASP8",
+    "CASP9"
+  ],
+  "sensitivity_genes_down": [
+    "BCL2"
+  ],
+  "resistance_genes_up": [
+    "PIK3CA",
+    "ERBB2",
+    "ERBB3",
+    "ERBB4",
+    "EGFR",
+    "CDK6",
+    "CCND1",
+    "ESR1"
+  ],
+  "resistance_genes_down": [
+    "GPER1",
+    "RB1",
+    "STAT1",
+    "IRF1"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "GATA3",
+      "interpretation": "High expression of ER target genes is described as indicating robust ER signaling, which predicts good fulvestrant response."
+    },
+    {
+      "gene": "TFF1",
+      "interpretation": "High expression of ER target genes is described as indicating robust ER signaling, which predicts good fulvestrant response."
+    },
+    {
+      "gene": "STAT1",
+      "interpretation": "IFNγ induces STAT1 as part of an IFNγ–STAT1–IRF1 axis described to restore fulvestrant sensitivity by promoting apoptotic signaling and suppressing survival programs."
+    },
+    {
+      "gene": "IRF1",
+      "interpretation": "IRF1 induction is described to suppress NF-κB/BCL2 and trigger caspase-dependent apoptosis, restoring fulvestrant sensitivity."
+    },
+    {
+      "gene": "BAX",
+      "interpretation": "Upregulation of pro-apoptotic BAX is described as part of IFNγ-driven restoration of fulvestrant sensitivity through apoptosis."
+    },
+    {
+      "gene": "BAK1",
+      "interpretation": "Upregulation of pro-apoptotic BAK1 (BAK) is described as part of IFNγ-driven restoration of fulvestrant sensitivity through apoptosis."
+    },
+    {
+      "gene": "CASP8",
+      "interpretation": "Upregulation of caspase-dependent apoptosis (including caspase 8) is described as amplifying fulvestrant-induced cell death and enhancing drug effect."
+    },
+    {
+      "gene": "CASP9",
+      "interpretation": "Upregulation of caspase-dependent apoptosis (including caspase 9) is described as amplifying fulvestrant-induced cell death and enhancing drug effect."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [
+    {
+      "gene": "BCL2",
+      "interpretation": "Suppression of BCL2 (described as part of IFNγ/IRF1 effects) is linked to enabling caspase-dependent apoptosis and restoring fulvestrant sensitivity."
+    }
+  ],
+  "resistance_genes_up_annotations": [
+    {
+      "gene": "PIK3CA",
+      "interpretation": "PIK3CA mutations are described to hyperactivate PI3K–AKT–mTOR signaling, driving survival and reduced dependence on ER signaling, leading to fulvestrant resistance."
+    },
+    {
+      "gene": "ERBB2",
+      "interpretation": "Upregulation/overexpression of HER2 (ERBB2) is described as a bypass mechanism that can render fulvestrant ineffective in resistant contexts."
+    },
+    {
+      "gene": "ERBB3",
+      "interpretation": "ERBB3 expression is described as increased with endocrine blockade in ER+ contexts and as part of ErbB-family bypass signaling linked to fulvestrant resistance."
+    },
+    {
+      "gene": "ERBB4",
+      "interpretation": "ERBB4 expression is described as increased with fulvestrant/endocrine blockade in ER+ contexts, contributing to compensatory ErbB signaling."
+    },
+    {
+      "gene": "EGFR",
+      "interpretation": "EGFR is described as part of ErbB-family signaling that can be upregulated and provide alternate mitogenic drive despite ER inhibition."
+    },
+    {
+      "gene": "CDK6",
+      "interpretation": "CDK6 overexpression is described to drive G1/S progression despite ER loss, mediating resistance to fulvestrant."
+    },
+    {
+      "gene": "CCND1",
+      "interpretation": "Cyclin D1 amplification/upregulation is described as a cell-cycle driver that can push cells through G1/S regardless of ER blockade, contributing to resistance."
+    },
+    {
+      "gene": "ESR1",
+      "interpretation": "Activating ESR1 mutations (e.g., Y537S, D538G) are described as emerging in endocrine-resistant metastatic tumors and reducing fulvestrant efficacy."
+    }
+  ],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "GPER1",
+      "interpretation": "Loss/downregulation of GPER1 signaling is described as associated with fulvestrant resistance."
+    },
+    {
+      "gene": "RB1",
+      "interpretation": "Loss of RB1 (E2F control) is described as abrogating fulvestrant-induced G1 arrest, permitting unchecked proliferation and resistance."
+    },
+    {
+      "gene": "STAT1",
+      "interpretation": "Downregulation of STAT1 is described as detrimental because STAT1 is part of IFNγ–STAT1–IRF1 signaling needed to trigger fulvestrant-induced apoptosis."
+    },
+    {
+      "gene": "IRF1",
+      "interpretation": "Downregulation of IRF1 is described as detrimental because IRF1 suppresses NF-κB/BCL2 and is required for caspase-dependent apoptosis linked to fulvestrant effect."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Fulvestrant|degrades|ESR1",
+    "Fulvestrant|antagonizes|ESR1",
+    "PIK3CA|confers_resistance_to|Fulvestrant",
+    "ERBB2|confers_resistance_to|Fulvestrant",
+    "ERBB3|confers_resistance_to|Fulvestrant",
+    "EGFR|confers_resistance_to|Fulvestrant",
+    "CDK6|confers_resistance_to|Fulvestrant",
+    "RB1|loss_confers_resistance_to|Fulvestrant",
+    "STAT1|activation_confers_sensitivity_to|Fulvestrant",
+    "IRF1|activation_confers_sensitivity_to|Fulvestrant"
+  ],
+  "Breast_cancer_subtype_information": {
+    "HR+/HER2– (Luminal A/B)": "Clinical data confirm fulvestrant’s benefit is confined to ER+ (Luminal) tumors. In HR+/HER2– (Luminal A/B) metastatic cancer, fulvestrant demonstrates efficacy similar to aromatase inhibitors; the FALCON trial showed longer PFS with fulvestrant vs anastrozole in previously untreated HR+/HER2– cases.",
+    "HER2-positive": "HER2+ tumors (HER2-enriched or Luminal B with HER2 amplification) are often endocrine-resistant and typically require combined HER2 blockade; fulvestrant is not used as monotherapy in HER2+ disease.",
+    "Triple-negative/basal-like": "Triple-negative/basal-like tumors (virtually all ER–) lack ERα and do not respond to fulvestrant.",
+    "BRCA1/2-mutated or “HRD+”": "BRCA1/2-mutated or “HRD+” cancers are treated with DNA-damage agents, not fulvestrant; only if they co-express ER would fulvestrant be considered."
+  },
+  "citations": [
+    "Fulvestrant - StatPearls - NCBI Bookshelf",
+    "[https://www.ncbi.nlm.nih.gov/books/NBK560854/](https://www.ncbi.nlm.nih.gov/books/NBK560854/)",
+    "Fulvestrant: Uses, Interactions, Mechanism of Action | DrugBank Online",
+    "[https://go.drugbank.com/drugs/DB00947](https://go.drugbank.com/drugs/DB00947)",
+    "Efficacy and safety of PI3K inhibitors combined with fulvestrant for HR+/HER2− advanced breast cancer: a systematic review and meta-analysis - PMC",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC12174159/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12174159/)",
+    "KEGG DRUG: Fulvestrant",
+    "[https://www.genome.jp/dbget-bin/www_bget?drug](https://www.genome.jp/dbget-bin/www_bget?drug):D01161",
+    "PIK3CA mutations contribute to fulvestrant resistance in ER-positive breast cancer - PMC",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC6789267/](https://pmc.ncbi.nlm.nih.gov/articles/PMC6789267/)",
+    "Role for HER2/neu and HER3 in fulvestrant-resistant breast cancer - PubMed",
+    "[https://pubmed.ncbi.nlm.nih.gov/17203234/](https://pubmed.ncbi.nlm.nih.gov/17203234/)",
+    "Fulvestrant-induced expression of erbB3 and erbB4 sensitizes ER-positive breast cancer cells to heregulins | Breast Cancer Research | Full Text",
+    "[https://breast-cancer-research.biomedcentral.com/articles/10.1186/bcr2510](https://breast-cancer-research.biomedcentral.com/articles/10.1186/bcr2510)",
+    "Interferon Gamma Restores Breast Cancer Sensitivity to Fulvestrant by Regulating STAT1, IRF1, NFκB, BCL2 Family Members, and Signaling to Caspase-dependent Apoptosis - PMC",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC2925293/](https://pmc.ncbi.nlm.nih.gov/articles/PMC2925293/)",
+    "pone.0087415 1..12",
+    "[https://allarity.com/wp-content/uploads/2020/10/Knudsen-Steen-et-al-Development-and-Validation-of-a-Gene-Expression-Score­s-that-Predicts-Response-to-Fulvestrant-in-Breast-Cancer-Patients.pdf](https://allarity.com/wp-content/uploads/2020/10/Knudsen-Steen-et-al-Development-and-Validation-of-a-Gene-Expression-Score­s-that-Predicts-Response-to-Fulvestrant-in-Breast-Cancer-Patients.pdf)",
+    "Fulvestrant induces resistance by modulating GPER and CDK6 expression: implication of methyltransferases, deacetylases and the hSWI/SNF chromatin remodelling complex | British Journal of Cancer",
+    "[https://www.nature.com/articles/bjc2013583?error=cookies_not_supported&code=bffe85b8-95e9-4322-8518-8b8c2a3e2cbd](https://www.nature.com/articles/bjc2013583?error=cookies_not_supported&code=bffe85b8-95e9-4322-8518-8b8c2a3e2cbd)",
+    "Reactome | GPER1 signaling",
+    "[https://reactome.org/content/detail/R-HSA-9634597](https://reactome.org/content/detail/R-HSA-9634597)"
+  ],
+  "notes": "Subtype scope in the source emphasizes fulvestrant benefit in ER+ (Luminal) disease, with HER2+ and TNBC described as endocrine-resistant/non-responsive. Gene-level sensitivity/resistance signals are described mechanistically (e.g., IFNγ–STAT1–IRF1 sensitization; PIK3CA, ERBB-family, CDK6/CCND1, RB1 loss as resistance) in the provided report."
+}

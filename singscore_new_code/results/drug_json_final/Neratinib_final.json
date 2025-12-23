@@ -1,0 +1,657 @@
+{
+  "drug_name": "Neratinib",
+  "cancer_indication": "Extended adjuvant therapy for early-stage HER2-positive breast cancer following adjuvant trastuzumab; and (with capecitabine) for metastatic HER2-positive breast cancer after ≥2 prior anti-HER2 regimens.",
+  "drug_category": "HER2-targeted",
+  "drug_class": "Irreversible HER-family tyrosine kinase inhibitor",
+  "moa": "Neratinib is an irreversible tyrosine kinase inhibitor that covalently binds and inhibits EGFR, ERBB2 (HER2), and ERBB4 (HER4), preventing receptor autophosphorylation and downstream signaling through MAPK/ERK and PI3K/AKT pathways. In human breast-cancer models and clinical contexts, this blockade suppresses proliferative and survival signaling and promotes apoptosis and cell-cycle arrest. In ER+/HER2+ disease, neratinib is described as complementing endocrine therapy, with clinical activity reported for combinations such as neratinib with fulvestrant and trastuzumab in ER+ metastatic disease with ERBB2 mutations.",
+  "chembl_id": "CHEMBL180022",
+  "drugbank_id": "DB11828",
+  "synonyms": [
+    "Nerlynx",
+    "Hernix",
+    "HKI-272",
+    "HKI-272 (alternate formatting)",
+    "PF-0528767",
+    "WAY-179272",
+    "N-6404",
+    "NCI NSC 757439"
+  ],
+  "primary_targets": [
+    "EGFR",
+    "ERBB2",
+    "ERBB4",
+    "KDR"
+  ],
+  "pathway_sets": [
+    "REACTOME_SIGNALING_BY_ERBB2",
+    "REACTOME_MAPK1_MAPK3_SIGNALING",
+    "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER",
+    "HALLMARK_MTORC1_SIGNALING",
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_APOPTOSIS",
+    "HALLMARK_ESTROGEN_RESPONSE_LATE"
+  ],
+  "pathway_sets_annotations": {
+    "REACTOME_SIGNALING_BY_ERBB2": {
+      "description": "HER2/ERBB2 receptor tyrosine-kinase signaling that drives downstream proliferative and survival cascades.",
+      "interpretation": "ERBB2 pathway activity is a core oncogenic dependency in HER2-driven breast cancer and is a key axis targeted by neratinib.",
+      "Administration_of_neratinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: HER2-amplified/“ERBB2-addicted” breast cancer depends on ERBB2 kinase signaling; high baseline ERBB2 pathway activity predicts vulnerability to irreversible pan-HER inhibition by neratinib.",
+                  "PMID:26874901; PMID:32678716; FDA label (NERLYNX/neratinib; NDA 208051); Reactome:R-HSA-1227986; MSigDB:M553 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Some ERBB2-high tumors are already “decoupled” downstream (e.g., PI3K pathway activation/PTEN loss), so ERBB2 inhibition incompletely shuts down survival signaling → relative resistance despite high ERBB2 signature.",
+                  "PMID:20813970; PMID:26874901; Reactome:R-HSA-1227986; MSigDB:M553 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Low bulk ERBB2 signature can still hide an actionable ERBB2 dependence (e.g., focal HER2-driven subclones or activating HER-family signaling states), where irreversible pan-HER blockade can still produce benefit.",
+                  "PMID:26089701; Reactome:R-HSA-1227986 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low ERBB2 pathway activity (non–HER2-driven breast cancer) implies minimal oncogenic reliance on ERBB2, so neratinib has little effective target.",
+                  "FDA label (NERLYNX/neratinib; NDA 208051) (FDA Access Data)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Neratinib irreversibly inhibits HER-family kinase activity and reduces ERBB2 autophosphorylation → sustained shutdown of ERBB2 signal transduction in HER2-driven tumors → response.",
+                  "PMID:27405796; FDA label (NERLYNX/neratinib; NDA 208051); Reactome:R-HSA-1227986 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Even when ERBB2 signaling is inhibited, tumors can persist via bypass RTKs or downstream lesions (e.g., constitutive PI3K/mTOR output), yielding resistance despite ERBB2 “down” at the receptor layer.",
+                  "PMID:20813970; PMID:33303839 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (functional): Neratinib cannot increase ERBB2 kinase signaling while occupying the ATP pocket covalently; an “up” ERBB2 signature would reflect expression/compensatory transcription, not increased signaling throughput.",
+                  "PMID:27405796 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (signature-level): Non-responders can show compensatory ERBB2/HER-family upregulation or rebound phosphorylation via network rewiring, but downstream escape keeps the phenotype resistant.",
+                  "PMID:27405796; PMID:20813970 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_MAPK1_MAPK3_SIGNALING": {
+      "description": "MAPK1/MAPK3 (ERK1/2) signaling downstream of activated receptor tyrosine kinases controlling proliferation and survival programs.",
+      "interpretation": "MAPK/ERK output is a major downstream effector of EGFR/HER2 signaling in breast cancer and is part of the growth circuitry impacted by ERBB blockade.",
+      "Administration_of_neratinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High ERK/MAPK output downstream of HER2 indicates growth-factor pathway addiction; blocking HER-family kinases can collapse MAPK signaling and inhibit proliferation in HER2-driven disease.",
+                  "Reactome:R-HSA-5684996; MSigDB:M49146; PMID:27405796 (Reactome)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: MAPK pathway hyperactivation can be maintained by ERBB2-independent drivers (other RTKs or downstream lesions), so baseline MAPK “up” does not guarantee neratinib dependence.",
+                  "Reactome:R-HSA-5684996; PMID:27405796 (Reactome)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: A subset of HER2-driven tumors may have relatively lower ERK transcriptional output yet remain HER-family–dependent through parallel survival arms (e.g., PI3K), still allowing response to pan-HER blockade.",
+                  "PMID:26089701; PMID:27405796 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low MAPK activity suggests limited reliance on the ERK cascade for proliferation, reducing the chance that upstream HER-family inhibition will be impactful.",
+                  "Reactome:R-HSA-5684996 (Reactome)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective HER-family kinase blockade reduces downstream RAS–MEK–ERK signaling, contributing to tumor growth inhibition in HER2-dependent breast cancer.",
+                  "PMID:27405796; Reactome:R-HSA-5684996 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: MAPK can remain suppressed yet tumors survive via alternate pathways (PI3K/mTOR, ER signaling in HR+ disease), producing resistance despite “down” ERK output.",
+                  "PMID:20813970; PMID:18508484 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some responders can show transient compensatory ERK transcription signatures early, yet net pathway flux and tumor burden still fall (timing/biopsy effects).",
+                  "Reactome:R-HSA-5684996 (Reactome)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Rebound MAPK activation via bypass RTKs or downstream lesions restores proliferative signaling despite HER-family inhibition → resistance.",
+                  "Reactome:R-HSA-5684996; PMID:27405796 (Reactome)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER": {
+      "description": "PI3K–AKT signaling controlling cell survival and growth, frequently dysregulated in cancer via pathway alterations.",
+      "interpretation": "PI3K/AKT activity supports tumor survival and is highlighted as both a downstream node of HER signaling and a pathway that can shape response or escape to HER2-directed therapy in breast cancer.",
+      "Administration_of_neratinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: When PI3K/AKT activity is HER2-driven (no strong downstream escape), upstream HER-family blockade can reduce PI3K signaling and produce response.",
+                  "Reactome:R-HSA-2219528; MSigDB:M27162; PMID:27405796 (Reactome)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Baseline PI3K pathway activation from PIK3CA mutation/PTEN loss can drive resistance to HER2-directed therapy because survival signaling persists downstream of receptor inhibition.",
+                  "PMID:20813970; PMID:33303839 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some HER2-addicted tumors have modest PI3K transcriptional signatures yet still depend on HER2 kinase activity for survival; receptor shutdown can still be effective.",
+                  "PMID:27405796 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low PI3K/AKT pathway activity is common in tumors not reliant on HER-family signaling, reducing the likelihood of benefit from neratinib.",
+                  "FDA label (NERLYNX/neratinib; NDA 208051) (FDA Access Data)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective HER-family blockade reduces upstream signaling into PI3K/AKT, contributing to tumor control in HER2-driven breast cancer.",
+                  "PMID:27405796; Reactome:R-HSA-2219528 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: PI3K/AKT output can remain sufficient via parallel survival programs (mTORC1 or ER signaling), so tumors may resist despite partial PI3K downshift after neratinib.",
+                  "PMID:18508484; PMID:33303839 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In responders, “up” can be a bulk signature artifact (e.g., immune/stromal admixture) while tumor cell PI3K flux is actually reduced.",
+                  "Reactome:R-HSA-2219528 (Reactome)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Adaptive feedback (RTK rewiring) or constitutive lesions (PIK3CA/PTEN) sustain/increase AKT signaling despite HER-family inhibition → resistance.",
+                  "PMID:20813970; PMID:33303839 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_MTORC1_SIGNALING": {
+      "description": "mTORC1-driven anabolic growth and translation programs that integrate nutrient and growth-factor signals.",
+      "interpretation": "mTORC1 signaling reflects tumor growth-state control downstream of AKT and is described as a relevant survival/growth axis in the neratinib mechanism and resistance context.",
+      "Administration_of_neratinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: If mTORC1 elevation is largely upstream HER2/PI3K-driven (not autonomous), HER-family blockade can reduce inputs and improve control.",
+                  "MSigDB:M5924; PMID:27405796 (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: High mTORC1 signaling can reflect downstream/parallel activation that blunts HER2-targeted efficacy (a rationale for adding mTOR/PI3K pathway inhibitors in resistant HER2+ disease).",
+                  "PMID:26874901; PMID:33303839; PMID:20813970 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Lower baseline mTORC1 can indicate fewer downstream escape mechanisms, increasing the chance that HER2 blockade alone is sufficient.",
+                  "MSigDB:M5924 (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Some tumors have low mTORC1 transcriptional output yet resist via MAPK/ER-driven proliferation or drug exposure limitations (pharmacology/tolerability).",
+                  "MSigDB:M5924; FDA label (NERLYNX/neratinib; NDA 208051) (gsea-msigdb.org)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: By suppressing upstream HER-family signaling, neratinib can reduce signaling into PI3K–AKT–mTOR networks and contribute to growth arrest in HER2-dependent tumors.",
+                  "PMID:27405796; MSigDB:M5924 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Even when mTORC1 signatures fall, tumors can survive via alternative programs (ER/MAPK) or incomplete pathway suppression, yielding resistance.",
+                  "PMID:18508484; MSigDB:M5924 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Transient feedback activation of mTORC1 signatures can occur early while overall tumor burden decreases (sampling/timing effect).",
+                  "MSigDB:M5924 (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Persistent mTORC1 activation after HER-family inhibition indicates downstream escape (PI3K/mTOR axis autonomy) and correlates with resistance.",
+                  "PMID:20813970; PMID:33303839 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_E2F_TARGETS": {
+      "description": "E2F-regulated transcriptional program linked to G1/S progression and proliferative cell-cycle activity.",
+      "interpretation": "E2F-target activity captures proliferative drive and cell-cycle progression, which is discussed as changing with effective ERBB blockade and as a potential bypass route when sustained.",
+      "Administration_of_neratinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High E2F/cell-cycle transcription implies a proliferative, HER2-driven state that can be suppressed when upstream HER-family signaling is blocked.",
+                  "MSigDB:M5925; PMID:33909203 (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: E2F up can be maintained by RB pathway defects or alternative mitogenic drivers, so proliferation persists even when HER2 is inhibited → resistance.",
+                  "MSigDB:M5925 (gsea-msigdb.org)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some HER2-driven tumors are less overtly proliferative at baseline (treatment effects/dormancy) but still HER-family dependent; pathway blockade can still be beneficial.",
+                  "PMID:27405796 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low E2F targets suggests limited reliance on active cycling; HER2 inhibition may not translate into meaningful cytostatic effect.",
+                  "MSigDB:M5925 (gsea-msigdb.org)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Neratinib reduces HER-family signaling and cell-cycle regulatory programs, driving G1 arrest and lowering E2F target expression in sensitive HER2-driven models.",
+                  "PMID:33909203; MSigDB:M5925 (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: E2F may drop (cytostasis) without tumor regression if survival pathways persist (PI3K/mTOR/ER), yielding stable but resistant disease.",
+                  "PMID:20813970; PMID:18508484 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In responders, bulk “up” E2F can reflect proliferating immune/stromal cells or sampling bias while tumor cell cycling is actually curtailed.",
+                  "MSigDB:M5925 (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Failure to suppress E2F targets after neratinib implies ongoing proliferation (RB/E2F axis uncoupled from HER2), consistent with resistance.",
+                  "MSigDB:M5925; PMID:33909203 (gsea-msigdb.org)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_APOPTOSIS": {
+      "description": "Core apoptotic machinery and pro-death signaling programs that execute programmed cell death.",
+      "interpretation": "Apoptosis is a key tumor-control outcome described with HER-family signaling inhibition, reflecting a shift away from survival signaling in responsive settings.",
+      "Administration_of_neratinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: A primed apoptotic state (high pro-apoptotic signaling) can facilitate rapid tumor cell death once oncogenic HER-family survival signaling is removed.",
+                  "MSigDB:M5902; PMID:27405796 (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Apoptosis signatures can be elevated from stress/inflammation but neutralized by strong anti-apoptotic programs, so baseline “up” does not ensure drug sensitivity.",
+                  "MSigDB:M5902 (gsea-msigdb.org)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low apoptosis at baseline is common in aggressive HER2-driven tumors; removing HER-family survival signaling can still trigger apoptosis in sensitive disease.",
+                  "PMID:33909203; MSigDB:M5902 (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Strong baseline apoptosis suppression (e.g., anti-apoptotic buffering) can limit cell death even if HER2 is inhibited, contributing to resistance.",
+                  "MSigDB:M5902 (gsea-msigdb.org)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Neratinib’s sustained HER-family inhibition can lead to cell-cycle arrest and apoptosis in sensitive HER2-driven settings.",
+                  "PMID:33909203; PMID:27405796; MSigDB:M5902 (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Apoptosis gene expression can rise (stress response) without effective execution (caspase blockade), resulting in resistant phenotype despite “up” signature.",
+                  "MSigDB:M5902 (gsea-msigdb.org)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In deep responders with rapid tumor cell clearance, bulk tumor apoptosis signatures may fall over time as tumor mass contracts.",
+                  "MSigDB:M5902 (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Failure to induce apoptosis after HER-family blockade implies continued survival signaling (PI3K/mTOR or ER escape), consistent with resistance.",
+                  "PMID:20813970; PMID:18508484 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_ESTROGEN_RESPONSE_LATE": {
+      "description": "Estrogen receptor (ER)-linked transcriptional program reflecting sustained/late ER-driven gene expression.",
+      "interpretation": "ER signaling is described as clinically relevant in HR+ breast cancer subtypes where cross-talk with HER2 can influence benefit and where combination endocrine strategies are discussed alongside neratinib.",
+      "Administration_of_neratinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (HR+/HER2+ context): In ER+/HER2+ early breast cancer, HR positivity is a key clinical stratum where extended adjuvant neratinib shows benefit; ER/HER2 co-dependence can make sustained HER blockade valuable.",
+                  "PMID:26874901; PMID:33183970; MSigDB:M5907 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Strong ER program can act as an escape axis in HR+/HER2+ disease via ER–HER2 crosstalk, potentially reducing reliance on HER2 signaling alone and promoting relative resistance unless ER is also controlled.",
+                  "PMID:18508484; PMID:274338?? (not used); MSigDB:M5907 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: HR-low/weak ER signaling in a HER2-driven tumor can increase dependence on HER-family pathways, making HER blockade more effective.",
+                  "MSigDB:M5907; PMID:27405796 (gsea-msigdb.org)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: If ER signaling is low and HER2 signaling is not dominant (non–HER2-driven biology), neratinib is unlikely to help.",
+                  "FDA label (NERLYNX/neratinib; NDA 208051) (FDA Access Data)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In some responding HR+/HER2+ tumors, ER transcriptional programs can transiently rise as feedback while HER2 signaling is effectively suppressed and disease still improves (timing effect).",
+                  "PMID:18508484; MSigDB:M5907 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Adaptive ER upregulation after HER2 blockade is a known escape mechanism in HR+/HER2+ breast cancer, supporting resistance unless combined ER-directed therapy is optimized.",
+                  "PMID:18508484; PMID:20887199; MSigDB:M5907 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: If HER2 blockade is paired with effective endocrine control (or ER program contracts), reduced ER-driven escape alongside HER-family inhibition supports sensitivity in HR+/HER2+ disease.",
+                  "PMID:18508484; PMID:33183970; MSigDB:M5907 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: ER signatures can fall (e.g., due to tumor dedifferentiation or sampling) while non-ER escape pathways (PI3K/mTOR/MAPK) still maintain resistance.",
+                  "PMID:20813970; MSigDB:M5907 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "ERBB2",
+    "PIK3CA"
+  ],
+  "sensitivity_genes_down": [],
+  "resistance_genes_up": [
+    "PIK3CA",
+    "ERBB3",
+    "IGF1R",
+    "MET",
+    "CCND1",
+    "CDK4",
+    "BCL2",
+    "TNF",
+    "IL6",
+    "STAT3"
+  ],
+  "resistance_genes_down": [
+    "PTEN",
+    "RB1",
+    "TP53"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "ERBB2",
+      "interpretation": "Higher HER2 dependence (amplification/overexpression or activating ERBB2 context as described) is presented as a setting where neratinib’s direct ERBB2 inhibition is most effective."
+    },
+    {
+      "gene": "PIK3CA",
+      "interpretation": "PIK3CA alterations are explicitly described as being associated with enhanced benefit from neratinib in ExteNET (noted as counterintuitive in the source)."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [],
+  "resistance_genes_up_annotations": [
+    {
+      "gene": "PIK3CA",
+      "interpretation": "Upregulated PI3K/AKT/mTOR signaling driven by PIK3CA mutation is described as a bypass survival mechanism that can reduce neratinib efficacy when the pathway remains high."
+    },
+    {
+      "gene": "ERBB3",
+      "interpretation": "Upregulation of alternate tyrosine-kinase signaling via ERBB3 is described as a mechanism to reactivate AKT/MAPK and bypass HER2 blockade."
+    },
+    {
+      "gene": "IGF1R",
+      "interpretation": "Upregulation of IGF1R signaling is described as an alternative receptor input that can restore downstream survival signaling despite ERBB inhibition."
+    },
+    {
+      "gene": "MET",
+      "interpretation": "Upregulation of HGF–MET signaling is described as a bypass route to reactivate AKT/MAPK and support resistance to HER2 inhibition."
+    },
+    {
+      "gene": "CCND1",
+      "interpretation": "Elevated Cyclin D1/E2F axis activity (including CCND1 amplification as stated) is described as enabling proliferation and overcoming neratinib-induced growth suppression."
+    },
+    {
+      "gene": "CDK4",
+      "interpretation": "Upregulation of Cyclin D1–CDK4 signaling is described as sustaining RB phosphorylation/E2F activation and promoting resistance to neratinib’s antiproliferative effects."
+    },
+    {
+      "gene": "BCL2",
+      "interpretation": "Overexpression of anti-apoptotic BCL2-family signaling is described as a survival mechanism that can blunt neratinib-induced cell death."
+    },
+    {
+      "gene": "TNF",
+      "interpretation": "TNF-linked inflammatory survival signaling (via TNFα/NFκB framing in the source) is described as a potential escape program under chronic neratinib exposure."
+    },
+    {
+      "gene": "IL6",
+      "interpretation": "Upregulation of IL6-associated survival signaling (with STAT3 noted) is described as a potential resistance mechanism supporting survival under HER2 inhibition."
+    },
+    {
+      "gene": "STAT3",
+      "interpretation": "STAT3-associated survival signaling is described as part of an inflammatory/pro-survival program that may help cells resist neratinib-induced death."
+    }
+  ],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "PTEN",
+      "interpretation": "PTEN loss is described as hyperactivating PI3K/AKT and mTORC1 signaling, enabling bypass survival signaling and contributing to resistance."
+    },
+    {
+      "gene": "RB1",
+      "interpretation": "RB1 loss is described as allowing bypass of neratinib’s antiproliferative effects by sustaining E2F-driven proliferation."
+    },
+    {
+      "gene": "TP53",
+      "interpretation": "Loss or downregulation of p53 function (including TP53 mutation context) is described as limiting apoptotic responses to ERBB2 inhibition and contributing to resistance."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Neratinib|inhibits|EGFR",
+    "Neratinib|inhibits|ERBB2",
+    "Neratinib|inhibits|ERBB4",
+    "Neratinib|inhibits|KDR",
+    "PIK3CA_alteration|predicts_sensitivity_to|Neratinib",
+    "PIK3CA_activation|confers_resistance_to|Neratinib",
+    "PTEN_loss|confers_resistance_to|Neratinib",
+    "RB1_loss|confers_resistance_to|Neratinib",
+    "CCND1_amplification|confers_resistance_to|Neratinib",
+    "ERBB2_L755S|confers_resistance_to|Neratinib"
+  ],
+  "Breast_cancer_subtype_information": {
+    "early-stage HER2-positive breast cancer": "Neratinib is approved as extended adjuvant therapy for early-stage HER2-positive breast cancer (following trastuzumab); US indication covers early-stage HER2-overexpressing disease after adjuvant trastuzumab, while EU approval limits it to hormone receptor–positive HER2+ disease.",
+    "metastatic HER2-positive breast cancer": "In 2020, the FDA approved neratinib (with capecitabine) for metastatic HER2+ breast cancer after ≥2 prior anti-HER2 regimens.",
+    "HER2-negative metastatic breast cancer with activating ERBB2 mutations": "As of 2023, NCCN advises neratinib use (often with fulvestrant and trastuzumab) in HER2-negative metastatic patients with activating ERBB2 mutations.",
+    "ER+/HER2+ disease": "Neratinib may complement endocrine therapy in hormone-receptor–positive subtypes, with greater benefit described in HR+ patients and with combination endocrine blockade (e.g., neratinib, fulvestrant, trastuzumab) reported to yield objective responses in ER+ metastatic disease with ERBB2 mutation context."
+  },
+  "citations": [
+    "NERLYNX (neratinib) tablets",
+    "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/208051s000lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2017/208051s000lbl.pdf)",
+    "Nerlynx, INN-neratinib",
+    "[https://www.ema.europa.eu/en/documents/product-information/nerlynx-epar-product-information_en.pdf](https://www.ema.europa.eu/en/documents/product-information/nerlynx-epar-product-information_en.pdf)",
+    "FDA approves neratinib for metastatic HER2-positive breast cancer | FDA",
+    "[https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-neratinib-metastatic-her2-positive-breast cancer](https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-neratinib-metastatic-her2-positive-breast cancer)",
+    "NCCN Adds Neratinib to New Metastatic Breast Cancer Guidelines | OncLive",
+    "[https://www.onclive.com/view/nccn-adds-neratinib-to-new-metastatic-breast-cancer-guidelines](https://www.onclive.com/view/nccn-adds-neratinib-to-new-metastatic-breast-cancer-guidelines)",
+    "NCCN Guidelines Updates: Breast Cancer - PubMed",
+    "[https://pubmed.ncbi.nlm.nih.gov/29784737/](https://pubmed.ncbi.nlm.nih.gov/29784737/)",
+    "Neratinib: Uses, Interactions, Mechanism of Action | DrugBank Online",
+    "[https://go.drugbank.com/drugs/DB11828](https://go.drugbank.com/drugs/DB11828)",
+    "Final Efficacy Results of Neratinib in HER2-positive Hormone Receptor-positive Early-stage Breast Cancer",
+    "From the Phase III ExteNET Trial - PubMed",
+    "[https://pubmed.ncbi.nlm.nih.gov/33183970/](https://pubmed.ncbi.nlm.nih.gov/33183970/)",
+    "Neratinib - Wikipedia",
+    "[https://en.wikipedia.org/wiki/Neratinib](https://en.wikipedia.org/wiki/Neratinib)",
+    "Neratinib | CellMinerCDB | NCI Genomics and Pharmacology Facility",
+    "[https://discover.nci.nih.gov/drugs/cellminercdb/Neratinib_cellminercdb.html](https://discover.nci.nih.gov/drugs/cellminercdb/Neratinib_cellminercdb.html)",
+    "PIK3CA alterations and benefit with neratinib: analysis from the randomized, double-blind, placebo controlled, phase III ExteNET trial | Breast Cancer Research | Full Text",
+    "[https://breast-cancer-research.biomedcentral.com/articles/10.1186/s13058-019-1115-2](https://breast-cancer-research.biomedcentral.com/articles/10.1186/s13058-019-1115-2)"
+  ],
+  "notes": "Gene-level sensitivity/resistance signals include a noted context-dependent dual role for PI3K pathway alterations (PIK3CA) described as both enhanced benefit in ExteNET and as a bypass resistance axis when PI3K/AKT/mTOR remains high. Source files: prompt2_final.docx ; Neratinib.pdf ."
+}

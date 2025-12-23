@@ -1,0 +1,846 @@
+{
+  "drug_name": "Tucatinib",
+  "cancer_indication": "HER2-positive advanced/metastatic breast cancer (in combination with trastuzumab and capecitabine) after ≥1 prior anti-HER2 regimen, including patients with brain metastases.",
+  "drug_category": "HER2-targeted",
+  "drug_class": "Tyrosine kinase inhibitor",
+  "moa": "Tucatinib is an orally active, highly selective small-molecule tyrosine kinase inhibitor of HER2 (ERBB2) that binds the intracellular kinase domain and inhibits HER2 phosphorylation and downstream signaling. It inhibits the phosphorylation of both HER-2 and HER-3, leading to downstream changes in MAPK and AKT signaling and reduced cell proliferation. In HER2-amplified breast cancer, this blocks the PI3K-AKT and RAS-RAF-MEK-ERK cascades and can lead to cell cycle arrest and apoptosis. It is ~500-fold more selective for HER2 vs EGFR, and has demonstrated CNS activity in HER2+ brain metastases.",
+  "chembl_id": "CHEMBL3989868",
+  "drugbank_id": "DB11652",
+  "synonyms": [
+    "ARRY-380",
+    "ARRY380",
+    "MK-7119",
+    "ONT-380 (ONT-380)",
+    "irbinitinib (ONT-380)",
+    "TUKYSA"
+  ],
+  "primary_targets": [
+    "ERBB2",
+    "ERBB3"
+  ],
+  "pathway_sets": [
+    "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2",
+    "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER",
+    "KEGG_MAPK_SIGNALING_PATHWAY",
+    "REACTOME_SIGNALING_BY_EGFR_IN_CANCER",
+    "HALLMARK_NOTCH_SIGNALING",
+    "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+    "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+    "HALLMARK_MTORC1_SIGNALING",
+    "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+    "REACTOME_TCR_SIGNALING"
+  ],
+  "pathway_sets_annotations": {
+    "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2": {
+      "description": "Constitutive ERBB2 (HER2) homodimer/heterodimer signaling activates proliferative downstream pathways, including PI3K/AKT and MAPK/ERK cascades.",
+      "interpretation": "HER2 pathway upregulation is a dominant oncogenic driver in HER2-amplified breast cancer and defines a central therapeutic vulnerability targeted by tucatinib.",
+      "Administration_of_tucatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: HER2-amplified breast cancers with high ERBB2 pathway activity are “HER2-addicted,” so a HER2-selective TKI is more likely to be effective.",
+                  "PMID:32241871; PMID:31825569; NCT02614794; FDA label:NDA213411"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Even with high HER2 signaling, downstream lesions (e.g., PI3K pathway activation/PTEN loss) or parallel RTK bypass can uncouple survival from HER2 kinase inhibition.",
+                  "PMID:17936563; PMID:36097803; PMID:31825569; FDA label:NDA213411"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: A tumor may show a low bulk ERBB2 transcriptional signature (e.g., due to prior therapy/feedback) yet still retain HER2 amplification and dependence that is targetable by tucatinib.",
+                  "PMID:36344672; PMID:32241871; FDA label:NDA213411"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low ERBB2 pathway activity in breast cancer often reflects HER2-low/absent signaling or loss of HER2 dependence → limited on-target effect.",
+                  "PMID:31825569; FDA label:NDA213411"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Tucatinib directly inhibits HER2 kinase, suppressing ERBB2-driven signaling and tumor growth in HER2-amplified breast cancer.",
+                  "PMID:32241871; PMID:31825569; DOI:10.1056/NEJMoa1914609; FDA label:NDA213411"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: The pathway can be pharmacodynamically suppressed yet the tumor persists via non-ERBB2 survival programs (e.g., PI3K re-wiring, lineage plasticity).",
+                  "PMID:32241871; PMID:17936563; PMID:36344672"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Early adaptive upregulation of ERBB ligands/HER3 can transiently increase a “HER2/ERBB signature,” yet some tumors still undergo net growth arrest with continued HER2 blockade.",
+                  "PMID:36344672; PMID:32241871"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Adaptive ERBB network reactivation (HER3/EGFR ligand-driven signaling) can restore downstream MAPK/PI3K output despite HER2 inhibition → acquired resistance.",
+                  "PMID:36344672; PMID:17936563; PMID:32241871"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER": {
+      "description": "A major pro-survival signaling axis activated by receptor tyrosine kinases (including HER2/ERBB2) that promotes growth and survival through AKT pathway activity.",
+      "interpretation": "PI3K/AKT signaling is a key downstream effector of HER2-driven tumors and shapes tumor cell survival programs relevant to targeted therapy response.",
+      "Administration_of_tucatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: In HER2+ breast cancer, strong PI3K/AKT output often reflects upstream HER2/HER3 dependence, which tucatinib can interrupt.",
+                  "PMID:32241871; PMID:31825569; FDA label:NDA213411"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Constitutive PI3K activation (PIK3CA mutations/PTEN loss) is a major driver of resistance to HER2-targeted therapy, reducing reliance on HER2 kinase.",
+                  "PMID:17936563; PMID:36097803; PMID:31825569"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Low PI3K/AKT baseline can indicate a more “HER2→MAPK”-skewed tumor still vulnerable to HER2 kinase blockade.",
+                  "PMID:32241871; PMID:36344672"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: If PI3K/AKT is low because the tumor is not HER2-driven (or is driven by alternative pathways), tucatinib benefit is limited.",
+                  "PMID:31825569; FDA label:NDA213411"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Tucatinib suppresses HER2/HER3 signaling, reducing pAKT/PI3K pathway flux and promoting growth inhibition in HER2-amplified breast cancer models/clinically.",
+                  "PMID:32241871; PMID:31825569; DOI:10.1056/NEJMoa1914609"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: PI3K/AKT output may drop in bulk assays, yet resistant clones survive via MAPK, Notch/Wnt stemness, or metabolic rewiring.",
+                  "PMID:36344672; PMID:32241871"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: A compensatory PI3K rebound can occur, but if incomplete/short-lived, the dominant effect of sustained HER2 blockade can still produce response.",
+                  "PMID:32241871; PMID:36344672"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: PI3K/AKT reactivation (PIK3CA/PTEN changes or RTK bypass) restores survival signaling under HER2 blockade → resistance.",
+                  "PMID:17936563; PMID:36097803; PMID:36344672"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_MAPK_SIGNALING_PATHWAY": {
+      "description": "A downstream RAS–RAF–MEK–ERK cascade activated by HER2 that promotes cell growth and proliferation.",
+      "interpretation": "MAPK pathway activity reflects proliferative signaling downstream of HER2 and contributes to growth of HER2-driven breast cancers.",
+      "Administration_of_tucatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: HER2-amplified breast cancers frequently signal through MAPK; high MAPK output consistent with ERBB dependence can predict benefit from HER2 kinase inhibition.",
+                  "PMID:32241871; PMID:31825569"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: MAPK can be driven by KRAS/RTK bypass independent of HER2; high MAPK in that context reduces tucatinib dependence.",
+                  "PMID:36344672; PMID:32241871"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Low MAPK with clear HER2 amplification may indicate a PI3K-dominant HER2 program still suppressible by tucatinib.",
+                  "PMID:32241871"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low MAPK may reflect weak RTK signaling overall or non-ERBB drivers → reduced likelihood that HER2 blockade is sufficient.",
+                  "PMID:31825569"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Tucatinib inhibits HER2 signaling and reduces downstream MAPK (ERK) signaling in HER2+ breast cancer models, aligning with response.",
+                  "PMID:32241871; PMID:31825569"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Despite MAPK suppression, tumors can persist via PI3K/AKT or stemness programs (Notch/Wnt) and remain resistant.",
+                  "PMID:36344672; PMID:17936563"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Stress/adaptive MAPK activation may be observed, yet some tumors still respond if net HER2 signaling remains sufficiently inhibited.",
+                  "PMID:36344672; PMID:32241871"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: MAPK pathway reactivation is a common escape route under HER2-targeted pressure, driving acquired resistance.",
+                  "PMID:36344672; PMID:32241871"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_SIGNALING_BY_EGFR_IN_CANCER": {
+      "description": "EGFR (ERBB1) receptor tyrosine kinase signaling that can activate overlapping downstream pathways and can bypass HER2 blockade when elevated.",
+      "interpretation": "EGFR signaling can provide an alternative growth route and is described as a bypass mechanism in tumors progressing on HER2-directed therapy.",
+      "Administration_of_tucatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In a subset, EGFR-pathway “up” may reflect ERBB network activation still dependent on HER2-containing dimers that can be disrupted by HER2-selective inhibition.",
+                  "PMID:32241871; PMID:31825569"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Tucatinib has minimal EGFR inhibition; high EGFR-driven signaling provides a bypass route and predicts reduced tucatinib sensitivity.",
+                  "PMID:32241871; PMID:31825569"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low EGFR-cancer signaling with dominant HER2 amplification supports on-target dependency on HER2, favoring response.",
+                  "PMID:31825569; PMID:32241871"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: EGFR pathway may be low yet resistance persists via downstream PI3K activation or alternative RTKs (e.g., MET/IGF1R).",
+                  "PMID:17936563; PMID:36344672"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Although tucatinib is HER2-selective, suppression of ERBB network output can reduce apparent EGFR-pathway signatures in HER2-driven tumors.",
+                  "PMID:32241871"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: EGFR signatures may fall while tumors remain resistant through PI3K/AKT or Notch/Wnt programs.",
+                  "PMID:17936563; PMID:36344672"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Adaptive EGFR upregulation can occur but may not fully rescue signaling in some tumors, allowing continued benefit.",
+                  "PMID:36344672; PMID:32241871"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Adaptive EGFR/ligand-driven signaling can bypass HER2 inhibition (especially given tucatinib’s EGFR-sparing profile) → resistance.",
+                  "PMID:36344672"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_NOTCH_SIGNALING": {
+      "description": "Notch signaling regulates cell fate decisions and is noted as active/upregulated in triple-negative/basal breast cancer contexts.",
+      "interpretation": "Notch activity reflects basal/TNBC biology and can support tumor growth independently of HER2 signaling.",
+      "Administration_of_tucatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some HER2+ tumors have Notch activity yet remain primarily HER2-dependent; these can still respond to potent HER2 pathway suppression.",
+                  "PMID:36344672; PMID:31825569"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Notch-driven stemness/EMT programs can support HER2-therapy escape and persistence in breast cancer, reducing tucatinib sensitivity.",
+                  "PMID:36344672"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low Notch/stemness with high HER2 oncogene dependence supports better response to HER2-targeted TKIs.",
+                  "PMID:31825569; PMID:36344672"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Notch may be low but other bypass routes (PI3K activation, EGFR/MET signaling) still drive resistance.",
+                  "PMID:17936563; PMID:36097803; PMID:36344672"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Tucatinib does not directly inhibit Notch, but successful tumor control can reduce stem-like fractions and bulk Notch signatures secondarily.",
+                  "PMID:31825569"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Notch signatures may decrease in bulk while resistant clones persist via PI3K/MAPK or microenvironmental support.",
+                  "PMID:36344672"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Transient stress-induced Notch activation may occur during response without preventing overall tumor regression.",
+                  "PMID:36344672"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Adaptive enrichment of Notch-high stem-like cells under HER2 pressure can drive acquired resistance and relapse.",
+                  "PMID:36344672"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_WNT_BETA_CATENIN_SIGNALING": {
+      "description": "Wnt/β-catenin signaling pathway associated with deregulation in basal/TNBC subtype biology and linked to EMT/stemness programs.",
+      "interpretation": "Wnt/β-catenin activity contributes to aggressive phenotypes (e.g., EMT and stemness) that are not directly targeted by tucatinib.",
+      "Administration_of_tucatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Wnt/β-catenin may be elevated yet HER2 remains the dominant driver in some tumors, preserving tucatinib sensitivity.",
+                  "PMID:31825569"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Wnt/β-catenin-driven stemness and lineage plasticity can reduce dependence on HER2 signaling and promote resistance to HER2-targeted therapy.",
+                  "PMID:36344672"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low Wnt/stemness with strong HER2 oncogene addiction favors response to HER2 kinase inhibition.",
+                  "PMID:32241871; PMID:31825569"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Wnt may be low but resistance persists via PI3K activation (PIK3CA/PTEN) or EGFR/MAPK bypass.",
+                  "PMID:17936563; PMID:36344672"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Effective tumor kill can reduce Wnt-high stem-like fractions, lowering the bulk Wnt/β-catenin signature during response.",
+                  "PMID:31825569"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Bulk Wnt signature may fall even as resistant clones survive through other compensatory survival signaling.",
+                  "PMID:36344672"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Transient β-catenin signaling can rise during remodeling yet still not overcome strong HER2 blockade in some responders.",
+                  "PMID:36344672"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Selection for Wnt/β-catenin-high stemness is a plausible adaptive resistance program under chronic HER2-targeted pressure.",
+                  "PMID:36344672"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+      "description": "NF-κB-driven inflammatory and survival transcriptional program that is described as active in mesenchymal-like TNBC.",
+      "interpretation": "NF-κB activity promotes survival/inflammation programs that can dominate tumor behavior outside HER2 dependency.",
+      "Administration_of_tucatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: NFκB/TNF inflammation can correlate with immune infiltration that may support better anti-HER2 immune-mediated effects (regimen-level; trastuzumab-based).",
+                  "PMID:31825569; FDA label:NDA213411"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Chronic NFκB signaling promotes survival, cytokine-mediated resistance, and stress tolerance, reducing efficacy of targeted therapy.",
+                  "PMID:36344672"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low NFκB inflammatory survival signaling with dominant HER2 pathway dependence favors response to HER2 inhibition.",
+                  "PMID:32241871; PMID:31825569"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: NFκB may be low but resistance is driven by hardwired PI3K activation or ER signaling escape.",
+                  "PMID:17936563; PMID:36344672"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: By suppressing upstream RTK survival cues, HER2 inhibition can indirectly reduce NFκB output in some HER2-driven tumors, aligning with response.",
+                  "PMID:32241871"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: NFκB signature can fall while resistant clones persist via PI3K/MAPK rewiring.",
+                  "PMID:32241871"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Acute inflammatory signaling can rise with tumor cell stress and immune engagement during effective therapy without preventing response.",
+                  "PMID:37166471"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Therapy-induced TNF/NFκB can be pro-survival and foster microenvironmental protection, contributing to resistance.",
+                  "PMID:36344672"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_MTORC1_SIGNALING": {
+      "description": "mTOR/mTORC1 nutrient-sensing growth pathway; activation is reported in certain TNBC subgroup contexts (including HRD-low TNBC with poor prognosis).",
+      "interpretation": "mTORC1 activation represents an alternative growth/survival program that may reduce dependence on HER2 signaling.",
+      "Administration_of_tucatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High mTORC1 output downstream of HER2/PI3K suggests pathway addiction that can be reduced by HER2 kinase inhibition in HER2-amplified breast cancer.",
+                  "PMID:32241871"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Persistent mTORC1 activity driven by PI3K pathway alterations can maintain growth despite HER2 inhibition.",
+                  "PMID:17936563; PMID:36097803"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: mTORC1-low tumors can still be HER2-dependent through MAPK or other arms and respond to tucatinib.",
+                  "PMID:32241871"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low mTORC1 may indicate weak HER2/PI3K drive or alternative biology, decreasing tucatinib benefit.",
+                  "PMID:31825569"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: By inhibiting HER2 signaling, tucatinib reduces downstream PI3K/AKT signaling and can decrease mTORC1 transcriptional output in responders.",
+                  "PMID:32241871"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: mTORC1 signatures may drop, yet tumors persist via MAPK, Notch/Wnt, or microenvironmental support.",
+                  "PMID:36344672"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Compensatory mTORC1 upregulation can occur but may be insufficient to overcome sustained HER2 blockade in some cases.",
+                  "PMID:36344672"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Reactivation of PI3K/AKT→mTORC1 signaling under HER2 pressure supports acquired resistance.",
+                  "PMID:17936563; PMID:36097803"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+      "description": "Estrogen receptor signaling transcriptional program characteristic of HR+ (luminal) breast cancers and linked to endocrine-driven proliferation.",
+      "interpretation": "ER signaling is a key proliferative driver in HR+ disease and is described as a potential bypass/crosstalk mechanism in HR+/HER2+ settings.",
+      "Administration_of_tucatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In HR+/HER2+ breast cancer, ER programs can be high yet the tumor may remain sufficiently HER2-driven to respond to tucatinib-containing HER2 blockade.",
+                  "PMID:36344672; PMID:31825569"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Strong ER signaling can provide an alternate growth axis in HER2+ disease, reducing dependence on HER2 kinase inhibition (endocrine/HER2 crosstalk).",
+                  "PMID:36344672"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low ER transcriptional program (often HR−/HER2+ or less ER-driven biology) increases the likelihood of HER2 oncogene addiction and response to HER2 TKIs.",
+                  "PMID:31825569"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: ER-low tumors can still be tucatinib-resistant if downstream PI3K is constitutively activated or if HER2 dependence is lost.",
+                  "PMID:36097803"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Effective suppression of HER2-driven proliferation can reduce ER-associated cell-cycle/early estrogen-response signatures in bulk tumor assays.",
+                  "PMID:31825569"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: ER signatures may fall yet resistance persists via PI3K/MAPK or stemness programs.",
+                  "PMID:36344672"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: ER program upshift can accompany tumor remodeling; some tumors still respond to HER2 blockade, but this often signals emerging ER reliance.",
+                  "PMID:36344672"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Adaptive ER signaling “escape” can maintain growth when HER2 kinase is inhibited, contributing to resistance in HR+/HER2+ disease.",
+                  "PMID:36344672"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_TCR_SIGNALING": {
+      "description": "T cell receptor (TCR) signaling is an adaptive immunity pathway reflecting T-cell activation and immune signaling within the tumor microenvironment.",
+      "interpretation": "Immune activation signatures (including T-cell activity) are described as markers of an immunoreactive microenvironment that may correlate with outcomes and combination responses, though tucatinib is not an immunotherapy.",
+      "Administration_of_tucatinib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (breast/regimen-level): Higher T-cell/TCR signaling (inflamed microenvironment) can associate with better benefit from anti-HER2 regimens; tucatinib is used clinically with trastuzumab-based therapy.",
+                  "PMID:31825569; FDA label:NDA213411"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: TCR-high tumors can still resist if immune dysfunction/exclusion dominates or if tumor-intrinsic bypass (PI3K, Wnt/Notch) overrides.",
+                  "PMID:37166471; PMID:36344672"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some HER2-driven tumors are immune-cold yet still respond well to direct HER2 pathway inhibition (tumor-intrinsic dependency outweighs immune contribution).",
+                  "PMID:32241871; PMID:31825569"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (breast/regimen-level): Immune-desert states reduce immune-mediated contributions to trastuzumab-based efficacy and often track with poorer overall outcomes despite targeted therapy.",
+                  "PMID:31825569"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate (preclinical breast): Tucatinib can favorably modulate the immune microenvironment and increase anti-tumor immune activity in HER2+ breast cancer models, supporting sensitivity.",
+                  "PMID:37166471"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Immune activation signatures can rise without tumor control if suppressive circuits dominate or tumor-intrinsic escape persists.",
+                  "PMID:37166471; PMID:36344672"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: With strong tumor debulking, immune-cell content can contract over time, lowering bulk TCR signaling despite ongoing sensitivity.",
+                  "PMID:31825569"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Lack of immune engagement (persistently low TCR signaling) together with tumor-intrinsic escape supports resistance/poor response.",
+                  "PMID:31825569; PMID:36344672"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "ERBB2",
+    "ERBB3"
+  ],
+  "sensitivity_genes_down": [],
+  "resistance_genes_up": [
+    "EGFR",
+    "ERBB2",
+    "ERBB3",
+    "ESR1",
+    "MET",
+    "PIK3CA",
+    "AR"
+  ],
+  "resistance_genes_down": [
+    "PTEN"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "ERBB2",
+      "interpretation": "Amplification/overexpression of ERBB2 (HER2) is described as strongly predicting sensitivity because tucatinib directly inhibits HER2 kinase and blocks the dominant oncogenic driver."
+    },
+    {
+      "gene": "ERBB3",
+      "interpretation": "Tumors co-overexpressing ERBB2 and ERBB3 are described as sensitive because HER2 blockade inactivates HER2–HER3 signaling, and tucatinib inhibits HER3 phosphorylation."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [],
+  "resistance_genes_up_annotations": [
+    {
+      "gene": "EGFR",
+      "interpretation": "EGFR overexpression/upregulation is described as a bypass mechanism because EGFR can dimerize with HER2 or signal independently; tucatinib spares EGFR, so elevated EGFR signaling can mitigate HER2 blockade."
+    },
+    {
+      "gene": "MET",
+      "interpretation": "MET amplification is described as an example of alternate RTK upregulation that can bypass HER2 inhibition and confer resistance."
+    },
+    {
+      "gene": "PIK3CA",
+      "interpretation": "Activating PI3K/AKT pathway alterations (including PIK3CA mutations) are described as sustaining proliferative signaling despite HER2 blockade, contributing to resistance."
+    },
+    {
+      "gene": "PTEN",
+      "interpretation": "PTEN loss is described as a downstream alteration that may sustain PI3K/AKT signaling despite HER2 inhibition and contribute to resistance."
+    },
+    {
+      "gene": "ERBB2",
+      "interpretation": "Certain HER2 kinase domain mutations are described as decreasing binding of reversible TKIs (example given: T798I) and may confer resistance to drugs like tucatinib."
+    },
+    {
+      "gene": "ERBB3",
+      "interpretation": "HER3 (ERBB3) signaling up (e.g., via neuregulin) is described as potentially sustaining HER2–HER3 pathway signaling and blunting tucatinib effect despite inhibition of HER3 phosphorylation."
+    },
+    {
+      "gene": "ESR1",
+      "interpretation": "Upregulation of ER signaling is described as sustaining proliferation in HR+/HER2+ tumors when HER2 is blocked (cross-talk), reducing tucatinib efficacy."
+    },
+    {
+      "gene": "AR",
+      "interpretation": "ER/AR signaling cross-talk is described as a resistance mechanism context in HER2+ tumors co-expressing hormone receptors, where hormone receptor signaling can partially resist HER2 inhibition."
+    }
+  ],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "PTEN",
+      "interpretation": "PTEN loss (low PTEN) is described as a downstream alteration that may sustain PI3K/AKT signaling despite HER2 blockade, contributing to resistance."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Tucatinib|inhibits|ERBB2",
+    "Tucatinib|inhibits|ERBB3",
+    "ERBB2_overexpression|confers_sensitivity_to|Tucatinib",
+    "EGFR_upregulation|confers_resistance_to|Tucatinib",
+    "MET_amplification|confers_resistance_to|Tucatinib",
+    "PIK3CA_mutation|confers_resistance_to|Tucatinib",
+    "PTEN_loss|confers_resistance_to|Tucatinib",
+    "ESR1_upregulation|confers_resistance_to|Tucatinib",
+    "ERBB2_T798I|confers_resistance_to|Tucatinib"
+  ],
+  "Breast_cancer_subtype_information": {
+    "HER2-Positive (ERBB2-amplified) Metastatic Breast Cancer": "Tucatinib’s efficacy is firmly established in HER2+ MBC. The HER2CLIMB trial (phase II) showed that adding tucatinib to trastuzumab + capecitabine significantly improved PFS and OS compared to placebo. Importantly, in patients with brain metastases, tucatinib conferred a major benefit.",
+    "HER2-Low / HER2-Negative with ERBB2 Mutations": "In a phase 2 basket trial (SGNTUC-019), heavily pretreated patients with HER2-mutant, HER2– breast cancer achieved a 41.9% response rate to tucatinib + trastuzumab, indicating substantial activity even without HER2 amplification.",
+    "HR+/HER2– (Luminal A/B)": "Tucatinib is not indicated in HR+/HER2– breast cancer. No clinical trials have shown efficacy in this subtype, since they lack HER2 target. (Exceptions: if a luminal tumor harbors an ERBB2 mutation, see above.)",
+    "Triple-Negative/Basal-like": "TNBC is defined by lack of HER2, so tucatinib monotherapy has no approved role. However, recent “HER2-low” TNBC subgroup analyses suggest possible use in combination with HER2-directed ADCs; pre-treating HER2-low TNBC cells with tucatinib accumulates inactive HER2 and sensitizes them to trastuzumab–deruxtecan.",
+    "BRCA1/2-Mutated or HRD+ Tumors": "There is no evidence that germline BRCA mutation or HRD status per se affects tucatinib sensitivity, except insofar as some of these tumors may also overexpress HER2."
+  },
+  "citations": [
+    "Tucatinib: Uses, Interactions, Mechanism of Action | DrugBank Online",
+    "[https://go.drugbank.com/drugs/DB11652](https://go.drugbank.com/drugs/DB11652)",
+    "Reactome | Signaling by ERBB2 in Cancer",
+    "[https://reactome.org/content/detail/R-HSA-1227990](https://reactome.org/content/detail/R-HSA-1227990)",
+    "JCI Insight - Multiomics of HER2-low triple-negative breast cancer identifies a receptor\ntyrosine kinase–relevant subgroup with therapeutic prospects",
+    "[https://insight.jci.org/articles/view/172366](https://insight.jci.org/articles/view/172366)",
+    "HER2-Selective and Reversible Tyrosine Kinase Inhibitor Tucatinib Potentiates the Activity of T DM1 in Preclinical Models of HER2-positive Breast Cancer - PubMed",
+    "[https://pubmed.ncbi.nlm.nih.gov/37721518/](https://pubmed.ncbi.nlm.nih.gov/37721518/)",
+    "label",
+    "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213411s004lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2023/213411s004lbl.pdf)",
+    "Tucatinib and trastuzumab in HER2-mutated metastatic breast cancer: a phase 2 basket trial | Nature\nMedicine",
+    "[https://www.nature.com/articles/s41591-024-03462-0?error=cookies_not_supported&code=8d23fc8b-d72d-484a a35f-5a85d7497ba1](https://www.nature.com/articles/s41591-024-03462-0?error=cookies_not_supported&code=8d23fc8b-d72d-484a a35f-5a85d7497ba1)",
+    "KEGG PATHWAY: Breast cancer - Reference pathway",
+    "[https://www.kegg.jp/kegg-bin/show_pathway?map05224](https://www.kegg.jp/kegg-bin/show_pathway?map05224)",
+    "Acquired gene alterations potentially related to resistance to anti ...",
+    "[https://ascopubs.org/doi/pdf/10.1200/JCO.2025.43.4_suppl.277](https://ascopubs.org/doi/pdf/10.1200/JCO.2025.43.4_suppl.277)",
+    "Mechanisms of acquired resistance to HER2-Positive breast cancer ...",
+    "[https://www.sciencedirect.com/science/article/pii/S0014299924004138](https://www.sciencedirect.com/science/article/pii/S0014299924004138)",
+    "Tucatinib Plus T-DM1 Extends Progression-Free Survival vs T-DM1 Alone in Advanced HER2-\nPositive Breast Cancer - The ASCO Post",
+    "[https://ascopost.com/issues/december-25-2023/tucatinib-plus-t-dm1-extends-progression-free-survival-vs-t-dm1-alone-in advanced-her2-positive-breast-cancer/](https://ascopost.com/issues/december-25-2023/tucatinib-plus-t-dm1-extends-progression-free-survival-vs-t-dm1-alone-in advanced-her2-positive-breast-cancer/)",
+    "TUKYSA Combination Significantly Improves Progression-Free Survival as First-Line Maintenance in\nHER2+ Metastatic Breast Cancer in HER2CLIMB-05 Trial | Pfizer",
+    "[https://www.pfizer.com/news/press-release/press-release-detail/tukysa-combination-significantly-improves-progression-free](https://www.pfizer.com/news/press-release/press-release-detail/tukysa-combination-significantly-improves-progression-free)"
+  ],
+  "notes": "Drug efflux/metabolism mechanisms are mentioned as possible but with limited breast-cancer–specific evidence. Contraindications are stated as none (aside from standard pregnancy/lactation cautions). Sources parsed from  and prompt instructions ."
+}

@@ -1,0 +1,1059 @@
+{
+  "drug_name": "Bevacizumab",
+  "cancer_indication": "HER2-negative metastatic or locally advanced breast cancer (especially triple-negative disease) in combination with chemotherapy for patients with high tumor burden or visceral crisis, as permitted in some regulatory settings.",
+  "drug_category": "Anti-angiogenic",
+  "drug_class": "Anti–VEGF-A monoclonal antibody",
+  "moa": "Bevacizumab is a humanized monoclonal antibody that binds VEGF-A, preventing it from engaging VEGFR-1 and VEGFR-2 on endothelial cells and thereby inhibiting tumor angiogenesis. In breast cancer, many tumors—particularly aggressive triple-negative and basal-like subtypes—overexpress VEGF in response to hypoxia via HIF-1α, making them highly dependent on VEGF-driven neovascularization. By neutralizing VEGF-A, bevacizumab prunes immature vessels and transiently normalizes the remaining vasculature, improving delivery of concomitant chemotherapy and reducing tumor perfusion. Over time, however, VEGF blockade can exacerbate hypoxia and select for alternative angiogenic pathways, EMT, and invasive or stem-like phenotypes that drive resistance.",
+  "chembl_id": "CHEMBL1201583",
+  "drugbank_id": "DB00112",
+  "synonyms": [
+    "Avastin",
+    "Abevmy",
+    "Alymsys",
+    "Avzivi",
+    "Aybintio",
+    "Mvasi (bevacizumab-awwb)",
+    "Zirabev (bevacizumab-bvzr)",
+    "Vegzelma",
+    "Oyavas",
+    "rhuMAb-VEGF",
+    "ABP-215",
+    "BAT1706",
+    "CT-P16",
+    "BP102",
+    "IBI305",
+    "MIL60",
+    "PF-06439535"
+  ],
+  "primary_targets": [
+    "VEGFA"
+  ],
+  "pathway_sets": [
+    "KEGG_VEGF_SIGNALING_PATHWAY",
+    "HALLMARK_HYPOXIA",
+    "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+    "REACTOME_SIGNALING_BY_NOTCH",
+    "SMID_BREAST_CANCER_BASAL_UP",
+    "PID_FGF_PATHWAY",
+    "REACTOME_TIE2_SIGNALING",
+    "REACTOME_SIGNALING_BY_MET",
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+    "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+    "HALLMARK_ANGIOGENESIS",
+    "REACTOME_SIGNALING_BY_PDGF"
+  ],
+  "pathway_sets_annotations": {
+    "KEGG_VEGF_SIGNALING_PATHWAY": {
+      "description": "VEGF-A/VEGFR1/VEGFR2-driven pro-angiogenic signaling that governs endothelial proliferation, migration, and new vessel sprouting in tumors.",
+      "interpretation": "In breast cancer, particularly VEGF-high and highly vascular TNBC/basal-like tumors, strong VEGF signaling drives angiogenesis and tumor growth; bevacizumab sensitivity is greatest when this pathway is dominant and effectively downregulated by VEGF-A neutralization.",
+      "Administration_of_bevacizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High VEGF-A/VEGFR2 expression and microvessel density indicate VEGF-addicted angiogenesis; bevacizumab (anti–VEGF-A monoclonal antibody; DrugBank DB00112) neutralizes ligand and produces greater benefit when VEGF signaling is strongly active at baseline, as seen in HER2-negative metastatic breast cancer in trial E2100.",
+                  "PMID:15136787; PMID:18160686; PMID:26775688; PMID:15637262"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Extremely high VEGF axis activity may coexist with redundant pro-angiogenic programs or more mature, VEGF-independent vasculature, so VEGF blockade alone yields only modest pruning and rapid escape despite high pathway activity.",
+                  "PMID:15136787; PMID:26775688"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low VEGF-A/VEGFR activity implies little dependence on VEGF-driven angiogenesis; bevacizumab has limited target and tumors supported by alternative angiogenic drivers or vessel co-option are intrinsically resistant.",
+                  "PMID:26775688; PMID:15637262"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (in usual breast cancer practice): In the absence of appreciable VEGF-A signaling there is no clear on-target mechanism for bevacizumab benefit; any apparent sensitivity would usually reflect chemotherapy effect or mismeasurement of VEGF pathway activity rather than true VEGF dependence.",
+                  "PMID:15136787; PMID:26775688"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Chronic VEGF blockade can select for tumor or endothelial clones that overexpress VEGF-A isoforms or VEGF-C/D, restoring downstream VEGFR signaling and promoting evasive re-vascularization despite ongoing bevacizumab treatment.",
+                  "PMID:15136787; PMID:26775688"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Transient VEGF pathway up-regulation after initial dosing can reflect compensatory VEGF transcription in dying hypoxic cells; if vessels have already been pruned and perfusion reduced, the tumor may still respond clinically despite this transcriptional increase.",
+                  "PMID:15637262; PMID:25559953"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: VEGF signaling can be durably suppressed in endothelial cells while tumors switch to FGF, PDGF or MET-driven angiogenesis or to vessel co-option or vascular mimicry, so VEGF readouts fall but progression continues as an off-target escape from bevacizumab.",
+                  "PMID:32076044; PMID:29540614"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective neutralization of VEGF-A leads to reduced VEGFR2 phosphorylation, vessel pruning and normalization, lower microvessel density and interstitial pressure, enhancing chemotherapy delivery and tumor control in responsive breast cancers.",
+                  "PMID:15136787; PMID:18160686; PMID:15637262"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_HYPOXIA": {
+      "description": "Hypoxia- and HIF-1α–driven transcriptional program, including markers such as HIF1A and CA9, activated in low-oxygen tumor regions.",
+      "interpretation": "In bevacizumab-treated breast tumors, anti-angiogenic pruning increases intratumoral hypoxia, stabilizing HIF-1α and inducing hypoxia-response genes that promote angiogenic rebound, EMT, MET activation and aggressive behavior, thereby contributing to acquired resistance.",
+      "Administration_of_bevacizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Strong hypoxia and HIF-1α signatures drive VEGF-A production and chaotic neovessels that are direct bevacizumab targets; a subset of highly angiogenic, yet not fully adapted, hypoxic breast tumors can still derive benefit from VEGF blockade.",
+                  "PMID:25559953; PMID:15136787"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: High HIF-1α and hypoxia signatures in breast cancer correlate with VEGF expression, aggressive basal or triple-negative biology and upregulation of multiple pro-angiogenic factors and EMT, often predicting poor response and rapid escape from VEGF blockade.",
+                  "PMID:25559953; PMID:28679773"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: Well-perfused, normoxic tumors may rely more on co-opted host vessels or non-angiogenic growth; in such cases, blocking VEGF-driven neo-angiogenesis offers limited incremental benefit and resistance is common.",
+                  "PMID:15637262; PMID:15136787"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Moderately vascular, relatively normoxic tumors can undergo productive vascular normalization with bevacizumab, improving oxygenation and drug delivery so that anti-angiogenic and cytotoxic effects synergize.",
+                  "PMID:15637262; PMID:11533692"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Clinical imaging and biomarker data show that bevacizumab can induce acute, severe hypoxia in refractory breast tumors, triggering HIF-driven pro-angiogenic and invasive programs and promoting progression under continued therapy.",
+                  "PMID:28679773; PMID:25559953"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: An early spike in hypoxia after VEGF blockade can precede massive endothelial apoptosis and tumor necrosis; transient HIF-1α upregulation may coexist with overall tumor shrinkage before the vasculature fully collapses.",
+                  "PMID:15637262; PMID:25559953"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: Hypoxia scores may fall because overall tumor mass shrinks while a resistant, well-perfused core persists that is sustained by alternative angiogenic drivers or co-opted vessels, resulting in progression despite improved average oxygenation.",
+                  "PMID:15637262; PMID:15136787"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Vessel normalization and pruning reduce extreme hypoxia while improving perfusion for chemotherapy; normalized oxygenation plus anti-angiogenic pressure restrain growth and metastasis in bevacizumab-responsive breast tumors.",
+                  "PMID:15637262; PMID:11533692; PMID:18160686"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+      "description": "EMT program characterized by induction of transcription factors such as TWIST1, SNAI1/SNAI2 and mesenchymal markers like vimentin (VIM) with loss of epithelial traits.",
+      "interpretation": "Following VEGF blockade in breast cancer, EMT gene upregulation enhances motility, apoptosis resistance, vessel co-option and metastatic dissemination, representing a key resistance mechanism to bevacizumab.",
+      "Administration_of_bevacizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: EMT-high triple-negative or basal-like tumors often show hypoxia, HIF-1α activation and VEGF-driven angiogenesis; a minority with particularly angiogenesis-addicted phenotypes may still show a transient response to bevacizumab-containing regimens.",
+                  "PMID:21880181; PMID:25559953"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: EMT is associated with invasion, vasculogenic mimicry and alternative vascularization; mesenchymal, stem-like triple-negative tumors often evade pure anti-angiogenic therapy and progress despite VEGF inhibition.",
+                  "PMID:21880181; PMID:32470488"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: Epitheliod, non-EMT tumors may still be resistant if they are poorly angiogenic or harbor alternative survival pathways (for example strong ER signaling) so that adding bevacizumab contributes little beyond partner systemic therapy.",
+                  "PMID:21880181"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low EMT (luminal-like) tumors with intact epithelial architecture tend to depend more on classical endothelial angiogenesis, making VEGF blockade plus chemotherapy more effective.",
+                  "PMID:21880181; PMID:22082486"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Bevacizumab-induced hypoxia can drive EMT, promoting invasion, vasculogenic mimicry and metastatic spread, representing a classic evasive escape from anti-angiogenic therapy.",
+                  "PMID:32470488; PMID:25559953"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some tumors shrink cytoreductively so that the remaining small foci appear EMT-like transcriptionally, yet overall disease burden still falls; this usually precedes clinically evident resistance.",
+                  "PMID:21880181"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically not common: Persistent resistance despite a reduced EMT signature implies other dominant resistance mechanisms (such as FGF or MET-driven angiogenesis or immune escape) overshadowing microenvironmental mesenchymal programs.",
+                  "PMID:32076044; PMID:29540614"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective anti-VEGF therapy can reduce hypoxia and inflammatory cytokines that sustain EMT, leading to more epithelial, less invasive phenotypes in responders.",
+                  "PMID:32470488; PMID:25559953"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_SIGNALING_BY_NOTCH": {
+      "description": "Notch receptor–ligand signaling (e.g., NOTCH1, JAG1, DLL4) regulating cell fate, stem cell maintenance and endothelial tip/stalk cell behavior.",
+      "interpretation": "Bevacizumab-resistant breast tumors show Notch pathway activation in both tumor and endothelial cells, supporting a stem-like cancer cell compartment and VEGF-independent, stable vasculature that undermine ongoing VEGF-A blockade.",
+      "Administration_of_bevacizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In some contexts, moderate DLL4/Notch activity patterns tip vessels toward non-productive angiogenesis that remains partially VEGF-dependent, so simultaneous VEGF inhibition can still slow growth.",
+                  "PMID:21803743"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: DLL4–Notch signaling can create large, mature, VEGF-insensitive vessels and is a well-described driver of bevacizumab resistance in xenografts and clinical samples.",
+                  "PMID:21803743"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: Tumors with very low endothelial Notch activity may exploit alternative angiogenic pathways (FGF, PDGF, VEGF-C) or vessel co-option, remaining relatively insensitive to VEGF-A blockade.",
+                  "PMID:15136787; PMID:32076044"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low DLL4/Notch reduces arterial specification and vessel maturation, leaving a fragile, VEGF-dependent vasculature that regresses efficiently when VEGF-A is neutralized by bevacizumab.",
+                  "PMID:21803743; PMID:15637262"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Under VEGF blockade, tumors can adapt by upregulating DLL4/Notch in endothelium, generating larger, better-perfused vessels that are insensitive to further VEGF inhibition and thus mediate bevacizumab resistance.",
+                  "PMID:21803743"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In combination settings where DLL4/Notch is co-targeted, increased Notch signaling may render vessels more vulnerable to dual VEGF and Notch blockade, but bevacizumab alone would rarely be sufficient to exploit this.",
+                  "PMID:21803743"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically not common: If Notch activity falls but mature, pericyte-covered vessels persist via PDGF or Ang/TIE2 signaling, tumors may remain resistant despite reduced Notch readouts.",
+                  "PMID:19962671; PMID:15136787"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Direct or indirect dampening of endothelial Notch (for example decreased DLL4 signaling) can lead to fragile, non-productive microvasculature that collapses under VEGF deprivation, enhancing bevacizumab efficacy.",
+                  "PMID:21803743; PMID:15637262"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "SMID_BREAST_CANCER_BASAL_UP": {
+      "description": "Basal-like breast cancer gene-set reflecting a stem-cell–associated, highly proliferative and often TNBC-linked transcriptional phenotype.",
+      "interpretation": "Basal-like and TNBC tumors frequently exhibit high VEGF expression, angiogenesis and immune activation, conferring notable initial sensitivity to bevacizumab, but they can adapt under therapy by shifting further toward basal/stemness and EMT programs that mediate resistance.",
+      "Administration_of_bevacizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Basal-like or triple-negative tumors are often hypoxic and VEGF-high, so a subset with particularly angiogenesis-addicted phenotypes (for example without strong compensatory cytokine signaling) may derive transient progression-free survival benefit from bevacizumab-containing regimens.",
+                  "PMID:18451135; PMID:22082486; PMID:18160686"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Basal-like and triple-negative tumors with high basal-up signatures frequently harbor hypoxia, EMT, IL-6 and FGF2-driven pro-angiogenic escape and stem-like features, which are linked to poor and short-lived responses to anti-VEGF therapy in breast cancer.",
+                  "PMID:22082486; PMID:29540614"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: Luminal-like, basal-low tumors may still be resistant if angiogenesis is modest or alternative survival pathways (such as strong ER signaling) dominate such that adding bevacizumab contributes little beyond endocrine or chemotherapy.",
+                  "PMID:18451135; PMID:18160686"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Basal-low, less hypoxic tumors may have more classical, VEGF-dependent angiogenesis and intact immune infiltration, favoring better responses to vascular normalization and VEGF blockade.",
+                  "PMID:18451135; PMID:22082486"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Under selective pressure, residual disease may become more basal or mesenchymal with higher proliferation and hypoxia signatures, reflecting clonal evolution toward a more aggressive, bevacizumab-refractory triple-negative–like phenotype.",
+                  "PMID:22082486; PMID:29540614; PMID:28679773"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Short-term cytoreduction may leave behind small, basal-like deposits that still respond to ongoing therapy, but this typically precedes emergence of frank clinical resistance.",
+                  "PMID:18451135; PMID:22082486"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically not common: A drop in basal-up scores with clinical progression would suggest selection for non-basal, therapy-resistant clones or dominant stromal escape pathways that are not captured by this gene set, making bevacizumab ineffective.",
+                  "PMID:18451135; PMID:22082486"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective therapy can shift expression away from basal or triple-negative–like programs toward less proliferative phenotypes, consistent with tumor shrinkage and improved outcome in patients receiving bevacizumab plus chemotherapy.",
+                  "PMID:18451135; PMID:22082486; PMID:18160686"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "PID_FGF_PATHWAY": {
+      "description": "FGF2–FGFR signaling cascade promoting endothelial proliferation, survival and pericyte recruitment, acting as a potent alternative pro-angiogenic axis.",
+      "interpretation": "In breast cancer models, upregulation of FGF2/FGFR signaling under bevacizumab pressure restores angiogenesis and is correlated with poor response, while low baseline FGF2 or dual VEGF/FGF blockade is associated with improved bevacizumab activity.",
+      "Administration_of_bevacizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: FGF2-high tumors may still transiently benefit if VEGF is co-upregulated and dominant at baseline, so that initial VEGF blockade prunes vessels before FGF-driven escape emerges.",
+                  "PMID:32076044; PMID:29540614"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Multiple models show that upregulated FGF2/FGFR signaling in tumor vasculature is a key mechanism of acquired and primary resistance to VEGF inhibitors, providing an alternative angiogenic driver that undermines bevacizumab efficacy.",
+                  "PMID:32076044; PMID:29540614"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: FGF-low tumors may still be resistant if other non-VEGF ligands (such as PDGF or Ang/TIE2) sustain angiogenesis or if vascular co-option dominates, so that bevacizumab has little additional impact.",
+                  "PMID:15136787; PMID:19962671"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low FGF2 makes tumors more strictly VEGF-dependent; VEGF-A neutralization by bevacizumab then effectively suppresses endothelial proliferation without rapid FGF-mediated rescue.",
+                  "PMID:32076044; PMID:15637262"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Anti-VEGF pressure induces FGF2 upregulation in tumor and stromal cells, restoring angiogenesis and conferring bevacizumab resistance; this is a classic evasive pathway after VEGF inhibition.",
+                  "PMID:32076044; PMID:29540614"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: When VEGF is fully blocked and FGF upregulation is delayed or inefficient, tumors may still shrink despite emerging FGF signals, but this usually represents a short transient response that precedes relapse.",
+                  "PMID:32076044"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically not common: If FGF signaling is suppressed but disease progresses, other compensatory angiogenic axes (for example MET, PDGF or Ang/TIE2) or vessel co-option must be driving resistance to bevacizumab.",
+                  "PMID:32076044; PMID:29540614; PMID:19962671"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Combined VEGF and FGF pathway suppression (by co-therapy or tumor-intrinsic factors) collapses angiogenic signaling, leading to more durable vessel regression and tumor response to bevacizumab.",
+                  "PMID:32076044; PMID:29540614"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_TIE2_SIGNALING": {
+      "description": "Angiopoietin–Tie2 receptor signaling (e.g., ANGPT1/ANGPT2–TIE2) that modulates vessel stability, remodeling and interaction with Tie2-expressing myeloid cells.",
+      "interpretation": "During escape from bevacizumab in breast cancer, rising Angiopoietin-2 levels and Tie2-dependent recruitment of pro-angiogenic macrophages facilitate VEGF-independent vascular regrowth and immunosuppression, and high Ang2 has been linked to poor bevacizumab responses.",
+      "Administration_of_bevacizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In some tumors, high Ang2/TIE2 destabilizes vessels yet they remain predominantly VEGF-driven, so bevacizumab can still induce meaningful vascular pruning despite active TIE2 signaling.",
+                  "PMID:15136787; PMID:15637262; PMID:32266165"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: TIE2-expressing macrophages and Ang1/2–TIE2 signaling can maintain vessel integrity and perfusion independently of VEGF-A, stabilizing the vasculature and undermining bevacizumab efficacy.",
+                  "PMID:15136787; PMID:15637262; PMID:32266165"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: With low Ang/TIE2 activity, resistance to bevacizumab is more likely driven by other pathways such as FGF, PDGF or MET, or by vessel co-option rather than by this axis itself.",
+                  "PMID:15136787; PMID:32076044; PMID:32266165"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Weak TIE2 support leaves capillaries more dependent on VEGF-A signaling; bevacizumab can prune these fragile, poorly stabilized vessels efficiently in such settings.",
+                  "PMID:15136787; PMID:15637262"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Under VEGF blockade, tumors may adapt by upregulating Ang/TIE2 and recruiting TIE2-positive macrophages, enabling vessel survival and re-vascularization independent of VEGF, leading to bevacizumab resistance.",
+                  "PMID:15136787; PMID:32266165"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In combination regimens where Ang2/TIE2 is co-targeted, increased TIE2 activation may render vessels more vulnerable to dual VEGF and TIE2 blockade; bevacizumab monotherapy alone would seldom exploit this state.",
+                  "PMID:32266165; PMID:15637262"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically not common: Loss of TIE2 signaling but persistent resistance suggests dominance of other angiogenic or non-angiogenic supply routes such as MET or PDGF-driven angiogenesis or vessel co-option, rather than failure of VEGF–TIE2 targeting.",
+                  "PMID:15136787; PMID:32076044; PMID:32266165"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: When VEGF blockade coincides with reduced Ang/TIE2 signaling (either spontaneously or via co-therapy), endothelial survival cues are lost and vessels regress, enhancing the anti-tumor response to bevacizumab.",
+                  "PMID:15136787; PMID:15637262; PMID:32266165"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_SIGNALING_BY_MET": {
+      "description": "HGF–c-MET receptor tyrosine kinase signaling controlling tumor cell proliferation, survival, motility and pro-angiogenic factor production.",
+      "interpretation": "Anti-VEGF–induced hypoxia in breast tumors upregulates HGF/c-MET signaling, which drives invasive escape, metastatic spread and VEGF-independent vascular support, making c-MET activation a prominent bevacizumab resistance pathway.",
+      "Administration_of_bevacizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: A MET-high tumor that is also strongly VEGF-addicted may still have an initial response to VEGF blockade before HGF/c-MET-driven pro-angiogenic and invasive programs fully compensate and restore vascular support.",
+                  "PMID:28559461; PMID:32266165"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: The HGF/c-MET axis promotes angiogenesis, vascular remodeling, invasion and therapy resistance; high MET activity is a biomarker of VEGFR inhibitor resistance and is likely to blunt bevacizumab benefit in breast cancer and other solid tumors.",
+                  "PMID:28559461; PMID:32266165"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: MET-low tumors rarely resist bevacizumab via this axis; in such cases, resistance usually stems from alternative pathways (FGF, PDGF, integrins) or intrinsic chemo-resistance rather than from MET-driven escape.",
+                  "PMID:15136787; PMID:32076044"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: With limited MET-dependent escape available, tumors remain more dependent on VEGF-mediated angiogenesis, increasing the chance that bevacizumab plus chemotherapy can control disease.",
+                  "PMID:28559461; PMID:15136787"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: VEGF pathway blockade can select for or induce HGF/c-MET activation, which drives alternative angiogenesis, invasion and immune evasion, leading to acquired resistance to bevacizumab.",
+                  "PMID:28559461; PMID:32266165"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: In settings where VEGF and MET are co-inhibited, a MET-up state may still be associated with response; with bevacizumab alone, however, emerging MET activation usually heralds resistance rather than sustained benefit.",
+                  "PMID:28559461; PMID:32266165"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically not common: If MET signaling falls (for example after a MET TKI) yet disease progresses, resistance is more likely mediated by FGF, PDGF or immune escape mechanisms than by angiogenesis, and additional bevacizumab has limited value.",
+                  "PMID:32076044; PMID:32266165"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: When bevacizumab is used in contexts where MET has also been suppressed (trial co-therapy or prior MET TKI), the inability to switch to MET-mediated vascular remodeling enhances the durability of anti-angiogenic response.",
+                  "PMID:28559461; PMID:32266165"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+      "description": "Interferon-γ–driven immune activation program including Th1 chemokines (e.g., CXCL9, CXCL10), T-cell receptor signaling and antigen-presentation genes.",
+      "interpretation": "In HER2-negative and especially TNBC breast cancers, upregulated IFN-γ–related immune signatures and TIL-rich, T-cell–inflamed microenvironments are associated with better PFS and higher pathologic response when bevacizumab is added, as VEGF blockade relieves immunosuppression and enhances effector T-cell infiltration.",
+      "Administration_of_bevacizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: A strong IFN-γ/T cell–inflamed gene signature in breast tumors is associated with active anti-tumor immunity; VEGF blockade can normalize vessels, improve T-cell trafficking and synergize with this pre-existing immune response.",
+                  "PMID:20699406; PMID:31455888"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Highly inflamed tumors may resist primarily due to immune checkpoint upregulation or stromal barriers rather than angiogenesis; in this setting bevacizumab alone adds little without immunotherapy to relieve T-cell exhaustion.",
+                  "PMID:31455888"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: IFN-γ–low, immune-cold tumors often have abnormal vasculature and myeloid-rich, immunosuppressive microenvironments; here anti-VEGF monotherapy rarely reprograms the tumor microenvironment sufficiently to induce durable control.",
+                  "PMID:20699406; PMID:25559953"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: A small subset of angiogenesis-dominant, immune-cold tumors may still regress due to pure antivascular effects of bevacizumab plus chemotherapy, despite minimal IFN-γ activity and limited immune contribution.",
+                  "PMID:15136787; PMID:15637262"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: If IFN-γ response rises but tumors continue to progress, resistance is likely driven by compensatory checkpoints (such as PD-L1 or LAG3) or angiogenic escape, suggesting the need to add immune checkpoint blockade rather than further VEGF inhibition alone.",
+                  "PMID:31455888; PMID:20699406"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Vascular normalization by bevacizumab can enhance T-cell infiltration and IFN-γ signaling, improving immune-mediated tumor killing, particularly when combined with chemotherapy or checkpoint blockade in breast cancer.",
+                  "PMID:20699406; PMID:31455888"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Persistently abnormal or over-pruned but hostile vasculature may further reduce IFN-γ–driven immune infiltration, leaving tumors immune-cold and refractory to bevacizumab, even if angiogenesis markers decline.",
+                  "PMID:20699406; PMID:25559953"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not common: A drop in IFN-γ signature with tumor shrinkage implies that the main effect of bevacizumab was direct antivascular and cytotoxic rather than immune-mediated, which is possible but less mechanistically central for long-term control.",
+                  "PMID:15136787; PMID:15637262"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_IL6_JAK_STAT3_SIGNALING": {
+      "description": "IL-6–driven activation of JAK/STAT3 inflammatory signaling in tumor and stromal cells, promoting survival, cytokine production and pro-angiogenic gene expression.",
+      "interpretation": "In obese or inflammation-rich breast cancer microenvironments, IL-6/STAT3 upregulation sustains angiogenesis, recruits immunosuppressive myeloid cells and is specifically implicated in bevacizumab resistance, with IL-6 blockade restoring sensitivity in preclinical TNBC models.",
+      "Administration_of_bevacizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some IL-6–high tumors are also intensely VEGF-driven; short-term antivascular effects of bevacizumab may still appear before IL-6/STAT3-mediated FGF and pro-angiogenic compensation dominates and restores vascularization.",
+                  "PMID:29386350; PMID:32266165"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Obesity-induced IL-6/STAT3 signaling in breast cancer promotes pro-angiogenic (FGF2, VEGF) and immunosuppressive states, conferring primary and acquired resistance to anti-VEGF therapy including bevacizumab.",
+                  "PMID:29386350; PMID:32266165"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: IL-6/STAT3-low tumors may still be resistant if other pro-angiogenic or immune-escape pathways dominate; IL-6 is not the only driver of evasive resistance to VEGF blockade in breast cancer.",
+                  "PMID:32266165; PMID:32076044"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low IL-6/STAT3 signaling reduces pro-angiogenic cytokine loops and myeloid cell recruitment, making VEGF-driven angiogenesis more cleanly targetable by bevacizumab and favoring better vascular and clinical responses.",
+                  "PMID:29386350; PMID:32266165"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Bevacizumab-induced hypoxia and obesity-related systemic factors can boost IL-6/STAT3 activation, driving FGF2 and other pro-angiogenic mediators to restore vessels and promote resistance to continued VEGF blockade.",
+                  "PMID:29386350; PMID:32266165"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: A rise in IL-6/STAT3 with shrinking disease is typically transient; sustained IL-6 upregulation usually heralds impending angiogenic escape and resistance rather than durable sensitivity to bevacizumab.",
+                  "PMID:29386350"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically not common: If IL-6/STAT3 decreases but tumors still progress, compensation is likely mediated by FGF, MET or PDGF-driven angiogenesis or by non-angiogenic mechanisms, indicating that IL-6 is no longer the key resistance driver.",
+                  "PMID:32076044; PMID:32266165"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Successful combination strategies that block IL-6 or JAK/STAT3 alongside bevacizumab reduce inflammatory pro-angiogenic signaling, leading to more durable anti-angiogenic responses and improved tumor control.",
+                  "PMID:29386350; PMID:32266165"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_ANGIOGENESIS": {
+      "description": "Angiogenesis gene set representing coordinated expression of VEGF pathway components, endothelial markers and pro-angiogenic regulators.",
+      "interpretation": "Breast tumors with high HALLMARK_ANGIOGENESIS scores (e.g., VEGF-Ahigh, high microvessel density) are strongly angiogenesis-dependent and exhibit the greatest tumor regression and PFS benefit from bevacizumab, whereas angiogenesis-poor tumors show intrinsic non-response.",
+      "Administration_of_bevacizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: A strong angiogenesis gene signature (including VEGF, Ang/TIE2, integrins) reflects dependence on neovessel formation; bevacizumab was designed to target such angiogenesis-addicted tumors by neutralizing VEGF-A.",
+                  "PMID:15136787; PMID:26775688; PMID:32266165"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically rare: Some angiogenesis-high tumors already harbor multiple redundant ligand–receptor systems (VEGF, FGF, PDGF, Ang/TIE2), so VEGF-A neutralization alone does not produce sustained benefit and resistance emerges despite an angiogenic signature.",
+                  "PMID:32266165; PMID:32076044"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: When angiogenesis signatures are low, tumors may depend on vessel co-option or other growth mechanisms, leaving little on-target substrate for bevacizumab and leading to primary resistance.",
+                  "PMID:15136787; PMID:15637262"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically not common: Truly angiogenesis-low, VEGF-independent tumors lack a clear mechanistic basis for sensitivity to bevacizumab; any observed benefit is usually attributable to the partner chemotherapy rather than to VEGF blockade.",
+                  "PMID:15136787; PMID:26775688"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Evasive resistance often manifests as re-emergence or overshooting of angiogenic signatures through non-VEGF pathways (FGF, PDGF, Ang/TIE2) after initial vessel pruning, leading to renewed vascularization and progression despite bevacizumab.",
+                  "PMID:32266165; PMID:32076044"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Short-term persistence of angiogenesis signaling may coexist with radiologic response if many vessels are non-functional or pruning is patchy, but persistent high angiogenic signatures under bevacizumab typically herald relapse.",
+                  "PMID:15136787; PMID:26775688"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: Global angiogenesis signatures can fall while tumors sustain themselves via vessel co-option or vascular mimicry, resulting in bevacizumab failure despite apparent suppression of classical angiogenic programs.",
+                  "PMID:32470488; PMID:32266165"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Robust downregulation of angiogenic programs, reduced microvessel density and normalized vasculature are hallmarks of effective bevacizumab response in breast cancer and other solid tumors.",
+                  "PMID:15136787; PMID:15637262; PMID:26775688"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_SIGNALING_BY_PDGF": {
+      "description": "PDGF–PDGFR signaling that stimulates pericyte recruitment, vessel maturation and additional pro-angiogenic support often cooperating with other growth factors.",
+      "interpretation": "In breast cancer, PDGF signaling acts as a supporting angiogenic route; PDGF-BB can synergize with FGF2 and contribute to VEGF-independent vascularization, so activation of PDGF pathways can participate in bevacizumab resistance, while their relative quiescence favors VEGF-addicted sensitivity.",
+      "Administration_of_bevacizumab": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some PDGF-high tumors may still respond when VEGF is the principal driver and PDGF-dependent pericyte coverage is incomplete, allowing bevacizumab-mediated VEGF blockade to induce significant vessel regression.",
+                  "PMID:15136787; PMID:19962671"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: PDGF-B/PDGFRβ signaling recruits and matures pericytes, stabilizing vessels and protecting them from VEGF-A withdrawal; PDGF-C in particular can mediate tumorigenic and angiogenic escape from VEGF inhibition, causing bevacizumab resistance.",
+                  "PMID:19962671; PMID:32266165"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically rare: PDGF-low tumors may still be resistant if vessels are immature but angiogenesis-independent (for example, via vessel co-option) or if alternative pro-angiogenic circuits dominate, limiting the impact of VEGF blockade.",
+                  "PMID:15136787; PMID:32266165"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Low PDGF signaling yields poorly pericyte-covered, fragile vasculature that regresses readily when VEGF-A is neutralized, enhancing bevacizumab sensitivity through loss of pericyte-derived survival support.",
+                  "PMID:19962671; PMID:15637262"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Under VEGF blockade, tumors may increase PDGF/PDGFR signaling to thicken pericyte coverage and preserve vessels, a recognized evasive mechanism of resistance to bevacizumab and other VEGF-targeted agents.",
+                  "PMID:19962671; PMID:32266165"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Any transient clinical benefit in the face of rising PDGF signaling is usually short-lived, as PDGF-driven vessel stabilization soon overwhelms VEGF blockade and leads to resistance.",
+                  "PMID:19962671"
+                ]
+              ]
+            },
+            "Down": {
+              "Resistance": [
+                [
+                  "Mechanistically not common: If PDGF signaling is effectively reduced (for example by co-therapy) yet resistance persists, escape is being mediated by other angiogenic axes (FGF, MET, VEGF-C) or by non-angiogenic adaptations rather than PDGF itself.",
+                  "PMID:32076044; PMID:32266165"
+                ]
+              ],
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Dual suppression of VEGF-A and PDGF-mediated pericyte support destabilizes neovessels and promotes robust vascular regression, improving bevacizumab responses and durability of tumor control.",
+                  "PMID:19962671; PMID:15637262; PMID:32266165"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "sensitivity_genes_up": [
+      "VEGFA",
+      "KDR",
+      "CXCL9",
+      "CXCL10"
+    ],
+    "sensitivity_genes_down": [
+      "FGF2"
+    ],
+    "resistance_genes_up": [
+      "FGF2",
+      "ANGPT2",
+      "MET",
+      "IL6",
+      "HIF1A",
+      "CA9",
+      "TWIST1",
+      "SNAI1",
+      "SNAI2",
+      "VIM",
+      "CXCL8",
+      "VEGFA"
+    ],
+    "resistance_genes_down": [],
+    "sensitivity_genes_up_annotations": [
+      {
+        "gene": "VEGFA",
+        "interpretation": "Elevated baseline VEGF-A levels in plasma or tumor define highly angiogenesis-driven breast cancers, and multiple biomarker analyses reported greater PFS benefit and tumor shrinkage on bevacizumab in VEGF-Ahigh patients, consistent with VEGF-addicted tumors being most sensitive to VEGF-A neutralization."
+      },
+      {
+        "gene": "KDR",
+        "interpretation": "Higher baseline VEGFR-2 (KDR) levels in plasma were associated with improved PFS on bevacizumab in HER2-negative metastatic breast cancer, indicating that tumors actively signaling through VEGFA–VEGFR2 are more vulnerable to VEGF-A blockade."
+      },
+      {
+        "gene": "CXCL9",
+        "interpretation": "High expression of the Th1 chemokine CXCL9 marks immune-infiltrated, T cell–inflamed breast tumors in which bevacizumab-induced vessel normalization enhances T-cell recruitment, and such immune-activated tumors showed better clinical benefit in exploratory analyses."
+      },
+      {
+        "gene": "CXCL10",
+        "interpretation": "Like CXCL9, increased CXCL10 expression is part of an interferon-γ–driven immune signature that correlates with higher TILs and improved PFS when bevacizumab is combined with chemotherapy, reflecting synergy between VEGF blockade and pre-existing antitumor immunity."
+      }
+    ],
+    "sensitivity_genes_down_annotations": [
+      {
+        "gene": "FGF2",
+        "interpretation": "Low baseline FGF2 was observed in bevacizumab responders, whereas higher FGF2 levels correlated with poor responses; tumors lacking this alternative FGF-driven angiogenic route are more strictly VEGF-dependent and thus more sensitive to VEGF-A inhibition."
+      }
+    ],
+    "resistance_genes_up_annotations": [
+      {
+        "gene": "FGF2",
+        "interpretation": "Bevacizumab-resistant breast tumors and models often show rising FGF2, and FGF2–FGFR signaling restores endothelial proliferation and pericyte recruitment despite VEGF blockade; high FGF2 in settings such as obesity is explicitly linked to diminished bevacizumab efficacy, and dual VEGF/FGF inhibition reverses resistance in preclinical studies."
+      },
+      {
+        "gene": "ANGPT2",
+        "interpretation": "ANGPT2 (Angiopoietin-2) is frequently upregulated during VEGF inhibition, and high Ang2 levels and Ang2-positive vessels are associated with poor bevacizumab responses, as Ang2/Tie2 signaling destabilizes vasculature while recruiting Tie2+ macrophages that support VEGF-independent vascular regrowth and immune evasion."
+      },
+      {
+        "gene": "MET",
+        "interpretation": "Under bevacizumab-induced hypoxia, c-MET is upregulated and activated, driving invasive migration, survival and alternative pro-angiogenic signaling; increased MET expression has been documented at progression on anti-VEGF therapy and is a central component of escape from VEGF-A blockade."
+      },
+      {
+        "gene": "IL6",
+        "interpretation": "IL6 is elevated in inflammatory and obese breast cancer contexts, where IL-6/STAT3 signaling promotes pro-angiogenic inflammation, myeloid cell recruitment and survival; high IL-6 specifically mediated obesity-associated bevacizumab resistance in TNBC models, and IL-6 blockade restored sensitivity."
+      },
+      {
+        "gene": "HIF1A",
+        "interpretation": "Bevacizumab-induced hypoxia stabilizes HIF1A, and post-treatment tumors show increased HIF1A expression, which transcriptionally drives VEGF family ligands, MET and EMT programs, thereby orchestrating multiple resistance mechanisms to continued VEGF-A inhibition."
+      },
+      {
+        "gene": "CA9",
+        "interpretation": "CA9, a hypoxia marker co-upregulated with HIF1A after bevacizumab, reports the hypoxic shift that accompanies VEGF blockade; increased CA9 reflects activation of hypoxia-responsive survival pathways linked to angiogenic rebound and resistance."
+      },
+      {
+        "gene": "TWIST1",
+        "interpretation": "TWIST1 is among the EMT transcription factors found upregulated in bevacizumab-treated breast tumor models, and its induction contributes to motility, invasion and survival of tumor cells under anti-angiogenic stress, enabling escape via EMT-mediated phenotypic switching."
+      },
+      {
+        "gene": "SNAI1",
+        "interpretation": "SNAI1 levels increase with bevacizumab-associated EMT in experimental breast tumors, supporting a mesenchymal, invasive phenotype that facilitates vessel co-option and resistance to angiogenesis inhibition."
+      },
+      {
+        "gene": "SNAI2",
+        "interpretation": "SNAI2 (Slug) is similarly upregulated as part of the EMT response under VEGF blockade, promoting loss of epithelial characteristics and enhanced migration, which undermines the benefit of bevacizumab by allowing tumor cells to relocate to better-vascularized niches."
+      },
+      {
+        "gene": "VIM",
+        "interpretation": "Vimentin (VIM), a mesenchymal cytoskeletal marker, increases during bevacizumab-induced EMT in breast cancer models, reflecting a shift toward a motile, mesenchymal cell state that is less dependent on local angiogenesis and more capable of resisting therapy."
+      },
+      {
+        "gene": "CXCL8",
+        "interpretation": "IL-8/CXCL8 is induced by hypoxia in tumors treated with anti-angiogenic therapy and acts as a pro-angiogenic chemokine that recruits neutrophils and endothelial precursors; its upregulation is described as part of inflammatory escape networks that sustain angiogenesis despite VEGF-A blockade."
+      },
+      {
+        "gene": "VEGFA",
+        "interpretation": "Although baseline VEGF-Ahigh predicts benefit, post-bevacizumab biopsies sometimes show rebound VEGFA overexpression, and the report describes this overproduction of the target ligand as a negative feedback resistance tactic whereby very high VEGF-A levels attempt to overwhelm antibody-mediated neutralization."
+      }
+    ],
+    "resistance_genes_down_annotations": [],
+    "kg_gene_relationships": [
+      "Bevacizumab|binds|VEGFA",
+      "High_VEGFA|confers_sensitivity_to|Bevacizumab",
+      "VEGFA_rebound_upregulation|confers_resistance_to|Bevacizumab",
+      "High_KDR|confers_sensitivity_to|Bevacizumab",
+      "High_CXCL9_CXCL10_signature|confers_sensitivity_to|Bevacizumab",
+      "Low_FGF2|confers_sensitivity_to|Bevacizumab",
+      "High_FGF2|confers_resistance_to|Bevacizumab",
+      "ANGPT2_upregulation|confers_resistance_to|Bevacizumab",
+      "MET_upregulation|confers_resistance_to|Bevacizumab",
+      "High_IL6|confers_resistance_to|Bevacizumab"
+    ],
+    "Breast_cancer_subtype_information": {
+      "Triple-Negative Breast Cancer (TNBC, HR–/HER2–)": "This subtype has shown the most notable, albeit still progression-limited, benefit from bevacizumab. Clinical trials (like ECOG E2100, AVADO, RIBBON-1) consistently found a larger improvement in PFS for TNBC patients compared to others . TNBC tumors often exhibit high VEGF expression and extensive angiogenesis. They also frequently have tumor infiltrating lymphocytes and immune activation, which, as discussed, can augment bevacizumab’s effect. Subgroup analyses from a meta-analysis (2447 patients) showed TNBC patients had a hazard ratio for PFS ~0.63 with bevacizumab (vs ~0.8 in HR+), meaning a ~37% risk reduction in progression . However, OS in TNBC was not significantly improved (HR ~0.96) , reflecting that resistance eventually occurs. Pathway-wise, TNBCs often rely on angiogenesis (VEGF, Ang1/2, etc.) and are hypoxia-prone, which explains initial sensitivity. On resistance, TNBCs can upregulate EGFR, MET, and particularly the immune-suppressive myeloid pathways. For example, Jain et al. (2018) found that in obese TNBC models, high FGF-2 was driving resistance , and inhibiting FGF-2 restored bevacizumab efficacy. Additionally, there’s evidence that basal-like TNBCs (which overlap with TNBC) activate EMT and co-option as a resistance, aligning with the earlier “invasion” theme . In summary, TNBC benefits initially via angiogenesis inhibition but tends to escape via alternate angiogenesis (FGF2, etc.) and increased invasiveness. Clinically, bevacizumab is sometimes used in TNBC for aggressive disease or symptomatic relief, and ongoing studies combine it with immunotherapy (e.g., atezolizumab) aiming to exploit the immune pathways in TNBC .",
+      "HR+/HER2– (Luminal A and B) Breast Cancer": "The hormone receptor positive, HER2-negative group (especially luminal A) generally derives less benefit from bevacizumab. These tumors are less angiogenic on average – indeed, gene expression profiles of luminal A cancers show lower levels of VEGF and HIF1α targets, and higher levels of anti-angiogenic factors . In trials, HR+ patients still had improved response rates with bevacizumab (some shrinkage due to chemo potentiation), but PFS benefit was smaller and sometimes not statistically significant in subgroup analysis. For instance, in RIBBON-1, the addition of bevacizumab to capecitabine (a common regimen for HR+ MBC after endocrine therapy) yielded only a modest PFS gain (~1.2 months) in that largely HR+ cohort. Luminal B (more proliferative, often VEGF-expressing) might have some angiogenic drive, but these tumors also have many other pathways (PI3K, cyclin D, etc.) – so blocking VEGF yields diminishing returns. A key piece of evidence: a biomarker study showed that for HR+ patients, only those with high VEGF-A benefited, and high VEGF-A is less common in luminal tumors . Additionally, HR+ tumors can often use the estrogen pathway to grow with relatively lower blood supply demands (they can be slower-growing). In terms of resistance, HR+ tumors might never respond strongly enough to consider “escape”; if they do respond, it’s often short-lived. One interesting observation in HR+ MCF7 xenografts: bevacizumab had virtually no effect unless VEGF was overexpressed experimentally . Once resistance set in (in the VEGF-overexpressing model), those tumors lost ER expression and became basal-like – a hint that an HR+ tumor may have to shed its luminal characteristics (ER downregulation) to leverage angiogenesis heavily and then develop resistance. Clinically, bevacizumab is not routinely used for HR+ MBC, except perhaps in very endocrine-resistant, high-angiogenic cases, and even then the benefit is modest .",
+      "HER2-Positive Breast Cancer": "Bevacizumab’s role here is limited. HER2+ tumors are highly angiogenic too (HER2 signaling upregulates VEGF), but the standard of care is anti-HER2 therapy which is very effective. Trials adding bevacizumab to HER2-targeted therapy did not show significant long-term benefit. For example, the AVAGAST trial in gastric (HER2 unrelated) and the AVEREL trial in breast (adding bevacizumab to Herceptin and docetaxel) found improved PFS but no OS benefit. One subtype analysis from AVEREL hinted that patients with high plasma VEGF-A or low VEGFR-2 had numerically better outcomes, but it wasn’t practice-changing. Mechanistically, HER2+ tumors have multiple angiogenic factors: HER2 signaling itself can maintain tumor perfusion by other means (e.g., via upregulating angiogenic cytokines). A specific resistance note: in HER2+ models, blocking VEGF resulted in increased hypoxia which activated HER3/IGF1R pathways, driving resistance basically the tumor shifted reliance back to receptor tyrosine kinases. Thus, HER2+ tumors could escape bevacizumab by leaning even more on HER2 or cross-talk pathways (some preclinical data suggested an epithelial-mesenchymal transition and MET upregulation in HER2+ when anti-VEGF was used). Because HER2 therapies target the core driver, bevacizumab adds toxicity without clear additional durable benefit, and as such is seldom used for this subtype. However, in HER2+ patients who also have very high VEGF (maybe due to co-occurring hypoxia or TP53 mutation), there might be a marginal benefit to adding bevacizumab – research continues in niche scenarios like HER2+ tumors with brain metastasis edema, where bevacizumab might help symptomatically.",
+      "BRCA1/2-Mutated (Hereditary) Breast Cancer": "These are often triple-negative (BRCA1 especially) and homologous recombination deficient. There isn’t a lot of direct clinical trial evidence focusing on BRCA status and bevacizumab response. One might expect BRCA1/2-mutated TNBC to behave like other TNBC – possibly more immune-active (especially BRCA1) and VEGF-driven due to genomic instability. Small subgroup analyses (like from the TNT trial or others) haven’t shown anything definitive; PARP inhibitors overshadow anti-angiogenics for BRCA carriers. That said, anecdotally, some BRCA1-mutated cancers are very vascular (basal subtype), so they likely respond like basal TNBC to bevacizumab (initial sensitivity followed by escape). No specific resistance mechanism unique to BRCA status is known for bevacizumab – these tumors will primarily follow the TNBC patterns (they may, however, more readily undergo EMT and have higher HIF due to frequent TP53 co-mutation). The Basal-like subtype (which includes most BRCA1-related cancers) is, as noted, an angiogenesis and immune heavy subtype, thus initially sensitive but quick to develop hypoxia induced escape.",
+      "Basal-like tumors (high proliferation, some EGFR expression)": "Basal-like tumors (high proliferation, some EGFR expression) – these often respond well to chemo + bevacizumab (in terms of response rate). Basal-like typically correlates with the clinical TNBC cases that saw PFS improvement. Basal tumors have high VEGF, and one study found basal-like gene signatures were enriched in responders to bevacizumab in a neoadjuvant trial (GeparQuinto).",
+      "Claudin-low tumors (which are mesenchymal, immune-rich)": "Claudin-low tumors (which are mesenchymal, immune-rich) – these might have intrinsic resistance. Claudin-low tumors already exhibit EMT and immune infiltration; bevacizumab might normalize vessels but the tumor cells in claudin-low state are so plastic that they co-opt vessels and migrate. They also often express angiogenic factors like IL-8. It’s possible claudin-low TNBCs are less dependent on sprouting angiogenesis and more on vessel co-option, hence could be less responsive. This hasn’t been fully proven but is hypothesized from their biology.",
+      "Luminal A vs. Luminal B": "Luminal B (high Ki-67) have a bit more angiogenesis than Luminal A. In one analysis, Luminal B patients had a slight PFS benefit with bevacizumab, whereas Luminal A had virtually none. Luminal B often have low ESR1 but high growth factor signaling, including possible VEGF (due to more hypoxic areas in larger tumors). Still, endocrine therapy and CDK4/6 inhibitors are so effective in luminals that bevacizumab is rarely considered.",
+      "Inflammatory Breast Cancer (IBC)": "IBC is a clinical subtype (can be TNBC or HER2+ often) characterized by tumor emboli in dermal lymphatics – very angiogenic and VEGF-rich microenvironment. Small studies tested bevacizumab in IBC and suggested high response rates (makes sense, IBC is VEGF-driven, causing erythema and edema). However, no randomized data specifically. IBC tumors often overexpress Ang2 and EGFR as well. So one might consider bevacizumab in an IBC patient, expecting at least a transient benefit on skin disease due to anti angiogenic and anti-permeability effects."
+    },
+    "citations": [
+      "Bevacizumab - Wikipedia",
+      "[https://en.wikipedia.org/wiki/Bevacizumab](https://en.wikipedia.org/wiki/Bevacizumab)",
+      "First-line bevacizumab in combination with chemotherapy for HER2-negative metastatic breast cancer: pooled and subgroup analyses of data from 2447 patients - Annals of Oncology",
+      "[https://www.annalsofoncology.org/article/S0923-7534(19)37346-6/fulltext](https://www.annalsofoncology.org/article/S0923-7534%2819%2937346-6/fulltext)",
+      "Avastin OD WD Memo 12.15.10.FINAL.doc",
+      "[https://www.fda.gov/media/79525/download](https://www.fda.gov/media/79525/download)",
+      "SEOM–GEICAM–SOLTI clinical guidelines in advanced breast cancer (2022) | Clinical and Translational Oncology",
+      "[https://link.springer.com/article/10.1007/s12094-023-03203-8](https://link.springer.com/article/10.1007/s12094-023-03203-8)",
+      "Biomarker results from the AVADO phase 3 trial of first ... - PubMed",
+      "[https://pubmed.ncbi.nlm.nih.gov/23422754/](https://pubmed.ncbi.nlm.nih.gov/23422754/)",
+      "Bevacizumab improves tumor infiltration of mature dendritic cells and effector T-cells in triple−negative breast cancer patients | npj Precision Oncology",
+      "[https://www.nature.com/articles/s41698-021-00197-w?error=cookies_not_supported&code=e355e22b-a522-4240-aa59-1ba77da2400f](https://www.nature.com/articles/s41698-021-00197-w?error=cookies_not_supported&code=e355e22b-a522-4240-aa59-1ba77da2400f)",
+      "Bevacizumab: Uses, Interactions, Mechanism of Action | DrugBank Online",
+      "[https://go.drugbank.com/drugs/DB00112](https://go.drugbank.com/drugs/DB00112)",
+      "Angiogenesis and lymphangiogenesis are downregulated in primary breast cancer | British Journal of Cancer",
+      "[https://www.nature.com/articles/6605219?error=cookies_not_supported&code=4da439b0-35b3-4d1c-a81d-5ab6004c313b](https://www.nature.com/articles/6605219?error=cookies_not_supported&code=4da439b0-35b3-4d1c-a81d-5ab6004c313b)",
+      "Frontiers | Resistance Mechanisms to Anti−angiogenic Therapies in Cancer",
+      "[https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2020.00221/full](https://www.frontiersin.org/journals/oncology/articles/10.3389/fonc.2020.00221/full)",
+      "Ludwig Cancer Research",
+      "[https://www.ludwigcancerresearch.org/news-releases/obesity-may-promote-resistance-to-antiangiogenic-therapy-for-breast−cancer/](https://www.ludwigcancerresearch.org/news-releases/obesity-may-promote-resistance-to-antiangiogenic-therapy-for-breast−cancer/)",
+      "Gene Expression Analysis Reveals Distinct Pathways of Resistance to Bevacizumab in Xenograft Models of Human ER-Positive Breast Cancer",
+      "[https://scholarworks.indianapolis.iu.edu/items/61ba28d2-87a5-4606-a4ad-3ee2dd93e4b6](https://scholarworks.indianapolis.iu.edu/items/61ba28d2-87a5-4606-a4ad-3ee2dd93e4b6)",
+      "Resistance to Anti-Angiogenic Therapy in Cancer—Alterations ... - NIH",
+      "[https://pmc.ncbi.nlm.nih.gov/articles/PMC5979390/](https://pmc.ncbi.nlm.nih.gov/articles/PMC5979390/)",
+      "An update on biomarkers of potential benefit with bevacizumab for ...",
+      "[https://pmc.ncbi.nlm.nih.gov/articles/PMC6736652/](https://pmc.ncbi.nlm.nih.gov/articles/PMC6736652/)",
+      "Angiogenic factors FGF2 and PDGF-BB synergistically promote ...",
+      "[https://pmc.ncbi.nlm.nih.gov/articles/PMC1994630/](https://pmc.ncbi.nlm.nih.gov/articles/PMC1994630/)",
+      "Therapeutic paradigm of dual targeting VEGF and PDGF for ... - PMC",
+      "[https://pmc.ncbi.nlm.nih.gov/articles/PMC7382445/](https://pmc.ncbi.nlm.nih.gov/articles/PMC7382445/)",
+      "Atezolizumab plus paclitaxel and bevacizumab as first-line treatment ...",
+      "[https://www.nature.com/articles/s41591-025-03734-3](https://www.nature.com/articles/s41591-025-03734-3)",
+      "[PDF] AVASTIN - European Medicines Agency (EMA)",
+      "[https://www.ema.europa.eu/en/documents/variation-report/avastin-h-c-582-ii-0025-epar-assessment-report-variation_en.pdf](https://www.ema.europa.eu/en/documents/variation-report/avastin-h-c-582-ii-0025-epar-assessment-report-variation_en.pdf)",
+      "AVASTIN® (bevacizumab) Label",
+      "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2009/125085s0169lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2009/125085s0169lbl.pdf)",
+      "Bevacizumab (Avastin®) in cancer treatment: A review of 15 years of ...",
+      "[https://www.sciencedirect.com/science/article/pii/S0305737220300554](https://www.sciencedirect.com/science/article/pii/S0305737220300554)",
+      "Avastin® (bevacizumab) Important Safety Information",
+      "[https://www.avastin.com/hcp/safety.html](https://www.avastin.com/hcp/safety.html)",
+      "Contraindicated Use of Bevacizumab and Toxicity in Elderly Patients ...",
+      "[https://ascopubs.org/doi/10.1200/JCO.2012.48.4857](https://ascopubs.org/doi/10.1200/JCO.2012.48.4857)",
+      "ABC5 International Consensus Conference on ... - Thieme Connect",
+      "[https://www.thieme-connect.com/products/ejournals/pdf/10.1055/a-1139-9380.pdf](https://www.thieme-connect.com/products/ejournals/pdf/10.1055/a-1139-9380.pdf)",
+      "Bevacizumab - ESMO-MCBS Scorecards | ESMO",
+      "[https://www.esmo.org/guidelines/esmo-mcbs/esmo-mcbs-for-solid-tumours/esmo-mcbs-scorecards/scorecard-363-1](https://www.esmo.org/guidelines/esmo-mcbs/esmo-mcbs-for-solid-tumours/esmo-mcbs-scorecards/scorecard-363-1)",
+      "Targeting Angiogenesis in Breast Cancer: Current Evidence and ...",
+      "[https://pmc.ncbi.nlm.nih.gov/articles/PMC8913593/](https://pmc.ncbi.nlm.nih.gov/articles/PMC8913593/)"
+    ],
+    "notes": "This JSON is strictly derived from the provided deep-research report for bevacizumab in breast cancer, which emphasizes pathway-level rather than exhaustive gene-level biomarkers. Gene lists are restricted to factors explicitly discussed as associated with bevacizumab sensitivity or resistance in human breast cancer contexts or closely related human models, and many associations remain exploratory without validated clinical cut-offs. No definitive predictive biomarker for bevacizumab is established; most evidence supports a VEGF-addicted, angiogenesis-high, immune-inflamed TNBC/basal-like subset as relatively more sensitive, with resistance commonly emerging via hypoxia/HIF1A, FGF2, Ang2/Tie2, MET, EMT/stemness and IL-6/STAT3 pathways. See cited trial, biomarker and guideline references for full context and limitations."
+  }
+}

@@ -1,0 +1,660 @@
+{
+  "drug_name": "Ribociclib",
+  "cancer_indication": "Hormone receptor–positive, HER2-negative breast cancer (in combination with endocrine therapy for adjuvant therapy in stage II–III early breast cancer at high risk of recurrence, and for advanced/metastatic disease with an aromatase inhibitor or fulvestrant).",
+  "drug_category": "CDK4/6",
+  "drug_class": "CDK4/6 inhibitor",
+  "moa": "Ribociclib is a selective inhibitor of CDK4 and CDK6, kinases that bind D-type cyclins and drive G1→S cell-cycle progression. By inhibiting CDK4/6, ribociclib prevents phosphorylation of the retinoblastoma protein (RB1), keeping RB1 in its hypophosphorylated, E2F-bound state and blocking E2F-mediated transcription required for the G1/S transition. This results in G1 cell-cycle arrest and reduced proliferation, and clinically deeper suppression of proliferation markers (e.g., Ki-67) when combined with endocrine therapy in HR+/HER2− breast cancer.",
+  "chembl_id": "CHEMBL3545110",
+  "drugbank_id": "DB11730",
+  "synonyms": [
+    "Kisqali",
+    "Kisqali Femara co-pack",
+    "LEE-011",
+    "LEE-011A",
+    "LEE011",
+    "LEE011A"
+  ],
+  "primary_targets": [
+    "CDK4",
+    "CDK6"
+  ],
+  "pathway_sets": [
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_G2M_CHECKPOINT",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "HALLMARK_KRAS_SIGNALING_UP",
+    "REACTOME_CYCLIN_E_ASSOCIATED_EVENTS",
+    "WU_APOPTOSIS_BY_CDKN1A_VIA_TP53",
+    "REACTOME_ABERRANT_REGULATION_OF_MITOTIC_G1_S_TRANSITION_IN_CANCER_DUE_TO_RB1_DEFECTS"
+  ],
+  "pathway_sets_annotations": {
+    "HALLMARK_E2F_TARGETS": {
+      "description": "Represents transcriptional programs driven by E2F that enable S-phase entry and DNA replication, regulated by RB1 phosphorylation status.",
+      "interpretation": "E2F-driven proliferation programs are central to HR+/HER2− breast cancer growth; suppressing E2F output via the CDK4/6–RB1 checkpoint is a key determinant of disease control with ribociclib-based therapy.",
+      "Administration_of_ribociclib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "[Mechanistically accurate] High E2F-target output implies an active CDK4/6→RB→E2F axis with RB dependency; CDK4/6 blockade should collapse E2F transcription and growth. (Nature)",
+                  "DrugBank:DB11730; ChEMBL:CHEMBL3545110; FDA label (Kisqali) 209092; PMID:35263519; NCT01958021"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] E2F targets can stay high despite CDK4/6 inhibition if RB1 is lost/defective or bypass occurs via cyclin/CDK rewiring, predicting intrinsic resistance. (Reactome)",
+                  "PMID:29236940; PMID:27020857; Reactome:R-HSA-9659787"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "[Mechanistically rare] Low E2F may reflect slower cycling, yet tumors can still be RB-dependent and benefit from preventing cell-cycle re-entry under endocrine pressure. (PubMed)",
+                  "PMID:35263519; DOI:10.1056/NEJMoa1609709; NCT01958021"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] Low E2F can indicate quiescence or alternative (RB-independent) drivers, reducing effective CDK4/6 target reliance → limited benefit. (ScienceDirect)",
+                  "PMID: (review) Pandey 2019 (IJC); CDK4/6i resistance reviews"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "[Mechanistically accurate] On-treatment E2F target suppression is the expected pharmacodynamic consequence of RB hypophosphorylation → cytostatic tumor control. (FDA Access Data)",
+                  "FDA label 209092; EMA EPAR; PMID:35263519"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] E2F can drop yet clinical resistance still emerge if survival pathways (e.g., PI3K/mTOR) sustain viability or resistant clones expand. (PubMed)",
+                  "PMID:32795346; PMID:29236940"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "[Mechanistically not possible] Rising E2F targets while “sensitive” contradicts the core CDK4/6i mechanism; if E2F rises on therapy it typically signals inadequate inhibition or escape. (FDA Access Data)",
+                  "FDA label 209092"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] Persistent/increasing E2F output indicates bypass (e.g., cyclin E/CDK2, CDK6 amp) or RB loss, consistent with resistance. (PubMed)",
+                  "PMID:27020857; PMID:27748766; PMID:30511015"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_G2M_CHECKPOINT": {
+      "description": "Encompasses genes controlling progression through G2 and mitosis, including mitotic regulators that rise in proliferating tumors.",
+      "interpretation": "G2/M activity reflects high proliferative throughput in breast cancer; downstream mitotic programs diminish when upstream G1/S entry is blocked, linking this pathway to tumor proliferation state.",
+      "Administration_of_ribociclib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "[Mechanistically accurate] High G2/M checkpoint signature reflects a highly cycling state; if RB is intact, proliferative HR+ tumors can still be CDK4/6-dependent and respond. (ScienceDirect)",
+                  "PMID:35263519; NCT01958021"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] High proliferation can also reflect RB-pathway defects or CDK2-driven cycling, reducing CDK4/6 dependence and predicting resistance. (Reactome)",
+                  "Reactome:R-HSA-9659787; PMID:36071033; PMID:30511015"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "[Mechanistically rare] Low mitotic program may still benefit if endocrine-driven cells intermittently cycle and remain RB-dependent; CDK4/6i can maintain arrest. (PubMed)",
+                  "PMID:35263519; PMID:34102253"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] If baseline mitotic activity is very low, incremental benefit from a cytostatic cell-cycle drug may be limited (minimal target engagement). (ScienceDirect)",
+                  "CDK4/6i resistance reviews"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "[Mechanistically accurate] CDK4/6 blockade enforces G1 arrest, reducing entry into S/G2/M and lowering G2/M checkpoint signatures in responders. (FDA Access Data)",
+                  "FDA label 209092; EMA EPAR"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] Even with reduced cycling signatures, tumors may persist via survival/bypass programs (e.g., PI3K/mTOR activation) → resistant disease. (PubMed)",
+                  "PMID:32795346"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "[Mechanistically not possible] Increased G2/M activity during effective CDK4/6 inhibition is inconsistent with true sensitivity; it usually indicates escape from arrest. (FDA Access Data)",
+                  "FDA label 209092"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] Persistent mitotic signaling implies failure of G1 control and ongoing proliferation → resistance. (AACR Journals)",
+                  "PMID:27020857"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+      "description": "A growth and survival signaling axis that promotes proliferation and anti-apoptotic programs downstream of PI3K and AKT through mTOR.",
+      "interpretation": "PI3K/AKT/mTOR signaling provides alternative growth and survival inputs in breast cancer and can reduce dependence on CDK4/6-mediated cell-cycle control, shaping therapeutic benefit and failure patterns.",
+      "Administration_of_ribociclib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "[Mechanistically rare] PI3K/AKT/mTOR activation can coexist with RB dependence; some HR+ tumors still gain meaningful benefit from CDK4/6i + endocrine therapy. (PMC)",
+                  "PMID:35263519; PMID: (review) Clark 2020"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] Activated PI3K/mTOR can promote survival and cell-cycle bypass, and is reported as a driver in CDK4/6i-resistant HR+ models. (PubMed)",
+                  "PMID:32795346"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "[Mechanistically accurate] Lower PI3K/mTOR signaling reduces a major bypass/survival route, increasing reliance on the RB–E2F axis → better CDK4/6i sensitivity. (ScienceDirect)",
+                  "PMID:32795346"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically rare] Resistance can still occur via RB loss, cyclin E/CDK2 activation, or other rewiring even without strong PI3K/mTOR activity. (PubMed)",
+                  "PMID:29236940; PMID:30511015"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "[Mechanistically rare] Adaptive PI3K/mTOR feedback may rise on CDK4/6i, yet some tumors remain controlled if RB arrest is maintained and endocrine therapy suppresses upstream cues. (PubMed)",
+                  "PMID:32795346; PMID:35263519"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] On-treatment PI3K/mTOR upshift is a documented resistance adaptation; PI3K/mTOR targeting can restore control in resistant HR+ models. (PubMed)",
+                  "PMID:32795346"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "[Mechanistically accurate] With effective endocrine + CDK4/6 blockade and reduced tumor growth signaling, PI3K/mTOR signatures can decrease as part of response biology. (PubMed)",
+                  "PMID:35263519; PMID: (Gul 2018 combo rationale)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically rare] PI3K/mTOR can fall yet resistance persist via RB loss or cyclin E/CDK2-driven cycling. (PubMed)",
+                  "PMID:29236940; PMID:30511015"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_KRAS_SIGNALING_UP": {
+      "description": "Captures activation of MAPK/ERK-related signaling programs often driven by upstream receptor and growth-factor signaling inputs.",
+      "interpretation": "MAPK/ERK-linked signaling can sustain proliferative signaling in breast cancer and contribute to reduced reliance on CDK4/6–RB1 gating, affecting durability of response to CDK4/6 inhibition.",
+      "Administration_of_ribociclib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "[Mechanistically rare] MAPK/KRAS signatures may be elevated, but if downstream proliferation remains RB-dependent, CDK4/6 blockade can still impose arrest. (ScienceDirect)",
+                  "MSigDB:M5953"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] KRAS/RTK/MAPK activation can sustain cyclin programs and contribute to CDK4/6i resistance; KRAS-mutated MBC has been described in the context of CDK4/6i resistance. (PubMed)",
+                  "PMID:33923563; PMID:25557169"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "[Mechanistically accurate] Low KRAS/MAPK pressure reduces a common bypass route, increasing dependence on ER–cyclin D–CDK4/6–RB control. (PubMed)",
+                  "PMID:35263519"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically rare] Resistance can still be mediated by RB1 defects or cyclin E/CDK2 rewiring independent of KRAS signaling. (Reactome)",
+                  "Reactome:R-HSA-9659787; PMID:30511015"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "[Mechanistically rare] Some adaptive MAPK signaling can emerge without immediate clinical failure if RB-mediated arrest persists and endocrine suppression limits proliferative output. (PubMed)",
+                  "PMID:25557169; PMID:35263519"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] Rising KRAS/MAPK programs on therapy commonly indicate escape signaling that sustains proliferation despite CDK4/6 inhibition → resistance. (PubMed)",
+                  "PMID:33923563; PMID:25557169"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "[Mechanistically accurate] Reduced KRAS-signature may reflect broader growth signal suppression in responders (less upstream RTK drive as proliferation collapses). (PubMed)",
+                  "PMID:35263519; FDA label 209092"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically rare] KRAS signaling may drop yet resistance persist through RB loss/cyclin E bypass. (PubMed)",
+                  "PMID:29236940; PMID:30511015"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_CYCLIN_E_ASSOCIATED_EVENTS": {
+      "description": "Represents Cyclin E–linked events controlling late G1 to S-phase entry and related transcriptional and replication programs.",
+      "interpretation": "Cyclin E/CDK2 activity can provide an alternative route to RB1 phosphorylation and S-phase entry in breast cancer, influencing how strongly tumors depend on cyclin D–CDK4/6 control.",
+      "Administration_of_ribociclib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "[Mechanistically rare] Elevated cyclin E activity usually predicts escape, but in some tumors it may still be partially constrained by RB and remain targetable if CDK4/6 remains dominant. (ScienceDirect)",
+                  "Reactome:R-HSA-69202; MSigDB:M14520"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] High cyclin E/CDK2 program provides a classic bypass around CDK4/6 inhibition and is repeatedly linked to acquired/intrinsic resistance. (PubMed)",
+                  "PMID:27020857; PMID:30511015; PMID:25557169"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "[Mechanistically accurate] Low cyclin E/CDK2 bypass suggests greater dependence on cyclin D–CDK4/6–RB control → higher sensitivity. (ScienceDirect)",
+                  "PMID:27020857"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically rare] Even with low cyclin E, RB1 defects can abolish CDK4/6i efficacy. (Reactome)",
+                  "Reactome:R-HSA-9659787; PMID:29236940"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "[Mechanistically rare] Cyclin E upshift can occur transiently as an adaptation signal, but durable sensitivity would require RB arrest to remain dominant and adaptation not to fully bypass control. (PubMed)",
+                  "PMID:27020857; PMID:32795346"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] On-therapy cyclin E/CDK2 escalation is a hallmark of escape from CDK4/6 arrest and is observed at resistance. (PubMed)",
+                  "PMID:30511015; PMID: (Guarducci 2018) 30511015"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "[Mechanistically accurate] Effective G1 arrest reduces progression into cyclin E–CDK2-driven G1/S events; cyclin E program can fall with response. (FDA Access Data)",
+                  "FDA label 209092; Reactome:R-HSA-69202"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically rare] Cyclin E may decrease yet resistance persist via RB loss or PI3K/mTOR survival rewiring. (PubMed)",
+                  "PMID:29236940; PMID:32795346"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "WU_APOPTOSIS_BY_CDKN1A_VIA_TP53": {
+      "description": "Reflects TP53–CDKN1A (p21) checkpoint signaling that can reinforce cell-cycle arrest and is discussed in the context of CDK4/6 inhibitor response.",
+      "interpretation": "TP53–p21 checkpoint integrity is relevant to breast cancer control under CDK4/6 inhibition because p21 levels correlate with ribociclib sensitivity and loss of this checkpoint is linked to reduced enforcement of arrest.",
+      "Administration_of_ribociclib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "[Mechanistically rare] A primed p21/apoptosis transcriptional context could facilitate deeper responses beyond cytostasis in a subset of HR+ tumors. (gsea-msigdb.org)",
+                  "MSigDB:WU_APOPTOSIS_BY_CDKN1A_VIA_TP53; PMID:35263519"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically rare] Even with an apoptosis-leaning signature, CDK4/6 inhibitors are often predominantly cytostatic; tumors can persist without undergoing apoptosis. (ScienceDirect)",
+                  "CDK4/6i MOA references"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "[Mechanistically rare] Low baseline apoptosis doesn’t preclude growth arrest; ribociclib can still deliver benefit via RB-mediated cell-cycle suppression. (FDA Access Data)",
+                  "FDA label 209092; PMID:35263519"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] A weak p21/p53-apoptosis context can support survival/tolerance to cytostatic stress, favoring persistence and eventual resistance. (PMC)",
+                  "CDK4/6i resistance reviews; MSigDB set page"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "[Mechanistically rare] CDK4/6 inhibition can increase CDKN1A (p21) and senescence programs; apoptosis via this route can occur but is not the dominant clinical phenotype. (gsea-msigdb.org)",
+                  "MSigDB:WU_APOPTOSIS_BY_CDKN1A_VIA_TP53"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] Upregulation of p21-related programs may reflect cell-cycle arrest without tumor eradication (tolerance/senescence-like persistence), enabling later resistance. (PMC)",
+                  "CDK4/6i resistance reviews"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "[Mechanistically not possible] “Sensitivity” with suppression of an apoptosis-by-p21 program is internally inconsistent; if apoptosis programs fall, it would not explain improved killing. (gsea-msigdb.org)",
+                  "MSigDB:WU_APOPTOSIS_BY_CDKN1A_VIA_TP53"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] Failure to engage p21/apoptosis biology alongside cytostasis supports persistence and resistance evolution. (PMC)",
+                  "PMID:32795346"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_ABERRANT_REGULATION_OF_MITOTIC_G1_S_TRANSITION_IN_CANCER_DUE_TO_RB1_DEFECTS": {
+      "description": "Represents dysregulated G1/S control caused by RB1 defects, disrupting the RB1–E2F checkpoint that normally constrains S-phase entry.",
+      "interpretation": "RB1 defects undermine the central mechanistic node targeted by CDK4/6 inhibitors in breast cancer, limiting the ability of ribociclib to induce durable G1 arrest and thereby shaping intrinsic and acquired non-response.",
+      "Administration_of_ribociclib": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "[Mechanistically not possible] RB1-defect programs directly undermine CDK4/6i mechanism (requires functional RB); “RB1 defects + sensitivity” is contradictory. (Reactome)",
+                  "Reactome:R-HSA-9659787; MSigDB:M38998"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] RB1 loss/defects are a core resistance mechanism because CDK4/6 inhibition works by maintaining RB-mediated E2F repression. (ScienceDirect)",
+                  "Reactome:R-HSA-9659787; PMID:29236940"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "[Mechanistically accurate] Low RB1-defect signaling implies intact RB control, enabling the canonical CDK4/6i cytostatic mechanism. (ScienceDirect)",
+                  "FDA label 209092; Reactome:R-HSA-9659787"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically rare] Even with apparently intact RB signatures, resistance can arise via cyclin E/CDK2 bypass or PI3K/mTOR rewiring. (PubMed)",
+                  "PMID:30511015; PMID:32795346"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "[Mechanistically not possible] Therapy cannot induce RB1 defects and simultaneously improve response; enrichment of RB1-defect signals would not mediate sensitivity. (Reactome)",
+                  "Reactome:R-HSA-9659787; FDA label 209092"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] Selection for RB1-defective clones or emergence of RB1 alterations under CDK4/6i pressure leads to resistance. (PubMed)",
+                  "PMID:29236940; Reactome:R-HSA-9659787"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "[Mechanistically rare] Apparent “down” could reflect clonal composition shift toward RB-intact cells with response; drug does not repair RB1 but responding tumors can become enriched for sensitive biology. (PubMed)",
+                  "PMID:35263519; Reactome:R-HSA-9659787"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "[Mechanistically accurate] RB1-defect signatures may appear low in bulk yet resistance persists via other bypass routes (cyclin E/CDK2, PI3K/mTOR). (PubMed)",
+                  "PMID:30511015; PMID:32795346"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "CDK4",
+    "CDKN1A",
+    "CCND1"
+  ],
+  "sensitivity_genes_down": [
+    "CDK6",
+    "CCNE1"
+  ],
+  "resistance_genes_up": [
+    "CDK6",
+    "CCNE1",
+    "CDK2",
+    "CDKN2A",
+    "PIK3CA",
+    "FGFR1"
+  ],
+  "resistance_genes_down": [
+    "RB1",
+    "CDKN1A",
+    "TP53",
+    "ESR1",
+    "PTEN"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "CDK4",
+      "interpretation": "High CDK4 expression (with relatively low CDK6) is described as correlating with extreme sensitivity to ribociclib, consistent with dependence on CDK4/6-mediated G1/S control."
+    },
+    {
+      "gene": "CDKN1A",
+      "interpretation": "Higher p21 (CDKN1A) levels correlate with ribociclib sensitivity and reinforce G1 arrest; loss of p21 is described in resistant models."
+    },
+    {
+      "gene": "CCND1",
+      "interpretation": "Cyclin D1 amplification/overexpression is described as common in HR+ tumors and linked to dependence on CDK4/6 activity, yielding pronounced arrest with CDK4/6 inhibition."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [
+    {
+      "gene": "CDK6",
+      "interpretation": "Low CDK6 is described as part of a high-CDK4/low-CDK6 expression pattern associated with heightened ribociclib sensitivity, while CDK6 overexpression is linked to resistance."
+    },
+    {
+      "gene": "CCNE1",
+      "interpretation": "Lower Cyclin E1 activity (absence of CCNE1 amplification) is described as favoring response, whereas increased Cyclin E1/CDK2 activity bypasses CDK4/6 dependence."
+    }
+  ],
+  "resistance_genes_up_annotations": [
+    {
+      "gene": "CDK6",
+      "interpretation": "CDK6 amplification/overexpression is described as a resistance mechanism, enabling reduced dependence on CDK4-directed control despite CDK4/6 inhibition."
+    },
+    {
+      "gene": "CCNE1",
+      "interpretation": "CCNE1 amplification/overactivity is described as driving Cyclin E/CDK2-mediated RB1 phosphorylation, bypassing CDK4/6 inhibition and correlating with poorer outcomes."
+    },
+    {
+      "gene": "CDK2",
+      "interpretation": "Upregulation of the Cyclin E/CDK2 axis is described as a bypass mechanism that can phosphorylate RB1 independently of CDK4/6."
+    },
+    {
+      "gene": "CDKN2A",
+      "interpretation": "p16 (CDKN2A) upregulation/amplification is described in the context of RB pathway disruption and resistance, particularly when RB1 function is compromised."
+    },
+    {
+      "gene": "PIK3CA",
+      "interpretation": "PI3K pathway activation (including PIK3CA mutations) is described as enriched in CDK4/6 inhibitor–resistant tumors and as providing alternative survival/proliferation signaling."
+    },
+    {
+      "gene": "FGFR1",
+      "interpretation": "FGFR1 amplification is described as an upstream activator of PI3K/AKT and MAPK/ERK signaling, contributing to reduced dependence on CDK4/6 control and resistance."
+    }
+  ],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "RB1",
+      "interpretation": "Loss of functional RB1 is described as the most definitive resistance mechanism because CDK4/6 inhibitors require intact RB1 to enforce G1 arrest."
+    },
+    {
+      "gene": "CDKN1A",
+      "interpretation": "Downregulation/loss of p21 (CDKN1A) is described in resistant models and is linked to reduced enforcement of G1 arrest under CDK4/6 inhibition."
+    },
+    {
+      "gene": "TP53",
+      "interpretation": "Reduced p53–p21 checkpoint activity (e.g., via TP53 mutation) is described as undermining G1 arrest and contributing to resistance."
+    },
+    {
+      "gene": "ESR1",
+      "interpretation": "Loss of ER signaling is described in some resistant metastatic lesions where ER expression falls, reducing hormone-driven cyclin D dependence and thereby diminishing CDK4/6 inhibitor sensitivity."
+    },
+    {
+      "gene": "PTEN",
+      "interpretation": "PTEN loss is described as part of PI3K/AKT/mTOR activation patterns enriched in CDK4/6 inhibitor resistance, supporting bypass survival/proliferation signaling."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Ribociclib|inhibits|CDK4",
+    "Ribociclib|inhibits|CDK6",
+    "RB1_loss|confers_resistance_to|Ribociclib",
+    "CDK6_overexpression|confers_resistance_to|Ribociclib",
+    "CCNE1_amplification|confers_resistance_to|Ribociclib",
+    "CDKN1A_high_expression|confers_sensitivity_to|Ribociclib",
+    "CDKN1A_loss|confers_resistance_to|Ribociclib",
+    "CDK4_high_expression|confers_sensitivity_to|Ribociclib"
+  ],
+  "Breast_cancer_subtype_information": {
+    "Luminal A (HR+/HER2−, low proliferation)": "These tumors generally respond well to ribociclib + endocrine therapy, often achieving durable disease control; markers of high CDK4/cyclin D1 and intact Rb are described as common.",
+    "Luminal B (HR+/HER2−, higher proliferation/Ki67)": "These tumors are more proliferative and are described as deriving greater absolute benefit from CDK4/6 inhibition; in CORALLEEN (luminal B), ribociclib+letrozole markedly suppressed proliferation compared to chemotherapy, and immune gene signatures in luminal B were specifically dampened by ribociclib.",
+    "HER2-positive (HER2+/HR−)": "Ribociclib is described as not approved for HER2+ disease; early-phase combinations with anti-HER2 therapy (in HR+/HER2+) suggest some activity, but effects in HER2+/HR− tumors are described as unproven with no formal indication.",
+    "Triple-negative (HR−/HER2−)": "TNBC is described as generally not benefiting from CDK4/6 inhibitors; many TNBC have RB loss or low RB activity and rely on CDK2/E2F or other pathways, and basal-like models show minimal response in preclinical data; not recommended outside trials.",
+    "BRCA-mutated or HRD-positive": "No indication is described that BRCA status predicts ribociclib efficacy; PARP inhibitors, not CDK4/6 inhibitors, are described as the targeted therapy in BRCA-driven breast cancer."
+  },
+  "citations": [
+    "label",
+    "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/209092s018lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2024/209092s018lbl.pdf)",
+    "Ribociclib: Uses, Interactions, Mechanism of Action | DrugBank Online",
+    "[https://go.drugbank.com/drugs/DB11730](https://go.drugbank.com/drugs/DB11730)",
+    "Targeting CDK4/6 in breast cancer | Experimental & Molecular Medicine",
+    "[https://www.nature.com/articles/s12276-025-01395-3?error=cookies_not_supported&code=f25075d9-5423-4cf7-a242-62e43cd8a941](https://www.nature.com/articles/s12276-025-01395-3?error=cookies_not_supported&code=f25075d9-5423-4cf7-a242-62e43cd8a941)",
+    "Potential biomarkers of resistance to CDK4/6 inhibitors: a narrative review of",
+    "preclinical and clinical studies - Huang - Translational Breast Cancer Research",
+    "[https://tbcr.amegroups.org/article/view/45140/html](https://tbcr.amegroups.org/article/view/45140/html)",
+    "Cell-cycle inhibition and immune microenvironment in breast cancer treated with ribociclib and",
+    "letrozole or chemotherapy - PubMed",
+    "[https://pubmed.ncbi.nlm.nih.gov/38448600/](https://pubmed.ncbi.nlm.nih.gov/38448600/)",
+    "The p21 levels have the potential to be a monitoring marker for ribociclib in breast cancer -",
+    "PMC ",
+    "[https://pmc.ncbi.nlm.nih.gov/articles/PMC6690670/](https://pmc.ncbi.nlm.nih.gov/articles/PMC6690670/)",
+    "label",
+    "[https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/209092s013,209935s021lbl.pdf](https://www.accessdata.fda.gov/drugsatfda_docs/label/2022/209092s013,209935s021lbl.pdf)",
+    "FDA Approves Adjuvant Ribociclib in HR+/HER2– Breast Cancer | OncLive",
+    "[https://www.onclive.com/view/fda-approves-adjuvant-ribociclib-in-hr-her2-breast-cancer](https://www.onclive.com/view/fda-approves-adjuvant-ribociclib-in-hr-her2-breast-cancer)",
+    "Overview | Ribociclib with an aromatase inhibitor for adjuvant treatment of hormone receptor-positive",
+    "HER2-negative early breast cancer at high risk of recurrence | Guidance | NICE",
+    "[https://www.nice.org.uk/guidance/ta1086](https://www.nice.org.uk/guidance/ta1086)"
+  ],
+  "notes": "Gene and pathway content was constrained to the provided ribociclib deep-research output. Some requested pathway-set names (e.g., WU_APOPTOSIS_BY_CDKN1A_VIA_TP53; REACTOME_CYCLIN_E_ASSOCIATED_EVENTS) were addressed only to the extent that TP53–p21 (CDKN1A) checkpoint and cyclin E/CDK2 mechanisms were explicitly discussed in the source. Source files:  "
+}

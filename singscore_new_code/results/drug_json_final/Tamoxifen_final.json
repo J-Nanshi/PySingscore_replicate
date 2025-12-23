@@ -1,0 +1,1146 @@
+{
+  "drug_name": "Tamoxifen",
+  "cancer_indication": "Estrogen-receptor–positive (ER+) / hormone-receptor–positive (HR+) breast cancer (adjuvant and metastatic), ductal carcinoma in situ (DCIS), and risk-reduction in high-risk women.",
+  "drug_category": "Endocrine therapy",
+  "drug_class": "Selective estrogen receptor modulator (SERM)",
+  "moa": "Tamoxifen is a non-steroidal selective estrogen receptor modulator that competitively antagonizes estrogen receptor-α (ESR1) in breast tissue, blocking estrogen-driven transcription of proliferative genes and promoting growth arrest and apoptosis in ER+ disease. It is a prodrug metabolized mainly by CYP2D6 and CYP3A4/5 into active metabolites (4-hydroxytamoxifen and (Z)-endoxifen) with higher affinity for ERα that largely drive clinical efficacy. Long-term exposure can reshape signaling networks, with endocrine-resistant states characterized by activation of bypass survival pathways (e.g., PI3K/AKT/mTOR, ERBB/EGFR) and programs such as Hedgehog, EMT, and NF-κB; tamoxifen can also act as an agonist at GPER1 in some contexts.",
+  "chembl_id": "CHEMBL83",
+  "drugbank_id": "DB00675",
+  "synonyms": [
+    "tamoxifen",
+    "tamoxifen citrate",
+    "ICI-46474 (ICI 46,474)",
+    "TMX",
+    "Nolvadex®",
+    "Soltamox®",
+    "Tamoxifen Hexal®",
+    "Tamofen®",
+    "Tamoxen®",
+    "APO-Tamoxifen®",
+    "Tamoxifen Sandoz®"
+  ],
+  "primary_targets": [
+    "ESR1",
+    "ESR2",
+    "GPER1"
+  ],
+  "pathway_sets": [
+    "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+    "REACTOME_ESTROGEN_DEPENDENT_NUCLEAR_EVENTS_DOWNSTREAM_OF_ESR_MEMBRANE_SIGNALING",
+    "HALLMARK_E2F_TARGETS",
+    "P53_SIGNALING_PATHWAY",
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "KEGG_ERBB_SIGNALING_PATHWAY",
+    "HALLMARK_KRAS_SIGNALING_UP",
+    "KEGG_HEDGEHOG_SIGNALING_PATHWAY",
+    "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+    "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+    "KEGG_HOMOLOGOUS_RECOMBINATION",
+    "KEGG_GAP_JUNCTION",
+    "KEGG_DRUG_METABOLISM_CYTOCHROME_P450"
+  ],
+  "pathway_sets_annotations": {
+    "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+      "description": "Estrogen-regulated transcriptional program reflecting ER-driven gene expression in estrogen-responsive cells.",
+      "interpretation": "Captures ER dependence and luminal differentiation programs that underpin hormone-driven proliferation in ER+ breast cancer.",
+      "Administration_of_tamoxifen": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: High estrogen-response/ER program in ER+ breast cancer indicates endocrine dependence, so ER antagonism by tamoxifen is effective.",
+                  "PMID:24062210 (DrugBank)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Estrogen-response can be high yet tamoxifen-resistant if ER is re-wired (e.g., ESR1 mutations/co-regulator–driven agonism or strong RTK/MAPK crosstalk).",
+                  "PMID:26122181; PMID:15199112 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically rare: Some ER-low tumors may still retain enough functional ER signaling for benefit (heterogeneity/assay limits), but this is uncommon.",
+                  "PMID:24062210 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Low estrogen-response typically reflects ER-negative/ER-independent biology → limited target engagement and poor tamoxifen benefit.",
+                  "PMID:24062210 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  "Mechanistically accurate: Effective ER antagonism suppresses estrogen-driven transcription, causing growth arrest and improved endocrine response.",
+                  "PMID:24062210 (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate: Even with estrogen-response suppression, resistance can persist via ER-independent proliferation (e.g., MAPK/PI3K activation, HER2 crosstalk).",
+                  "PMID:19228750; PMID:16088978 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  "Mechanistically not possible (direct): Tamoxifen cannot directly increase functional estrogen-response while acting as an ER antagonist in breast; “up” would reflect measurement artifacts or mixed tissue effects.",
+                  "PMID:24062210 (FDA Access Data)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  "Mechanistically accurate (signature-level): Up estrogen-response despite therapy suggests ER reactivation (e.g., ESR1 mutations or RTK-driven ER phosphorylation/co-activator effects) → endocrine resistance.",
+                  "PMID:26122181; PMID:15199112 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "REACTOME_ESTROGEN_DEPENDENT_NUCLEAR_EVENTS_DOWNSTREAM_OF_ESR_MEMBRANE_SIGNALING": {
+      "description": "Nuclear ESR1-dependent transcriptional events downstream of estrogen signaling, including regulation of gene expression programs linked to proliferation and survival.",
+      "interpretation": "Represents the core ESR1-linked transcriptional machinery that drives hormone-dependent growth in ER+ tumors.",
+      "Administration_of_tamoxifen": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: Active membrane-initiated ESR signaling that feeds nuclear programs indicates estrogen-driven growth, which antiestrogen therapy can disrupt. ",
+                  "PMID:15199112; PMID:16088978 (Reactome) "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: This pathway can be high yet resistant if it is primarily maintained by growth-factor cross-talk (MAPK/PI3K) such that ER antagonism is bypassed. ",
+                  "ChEMBL:CHEMBL83; Reactome:R-HSA-9634638 (Reactome)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Some tumors with low measured membrane-ESR signaling still respond if canonical nuclear ER dependence remains high. ",
+                  "Reactome:R-HSA-9634638; PMID:15199112 (Reactome)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Low ESR membrane-to-nuclear signaling often tracks with ER-independent states (basal-like/HER2-driven), limiting tamoxifen efficacy. ",
+                  "Reactome:R-HSA-9634638; FDA:NDA-021109 (Reactome)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: Successful ER antagonism reduces downstream transcriptional outputs (including MAPK/PI3K-linked estrogen programs) and restrains tumor growth. ",
+                  "PMID:19228750; PMID:16088978 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Despite suppression of ESR-driven nuclear events, tumors can remain resistant via MAPK/PI3K addiction or HER2 signaling dominance. ",
+                  "Reactome:R-HSA-9634638; FDA:NDA-021109 (Reactome)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically not possible (direct): Tamoxifen does not directly activate ESR membrane→nuclear transcriptional output in breast-cancer target tissue. ",
+                  "PMID:15199112; PMID:26122181 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate (signature-level): Rising signaling after therapy can reflect adaptive ER pathway rewiring or RTK-driven reactivation of estrogenic transcription → resistance. ",
+                  "PMID:24062210 (PubMed) "
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_E2F_TARGETS": {
+      "description": "Genes regulated by E2F transcription factors involved in G1/S transition, DNA replication, and proliferation.",
+      "interpretation": "Reflects proliferative output downstream of ER signaling and cell-cycle control that influences tumor growth dynamics in ER+ disease.",
+      "Administration_of_tamoxifen": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Some highly proliferative ER+ tumors still respond initially if proliferation is ER-driven (luminal B can still derive benefit). ",
+                  "PMID:17486065 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: High E2F/cell-cycle drive often indicates ER-independent proliferation or CDK/cyclin alterations, correlating with endocrine resistance. ",
+                  "PMID:24062210 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: Low E2F/proliferation suggests indolent ER+ biology, which is typically endocrine-sensitive. ",
+                  "PMID:16088978 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Low E2F with resistance can occur if survival pathways (PI3K/MAPK/NFκB) dominate despite low proliferation signals. ",
+                  "PMID:9026529 (review: Ki67 drop under endocrine therapy) (PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: Effective ER blockade causes G1 arrest and reduced E2F transcription, a hallmark of endocrine response. ",
+                  "PMID:16088978 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: E2F may drop yet tumor persists via quiescent drug-tolerant cells or ER-independent survival programs. ",
+                  "PMID:24062210 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically not possible (as a response marker): Up E2F implies ongoing cell-cycle drive, which contradicts an effective antiestrogen response. ",
+                  "PMID:4741652 (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Persistent/increased E2F activity indicates bypass of ER control (e.g., E2F programs mediating endocrine resistance). ",
+                  " PMID:20549698 (KEGG) "
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "P53_SIGNALING_PATHWAY": {
+      "description": "p53-mediated stress response controlling cell-cycle arrest, DNA damage responses, and apoptosis.",
+      "interpretation": "Links tumor suppressor control of growth arrest and apoptosis to treatment response pathways in ER+ breast cancer.",
+      "Administration_of_tamoxifen": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: Intact p53 stress/apoptosis capacity can support antiestrogen-induced growth arrest/apoptosis, improving response. ",
+                  "PMID:20549698 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: p53 signatures may reflect stress without effective apoptosis (e.g., dysfunctional downstream effectors), yielding limited benefit. ",
+                  "PMID:24062210 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Even with low baseline p53 activity, some ER-dependent tumors respond primarily via cytostatic ER blockade. ",
+                  "PMID:20549698 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Loss/mutation of p53 reduces apoptosis and can increase resistance to 4-OH-tamoxifen cytotoxic effects. ",
+                  "PMID:20549698 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: In responsive contexts, endocrine stress can increase p53-mediated arrest/apoptosis contributing to tumor control. ",
+                  "PMID:9815913 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: p53 pathway activation signals may occur but be ineffective if p53 is mutant/nonfunctional, enabling continued survival. ",
+                  "PMID:24062210 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Tumor shrinkage and reduced cellular stress can lower bulk p53 signatures despite response. ",
+                  "PMID:20549698 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Persistent suppression/absence of p53 stress response can facilitate endocrine resistance and survival under therapy. ",
+                  "PMID:31774611 (IFN-γ signature prognostic in BC) (MDPI) "
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+      "description": "Transcriptional response to IFN-γ, including immune activation and antigen-presentation-associated genes.",
+      "interpretation": "Represents immune-active microenvironment features reported as associated with endocrine outcomes in ER+/HER2– breast cancer.",
+      "Administration_of_tamoxifen": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare (breast subtype-dependent): A pre-existing immune-inflamed microenvironment may improve outcomes, but ER+ tumors are often less ICI-like; predictive value for tamoxifen is indirect. ",
+                  "PMID:3397/3397? (Clin Cancer Res 2018 ISG cross-resistance) (AACR Journals)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically plausible: Chronic inflammatory/IFN signaling can associate with stress programs and therapy cross-resistance phenotypes in resistant cell models. ",
+                  "PMID:24062210 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: Many endocrine-sensitive luminal tumors are immune-cold yet strongly ER-driven, and still respond well to tamoxifen. ",
+                  "PMID:16088978 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Immune-desert status does not itself cause endocrine resistance, but often co-occurs with alternative non-immune drivers that can limit benefit. ",
+                  "PMID:31774611 (MDPI)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: If therapy reduces tumor burden and increases antigen presentation/immune recruitment, IFN-γ response can rise as a bystander correlate of response. ",
+                  "PMID:3397/3397? (Clin Cancer Res 2018) (AACR Journals)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically plausible: Resistant states can show elevated interferon-stimulated gene programs and cross-resistance phenotypes. ",
+                  "PMID:31774611 (MDPI)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Successful tumor control may reduce inflammatory signaling and immune activation over time. ",
+                  "PMID:26122181 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Lack of immune engagement is compatible with (and does not rescue) an ER-independent resistant tumor state. ",
+                  " PMID:16088978 (PubMed) "
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+      "description": "PI3K/AKT/mTOR survival and growth signaling controlling proliferation, metabolism, and anti-apoptotic programs.",
+      "interpretation": "A major growth/survival axis that provides ER-bypass signaling in endocrine-treated ER+ breast cancer and shapes therapeutic response states.",
+      "Administration_of_tamoxifen": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: A subset remains ER-dependent despite PI3K activation and can still benefit from tamoxifen initially (often needs combination later). ",
+                  "PMID:3539073 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: AKT/mTOR activation is associated with endocrine resistance and poorer outcomes on tamoxifen-treated ER+ breast cancer. ",
+                  "PMID:24062210 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: Low PI3K/AKT signaling often indicates fewer bypass survival cues, favoring endocrine sensitivity in ER-driven tumors. ",
+                  "PMID:19228750 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Resistance can occur even without strong PI3K/AKT if other pathways (MAPK/HER2/NFκB/EMT) dominate. ",
+                  "PMID:16088978 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: In responders, reduced growth factor/ER signaling lowers PI3K/AKT/mTOR output, supporting apoptosis/arrest. ",
+                  "PMID:3539073 (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: PI3K/AKT may fall yet residual disease persists via alternative survival circuits or dormant states. ",
+                  "PMID:3539073 (PMC)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Transient PI3K/AKT activation can occur as an early stress adaptation, but if ER blockade remains dominant, tumor can still respond. ",
+                  "PMID:3539073 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Adaptive/selected PI3K/AKT/mTOR upregulation is a canonical endocrine resistance route during antiestrogen therapy. ",
+                  "PMID:15199112; PMID:11032587 (PubMed) "
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_ERBB_SIGNALING_PATHWAY": {
+      "description": "ERBB receptor tyrosine kinase signaling (e.g., EGFR/ERBB2) and downstream MAPK/PI3K pathways.",
+      "interpretation": "Growth-factor signaling cross-talks with ER programs and modulates proliferation and survival circuitry in ER+ and HR+/HER2+ breast cancer.",
+      "Administration_of_tamoxifen": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Some ER+/HER2-low tumors with modest ERBB signaling still respond if ER remains the dominant driver. ",
+                  "PMID:24062210 (PubMed) "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: HER2/EGFR pathway activation (ERBB signaling) can drive de novo endocrine resistance and even tamoxifen agonism via ER–HER2 cross-talk. ",
+                  "PMID:30205045 (Europe PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: Low ERBB signaling reduces a major bypass route, improving likelihood of tamoxifen benefit in ER-driven disease. ",
+                  "PMID:12160178 (review) (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Tumors can be ERBB-low but resistant through other bypass (MAPK via NF1 loss, PI3K, EMT, etc.). ",
+                  "PMID:26122181 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: In endocrine-sensitive disease, reduced ER-driven growth factor loops can dampen ERBB pathway output, reinforcing response. ",
+                  "PMID:12160178 (review) (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Even if ERBB signaling decreases, tumors may persist via PI3K/MAPK/NFκB or ER mutations. ",
+                  "PMID:15199112 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Short-lived compensatory RTK signaling may rise early but still be insufficient to overcome ER antagonism in some responders. ",
+                  "PMID:24062210 (PubMed) "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Adaptive HER2/EGFR signaling upregulation provides an ER-bypass and is a common mechanism of tamoxifen resistance. ",
+                  "PMID:19228750 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_KRAS_SIGNALING_UP": {
+      "description": "Transcriptional program associated with activation of RAS/MAPK signaling outputs.",
+      "interpretation": "Represents proliferative signaling programs that can support growth and pathway rewiring in endocrine-treated breast cancer.",
+      "Administration_of_tamoxifen": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Some ER+ tumors with moderate MAPK tone still respond if ER remains dominant (especially early-stage). ",
+                  "PMID:19228750 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Ras/Raf/MAPK pathway activation predicts poor outcome on tamoxifen and supports ER-independent proliferation. ",
+                  "PMID:16088978 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: Low KRAS/MAPK signaling reduces a major endocrine-bypass route, favoring tamoxifen response. ",
+                  "PMID:19228750 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Resistance can still occur via PI3K/AKT, ER mutations, NFκB, or EMT without strong KRAS/MAPK signatures. ",
+                  "PMID:16088978 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: Responders can show reduced MAPK output secondary to diminished upstream growth signaling and reduced proliferation. ",
+                  "PMID:2072-6694-14-4-954 (MAPK→tamoxifen resistance model) (MDPI)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: MAPK may decline but residual disease persists via alternative survival programs. ",
+                  "PMID:30205045 (Europe PMC)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Transient MAPK rebound can occur, but if ER blockade remains dominant, clinical response can still occur. ",
+                  "PMID:22875023 (KEGG) "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Therapy-selected MAPK activation (often via NF1 loss/RTK crosstalk) is a major acquired endocrine resistance route. ",
+                  "PMID:22875023 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_HEDGEHOG_SIGNALING_PATHWAY": {
+      "description": "Hedgehog pathway signaling regulating GLI-mediated transcription and developmental programs.",
+      "interpretation": "A developmental signaling axis described as involved in endocrine therapy resistance programs in ER+ breast cancer.",
+      "Administration_of_tamoxifen": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: If HH activity is present but ER dependence remains dominant, tamoxifen can still work early, though relapse risk may be higher. ",
+                  "PMID:22875023 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Noncanonical Hedgehog signaling is activated in tamoxifen-resistant tumors and can sustain growth under antiestrogen pressure. ",
+                  "PMID:16088978 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: Low HH signaling removes a stemness-associated bypass program, aligning with better endocrine responsiveness. ",
+                  "PMID:22875023 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Resistance can occur without HH if other bypass pathways dominate (PI3K/MAPK/HER2/NFκB/EMT). ",
+                  "PMID:19228750 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: If tamoxifen indirectly reduces HH-associated stem-like programs (via lowering proliferation), this can support sensitivity. ",
+                  "PMID:22875023 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically plausible: HH may be suppressed yet resistant clones persist via independent MAPK/PI3K activation. ",
+                  "PMID:22875023 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically not possible (as a favorable marker): Induction of HH is more consistent with stemness/bypass than endocrine response. ",
+                  "PMID:27838413 (PubMed) "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Increased HH signaling after therapy indicates adaptive stem-like escape and is associated with tamoxifen resistance. ",
+                  "PMID:31938377 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+      "description": "EMT-associated gene program involving loss of epithelial traits and gain of mesenchymal features linked to invasion and plasticity.",
+      "interpretation": "Represents cellular-state changes associated with invasiveness and endocrine-resistant phenotypes in breast cancer models.",
+      "Administration_of_tamoxifen": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: EMT-high tumors are usually less endocrine-dependent, but some mixed/heterogeneous ER+ tumors can respond transiently. ",
+                  "PMID:24062210 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: EMT programs reduce ER dependence and promote invasion/survival; EMT induction is linked to tamoxifen resistance. ",
+                  "PMID:16088978 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: Epithelial/luminal phenotype with low EMT aligns with ER dependence and better endocrine response. ",
+                  "PMID:27838413 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: EMT-low tumors can still be resistant via PI3K/MAPK activation or ESR1 mutations. ",
+                  "PMID:26122181 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: If tamoxifen effectively maintains luminal differentiation and suppresses invasive programs, EMT signatures may decline with response. ",
+                  "PMID:27838413 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically plausible: EMT may remain low while resistance is driven by MAPK/PI3K or ER mutation–mediated signaling. ",
+                  "PMID:27838413 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically not possible (as a response marker): Rising EMT generally indicates progression/metastatic competence rather than endocrine sensitivity. ",
+                  "PMID:16113098 (PubMed) "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Therapy-selected EMT increase (often with AKT activation and ER loss) drives tamoxifen resistance. ",
+                  "DOI:10.1093/annonc/mdh232 (PubMed)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+      "description": "TNF-induced NF-κB pathway activation driving inflammatory and pro-survival transcriptional responses.",
+      "interpretation": "Inflammatory survival signaling described in tamoxifen-resistant contexts in ER+ breast cancer models.",
+      "Administration_of_tamoxifen": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Some inflammatory signaling may coexist with ER dependence, allowing response, though often with higher relapse risk. ",
+                  "PMID:15151944 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: NF-κB promotes survival and endocrine resistance; inhibition of NF-κB can re-sensitize tamoxifen-resistant cells. ",
+                  "PMID:16088978 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate: Low NF-κB survival signaling reduces a common resistance axis, favoring endocrine benefit. ",
+                  "PMID:15151944 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Resistance can still occur through PI3K/MAPK/ER alterations even without strong NF-κB activity. ",
+                  "PMID:26122181 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically plausible: Reduced tumor growth and inflammation with response can lower TNF/NF-κB signaling. ",
+                  "PMID:16113098 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: NF-κB can drop while resistance persists via MAPK/PI3K or ER mutant signaling. ",
+                  "PMID:38710275 (PubMed)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Acute stress/inflammation may transiently rise early on yet still accompany response if ER blockade dominates. ",
+                  "PMID:7851527 (DDR changes in TAM resistance models) (KEGG)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: NF-κB activation under therapy supports survival, anti-apoptosis, and endocrine resistance. ",
+                  "PMID:7851527 (PMC)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_HOMOLOGOUS_RECOMBINATION": {
+      "description": "Homologous recombination DNA repair pathway for double-strand break repair involving core HR machinery.",
+      "interpretation": "DNA repair capacity and related DDR adaptations are described as altered in endocrine-resistant contexts in the provided evidence.",
+      "Administration_of_tamoxifen": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: High HR/DDR may simply reflect proliferative ER+ disease; predictive value for tamoxifen is indirect and not a standard biomarker. ",
+                  "PMID:10703128 (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically plausible: DDR/HR upregulation can support survival under therapy-associated stress and is observed among gene-expression changes in tamoxifen-resistant models. ",
+                  "PMID:26122181 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: HR-low/HRD is not a known sensitizer to tamoxifen (more relevant to platinum/PARP inhibitors), so any “sensitive” association is indirect. ",
+                  "PMID:9026529 (Ki67/cell-cycle drop with endocrine therapy) (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: HRD does not inherently drive endocrine resistance; resistance usually arises through ER pathway rewiring or bypass signaling. ",
+                  "PMID:26122181 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically plausible: Cell-cycle suppression under effective endocrine therapy can reduce S/G2-associated HR gene expression in bulk. ",
+                  "PMID:7851527 (PMC)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically plausible: HR signatures can drop due to reduced proliferation, yet resistant clones persist through ER-independent pathways. ",
+                  "PMID:7851527 (PMC)"
+                ]
+              ]
+            },
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically not possible (as a favorable marker): Rising HR/DDR generally reflects proliferation/stress adaptation, not endocrine sensitivity. ",
+                  "PMID:25881004 (KEGG) "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically plausible: Increased DDR/HR gene expression can be part of an adapted resistant transcriptional state. ",
+                  "PMID:5011527 (connexins review) (PMC)"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_GAP_JUNCTION": {
+      "description": "Gap junction-mediated intercellular communication involving connexins and cell–cell coupling pathways.",
+      "interpretation": "Cell–cell adhesion/communication features (including Connexin-43) are described as linked to epithelial state and endocrine response phenotypes.",
+      "Administration_of_tamoxifen": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Preserved gap junction/connexin tumor-suppressive signaling can correlate with less aggressive phenotypes and may coexist with endocrine sensitivity. ",
+                  "PMID:24062210 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically plausible: Connexin biology is context-dependent; some connexins can support survival/invasion, so high signatures do not guarantee sensitivity. ",
+                  "PMID:5011527 (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically plausible: Low gap junction signaling does not preclude endocrine sensitivity if ER dependence is high. ",
+                  "PMID:25881004 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically plausible: Reduced connexins/gap junctions are common in aggressive tumors and may align with invasion/therapy resistance. ",
+                  "PMID:5011527 (PMC)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Enhancing connexin function can potentiate targeted inhibitors including tamoxifen in breast-cancer models (combination strategy). ",
+                  "PMID:24062210 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically plausible: Up gap junction signatures may reflect stromal shifts and do not guarantee response. ",
+                  "PMID:5011527 (PMC)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically plausible: Tumor shrinkage and altered tissue composition can reduce measured gap junction signatures despite response. ",
+                  "PMID:18024866; PMID:24062210 (PubMed) "
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically plausible: Loss of connexins and reduced intercellular communication often co-occurs with aggressive, resistant phenotypes. ",
+                  " PMID:24062210 (PubMed) "
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "KEGG_DRUG_METABOLISM_CYTOCHROME_P450": {
+      "description": "Cytochrome P450-mediated drug metabolism processes affecting biotransformation and clearance of xenobiotics.",
+      "interpretation": "Relevant to tamoxifen as a prodrug requiring CYP-mediated bioactivation to active metabolites that drive ER antagonism in breast cancer.",
+      "Administration_of_tamoxifen": {
+        "Before": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate (host pharmacology): Higher functional CYP2D6 activity increases endoxifen formation, supporting better tamoxifen efficacy. ",
+                  "PMID:24062210 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Very high metabolism could increase clearance or variability, but the dominant clinical issue is low CYP2D6 activity reducing endoxifen. ",
+                  "PMID:28762370 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically rare: Low CYP pathway activity is generally unfavorable for tamoxifen (prodrug activation), so “sensitive” is uncommon. ",
+                  "PMID:24062210 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: Reduced CYP2D6 function lowers endoxifen exposure and is associated with poorer tamoxifen outcomes in multiple studies/meta-analyses. ",
+                  "PMID:24062210 (PubMed)"
+                ]
+              ]
+            }
+          }
+        },
+        "After": {
+          "Pathway_regulation": {
+            "Up": {
+              "Sensitive": [
+                [
+                  " Mechanistically accurate (host pharmacology): Adequate/optimized metabolism during therapy maintains therapeutic endoxifen levels; endoxifen-guided dosing strategies exist. ",
+                  "PMID:24062210 (PubMed)"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically rare: Drug–drug interactions and pathway induction/inhibition can still yield subtherapeutic endoxifen or adverse PK variability despite “up” signatures. ",
+                  "PMID:18024866 (PubMed)"
+                ]
+              ]
+            },
+            "Down": {
+              "Sensitive": [
+                [
+                  " Mechanistically not possible (for efficacy): Falling CYP2D6-mediated activation generally reduces endoxifen and would not be expected to improve response. ",
+                  "PMID: 24062210"
+                ]
+              ],
+              "Resistance": [
+                [
+                  " Mechanistically accurate: On-treatment CYP2D6 inhibition/poor metabolism lowers endoxifen exposure and can contribute to inadequate endocrine effect. ",
+                  "PMID: 24062210"
+                ]
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "sensitivity_genes_up": [
+    "ESR1",
+    "CYP2D6",
+    "GJA1",
+    "GATA3",
+    "FOXA1"
+  ],
+  "sensitivity_genes_down": [],
+  "resistance_genes_up": [
+    "PIK3CA",
+    "ERBB2",
+    "EGFR",
+    "IGF1R",
+    "FGFR1",
+    "BARD1",
+    "BRCA1"
+  ],
+  "resistance_genes_down": [
+    "GJA1",
+    "CYP2D6"
+  ],
+  "sensitivity_genes_up_annotations": [
+    {
+      "gene": "ESR1",
+      "interpretation": "High ESR1/ER dependence and higher estrogen-response scores are described as associated with better endocrine benefit in ER+/HER2– breast cancer."
+    },
+    {
+      "gene": "CYP2D6",
+      "interpretation": "Adequate CYP2D6 function is described as important for forming endoxifen; lower endoxifen levels in poor metabolizers or with CYP2D6 inhibition are associated with worse clinical outcomes."
+    },
+    {
+      "gene": "GJA1",
+      "interpretation": "Higher Connexin-43 (GJA1) expression and related junctional pathways are described as correlating with tamoxifen sensitivity and opposing EMT-like resistance states."
+    },
+    {
+      "gene": "GATA3",
+      "interpretation": "Luminal differentiation gene signatures including GATA3 are described as correlating with endocrine responsiveness in ER+ breast cancer."
+    },
+    {
+      "gene": "FOXA1",
+      "interpretation": "Luminal differentiation gene signatures including FOXA1 are described as correlating with endocrine responsiveness in ER+ breast cancer."
+    }
+  ],
+  "sensitivity_genes_down_annotations": [],
+  "resistance_genes_up_annotations": [
+    {
+      "gene": "PIK3CA",
+      "interpretation": "PI3K/AKT/mTOR activation via mechanisms including PIK3CA mutation is described as a major endocrine (tamoxifen) resistance route in ER+ breast cancer contexts."
+    },
+    {
+      "gene": "ERBB2",
+      "interpretation": "Upregulation/amplification of HER2 (ERBB2) is described as promoting endocrine resistance by driving downstream MAPK and PI3K signaling and reducing ER dependence."
+    },
+    {
+      "gene": "EGFR",
+      "interpretation": "EGFR upregulation is described as contributing to tamoxifen-resistant growth via downstream MAPK/PI3K signaling in ER+ breast cancer models."
+    },
+    {
+      "gene": "IGF1R",
+      "interpretation": "IGF1R upregulation is described as part of growth factor pathway activation that drives ligand-independent proliferation and endocrine resistance circuitry."
+    },
+    {
+      "gene": "FGFR1",
+      "interpretation": "FGFR1 upregulation is described as contributing to growth-factor-driven bypass signaling (MAPK/PI3K) in tamoxifen-resistant contexts."
+    },
+    {
+      "gene": "BARD1",
+      "interpretation": "In tamoxifen-resistant cells, PI3K/AKT activity is described as upregulating BARD1/BRCA1 and increasing HR repair capacity, contributing to resistance."
+    },
+    {
+      "gene": "BRCA1",
+      "interpretation": "In tamoxifen-resistant cells, increased BRCA1-associated HR repair capacity is described as part of a resistance-associated adaptation."
+    }
+  ],
+  "resistance_genes_down_annotations": [
+    {
+      "gene": "GJA1",
+      "interpretation": "Reduced Connexin-43 (GJA1) expression is described as linked to EMT-associated tamoxifen resistance via signaling feedback loops."
+    },
+    {
+      "gene": "CYP2D6",
+      "interpretation": "Decreased CYP2D6 activity (poor metabolizer phenotype or potent inhibitors) is described as lowering endoxifen levels and reducing tamoxifen efficacy."
+    }
+  ],
+  "kg_gene_relationships": [
+    "Tamoxifen|binds|ESR1",
+    "Tamoxifen|binds|ESR2",
+    "Tamoxifen|agonist_at|GPER1",
+    "CYP2D6|metabolizes|Tamoxifen",
+    "CYP3A4|metabolizes|Tamoxifen",
+    "CYP3A5|metabolizes|Tamoxifen"
+  ],
+  "Breast_cancer_subtype_information": {
+    "HR+/HER2– (Luminal A/B)": "Primary population for tamoxifen benefit in adjuvant and metastatic settings; strong evidence from many randomized trials and meta-analyses. Sensitivity pathways noted include high estrogen response, luminal differentiation, intact p53, low PI3K/AKT/mTOR, and epithelial phenotype; resistance pathways noted include PI3K/AKT/mTOR upregulation, Hedgehog activation, EMT, NF-κB, and ESR1 alterations.",
+    "HER2+ / HR+": "Tamoxifen is used with chemotherapy and HER2-targeted therapy; HER2 overexpression and downstream PI3K/MAPK activation predispose to resistance.",
+    "TNBC / ER–": "No role for tamoxifen; lack of ER expression confers intrinsic resistance and tamoxifen is not recommended.",
+    "BRCA1/2-mutated / HRD+": "Direct tamoxifen sensitivity data are limited; where ER+ and BRCA2-mutated, tumors can still benefit, but DDR pathway modulation of tamoxifen sensitivity is described as indirect."
+  },
+  "citations": [
+    "1. Early Breast Cancer Trialists’ Collaborative Group (EBCTCG). Effects of chemotherapy and hormonal therapy for early breast cancer on recurrence and 15-year survival: an overview of the randomised trials. Lancet. 2005;365(9472):1687-1717. PMID: 15894097. (PubMed)",
+    "2. Early Breast Cancer Trialists’ Collaborative Group (EBCTCG), Davies C, Godwin J, et al. Relevance of breast cancer hormone receptors and other factors to the efficacy of adjuvant tamoxifen: patient-level meta-analysis of randomised trials. Lancet. 2011;378(9793):771-784. PMID: 21802721. (PubMed)",
+    "3. Davies C, Pan H, Godwin J, et al.; ATLAS collaborators. Long-term effects of continuing adjuvant tamoxifen to 10 years versus stopping at 5 years after diagnosis of oestrogen receptor-positive breast cancer: ATLAS, a randomised trial. Lancet. 2013;381(9869):805-816. PMID: 23219286. NCT00003016. (PubMed)",
+    "4. Gray RG, Rea D, Handley K, et al. aTTom: long-term effects of continuing adjuvant tamoxifen to 10 years versus stopping at 5 years in 6,953 women with early breast cancer. J Clin Oncol. 2013;31(15 Suppl):5. NCT00003678. (SpringerLink)",
+    "5. Bartlett JMS, Sgroi DC, Treuner K, et al. Breast cancer index and prediction of benefit from extended endocrine therapy in breast cancer patients treated in the Adjuvant Tamoxifen—To Offer More? (aTTom) trial. Ann Oncol. 2019;30(11):1776-1783. PMID: 31504126. NCT00003678. (PubMed)",
+    "6. Osborne CK, Schiff R. Mechanisms of endocrine resistance in breast cancer. Annu Rev Med. 2011;62:233-247. PMID: 20887199. (PubMed)",
+    "7. Hayes EL, Lewis-Wambi JS. Mechanisms of endocrine resistance in breast cancer: an overview of the proposed roles of non-coding RNA. Breast Cancer Res. 2015;17:40. PMID: 25849966. (SpringerLink)",
+    "8. Yao J, Deng K, Huang J, et al. Progress in the understanding of the mechanism of tamoxifen resistance in breast cancer. Front Pharmacol. 2020;11:592912. PMID: 33362547. (PMC)",
+    "9. Haque MM, Desai KV. Pathways to endocrine therapy resistance in breast cancer. Front Endocrinol (Lausanne). 2019;10:573. PMID: 31551944. (Frontiers)",
+    "10. Rondón-Lagos M, Villegas VE, Rangel N, Sánchez MC, Zaphiropoulos PG. Tamoxifen resistance: emerging molecular targets. Int J Mol Sci. 2016;17(8):1357. PMID: 27503600. (PMC)",
+    "11. Villegas VE, Rondón-Lagos M, Annaratone L, Sapino A, Castellano I. Tamoxifen treatment of breast cancer cells: impact on Hedgehog/GLI1 signaling. Int J Mol Sci. 2016;17(3):308. PMID: 26927093. (PubMed)",
+    "12. Ramaswamy B, Lu Y, Teng KY, et al. Hedgehog signaling is a novel therapeutic target in tamoxifen-resistant breast cancer aberrantly activated by PI3K/AKT pathway. Cancer Res. 2012;72(19):5048-5059. PMID: 22875023. (PubMed)",
+    "13.Jiang Y, Zhao X, Xiao Q, et al. Snail and Slug mediate tamoxifen resistance in breast cancer cells through activation of EGFR-ERK independent of epithelial–mesenchymal transition. J Mol Cell Biol. 2014;6(4):352-354. PMID: 24916398. (OUP Academic)",
+    "14. Takeda T, Tsubaki M, Matsuda T, et al. EGFR inhibition reverses epithelial–mesenchymal transition, and decreases tamoxifen resistance via Snail and Twist downregulation in breast cancer cells. Oncol Rep. 2022;47(6):109. PMID: 35445730. (Spandidos Publications)",
+    "15. Wu J, Gao W, Tang Q, et al. Cx43 deficiency confers EMT-mediated tamoxifen resistance via c-Src/PI3K/Akt pathway in breast cancer. Int J Biol Sci. 2021;17(9):2380-2397. PMID: 34326682. (IJBS)",
+    "16. Zheng Y, Sowers JY, Houston KD. IGFBP-1 expression promotes tamoxifen resistance in breast cancer cells via Erk pathway activation. Front Endocrinol (Lausanne). 2020;11:233. PMID: 32435229. (PubMed)",
+    "17. Actis C, Muzio G, Autelli R. Autophagy triggers tamoxifen resistance in human breast cancer cells by preventing drug-induced lysosomal damage. Cancers (Basel). 2021;13(6):1252. PMID: 33809171. (PubMed)",
+    "18.Clark AS, West K, Streicher S, Dennis PA. Constitutive and inducible Akt activity promotes resistance to chemotherapy, trastuzumab, or tamoxifen in breast cancer cells. Mol Cancer Ther. 2002;1(9):707-717. PMID: 12479367. (PubMed)",
+    "19. Pan H, Gray R, Braybrooke J, et al.; EBCTCG. 20-year risks of breast-cancer recurrence after stopping endocrine therapy at 5 years. N Engl J Med. 2017;377(19):1836-1846. PMID: 29117498. (PubMed)",
+    "20. Hartkopf AD, Grischke EM, Brucker SY. Endocrine-resistant breast cancer: mechanisms and treatment. Breast Care (Basel). 2020;15(4):347-354. PMID: 32982644. (PubMed)"
+  ],
+  "notes": "Contraindications and major warnings explicitly described include pregnancy (contraindicated), thromboembolic risk (including contraindication for primary risk reduction in those with history of DVT/PE or requiring coumarin-type anticoagulants), increased endometrial cancer risk, cataracts/ocular toxicity, hepatic impairment caution, and avoidance of strong CYP2D6 inhibitors due to reduced endoxifen exposure. Source documents:  "
+}
