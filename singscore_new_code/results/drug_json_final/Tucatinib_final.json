@@ -30,10 +30,26 @@
     "HALLMARK_ESTROGEN_RESPONSE_EARLY",
     "REACTOME_TCR_SIGNALING"
   ],
+  "pathways_sensitive_upregulated": [
+    "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2",
+    "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER",
+    "KEGG_MAPK_SIGNALING_PATHWAY",
+    "REACTOME_TCR_SIGNALING"
+  ],
+  "pathway_sensitive_downregulated": [],
+  "pathway_resistant_upregulated": [
+    "REACTOME_SIGNALING_BY_EGFR_IN_CANCER",
+    "HALLMARK_NOTCH_SIGNALING",
+    "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+    "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+    "HALLMARK_MTORC1_SIGNALING",
+    "HALLMARK_ESTROGEN_RESPONSE_EARLY"
+  ],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2": {
       "description": "Constitutive ERBB2 (HER2) homodimer/heterodimer signaling activates proliferative downstream pathways, including PI3K/AKT and MAPK/ERK cascades.",
-      "interpretation": "HER2 pathway upregulation is a dominant oncogenic driver in HER2-amplified breast cancer and defines a central therapeutic vulnerability targeted by tucatinib.",
+      "interpretation": "HER2 pathway upregulation is a dominant oncogenic driver in HER2-amplified breast cancer and defines a central therapeutic vulnerability targeted by tucatinib.\n\nBaseline-focused rationale:\n- Tucatinib is a highly HER2-selective TKI that inhibits the HER2 kinase domain with minimal EGFR inhibition, suppressing HER2-driven signaling and proliferation. Tumors “addicted” to HER2 (amplified/overexpressed) derive the greatest benefit from HER2-directed regimens (e.g., tucatinib + trastuzumab + capecitabine in HER2CLIMB).",
       "Administration_of_tucatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -103,7 +119,7 @@
     },
     "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER": {
       "description": "A major pro-survival signaling axis activated by receptor tyrosine kinases (including HER2/ERBB2) that promotes growth and survival through AKT pathway activity.",
-      "interpretation": "PI3K/AKT signaling is a key downstream effector of HER2-driven tumors and shapes tumor cell survival programs relevant to targeted therapy response.",
+      "interpretation": "PI3K/AKT signaling is a key downstream effector of HER2-driven tumors and shapes tumor cell survival programs relevant to targeted therapy response.\n\nBaseline-focused rationale:\n- In HER2-amplified tumors, PI3K–AKT is typically upregulated downstream of HER2/HER3, contributing to oncogenic survival. Tucatinib reduces PI3K–AKT signaling by blocking HER2. However, constitutive activation of PI3K–AKT via PIK3CA mutation, PTEN loss, or other lesions is a well-defined mechanism of resistance to anti-HER2 therapies; such tumors may require combined HER2 + PI3K/mTOR targeting.",
       "Administration_of_tucatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -173,7 +189,7 @@
     },
     "KEGG_MAPK_SIGNALING_PATHWAY": {
       "description": "A downstream RAS–RAF–MEK–ERK cascade activated by HER2 that promotes cell growth and proliferation.",
-      "interpretation": "MAPK pathway activity reflects proliferative signaling downstream of HER2 and contributes to growth of HER2-driven breast cancers.",
+      "interpretation": "MAPK pathway activity reflects proliferative signaling downstream of HER2 and contributes to growth of HER2-driven breast cancers.\n\nBaseline-focused rationale:\n- HER2 overexpression stimulates RAS–RAF–MEK–ERK, contributing to proliferation. Tucatinib partially suppresses this cascade by inhibiting HER2. However, reactivation of MAPK via other RTKs or RAS/RAF lesions can bypass HER2 block and is a recognized resistance mechanism to HER2-targeted agents, so the net effect of “Up” is context-dependent.",
       "Administration_of_tucatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -243,7 +259,7 @@
     },
     "REACTOME_SIGNALING_BY_EGFR_IN_CANCER": {
       "description": "EGFR (ERBB1) receptor tyrosine kinase signaling that can activate overlapping downstream pathways and can bypass HER2 blockade when elevated.",
-      "interpretation": "EGFR signaling can provide an alternative growth route and is described as a bypass mechanism in tumors progressing on HER2-directed therapy.",
+      "interpretation": "EGFR signaling can provide an alternative growth route and is described as a bypass mechanism in tumors progressing on HER2-directed therapy.\n\nBaseline-focused rationale:\n- Tucatinib is HER2-selective with minimal EGFR inhibition; strong EGFR signaling (via EGFR overexpression or EGFR-driven subclones) can maintain RAS/PI3K/MAPK output despite HER2 blockade, acting as a bypass route and contributing to resistance or incomplete responses to tucatinib-based regimens.",
       "Administration_of_tucatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -313,7 +329,7 @@
     },
     "HALLMARK_NOTCH_SIGNALING": {
       "description": "Notch signaling regulates cell fate decisions and is noted as active/upregulated in triple-negative/basal breast cancer contexts.",
-      "interpretation": "Notch activity reflects basal/TNBC biology and can support tumor growth independently of HER2 signaling.",
+      "interpretation": "Notch activity reflects basal/TNBC biology and can support tumor growth independently of HER2 signaling.\n\nBaseline-focused rationale:\n- Notch activation promotes cancer stemness, recurrence, EMT, and resistance to multiple therapies. In HER2/neu models, Notch signaling increases after HER2 down-regulation and supports recurrence and escape from HER2-targeted therapy. Up-Notch therefore marks a biology that can undermine durable tucatinib benefit, especially when tumors switch away from HER2 dependence.",
       "Administration_of_tucatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -383,7 +399,7 @@
     },
     "HALLMARK_WNT_BETA_CATENIN_SIGNALING": {
       "description": "Wnt/β-catenin signaling pathway associated with deregulation in basal/TNBC subtype biology and linked to EMT/stemness programs.",
-      "interpretation": "Wnt/β-catenin activity contributes to aggressive phenotypes (e.g., EMT and stemness) that are not directly targeted by tucatinib.",
+      "interpretation": "Wnt/β-catenin activity contributes to aggressive phenotypes (e.g., EMT and stemness) that are not directly targeted by tucatinib.\n\nBaseline-focused rationale:\n- Aberrant Wnt/β-catenin is frequent in TNBC and associated with stemness, EMT, and resistance to chemotherapy and targeted therapies. In breast cancer (including HER2+ contexts), Wnt activation contributes to invasive behavior, immune exclusion, and therapy resistance. Up-regulated Wnt/β-catenin thus indicates a HER2-independent, resistant phenotype, not reversed by tucatinib.",
       "Administration_of_tucatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -453,7 +469,7 @@
     },
     "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
       "description": "NF-κB-driven inflammatory and survival transcriptional program that is described as active in mesenchymal-like TNBC.",
-      "interpretation": "NF-κB activity promotes survival/inflammation programs that can dominate tumor behavior outside HER2 dependency.",
+      "interpretation": "NF-κB activity promotes survival/inflammation programs that can dominate tumor behavior outside HER2 dependency.\n\nBaseline-focused rationale:\n- HER2+ breast-cancer cells can activate NF-κB; constitutive NF-κB activity increases invasion and anti-apoptosis. Experimental data show that constitutively active NF-κB renders HER2+ cells resistant to anti-HER2 drugs, and NF-κB upregulation is observed in lapatinib-resistant cells, with combination HER2 + NF-κB inhibition needed to resensitize them. Tucatinib alone will not correct NF-κB-driven survival.",
       "Administration_of_tucatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -523,7 +539,7 @@
     },
     "HALLMARK_MTORC1_SIGNALING": {
       "description": "mTOR/mTORC1 nutrient-sensing growth pathway; activation is reported in certain TNBC subgroup contexts (including HRD-low TNBC with poor prognosis).",
-      "interpretation": "mTORC1 activation represents an alternative growth/survival program that may reduce dependence on HER2 signaling.",
+      "interpretation": "mTORC1 activation represents an alternative growth/survival program that may reduce dependence on HER2 signaling.\n\nBaseline-focused rationale:\n- Hyperactivation of the PI3K/AKT/mTOR axis is a recurring theme in resistance to anti-HER2 therapies. mTORC1 upregulation sustains protein synthesis and growth even when HER2 is blocked. Clinical and preclinical data support combining HER2-targeted agents with mTOR inhibitors (everolimus, temsirolimus) to overcome resistance—implying that strong mTORC1 activation blunts tucatinib efficacy if untreated.",
       "Administration_of_tucatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -593,7 +609,7 @@
     },
     "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
       "description": "Estrogen receptor signaling transcriptional program characteristic of HR+ (luminal) breast cancers and linked to endocrine-driven proliferation.",
-      "interpretation": "ER signaling is a key proliferative driver in HR+ disease and is described as a potential bypass/crosstalk mechanism in HR+/HER2+ settings.",
+      "interpretation": "ER signaling is a key proliferative driver in HR+ disease and is described as a potential bypass/crosstalk mechanism in HR+/HER2+ settings.\n\nBaseline-focused rationale:\n- In HR+/HER2+ disease, ER and HER2 form a bidirectional crosstalk network. Strong ER signaling can maintain proliferation even when HER2 is blocked, explaining why adding endocrine therapy (e.g., fulvestrant) improves outcomes in HR+ HER2-mutant settings treated with tucatinib + trastuzumab. In pure HR+/HER2– tumors, tucatinib has no direct target regardless of ER status.",
       "Administration_of_tucatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -663,7 +679,7 @@
     },
     "REACTOME_TCR_SIGNALING": {
       "description": "T cell receptor (TCR) signaling is an adaptive immunity pathway reflecting T-cell activation and immune signaling within the tumor microenvironment.",
-      "interpretation": "Immune activation signatures (including T-cell activity) are described as markers of an immunoreactive microenvironment that may correlate with outcomes and combination responses, though tucatinib is not an immunotherapy.",
+      "interpretation": "Immune activation signatures (including T-cell activity) are described as markers of an immunoreactive microenvironment that may correlate with outcomes and combination responses, though tucatinib is not an immunotherapy.\n\nBaseline-focused rationale:\n- Multiple datasets in early HER2+ breast cancer show that high TILs and immune-related gene signatures correlate with higher pCR rates and better event-free survival on trastuzumab-containing regimens. Tucatinib itself is not an immunotherapy, but in common combinations with trastuzumab and/or ADCs, an immune-hot environment (TCR pathway up) is a favorable prognostic context, not a validated tucatinib-specific predictive biomarker.",
       "Administration_of_tucatinib": {
         "Before": {
           "Pathway_regulation": {

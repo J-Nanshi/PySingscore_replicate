@@ -31,10 +31,29 @@
     "REACTOME_INTERLEUKIN_10_SIGNALING",
     "KEGG_JAK_STAT_SIGNALING_PATHWAY"
   ],
+  "pathways_sensitive_upregulated": [
+    "REACTOME_CO_INHIBITION_BY_PD_1",
+    "KEGG_T_CELL_RECEPTOR_SIGNALING_PATHWAY",
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+    "KEGG_MEDICUS_REFERENCE_CGAS_STING_SIGNALING_PATHWAY"
+  ],
+  "pathway_sensitive_downregulated": [],
+  "pathway_resistant_upregulated": [
+    "HALLMARK_TGF_BETA_SIGNALING",
+    "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "GOBP_TOLERANCE_INDUCTION_DEPENDENT_UPON_IMMUNE_RESPONSE",
+    "GOBP_L_TRYPTOPHAN_CATABOLIC_PROCESS_TO_KYNURENINE",
+    "REACTOME_INTERLEUKIN_10_SIGNALING"
+  ],
+  "pathway_resistant_downregulated": [
+    "GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION_OF_PEPTIDE_ANTIGEN_VIA_MHC_CLASS_I",
+    "KEGG_JAK_STAT_SIGNALING_PATHWAY"
+  ],
   "pathway_sets_annotations": {
     "REACTOME_CO_INHIBITION_BY_PD_1": {
       "description": "PD-1 co-inhibitory immune checkpoint signaling in activated T cells, where engagement of PD-1 (PDCD1) by PD-L1/PD-L2 dampens T-cell receptor signaling, proliferation and cytokine production, limiting effector T-cell responses.",
-      "interpretation": "In breast cancer, this pathway is the primary target of dostarlimab; blocking PD-1 co-inhibition reinvigorates tumor-infiltrating lymphocytes and restores anti-tumor immunity, particularly in immune-inflamed TNBC and HER2-enriched tumors with pre-existing T-cell activity.",
+      "interpretation": "In breast cancer, this pathway is the primary target of dostarlimab; blocking PD-1 co-inhibition reinvigorates tumor-infiltrating lymphocytes and restores anti-tumor immunity, particularly in immune-inflamed TNBC and HER2-enriched tumors with pre-existing T-cell activity.\n\nBaseline-focused rationale:\n- In breast tumors where dostarlimab is considered (e.g. TNBC, dMMR, TMB-high), the PD-1/PD-L1 axis is typically engaged: PD-1 is expressed on exhausted TILs and PD-L1 on tumor and myeloid cells. Dostarlimab (anti-PD-1 IgG4) binds PD-1 and blocks PD-L1/PD-L2, releasing this inhibitory brake and restoring T-cell cytotoxicity. Baseline PD-L1 expression and TIL-rich TNBC are associated with benefit from PD-1/PD-L1 blockade.",
       "Administration_of_dostarlimab": {
         "Before": {
           "Pathway_regulation": {
@@ -104,7 +123,7 @@
     },
     "KEGG_T_CELL_RECEPTOR_SIGNALING_PATHWAY": {
       "description": "T-cell receptor (TCR) signaling cascade triggered by recognition of peptide–MHC complexes, leading to activation of downstream kinases, transcription factors and effector functions in T cells.",
-      "interpretation": "Breast tumors with intact antigen presentation and robust TCR signaling (high MHC I, adequate costimulation and TILs) show better responses to PD-1 blockade with dostarlimab, whereas defects in antigen presentation or costimulation can render tumors resistant despite PD-1 inhibition.",
+      "interpretation": "Breast tumors with intact antigen presentation and robust TCR signaling (high MHC I, adequate costimulation and TILs) show better responses to PD-1 blockade with dostarlimab, whereas defects in antigen presentation or costimulation can render tumors resistant despite PD-1 inhibition.\n\nBaseline-focused rationale:\n- A functional, clonally expanded T-cell repertoire with active TCR signaling and costimulation (CD28, ICOS) underlies effective PD-1 blockade. TNBC and other immunogenic breast cancers with high TILs and T-cell–inflamed gene expression signatures respond better to PD-1/PD-L1 inhibitors than immune-cold tumors with poor T-cell infiltration or anergic T cells.",
       "Administration_of_dostarlimab": {
         "Before": {
           "Pathway_regulation": {
@@ -174,7 +193,7 @@
     },
     "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
       "description": "Genes induced by interferon-gamma, reflecting a Th1-type inflammatory response including chemokines (e.g. CXCL9, CXCL10), antigen presentation molecules and immune activation markers.",
-      "interpretation": "A high IFN-γ response signature in breast tumors, especially TNBC, correlates with a T-cell–inflamed microenvironment and predicts increased sensitivity to PD-1 inhibitors such as dostarlimab, while loss of IFN-γ responsiveness via JAK/STAT defects confers resistance.",
+      "interpretation": "A high IFN-γ response signature in breast tumors, especially TNBC, correlates with a T-cell–inflamed microenvironment and predicts increased sensitivity to PD-1 inhibitors such as dostarlimab, while loss of IFN-γ responsiveness via JAK/STAT defects confers resistance.\n\nBaseline-focused rationale:\n- An IFN-γ–driven microenvironment (e.g. upregulation of CXCL9/10, IDO1, HLA class I genes, STAT1 targets) defines “hot” tumors enriched for effector CD8⁺ T cells and is consistently associated with higher response rates to PD-1 blockade, including in TNBC treated with pembrolizumab or atezolizumab. Baseline IFN-γ signatures therefore support dostarlimab sensitivity.",
       "Administration_of_dostarlimab": {
         "Before": {
           "Pathway_regulation": {
@@ -244,7 +263,7 @@
     },
     "KEGG_MEDICUS_REFERENCE_CGAS_STING_SIGNALING_PATHWAY": {
       "description": "Cytosolic DNA-sensing pathway centered on cGAS–STING, which detects double-stranded DNA in the cytosol and induces type I interferon and inflammatory cytokine production.",
-      "interpretation": "In BRCA1/2-mutated and HRD-positive breast cancers, DNA damage activates cGAS–STING, promoting type I IFN signaling, dendritic cell activation and T-cell recruitment, thereby sensitizing tumors to dostarlimab, particularly in combinations with PARP inhibitors that further enhance STING activation.",
+      "interpretation": "In BRCA1/2-mutated and HRD-positive breast cancers, DNA damage activates cGAS–STING, promoting type I IFN signaling, dendritic cell activation and T-cell recruitment, thereby sensitizing tumors to dostarlimab, particularly in combinations with PARP inhibitors that further enhance STING activation.\n\nBaseline-focused rationale:\n- HRD/BRCA-mutated breast cancers accumulate cytosolic DNA, activating cGAS–STING and type-I IFN signaling, which recruits CD8⁺ T cells and promotes an inflamed TME. Preclinical BRCA-deficient TNBC models show that STING activation via DNA damage (e.g. PARP inhibitors) is critical for optimal antitumor immunity and improves response to PD-1/PD-L1 blockade. High cGAS–STING scores correlate with genomic instability and immune cell infiltration in BC.",
       "Administration_of_dostarlimab": {
         "Before": {
           "Pathway_regulation": {
@@ -314,7 +333,7 @@
     },
     "GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION_OF_PEPTIDE_ANTIGEN_VIA_MHC_CLASS_I": {
       "description": "Processing of intracellular proteins into peptides and their loading onto MHC class I molecules for presentation to CD8+ T cells, involving components such as the immunoproteasome, TAP complex, tapasin, β2-microglobulin and HLA class I.",
-      "interpretation": "Breast tumors that maintain or upregulate MHC I antigen presentation are more susceptible to T-cell–mediated killing unleashed by dostarlimab, whereas loss of B2M, HLA class I or other antigen-processing components results in immune escape and resistance to PD-1 blockade.",
+      "interpretation": "Breast tumors that maintain or upregulate MHC I antigen presentation are more susceptible to T-cell–mediated killing unleashed by dostarlimab, whereas loss of B2M, HLA class I or other antigen-processing components results in immune escape and resistance to PD-1 blockade.\n\nBaseline-focused rationale:\n- If baseline antigen presentation is lost, CD8⁺ T cells cannot recognize and kill tumor cells, even if PD-1 is blocked. Loss-of-function mutations in JAK1/2 or B2M and downregulation of HLA class I components are repeatedly linked to primary or acquired resistance to PD-1 blockade; these mechanisms are described across multiple tumor types and are relevant to breast cancers with low MHC-I expression.",
       "Administration_of_dostarlimab": {
         "Before": {
           "Pathway_regulation": {
@@ -384,7 +403,7 @@
     },
     "HALLMARK_TGF_BETA_SIGNALING": {
       "description": "Transforming growth factor-beta signaling through SMAD and non-SMAD pathways, regulating fibrosis, epithelial–mesenchymal transition, immune suppression and stromal remodeling.",
-      "interpretation": "High TGF-β signaling in breast tumors and their stroma promotes immune exclusion, Treg and MDSC recruitment and IDO1 induction, and is associated with poor response or resistance to PD-1 inhibitors like dostarlimab, whereas suppression of TGF-β signaling can improve T-cell infiltration and sensitivity.",
+      "interpretation": "High TGF-β signaling in breast tumors and their stroma promotes immune exclusion, Treg and MDSC recruitment and IDO1 induction, and is associated with poor response or resistance to PD-1 inhibitors like dostarlimab, whereas suppression of TGF-β signaling can improve T-cell infiltration and sensitivity.\n\nBaseline-focused rationale:\n- High TGF-β in tumor and stromal compartments promotes EMT, fibrosis, Treg and MDSC accumulation and a strongly immune-excluded phenotype. In preclinical breast cancer and pan-tumor data, TGF-β-high tumors show poor CD8⁺ T-cell penetration and limited benefit from PD-1/PD-L1 blockade; combining TGF-β inhibitors or TGF-β/PD-L1 bispecifics with ICIs can restore intratumoral T cells and antitumor activity.",
       "Administration_of_dostarlimab": {
         "Before": {
           "Pathway_regulation": {
@@ -454,7 +473,7 @@
     },
     "HALLMARK_WNT_BETA_CATENIN_SIGNALING": {
       "description": "Canonical WNT signaling via β-catenin stabilization and nuclear translocation, controlling developmental programs, stemness and cell fate.",
-      "interpretation": "Upregulated WNT/β-catenin signaling in basal-like and other breast cancers excludes dendritic cells and T cells from the tumor microenvironment, creating immune-cold tumors that resist dostarlimab, while downregulation of this pathway is linked to improved TIL priming and checkpoint inhibitor responsiveness.",
+      "interpretation": "Upregulated WNT/β-catenin signaling in basal-like and other breast cancers excludes dendritic cells and T cells from the tumor microenvironment, creating immune-cold tumors that resist dostarlimab, while downregulation of this pathway is linked to improved TIL priming and checkpoint inhibitor responsiveness.\n\nBaseline-focused rationale:\n- Activated WNT/β-catenin signaling in tumor cells suppresses recruitment/activation of dendritic cells and leads to non-T-cell-inflamed, CD8-poor TMEs. Across solid tumors, WNT/β-catenin activation correlates with immune exclusion and lack of benefit from ICIs; this mechanism likely contributes to immune-cold basal-like or luminal breast cancers with poor ICI responses.",
       "Administration_of_dostarlimab": {
         "Before": {
           "Pathway_regulation": {
@@ -524,7 +543,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "PI3K–AKT–mTOR intracellular signaling axis driving cell growth, survival, metabolism and proliferation downstream of growth factor and oncogenic inputs.",
-      "interpretation": "Hyperactive PI3K–AKT signaling (e.g. via PTEN loss) in breast tumors promotes an immunosuppressive milieu with reduced antigen presentation and TILs and increased VEGF and other factors, contributing to resistance to dostarlimab, whereas pharmacologic or genetic attenuation of this pathway can enhance immune infiltration and PD-1 blockade efficacy.",
+      "interpretation": "Hyperactive PI3K–AKT signaling (e.g. via PTEN loss) in breast tumors promotes an immunosuppressive milieu with reduced antigen presentation and TILs and increased VEGF and other factors, contributing to resistance to dostarlimab, whereas pharmacologic or genetic attenuation of this pathway can enhance immune infiltration and PD-1 blockade efficacy.\n\nBaseline-focused rationale:\n- PTEN loss and PI3K–AKT–mTOR hyperactivation increase PD-L1 and immunosuppressive cytokines, reduce TIL infiltration and drive immune evasion. In TNBC and HR⁺/HER2⁻ breast cancer, PTEN loss is associated with poor prognosis and reduced sensitivity to checkpoint blockade; dual targeting of PI3K and PD-1/PD-L1 is being explored to overcome this resistance.",
       "Administration_of_dostarlimab": {
         "Before": {
           "Pathway_regulation": {
@@ -594,7 +613,7 @@
     },
     "GOBP_TOLERANCE_INDUCTION_DEPENDENT_UPON_IMMUNE_RESPONSE": {
       "description": "Immune processes that induce peripheral tolerance following immune activation, including the induction of regulatory T cells and production of suppressive mediators such as IDO1, TGF-β and IL-10.",
-      "interpretation": "In breast cancer, chronic immune activation and PD-1 pathway engagement can drive tolerance programs (e.g. Treg accumulation, IDO1 and IL-10 upregulation), establishing an immunosuppressive microenvironment that counteracts the reinvigorated T cells produced by dostarlimab.",
+      "interpretation": "In breast cancer, chronic immune activation and PD-1 pathway engagement can drive tolerance programs (e.g. Treg accumulation, IDO1 and IL-10 upregulation), establishing an immunosuppressive microenvironment that counteracts the reinvigorated T cells produced by dostarlimab.\n\nBaseline-focused rationale:\n- HAVCR2 (TIM-3) is upregulated on chronically stimulated, exhausted CD8⁺ T cells and on Tregs in many tumors. During PD-1 therapy, TIM-3 expression often increases on PD-1-bound T cells via PI3K/AKT-dependent mechanisms, providing a compensatory inhibitory signal and mediating adaptive resistance to PD-1 blockade. High TIM-3 at baseline or on-treatment in breast-like immune-excluded TMEs is therefore a negative predictor for single-agent dostarlimab.",
       "Administration_of_dostarlimab": {
         "Before": {
           "Pathway_regulation": {
@@ -664,7 +683,7 @@
     },
     "GOBP_L_TRYPTOPHAN_CATABOLIC_PROCESS_TO_KYNURENINE": {
       "description": "Catabolism of L-tryptophan to kynurenine, largely mediated by indoleamine 2,3-dioxygenase 1 (IDO1), generating metabolites that modulate immune responses.",
-      "interpretation": "High IDO1-driven tryptophan catabolism in breast tumors depletes tryptophan and accumulates immunosuppressive kynurenines, promoting T-cell dysfunction and regulatory T-cell expansion, thereby conferring resistance to dostarlimab; conversely, low IDO1 activity or pathway inhibition is associated with improved checkpoint inhibitor responses.",
+      "interpretation": "High IDO1-driven tryptophan catabolism in breast tumors depletes tryptophan and accumulates immunosuppressive kynurenines, promoting T-cell dysfunction and regulatory T-cell expansion, thereby conferring resistance to dostarlimab; conversely, low IDO1 activity or pathway inhibition is associated with improved checkpoint inhibitor responses.\n\nBaseline-focused rationale:\n- Tumor and myeloid IDO1 catabolize tryptophan to kynurenine, which suppresses effector T-cell and NK-cell function and promotes Treg differentiation. IDO1 expression is common in high-grade TNBC and frequently co-expressed with PD-L1, supporting an IDO-driven immunosuppressive state that blunts PD-1 blockade. High baseline IDO1 therefore predicts decreased sensitivity to single-agent dostarlimab, motivating IDO1 + PD-1 combination strategies.",
       "Administration_of_dostarlimab": {
         "Before": {
           "Pathway_regulation": {
@@ -734,7 +753,7 @@
     },
     "REACTOME_INTERLEUKIN_10_SIGNALING": {
       "description": "Interleukin-10 signaling pathway, in which IL-10 engages its receptor to activate downstream JAK–STAT signaling and exert anti-inflammatory and immunosuppressive effects.",
-      "interpretation": "Elevated IL-10 signaling in the breast tumor microenvironment contributes to a 'cold' immunosuppressive state with limited T-cell activation, and is described as part of cytokine milieus that blunt the effectiveness of PD-1 blockade with dostarlimab.",
+      "interpretation": "Elevated IL-10 signaling in the breast tumor microenvironment contributes to a 'cold' immunosuppressive state with limited T-cell activation, and is described as part of cytokine milieus that blunt the effectiveness of PD-1 blockade with dostarlimab.\n\nBaseline-focused rationale:\n- Elevated IL-10 (often with TGF-β and other suppressive cytokines) promotes Treg expansion, MDSC function and suppression of antigen-presenting cells, maintaining a “cold” or immune-dysfunctional TME. Such cytokine-high tumors show attenuated benefit from PD-1/PD-L1 blockade; durable responses often require either re-programming of myeloid/cytokine networks or combination strategies.",
       "Administration_of_dostarlimab": {
         "Before": {
           "Pathway_regulation": {
@@ -804,7 +823,7 @@
     },
     "KEGG_JAK_STAT_SIGNALING_PATHWAY": {
       "description": "Janus kinase (JAK)–signal transducer and activator of transcription (STAT) cascades downstream of cytokine receptors (including IFN and IL-6 family receptors), governing transcriptional responses to cytokines.",
-      "interpretation": "Intact JAK–STAT signaling is required for breast cancer cells to respond to IFN-γ by upregulating MHC I and pro-apoptotic programs under PD-1 blockade; loss-of-function mutations in JAK1/2 or downregulation of IFNGR/IRF1 abrogate these responses and are implicated as mechanisms of resistance to dostarlimab, while chronic IL-6/STAT3 activation supports immunosuppressive MDSCs and macrophages that also limit benefit.",
+      "interpretation": "Intact JAK–STAT signaling is required for breast cancer cells to respond to IFN-γ by upregulating MHC I and pro-apoptotic programs under PD-1 blockade; loss-of-function mutations in JAK1/2 or downregulation of IFNGR/IRF1 abrogate these responses and are implicated as mechanisms of resistance to dostarlimab, while chronic IL-6/STAT3 activation supports immunosuppressive MDSCs and macrophages that also limit benefit.\n\nBaseline-focused rationale:\n- Anti-PD-1–activated T cells depend on intact IFN-γ–JAK–STAT signaling in tumor cells to upregulate antigen presentation, chemokines and pro-apoptotic programs. Loss-of-function JAK1/2 or IFNγR mutations abolish tumor cell responsiveness to IFN-γ and have been directly linked to primary and acquired resistance to PD-1 blockade in melanoma and dMMR cancers; analogous defects would be expected to confer resistance to dostarlimab in breast tumors.",
       "Administration_of_dostarlimab": {
         "Before": {
           "Pathway_regulation": {

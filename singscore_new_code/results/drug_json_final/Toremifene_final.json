@@ -41,10 +41,25 @@
     "HALLMARK_TGF_BETA_SIGNALING",
     "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2"
   ],
+  "pathways_sensitive_upregulated": [
+    "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+    "HALLMARK_ESTROGEN_RESPONSE_LATE",
+    "REACTOME_ESR_MEDIATED_SIGNALING",
+    "HALLMARK_G2M_CHECKPOINT",
+    "HALLMARK_E2F_TARGETS"
+  ],
+  "pathway_sensitive_downregulated": [
+    "HALLMARK_APOPTOSIS",
+    "HALLMARK_TGF_BETA_SIGNALING"
+  ],
+  "pathway_resistant_upregulated": [
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+  ],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
       "description": "Early estrogen-response genes activated by estrogen receptor signaling.",
-      "interpretation": "Represents ER-driven transcriptional programs that support hormone-dependent growth in ER+ (luminal) breast cancer.",
+      "interpretation": "Represents ER-driven transcriptional programs that support hormone-dependent growth in ER+ (luminal) breast cancer.\n\nBaseline-focused rationale:\n- Toremifene is a SERM that competes with estradiol for ER, suppressing ER-regulated early estrogen-response genes. ER+/luminal tumors with high estrogen-response are strongly ER-dependent and regress when this program is shut down; tumors lacking ER signaling are intrinsically endocrine-insensitive.",
       "Administration_of_toremifene": {
         "Before": {
           "Pathway_regulation": {
@@ -114,7 +129,7 @@
     },
     "HALLMARK_ESTROGEN_RESPONSE_LATE": {
       "description": "Late-phase estrogen target genes regulated downstream of estrogen receptor signaling.",
-      "interpretation": "Reflects sustained estrogen/ER pathway activity associated with ER-dependent proliferation in hormone receptor–positive breast cancer.",
+      "interpretation": "Reflects sustained estrogen/ER pathway activity associated with ER-dependent proliferation in hormone receptor–positive breast cancer.\n\nBaseline-focused rationale:\n- Late estrogen-response genes mark sustained ER transcriptional output. High scores indicate addiction to ER signaling; toremifene blocks ER and reduces these signatures, leading to tumor control. Low/flat late response suggests ER-independence and weaker benefit.",
       "Administration_of_toremifene": {
         "Before": {
           "Pathway_regulation": {
@@ -184,7 +199,7 @@
     },
     "REACTOME_ESR_MEDIATED_SIGNALING": {
       "description": "Core estrogen receptor (ESR) signaling cascade controlling estrogen-dependent transcription and downstream effects.",
-      "interpretation": "Central pathway defining estrogen-driven tumor biology and endocrine dependence in ER+ breast cancer.",
+      "interpretation": "Central pathway defining estrogen-driven tumor biology and endocrine dependence in ER+ breast cancer.\n\nBaseline-focused rationale:\n- ESR-mediated signaling (ligand-bound ERα/β → transcriptional programs) is the core drug target. Toremifene requires functional ER to exert antiestrogenic effects; loss of ER or switch to ER-independent pathways reduces sensitivity.",
       "Administration_of_toremifene": {
         "Before": {
           "Pathway_regulation": {
@@ -254,7 +269,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "Central survival and proliferation signaling pathway involving PI3K, AKT, and mTOR.",
-      "interpretation": "A known driver of endocrine resistance and ER-independent survival signaling in breast cancer when activated.",
+      "interpretation": "A known driver of endocrine resistance and ER-independent survival signaling in breast cancer when activated.\n\nBaseline-focused rationale:\n- PI3K/AKT activation provides ER-independent survival and is a well-described endocrine resistance mechanism. Tumors with modest PI3K signaling remain reliant on ER; those with strong PI3K/AKT activation are less affected by ER blockade.",
       "Administration_of_toremifene": {
         "Before": {
           "Pathway_regulation": {
@@ -324,7 +339,7 @@
     },
     "HALLMARK_G2M_CHECKPOINT": {
       "description": "Cell-cycle checkpoint and mitotic control processes governing G2/M transition and mitotic progression.",
-      "interpretation": "Represents proliferative cell-division programs relevant to tumor growth and cell-cycle arrest phenotypes in breast cancer.",
+      "interpretation": "Represents proliferative cell-division programs relevant to tumor growth and cell-cycle arrest phenotypes in breast cancer.\n\nBaseline-focused rationale:\n- Toremifene suppresses mitosis and induces growth arrest; sensitive cells show marked reduction in G2/M and cell-cycle gene expression, whereas resistant clones maintain cycling despite ER blockade.",
       "Administration_of_toremifene": {
         "Before": {
           "Pathway_regulation": {
@@ -394,7 +409,7 @@
     },
     "HALLMARK_E2F_TARGETS": {
       "description": "E2F-regulated genes required for S-phase entry and DNA replication.",
-      "interpretation": "Captures transcriptional output of proliferative cell-cycle drive that can sustain growth in breast cancer.",
+      "interpretation": "Captures transcriptional output of proliferative cell-cycle drive that can sustain growth in breast cancer.\n\nBaseline-focused rationale:\n- E2F targets (S-phase and DNA replication genes) are key for proliferation. Toremifene, via ER antagonism and induction of growth-inhibitory signals such as TGF-β, can repress E2F; failure to suppress E2F is a hallmark of endocrine resistance.",
       "Administration_of_toremifene": {
         "Before": {
           "Pathway_regulation": {
@@ -464,7 +479,7 @@
     },
     "HALLMARK_APOPTOSIS": {
       "description": "Programmed cell death signaling programs that execute apoptotic responses.",
-      "interpretation": "Determines capacity for therapy-induced tumor cell death and response phenotypes in breast cancer.",
+      "interpretation": "Determines capacity for therapy-induced tumor cell death and response phenotypes in breast cancer.\n\nBaseline-focused rationale:\n- Toremifene inhibits proliferation and induces apoptosis in ER-sensitive breast cancer cells; growth inhibition reflects both mitotic block and apoptotic cell death. Lack of apoptotic induction is a common mechanism of endocrine resistance.",
       "Administration_of_toremifene": {
         "Before": {
           "Pathway_regulation": {
@@ -534,7 +549,7 @@
     },
     "HALLMARK_TGF_BETA_SIGNALING": {
       "description": "Transforming growth factor beta (TGF-β) signaling programs involved in growth regulation and downstream transcriptional responses.",
-      "interpretation": "Growth-inhibitory TGF-β responsiveness was described as contributing to growth arrest signals in the context of toremifene exposure.",
+      "interpretation": "Growth-inhibitory TGF-β responsiveness was described as contributing to growth arrest signals in the context of toremifene exposure.\n\nBaseline-focused rationale:\n- Toremifene (and tamoxifen) induces TGF-β1 and associated growth inhibition in breast cancer models; TGF-β1 acts as a tumor suppressor early but can become pro-metastatic later. Effective endocrine therapy seems to require a TGF-β/Smad context that favors growth arrest rather than EMT/invasion.",
       "Administration_of_toremifene": {
         "Before": {
           "Pathway_regulation": {

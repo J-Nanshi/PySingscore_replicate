@@ -34,10 +34,31 @@
     "BIOCARTA_PTEN_PATHWAY",
     "HALLMARK_APOPTOSIS"
   ],
+  "pathways_sensitive_upregulated": [
+    "KEGG_ERBB_SIGNALING_PATHWAY",
+    "HALLMARK_E2F_TARGETS",
+    "REACTOME_FOXO_MEDIATED_TRANSCRIPTION",
+    "BIOCARTA_G1_PATHWAY"
+  ],
+  "pathway_sensitive_downregulated": [],
+  "pathway_resistant_upregulated": [
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+    "NAGASHIMA_NRG1_SIGNALING_UP",
+    "REACTOME_GRB7_EVENTS_IN_ERBB2_SIGNALING",
+    "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+    "REACTOME_SIGNALING_BY_MET",
+    "HALLMARK_OXIDATIVE_PHOSPHORYLATION",
+    "HALLMARK_TNFA_SIGNALING_VIA_NFKB"
+  ],
+  "pathway_resistant_downregulated": [
+    "BIOCARTA_PTEN_PATHWAY",
+    "HALLMARK_APOPTOSIS"
+  ],
   "pathway_sets_annotations": {
     "KEGG_ERBB_SIGNALING_PATHWAY": {
       "description": "Growth factor receptor signaling through ERBB family receptors (including EGFR and HER2) that activates downstream MAPK and PI3K pathway outputs controlling proliferation and survival.",
-      "interpretation": "ERBB signaling is a dominant oncogenic driver in HER2-amplified breast cancers and strongly influences tumor growth and therapeutic response to HER2-directed strategies.",
+      "interpretation": "ERBB signaling is a dominant oncogenic driver in HER2-amplified breast cancers and strongly influences tumor growth and therapeutic response to HER2-directed strategies.\n\nBaseline-focused rationale:\n- In HER2-amplified breast cancer, ErbB signaling is constitutively **up**, driving MAPK and PI3K/AKT. Lapatinib is indicated exactly in this context: tumors are “addicted” to HER2/EGFR; blocking the kinases collapses downstream signaling and halts proliferation. If ErbB signaling is not upregulated at baseline (non-HER2-driven), lapatinib benefit is limited.",
       "Administration_of_lapatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -107,7 +128,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "Core survival and growth signaling axis involving PI3K activation, AKT signaling, and mTOR-driven translational and metabolic programs.",
-      "interpretation": "This pathway is a major downstream effector of HER2 signaling in breast cancer and supports tumor cell survival, proliferation, and adaptation under targeted therapy pressure.",
+      "interpretation": "This pathway is a major downstream effector of HER2 signaling in breast cancer and supports tumor cell survival, proliferation, and adaptation under targeted therapy pressure.\n\nBaseline-focused rationale:\n- HER2 amplification normally drives **PI3K/AKT/mTOR upregulation**, and HER2-dependent PI3K signaling is successfully switched off by lapatinib in sensitive tumors. However, when PI3K/AKT is hyperactivated by **PIK3CA mutations or PTEN loss**, the pathway can remain active despite HER2 blockade, mediating intrinsic or acquired resistance.",
       "Administration_of_lapatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -177,7 +198,7 @@
     },
     "HALLMARK_E2F_TARGETS": {
       "description": "Transcriptional program driven by E2F factors that promotes DNA replication and S-phase entry, reflecting active G1/S cell-cycle progression.",
-      "interpretation": "Elevated E2F-target activity marks proliferative breast cancer states and is tightly linked to growth control mechanisms that determine tumor expansion and treatment responsiveness.",
+      "interpretation": "Elevated E2F-target activity marks proliferative breast cancer states and is tightly linked to growth control mechanisms that determine tumor expansion and treatment responsiveness.\n\nBaseline-focused rationale:\n- Baseline HER2+ tumors often show high E2F and G1/S gene expression (Cyclin D1, CDK4/6 targets), reflecting rapid proliferation. Lapatinib sensitivity associates with **on-treatment suppression** of these E2F targets. Tumors that already have RB loss or very high CCND1 can bypass HER2-CDK4/6 control and may be less inhibited by lapatinib.",
       "Administration_of_lapatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -247,7 +268,7 @@
     },
     "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
       "description": "Early transcriptional response program induced by estrogen receptor signaling that regulates hormone-responsive proliferation and survival genes.",
-      "interpretation": "Estrogen signaling is a key lineage driver in ER-positive breast cancer and can interact with HER2 signaling in ER+/HER2+ disease, shaping tumor biology and treatment outcomes.",
+      "interpretation": "Estrogen signaling is a key lineage driver in ER-positive breast cancer and can interact with HER2 signaling in ER+/HER2+ disease, shaping tumor biology and treatment outcomes.\n\nBaseline-focused rationale:\n- In ER+/HER2+ (“triple-positive”) disease, blocking HER2 can de-repress **FOXO3A-mediated ER transcription**, increasing ER dependence and allowing tumors to survive on ER signaling. High ER signaling at baseline predicts **limited benefit from HER2-only blockade**; adding aromatase inhibitors or SERMs/SERDs improves response.",
       "Administration_of_lapatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -317,7 +338,7 @@
     },
     "NAGASHIMA_NRG1_SIGNALING_UP": {
       "description": "Signature reflecting neuregulin-1 (NRG1/heregulin) signaling activity, associated with HER3- and EGFR-linked downstream pathway activation.",
-      "interpretation": "NRG1-driven signaling can provide growth-factor ligand input into ERBB network activity in breast cancer models, affecting pathway utilization and adaptive signaling states.",
+      "interpretation": "NRG1-driven signaling can provide growth-factor ligand input into ERBB network activity in breast cancer models, affecting pathway utilization and adaptive signaling states.\n\nBaseline-focused rationale:\n- An autocrine **heregulin (NRG1)–HER3–EGFR–PI3K** axis maintains PI3K/AKT and ERK signaling even when HER2 is inhibited. Baseline high heregulin/HER3 or rapid induction during therapy drives resistance to lapatinib and other EGFR/HER2 TKIs; blocking HER3 or PI3K/mTOR restores sensitivity in models.",
       "Administration_of_lapatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -387,7 +408,7 @@
     },
     "REACTOME_GRB7_EVENTS_IN_ERBB2_SIGNALING": {
       "description": "Adaptor-mediated events in ERBB2 signaling involving GRB7, which can connect receptor signaling to downstream survival, migration, and focal adhesion-related programs.",
-      "interpretation": "GRB7 is co-expressed with HER2 in HER2-amplified contexts and participates in signaling architectures that support tumor cell behavior and pathway rewiring.",
+      "interpretation": "GRB7 is co-expressed with HER2 in HER2-amplified contexts and participates in signaling architectures that support tumor cell behavior and pathway rewiring.\n\nBaseline-focused rationale:\n- GRB7 is frequently co-amplified with HER2. Lapatinib-mediated AKT inhibition can relieve GRB7 repression, further increasing its expression. High GRB7 enhances receptor tyrosine kinase and FAK-driven survival/migration. Knock-down of GRB7 increases lapatinib activity, indicating that **high baseline GRB7 is an adverse, resistance-leaning feature**.",
       "Administration_of_lapatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -457,7 +478,7 @@
     },
     "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
       "description": "Cell-state transition program characterized by loss of epithelial features and gain of mesenchymal traits, associated with motility, invasion, and altered signaling dependencies.",
-      "interpretation": "EMT-like states in breast cancer are linked to invasive phenotypes and broad signaling changes that influence tumor progression and therapy response patterns.",
+      "interpretation": "EMT-like states in breast cancer are linked to invasive phenotypes and broad signaling changes that influence tumor progression and therapy response patterns.\n\nBaseline-focused rationale:\n- In HER2+ breast tumors, chronic HER2 blockade selects for **AXL-high clones**. AXL activation reinstates MAPK and PI3K signaling independent of HER2, driving proliferation, migration and metastasis despite lapatinib. High baseline AXL or EMT signatures predict **poor response**, and AXL inhibition can re-sensitize cells.",
       "Administration_of_lapatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -527,7 +548,7 @@
     },
     "REACTOME_SIGNALING_BY_MET": {
       "description": "Signaling downstream of the MET receptor tyrosine kinase (HGF receptor) that activates PI3K and MAPK pathways to promote survival, proliferation, and motility.",
-      "interpretation": "MET signaling can function as an alternative receptor-driven growth pathway in breast cancer models and is relevant to tumor cell survival and invasive behavior.",
+      "interpretation": "MET signaling can function as an alternative receptor-driven growth pathway in breast cancer models and is relevant to tumor cell survival and invasive behavior.\n\nBaseline-focused rationale:\n- Activated **MET–HGF** signaling provides an alternate RTK driver that maintains PI3K/MAPK activity when HER2 is inhibited. In HER2-amplified breast cancer models, HGF stimulation or MET overexpression reduces lapatinib-induced apoptosis and proliferation arrest; MET inhibition reverses resistance.",
       "Administration_of_lapatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -597,7 +618,7 @@
     },
     "REACTOME_FOXO_MEDIATED_TRANSCRIPTION": {
       "description": "Transcriptional regulation mediated by FOXO family factors, typically activated when AKT activity is reduced, promoting cell-cycle inhibition and stress-response gene expression.",
-      "interpretation": "FOXO-mediated programs are part of tumor-suppressive and adaptive transcriptional responses in breast cancer, influencing cell-cycle control and lineage signaling interactions.",
+      "interpretation": "FOXO-mediated programs are part of tumor-suppressive and adaptive transcriptional responses in breast cancer, influencing cell-cycle control and lineage signaling interactions.\n\nBaseline-focused rationale:\n- In sensitive HER2+ breast cancer cells, lapatinib induces **FOXO3A activation and p27^Kip1 upregulation**, enforcing G1 arrest. Tumors where FOXO3A/p27 are already low or cannot be induced (e.g. miR-221-mediated p27 suppression) show reduced G1 arrest and **lapatinib resistance**. Thus a baseline state where FOXO3A/p27 are **intact and not heavily downregulated** predicts better response.",
       "Administration_of_lapatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -667,7 +688,7 @@
     },
     "BIOCARTA_G1_PATHWAY": {
       "description": "G1-phase cell-cycle control pathway involving cyclins/CDKs and checkpoint regulators that govern progression toward S phase.",
-      "interpretation": "G1 control is central to breast cancer proliferation biology, and shifts in G1 regulatory circuitry impact tumor growth dynamics and responses to growth-factor pathway perturbations.",
+      "interpretation": "G1 control is central to breast cancer proliferation biology, and shifts in G1 regulatory circuitry impact tumor growth dynamics and responses to growth-factor pathway perturbations.\n\nBaseline-focused rationale:\n- HER2 signaling feeds into Cyclin D1/CDK4 and RB phosphorylation, driving E2F and proliferation. Lapatinib can suppress Cyclin D1 and induce RB hypophosphorylation in sensitive tumors. However, **RB loss** or very high Cyclin D1/CDK4 activity uncouples cell cycle from HER2, limiting the effect of HER2 TKIs. Thus a typical HER2-addicted, RB-proficient tumor with upregulated Cyclin D1/CDK4 is still **sensitive**, whereas RB-defective or CCND1-amplified tumors are more **resistant**.",
       "Administration_of_lapatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -737,7 +758,7 @@
     },
     "HALLMARK_OXIDATIVE_PHOSPHORYLATION": {
       "description": "Mitochondrial respiration and electron transport chain program supporting ATP production through oxidative metabolism.",
-      "interpretation": "Oxidative phosphorylation reflects metabolic state and can be modulated during targeted therapy responses, contributing to tumor cell energetic adaptation in breast cancer models.",
+      "interpretation": "Oxidative phosphorylation reflects metabolic state and can be modulated during targeted therapy responses, contributing to tumor cell energetic adaptation in breast cancer models.\n\nBaseline-focused rationale:\n- Recent work shows lapatinib can **increase mitochondrial respiration and OXPHOS proteins** in HER2+ cells even while inhibiting proliferation, suggesting a metabolic shift toward oxidative ATP production. Lapatinib-resistant cells upregulate metabolic stress and glucose-deprivation response networks, often involving ERRα-regulated oxidative metabolism. Thus a baseline or easily inducible **OXPHOS-high state** is interpreted as a **potential resistance-leaning adaptation**, though this is less validated than RTK-based mechanisms.",
       "Administration_of_lapatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -807,7 +828,7 @@
     },
     "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
       "description": "Inflammatory signaling program induced by TNF and mediated by NF-κB transcriptional activity, regulating cytokines and pro-survival responses.",
-      "interpretation": "NF-κB–linked inflammation pathways can influence tumor cell survival signaling and microenvironmental interactions, affecting breast cancer progression and stress responses.",
+      "interpretation": "NF-κB–linked inflammation pathways can influence tumor cell survival signaling and microenvironmental interactions, affecting breast cancer progression and stress responses.\n\nBaseline-focused rationale:\n- In **EGFR-positive TNBC** models (HER2-negative), lapatinib paradoxically activates **NF-κB and COX-2**, increasing motility and metastasis; NF-κB activation can be exploited to sensitize to proteasome inhibitors but does **not** define a good lapatinib monotherapy indication. For standard HER2+ breast cancer, NF-κB status is not a primary biomarker for prescribing lapatinib; in EGFR-driven TNBC with NF-κB-high phenotype, lapatinib alone is unlikely to be beneficial and may be harmful.",
       "Administration_of_lapatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -877,7 +898,7 @@
     },
     "BIOCARTA_PTEN_PATHWAY": {
       "description": "Tumor suppressor pathway centered on PTEN-mediated negative regulation of PI3K signaling, limiting AKT pathway activation.",
-      "interpretation": "PTEN status and PI3K negative regulation are important determinants of signaling balance in breast cancer and shape downstream survival pathway activity.",
+      "interpretation": "PTEN status and PI3K negative regulation are important determinants of signaling balance in breast cancer and shape downstream survival pathway activity.\n\nBaseline-focused rationale:\n- PTEN is a major negative regulator of PI3K/AKT. HER2+ breast tumors with **PTEN loss or very low PTEN** maintain AKT phosphorylation even when HER2 is inhibited, leading to impaired response to trastuzumab and HER2 TKIs including lapatinib. Clinically, PTEN-low HER2+ tumors show worse outcomes on HER2-targeted therapy, consistent with **resistance**.",
       "Administration_of_lapatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -947,7 +968,7 @@
     },
     "HALLMARK_APOPTOSIS": {
       "description": "Program encompassing intrinsic and extrinsic cell-death signaling, including caspase activation and regulation by BCL2-family proteins.",
-      "interpretation": "Apoptosis competency influences whether breast cancer cells undergo cell death versus survival under therapeutic and signaling stress conditions.",
+      "interpretation": "Apoptosis competency influences whether breast cancer cells undergo cell death versus survival under therapeutic and signaling stress conditions.\n\nBaseline-focused rationale:\n- Lapatinib’s durable effect requires not just cell-cycle arrest but also **induction of apoptosis** in HER2+ cells. Tumors with low baseline BIM/BAX or high anti-apoptotic molecules (BCL-2, BCL-xL, survivin) show attenuated apoptosis on HER2 blockade and develop resistance. Lapatinib-resistant models often exhibit rewired apoptotic signaling; strategies that re-engage apoptosis (e.g., BH3 mimetics, TRAIL agonists) can overcome resistance.",
       "Administration_of_lapatinib": {
         "Before": {
           "Pathway_regulation": {

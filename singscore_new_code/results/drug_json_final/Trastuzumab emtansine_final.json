@@ -34,10 +34,29 @@
     "KEGG_ABC_TRANSPORTERS",
     "GOBP_CAVEOLIN_MEDIATED_ENDOCYTOSIS"
   ],
+  "pathways_sensitive_upregulated": [
+    "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2",
+    "REACTOME_SIGNALING_BY_ERBB2_IN_CANCER",
+    "HALLMARK_APOPTOSIS",
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+    "GOBP_RECEPTOR_MEDIATED_ENDOCYTOSIS",
+    "GOBP_LYSOSOMAL_TRANSPORT"
+  ],
+  "pathway_sensitive_downregulated": [
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+  ],
+  "pathway_resistant_upregulated": [
+    "HALLMARK_KRAS_SIGNALING_UP",
+    "HALLMARK_G2M_CHECKPOINT",
+    "HALLMARK_E2F_TARGETS",
+    "KEGG_ABC_TRANSPORTERS",
+    "GOBP_CAVEOLIN_MEDIATED_ENDOCYTOSIS"
+  ],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2": {
       "description": "Constitutive downstream signaling driven by overexpressed ERBB2 (HER2) receptor activity.",
-      "interpretation": "HER2 overexpression is the key biomarker for T-DM1 activity in breast cancer, and HER2-driven signaling underpins tumor proliferation and survival in HER2-positive disease.",
+      "interpretation": "HER2 overexpression is the key biomarker for T-DM1 activity in breast cancer, and HER2-driven signaling underpins tumor proliferation and survival in HER2-positive disease.\n\nBaseline-focused rationale:\n- High HER2/ERBB2 expression (IHC 3+, ERBB2-high mRNA) is required for T-DM1 binding and internalization; ERBB2-high tumors have markedly higher response and PFS with T-DM1.",
       "Administration_of_trastuzumab_emtansine": {
         "Before": {
           "Pathway_regulation": {
@@ -107,7 +126,7 @@
     },
     "REACTOME_SIGNALING_BY_ERBB2_IN_CANCER": {
       "description": "Cancer-associated ERBB2 (HER2) receptor signaling and its downstream proliferative and survival pathways.",
-      "interpretation": "ERBB2 signaling is central to HER2-positive breast cancer biology and is directly engaged by the trastuzumab component of T-DM1.",
+      "interpretation": "ERBB2 signaling is central to HER2-positive breast cancer biology and is directly engaged by the trastuzumab component of T-DM1.\n\nBaseline-focused rationale:\n- Global ErbB/HER2 pathway activation (amplification, phosphorylation) defines “HER2-addicted” tumors where HER2-ADC targeting is effective. Loss of HER2 signaling (HER2-low) is associated with poorer T-DM1 benefit.",
       "Administration_of_trastuzumab_emtansine": {
         "Before": {
           "Pathway_regulation": {
@@ -177,7 +196,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "PI3K–AKT–mTOR survival and growth signaling downstream of receptor tyrosine kinases, including HER2.",
-      "interpretation": "This pathway is described as a key downstream HER2 axis in HER2-positive breast cancer and is mechanistically relevant to the anti-proliferative effects associated with HER2 targeting.",
+      "interpretation": "This pathway is described as a key downstream HER2 axis in HER2-positive breast cancer and is mechanistically relevant to the anti-proliferative effects associated with HER2 targeting.\n\nBaseline-focused rationale:\n- Tumors without strong PI3K/AKT hyperactivation rely more on HER2 signaling; intact feedback allows HER2 blockade + DM1 payload to be effective.",
       "Administration_of_trastuzumab_emtansine": {
         "Before": {
           "Pathway_regulation": {
@@ -247,7 +266,7 @@
     },
     "HALLMARK_KRAS_SIGNALING_UP": {
       "description": "RAS–MAPK signaling programs associated with KRAS/RAS pathway activation and proliferative signaling.",
-      "interpretation": "RAS/MAPK signaling is described as a downstream pathway linked to HER2 signaling, relevant to proliferation and potential pathway bypass in HER2-driven tumors.",
+      "interpretation": "RAS/MAPK signaling is described as a downstream pathway linked to HER2 signaling, relevant to proliferation and potential pathway bypass in HER2-driven tumors.\n\nBaseline-focused rationale:\n- RAS/MAPK hyperactivation (e.g. KRAS/NRAS alterations or RTK bypass) maintains proliferation even when HER2 is blocked, contributing to HER2-therapy resistance and likely blunting T-DM1.",
       "Administration_of_trastuzumab_emtansine": {
         "Before": {
           "Pathway_regulation": {
@@ -317,7 +336,7 @@
     },
     "HALLMARK_G2M_CHECKPOINT": {
       "description": "Regulation of mitotic entry and the G2/M checkpoint machinery that controls progression through mitosis.",
-      "interpretation": "The DM1 payload induces mitotic arrest; pathway activity reflecting mitotic cycling is mechanistically relevant to DM1-mediated cytotoxicity in tumor cells.",
+      "interpretation": "The DM1 payload induces mitotic arrest; pathway activity reflecting mitotic cycling is mechanistically relevant to DM1-mediated cytotoxicity in tumor cells.\n\nBaseline-focused rationale:\n- Contrary to the “more mitosis = more sensitive” intuition, single-cell profiling from NJMU-BC02 showed that CDK1+/high-cell-cycle cancer cells were enriched in T-DM1-resistant cases, whereas low cell-cycle activity associated with better response.",
       "Administration_of_trastuzumab_emtansine": {
         "Before": {
           "Pathway_regulation": {
@@ -387,7 +406,7 @@
     },
     "HALLMARK_E2F_TARGETS": {
       "description": "E2F-driven transcriptional programs associated with cell-cycle progression and S-phase entry.",
-      "interpretation": "E2F activity is described as reflecting cell-cycle progression, which is mechanistically relevant because T-DM1 requires dividing cells for DM1-mediated mitotic effects.",
+      "interpretation": "E2F activity is described as reflecting cell-cycle progression, which is mechanistically relevant because T-DM1 requires dividing cells for DM1-mediated mitotic effects.\n\nBaseline-focused rationale:\n- E2F Target gene signatures are part of the high-cell-cycle program; in NJMU-BC02, aggressive proliferative states correlated with resistance rather than sensitivity to T-DM1.",
       "Administration_of_trastuzumab_emtansine": {
         "Before": {
           "Pathway_regulation": {
@@ -457,7 +476,7 @@
     },
     "HALLMARK_APOPTOSIS": {
       "description": "Intrinsic apoptosis and execution programs mediated by caspases and BCL2-family regulated mitochondrial pathways.",
-      "interpretation": "Apoptotic machinery is described as enabling tumor cell death after DM1-induced damage and HER2 pathway effects.",
+      "interpretation": "Apoptotic machinery is described as enabling tumor cell death after DM1-induced damage and HER2 pathway effects.\n\nBaseline-focused rationale:\n- T-DM1 ultimately relies on DM1-induced mitotic catastrophe and apoptosis; tumors with intact apoptotic machinery (e.g. not strongly BCL2/BCL-XL dominated) are more likely to undergo cell death once mitotic block occurs.",
       "Administration_of_trastuzumab_emtansine": {
         "Before": {
           "Pathway_regulation": {
@@ -527,7 +546,7 @@
     },
     "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
       "description": "Interferon-γ–associated immune activation and inflammatory transcriptional responses.",
-      "interpretation": "Immune activation is described as relevant to Fc-mediated immune effector functions (e.g., ADCC) associated with the trastuzumab component of T-DM1.",
+      "interpretation": "Immune activation is described as relevant to Fc-mediated immune effector functions (e.g., ADCC) associated with the trastuzumab component of T-DM1.\n\nBaseline-focused rationale:\n- Strong IFNγ/immune signatures and high TILs are repeatedly associated with better outcomes and response to HER2-targeted therapies (trastuzumab ± chemo). ADCC and immune priming are also relevant for T-DM1.",
       "Administration_of_trastuzumab_emtansine": {
         "Before": {
           "Pathway_regulation": {
@@ -597,7 +616,7 @@
     },
     "GOBP_RECEPTOR_MEDIATED_ENDOCYTOSIS": {
       "description": "Internalization of receptor–ligand complexes through receptor-mediated endocytosis and vesicular trafficking.",
-      "interpretation": "T-DM1 requires HER2 binding followed by internalization for intracellular delivery of DM1, making endocytic uptake mechanistically central.",
+      "interpretation": "T-DM1 requires HER2 binding followed by internalization for intracellular delivery of DM1, making endocytic uptake mechanistically central.\n\nBaseline-focused rationale:\n- Efficient internalization of HER2–T-DM1 complexes is required for lysosomal trafficking and DM1 release. Reduced endocytosis or mis-trafficking is a central resistance mechanism.",
       "Administration_of_trastuzumab_emtansine": {
         "Before": {
           "Pathway_regulation": {
@@ -667,7 +686,7 @@
     },
     "GOBP_LYSOSOMAL_TRANSPORT": {
       "description": "Trafficking to lysosomes and transport processes that support lysosomal degradation and downstream handling of catabolites.",
-      "interpretation": "Lysosomal processing is described as necessary for DM1 release after internalization, linking lysosomal transport/function to payload availability.",
+      "interpretation": "Lysosomal processing is described as necessary for DM1 release after internalization, linking lysosomal transport/function to payload availability.\n\nBaseline-focused rationale:\n- Proper lysosomal degradation of T-DM1 and export of DM1 catabolites depends on lysosomal integrity and SLC46A3; loss of SLC46A3 causes innate/acquired resistance to DM1-ADCs.",
       "Administration_of_trastuzumab_emtansine": {
         "Before": {
           "Pathway_regulation": {
@@ -737,7 +756,7 @@
     },
     "KEGG_ABC_TRANSPORTERS": {
       "description": "ATP-binding cassette transporter-mediated efflux of xenobiotics and drugs (e.g., MDR1/P-gp).",
-      "interpretation": "Drug efflux is described as mechanistically relevant to intracellular DM1 exposure after payload release, impacting retention of the cytotoxic component.",
+      "interpretation": "Drug efflux is described as mechanistically relevant to intracellular DM1 exposure after payload release, impacting retention of the cytotoxic component.\n\nBaseline-focused rationale:\n- DM1 is a substrate of ABCB1; overexpression of ABCB1/P-gp reduces intracellular DM1 concentration and is a well-validated mechanism of T-DM1 resistance.",
       "Administration_of_trastuzumab_emtansine": {
         "Before": {
           "Pathway_regulation": {
@@ -807,7 +826,7 @@
     },
     "GOBP_CAVEOLIN_MEDIATED_ENDOCYTOSIS": {
       "description": "Endocytic uptake mediated by caveolin-dependent vesicles and caveolae-associated internalization routes.",
-      "interpretation": "Caveolin-associated uptake is described as influencing T-DM1 internalization, linking this endocytosis route to intracellular delivery of DM1.",
+      "interpretation": "Caveolin-associated uptake is described as influencing T-DM1 internalization, linking this endocytosis route to intracellular delivery of DM1.\n\nBaseline-focused rationale:\n- CAV1 can promote T-DM1 internalization, but caveolae-mediated endocytosis has been described as a novel resistance mechanism: hypoxia-induced CAV1 phosphorylation redistributes HER2/T-DM1, reducing lysosomal delivery and cytotoxicity.",
       "Administration_of_trastuzumab_emtansine": {
         "Before": {
           "Pathway_regulation": {

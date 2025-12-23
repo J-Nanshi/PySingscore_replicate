@@ -24,10 +24,19 @@
     "GOMF_DNA_TOPOISOMERASE_ACTIVITY",
     "REACTOME_GLUCURONIDATION"
   ],
+  "pathways_sensitive_upregulated": [
+    "WP_TROP2_REGULATORY_SIGNALING",
+    "GOMF_DNA_TOPOISOMERASE_ACTIVITY"
+  ],
+  "pathway_sensitive_downregulated": [],
+  "pathway_resistant_upregulated": [
+    "REACTOME_GLUCURONIDATION"
+  ],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "WP_TROP2_REGULATORY_SIGNALING": {
       "description": "Trop-2 (TACSTD2) is an epithelial cell-surface antigen that can signal to promote tumor growth via pathways including PKC/MAPK and β-catenin programs and integrin/Src/FAK signaling involved in migration.",
-      "interpretation": "Trop-2 signaling and expression are central to the biology and targeting of many breast cancers (especially TNBC), and Trop-2 surface availability influences ADC binding and internalization in breast cancer.",
+      "interpretation": "Trop-2 signaling and expression are central to the biology and targeting of many breast cancers (especially TNBC), and Trop-2 surface availability influences ADC binding and internalization in breast cancer.\n\nBaseline-focused rationale:\n- Sacituzumab govitecan (SG) is a Trop-2–directed ADC delivering SN-38 to Trop-2–expressing tumor cells. Trop-2 is overexpressed in many epithelial tumors including TNBC and HR⁺/HER2⁻ breast cancer. High/medium Trop-2 expression facilitates antibody binding and internalization and is associated with robust clinical benefit in ASCENT and other trials, although some activity is still seen in lower expressors.",
       "Administration_of_sacituzumab_govitecan": {
         "Before": {
           "Pathway_regulation": {
@@ -97,7 +106,7 @@
     },
     "GOMF_DNA_TOPOISOMERASE_ACTIVITY": {
       "description": "DNA topoisomerase I (TOP1) activity mediates resolution of DNA topological stress by creating transient single-strand breaks and religating DNA; inhibition stabilizes the TOP1–DNA cleavage complex and induces DNA breaks.",
-      "interpretation": "TOP1 activity is directly relevant to the SN-38 payload mechanism in breast cancer, where TOP1 inhibition drives DNA damage, checkpoint activation, and apoptosis.",
+      "interpretation": "TOP1 activity is directly relevant to the SN-38 payload mechanism in breast cancer, where TOP1 inhibition drives DNA damage, checkpoint activation, and apoptosis.\n\nBaseline-focused rationale:\n- SG’s payload SN-38 is a topoisomerase I inhibitor that stabilizes the TOP1–DNA cleavage complex, causing replication-associated DNA breaks and apoptosis in dividing tumor cells. Cells lacking TOP1 or with markedly reduced TOP1 activity are resistant to camptothecins; conversely, abundant functional TOP1 provides more targets for SN-38. Thus, baseline high TOP1 activity is mechanistically compatible with SG sensitivity, though TOP1 expression/activity is not currently used clinically to select breast-cancer patients for SG.",
       "Administration_of_sacituzumab_govitecan": {
         "Before": {
           "Pathway_regulation": {
@@ -167,7 +176,7 @@
     },
     "REACTOME_GLUCURONIDATION": {
       "description": "Glucuronidation is a detoxification/metabolic process in which UDP-glucuronosyltransferases (including UGT1A1) conjugate substrates (including SN-38) to glucuronic acid, typically reducing activity and enhancing clearance.",
-      "interpretation": "Glucuronidation is clinically relevant to SN-38 exposure in breast cancer treatment with sacituzumab govitecan because UGT1A1-mediated inactivation modulates active payload levels and is tied to safety and response-modifying metabolism.",
+      "interpretation": "Glucuronidation is clinically relevant to SN-38 exposure in breast cancer treatment with sacituzumab govitecan because UGT1A1-mediated inactivation modulates active payload levels and is tied to safety and response-modifying metabolism.\n\nBaseline-focused rationale:\n- SN-38 is predominantly inactivated in the liver by UGT1A1 glucuronidation to SN-38G. Increased UGT1A1 activity (e.g., enzyme inducers) accelerates SN-38 clearance and reduces exposure, which is expected to decrease effective systemic anticancer activity of SG; the SG label warns against concomitant strong UGT1A1 inducers for this reason. In contrast, reduced UGT1A1 activity (e.g., UGT1A1*28/*28) increases SN-38 exposure, leading mainly to higher risk of neutropenia and diarrhea. Therefore UGT1A1 is best considered a germline PK/safety factor, not a tumor-cell pathway measurable in the breast tumor transcriptome; its relationship with efficacy for SG in breast cancer remains exploratory.",
       "Administration_of_sacituzumab_govitecan": {
         "Before": {
           "Pathway_regulation": {

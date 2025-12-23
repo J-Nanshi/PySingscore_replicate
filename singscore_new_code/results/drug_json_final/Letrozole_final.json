@@ -29,10 +29,30 @@
     "HALLMARK_HYPOXIA",
     "HALLMARK_INTERFERON_GAMMA_RESPONSE"
   ],
+  "pathways_sensitive_upregulated": [
+    "HALLMARK_ESTROGEN_RESPONSE_LATE",
+    "KEGG_STEROID_HORMONE_BIOSYNTHESIS"
+  ],
+  "pathway_sensitive_downregulated": [],
+  "pathway_resistant_upregulated": [
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "KEGG_MAPK_SIGNALING_PATHWAY",
+    "PID_FOXM1_PATHWAY",
+    "PID_PLK1_PATHWAY",
+    "REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION",
+    "REACTOME_DEGRADATION_OF_THE_EXTRACELLULAR_MATRIX",
+    "HALLMARK_ANGIOGENESIS",
+    "HALLMARK_HYPOXIA",
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE"
+  ],
+  "pathway_resistant_downregulated": [
+    "HALLMARK_APOPTOSIS"
+  ],
   "pathway_sets_annotations": {
     "HALLMARK_ESTROGEN_RESPONSE_LATE": {
       "description": "Estrogen-responsive transcriptional program reflecting ERα-regulated gene expression.",
-      "interpretation": "ER-driven gene expression is central to growth and survival of hormone receptor–positive breast cancer, and changes in estrogen/ER signaling are core determinants of endocrine therapy response.",
+      "interpretation": "ER-driven gene expression is central to growth and survival of hormone receptor–positive breast cancer, and changes in estrogen/ER signaling are core determinants of endocrine therapy response.\n\nBaseline-focused rationale:\n- Letrozole suppresses aromatase → lowers estrogen → turns off ER-target genes and reduces proliferation. Tumors with high “estrogen response” gene-set scores tend to have better outcomes on endocrine therapy, because they are truly estrogen-driven; loss of estrogen response or ligand-independent signaling is a resistance feature. (PMC)",
       "Administration_of_letrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -102,7 +122,7 @@
     },
     "KEGG_STEROID_HORMONE_BIOSYNTHESIS": {
       "description": "Steroidogenic pathway that generates steroid hormones, including estrogens, through sequential enzymatic conversions.",
-      "interpretation": "Estrogen production is a key upstream driver of ER signaling in postmenopausal HR+ breast cancer, making steroid hormone biosynthesis directly relevant to endocrine dependence.",
+      "interpretation": "Estrogen production is a key upstream driver of ER signaling in postmenopausal HR+ breast cancer, making steroid hormone biosynthesis directly relevant to endocrine dependence.\n\nBaseline-focused rationale:\n- Letrozole is a potent non-steroidal aromatase inhibitor; it works best when tumor growth depends on local estrogen synthesis from androgens. High aromatase/steroidogenesis provides a clear pharmacologic target; if estrogen biosynthesis is already low and ER signaling is ligand-independent, AI benefit is attenuated. (PMC)",
       "Administration_of_letrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -172,7 +192,7 @@
     },
     "HALLMARK_E2F_TARGETS": {
       "description": "Gene program controlled by E2F transcription factors associated with cell-cycle progression and DNA replication.",
-      "interpretation": "Proliferation in ER+ breast cancer is linked to cell-cycle gene expression; modulation of E2F-associated programs reflects changes in tumor proliferative state.",
+      "interpretation": "Proliferation in ER+ breast cancer is linked to cell-cycle gene expression; modulation of E2F-associated programs reflects changes in tumor proliferative state.\n\nBaseline-focused rationale:\n- ER-positive tumors that respond to neoadjuvant letrozole show marked early reductions in Ki67 and cell-cycle gene expression; low residual proliferation after short-term letrozole predicts good outcome. By contrast, tumors that maintain high E2F4/FOXM1/PLK1-driven proliferation despite estrogen deprivation are resistant. So baseline Up indicates endocrine-driven proliferation (targetable), but failure to downregulate cell-cycle programs on AI marks resistance. (PMC)",
       "Administration_of_letrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -242,7 +262,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "Growth and survival signaling network centered on PI3K, AKT, and mTOR pathway activity.",
-      "interpretation": "PI3K/AKT/mTOR signaling is a major survival/proliferation axis in ER+ breast cancer and is implicated as an alternative growth pathway in endocrine therapy escape.",
+      "interpretation": "PI3K/AKT/mTOR signaling is a major survival/proliferation axis in ER+ breast cancer and is implicated as an alternative growth pathway in endocrine therapy escape.\n\nBaseline-focused rationale:\n- Activation of PI3K/AKT/mTOR promotes survival and growth despite estrogen deprivation and is repeatedly associated with endocrine (including AI) resistance. High AKT activity confers resistance to letrozole in preclinical models, and multiple clinical/biological datasets link pathway activation to ET failure and justify PI3K/mTOR inhibitors as combination partners with AIs. (Annals of Oncology)",
       "Administration_of_letrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -312,7 +332,7 @@
     },
     "KEGG_MAPK_SIGNALING_PATHWAY": {
       "description": "Mitogen-activated protein kinase cascade regulating proliferation and survival through RAF/MEK/ERK signaling.",
-      "interpretation": "MAPK/ERK signaling can support tumor proliferation and may act as a bypass growth pathway when estrogen-driven signaling is reduced.",
+      "interpretation": "MAPK/ERK signaling can support tumor proliferation and may act as a bypass growth pathway when estrogen-driven signaling is reduced.\n\nBaseline-focused rationale:\n- Growth-factor signaling via MAPK/ERK provides a parallel proliferation axis that can maintain cyclin D–CDK4/6 activity even when ER signaling is blocked. Clinical and preclinical data tie hyperactive MAPK (often with HER2 or FGFR cross-talk) to luminal B biology, higher proliferation, and reduced endocrine responsiveness. Letrozole may transiently reduce ER-driven MAPK, but tumors that maintain or re-activate MAPK/ERK tend to be resistant. (ScienceDirect)",
       "Administration_of_letrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -382,7 +402,7 @@
     },
     "HALLMARK_APOPTOSIS": {
       "description": "Core intrinsic and extrinsic cell-death machinery reflected by apoptotic gene programs.",
-      "interpretation": "Apoptotic competency influences whether hormone deprivation leads to tumor cell death versus survival under endocrine stress.",
+      "interpretation": "Apoptotic competency influences whether hormone deprivation leads to tumor cell death versus survival under endocrine stress.\n\nBaseline-focused rationale:\n- Most breast tumors exhibit suppressed apoptosis (high BCL-2/BCL-XL etc.). Effective estrogen deprivation shifts the balance toward apoptosis and/or senescence in ER-dependent cells. Letrozole-sensitive tumors show antiproliferative effects and can undergo apoptosis; resistant tumors often have survival pathway activation (e.g. PI3K/AKT, HIF-1α, etc.) that maintains anti-apoptotic signaling so they fail to die despite ER blockade. Baseline apoptosis per se is less predictive than the ability to increase apoptosis on treatment. (PMC)",
       "Administration_of_letrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -452,7 +472,7 @@
     },
     "PID_FOXM1_PATHWAY": {
       "description": "FOXM1-associated transcriptional network promoting cell-cycle progression, particularly G2/M control.",
-      "interpretation": "FOXM1-driven transcriptional programs are associated with proliferative capacity and were highlighted as activated in non-responder/resistant contexts.",
+      "interpretation": "FOXM1-driven transcriptional programs are associated with proliferative capacity and were highlighted as activated in non-responder/resistant contexts.\n\nBaseline-focused rationale:\n- FOXM1 is a master regulator of cell-cycle progression, proliferation, and metastasis; it is overexpressed in many breast cancers, and high FOXM1 is strongly associated with resistance to endocrine therapies. Functional data show that FOXM1 drives stem-like, invasive, therapy-resistant states, and that FOXM1 or its network is enriched in tumors resistant to prolonged neoadjuvant letrozole. (PMC)",
       "Administration_of_letrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -522,7 +542,7 @@
     },
     "PID_PLK1_PATHWAY": {
       "description": "PLK1-centered signaling controlling G2/M transition and mitotic progression.",
-      "interpretation": "Mitotic kinase control (including PLK1-related activity) is linked to proliferative drive and was identified as a pathway activated in letrozole-resistant/non-responder contexts.",
+      "interpretation": "Mitotic kinase control (including PLK1-related activity) is linked to proliferative drive and was identified as a pathway activated in letrozole-resistant/non-responder contexts.\n\nBaseline-focused rationale:\n- PLK1 is a key mitotic kinase closely linked to FOXM1 and high Ki67. Kinome-wide screens and expression analyses show that PLK1 activity correlates with hormone-independent proliferation; PLK1 and FOXM1 transcripts are co-upregulated in hormone-independent and endocrine-resistant tumors. Pathway enrichment in letrozole non-responders identifies PLK1-associated signaling as activated. (PMC)",
       "Administration_of_letrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -592,7 +612,7 @@
     },
     "REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION": {
       "description": "Processes governing extracellular matrix assembly, remodeling, and cell–matrix interactions.",
-      "interpretation": "ECM remodeling and cell–matrix signaling are associated with invasive behavior and were discussed in the context of aggressive or endocrine-resistant ER+ tumors.",
+      "interpretation": "ECM remodeling and cell–matrix signaling are associated with invasive behavior and were discussed in the context of aggressive or endocrine-resistant ER+ tumors.\n\nBaseline-focused rationale:\n- SDC1 is a heparan-sulfate proteoglycan involved in cell–matrix interaction, growth-factor presentation, EMT, and stem-like phenotypes. It is often overexpressed in ER-negative, highly proliferative breast cancers, and is linked to metastasis and therapy resistance across tumor types. In ER⁺ disease, SDC1 can modulate IL6/STAT3 and EGFR pathways, potentially fostering endocrine escape, but specific clinical data tying SDC1 upregulation to letrozole failure are sparse → treat as plausible but cross-context extrapolation. (Frontiers)",
       "Administration_of_letrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -662,7 +682,7 @@
     },
     "REACTOME_DEGRADATION_OF_THE_EXTRACELLULAR_MATRIX": {
       "description": "Proteolytic degradation of ECM components, including remodeling mediated by matrix metalloproteinases.",
-      "interpretation": "Protease-driven ECM remodeling (including MMP-associated activity) was described as linked to invasion/metastasis and endocrine resistance signatures.",
+      "interpretation": "Protease-driven ECM remodeling (including MMP-associated activity) was described as linked to invasion/metastasis and endocrine resistance signatures.\n\nBaseline-focused rationale:\n- MMP2 and MMP9 (gelatinases) promote basement-membrane degradation, invasion and metastasis, and are commonly upregulated in advanced breast cancer. Letrozole has been shown to decrease MMP2/9 expression and proliferation in ER⁺ MCF-7 cells, consistent with an anti-invasive effect; clinical AI studies show differential modulation of MMPs across AIs. Thus high ECM/MMP activity at baseline marks aggressive biology; failure to suppress (or re-induction of) MMP/ECM programs under letrozole supports a resistant phenotype. (PubMed)",
       "Administration_of_letrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -732,7 +752,7 @@
     },
     "HALLMARK_ANGIOGENESIS": {
       "description": "Gene program reflecting formation and maintenance of tumor vasculature, including VEGF-related signaling outputs.",
-      "interpretation": "Angiogenic activity is relevant to tumor growth and adaptation; VEGFA was highlighted in resistant signatures in the source material.",
+      "interpretation": "Angiogenic activity is relevant to tumor growth and adaptation; VEGFA was highlighted in resistant signatures in the source material.\n\nBaseline-focused rationale:\n- Breast tumors commonly show increased angiogenesis driven by HIF-1α and VEGF. High HIF/VEGF signaling is linked to poor prognosis and therapy resistance in breast cancer. Letrozole can reduce HIF-1α and phospho-mTOR expression in tumors, and regression of estrogen-dependent disease will secondarily lower angiogenic drive. Baseline strongly pro-angiogenic, hypoxic tumors are typically more aggressive and relatively endocrine-refractory; normalizing or reducing angiogenesis on letrozole aligns with sensitivity. (JCI)",
       "Administration_of_letrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -802,7 +822,7 @@
     },
     "HALLMARK_HYPOXIA": {
       "description": "Cellular transcriptional response to low oxygen tension, often involving HIF-associated programs.",
-      "interpretation": "Hypoxia-associated programs can shape aggressive tumor behavior and adaptation; the source material described HIF-1α network changes in resistant/non-responder settings.",
+      "interpretation": "Hypoxia-associated programs can shape aggressive tumor behavior and adaptation; the source material described HIF-1α network changes in resistant/non-responder settings.\n\nBaseline-focused rationale:\n- HIF-1α overexpression is associated with drug resistance, higher risk of metastasis, and poor outcomes in breast cancer. Mechanistically, HIF-1α drives glycolysis, angiogenesis, EMT, survival pathways and drug efflux. Letrozole can downregulate HIF-1α and phospho-mTOR in ER⁺ tumors, but basal and therapy-driven HIF-1α activity generally marks a more resistant phenotype rather than a protective one. So the corrected view is Up = resistance, contrary to the original table. (Frontiers)",
       "Administration_of_letrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -872,7 +892,7 @@
     },
     "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
       "description": "Immune and inflammatory transcriptional program induced by interferon-γ signaling, reflecting immune activation states.",
-      "interpretation": "Immune activity (including interferon-related pathways and tumor-infiltrating lymphocytes) was described as being modulated during letrozole therapy and linked to response patterns.",
+      "interpretation": "Immune activity (including interferon-related pathways and tumor-infiltrating lymphocytes) was described as being modulated during letrozole therapy and linked to response patterns.\n\nBaseline-focused rationale:\n- In ER⁺/HER2⁻ neoadjuvant letrozole trials, an increase in tumor-infiltrating lymphocytes during AI therapy correlated with poorer antiproliferative response and lack of clinical benefit, unlike the good-prognosis association seen in TNBC. Transcriptomic profiling of AI-treated ER⁺ tumors also identifies immune-high, estrogen-low phenotypes with less endocrine responsiveness. Thus, in the luminal AI context, immune/TIL-high (or rising TIL) signatures tend to mark endocrine resistance and might instead flag candidates for combined ET + CDK4/6i or ET + immunotherapy. (PubMed)",
       "Administration_of_letrozole": {
         "Before": {
           "Pathway_regulation": {

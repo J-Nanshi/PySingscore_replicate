@@ -26,10 +26,24 @@
     "HALLMARK_APOPTOSIS",
     "STEIN_ESR1_TARGETS"
   ],
+  "pathways_sensitive_upregulated": [
+    "REACTOME_PI3K_AKT_ACTIVATION",
+    "REACTOME_ESR_MEDIATED_SIGNALING",
+    "HALLMARK_APOPTOSIS",
+    "STEIN_ESR1_TARGETS"
+  ],
+  "pathway_sensitive_downregulated": [],
+  "pathway_resistant_upregulated": [
+    "REACTOME_MTOR_SIGNALLING",
+    "REACTOME_SIGNALING_BY_ERBB2",
+    "KEGG_GLYCOLYSIS_GLUCONEOGENESIS",
+    "KEGG_MAPK_SIGNALING_PATHWAY"
+  ],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "REACTOME_PI3K_AKT_ACTIVATION": {
       "description": "PI3K–AKT signaling transduces growth-factor and oncogenic cues into downstream survival and proliferation programs via activation of AKT and downstream effectors.",
-      "interpretation": "This is the direct target pathway impacted by alpelisib in breast cancer, and its activity is central to growth and endocrine resistance in PIK3CA-mutant HR+ tumors.",
+      "interpretation": "This is the direct target pathway impacted by alpelisib in breast cancer, and its activity is central to growth and endocrine resistance in PIK3CA-mutant HR+ tumors.\n\nBaseline-focused rationale:\n- Alpelisib is active when the PI3Kα pathway is activated (PIK3CA driver mutations). Clinical benefit shown in PIK3CA-mutant, HR+ HER2− breast cancer (SOLAR-1). (PubMed)",
       "Administration_of_alpelisib": {
         "Before": {
           "Pathway_regulation": {
@@ -99,7 +113,7 @@
     },
     "REACTOME_MTOR_SIGNALLING": {
       "description": "mTOR signaling regulates cellular growth and protein synthesis downstream of upstream pathways including PI3K/AKT, through effectors such as S6K and 4EBP1.",
-      "interpretation": "mTOR pathway output is a key downstream growth program in breast cancer biology and is discussed as a major node in the PI3K/AKT/mTOR network relevant to alpelisib activity.",
+      "interpretation": "mTOR pathway output is a key downstream growth program in breast cancer biology and is discussed as a major node in the PI3K/AKT/mTOR network relevant to alpelisib activity.\n\nBaseline-focused rationale:\n- Elevated mTORC1 output (p-4EBP1/p-S6) can maintain translation/growth and is a documented resistance mechanism to PI3K inhibition; targeting mTORC1 (or using mTORC1-selective inhibitors) can overcome resistance. (PubMed Central)",
       "Administration_of_alpelisib": {
         "Before": {
           "Pathway_regulation": {
@@ -169,7 +183,7 @@
     },
     "REACTOME_SIGNALING_BY_ERBB2": {
       "description": "ERBB2/HER2 signaling is a receptor tyrosine kinase pathway that can activate PI3K/AKT and other growth programs in breast cancer.",
-      "interpretation": "ERBB2/HER2 signaling is described as cross-talking with PI3K signaling and is relevant to breast cancer contexts where HER2 and PI3K pathways are co-activated.",
+      "interpretation": "ERBB2/HER2 signaling is described as cross-talking with PI3K signaling and is relevant to breast cancer contexts where HER2 and PI3K pathways are co-activated.\n\nBaseline-focused rationale:\n- HER2 activation can drive PI3K signaling and promote therapeutic escape; PI3Kα inhibitors may need combination (HER2 blockade) in HER2+ / PIK3CA settings — monotherapy is often insufficient. (PubMed)",
       "Administration_of_alpelisib": {
         "Before": {
           "Pathway_regulation": {
@@ -239,7 +253,7 @@
     },
     "REACTOME_ESR_MEDIATED_SIGNALING": {
       "description": "ESR-mediated signaling reflects estrogen receptor (ER) signaling programs that regulate transcriptional outputs and luminal breast cancer behavior.",
-      "interpretation": "ER signaling is described as a major driver in HR+ breast cancer and is relevant to alpelisib use in combination with ER antagonism to suppress ER-driven biology.",
+      "interpretation": "ER signaling is described as a major driver in HR+ breast cancer and is relevant to alpelisib use in combination with ER antagonism to suppress ER-driven biology.\n\nBaseline-focused rationale:\n- Alpelisib was developed and approved for HR-positive (ER+) PIK3CA-mutant advanced BC in combination with endocrine therapy (fulvestrant); the key predictor is PIK3CA mutation in the HR+ context. The statement “ER signaling Down → Sensitive” confuses treatment effect (ER target down after fulvestrant) with the baseline predictor. (PubMed)",
       "Administration_of_alpelisib": {
         "Before": {
           "Pathway_regulation": {
@@ -309,7 +323,7 @@
     },
     "KEGG_GLYCOLYSIS_GLUCONEOGENESIS": {
       "description": "Glycolysis and gluconeogenesis pathways govern cellular glucose metabolism and energy generation through core glycolytic enzymes and associated metabolic steps.",
-      "interpretation": "Glucose metabolism is discussed as part of metabolic adaptations in alpelisib-resistant models, making glycolysis/gluconeogenesis relevant in the breast cancer context described.",
+      "interpretation": "Glucose metabolism is discussed as part of metabolic adaptations in alpelisib-resistant models, making glycolysis/gluconeogenesis relevant in the breast cancer context described.\n\nBaseline-focused rationale:\n- PI3K pathway and downstream AKT/mTOR regulate glucose metabolism; PI3K inhibitor resistance is often accompanied by metabolic rewiring (increased glycolysis or alternate fuel use), and targeting metabolism can sensitize resistant cells in preclinical models. (PubMed Central)",
       "Administration_of_alpelisib": {
         "Before": {
           "Pathway_regulation": {
@@ -379,7 +393,7 @@
     },
     "KEGG_MAPK_SIGNALING_PATHWAY": {
       "description": "MAPK signaling transmits mitogenic and stress signals via RAS–RAF–MEK–ERK modules to regulate proliferation and survival.",
-      "interpretation": "MAPK/ERK is described as a parallel growth pathway implicated in bypass signaling in the breast cancer context discussed for alpelisib.",
+      "interpretation": "MAPK/ERK is described as a parallel growth pathway implicated in bypass signaling in the breast cancer context discussed for alpelisib.\n\nBaseline-focused rationale:\n- MAPK pathway activation (mutations or RTK feedback) is a well described bypass mechanism to PI3K inhibition; combined PI3K + MAPK axis targeting is a rational strategy in preclinical/clinical work. (PubMed Central)",
       "Administration_of_alpelisib": {
         "Before": {
           "Pathway_regulation": {
@@ -449,7 +463,7 @@
     },
     "HALLMARK_APOPTOSIS": {
       "description": "Apoptosis is programmed cell death regulated by intrinsic and extrinsic pathways that remove damaged or stressed cells.",
-      "interpretation": "Apoptosis is discussed as a downstream cellular consequence when PI3K/AKT survival signaling is suppressed in the breast cancer contexts described.",
+      "interpretation": "Apoptosis is discussed as a downstream cellular consequence when PI3K/AKT survival signaling is suppressed in the breast cancer contexts described.\n\nBaseline-focused rationale:\n- Relief of AKT survival signaling (BCL2 family, MCL1 modulation) leads to apoptosis in sensitive tumors; however degree of apoptosis varies with tumor context and co-alterations (e.g., PTEN loss, concurrent MAPK activation). (PubMed Central)",
       "Administration_of_alpelisib": {
         "Before": {
           "Pathway_regulation": {
@@ -519,7 +533,7 @@
     },
     "STEIN_ESR1_TARGETS": {
       "description": "ESR1 target gene sets capture transcriptional programs regulated by estrogen receptor alpha (ESR1) in luminal breast cancer contexts.",
-      "interpretation": "ESR1-driven transcription is discussed as a key feature of HR+ breast cancer and is relevant to alpelisib use alongside ER blockade in the described setting.",
+      "interpretation": "ESR1-driven transcription is discussed as a key feature of HR+ breast cancer and is relevant to alpelisib use alongside ER blockade in the described setting.\n\nBaseline-focused rationale:\n- Partially Sensitive (context-dependent) (ESR1 mutations often cause endocrine resistance; alpelisib + fulvestrant can still have activity) ESR1 activating mutations drive endocrine resistance but combining PI3Kα inhibition with ER downregulation (fulvestrant) can have activity in some settings; evidence is mixed and depends on prior therapies (CDK4/6 exposure etc.). ESR1 mutation is not a simple “positive” predictor but combination therapy may work in some ESR1-mutant cases. (PubMed Central)",
       "Administration_of_alpelisib": {
         "Before": {
           "Pathway_regulation": {

@@ -22,7 +22,7 @@
 "HALLMARK_E2F_TARGETS",
 "HALLMARK_G2M_CHECKPOINT",
 "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER",
-"REACTOME_FGFR_LIGAND_BINDING_AND_ACTIVATION",
+"REACTOME_FGFR1_LIGAND_BINDING_AND_ACTIVATION",
 "KEGG_MAPK_SIGNALING_PATHWAY",
 "HALLMARK_MYC_TARGETS_V1",
 "GOBP_CELLULAR_SENESCENCE",
@@ -45,7 +45,7 @@
 "description": "Survival and growth signaling axis encompassing PI3K/AKT and downstream mTOR-related outputs.",
 "interpretation": "PI3K/AKT/mTOR signaling provides pro-survival and proliferative inputs that can reduce reliance on cell-cycle checkpoint control in breast cancer."
 },
-"REACTOME_FGFR_LIGAND_BINDING_AND_ACTIVATION": {
+"REACTOME_FGFR1_LIGAND_BINDING_AND_ACTIVATION": {
 "description": "FGFR pathway signaling that promotes proliferation and cyclin D-related growth programs (including FGFR1-associated signaling described in resistant models).",
 "interpretation": "Growth-factor receptor signaling can sustain breast tumor proliferation by promoting cyclin D-linked programs and growth signaling."
 },

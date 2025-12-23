@@ -28,7 +28,7 @@
     "HALLMARK_ESTROGEN_RESPONSE_EARLY",
     "REACTOME_ESTROGEN_DEPENDENT_NUCLEAR_EVENTS_DOWNSTREAM_OF_ESR_MEMBRANE_SIGNALING",
     "HALLMARK_E2F_TARGETS",
-    "P53_SIGNALING_PATHWAY",
+    "KEGG_P53_SIGNALING_PATHWAY",
     "HALLMARK_INTERFERON_GAMMA_RESPONSE",
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
     "KEGG_ERBB_SIGNALING_PATHWAY",
@@ -40,10 +40,31 @@
     "KEGG_GAP_JUNCTION",
     "KEGG_DRUG_METABOLISM_CYTOCHROME_P450"
   ],
+  "pathways_sensitive_upregulated": [
+    "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+    "REACTOME_ESTROGEN_DEPENDENT_NUCLEAR_EVENTS_DOWNSTREAM_OF_ESR_MEMBRANE_SIGNALING",
+    "KEGG_P53_SIGNALING_PATHWAY"
+  ],
+  "pathway_sensitive_downregulated": [],
+  "pathway_resistant_upregulated": [
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "KEGG_ERBB_SIGNALING_PATHWAY",
+    "HALLMARK_KRAS_SIGNALING_UP",
+    "KEGG_HEDGEHOG_SIGNALING_PATHWAY",
+    "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+    "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
+    "KEGG_HOMOLOGOUS_RECOMBINATION"
+  ],
+  "pathway_resistant_downregulated": [
+    "KEGG_GAP_JUNCTION",
+    "KEGG_DRUG_METABOLISM_CYTOCHROME_P450"
+  ],
   "pathway_sets_annotations": {
     "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
       "description": "Estrogen-regulated transcriptional program reflecting ER-driven gene expression in estrogen-responsive cells.",
-      "interpretation": "Captures ER dependence and luminal differentiation programs that underpin hormone-driven proliferation in ER+ breast cancer.",
+      "interpretation": "Captures ER dependence and luminal differentiation programs that underpin hormone-driven proliferation in ER+ breast cancer.\n\nBaseline-focused rationale:\n- ER+/HER2– tumors that benefit from tamoxifen typically have active ER signaling with high estrogen-response gene expression at baseline; tamoxifen binding to ER then suppresses this program and reduces proliferation.",
       "Administration_of_tamoxifen": {
         "Before": {
           "Pathway_regulation": {
@@ -113,7 +134,7 @@
     },
     "REACTOME_ESTROGEN_DEPENDENT_NUCLEAR_EVENTS_DOWNSTREAM_OF_ESR_MEMBRANE_SIGNALING": {
       "description": "Nuclear ESR1-dependent transcriptional events downstream of estrogen signaling, including regulation of gene expression programs linked to proliferation and survival.",
-      "interpretation": "Represents the core ESR1-linked transcriptional machinery that drives hormone-dependent growth in ER+ tumors.",
+      "interpretation": "Represents the core ESR1-linked transcriptional machinery that drives hormone-dependent growth in ER+ tumors.\n\nBaseline-focused rationale:\n- Functional ESR1-dependent nuclear transcription is required for tamoxifen to act as a competitive antagonist/partial agonist. ER+ tumors with intact ER/p53 circuitry are more responsive to tam; p53-mutant or ER-downregulated states show reduced benefit. (PubMed)",
       "Administration_of_tamoxifen": {
         "Before": {
           "Pathway_regulation": {
@@ -183,7 +204,7 @@
     },
     "HALLMARK_E2F_TARGETS": {
       "description": "Genes regulated by E2F transcription factors involved in G1/S transition, DNA replication, and proliferation.",
-      "interpretation": "Reflects proliferative output downstream of ER signaling and cell-cycle control that influences tumor growth dynamics in ER+ disease.",
+      "interpretation": "Reflects proliferative output downstream of ER signaling and cell-cycle control that influences tumor growth dynamics in ER+ disease.\n\nBaseline-focused rationale:\n- High E2F/G2M and proliferation signatures (Ki-67 high, luminal B biology) are associated with higher recurrence despite tamoxifen; persisting high cell-cycle activity after neoadjuvant tam marks poor endocrine response. Thus strong E2F/G2M “Up” at baseline overall aligns with relative tamoxifen resistance. (PLOS)",
       "Administration_of_tamoxifen": {
         "Before": {
           "Pathway_regulation": {
@@ -251,9 +272,9 @@
         }
       }
     },
-    "P53_SIGNALING_PATHWAY": {
+    "KEGG_P53_SIGNALING_PATHWAY": {
       "description": "p53-mediated stress response controlling cell-cycle arrest, DNA damage responses, and apoptosis.",
-      "interpretation": "Links tumor suppressor control of growth arrest and apoptosis to treatment response pathways in ER+ breast cancer.",
+      "interpretation": "Links tumor suppressor control of growth arrest and apoptosis to treatment response pathways in ER+ breast cancer.\n\nBaseline-focused rationale:\n- Tamoxifen induces growth arrest and apoptosis more effectively in ER+ cells with wild-type p53 and intact apoptotic machinery; p53-mutant cells are more resistant to 4-hydroxy-tamoxifen in vitro and correspond to worse clinical responses. (PubMed)",
       "Administration_of_tamoxifen": {
         "Before": {
           "Pathway_regulation": {
@@ -323,7 +344,7 @@
     },
     "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
       "description": "Transcriptional response to IFN-γ, including immune activation and antigen-presentation-associated genes.",
-      "interpretation": "Represents immune-active microenvironment features reported as associated with endocrine outcomes in ER+/HER2– breast cancer.",
+      "interpretation": "Represents immune-active microenvironment features reported as associated with endocrine outcomes in ER+/HER2– breast cancer.\n\nBaseline-focused rationale:\n- IFN-stimulated gene (ISG) programs and IFN-γ–like signatures can be upregulated in tamoxifen-resistant tumors and are implicated in treatment-induced cross-resistance to tamoxifen and radiotherapy; immune-“hot” luminal tumors can have complex, context-dependent behavior, but ISG-high states are more consistently linked to resistance than to improved endocrine benefit. (AACR Journals)",
       "Administration_of_tamoxifen": {
         "Before": {
           "Pathway_regulation": {
@@ -393,7 +414,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "PI3K/AKT/mTOR survival and growth signaling controlling proliferation, metabolism, and anti-apoptotic programs.",
-      "interpretation": "A major growth/survival axis that provides ER-bypass signaling in endocrine-treated ER+ breast cancer and shapes therapeutic response states.",
+      "interpretation": "A major growth/survival axis that provides ER-bypass signaling in endocrine-treated ER+ breast cancer and shapes therapeutic response states.\n\nBaseline-focused rationale:\n- Hyperactivation of PI3K–AKT–mTOR via PIK3CA mutation, PTEN loss, or RTK signaling drives endocrine resistance by bypassing ER dependence. Clinical and preclinical data show that mTOR or PI3K/AKT inhibition (everolimus, alpelisib, capivasertib) can restore endocrine sensitivity. (PMC)",
       "Administration_of_tamoxifen": {
         "Before": {
           "Pathway_regulation": {
@@ -463,7 +484,7 @@
     },
     "KEGG_ERBB_SIGNALING_PATHWAY": {
       "description": "ERBB receptor tyrosine kinase signaling (e.g., EGFR/ERBB2) and downstream MAPK/PI3K pathways.",
-      "interpretation": "Growth-factor signaling cross-talks with ER programs and modulates proliferation and survival circuitry in ER+ and HR+/HER2+ breast cancer.",
+      "interpretation": "Growth-factor signaling cross-talks with ER programs and modulates proliferation and survival circuitry in ER+ and HR+/HER2+ breast cancer.\n\nBaseline-focused rationale:\n- Upregulated HER2, EGFR, IGF1R or FGFR1 drive MAPK and PI3K/AKT, promoting ligand-independent ER activation and reducing tamoxifen benefit. HER2-positive or growth-factor–addicted tumors frequently require HER2-/RTK-directed therapy in addition to or instead of tamoxifen. (PubMed)",
       "Administration_of_tamoxifen": {
         "Before": {
           "Pathway_regulation": {
@@ -533,7 +554,7 @@
     },
     "HALLMARK_KRAS_SIGNALING_UP": {
       "description": "Transcriptional program associated with activation of RAS/MAPK signaling outputs.",
-      "interpretation": "Represents proliferative signaling programs that can support growth and pathway rewiring in endocrine-treated breast cancer.",
+      "interpretation": "Represents proliferative signaling programs that can support growth and pathway rewiring in endocrine-treated breast cancer.\n\nBaseline-focused rationale:\n- MAPK/ERK hyperactivation (e.g. via RTKs, SPRED2 loss, GPER signaling) enhances ERα transcriptional activity even in the presence of tamoxifen, sustaining proliferation. ERK inhibition can resensitize resistant models to 4-hydroxy-tamoxifen. (PubMed)",
       "Administration_of_tamoxifen": {
         "Before": {
           "Pathway_regulation": {
@@ -603,7 +624,7 @@
     },
     "KEGG_HEDGEHOG_SIGNALING_PATHWAY": {
       "description": "Hedgehog pathway signaling regulating GLI-mediated transcription and developmental programs.",
-      "interpretation": "A developmental signaling axis described as involved in endocrine therapy resistance programs in ER+ breast cancer.",
+      "interpretation": "A developmental signaling axis described as involved in endocrine therapy resistance programs in ER+ breast cancer.\n\nBaseline-focused rationale:\n- Noncanonical Hedgehog signaling is activated in tamoxifen-resistant ER+ breast cancers, partly downstream of PI3K/AKT. Pharmacologic Hh/SMO inhibition reduces growth of tamoxifen-resistant models and restores tam sensitivity. (PMC)",
       "Administration_of_tamoxifen": {
         "Before": {
           "Pathway_regulation": {
@@ -673,7 +694,7 @@
     },
     "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
       "description": "EMT-associated gene program involving loss of epithelial traits and gain of mesenchymal features linked to invasion and plasticity.",
-      "interpretation": "Represents cellular-state changes associated with invasiveness and endocrine-resistant phenotypes in breast cancer models.",
+      "interpretation": "Represents cellular-state changes associated with invasiveness and endocrine-resistant phenotypes in breast cancer models.\n\nBaseline-focused rationale:\n- EMT transcription factors (e.g. PRRX1, Snail/Twist), TGF-β signaling and EMT-like gene signatures are enriched in tamoxifen-resistant ER+ cells. EMT induction can reduce ER expression and endocrine dependence; EMT reversal or EGFR/TGF-β pathway inhibition can partially resensitize to tamoxifen. (PubMed)",
       "Administration_of_tamoxifen": {
         "Before": {
           "Pathway_regulation": {
@@ -743,7 +764,7 @@
     },
     "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
       "description": "TNF-induced NF-κB pathway activation driving inflammatory and pro-survival transcriptional responses.",
-      "interpretation": "Inflammatory survival signaling described in tamoxifen-resistant contexts in ER+ breast cancer models.",
+      "interpretation": "Inflammatory survival signaling described in tamoxifen-resistant contexts in ER+ breast cancer models.\n\nBaseline-focused rationale:\n- NF-κB activation supports survival of “tamoxifen-tolerant” ER+ cells, and NF-κB/RelA signaling is enriched in tumors after neoadjuvant tamoxifen. Pharmacologic or molecular inhibition of NF-κB restores tamoxifen sensitivity in preclinical models. (PubMed)",
       "Administration_of_tamoxifen": {
         "Before": {
           "Pathway_regulation": {
@@ -813,7 +834,7 @@
     },
     "KEGG_HOMOLOGOUS_RECOMBINATION": {
       "description": "Homologous recombination DNA repair pathway for double-strand break repair involving core HR machinery.",
-      "interpretation": "DNA repair capacity and related DDR adaptations are described as altered in endocrine-resistant contexts in the provided evidence.",
+      "interpretation": "DNA repair capacity and related DDR adaptations are described as altered in endocrine-resistant contexts in the provided evidence.\n\nBaseline-focused rationale:\n- In tamoxifen-resistant ER+ cells, PI3K/AKT activation increases BRCA1/BARD1 expression and HR repair capacity, supporting survival under therapy and genotoxic stress; PI3K inhibitors can downregulate BARD1/BRCA1 and resensitize to tamoxifen. Robust HR activity is thus aligned with resistance rather than endocrine vulnerability. (PMC)",
       "Administration_of_tamoxifen": {
         "Before": {
           "Pathway_regulation": {
@@ -883,7 +904,7 @@
     },
     "KEGG_GAP_JUNCTION": {
       "description": "Gap junction-mediated intercellular communication involving connexins and cell–cell coupling pathways.",
-      "interpretation": "Cell–cell adhesion/communication features (including Connexin-43) are described as linked to epithelial state and endocrine response phenotypes.",
+      "interpretation": "Cell–cell adhesion/communication features (including Connexin-43) are described as linked to epithelial state and endocrine response phenotypes.\n\nBaseline-focused rationale:\n- Loss or downregulation of Cx43-mediated gap junctional communication is observed in drug-resistant breast cancer models, including HER2+ and ER+ disease. Cx43 deficiency via c-Src/PI3K/AKT feedback promotes EMT and tamoxifen resistance; restoring Cx43 (e.g. ACT1 peptide, overexpression) improves response to tamoxifen and lapatinib. (PMC)",
       "Administration_of_tamoxifen": {
         "Before": {
           "Pathway_regulation": {
@@ -953,7 +974,7 @@
     },
     "KEGG_DRUG_METABOLISM_CYTOCHROME_P450": {
       "description": "Cytochrome P450-mediated drug metabolism processes affecting biotransformation and clearance of xenobiotics.",
-      "interpretation": "Relevant to tamoxifen as a prodrug requiring CYP-mediated bioactivation to active metabolites that drive ER antagonism in breast cancer.",
+      "interpretation": "Relevant to tamoxifen as a prodrug requiring CYP-mediated bioactivation to active metabolites that drive ER antagonism in breast cancer.\n\nBaseline-focused rationale:\n- Tamoxifen is a prodrug; CYP2D6 converts it to active (Z)-endoxifen. Poor-metabolizer genotypes or strong CYP2D6 inhibitors lower endoxifen concentrations and are associated with reduced tamoxifen benefit in multiple cohorts, leading to genotype- or exposure-guided dosing and guideline recommendations. (PMC)",
       "Administration_of_tamoxifen": {
         "Before": {
           "Pathway_regulation": {

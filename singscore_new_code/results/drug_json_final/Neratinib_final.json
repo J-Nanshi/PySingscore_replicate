@@ -31,10 +31,24 @@
     "HALLMARK_APOPTOSIS",
     "HALLMARK_ESTROGEN_RESPONSE_LATE"
   ],
+  "pathways_sensitive_upregulated": [
+    "REACTOME_SIGNALING_BY_ERBB2",
+    "HALLMARK_APOPTOSIS"
+  ],
+  "pathway_sensitive_downregulated": [
+    "HALLMARK_MTORC1_SIGNALING",
+    "HALLMARK_E2F_TARGETS"
+  ],
+  "pathway_resistant_upregulated": [
+    "REACTOME_MAPK1_MAPK3_SIGNALING",
+    "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER",
+    "HALLMARK_ESTROGEN_RESPONSE_LATE"
+  ],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "REACTOME_SIGNALING_BY_ERBB2": {
       "description": "HER2/ERBB2 receptor tyrosine-kinase signaling that drives downstream proliferative and survival cascades.",
-      "interpretation": "ERBB2 pathway activity is a core oncogenic dependency in HER2-driven breast cancer and is a key axis targeted by neratinib.",
+      "interpretation": "ERBB2 pathway activity is a core oncogenic dependency in HER2-driven breast cancer and is a key axis targeted by neratinib.\n\nBaseline-focused rationale:\n- HER2-amplified / HER2-mutant tumors have upregulated ERBB2 signalling and are “HER2-addicted”. Neratinib is an irreversible pan-HER TKI (HER1/2/4); high baseline HER2 signalling is required for benefit and predicts sensitivity, provided there is no dominant downstream bypass (e.g. TORC1, PI3K). (PMC)",
       "Administration_of_neratinib": {
         "Before": {
           "Pathway_regulation": {
@@ -104,7 +118,7 @@
     },
     "REACTOME_MAPK1_MAPK3_SIGNALING": {
       "description": "MAPK1/MAPK3 (ERK1/2) signaling downstream of activated receptor tyrosine kinases controlling proliferation and survival programs.",
-      "interpretation": "MAPK/ERK output is a major downstream effector of EGFR/HER2 signaling in breast cancer and is part of the growth circuitry impacted by ERBB blockade.",
+      "interpretation": "MAPK/ERK output is a major downstream effector of EGFR/HER2 signaling in breast cancer and is part of the growth circuitry impacted by ERBB blockade.\n\nBaseline-focused rationale:\n- HER2 overexpression activates RAS→RAF→MEK→ERK. Neratinib suppresses HER2 and reduces pERK, producing growth arrest in HER2-dependent models. However, MAPK Up due to RAS/RAF mutations or alternative RTKs can maintain ERK signalling despite HER2 blockade and drive resistance. (PMC)",
       "Administration_of_neratinib": {
         "Before": {
           "Pathway_regulation": {
@@ -174,7 +188,7 @@
     },
     "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER": {
       "description": "PI3K–AKT signaling controlling cell survival and growth, frequently dysregulated in cancer via pathway alterations.",
-      "interpretation": "PI3K/AKT activity supports tumor survival and is highlighted as both a downstream node of HER signaling and a pathway that can shape response or escape to HER2-directed therapy in breast cancer.",
+      "interpretation": "PI3K/AKT activity supports tumor survival and is highlighted as both a downstream node of HER signaling and a pathway that can shape response or escape to HER2-directed therapy in breast cancer.\n\nBaseline-focused rationale:\n- Activating PIK3CA mutations or PTEN loss cause hyperactive PI3K/AKT signalling that can sustain growth even when HER2 is inhibited. In HER2+ breast cancer, PIK3CA mutations are repeatedly associated with lower pCR and reduced benefit from HER2-targeted regimens, and this is widely considered a resistance mechanism also relevant to neratinib. (PMC)",
       "Administration_of_neratinib": {
         "Before": {
           "Pathway_regulation": {
@@ -244,7 +258,7 @@
     },
     "HALLMARK_MTORC1_SIGNALING": {
       "description": "mTORC1-driven anabolic growth and translation programs that integrate nutrient and growth-factor signals.",
-      "interpretation": "mTORC1 signaling reflects tumor growth-state control downstream of AKT and is described as a relevant survival/growth axis in the neratinib mechanism and resistance context.",
+      "interpretation": "mTORC1 signaling reflects tumor growth-state control downstream of AKT and is described as a relevant survival/growth axis in the neratinib mechanism and resistance context.\n\nBaseline-focused rationale:\n- Sudhan et al. show that TORC1/mTORC1 hyperactivation drives neratinib resistance; PDX and cell-line models with high pS6/p4EBP1 are neratinib-resistant and can be resensitized by TORC1 inhibition (everolimus). By inference, tumors without marked mTORC1 hyperactivation (i.e. relatively lower TORC1 at baseline) remain more HER2-dependent and are more likely to be neratinib-sensitive. (PubMed)",
       "Administration_of_neratinib": {
         "Before": {
           "Pathway_regulation": {
@@ -314,7 +328,7 @@
     },
     "HALLMARK_E2F_TARGETS": {
       "description": "E2F-regulated transcriptional program linked to G1/S progression and proliferative cell-cycle activity.",
-      "interpretation": "E2F-target activity captures proliferative drive and cell-cycle progression, which is discussed as changing with effective ERBB blockade and as a potential bypass route when sustained.",
+      "interpretation": "E2F-target activity captures proliferative drive and cell-cycle progression, which is discussed as changing with effective ERBB blockade and as a potential bypass route when sustained.\n\nBaseline-focused rationale:\n- Neratinib clearly induces G1 arrest and reduces Cyclin D1/CDK4/6/E2F signalling in HER2-dependent models. Tumors that lack strong, autonomous cell-cycle deregulation (no RB loss, no massive CCND1/CDK4/6 hyperactivation) and rely mainly on HER2 for proliferation are more likely to be controlled by HER2 TKIs. A relatively lower baseline G2M/E2F score in a HER2-amplified tumor can be viewed as a favourable, but low-evidence feature. (PMC)",
       "Administration_of_neratinib": {
         "Before": {
           "Pathway_regulation": {
@@ -384,7 +398,7 @@
     },
     "HALLMARK_APOPTOSIS": {
       "description": "Core apoptotic machinery and pro-death signaling programs that execute programmed cell death.",
-      "interpretation": "Apoptosis is a key tumor-control outcome described with HER-family signaling inhibition, reflecting a shift away from survival signaling in responsive settings.",
+      "interpretation": "Apoptosis is a key tumor-control outcome described with HER-family signaling inhibition, reflecting a shift away from survival signaling in responsive settings.\n\nBaseline-focused rationale:\n- Neratinib induces apoptosis in HER2-dependent cancer cells (caspase activation, PARP cleavage). Tumors that are “apoptotically primed” (higher pro-apoptotic signalling / lower anti-apoptotic buffering) are more likely to undergo cell death once HER2 and its downstream survival signals are blocked, so a higher apoptosis gene-set at baseline is a plausible (though not yet validated) sensitivity feature. (PMC)",
       "Administration_of_neratinib": {
         "Before": {
           "Pathway_regulation": {
@@ -454,7 +468,7 @@
     },
     "HALLMARK_ESTROGEN_RESPONSE_LATE": {
       "description": "Estrogen receptor (ER)-linked transcriptional program reflecting sustained/late ER-driven gene expression.",
-      "interpretation": "ER signaling is described as clinically relevant in HR+ breast cancer subtypes where cross-talk with HER2 can influence benefit and where combination endocrine strategies are discussed alongside neratinib.",
+      "interpretation": "ER signaling is described as clinically relevant in HR+ breast cancer subtypes where cross-talk with HER2 can influence benefit and where combination endocrine strategies are discussed alongside neratinib.\n\nBaseline-focused rationale:\n- In HR+/HER2+ or HER2-low BC, strong ER signalling can sustain proliferation when HER2 is inhibited, contributing to suboptimal response to HER2-directed therapy alone. Preclinical and emerging clinical data support triple combinations (neratinib + endocrine therapy + CDK4/6i) to overcome this. Thus, baseline estrogen-response Up is unfavourable for neratinib alone, but compatible with sensitivity when combined with appropriate endocrine ± CDK4/6 blockade. (Nature)",
       "Administration_of_neratinib": {
         "Before": {
           "Pathway_regulation": {

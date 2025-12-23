@@ -18,17 +18,30 @@
   ],
   "pathway_sets": [
     "KEGG_ERBB_SIGNALING_PATHWAY",
-    "REACTOME_ERBB2_SIGNALING",
+    "REACTOME_SIGNALING_BY_ERBB2",
     "REACTOME_DOWNREGULATION_OF_ERBB2_SIGNALING",
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
     "KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY",
     "REACTOME_FCGAMMA_RECEPTOR_FCGR_DEPENDENT_PHAGOCYTOSIS",
     "HALLMARK_INTERFERON_GAMMA_RESPONSE"
   ],
+  "pathways_sensitive_upregulated": [
+    "KEGG_ERBB_SIGNALING_PATHWAY",
+    "REACTOME_SIGNALING_BY_ERBB2",
+    "KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY",
+    "REACTOME_FCGAMMA_RECEPTOR_FCGR_DEPENDENT_PHAGOCYTOSIS",
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE"
+  ],
+  "pathway_sensitive_downregulated": [],
+  "pathway_resistant_upregulated": [
+    "REACTOME_DOWNREGULATION_OF_ERBB2_SIGNALING",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+  ],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "KEGG_ERBB_SIGNALING_PATHWAY": {
       "description": "Canonical HER family receptor signaling (including HER2) that propagates growth and survival signals through RAS–MAPK and PI3K–AKT nodes.",
-      "interpretation": "ERBB signaling is the core oncogenic driver in HER2-amplified breast cancers and underpins dependence on HER2-directed antibody therapy.",
+      "interpretation": "ERBB signaling is the core oncogenic driver in HER2-amplified breast cancers and underpins dependence on HER2-directed antibody therapy.\n\nBaseline-focused rationale:\n- HER2⁺ breast cancers that are candidates for margetuximab typically have amplified/overexpressed HER2 and active ErbB signaling. Margetuximab binds the same HER2 epitope as trastuzumab and preserves its anti-proliferative blockade of HER2–PI3K/MAPK signaling while enhancing Fc-dependent effector functions. Thus, high baseline ErbB/HER2 activity indicates pathway dependence and supports sensitivity to HER2-targeted antibodies, including margetuximab.",
       "Administration_of_margetuximab": {
         "Before": {
           "Pathway_regulation": {
@@ -96,9 +109,9 @@
         }
       }
     },
-    "REACTOME_ERBB2_SIGNALING": {
+    "REACTOME_SIGNALING_BY_ERBB2": {
       "description": "HER2/ERBB2-driven signaling network in cancer, including receptor dimerization and downstream kinase cascades controlling proliferation and survival.",
-      "interpretation": "ERBB2 signaling is central to the malignant phenotype in HER2-positive breast cancer and provides the primary biological context for anti-HER2 antibodies.",
+      "interpretation": "ERBB2 signaling is central to the malignant phenotype in HER2-positive breast cancer and provides the primary biological context for anti-HER2 antibodies.\n\nBaseline-focused rationale:\n- This gene set captures the oncogenic HER2 signaling module. In HER2-amplified tumors, high ERBB2 signaling marks HER2 addiction and is associated with benefit from HER2-targeted monoclonal antibodies. Margetuximab maintains the HER2-blocking, anti-proliferative mechanism while adding Fc-optimization, so a high ERBB2 signaling signature at baseline is expected to correspond to sensitivity to margetuximab, as it does for trastuzumab and related agents.",
       "Administration_of_margetuximab": {
         "Before": {
           "Pathway_regulation": {
@@ -168,7 +181,7 @@
     },
     "REACTOME_DOWNREGULATION_OF_ERBB2_SIGNALING": {
       "description": "Processes that attenuate HER2 signaling via receptor internalization, ubiquitination, trafficking, and degradation, limiting receptor availability and signaling output.",
-      "interpretation": "Regulation of HER2 receptor abundance and signaling duration is relevant to antibody-based HER2 targeting, where receptor down-modulation can contribute to pathway suppression.",
+      "interpretation": "Regulation of HER2 receptor abundance and signaling duration is relevant to antibody-based HER2 targeting, where receptor down-modulation can contribute to pathway suppression.\n\nBaseline-focused rationale:\n- This pathway comprises c-Cbl–mediated ubiquitination, internalization and degradation of HER2 and associated downregulation modules. High enrichment of this “downregulation of ERBB2 signaling” gene set at baseline may reflect chronic prior HER2-targeted exposure with reduced surface HER2 and weakened HER2 addiction. Such tumors may rely more on alternative pathways (e.g., PI3K or other RTKs), leading to reduced incremental benefit from another HER2 IgG1 (margetuximab), although this is inferred from general HER2 biology rather than prospectively validated for this exact gene set.",
       "Administration_of_margetuximab": {
         "Before": {
           "Pathway_regulation": {
@@ -238,7 +251,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "Gene set reflecting PI3K–AKT–mTOR pathway activity governing cellular growth, metabolism, and survival signaling programs.",
-      "interpretation": "PI3K–AKT–mTOR signaling is a major downstream survival axis of HER2 that shapes tumor biology in HER2-positive breast cancer.",
+      "interpretation": "PI3K–AKT–mTOR signaling is a major downstream survival axis of HER2 that shapes tumor biology in HER2-positive breast cancer.\n\nBaseline-focused rationale:\n- In HER2⁺ BC, constitutive activation of PI3K–AKT–mTOR via PIK3CA mutation, PTEN loss or other alterations is a well-described mechanism of reduced response to trastuzumab and other HER2-targeted therapies, with multiple neoadjuvant and retrospective studies showing lower pCR and poorer outcomes when the PI3K pathway is activated. Since margetuximab shares the same HER2-blocking mechanism but adds Fc-engineering, baseline high PI3K–AKT–mTOR signaling is expected to attenuate sensitivity to margetuximab as well (Fc optimization may not fully overcome oncogenic PI3K signaling).",
       "Administration_of_margetuximab": {
         "Before": {
           "Pathway_regulation": {
@@ -308,7 +321,7 @@
     },
     "KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY": {
       "description": "NK-cell activation and cytotoxic effector mechanisms (including Fc receptor-triggered activation) that mediate killing of antibody-opsonized target cells.",
-      "interpretation": "NK-cell effector function is mechanistically relevant to IgG1 anti-HER2 therapies that leverage antibody-dependent cellular cytotoxicity as part of anti-tumor activity.",
+      "interpretation": "NK-cell effector function is mechanistically relevant to IgG1 anti-HER2 therapies that leverage antibody-dependent cellular cytotoxicity as part of anti-tumor activity.\n\nBaseline-focused rationale:\n- Margetuximab is Fc-engineered to increase affinity for activating FcγRIIIa (CD16A) and decrease binding to inhibitory FcγRIIb (CD32B), thereby enhancing NK-cell–mediated ADCC compared with trastuzumab. A tumor/microenvironment with robust NK-cell presence and intact NK cytotoxicity machinery (reflected by higher NK-cell signatures or NK-cytotoxicity pathways) is expected to be more sensitive to margetuximab because it can better exploit its Fc-optimized ADCC.",
       "Administration_of_margetuximab": {
         "Before": {
           "Pathway_regulation": {
@@ -378,7 +391,7 @@
     },
     "REACTOME_FCGAMMA_RECEPTOR_FCGR_DEPENDENT_PHAGOCYTOSIS": {
       "description": "Fcγ receptor-dependent recognition and engulfment of antibody-opsonized targets by phagocytes, including signaling events downstream of FcγR engagement.",
-      "interpretation": "FcγR-dependent phagocytosis is relevant to anti-HER2 antibodies by supporting macrophage-mediated clearance of opsonized tumor cells as an immune effector mechanism.",
+      "interpretation": "FcγR-dependent phagocytosis is relevant to anti-HER2 antibodies by supporting macrophage-mediated clearance of opsonized tumor cells as an immune effector mechanism.\n\nBaseline-focused rationale:\n- This Reactome pathway provides mechanistic granularity for FcγR-dependent uptake and killing of antibody-coated cells. Because margetuximab is specifically engineered to bias signaling towards activating FcγRs, a higher baseline capacity for FcγR-dependent phagocytosis (appropriate myeloid cell populations and signaling) should favor sensitivity to margetuximab through enhanced ADCP in addition to NK-cell ADCC.",
       "Administration_of_margetuximab": {
         "Before": {
           "Pathway_regulation": {
@@ -448,7 +461,7 @@
     },
     "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
       "description": "Interferon-γ-induced gene program reflecting cytokine-driven immune activation and interferon-stimulated transcriptional responses.",
-      "interpretation": "IFN-γ-linked immune signaling can reflect immune activation associated with antibody-triggered effector responses in the tumor microenvironment.",
+      "interpretation": "IFN-γ-linked immune signaling can reflect immune activation associated with antibody-triggered effector responses in the tumor microenvironment.\n\nBaseline-focused rationale:\n- High IFN-γ gene-set enrichment represents a Th1-type, T/NK-cell–inflamed TME. Such “hot” tumors are generally more responsive to immune-mediated mechanisms, including checkpoint inhibitors and Fc-dependent effector functions. Fc-engineered antibodies like margetuximab can boost NK-driven IFN-γ production, and preclinical/clinical combinations of anti-HER2 mAbs with PD-1 inhibitors (e.g. margetuximab + pembrolizumab in HER2⁺ tumors) are built on this biology. Direct BC data for this exact hallmark as a biomarker are limited, so this is a mechanistically plausible but not formally validated sensitivity marker.",
       "Administration_of_margetuximab": {
         "Before": {
           "Pathway_regulation": {

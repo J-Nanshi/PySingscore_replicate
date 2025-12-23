@@ -32,10 +32,25 @@
     "GOBP_NEGATIVE_REGULATION_OF_EXECUTION_PHASE_OF_APOPTOSIS",
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING"
   ],
+  "pathways_sensitive_upregulated": [
+    "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2",
+    "REACTOME_FCGAMMA_RECEPTOR_FCGR_DEPENDENT_PHAGOCYTOSIS",
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE"
+  ],
+  "pathway_sensitive_downregulated": [
+    "HALLMARK_DNA_REPAIR"
+  ],
+  "pathway_resistant_upregulated": [
+    "HALLMARK_G2M_CHECKPOINT",
+    "GOBP_REGULATION_OF_PHAGOCYTOSIS",
+    "GOBP_NEGATIVE_REGULATION_OF_EXECUTION_PHASE_OF_APOPTOSIS",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+  ],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2": {
       "description": "HER2/ERBB2 overexpression drives oncogenic signaling (including downstream RAS/MAPK and PI3K/AKT/mTOR) in a subset of breast cancers and provides the tumor antigen for HER2-directed therapies.",
-      "interpretation": "HER2 expression/amplification is required for T-DXd binding and internalization; loss or downregulation of HER2 at progression is associated with resistance, while high HER2 supports strong activity.",
+      "interpretation": "HER2 expression/amplification is required for T-DXd binding and internalization; loss or downregulation of HER2 at progression is associated with resistance, while high HER2 supports strong activity.\n\nBaseline-focused rationale:\n- HER2 overexpression increases the density of target antigen, enhancing ADC binding, internalization, and intra-tumoral payload delivery. Clinical benefit of T-DXd in HER2-positive and HER2-low metastatic breast cancer supports HER2 signaling as a positive predictive biomarker, provided expression is not completely lost.",
       "Administration_of_trastuzumab_deruxtecan": {
         "Before": {
           "Pathway_regulation": {
@@ -105,7 +120,7 @@
     },
     "HALLMARK_DNA_REPAIR": {
       "description": "DNA damage response and repair programs (including homologous recombination and NHEJ) influence how tumor cells resolve DNA breaks caused by cytotoxic stress.",
-      "interpretation": "DXd induces DNA damage; upregulation of DNA repair pathways (e.g., HR/NHEJ genes) is observed in resistant models, while defective DNA repair (HRD/DDR inhibition) is associated with increased sensitivity.",
+      "interpretation": "DXd induces DNA damage; upregulation of DNA repair pathways (e.g., HR/NHEJ genes) is observed in resistant models, while defective DNA repair (HRD/DDR inhibition) is associated with increased sensitivity.\n\nBaseline-focused rationale:\n- If HR or other DNA-repair arms are impaired, cells are unable to repair DXd-induced DNA damage, leading to replication catastrophe and cell death. Preclinical work shows that pharmacologic inhibition of DDR components (e.g. ATR/CHK1/WEE1) synergizes with T-DXd, mirroring the behavior of other topo-I–based regimens in HR-deficient settings.",
       "Administration_of_trastuzumab_deruxtecan": {
         "Before": {
           "Pathway_regulation": {
@@ -175,7 +190,7 @@
     },
     "HALLMARK_G2M_CHECKPOINT": {
       "description": "G2/M checkpoint control enables cell-cycle arrest in response to DNA damage before mitosis.",
-      "interpretation": "Topo-I–payload DNA damage can activate G2/M arrest; enrichment/upregulation of G2/M checkpoint genes is reported in T-DXd–resistant cells and may facilitate survival by allowing time for repair.",
+      "interpretation": "Topo-I–payload DNA damage can activate G2/M arrest; enrichment/upregulation of G2/M checkpoint genes is reported in T-DXd–resistant cells and may facilitate survival by allowing time for repair.\n\nBaseline-focused rationale:\n- DXd-induced DNA damage activates G2/M checkpoint pathways (ATR–CHK1, WEE1, etc.). Tumors with robust checkpoint signaling can arrest the cell cycle and repair damage instead of undergoing mitotic catastrophe, promoting resistance. Inhibition of checkpoint kinases is a rational strategy to re-sensitize to T-DXd.",
       "Administration_of_trastuzumab_deruxtecan": {
         "Before": {
           "Pathway_regulation": {
@@ -245,7 +260,7 @@
     },
     "REACTOME_FCGAMMA_RECEPTOR_FCGR_DEPENDENT_PHAGOCYTOSIS": {
       "description": "Fcγ receptor–dependent phagocytosis is an immune effector mechanism in which IgG-opsonized targets are engulfed by myeloid cells via Fcγ receptor engagement.",
-      "interpretation": "The trastuzumab Fc region can engage Fcγ receptors (including FCGR1A) to promote ADCP/ADCC-like activity and contribute to antitumor effects alongside payload-mediated cytotoxicity.",
+      "interpretation": "The trastuzumab Fc region can engage Fcγ receptors (including FCGR1A) to promote ADCP/ADCC-like activity and contribute to antitumor effects alongside payload-mediated cytotoxicity.\n\nBaseline-focused rationale:\n- The trastuzumab backbone of T-DXd can still engage Fcγ receptors on immune effector cells. Higher FcγR expression/function favors antibody-dependent cellular cytotoxicity and phagocytosis (ADCC/ADCP) of HER2-opsonized cells, which can add to the direct payload effect. Evidence is strongest for trastuzumab/T-DM1; T-DXd is assumed to behave similarly in this respect.",
       "Administration_of_trastuzumab_deruxtecan": {
         "Before": {
           "Pathway_regulation": {
@@ -315,7 +330,7 @@
     },
     "GOBP_REGULATION_OF_PHAGOCYTOSIS": {
       "description": "Processes that regulate the magnitude or frequency of phagocytosis by immune cells.",
-      "interpretation": "Phagocytosis contributes to the immune effector component of T-DXd; tumor upregulation of CD47 is described as limiting macrophage phagocytosis, whereas enhanced FcγR activity supports phagocytic clearance.",
+      "interpretation": "Phagocytosis contributes to the immune effector component of T-DXd; tumor upregulation of CD47 is described as limiting macrophage phagocytosis, whereas enhanced FcγR activity supports phagocytic clearance.\n\nBaseline-focused rationale:\n- CD47 delivers a “don’t-eat-me” signal via SIRPα on macrophages, suppressing antibody-dependent phagocytosis. For trastuzumab-based ADCs, high CD47 expression can blunt Fc-mediated effector functions (ADCP), contributing to immune escape and functional resistance despite HER2 targeting and payload delivery.",
       "Administration_of_trastuzumab_deruxtecan": {
         "Before": {
           "Pathway_regulation": {
@@ -385,7 +400,7 @@
     },
     "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
       "description": "Interferon-γ–associated immune activation programs characteristic of immune-inflamed tumor microenvironments.",
-      "interpretation": "Higher baseline interferon signatures (including IFNγ response) are reported to correlate with better outcomes to T-DXd in HER2-low metastatic breast cancer, consistent with an immune-active state supporting efficacy.",
+      "interpretation": "Higher baseline interferon signatures (including IFNγ response) are reported to correlate with better outcomes to T-DXd in HER2-low metastatic breast cancer, consistent with an immune-active state supporting efficacy.\n\nBaseline-focused rationale:\n- An IFNγ-high, T-cell-inflamed microenvironment is associated with better responses to multiple antibody-based and ICI therapies. For HER2-positive and HER2-low breast cancer, immune-inflamed tumors show stronger benefit from HER2-targeted approaches and from ADC-ICI combinations (including T-DXd + PD-1/PD-L1 blockade), suggesting that a baseline IFNγ-response signature is a favorable context for T-DXd.",
       "Administration_of_trastuzumab_deruxtecan": {
         "Before": {
           "Pathway_regulation": {
@@ -455,7 +470,7 @@
     },
     "GOBP_NEGATIVE_REGULATION_OF_EXECUTION_PHASE_OF_APOPTOSIS": {
       "description": "Mechanisms that reduce or prevent activation of the execution phase of apoptosis.",
-      "interpretation": "T-DXd-induced DNA damage triggers apoptosis, but resistant tumors are described as upregulating anti-apoptotic factors (e.g., MCL1 and BCL-2 family), effectively suppressing apoptosis and contributing to treatment failure.",
+      "interpretation": "T-DXd-induced DNA damage triggers apoptosis, but resistant tumors are described as upregulating anti-apoptotic factors (e.g., MCL1 and BCL-2 family), effectively suppressing apoptosis and contributing to treatment failure.\n\nBaseline-focused rationale:\n- Upregulation of anti-apoptotic proteins such as MCL1 can buffer cells against DXd-induced DNA damage and prevent mitochondrial apoptosis. RNA-based profiling of HER2-ADC–resistant models (including T-DXd) has identified MCL1 and related survival pathways as part of resistance signatures; pharmacologic MCL1/BCL2-family inhibition is being explored to restore ADC sensitivity.",
       "Administration_of_trastuzumab_deruxtecan": {
         "Before": {
           "Pathway_regulation": {
@@ -525,7 +540,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "PI3K/AKT/mTOR survival and growth signaling, a major downstream effector pathway of HER2 signaling.",
-      "interpretation": "This pathway is described as downstream of HER2 with context-dependent effects: activated PI3K/AKT can promote survival and resistance, whereas pathway inhibition/downregulation can facilitate apoptosis and sensitivity.",
+      "interpretation": "This pathway is described as downstream of HER2 with context-dependent effects: activated PI3K/AKT can promote survival and resistance, whereas pathway inhibition/downregulation can facilitate apoptosis and sensitivity.\n\nBaseline-focused rationale:\n- PI3K/AKT hyperactivation promotes cell survival and can attenuate apoptosis in response to HER2-targeted therapies and ADC payload–induced damage. For trastuzumab and T-DM1, PI3K/AKT activation is a well-known resistance mechanism; similar principles likely apply to T-DXd, although the potent topo-I payload may partially overcome it. Thus baseline high PI3K/AKT activity is best regarded as a resistance-associated state.",
       "Administration_of_trastuzumab_deruxtecan": {
         "Before": {
           "Pathway_regulation": {

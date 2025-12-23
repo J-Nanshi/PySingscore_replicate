@@ -27,10 +27,23 @@
     "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
     "KEGG_ERBB_SIGNALING_PATHWAY"
   ],
+  "pathways_sensitive_upregulated": [
+    "REACTOME_SIGNALING_BY_NTRKS",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "HALLMARK_APOPTOSIS"
+  ],
+  "pathway_sensitive_downregulated": [],
+  "pathway_resistant_upregulated": [
+    "HALLMARK_KRAS_SIGNALING_UP",
+    "REACTOME_SIGNALING_BY_MET",
+    "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+    "KEGG_ERBB_SIGNALING_PATHWAY"
+  ],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "REACTOME_SIGNALING_BY_NTRKS": {
       "description": "Neurotrophin receptor tyrosine kinase signaling mediated by TRKA/TRKB/TRKC, which can activate downstream cascades that promote proliferation and survival.",
-      "interpretation": "In breast cancer cases with NTRK fusions, TRK signaling functions as a dominant oncogenic driver and defines a biomarker-selected, targetable dependency.",
+      "interpretation": "In breast cancer cases with NTRK fusions, TRK signaling functions as a dominant oncogenic driver and defines a biomarker-selected, targetable dependency.\n\nBaseline-focused rationale:\n- In NTRK-fusion–positive breast cancers (most commonly secretory carcinoma with ETV6–NTRK3, but also rare non-secretory cases), the TRK pathway is constitutively activated and functions as the dominant oncogenic driver. Entrectinib potently inhibits TRKA/B/C and leads to high, durable response rates in NTRK-fusion solid tumors, including breast, when TRK signaling is active and untreated.",
       "Administration_of_entrectinib": {
         "Before": {
           "Pathway_regulation": {
@@ -100,7 +113,7 @@
     },
     "HALLMARK_KRAS_SIGNALING_UP": {
       "description": "A gene-expression program reflecting increased RAS pathway output, commonly converging on MAPK/ERK-driven proliferation and survival.",
-      "interpretation": "RAS/MAPK output is a key growth axis downstream of TRK and can also represent a compensatory proliferative route in TRK-driven tumors.",
+      "interpretation": "RAS/MAPK output is a key growth axis downstream of TRK and can also represent a compensatory proliferative route in TRK-driven tumors.\n\nBaseline-focused rationale:\n- If an NTRK-fusion breast tumor also harbors activating RAS/MAPK lesions (e.g., KRAS/NRAS/BRAF mutations, MEK1 alterations) or a high KRAS/MAPK signature, the tumor can maintain ERK signaling independent of TRK, blunting the effect of entrectinib. Convergent MAPK activation is a well-described resistance mechanism to TRK inhibition in multi-tumor series and in entrectinib-treated models; the same biology would predict primary/early resistance if present at baseline in breast cancer.",
       "Administration_of_entrectinib": {
         "Before": {
           "Pathway_regulation": {
@@ -170,7 +183,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "A survival and growth signaling program driven by PI3K activation, AKT signaling, and mTOR pathway output.",
-      "interpretation": "PI3K–AKT–mTOR signaling is a major downstream survival pathway engaged by TRK fusions and can support continued tumor viability when activated by additional lesions.",
+      "interpretation": "PI3K–AKT–mTOR signaling is a major downstream survival pathway engaged by TRK fusions and can support continued tumor viability when activated by additional lesions.\n\nBaseline-focused rationale:\n- When the PI3K–AKT–mTOR axis is not already activated by independent genomic events, the tumor is more reliant on NTRK → PI3K/AKT signaling. Entrectinib then effectively shuts down both MAPK and PI3K branches, favoring apoptosis. Preclinical TRK-driven models show strong pro-apoptotic effects when PI3K/mTOR is not independently activated, and dual TRK + PI3K/mTOR blockade further deepens responses.",
       "Administration_of_entrectinib": {
         "Before": {
           "Pathway_regulation": {
@@ -240,7 +253,7 @@
     },
     "REACTOME_SIGNALING_BY_MET": {
       "description": "HGF/MET receptor signaling that activates downstream proliferative and survival pathways, including MAPK and PI3K signaling modules.",
-      "interpretation": "MET signaling represents a clinically relevant alternative RTK axis that can sustain growth in TRK-driven contexts when activated as a bypass route.",
+      "interpretation": "MET signaling represents a clinically relevant alternative RTK axis that can sustain growth in TRK-driven contexts when activated as a bypass route.\n\nBaseline-focused rationale:\n- MET amplification or overexpression reactivates RAS–MAPK and PI3K–AKT independent of TRK. MET amplification has been directly documented as a mechanism of acquired resistance to entrectinib in ROS1+ NSCLC, and TRK-i reviews highlight MET as a recurrent bypass node. If such MET activation exists at baseline in an NTRK-fusion breast tumor, entrectinib monotherapy is unlikely to produce deep or durable responses.",
       "Administration_of_entrectinib": {
         "Before": {
           "Pathway_regulation": {
@@ -310,7 +323,7 @@
     },
     "HALLMARK_APOPTOSIS": {
       "description": "A gene-expression program encompassing intrinsic and extrinsic apoptotic machinery and execution pathways.",
-      "interpretation": "Apoptotic competence influences whether tumor cells undergo effective cell death when oncogenic survival signaling is inhibited.",
+      "interpretation": "Apoptotic competence influences whether tumor cells undergo effective cell death when oncogenic survival signaling is inhibited.\n\nBaseline-focused rationale:\n- Tumors with intact apoptotic machinery can rapidly execute apoptosis once TRK signaling is shut off. In TRK-inhibitor models, responders show strong induction of cleaved caspases and apoptosis gene signatures after treatment; the clinical pattern of deep, rapid regressions in many NTRK-fusion tumors is consistent with this “primed” state. Baseline apoptotic competence is therefore a positive modifier of entrectinib sensitivity.",
       "Administration_of_entrectinib": {
         "Before": {
           "Pathway_regulation": {
@@ -380,7 +393,7 @@
     },
     "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
       "description": "A transcriptional program associated with loss of epithelial features and acquisition of mesenchymal traits, including increased motility and cellular plasticity.",
-      "interpretation": "EMT-like states in breast cancer can be linked to broader drug tolerance and signaling rewiring, potentially altering dependence on the original oncogenic driver.",
+      "interpretation": "EMT-like states in breast cancer can be linked to broader drug tolerance and signaling rewiring, potentially altering dependence on the original oncogenic driver.\n\nBaseline-focused rationale:\n- EMT-high states generally correlate with reduced dependence on a single RTK, lower proliferation, increased drug-tolerant persisters, and activation of alternative RTKs (AXL, FGFR, MET). TRK-resistance reviews list EMT and lineage plasticity as non-genetic resistance mechanisms; although most data are from other tumor types, an EMT-high signature in NTRK-fusion breast cancer would plausibly predict shallower or shorter responses to entrectinib.",
       "Administration_of_entrectinib": {
         "Before": {
           "Pathway_regulation": {
@@ -450,7 +463,7 @@
     },
     "KEGG_ERBB_SIGNALING_PATHWAY": {
       "description": "Signaling through ERBB family receptors (including HER2/ERBB2 and EGFR) that activates proliferative and survival pathways such as MAPK and PI3K.",
-      "interpretation": "ERBB pathway activity is a major breast cancer growth axis and can co-exist with, or dominate over, other drivers in rare dual-driver settings.",
+      "interpretation": "ERBB pathway activity is a major breast cancer growth axis and can co-exist with, or dominate over, other drivers in rare dual-driver settings.\n\nBaseline-focused rationale:\n- In a HER2-positive breast cancer that also carries an NTRK fusion, HER2 amplification often remains the dominant driver of PI3K/MAPK signaling. In such a setting, TRK inhibition alone may not fully suppress downstream growth pathways; clinically, HER2-addicted tumors generally require HER2-directed therapy. Thus, baseline high HER2 activity is expected to blunt the benefit of entrectinib monotherapy, unless HER2 is co-inhibited. Evidence is extrapolated from multi-driver RTK settings and tumor-agnostic TRK-i series rather than from large NTRK+ HER2+ BC cohorts.",
       "Administration_of_entrectinib": {
         "Before": {
           "Pathway_regulation": {

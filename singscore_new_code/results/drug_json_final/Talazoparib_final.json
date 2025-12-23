@@ -23,10 +23,22 @@
     "REACTOME_ACTIVATION_OF_ATR_IN_RESPONSE_TO_REPLICATION_STRESS",
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING"
   ],
+  "pathways_sensitive_upregulated": [
+    "HALLMARK_APOPTOSIS"
+  ],
+  "pathway_sensitive_downregulated": [
+    "REACTOME_HDR_THROUGH_HOMOLOGOUS_RECOMBINATION_HRR"
+  ],
+  "pathway_resistant_upregulated": [
+    "REACTOME_ABC_FAMILY_PROTEINS_MEDIATED_TRANSPORT",
+    "REACTOME_ACTIVATION_OF_ATR_IN_RESPONSE_TO_REPLICATION_STRESS",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING"
+  ],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "REACTOME_HDR_THROUGH_HOMOLOGOUS_RECOMBINATION_HRR": {
       "description": "Homologous recombination repair (HRR) is a BRCA1/2-dependent pathway that repairs DNA double-strand breaks and supports accurate genome maintenance during replication.",
-      "interpretation": "HRR status is a central determinant of breast tumor DNA repair capacity and influences vulnerability to DNA damage accumulation when repair is compromised.",
+      "interpretation": "HRR status is a central determinant of breast tumor DNA repair capacity and influences vulnerability to DNA damage accumulation when repair is compromised.\n\nBaseline-focused rationale:\n- gBRCA1/2 or broader HRD ↓ impairs high-fidelity DSB repair. Talazoparib induces PARP trapping and replication-associated damage; HR-deficient breast tumour cells cannot repair this, leading to synthetic lethality and strong clinical benefit (EMBRACA, gBRCA HER2-negative ABC). (PubMed)",
       "Administration_of_talazoparib": {
         "Before": {
           "Pathway_regulation": {
@@ -96,7 +108,7 @@
     },
     "HALLMARK_APOPTOSIS": {
       "description": "Programmed cell death signaling pathways that execute apoptosis in response to irreparable cellular damage, including DNA damage.",
-      "interpretation": "Apoptotic competence shapes whether breast cancer cells undergo cell death after severe DNA damage and checkpoint activation.",
+      "interpretation": "Apoptotic competence shapes whether breast cancer cells undergo cell death after severe DNA damage and checkpoint activation.\n\nBaseline-focused rationale:\n- In talazoparib-sensitive tumors, accumulated DNA damage and replication stress trigger mitochondrial apoptosis (caspase activation, pro-apoptotic signalling). However, “high baseline apoptosis” is not a standard predictive biomarker; what matters is an intact apoptotic machinery that can be engaged once damage accumulates. This pathway is best tagged as mechanism-of-action / on-treatment rather than as a baseline Up/Down predictor. (SpringerLink)",
       "Administration_of_talazoparib": {
         "Before": {
           "Pathway_regulation": {
@@ -166,7 +178,7 @@
     },
     "REACTOME_ABC_FAMILY_PROTEINS_MEDIATED_TRANSPORT": {
       "description": "ATP-binding cassette (ABC) transporters mediate drug efflux and regulate intracellular concentrations of small molecules.",
-      "interpretation": "ABC transporter activity can modulate intracellular exposure to anticancer drugs in breast cancer cells, affecting effective drug levels within tumor cells.",
+      "interpretation": "ABC transporter activity can modulate intracellular exposure to anticancer drugs in breast cancer cells, affecting effective drug levels within tumor cells.\n\nBaseline-focused rationale:\n- Overexpression of ABC transporters decreases intracellular PARP inhibitor levels. For talazoparib, recent work highlights ABCC1 and ABCG2 as key mediators of efflux and resistance; for the PARPi class as a whole, ABCB1/BCRP (ABCG2) are well-established. Thus, baseline ↑ ABC transporter signalling in breast tumors is expected to reduce talazoparib efficacy. (ScienceDirect)",
       "Administration_of_talazoparib": {
         "Before": {
           "Pathway_regulation": {
@@ -236,7 +248,7 @@
     },
     "REACTOME_ACTIVATION_OF_ATR_IN_RESPONSE_TO_REPLICATION_STRESS": {
       "description": "ATR-mediated checkpoint signaling responds to replication stress by slowing cell cycle progression and coordinating DNA damage responses and repair processes.",
-      "interpretation": "Replication-stress checkpoints can influence breast cancer cell survival under genotoxic stress by regulating time for repair and coordinating damage tolerance.",
+      "interpretation": "Replication-stress checkpoints can influence breast cancer cell survival under genotoxic stress by regulating time for repair and coordinating damage tolerance.\n\nBaseline-focused rationale:\n- Upregulated ATR–CHK1 signalling allows tumour cells to better tolerate replication stress and repair PARPi-induced lesions, contributing to acquired or de novo PARPi resistance. Multiple models show that PARPi-resistant cells exhibit ↑ ATR activity and that ATR inhibition re-sensitizes them to PARP inhibitors (including in breast/ovarian DNA-repair–deficient settings). (Nature)",
       "Administration_of_talazoparib": {
         "Before": {
           "Pathway_regulation": {
@@ -306,7 +318,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "PI3K/AKT/mTOR signaling is a pro-survival and growth pathway that promotes cell survival, proliferation, and can influence DNA repair and apoptotic thresholds.",
-      "interpretation": "PI3K/AKT/mTOR pathway activity contributes to breast cancer cell survival programs and can affect responses to therapies by supporting survival and repair signaling.",
+      "interpretation": "PI3K/AKT/mTOR pathway activity contributes to breast cancer cell survival programs and can affect responses to therapies by supporting survival and repair signaling.\n\nBaseline-focused rationale:\n- In many breast cancers (TNBC, HR+), PI3K/AKT is upregulated, supporting survival and often maintaining HR competency. Preclinical work in TNBC shows that PI3K inhibition downregulates BRCA1/2, induces HR impairment and sensitizes tumours to PARP inhibition; conversely, intact/high PI3K–AKT signalling tends to sustain HR and survival, favouring relative resistance to single-agent PARPi unless the pathway is co-inhibited. So for baseline tumour state: Up → more resistant; pharmacologic Down (with PI3K/AKT inhibitors) → sensitization. (PubMed)",
       "Administration_of_talazoparib": {
         "Before": {
           "Pathway_regulation": {

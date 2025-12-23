@@ -22,16 +22,31 @@
     "HALLMARK_E2F_TARGETS",
     "HALLMARK_G2M_CHECKPOINT",
     "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER",
-    "REACTOME_FGFR_LIGAND_BINDING_AND_ACTIVATION",
+    "REACTOME_FGFR1_LIGAND_BINDING_AND_ACTIVATION",
     "KEGG_MAPK_SIGNALING_PATHWAY",
     "HALLMARK_MYC_TARGETS_V1",
     "GOBP_CELLULAR_SENESCENCE",
     "HALLMARK_MTORC1_SIGNALING"
   ],
+  "pathways_sensitive_upregulated": [
+    "REACTOME_CELL_CYCLE",
+    "HALLMARK_E2F_TARGETS",
+    "GOBP_CELLULAR_SENESCENCE"
+  ],
+  "pathway_sensitive_downregulated": [],
+  "pathway_resistant_upregulated": [
+    "HALLMARK_G2M_CHECKPOINT",
+    "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER",
+    "REACTOME_FGFR1_LIGAND_BINDING_AND_ACTIVATION",
+    "KEGG_MAPK_SIGNALING_PATHWAY",
+    "HALLMARK_MYC_TARGETS_V1",
+    "HALLMARK_MTORC1_SIGNALING"
+  ],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "REACTOME_CELL_CYCLE": {
       "description": "Core pathway controlling cell-cycle progression, including the G1/S transition driven by cyclin D–CDK4/6 activity and RB phosphorylation.",
-      "interpretation": "Cell-cycle dysregulation drives proliferation in HR+ breast cancer; dependence on CDK4/6–RB–E2F axis underlies clinical utility of CDK4/6 inhibition.",
+      "interpretation": "Cell-cycle dysregulation drives proliferation in HR+ breast cancer; dependence on CDK4/6–RB–E2F axis underlies clinical utility of CDK4/6 inhibition.\n\nBaseline-focused rationale:\n- Palbociclib targets the cyclin D–CDK4/6 → RB → E2F axis; tumors with upregulated cell-cycle/CDK4/6 activity and intact RB are most likely to respond. (PubMed Central)",
       "Administration_of_palbociclib": {
         "Before": {
           "Pathway_regulation": {
@@ -101,7 +116,7 @@
     },
     "HALLMARK_E2F_TARGETS": {
       "description": "E2F transcriptional program supporting S-phase entry and DNA replication machinery.",
-      "interpretation": "E2F-driven transcription reflects proliferative state and RB pathway control in ER+ tumors; this proliferative program is central to tumor growth biology.",
+      "interpretation": "E2F-driven transcription reflects proliferative state and RB pathway control in ER+ tumors; this proliferative program is central to tumor growth biology.\n\nBaseline-focused rationale:\n- High baseline E2F-target expression reflects active RB phosphorylation and S-phase entry; CDK4/6 inhibition suppresses E2F-driven transcription, so high E2F dependency predicts vulnerability. (PubMed Central)",
       "Administration_of_palbociclib": {
         "Before": {
           "Pathway_regulation": {
@@ -171,7 +186,7 @@
     },
     "HALLMARK_G2M_CHECKPOINT": {
       "description": "Gene set controlling mitotic entry and G2/M progression, including mitotic regulators such as PLK1, Aurora kinases, and WEE1 as described in resistant contexts.",
-      "interpretation": "Activation of late cell-cycle programs can support continued proliferation and cell-cycle escape programs in breast cancer when upstream checkpoints are constrained.",
+      "interpretation": "Activation of late cell-cycle programs can support continued proliferation and cell-cycle escape programs in breast cancer when upstream checkpoints are constrained.\n\nBaseline-focused rationale:\n- Upregulation of G2/M drivers (PLK1, AURKs, WEE1) or cell-cycle plasticity permits bypass of G1 arrest and is a documented mechanism of CDK4/6i resistance. (PubMed Central)",
       "Administration_of_palbociclib": {
         "Before": {
           "Pathway_regulation": {
@@ -241,7 +256,7 @@
     },
     "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER": {
       "description": "Survival and growth signaling axis encompassing PI3K/AKT and downstream mTOR-related outputs.",
-      "interpretation": "PI3K/AKT/mTOR signaling provides pro-survival and proliferative inputs that can reduce reliance on cell-cycle checkpoint control in breast cancer.",
+      "interpretation": "PI3K/AKT/mTOR signaling provides pro-survival and proliferative inputs that can reduce reliance on cell-cycle checkpoint control in breast cancer.\n\nBaseline-focused rationale:\n- PI3K/AKT/mTOR activation provides pro-survival/proliferative signaling that can bypass CDK4/6 dependence; targeting PI3K/mTOR can restore sensitivity in some models. (PubMed Central)",
       "Administration_of_palbociclib": {
         "Before": {
           "Pathway_regulation": {
@@ -309,9 +324,9 @@
         }
       }
     },
-    "REACTOME_FGFR_LIGAND_BINDING_AND_ACTIVATION": {
+    "REACTOME_FGFR1_LIGAND_BINDING_AND_ACTIVATION": {
       "description": "FGFR pathway signaling that promotes proliferation and cyclin D-related growth programs (including FGFR1-associated signaling described in resistant models).",
-      "interpretation": "Growth-factor receptor signaling can sustain breast tumor proliferation by promoting cyclin D-linked programs and growth signaling.",
+      "interpretation": "Growth-factor receptor signaling can sustain breast tumor proliferation by promoting cyclin D-linked programs and growth signaling.\n\nBaseline-focused rationale:\n- FGFR1 amplification/activation sustains proliferation and mediates resistance to endocrine + CDK4/6 inhibitors; FGFR inhibition can reverse resistance in preclinical models. (PubMed)",
       "Administration_of_palbociclib": {
         "Before": {
           "Pathway_regulation": {
@@ -381,7 +396,7 @@
     },
     "KEGG_MAPK_SIGNALING_PATHWAY": {
       "description": "Growth-factor/MAPK signaling cascade (RAS–RAF–MEK–ERK) that increases cyclin D and supports proliferation, as described for MAPK cascade activity in resistant cells.",
-      "interpretation": "MAPK signaling is a major proliferative pathway in breast cancer and can support tumor growth through mitogenic transcription and cyclin regulation.",
+      "interpretation": "MAPK signaling is a major proliferative pathway in breast cancer and can support tumor growth through mitogenic transcription and cyclin regulation.\n\nBaseline-focused rationale:\n- RAS–RAF–MEK–ERK signaling increases cyclin D/E and can reactivate cell-cycle progression independent of CDK4/6, contributing to acquired resistance. (PubMed Central)",
       "Administration_of_palbociclib": {
         "Before": {
           "Pathway_regulation": {
@@ -451,7 +466,7 @@
     },
     "HALLMARK_MYC_TARGETS_V1": {
       "description": "c-MYC-associated transcriptional program (MYC target gene enrichment described in less responsive tumors).",
-      "interpretation": "MYC-driven transcription is associated with aggressive proliferative states in breast cancer biology, particularly in less responsive tumor contexts described.",
+      "interpretation": "MYC-driven transcription is associated with aggressive proliferative states in breast cancer biology, particularly in less responsive tumor contexts described.\n\nBaseline-focused rationale:\n- c-Myc activation represses miR-29b-3p and elevates CDK6 and other programs; MYC activation correlates with palbociclib insensitivity and combined targeting can restore sensitivity. (PubMed)",
       "Administration_of_palbociclib": {
         "Before": {
           "Pathway_regulation": {
@@ -521,7 +536,7 @@
     },
     "GOBP_CELLULAR_SENESCENCE": {
       "description": "Cellular senescence program characterized by senescence-like arrest and induction of senescence markers (e.g., p21Cip1 and p16INK4A described).",
-      "interpretation": "Senescence-like arrest represents a durable antiproliferative state relevant to therapeutic growth control in HR+ breast cancer models.",
+      "interpretation": "Senescence-like arrest represents a durable antiproliferative state relevant to therapeutic growth control in HR+ breast cancer models.\n\nBaseline-focused rationale:\n- Palbociclib commonly induces a senescence-like G0/G1 arrest in responsive cells. Whether baseline upregulated senescence markers predict sensitivity is context dependent; senescence can be reversible or produce SASP with mixed consequences. (PubMed)",
       "Administration_of_palbociclib": {
         "Before": {
           "Pathway_regulation": {
@@ -591,7 +606,7 @@
     },
     "HALLMARK_MTORC1_SIGNALING": {
       "description": "mTORC1-related signaling outputs; mTOR pathway components and mTORC1 targets were described as activated in resistant models.",
-      "interpretation": "mTOR signaling supports growth and metabolic programs that can maintain tumor cell fitness and proliferative capacity in breast cancer.",
+      "interpretation": "mTOR signaling supports growth and metabolic programs that can maintain tumor cell fitness and proliferative capacity in breast cancer.\n\nBaseline-focused rationale:\n- mTORC1 hyperactivation can enable escape from CDK4/6 inhibition and promote survival; conversely, sustained mTORC1 activity during arrest can promote irreversible senescence in some models. mTOR inhibitors can reverse resistance in certain preclinical/clinical contexts. (PubMed Central)",
       "Administration_of_palbociclib": {
         "Before": {
           "Pathway_regulation": {

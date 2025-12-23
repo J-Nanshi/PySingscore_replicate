@@ -31,10 +31,28 @@
     "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
     "HALLMARK_IL6_JAK_STAT3_SIGNALING"
   ],
+  "pathways_sensitive_upregulated": [
+    "REACTOME_ESTROGEN_BIOSYNTHESIS",
+    "REACTOME_ESTROGEN_DEPENDENT_GENE_EXPRESSION",
+    "WP_ESTROGEN_SIGNALING",
+    "REACTOME_METABOLISM_OF_STEROID_HORMONES",
+    "HALLMARK_ANDROGEN_RESPONSE"
+  ],
+  "pathway_sensitive_downregulated": [
+    "HALLMARK_APOPTOSIS"
+  ],
+  "pathway_resistant_upregulated": [
+    "KEGG_ERBB_SIGNALING_PATHWAY",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+    "HALLMARK_IL6_JAK_STAT3_SIGNALING"
+  ],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "REACTOME_ESTROGEN_BIOSYNTHESIS": {
       "description": "Covers enzymatic conversion of androgens to estrogens, including the aromatase (CYP19A1) step producing estrone/estradiol.",
-      "interpretation": "Provides the estrogen ligand supply that supports growth and transcriptional programs in ER+ breast cancer.",
+      "interpretation": "Provides the estrogen ligand supply that supports growth and transcriptional programs in ER+ breast cancer.\n\nBaseline-focused rationale:\n- ER+ breast tumors selected for Exemestane typically show active peripheral/intratumoral estrogen biosynthesis via aromatase (CYP19A1). High estrogen production makes the tumor dependent on this axis; irreversible aromatase blockade by Exemestane depletes estrogen and suppresses growth.",
       "Administration_of_exemestane": {
         "Before": {
           "Pathway_regulation": {
@@ -104,7 +122,7 @@
     },
     "REACTOME_ESTROGEN_DEPENDENT_GENE_EXPRESSION": {
       "description": "Represents estrogen-dependent transcriptional activation driven by estrogen receptor signaling programs that regulate downstream gene expression.",
-      "interpretation": "Sustains ER-driven proliferative gene programs in ER+ breast cancer that are central to endocrine dependence.",
+      "interpretation": "Sustains ER-driven proliferative gene programs in ER+ breast cancer that are central to endocrine dependence.\n\nBaseline-focused rationale:\n- Classical AI-sensitive tumors rely on ligand-dependent ERα signaling: high ER expression and ER-regulated transcription drive proliferation. Depriving estrogen with Exemestane shuts down this ESR pathway. ESR1 activating mutations or loss of ER reduce AI benefit and drive resistance.",
       "Administration_of_exemestane": {
         "Before": {
           "Pathway_regulation": {
@@ -174,7 +192,7 @@
     },
     "WP_ESTROGEN_SIGNALING": {
       "description": "Broad estrogen signaling encompassing nuclear (“genomic”) and membrane-associated (“non-genomic”) estrogen receptor pathways.",
-      "interpretation": "Key driver of ER-associated proliferation and differentiation programs in ER+ breast cancer.",
+      "interpretation": "Key driver of ER-associated proliferation and differentiation programs in ER+ breast cancer.\n\nBaseline-focused rationale:\n- Broad estrogen signaling (genomic nuclear ER and rapid non-genomic membrane ER effects) is typically active in hormone-dependent tumors. Exemestane indirectly suppresses both arms by lowering estrogen levels; high baseline estrogen signaling therefore predicts benefit.",
       "Administration_of_exemestane": {
         "Before": {
           "Pathway_regulation": {
@@ -244,7 +262,7 @@
     },
     "REACTOME_METABOLISM_OF_STEROID_HORMONES": {
       "description": "Steroid hormone metabolic network from cholesterol-derived intermediates through sex steroid production and interconversion.",
-      "interpretation": "Shapes the steroid hormone environment that influences ER-driven tumor biology and endocrine responsiveness.",
+      "interpretation": "Shapes the steroid hormone environment that influences ER-driven tumor biology and endocrine responsiveness.\n\nBaseline-focused rationale:\n- In postmenopausal HR+ breast cancer, steroid hormone metabolism is skewed toward local estrone/estradiol production from adrenal precursors. High activity of this estrogenic branch provides substrate for ER signaling and makes tumors more susceptible to aromatase inhibition with Exemestane.",
       "Administration_of_exemestane": {
         "Before": {
           "Pathway_regulation": {
@@ -314,7 +332,7 @@
     },
     "KEGG_ERBB_SIGNALING_PATHWAY": {
       "description": "Growth factor receptor signaling via ERBB family members (including EGFR/HER2) and downstream proliferative pathways (e.g., MAPK).",
-      "interpretation": "Can provide alternative proliferative/survival signaling that bypasses ER dependence in breast cancer.",
+      "interpretation": "Can provide alternative proliferative/survival signaling that bypasses ER dependence in breast cancer.\n\nBaseline-focused rationale:\n- Upregulated EGFR/HER2→MAPK signaling provides a ligand-independent growth/survival route that bypasses ER. In Exemestane-resistant models, Exemestane induces AREG, which stimulates EGFR–MAPK and sustains proliferation despite estrogen depletion; clinically, HER2/EGFR activation is a key endocrine-resistance mechanism.",
       "Administration_of_exemestane": {
         "Before": {
           "Pathway_regulation": {
@@ -384,7 +402,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "Core survival and growth signaling axis involving PI3K, AKT, and mTOR that regulates metabolism, protein synthesis, and proliferation.",
-      "interpretation": "A major pro-survival/proliferation program frequently activated in breast cancer and linked to endocrine escape mechanisms.",
+      "interpretation": "A major pro-survival/proliferation program frequently activated in breast cancer and linked to endocrine escape mechanisms.\n\nBaseline-focused rationale:\n- Constitutive PI3K/AKT/mTOR activation (PIK3CA mutation, PTEN loss, RTK activation) uncouples proliferation and survival from ER/estrogen, leading to intrinsic or acquired resistance to aromatase inhibitors. This underpins clinical benefit from combining endocrine therapy with mTOR (everolimus) or PI3K/AKT inhibitors in HR+ disease.",
       "Administration_of_exemestane": {
         "Before": {
           "Pathway_regulation": {
@@ -454,7 +472,7 @@
     },
     "HALLMARK_ANDROGEN_RESPONSE": {
       "description": "Gene-expression program induced by androgen receptor (AR) signaling and androgen-responsive transcriptional outputs.",
-      "interpretation": "Modulates endocrine biology in ER+ breast cancer and can interact with ER programs affecting tumor behavior.",
+      "interpretation": "Modulates endocrine biology in ER+ breast cancer and can interact with ER programs affecting tumor behavior.\n\nBaseline-focused rationale:\n- AR is co-expressed in ~70–80% of ER+ cancers and frequently marks luminal, lower-grade, endocrine-responsive disease. In this setting, moderate AR activity can antagonize ER-driven proliferation and is associated with better prognosis, although high AR/ER ratios or specific contexts can also contribute to resistance. Overall, AR-positive luminal tumors are generally suitable for AI therapy.",
       "Administration_of_exemestane": {
         "Before": {
           "Pathway_regulation": {
@@ -524,7 +542,7 @@
     },
     "HALLMARK_E2F_TARGETS": {
       "description": "E2F-driven transcriptional program controlling DNA replication and cell-cycle progression, reflecting active proliferation machinery.",
-      "interpretation": "Represents proliferation state and ER-linked cell-cycle control that is relevant to endocrine-dependent growth.",
+      "interpretation": "Represents proliferation state and ER-linked cell-cycle control that is relevant to endocrine-dependent growth.\n\nBaseline-focused rationale:\n- High G2M/E2F/Ki67 signatures reflect rapidly proliferating luminal B biology. Such tumors are often less durably controlled by AI monotherapy, show shorter time to treatment failure on AIs, and are more likely to need chemotherapy or combination targeted therapy. Strong down-regulation of this signature after short-term Exemestane is a good PD marker of sensitivity, but baseline high G2M/E2F tends to predict relative endocrine resistance.",
       "Administration_of_exemestane": {
         "Before": {
           "Pathway_regulation": {
@@ -594,7 +612,7 @@
     },
     "HALLMARK_APOPTOSIS": {
       "description": "Programmed cell death machinery and transcriptional outputs associated with apoptotic signaling cascades.",
-      "interpretation": "Apoptotic competence influences tumor cell fate under endocrine perturbation in ER+ breast cancer.",
+      "interpretation": "Apoptotic competence influences tumor cell fate under endocrine perturbation in ER+ breast cancer.\n\nBaseline-focused rationale:\n- The key determinant for AI benefit is capacity to induce apoptosis when ER signaling is withdrawn. In neoadjuvant AI studies, successful endocrine therapy leads to increased apoptotic index together with reduced Ki67; tumors that fail to upregulate apoptosis despite estrogen deprivation show poorer outcomes. Baseline pro-/anti-apoptotic balance is heterogeneous, but therapy-induced Apoptosis↑ is a marker of Exemestane sensitivity.[Up on-treatment (baseline direction not fixed)]",
       "Administration_of_exemestane": {
         "Before": {
           "Pathway_regulation": {
@@ -664,7 +682,7 @@
     },
     "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
       "description": "Transcriptional program associated with EMT, including loss of epithelial traits, increased motility, and invasive phenotypes.",
-      "interpretation": "Associated with invasion/metastasis and therapy resistance and can coincide with reduced estrogen dependence.",
+      "interpretation": "Associated with invasion/metastasis and therapy resistance and can coincide with reduced estrogen dependence.\n\nBaseline-focused rationale:\n- EMT programs (loss of epithelial markers, gain of mesenchymal/stem-like traits) confer invasion, metastatic potential, and broad drug resistance. EMT-high luminal tumors often show reduced ER dependence and worse response to endocrine therapies, including AIs.",
       "Administration_of_exemestane": {
         "Before": {
           "Pathway_regulation": {
@@ -734,7 +752,7 @@
     },
     "HALLMARK_IL6_JAK_STAT3_SIGNALING": {
       "description": "Cytokine-driven signaling program centered on IL-6 activation of JAK/STAT3 and downstream inflammatory transcriptional outputs.",
-      "interpretation": "Inflammatory and cytokine signaling can support survival and progression programs in breast cancer.",
+      "interpretation": "Inflammatory and cytokine signaling can support survival and progression programs in breast cancer.\n\nBaseline-focused rationale:\n- Chronic IL-6/JAK/STAT3 and TNF/NFκB signaling promotes a pro-inflammatory, pro-survival microenvironment, enhances stem-like features, and down-modulates ER signaling. Intratumoral inflammation signatures, high STAT3/NFκB activity, and cytokine-rich microenvironments have been linked to endocrine resistance and poorer outcomes in HR+ breast cancer.",
       "Administration_of_exemestane": {
         "Before": {
           "Pathway_regulation": {

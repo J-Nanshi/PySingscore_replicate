@@ -27,10 +27,27 @@
     "REACTOME_INTERFERON_GAMMA_SIGNALING",
     "REACTOME_APOPTOSIS"
   ],
+  "pathways_sensitive_upregulated": [
+    "GOBP_ESTROGEN_RECEPTOR_SIGNALING_PATHWAY",
+    "REACTOME_INTERFERON_GAMMA_SIGNALING",
+    "REACTOME_APOPTOSIS"
+  ],
+  "pathway_sensitive_downregulated": [],
+  "pathway_resistant_upregulated": [
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "KEGG_ERBB_SIGNALING_PATHWAY",
+    "KEGG_MAPK_SIGNALING_PATHWAY",
+    "BIOCARTA_NFKB_PATHWAY",
+    "GOBP_CELL_CYCLE_G1_S_PHASE_TRANSITION"
+  ],
+  "pathway_resistant_downregulated": [
+    "REACTOME_GPER1_SIGNALING",
+    "GOCC_RB_E2F_COMPLEX"
+  ],
   "pathway_sets_annotations": {
     "GOBP_ESTROGEN_RECEPTOR_SIGNALING_PATHWAY": {
       "description": "Estrogen receptor–driven signaling and transcriptional programs mediated by ERα (ESR1) (and to a lesser extent ERβ/ESR2) that promote luminal breast cancer growth.",
-      "interpretation": "ER-driven transcription is the core dependency in HR+ breast cancer that fulvestrant targets by degrading ERα and shutting down estrogen-responsive gene expression.",
+      "interpretation": "ER-driven transcription is the core dependency in HR+ breast cancer that fulvestrant targets by degrading ERα and shutting down estrogen-responsive gene expression.\n\nBaseline-focused rationale:\n- Tumors that depend on active ER signaling are more likely to respond to ER degradation by fulvestrant; if ER signaling is already low/down, the tumor is less ER-dependent and fulvestrant is less likely to produce benefit. (PubMed Central)",
       "Administration_of_fulvestrant": {
         "Before": {
           "Pathway_regulation": {
@@ -94,7 +111,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "PI3K–AKT–mTOR growth and survival signaling that can be hyperactivated in HR+ breast cancer (e.g., via PIK3CA mutations).",
-      "interpretation": "This pathway provides pro-survival signaling and reduced dependence on ER signaling, contributing to endocrine resistance in breast cancer.",
+      "interpretation": "This pathway provides pro-survival signaling and reduced dependence on ER signaling, contributing to endocrine resistance in breast cancer.\n\nBaseline-focused rationale:\n- Activating PIK3CA/PI3K–AKT signaling promotes cell survival and mediates endocrine (including fulvestrant) resistance; combining PI3K inhibitors with fulvestrant shows clinical benefit in PIK3CA-mutant disease. (PubMed)",
       "Administration_of_fulvestrant": {
         "Before": {
           "Pathway_regulation": {
@@ -164,7 +181,7 @@
     },
     "KEGG_ERBB_SIGNALING_PATHWAY": {
       "description": "ErbB/HER family receptor signaling (including HER2/ERBB2, ERBB3, ERBB4, and EGFR) that can drive proliferation and survival.",
-      "interpretation": "Growth factor receptor signaling can bypass ER blockade; ERBB-family upregulation is described as a resistance mechanism in the setting of endocrine blockade.",
+      "interpretation": "Growth factor receptor signaling can bypass ER blockade; ERBB-family upregulation is described as a resistance mechanism in the setting of endocrine blockade.\n\nBaseline-focused rationale:\n- Upregulated HER family signaling provides bypass survival/proliferation signals and can be induced after ER blockade (fulvestrant can increase ErbB3/HER2 expression), producing resistance unless co-targeted. (PubMed Central)",
       "Administration_of_fulvestrant": {
         "Before": {
           "Pathway_regulation": {
@@ -234,7 +251,7 @@
     },
     "KEGG_MAPK_SIGNALING_PATHWAY": {
       "description": "MAPK/ERK signaling downstream of growth factor receptors that sustains proliferative signaling.",
-      "interpretation": "MAPK/ERK activity can maintain proliferation and is described as increased in fulvestrant-resistant contexts.",
+      "interpretation": "MAPK/ERK activity can maintain proliferation and is described as increased in fulvestrant-resistant contexts.\n\nBaseline-focused rationale:\n- ERK pathway activation sustains proliferation and can circumvent ER loss; ERK activation correlates with fulvestrant resistance and combining ERK/MEK inhibition can restore sensitivity in models. (PubMed Central)",
       "Administration_of_fulvestrant": {
         "Before": {
           "Pathway_regulation": {
@@ -304,7 +321,7 @@
     },
     "BIOCARTA_NFKB_PATHWAY": {
       "description": "NF-κB survival signaling that drives anti-apoptotic gene expression in tumor cells.",
-      "interpretation": "Active NF-κB is associated with survival/resistance, while its suppression is described as important for fulvestrant-induced apoptosis.",
+      "interpretation": "Active NF-κB is associated with survival/resistance, while its suppression is described as important for fulvestrant-induced apoptosis.\n\nBaseline-focused rationale:\n- NF-κB drives expression of anti-apoptotic/pro-survival genes (e.g., BCL2 family); IRF1 induction suppresses NF-κB and promotes fulvestrant-induced apoptosis — active NF-κB therefore promotes resistance. (PubMed Central)",
       "Administration_of_fulvestrant": {
         "Before": {
           "Pathway_regulation": {
@@ -374,7 +391,7 @@
     },
     "REACTOME_GPER1_SIGNALING": {
       "description": "GPER1 (GPR30) signaling as an alternate membrane estrogen receptor pathway that can persist during fulvestrant treatment.",
-      "interpretation": "Loss of GPER1 signaling is described as associated with fulvestrant resistance; GPER1-mediated signaling may represent a potential resistance route during treatment.",
+      "interpretation": "Loss of GPER1 signaling is described as associated with fulvestrant resistance; GPER1-mediated signaling may represent a potential resistance route during treatment.\n\nBaseline-focused rationale:\n- Repression/loss of GPER1 has been linked experimentally to fulvestrant resistance (GPER modulation and epigenetic changes observed in resistant cell models). (PubMed Central)",
       "Administration_of_fulvestrant": {
         "Before": {
           "Pathway_regulation": {
@@ -444,7 +461,7 @@
     },
     "GOBP_CELL_CYCLE_G1_S_PHASE_TRANSITION": {
       "description": "Regulatory processes controlling G1 cell-cycle arrest and progression through the G1/S checkpoint, including Cyclin D–CDK4/6 and RB/E2F control noted in the source.",
-      "interpretation": "Fulvestrant efficacy is linked to inducing G1 arrest; upregulation of G1/S drivers (e.g., Cyclin D/CDK6 activity) is described as a mechanism that can overcome ER blockade.",
+      "interpretation": "Fulvestrant efficacy is linked to inducing G1 arrest; upregulation of G1/S drivers (e.g., Cyclin D/CDK6 activity) is described as a mechanism that can overcome ER blockade.\n\nBaseline-focused rationale:\n- Upregulation of CDK6 (and/or cyclin D/CDK4/6 axis) enables G1→S progression despite ER loss; high CDK6 correlates with shorter PFS on fulvestrant and combining CDK4/6 inhibitors with fulvestrant is effective clinically. (PubMed)",
       "Administration_of_fulvestrant": {
         "Before": {
           "Pathway_regulation": {
@@ -514,7 +531,7 @@
     },
     "GOCC_RB_E2F_COMPLEX": {
       "description": "RB/E2F control referenced as governing E2F target gene expression and the G1 checkpoint in breast cancer cells.",
-      "interpretation": "RB1 loss/downregulation is described as abrogating fulvestrant-induced G1 arrest, enabling unchecked proliferation despite ER loss.",
+      "interpretation": "RB1 loss/downregulation is described as abrogating fulvestrant-induced G1 arrest, enabling unchecked proliferation despite ER loss.\n\nBaseline-focused rationale:\n- RB1 loss abrogates the G1 checkpoint and undermines fulvestrant-induced G1 arrest; RB loss is associated with endocrine resistance. (PubMed Central)",
       "Administration_of_fulvestrant": {
         "Before": {
           "Pathway_regulation": {
@@ -584,7 +601,7 @@
     },
     "REACTOME_INTERFERON_GAMMA_SIGNALING": {
       "description": "IFNγ-driven signaling through STAT1 and IRF1 described as an immune/stress axis that can influence tumor apoptosis programs.",
-      "interpretation": "Activation of IFNγ–STAT1–IRF1 signaling is described as sensitizing breast cancer cells to fulvestrant by suppressing survival programs and promoting caspase-dependent apoptosis.",
+      "interpretation": "Activation of IFNγ–STAT1–IRF1 signaling is described as sensitizing breast cancer cells to fulvestrant by suppressing survival programs and promoting caspase-dependent apoptosis.\n\nBaseline-focused rationale:\n- IFNγ induces IRF1/STAT1 which suppresses NF-κB and anti-apoptotic BCL2 family members and promotes caspase activation — IRF1 activity restores fulvestrant sensitivity in resistant models. (PubMed)",
       "Administration_of_fulvestrant": {
         "Before": {
           "Pathway_regulation": {
@@ -654,7 +671,7 @@
     },
     "REACTOME_APOPTOSIS": {
       "description": "Apoptotic signaling described as caspase-dependent apoptosis activated as fulvestrant takes effect.",
-      "interpretation": "Apoptosis pathway activation is described as enhancing fulvestrant antitumor effect, particularly in ER+ tumor cells.",
+      "interpretation": "Apoptosis pathway activation is described as enhancing fulvestrant antitumor effect, particularly in ER+ tumor cells.\n\nBaseline-focused rationale:\n- Fulvestrant’s anti-tumor effect in ER+ cells involves induction of caspase-dependent apoptosis (IRF1/BAX/BAK mediated); active apoptotic machinery facilitates drug efficacy. (PubMed Central)",
       "Administration_of_fulvestrant": {
         "Before": {
           "Pathway_regulation": {

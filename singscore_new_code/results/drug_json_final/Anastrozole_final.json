@@ -27,10 +27,27 @@
     "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
     "HALLMARK_E2F_TARGETS"
   ],
+  "pathways_sensitive_upregulated": [
+    "HALLMARK_ESTROGEN_RESPONSE_LATE",
+    "KEGG_STEROID_HORMONE_BIOSYNTHESIS"
+  ],
+  "pathway_sensitive_downregulated": [
+    "HALLMARK_E2F_TARGETS"
+  ],
+  "pathway_resistant_upregulated": [
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "KEGG_ERBB_SIGNALING_PATHWAY",
+    "KEGG_MAPK_SIGNALING_PATHWAY",
+    "HALLMARK_FATTY_ACID_METABOLISM",
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+    "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+    "HALLMARK_TNFA_SIGNALING_VIA_NFKB"
+  ],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "HALLMARK_ESTROGEN_RESPONSE_LATE": {
       "description": "Estrogen receptor (ER)-mediated transcriptional program activated by estradiol in estrogen-responsive cells.",
-      "interpretation": "In HR+ breast cancer, this pathway reflects estrogen dependence; strong ER-driven transcription predicts sensitivity to aromatase inhibition, while loss or alteration of ER signaling is characteristic of endocrine resistance.",
+      "interpretation": "In HR+ breast cancer, this pathway reflects estrogen dependence; strong ER-driven transcription predicts sensitivity to aromatase inhibition, while loss or alteration of ER signaling is characteristic of endocrine resistance.\n\nBaseline-focused rationale:\n- Aromatase inhibitors (anastrozole) reduce peripheral estrogen → less ERα activation → loss of ER transcriptional program (estrogen response signatures fall) → growth suppression in ER+ tumours.",
       "Administration_of_anastrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -100,7 +117,7 @@
     },
     "KEGG_STEROID_HORMONE_BIOSYNTHESIS": {
       "description": "Steroid hormone biosynthesis pathway that includes aromatase-mediated conversion of androgens to estrogens.",
-      "interpretation": "Anastrozole directly inhibits aromatase within this pathway, suppressing estrogen production and thereby limiting growth of ER-dependent luminal breast cancers.",
+      "interpretation": "Anastrozole directly inhibits aromatase within this pathway, suppressing estrogen production and thereby limiting growth of ER-dependent luminal breast cancers.\n\nBaseline-focused rationale:\n- Anastrozole directly inhibits aromatase (CYP19A1), reducing conversion of androgens→estrogens → decreased steroid biosynthesis flux and tumour estrogen supply.",
       "Administration_of_anastrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -170,7 +187,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "PI3K–AKT–mTOR survival and growth signaling cascade downstream of growth factor receptors.",
-      "interpretation": "In HR+ breast cancer treated with anastrozole, hyperactivation of PI3K–AKT–mTOR provides an estrogen-independent escape route and is a hallmark of acquired resistance, especially in Luminal B and HER2-positive disease.",
+      "interpretation": "In HR+ breast cancer treated with anastrozole, hyperactivation of PI3K–AKT–mTOR provides an estrogen-independent escape route and is a hallmark of acquired resistance, especially in Luminal B and HER2-positive disease.\n\nBaseline-focused rationale:\n- PI3K/AKT/mTOR activation provides ER-independent proliferative/survival signalling and is a common escape mechanism from estrogen deprivation; PI3K pathway activation correlates with AI resistance and combining PI3K/mTOR inhibitors can re-sensitize.",
       "Administration_of_anastrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -240,7 +257,7 @@
     },
     "KEGG_ERBB_SIGNALING_PATHWAY": {
       "description": "ErbB family receptor tyrosine kinase signaling, including EGFR and HER2/ERBB2 and their downstream effectors.",
-      "interpretation": "Upregulated ErbB/HER2 signaling in HR+ breast tumors treated with anastrozole activates PI3K and MAPK pathways, driving estrogen-independent proliferation and endocrine resistance, particularly in HER2-positive cancers.",
+      "interpretation": "Upregulated ErbB/HER2 signaling in HR+ breast tumors treated with anastrozole activates PI3K and MAPK pathways, driving estrogen-independent proliferation and endocrine resistance, particularly in HER2-positive cancers.\n\nBaseline-focused rationale:\n- Upregulation or activation of RTKs (EGFR/HER2) stimulates downstream PI3K/MAPK signalling, bypassing ER blockade to support proliferation → associated with endocrine resistance.",
       "Administration_of_anastrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -310,7 +327,7 @@
     },
     "KEGG_MAPK_SIGNALING_PATHWAY": {
       "description": "Mitogen-activated protein kinase (MAPK) cascade activated by receptor tyrosine kinases and other upstream cues.",
-      "interpretation": "In anastrozole-treated HR+ breast cancer, MAPK activation via RTK cross-talk promotes proliferation despite estrogen deprivation and is frequently observed in AI-resistant tumors.",
+      "interpretation": "In anastrozole-treated HR+ breast cancer, MAPK activation via RTK cross-talk promotes proliferation despite estrogen deprivation and is frequently observed in AI-resistant tumors.\n\nBaseline-focused rationale:\n- MAPK (RAS→RAF→MEK→ERK) downstream of RTKs can drive cell-cycle and survival independent of ER; MAPK activation is observed in AI-resistant models and mediates growth despite estrogen deprivation.",
       "Administration_of_anastrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -380,7 +397,7 @@
     },
     "HALLMARK_FATTY_ACID_METABOLISM": {
       "description": "Fatty acid synthesis and metabolic pathways, including FASN-mediated lipogenesis.",
-      "interpretation": "Anastrozole stabilizes FASN and enhances fatty acid synthesis; upregulated fatty acid metabolism is linked to poorer outcomes and metabolic resistance in HR+ breast cancer on anastrozole.",
+      "interpretation": "Anastrozole stabilizes FASN and enhances fatty acid synthesis; upregulated fatty acid metabolism is linked to poorer outcomes and metabolic resistance in HR+ breast cancer on anastrozole.\n\nBaseline-focused rationale:\n- Anastrozole has been shown to increase FASN protein (via decreased ubiquitin-mediated degradation) in resistant models; high FASN correlates with worse outcome on anastrozole and can support growth/metabolic rewiring.",
       "Administration_of_anastrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -450,7 +467,7 @@
     },
     "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
       "description": "Interferon-γ–driven inflammatory and immune effector response program.",
-      "interpretation": "Because estrogen normally suppresses IFNγ signaling, anastrozole-mediated estrogen deprivation can restore IFNγ responses and antitumor immunity in luminal breast tumors, associating this pathway with endocrine sensitivity.",
+      "interpretation": "Because estrogen normally suppresses IFNγ signaling, anastrozole-mediated estrogen deprivation can restore IFNγ responses and antitumor immunity in luminal breast tumors, associating this pathway with endocrine sensitivity.\n\nBaseline-focused rationale:\n- Several studies show interferon-stimulated genes (ISGs) are constitutively upregulated in AI-resistant models (e.g., IFITM1, PLSCR1); in some contexts suppression of chronic ISG signalling can re-sensitize cells to estradiol-induced apoptosis. So IFN/ISG ↑ is associated with resistance biology in many reports — the relationship with immune activation is complex and context dependent.",
       "Administration_of_anastrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -520,7 +537,7 @@
     },
     "HALLMARK_IL6_JAK_STAT3_SIGNALING": {
       "description": "Cytokine IL-6 signaling through the JAK–STAT3 transcriptional pathway.",
-      "interpretation": "Estrogen suppresses IL-6; removal of estrogen with anastrozole may increase IL-6/JAK–STAT3 activity, which promotes survival signaling and contributes to acquired resistance to aromatase inhibition.",
+      "interpretation": "Estrogen suppresses IL-6; removal of estrogen with anastrozole may increase IL-6/JAK–STAT3 activity, which promotes survival signaling and contributes to acquired resistance to aromatase inhibition.\n\nBaseline-focused rationale:\n- IL-6 / STAT3 signalling promotes survival, invasion and can reprogram ER enhancers; IL-6/STAT3 activation has been implicated in endocrine resistance and metastasis — elevated IL-6/JAK-STAT often correlates with poorer response to endocrine therapy.",
       "Administration_of_anastrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -590,7 +607,7 @@
     },
     "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
       "description": "Tumor necrosis factor-α (TNFα)–induced NF-κB inflammatory signaling pathway.",
-      "interpretation": "Estrogen deprivation by anastrozole can enhance TNFα/NF-κB activity; chronic activation of this inflammatory program is implicated in inflammation-driven resistance to endocrine therapy.",
+      "interpretation": "Estrogen deprivation by anastrozole can enhance TNFα/NF-κB activity; chronic activation of this inflammatory program is implicated in inflammation-driven resistance to endocrine therapy.\n\nBaseline-focused rationale:\n- NF-κB activity can be released when ER is inhibited (ER↔NFκB antagonism); NF-κB drives inflammatory/prosurvival genes and has been repeatedly linked to endocrine resistance.",
       "Administration_of_anastrozole": {
         "Before": {
           "Pathway_regulation": {
@@ -660,7 +677,7 @@
     },
     "HALLMARK_E2F_TARGETS": {
       "description": "E2F-regulated genes controlling G1/S cell-cycle transition and DNA synthesis.",
-      "interpretation": "In anastrozole-responsive HR+ breast cancers, suppression of Cyclin D–CDK4/6 activity and RB phosphorylation downregulates E2F targets and enforces G1 arrest, whereas reactivation of E2F-driven transcription marks endocrine-resistant disease.",
+      "interpretation": "In anastrozole-responsive HR+ breast cancers, suppression of Cyclin D–CDK4/6 activity and RB phosphorylation downregulates E2F targets and enforces G1 arrest, whereas reactivation of E2F-driven transcription marks endocrine-resistant disease.\n\nBaseline-focused rationale:\n- Effective estrogen suppression causes G1 arrest (↓Cyclin D/CDK4/6 activity) → reduced E2F activity and S-phase gene expression (E2F targets fall). However, **E2F ↑ is a marker of",
       "Administration_of_anastrozole": {
         "Before": {
           "Pathway_regulation": {

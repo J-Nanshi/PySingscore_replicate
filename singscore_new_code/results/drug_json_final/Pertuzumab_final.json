@@ -31,10 +31,23 @@
     "GOBP_FC_GAMMA_RECEPTOR_SIGNALING_PATHWAY",
     "REACTOME_SIGNALING_BY_ERBB2_IN_CANCER"
   ],
+  "pathways_sensitive_upregulated": [
+    "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "KEGG_MAPK_SIGNALING_PATHWAY",
+    "HALLMARK_E2F_TARGETS",
+    "GOBP_FC_GAMMA_RECEPTOR_SIGNALING_PATHWAY",
+    "REACTOME_SIGNALING_BY_ERBB2_IN_CANCER"
+  ],
+  "pathway_sensitive_downregulated": [
+    "HALLMARK_APOPTOSIS"
+  ],
+  "pathway_resistant_upregulated": [],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2": {
       "description": "Represents signaling output driven by HER2 (ERBB2) overexpression, including receptor dimerization-dependent activation of downstream growth and survival pathways.",
-      "interpretation": "In HER2-positive breast cancer, HER2 overexpression drives oncogenic signaling programs that sustain proliferation and survival.",
+      "interpretation": "In HER2-positive breast cancer, HER2 overexpression drives oncogenic signaling programs that sustain proliferation and survival.\n\nBaseline-focused rationale:\n- HER2-amplified breast cancers show overexpression of HER2 and increased ligand-dependent HER2/HER3 and HER2/EGFR dimerization, driving strong ErbB signaling. Pertuzumab binds subdomain II of HER2 and blocks these heterodimers, especially HER2/HER3, shutting down downstream HER2-driven signaling. Tumors with high baseline HER2 activity are thus more likely to benefit from pertuzumab-containing regimens.",
       "Administration_of_pertuzumab": {
         "Before": {
           "Pathway_regulation": {
@@ -104,7 +117,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "Growth and survival signaling axis downstream of receptor tyrosine kinases, involving PI3K-mediated AKT activation and downstream pro-survival/metabolic programs.",
-      "interpretation": "PI3K/AKT signaling is a key downstream effector of HER2 activity in HER2-positive tumors and supports tumor cell survival and metabolism.",
+      "interpretation": "PI3K/AKT signaling is a key downstream effector of HER2 activity in HER2-positive tumors and supports tumor cell survival and metabolism.\n\nBaseline-focused rationale:\n- In HER2-positive breast cancer, HER2 overexpression leads to phosphorylation of HER2/HER3 and recruitment of PI3K, activating AKT and mTOR, a central survival/metabolic pathway. This hyperactivation is a hallmark of HER2 dependence and a key target of HER2 blockade. However, mutations in PIK3CA or PTEN loss can maintain PI3K–AKT activity even when HER2 is inhibited, contributing to primary or acquired resistance, so the relationship is “up → on-target but context-dependent sensitivity.”",
       "Administration_of_pertuzumab": {
         "Before": {
           "Pathway_regulation": {
@@ -174,7 +187,7 @@
     },
     "KEGG_MAPK_SIGNALING_PATHWAY": {
       "description": "Mitogen-activated protein kinase signaling cascade (e.g., RAS/RAF/MEK/ERK) that drives proliferation and differentiation downstream of receptor tyrosine kinases.",
-      "interpretation": "HER2-driven MAPK signaling contributes to mitogenic signaling and tumor proliferation in HER2-positive breast cancer.",
+      "interpretation": "HER2-driven MAPK signaling contributes to mitogenic signaling and tumor proliferation in HER2-positive breast cancer.\n\nBaseline-focused rationale:\n- Baseline HER2 overexpression can also activate RAS–RAF–MEK–ERK. Many HER2+ tumors rely on both PI3K and MAPK signaling; HER2 blockade (trastuzumab + pertuzumab) reduces ERK phosphorylation and mitogenic signaling. Tumors whose proliferation is strongly HER2→MAPK-driven tend to respond; however, MAPK-activating mutations can rewire dependence and drive resistance by shifting cells from AKT to MEK/ERK dependence independent of HER2.",
       "Administration_of_pertuzumab": {
         "Before": {
           "Pathway_regulation": {
@@ -244,7 +257,7 @@
     },
     "HALLMARK_E2F_TARGETS": {
       "description": "Transcriptional program associated with E2F activity and cell-cycle progression, reflecting proliferative signaling and G1/S transition.",
-      "interpretation": "E2F-driven cell-cycle transcription reflects proliferative output downstream of HER2/MAPK signaling and is relevant to tumor growth in HER2-positive disease.",
+      "interpretation": "E2F-driven cell-cycle transcription reflects proliferative output downstream of HER2/MAPK signaling and is relevant to tumor growth in HER2-positive disease.\n\nBaseline-focused rationale:\n- HER2+ breast cancers are typically highly proliferative, with elevated cyclin D/E, CDK2/4/6, and E2F target gene expression—reflected in high Ki-67 and cell-cycle gene-set enrichment. HER2 blockade (with pertuzumab ± trastuzumab and chemotherapy) induces G1 arrest and decreased proliferation. High baseline HER2-driven proliferation is a marker of an “oncogene-addicted” state in which perturbing HER2 yields large anti-proliferative effects.",
       "Administration_of_pertuzumab": {
         "Before": {
           "Pathway_regulation": {
@@ -314,7 +327,7 @@
     },
     "HALLMARK_APOPTOSIS": {
       "description": "Programmed cell death pathway activities, including caspase activation and pro-apoptotic signaling balance.",
-      "interpretation": "Apoptosis is a key tumor-suppressive process; shifts toward apoptosis occur when HER2-driven survival signaling is reduced.",
+      "interpretation": "Apoptosis is a key tumor-suppressive process; shifts toward apoptosis occur when HER2-driven survival signaling is reduced.\n\nBaseline-focused rationale:\n- HER2+ tumors commonly exhibit reduced pro-apoptotic signaling and increased anti-apoptotic factors (via PI3K–AKT and other survival pathways). This low baseline apoptosis reflects strong dependence on HER2-mediated survival cues. When HER2 is blocked by pertuzumab (often with trastuzumab and chemo), survival signals collapse, mitochondrial and caspase pathways are activated, and apoptosis increases. Tumors whose survival is tightly linked to HER2 signaling are more likely to undergo apoptosis and respond.",
       "Administration_of_pertuzumab": {
         "Before": {
           "Pathway_regulation": {
@@ -384,7 +397,7 @@
     },
     "GOBP_FC_GAMMA_RECEPTOR_SIGNALING_PATHWAY": {
       "description": "Immune effector signaling triggered by antibody Fc engagement of Fcγ receptors on immune cells, enabling cytotoxic responses such as ADCC.",
-      "interpretation": "Fcγ receptor signaling supports immune-mediated tumor killing when therapeutic antibodies engage immune effector cells.",
+      "interpretation": "Fcγ receptor signaling supports immune-mediated tumor killing when therapeutic antibodies engage immune effector cells.\n\nBaseline-focused rationale:\n- ADCC itself is triggered by the antibody, but baseline features like HER2 overexpression (high antigen density), NK-cell/monocyte infiltration, and activating FcγR polymorphisms (e.g., FCGR3A V158, FCGR2A H131) enhance ADCC once pertuzumab is administered. Tumors in immune-inflamed microenvironments with such FcγR/effector features are more likely to experience potent ADCC/ADCP and better clinical benefit from HER2 antibodies.",
       "Administration_of_pertuzumab": {
         "Before": {
           "Pathway_regulation": {
@@ -454,7 +467,7 @@
     },
     "REACTOME_SIGNALING_BY_ERBB2_IN_CANCER": {
       "description": "Cancer-relevant signaling downstream of ERBB2/HER2, integrating activation of pathways such as PI3K/AKT and MAPK that promote tumor growth and survival.",
-      "interpretation": "ERBB2 signaling is central to the oncogenic program of HER2-positive breast cancer and is directly relevant to therapeutic targeting.",
+      "interpretation": "ERBB2 signaling is central to the oncogenic program of HER2-positive breast cancer and is directly relevant to therapeutic targeting.\n\nBaseline-focused rationale:\n- The approved indication for pertuzumab (Perjeta) requires HER2-positive breast cancer (IHC 3+ or FISH-amplified). These tumors show a HER2-enriched transcriptional program and strong HER2-driven signaling. This baseline HER2+ subtype status is the major clinical selection criterion and strongly predicts benefit from pertuzumab-containing regimens such as CLEOPATRA (metastatic), NEOSPHERE and TRYPHAENA (neoadjuvant), and APHINITY (adjuvant).",
       "Administration_of_pertuzumab": {
         "Before": {
           "Pathway_regulation": {

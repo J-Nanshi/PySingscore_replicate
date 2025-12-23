@@ -42,10 +42,29 @@
     "HALLMARK_ANGIOGENESIS",
     "REACTOME_SIGNALING_BY_PDGF"
   ],
+  "pathways_sensitive_upregulated": [
+    "KEGG_VEGF_SIGNALING_PATHWAY",
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+    "HALLMARK_ANGIOGENESIS"
+  ],
+  "pathway_sensitive_downregulated": [
+    "REACTOME_SIGNALING_BY_PDGF"
+  ],
+  "pathway_resistant_upregulated": [
+    "HALLMARK_HYPOXIA",
+    "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION",
+    "REACTOME_SIGNALING_BY_NOTCH",
+    "SMID_BREAST_CANCER_BASAL_UP",
+    "PID_FGF_PATHWAY",
+    "REACTOME_TIE2_SIGNALING",
+    "REACTOME_SIGNALING_BY_MET",
+    "HALLMARK_IL6_JAK_STAT3_SIGNALING"
+  ],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "KEGG_VEGF_SIGNALING_PATHWAY": {
       "description": "VEGF-A/VEGFR1/VEGFR2-driven pro-angiogenic signaling that governs endothelial proliferation, migration, and new vessel sprouting in tumors.",
-      "interpretation": "In breast cancer, particularly VEGF-high and highly vascular TNBC/basal-like tumors, strong VEGF signaling drives angiogenesis and tumor growth; bevacizumab sensitivity is greatest when this pathway is dominant and effectively downregulated by VEGF-A neutralization.",
+      "interpretation": "In breast cancer, particularly VEGF-high and highly vascular TNBC/basal-like tumors, strong VEGF signaling drives angiogenesis and tumor growth; bevacizumab sensitivity is greatest when this pathway is dominant and effectively downregulated by VEGF-A neutralization.\n\nBaseline-focused rationale:\n- Breast tumors with high VEGF-A expression, VEGFR2 and microvessel density are strongly dependent on pathological angiogenesis. Bevacizumab neutralizes VEGF-A, normalizes/prunes vessels and limits perfusion; trials and biomarker studies in HER2-negative MBC and neoadjuvant settings indicate tumors with greater vascular density/angiogenic gene signatures derive more benefit from bevacizumab-containing regimens.",
       "Administration_of_bevacizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -115,7 +134,7 @@
     },
     "HALLMARK_HYPOXIA": {
       "description": "Hypoxia- and HIF-1α–driven transcriptional program, including markers such as HIF1A and CA9, activated in low-oxygen tumor regions.",
-      "interpretation": "In bevacizumab-treated breast tumors, anti-angiogenic pruning increases intratumoral hypoxia, stabilizing HIF-1α and inducing hypoxia-response genes that promote angiogenic rebound, EMT, MET activation and aggressive behavior, thereby contributing to acquired resistance.",
+      "interpretation": "In bevacizumab-treated breast tumors, anti-angiogenic pruning increases intratumoral hypoxia, stabilizing HIF-1α and inducing hypoxia-response genes that promote angiogenic rebound, EMT, MET activation and aggressive behavior, thereby contributing to acquired resistance.\n\nBaseline-focused rationale:\n- High HIF-1α and hypoxia signatures in breast cancer correlate with VEGF expression, aggressive biology and poor prognosis. In refractory breast cancer, bevacizumab can induce acute hypoxia with secretion of pro-angiogenic and pro-invasive cytokines, leading to early progression. Tumors already hypoxic at baseline are primed for this HIF-driven escape, so bevacizumab is less effective.",
       "Administration_of_bevacizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -185,7 +204,7 @@
     },
     "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
       "description": "EMT program characterized by induction of transcription factors such as TWIST1, SNAI1/SNAI2 and mesenchymal markers like vimentin (VIM) with loss of epithelial traits.",
-      "interpretation": "Following VEGF blockade in breast cancer, EMT gene upregulation enhances motility, apoptosis resistance, vessel co-option and metastatic dissemination, representing a key resistance mechanism to bevacizumab.",
+      "interpretation": "Following VEGF blockade in breast cancer, EMT gene upregulation enhances motility, apoptosis resistance, vessel co-option and metastatic dissemination, representing a key resistance mechanism to bevacizumab.\n\nBaseline-focused rationale:\n- EMT activation (loss of E-cadherin; upregulation of TWIST, SNAIL, vimentin) promotes invasion, metastasis and use of vessel co-option rather than sprouting angiogenesis. EMT-high breast tumors are less dependent on VEGF-driven neovascularization and more tolerant of hypoxia, so VEGF-A blockade with bevacizumab yields limited, often transient benefit and can select for more invasive clones.",
       "Administration_of_bevacizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -255,7 +274,7 @@
     },
     "REACTOME_SIGNALING_BY_NOTCH": {
       "description": "Notch receptor–ligand signaling (e.g., NOTCH1, JAG1, DLL4) regulating cell fate, stem cell maintenance and endothelial tip/stalk cell behavior.",
-      "interpretation": "Bevacizumab-resistant breast tumors show Notch pathway activation in both tumor and endothelial cells, supporting a stem-like cancer cell compartment and VEGF-independent, stable vasculature that undermine ongoing VEGF-A blockade.",
+      "interpretation": "Bevacizumab-resistant breast tumors show Notch pathway activation in both tumor and endothelial cells, supporting a stem-like cancer cell compartment and VEGF-independent, stable vasculature that undermine ongoing VEGF-A blockade.\n\nBaseline-focused rationale:\n- Notch (including DLL4–Notch) is a key regulator of tip/stalk endothelial cell fate and vessel maturation, and in tumor cells maintains stem-like properties. When Notch signaling is high at baseline, vessels and cancer stem cells can be supported in a relatively VEGF-independent manner. Anti-angiogenic resistance literature highlights Notch upregulation as a canonical escape pathway from VEGF blockade, implying bevacizumab will be less effective in Notch-high tumors (largely cross-cancer but mechanistically applicable to breast cancer).",
       "Administration_of_bevacizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -325,7 +344,7 @@
     },
     "SMID_BREAST_CANCER_BASAL_UP": {
       "description": "Basal-like breast cancer gene-set reflecting a stem-cell–associated, highly proliferative and often TNBC-linked transcriptional phenotype.",
-      "interpretation": "Basal-like and TNBC tumors frequently exhibit high VEGF expression, angiogenesis and immune activation, conferring notable initial sensitivity to bevacizumab, but they can adapt under therapy by shifting further toward basal/stemness and EMT programs that mediate resistance.",
+      "interpretation": "Basal-like and TNBC tumors frequently exhibit high VEGF expression, angiogenesis and immune activation, conferring notable initial sensitivity to bevacizumab, but they can adapt under therapy by shifting further toward basal/stemness and EMT programs that mediate resistance.\n\nBaseline-focused rationale:\n- Breast cancer stem-like cells (ALDH1^high, CD44^+/CD24^−, basal-like transcriptional programs) reside in hypoxic niches, exhibit high self-renewal, and are resistant to chemo- and radiotherapy. HIF-driven pathways promote the breast CSC phenotype. Tumors enriched in these populations at baseline can survive anti-angiogenic stress and re-seed the tumor after bevacizumab, leading to poor and short-lived responses.",
       "Administration_of_bevacizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -395,7 +414,7 @@
     },
     "PID_FGF_PATHWAY": {
       "description": "FGF2–FGFR signaling cascade promoting endothelial proliferation, survival and pericyte recruitment, acting as a potent alternative pro-angiogenic axis.",
-      "interpretation": "In breast cancer models, upregulation of FGF2/FGFR signaling under bevacizumab pressure restores angiogenesis and is correlated with poor response, while low baseline FGF2 or dual VEGF/FGF blockade is associated with improved bevacizumab activity.",
+      "interpretation": "In breast cancer models, upregulation of FGF2/FGFR signaling under bevacizumab pressure restores angiogenesis and is correlated with poor response, while low baseline FGF2 or dual VEGF/FGF blockade is associated with improved bevacizumab activity.\n\nBaseline-focused rationale:\n- In breast cancer, particularly in obesity-associated disease, high baseline FGF2 and FGFR signaling provide an alternative pro-angiogenic axis. Clinical and preclinical work from Jain’s group shows obesity promotes resistance to anti-VEGF therapy via upregulation of IL-6 and FGF2; blocking IL-6 or FGF2 restores sensitivity. Thus, an FGF2/FGFR-high baseline indicates that angiogenesis can be sustained despite VEGF-A neutralization by bevacizumab.",
       "Administration_of_bevacizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -465,7 +484,7 @@
     },
     "REACTOME_TIE2_SIGNALING": {
       "description": "Angiopoietin–Tie2 receptor signaling (e.g., ANGPT1/ANGPT2–TIE2) that modulates vessel stability, remodeling and interaction with Tie2-expressing myeloid cells.",
-      "interpretation": "During escape from bevacizumab in breast cancer, rising Angiopoietin-2 levels and Tie2-dependent recruitment of pro-angiogenic macrophages facilitate VEGF-independent vascular regrowth and immunosuppression, and high Ang2 has been linked to poor bevacizumab responses.",
+      "interpretation": "During escape from bevacizumab in breast cancer, rising Angiopoietin-2 levels and Tie2-dependent recruitment of pro-angiogenic macrophages facilitate VEGF-independent vascular regrowth and immunosuppression, and high Ang2 has been linked to poor bevacizumab responses.\n\nBaseline-focused rationale:\n- High baseline Ang2 and Tie2 (and Ang2^+ vessel density) in breast cancer correlate with lymph-node invasion, poorer survival and adverse outcomes in trials that included bevacizumab. Ang2 destabilizes vessels and recruits Tie2^+ macrophages, enabling vascular remodeling and immune suppression; persistent or rebound Ang2 undermines VEGF-A blockade. Thus, an Ang2/Tie2-high baseline is a marker of poor bevacizumab benefit.",
       "Administration_of_bevacizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -535,7 +554,7 @@
     },
     "REACTOME_SIGNALING_BY_MET": {
       "description": "HGF–c-MET receptor tyrosine kinase signaling controlling tumor cell proliferation, survival, motility and pro-angiogenic factor production.",
-      "interpretation": "Anti-VEGF–induced hypoxia in breast tumors upregulates HGF/c-MET signaling, which drives invasive escape, metastatic spread and VEGF-independent vascular support, making c-MET activation a prominent bevacizumab resistance pathway.",
+      "interpretation": "Anti-VEGF–induced hypoxia in breast tumors upregulates HGF/c-MET signaling, which drives invasive escape, metastatic spread and VEGF-independent vascular support, making c-MET activation a prominent bevacizumab resistance pathway.\n\nBaseline-focused rationale:\n- c-MET activation in breast cancer stimulates MAPK, PI3K-AKT and STAT3, drives EMT and invasion, and is associated with poor prognosis. Resistance-mechanism reviews identify HGF/c-MET as a key bypass route in tumors resistant to anti-VEGF therapy: under hypoxia, MET signaling is further induced and supports invasive escape and alternative angiogenesis. Baseline MET-high tumors are therefore less likely to respond durably to bevacizumab.",
       "Administration_of_bevacizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -605,7 +624,7 @@
     },
     "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
       "description": "Interferon-γ–driven immune activation program including Th1 chemokines (e.g., CXCL9, CXCL10), T-cell receptor signaling and antigen-presentation genes.",
-      "interpretation": "In HER2-negative and especially TNBC breast cancers, upregulated IFN-γ–related immune signatures and TIL-rich, T-cell–inflamed microenvironments are associated with better PFS and higher pathologic response when bevacizumab is added, as VEGF blockade relieves immunosuppression and enhances effector T-cell infiltration.",
+      "interpretation": "In HER2-negative and especially TNBC breast cancers, upregulated IFN-γ–related immune signatures and TIL-rich, T-cell–inflamed microenvironments are associated with better PFS and higher pathologic response when bevacizumab is added, as VEGF blockade relieves immunosuppression and enhances effector T-cell infiltration.\n\nBaseline-focused rationale:\n- Breast tumors with high baseline TILs and T-cell inflammatory signatures (e.g., many TNBCs) can benefit from vascular normalization: bevacizumab transiently reduces Ang2^+ vasculature, lowers hypoxia and interstitial pressure, and markedly increases CD4⁺/CD8⁺ T-cell and mature dendritic-cell infiltration. This suggests a T-cell–inflamed baseline microenvironment is favorable for bevacizumab-mediated immune enhancement and synergy with chemotherapy or ICIs.",
       "Administration_of_bevacizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -675,7 +694,7 @@
     },
     "HALLMARK_IL6_JAK_STAT3_SIGNALING": {
       "description": "IL-6–driven activation of JAK/STAT3 inflammatory signaling in tumor and stromal cells, promoting survival, cytokine production and pro-angiogenic gene expression.",
-      "interpretation": "In obese or inflammation-rich breast cancer microenvironments, IL-6/STAT3 upregulation sustains angiogenesis, recruits immunosuppressive myeloid cells and is specifically implicated in bevacizumab resistance, with IL-6 blockade restoring sensitivity in preclinical TNBC models.",
+      "interpretation": "In obese or inflammation-rich breast cancer microenvironments, IL-6/STAT3 upregulation sustains angiogenesis, recruits immunosuppressive myeloid cells and is specifically implicated in bevacizumab resistance, with IL-6 blockade restoring sensitivity in preclinical TNBC models.\n\nBaseline-focused rationale:\n- IL-6/STAT3 signaling drives a pro-angiogenic, immunosuppressive milieu through VEGF/FGF2 induction and recruitment of myeloid cells. In obesity-associated breast cancer, high baseline IL-6 and FGF2 levels were strongly associated with resistance to anti-VEGF therapy; IL-6 blockade normalized vessels and restored sensitivity in mouse models. Thus, an IL-6/STAT3-high baseline is a negative predictive factor for bevacizumab.",
       "Administration_of_bevacizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -745,7 +764,7 @@
     },
     "HALLMARK_ANGIOGENESIS": {
       "description": "Angiogenesis gene set representing coordinated expression of VEGF pathway components, endothelial markers and pro-angiogenic regulators.",
-      "interpretation": "Breast tumors with high HALLMARK_ANGIOGENESIS scores (e.g., VEGF-Ahigh, high microvessel density) are strongly angiogenesis-dependent and exhibit the greatest tumor regression and PFS benefit from bevacizumab, whereas angiogenesis-poor tumors show intrinsic non-response.",
+      "interpretation": "Breast tumors with high HALLMARK_ANGIOGENESIS scores (e.g., VEGF-Ahigh, high microvessel density) are strongly angiogenesis-dependent and exhibit the greatest tumor regression and PFS benefit from bevacizumab, whereas angiogenesis-poor tumors show intrinsic non-response.\n\nBaseline-focused rationale:\n- A high “angiogenesis” gene signature (e.g., VEGF, ANGPTL4, PECAM1, endothelial markers) at baseline indicates that tumor growth is tightly coupled to neovascularization. Breast cancer gene-expression studies and tissue-based angiogenesis markers show that angiogenesis-high tumors (high MVD/angiogenic profile) are more likely to benefit from bevacizumab-containing therapy than angiogenesis-low tumors.",
       "Administration_of_bevacizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -815,7 +834,7 @@
     },
     "REACTOME_SIGNALING_BY_PDGF": {
       "description": "PDGF–PDGFR signaling that stimulates pericyte recruitment, vessel maturation and additional pro-angiogenic support often cooperating with other growth factors.",
-      "interpretation": "In breast cancer, PDGF signaling acts as a supporting angiogenic route; PDGF-BB can synergize with FGF2 and contribute to VEGF-independent vascularization, so activation of PDGF pathways can participate in bevacizumab resistance, while their relative quiescence favors VEGF-addicted sensitivity.",
+      "interpretation": "In breast cancer, PDGF signaling acts as a supporting angiogenic route; PDGF-BB can synergize with FGF2 and contribute to VEGF-independent vascularization, so activation of PDGF pathways can participate in bevacizumab resistance, while their relative quiescence favors VEGF-addicted sensitivity.\n\nBaseline-focused rationale:\n- When alternative pro-angiogenic pathways (FGF2/FGFR, PDGFs, Ang2, PlGF) are low at baseline, VEGF-A is the dominant driver of angiogenesis. In this “VEGF-addicted but FGF/Ang2-quiet” setting, bevacizumab shuts down the main angiogenic axis and there are few bypass options, leading to better and more durable responses. This is essentially the inverse of biomarker profiles where high FGF2 or Ang2 predicts poor anti-VEGF benefit.",
       "Administration_of_bevacizumab": {
         "Before": {
           "Pathway_regulation": {

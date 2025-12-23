@@ -32,10 +32,25 @@
     "HALLMARK_ANGIOGENESIS",
     "KEGG_MEDICUS_REFERENCE_PDL_PD1_SHP_PI3K_SIGNALING_PATHWAY"
   ],
+  "pathways_sensitive_upregulated": [
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "HALLMARK_MTORC1_SIGNALING",
+    "WP_ESTROGEN_SIGNALING",
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_ANGIOGENESIS"
+  ],
+  "pathway_sensitive_downregulated": [],
+  "pathway_resistant_upregulated": [
+    "GOBP_PROCESS_UTILIZING_AUTOPHAGIC_MECHANISM",
+    "HALLMARK_MYC_TARGETS_V1",
+    "KEGG_MEDICUS_REFERENCE_IGF_IGF1R_PI3K_SIGNALING_PATHWAY",
+    "KEGG_MEDICUS_REFERENCE_PDL_PD1_SHP_PI3K_SIGNALING_PATHWAY"
+  ],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "Core growth and survival signaling cascade linking PI3K and AKT to mTOR, regulating proliferation, metabolism, and survival.",
-      "interpretation": "Frequently dysregulated in breast cancer (e.g., via PIK3CA mutation or PTEN loss) and implicated in proliferation and endocrine therapy resistance.",
+      "interpretation": "Frequently dysregulated in breast cancer (e.g., via PIK3CA mutation or PTEN loss) and implicated in proliferation and endocrine therapy resistance.\n\nBaseline-focused rationale:\n- Hyperactivation of PI3K/AKT/mTOR via PIK3CA mutation, PTEN loss, or RTK activation drives proliferation and endocrine resistance in HR+/HER2− and some TNBC tumors. Everolimus (mTORC1 inhibitor) is most effective when the tumor is addicted to this axis; low-activity PI3K/AKT/mTOR tumors derive less benefit. (PubMed)",
       "Administration_of_everolimus": {
         "Before": {
           "Pathway_regulation": {
@@ -105,7 +120,7 @@
     },
     "HALLMARK_MTORC1_SIGNALING": {
       "description": "mTORC1 downstream output program controlling cap-dependent translation, ribosomal biogenesis, and growth-related protein synthesis (e.g., via S6K and 4E-BP1).",
-      "interpretation": "Represents the translational and proliferative output of mTORC1 activity that supports breast tumor growth and cell-cycle progression.",
+      "interpretation": "Represents the translational and proliferative output of mTORC1 activity that supports breast tumor growth and cell-cycle progression.\n\nBaseline-focused rationale:\n- High mTORC1 output (p-S6K, p-4EBP1) marks tumors with strong translational drive and cell-cycle progression. Everolimus directly inhibits mTORC1; tumors with elevated baseline p-S6K/4EBP1 show greater growth suppression, while those with weak mTORC1 activity or activating mTOR mutations that blunt inhibition are less responsive. (Nature)",
       "Administration_of_everolimus": {
         "Before": {
           "Pathway_regulation": {
@@ -175,7 +190,7 @@
     },
     "WP_ESTROGEN_SIGNALING": {
       "description": "Estrogen receptor (ER) signaling program driving estrogen-responsive transcription and ER-dependent proliferation in hormone receptor-positive breast cancer.",
-      "interpretation": "A central dependency in HR+ breast cancer and a key axis of endocrine response/resistance with documented cross-talk to PI3K/AKT/mTOR signaling.",
+      "interpretation": "A central dependency in HR+ breast cancer and a key axis of endocrine response/resistance with documented cross-talk to PI3K/AKT/mTOR signaling.\n\nBaseline-focused rationale:\n- Tumors with a strong estrogen-response signature (HALLMARK_ESTROGEN_RESPONSE) are ER-driven and depend on ER signaling for growth. In this setting, everolimus plus endocrine therapy improves PFS by blocking mTORC1-mediated escape from endocrine therapy and by downregulating ER expression/activity. ER-negative or ER-pathway-low tumors show minimal benefit. (PubMed)",
       "Administration_of_everolimus": {
         "Before": {
           "Pathway_regulation": {
@@ -245,7 +260,7 @@
     },
     "HALLMARK_E2F_TARGETS": {
       "description": "E2F-regulated transcriptional program supporting DNA replication and cell-cycle progression (G1/S and S-phase gene expression).",
-      "interpretation": "Reflects proliferative cell-cycle activity in breast tumors and is modulated downstream of growth and translation control pathways.",
+      "interpretation": "Reflects proliferative cell-cycle activity in breast tumors and is modulated downstream of growth and translation control pathways.\n\nBaseline-focused rationale:\n- High E2F target expression (Cyclin E, DNA-replication genes, high Ki-67) indicates rapidly proliferating, mTORC1-dependent tumors. Everolimus causes G1 arrest and reduces E2F target expression; thus, tumors with high baseline proliferation signatures tend to have greater cell-cycle arrest and clinical benefit, whereas indolent/low-E2F tumors gain less. (Physiology Journals)",
       "Administration_of_everolimus": {
         "Before": {
           "Pathway_regulation": {
@@ -315,7 +330,7 @@
     },
     "GOBP_PROCESS_UTILIZING_AUTOPHAGIC_MECHANISM": {
       "description": "Autophagy-related cellular process enabling degradation and recycling of cellular components under stress conditions.",
-      "interpretation": "Acts as an adaptive stress-response program in breast cancer cells under therapeutic pressure and can support survival under mTORC1 inhibition.",
+      "interpretation": "Acts as an adaptive stress-response program in breast cancer cells under therapeutic pressure and can support survival under mTORC1 inhibition.\n\nBaseline-focused rationale:\n- mTORC1 normally suppresses autophagy. Tumors with high basal autophagy or strong autophagy induction under everolimus can recycle nutrients and clear damaged components, surviving mTORC1 blockade. Genetic or pharmacologic inhibition of autophagy (e.g., Beclin-1, LC3 modulation or agents like melittin) re-sensitizes breast-cancer cells to everolimus, supporting “autophagy-high” as a resistance state. (Physiology Journals)",
       "Administration_of_everolimus": {
         "Before": {
           "Pathway_regulation": {
@@ -385,7 +400,7 @@
     },
     "HALLMARK_MYC_TARGETS_V1": {
       "description": "MYC-driven transcriptional program regulating metabolism, biosynthesis, and proliferation-associated gene expression.",
-      "interpretation": "MYC pathway activity is implicated in sustaining growth programs that can bypass growth-inhibitory signaling constraints in breast cancer models under targeted therapy.",
+      "interpretation": "MYC pathway activity is implicated in sustaining growth programs that can bypass growth-inhibitory signaling constraints in breast cancer models under targeted therapy.\n\nBaseline-focused rationale:\n- Everolimus-resistant ER+ and long-term estrogen-deprived models frequently show MYC upregulation and dependency. High MYC or MYC-target signatures allow maintenance of growth and metabolism even when mTORC1 is inhibited. MYC inhibition or suppression re-sensitizes these cells to mTOR inhibitors, and high MYC expression in metastatic breast cancer correlates with poor response to everolimus. (PMC)",
       "Administration_of_everolimus": {
         "Before": {
           "Pathway_regulation": {
@@ -455,7 +470,7 @@
     },
     "KEGG_MEDICUS_REFERENCE_IGF_IGF1R_PI3K_SIGNALING_PATHWAY": {
       "description": "Growth-factor signaling from IGF ligands through IGF1R to PI3K/AKT pathway activation.",
-      "interpretation": "A growth-factor input into PI3K/AKT signaling that can be engaged as a compensatory route when downstream mTORC1 signaling is inhibited.",
+      "interpretation": "A growth-factor input into PI3K/AKT signaling that can be engaged as a compensatory route when downstream mTORC1 signaling is inhibited.\n\nBaseline-focused rationale:\n- Everolimus selectively inhibits mTORC1 but spares mTORC2. When upstream RTKs (IGF1R, EGFR, HER2/HER3) or PI3K are strongly active, mTORC1 inhibition relieves feedback, leading to AKT hyperactivation via mTORC2 and other routes. Tumors with strong RTK/AKT signaling at baseline or that rapidly ramp up AKT under therapy tend to maintain survival signaling and show clinical or acquired resistance to everolimus. (Wikipedia)",
       "Administration_of_everolimus": {
         "Before": {
           "Pathway_regulation": {
@@ -525,7 +540,7 @@
     },
     "HALLMARK_ANGIOGENESIS": {
       "description": "Angiogenesis program involving hypoxia-driven and VEGF-associated pathways that support neovascularization and tumor perfusion.",
-      "interpretation": "Tumor vascularization supports nutrient delivery and growth, and angiogenic signaling can influence tumor progression across breast cancer contexts.",
+      "interpretation": "Tumor vascularization supports nutrient delivery and growth, and angiogenic signaling can influence tumor progression across breast cancer contexts.\n\nBaseline-focused rationale:\n- Tumors with high STAT3 → HIF-1α → VEGF signaling are highly vascular and rely on pathological angiogenesis. Everolimus downregulates this axis, reducing VEGF production, microvessel density and, in some models, lymphangiogenesis. Angiogenesis-high tumors therefore have more “room” for everolimus to exert anti-angiogenic and growth-suppressive effects; where VEGF/HIF signaling is low or bypassed by alternative angiogenic pathways, this mechanism contributes less and resistance is more likely. (PMC)",
       "Administration_of_everolimus": {
         "Before": {
           "Pathway_regulation": {
@@ -595,7 +610,7 @@
     },
     "KEGG_MEDICUS_REFERENCE_PDL_PD1_SHP_PI3K_SIGNALING_PATHWAY": {
       "description": "Immune checkpoint signaling centered on the PD-1/PD-L1 axis associated with suppression of anti-tumor immune activity.",
-      "interpretation": "Immune evasion through checkpoint signaling is relevant to tumor microenvironment control in breast cancer, particularly in immune-infiltrated contexts.",
+      "interpretation": "Immune evasion through checkpoint signaling is relevant to tumor microenvironment control in breast cancer, particularly in immune-infiltrated contexts.\n\nBaseline-focused rationale:\n- In TNBC 4T1 models, everolimus monotherapy inhibited mTOR signaling but increased PD-L1 expression on intratumoral endothelial cells, reduced CD8⁺ T-cell infiltration and failed to control tumor growth. Combination with PD-1 blockade normalized vasculature, restored CD8⁺ infiltration, and overcame this resistance. Baseline or therapy-induced high PD-L1 and an immune-cold microenvironment therefore align with poor response to everolimus alone but may define candidates for everolimus + ICI combinations. (PubMed)",
       "Administration_of_everolimus": {
         "Before": {
           "Pathway_regulation": {

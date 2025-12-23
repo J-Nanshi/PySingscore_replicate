@@ -23,14 +23,27 @@
     "HALLMARK_G2M_CHECKPOINT",
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
     "HALLMARK_KRAS_SIGNALING_UP",
-    "REACTOME_CYCLIN_E_ASSOCIATED_EVENTS",
+    "REACTOME_CYCLIN_E_ASSOCIATED_EVENTS_DURING_G1_S_TRANSITION",
     "WU_APOPTOSIS_BY_CDKN1A_VIA_TP53",
     "REACTOME_ABERRANT_REGULATION_OF_MITOTIC_G1_S_TRANSITION_IN_CANCER_DUE_TO_RB1_DEFECTS"
   ],
+  "pathways_sensitive_upregulated": [
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_G2M_CHECKPOINT",
+    "WU_APOPTOSIS_BY_CDKN1A_VIA_TP53"
+  ],
+  "pathway_sensitive_downregulated": [],
+  "pathway_resistant_upregulated": [
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "HALLMARK_KRAS_SIGNALING_UP",
+    "REACTOME_CYCLIN_E_ASSOCIATED_EVENTS_DURING_G1_S_TRANSITION",
+    "REACTOME_ABERRANT_REGULATION_OF_MITOTIC_G1_S_TRANSITION_IN_CANCER_DUE_TO_RB1_DEFECTS"
+  ],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "HALLMARK_E2F_TARGETS": {
       "description": "Represents transcriptional programs driven by E2F that enable S-phase entry and DNA replication, regulated by RB1 phosphorylation status.",
-      "interpretation": "E2F-driven proliferation programs are central to HR+/HER2− breast cancer growth; suppressing E2F output via the CDK4/6–RB1 checkpoint is a key determinant of disease control with ribociclib-based therapy.",
+      "interpretation": "E2F-driven proliferation programs are central to HR+/HER2− breast cancer growth; suppressing E2F output via the CDK4/6–RB1 checkpoint is a key determinant of disease control with ribociclib-based therapy.\n\nBaseline-focused rationale:\n- Baseline high E2F-target expression indicates strong RB–E2F axis activity and CDK4/6 dependence. Ribociclib keeps RB1 hypophosphorylated and bound to E2F, shutting down E2F-driven transcription; tumors with strong E2F programs are therefore particularly vulnerable. (Cell)",
       "Administration_of_ribociclib": {
         "Before": {
           "Pathway_regulation": {
@@ -100,7 +113,7 @@
     },
     "HALLMARK_G2M_CHECKPOINT": {
       "description": "Encompasses genes controlling progression through G2 and mitosis, including mitotic regulators that rise in proliferating tumors.",
-      "interpretation": "G2/M activity reflects high proliferative throughput in breast cancer; downstream mitotic programs diminish when upstream G1/S entry is blocked, linking this pathway to tumor proliferation state.",
+      "interpretation": "G2/M activity reflects high proliferative throughput in breast cancer; downstream mitotic programs diminish when upstream G1/S entry is blocked, linking this pathway to tumor proliferation state.\n\nBaseline-focused rationale:\n- A high G2/M hallmark signature reflects overall high proliferation (Ki-67-high luminal tumors). Although CDK4/6 acts at G1, these tumors rely on rapid G1–S cycling; CDK4/6 blockade reduces entry into S and subsequent G2/M, leading to decreased mitotic gene expression and clinical benefit. (PMC)",
       "Administration_of_ribociclib": {
         "Before": {
           "Pathway_regulation": {
@@ -170,7 +183,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "A growth and survival signaling axis that promotes proliferation and anti-apoptotic programs downstream of PI3K and AKT through mTOR.",
-      "interpretation": "PI3K/AKT/mTOR signaling provides alternative growth and survival inputs in breast cancer and can reduce dependence on CDK4/6-mediated cell-cycle control, shaping therapeutic benefit and failure patterns.",
+      "interpretation": "PI3K/AKT/mTOR signaling provides alternative growth and survival inputs in breast cancer and can reduce dependence on CDK4/6-mediated cell-cycle control, shaping therapeutic benefit and failure patterns.\n\nBaseline-focused rationale:\n- Hyperactivation of PI3K–AKT–mTOR (PIK3CA mutation, PTEN loss, pathway-high signatures) provides alternative proliferative and survival signals that dampen reliance on CDK4/6–RB1 control. This is a recurrent mechanism of (often acquired) resistance to ET + CDK4/6i; dual targeting of PI3K/mTOR and CDK4/6 can overcome resistance in models. (PMC)",
       "Administration_of_ribociclib": {
         "Before": {
           "Pathway_regulation": {
@@ -240,7 +253,7 @@
     },
     "HALLMARK_KRAS_SIGNALING_UP": {
       "description": "Captures activation of MAPK/ERK-related signaling programs often driven by upstream receptor and growth-factor signaling inputs.",
-      "interpretation": "MAPK/ERK-linked signaling can sustain proliferative signaling in breast cancer and contribute to reduced reliance on CDK4/6–RB1 gating, affecting durability of response to CDK4/6 inhibition.",
+      "interpretation": "MAPK/ERK-linked signaling can sustain proliferative signaling in breast cancer and contribute to reduced reliance on CDK4/6–RB1 gating, affecting durability of response to CDK4/6 inhibition.\n\nBaseline-focused rationale:\n- Multiple studies show FGFR1 amplification and FGFR pathway activation (→ MAPK & PI3K signaling) as a mechanism of intrinsic/acquired resistance to ER-targeted therapy plus CDK4/6i (including ribociclib). FGFR activation sustains proliferation despite CDK4/6 blockade; FGFR or MAPK inhibitors can resensitize tumors. (PubMed)",
       "Administration_of_ribociclib": {
         "Before": {
           "Pathway_regulation": {
@@ -308,9 +321,9 @@
         }
       }
     },
-    "REACTOME_CYCLIN_E_ASSOCIATED_EVENTS": {
+    "REACTOME_CYCLIN_E_ASSOCIATED_EVENTS_DURING_G1_S_TRANSITION": {
       "description": "Represents Cyclin E–linked events controlling late G1 to S-phase entry and related transcriptional and replication programs.",
-      "interpretation": "Cyclin E/CDK2 activity can provide an alternative route to RB1 phosphorylation and S-phase entry in breast cancer, influencing how strongly tumors depend on cyclin D–CDK4/6 control.",
+      "interpretation": "Cyclin E/CDK2 activity can provide an alternative route to RB1 phosphorylation and S-phase entry in breast cancer, influencing how strongly tumors depend on cyclin D–CDK4/6 control.\n\nBaseline-focused rationale:\n- Overexpression or amplification of Cyclin E1 (CCNE1) and CDK2 activity can bypass CDK4/6 dependency, maintaining RB1 phosphorylation and G1–S progression even when CDK4/6 is inhibited. High Cyclin E1 consistently associates with poor response to CDK4/6i. (PMC)",
       "Administration_of_ribociclib": {
         "Before": {
           "Pathway_regulation": {
@@ -380,7 +393,7 @@
     },
     "WU_APOPTOSIS_BY_CDKN1A_VIA_TP53": {
       "description": "Reflects TP53–CDKN1A (p21) checkpoint signaling that can reinforce cell-cycle arrest and is discussed in the context of CDK4/6 inhibitor response.",
-      "interpretation": "TP53–p21 checkpoint integrity is relevant to breast cancer control under CDK4/6 inhibition because p21 levels correlate with ribociclib sensitivity and loss of this checkpoint is linked to reduced enforcement of arrest.",
+      "interpretation": "TP53–p21 checkpoint integrity is relevant to breast cancer control under CDK4/6 inhibition because p21 levels correlate with ribociclib sensitivity and loss of this checkpoint is linked to reduced enforcement of arrest.\n\nBaseline-focused rationale:\n- p21 is a CDK inhibitor that reinforces G1 arrest. Preclinical ER+ breast cancer models show ribociclib sensitivity proportional to p21 levels; CDK4/6i also liberate p21 from CDK4 complexes, allowing p21 to inhibit CDK2, deepening cell-cycle arrest. Very low p21 can accompany resistance. (PubMed)",
       "Administration_of_ribociclib": {
         "Before": {
           "Pathway_regulation": {
@@ -450,7 +463,7 @@
     },
     "REACTOME_ABERRANT_REGULATION_OF_MITOTIC_G1_S_TRANSITION_IN_CANCER_DUE_TO_RB1_DEFECTS": {
       "description": "Represents dysregulated G1/S control caused by RB1 defects, disrupting the RB1–E2F checkpoint that normally constrains S-phase entry.",
-      "interpretation": "RB1 defects undermine the central mechanistic node targeted by CDK4/6 inhibitors in breast cancer, limiting the ability of ribociclib to induce durable G1 arrest and thereby shaping intrinsic and acquired non-response.",
+      "interpretation": "RB1 defects undermine the central mechanistic node targeted by CDK4/6 inhibitors in breast cancer, limiting the ability of ribociclib to induce durable G1 arrest and thereby shaping intrinsic and acquired non-response.\n\nBaseline-focused rationale:\n- In ER+ breast cancer, p16 overexpression frequently signals RB1 pathway disruption. RB1-loss / p16-high tumors are intrinsically resistant to CDK4/6 inhibitors because the core CDK4/6–RB checkpoint is already disabled. However, p16-high with fully functional RB1 is not automatically resistant—RB status is the critical determinant. (ScienceDirect)",
       "Administration_of_ribociclib": {
         "Before": {
           "Pathway_regulation": {
@@ -656,5 +669,5 @@
     "HER2-negative early breast cancer at high risk of recurrence | Guidance | NICE",
     "[https://www.nice.org.uk/guidance/ta1086](https://www.nice.org.uk/guidance/ta1086)"
   ],
-  "notes": "Gene and pathway content was constrained to the provided ribociclib deep-research output. Some requested pathway-set names (e.g., WU_APOPTOSIS_BY_CDKN1A_VIA_TP53; REACTOME_CYCLIN_E_ASSOCIATED_EVENTS) were addressed only to the extent that TP53–p21 (CDKN1A) checkpoint and cyclin E/CDK2 mechanisms were explicitly discussed in the source. Source files:  "
+  "notes": "Gene and pathway content was constrained to the provided ribociclib deep-research output. Some requested pathway-set names (e.g., WU_APOPTOSIS_BY_CDKN1A_VIA_TP53; REACTOME_CYCLIN_E_ASSOCIATED_EVENTS_DURING_G1_S_TRANSITION) were addressed only to the extent that TP53–p21 (CDKN1A) checkpoint and cyclin E/CDK2 mechanisms were explicitly discussed in the source. Source files:  "
 }

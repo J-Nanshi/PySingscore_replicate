@@ -18,21 +18,39 @@
     "PARP3"
   ],
   "pathway_sets": [
-    "REACTOME_HOMOLOGOUS_RECOMBINATION",
+    "REACTOME_HDR_THROUGH_HOMOLOGOUS_RECOMBINATION_HRR",
     "REACTOME_NONHOMOLOGOUS_END_JOINING_NHEJ",
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
     "HALLMARK_INTERFERON_ALPHA_RESPONSE",
-    "REACTOME_ABCFAMILY_PROTEINS_MEDIATED_TRANSPORT",
+    "KEGG_ABC_TRANSPORTERS",
     "REACTOME_ACTIVATION_OF_ATR_IN_RESPONSE_TO_REPLICATION_STRESS",
     "HALLMARK_APOPTOSIS",
     "HALLMARK_P53_PATHWAY",
     "REACTOME_FANCONI_ANEMIA_PATHWAY",
     "REACTOME_BASE_EXCISION_REPAIR"
   ],
+  "pathways_sensitive_upregulated": [
+    "HALLMARK_INTERFERON_ALPHA_RESPONSE",
+    "HALLMARK_APOPTOSIS"
+  ],
+  "pathway_sensitive_downregulated": [
+    "REACTOME_HDR_THROUGH_HOMOLOGOUS_RECOMBINATION_HRR",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "REACTOME_FANCONI_ANEMIA_PATHWAY"
+  ],
+  "pathway_resistant_upregulated": [
+    "KEGG_ABC_TRANSPORTERS",
+    "REACTOME_ACTIVATION_OF_ATR_IN_RESPONSE_TO_REPLICATION_STRESS"
+  ],
+  "pathway_resistant_downregulated": [
+    "REACTOME_NONHOMOLOGOUS_END_JOINING_NHEJ",
+    "HALLMARK_P53_PATHWAY",
+    "REACTOME_BASE_EXCISION_REPAIR"
+  ],
   "pathway_sets_annotations": {
-    "REACTOME_HOMOLOGOUS_RECOMBINATION": {
+    "REACTOME_HDR_THROUGH_HOMOLOGOUS_RECOMBINATION_HRR": {
       "description": "High-fidelity double-strand break repair pathway requiring BRCA1/BRCA2 and other HR factors (e.g., RAD51) to repair replication-associated DNA damage.",
-      "interpretation": "Olaparib's therapeutic rationale in breast cancer is strongly tied to tumors with homologous recombination repair dysfunction (HRD) and the capacity (or lack thereof) to resolve DSBs created downstream of PARP inhibition; tumors can evolve adaptations that restore HR capacity.",
+      "interpretation": "Olaparib's therapeutic rationale in breast cancer is strongly tied to tumors with homologous recombination repair dysfunction (HRD) and the capacity (or lack thereof) to resolve DSBs created downstream of PARP inhibition; tumors can evolve adaptations that restore HR capacity.\n\nBaseline-focused rationale:\n- HER2-negative breast cancers with germline/somatic BRCA1/2 mutations or other HRR defects show homologous recombination deficiency (HRD). PARP1 inhibition and PARP-trapping create lesions that HRD cells cannot repair, leading to synthetic lethality and clear clinical benefit with olaparib (e.g., OlympiAD, OlympiA).",
       "Administration_of_olaparib": {
         "Before": {
           "Pathway_regulation": {
@@ -102,7 +120,7 @@
     },
     "REACTOME_NONHOMOLOGOUS_END_JOINING_NHEJ": {
       "description": "Error-prone DSB repair pathway influenced by 53BP1/RIF1/Shieldin-mediated control of DNA end resection and pathway choice between NHEJ vs HR.",
-      "interpretation": "Alterations in NHEJ pathway components can shift repair pathway choice and modulate the functional HR state in BRCA1-deficient contexts, impacting how tumors tolerate DNA lesions associated with PARP inhibition.",
+      "interpretation": "Alterations in NHEJ pathway components can shift repair pathway choice and modulate the functional HR state in BRCA1-deficient contexts, impacting how tumors tolerate DNA lesions associated with PARP inhibition.\n\nBaseline-focused rationale:\n- In BRCA1-deficient mammary tumors, loss of 53BP1/RIF1/Shieldin downregulates classical NHEJ and allows DNA end-resection and RAD51 loading, functionally restoring HRR and abrogating PARPi synthetic lethality. A BRCA1-mutant breast tumor with 53BP1/Shieldin-low NHEJ at baseline is therefore predicted to be less responsive to olaparib.",
       "Administration_of_olaparib": {
         "Before": {
           "Pathway_regulation": {
@@ -172,7 +190,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "Core growth/survival signaling axis (PI3K→AKT→mTOR) that promotes cellular survival programs and can influence DNA-damage tolerance and repair-associated transcriptional states.",
-      "interpretation": "This pathway is relevant to breast-cancer cell survival under genotoxic stress and is discussed as a compensatory survival network in the setting of PARP inhibition, providing rationale for combination strategies that co-target PI3K/AKT signaling in selected contexts.",
+      "interpretation": "This pathway is relevant to breast-cancer cell survival under genotoxic stress and is discussed as a compensatory survival network in the setting of PARP inhibition, providing rationale for combination strategies that co-target PI3K/AKT signaling in selected contexts.\n\nBaseline-focused rationale:\n- When PI3K–AKT–mTOR signaling is low or blocked (e.g. by PI3K inhibitors or other upstream blockade), BRCA1/2 expression and HRR capacity fall, creating a “BRCAness” phenotype in BRCA-wild-type TNBC. Such tumors become more reliant on PARP-mediated repair and are strongly sensitized to PARP inhibition, supporting olaparib (often in combination) in PI3K-low/BRCAness breast tumors.",
       "Administration_of_olaparib": {
         "Before": {
           "Pathway_regulation": {
@@ -242,7 +260,7 @@
     },
     "HALLMARK_INTERFERON_ALPHA_RESPONSE": {
       "description": "Type I interferon gene program reflecting innate immune activation, including interferon-stimulated genes downstream of cGAS-STING signaling.",
-      "interpretation": "PARP inhibitor-associated DNA damage can engage innate immune sensing pathways and Type I interferon signaling, supporting immune-mediated tumor control and providing rationale for combinations involving immunotherapy or STING-pathway activation (notably highlighted in BRCA-associated breast cancer models).",
+      "interpretation": "PARP inhibitor-associated DNA damage can engage innate immune sensing pathways and Type I interferon signaling, supporting immune-mediated tumor control and providing rationale for combinations involving immunotherapy or STING-pathway activation (notably highlighted in BRCA-associated breast cancer models).\n\nBaseline-focused rationale:\n- In BRCA-deficient TNBC models, olaparib-induced cytosolic DNA activates cGAS–STING and type I IFN, driving CD8⁺ T-cell recruitment. Tumors with an already inflamed, IFN-rich microenvironment or strong STING–IFN inducibility show greater dependence on immune-mediated tumor control and respond better to PARPi ± immunotherapy. A baseline IFN-α/IFN-I–high signature therefore supports olaparib sensitivity.",
       "Administration_of_olaparib": {
         "Before": {
           "Pathway_regulation": {
@@ -310,9 +328,9 @@
         }
       }
     },
-    "REACTOME_ABCFAMILY_PROTEINS_MEDIATED_TRANSPORT": {
+    "KEGG_ABC_TRANSPORTERS": {
       "description": "ATP-binding cassette (ABC) transporter-mediated drug transport/efflux processes (e.g., ABCB1/P-gp, ABCG2) that reduce intracellular exposure to substrates.",
-      "interpretation": "Drug-efflux mechanisms are a key pharmacologic determinant of tumor drug exposure and are highlighted as an important resistance-related process that can also drive cross-resistance with other agents.",
+      "interpretation": "Drug-efflux mechanisms are a key pharmacologic determinant of tumor drug exposure and are highlighted as an important resistance-related process that can also drive cross-resistance with other agents.\n\nBaseline-focused rationale:\n- Overexpression of ABC transporters (ABCB1/P-gp, ABCG2, etc.) increases efflux of olaparib, lowering intracellular drug levels. PARPi-resistance models (largely ovarian and prostate but mechanistically applicable) show that ABCB1 upregulation drives cross-resistance to olaparib and taxanes, and ABCB1 inhibition can restore sensitivity; a baseline MDR-high breast tumor is thus predicted to be olaparib-poor-responding.",
       "Administration_of_olaparib": {
         "Before": {
           "Pathway_regulation": {
@@ -382,7 +400,7 @@
     },
     "REACTOME_ACTIVATION_OF_ATR_IN_RESPONSE_TO_REPLICATION_STRESS": {
       "description": "Replication-stress response pathway centered on ATR-dependent checkpoint signaling (including CHK1) that stabilizes stalled replication forks and coordinates cell-cycle arrest/repair.",
-      "interpretation": "Because PARP inhibition induces replication stress and DNA lesions, ATR-mediated checkpoint activation is a major tumor stress-response pathway discussed in the report as relevant to how tumor cells survive ongoing DNA damage and as a combination target (e.g., ATR/DDR inhibition strategies).",
+      "interpretation": "Because PARP inhibition induces replication stress and DNA lesions, ATR-mediated checkpoint activation is a major tumor stress-response pathway discussed in the report as relevant to how tumor cells survive ongoing DNA damage and as a combination target (e.g., ATR/DDR inhibition strategies).\n\nBaseline-focused rationale:\n- PARP inhibition increases replication stress and reliance on ATR–CHK1 to pause the cell cycle and coordinate repair. Tumors with high ATR/CHK1 signaling can better stabilise stalled forks and repair damage, promoting survival and olaparib resistance; multiple studies show that ATR/CHK1 inhibition re-sensitises PARPi-resistant cells. Baseline ATR/CHK1-high status therefore predicts reduced olaparib efficacy unless co-targeted.",
       "Administration_of_olaparib": {
         "Before": {
           "Pathway_regulation": {
@@ -452,7 +470,7 @@
     },
     "HALLMARK_APOPTOSIS": {
       "description": "Programmed cell-death execution programs, including intrinsic apoptotic priming and pro-apoptotic effectors (e.g., BAX, PUMA, BIM) downstream of DNA damage signaling.",
-      "interpretation": "The report frames apoptosis competence as an important determinant of whether PARP-inhibitor-induced DNA damage culminates in irreversible tumor cell death, with subtype context noted (e.g., functional p53 in some ER+ settings; alternative death routes in p53-mutant tumors).",
+      "interpretation": "The report frames apoptosis competence as an important determinant of whether PARP-inhibitor-induced DNA damage culminates in irreversible tumor cell death, with subtype context noted (e.g., functional p53 in some ER+ settings; alternative death routes in p53-mutant tumors).\n\nBaseline-focused rationale:\n- For olaparib to produce tumor regression, DNA damage must be translated into apoptosis. Breast tumors with intact or heightened p53-dependent and p53-independent apoptotic signaling (e.g. higher BAX/PUMA, lower anti-apoptotic BCL-2) more readily undergo apoptosis after PARPi-induced DNA damage, favouring sensitivity. (Note: many gBRCA/TNBC tumors are TP53-mutant yet still respond; this is a probabilistic, not absolute, relationship.)",
       "Administration_of_olaparib": {
         "Before": {
           "Pathway_regulation": {
@@ -522,7 +540,7 @@
     },
     "HALLMARK_P53_PATHWAY": {
       "description": "p53-mediated DNA damage response program integrating checkpoint control and apoptosis induction following genotoxic stress.",
-      "interpretation": "The report emphasizes p53 pathway status as relevant to how tumors respond to accumulated DNA damage (cell-cycle arrest vs apoptosis vs tolerance), noting that p53 loss is common in TNBC and can influence damage tolerance and evolutionary routes under treatment pressure.",
+      "interpretation": "The report emphasizes p53 pathway status as relevant to how tumors respond to accumulated DNA damage (cell-cycle arrest vs apoptosis vs tolerance), noting that p53 loss is common in TNBC and can influence damage tolerance and evolutionary routes under treatment pressure.\n\nBaseline-focused rationale:\n- TP53 loss, common in TNBC, impairs DNA damage-induced apoptosis and G1/S checkpoint control, facilitating survival under genotoxic stress and enabling clonal evolution (e.g. HR restoration, FA/HR rewiring). While HRD TP53-mutant tumors can still show initial olaparib responses, TP53-deficient clones are more likely to tolerate ongoing damage and develop resistance; so baseline TP53 loss is a risk factor for poorer long-term benefit rather than an absolute contraindication.",
       "Administration_of_olaparib": {
         "Before": {
           "Pathway_regulation": {
@@ -592,7 +610,7 @@
     },
     "REACTOME_FANCONI_ANEMIA_PATHWAY": {
       "description": "Fanconi anemia DNA repair network that resolves interstrand crosslinks and interfaces with homologous recombination processes (e.g., via FANCA/FANCD2 and related factors).",
-      "interpretation": "FA pathway integrity is discussed as relevant to broader DNA repair vulnerability states in breast cancer (HRD/DDR deficiency contexts) that intersect with PARP inhibitor mechanisms.",
+      "interpretation": "FA pathway integrity is discussed as relevant to broader DNA repair vulnerability states in breast cancer (HRD/DDR deficiency contexts) that intersect with PARP inhibitor mechanisms.\n\nBaseline-focused rationale:\n- FA pathway genes (e.g. FANCA, FANCD2) coordinate repair of DNA interstrand crosslinks and interface with HR. FA-deficient cells are hypersensitive to PARPi and other DNA-damaging agents; FA dysfunction in solid tumors produces an HRD-like state (“BRCAness”), predicting sensitivity to olaparib in breast cancer by the same synthetic-lethal logic as BRCA1/2 loss.",
       "Administration_of_olaparib": {
         "Before": {
           "Pathway_regulation": {
@@ -662,7 +680,7 @@
     },
     "REACTOME_BASE_EXCISION_REPAIR": {
       "description": "Base excision repair/single-strand break repair processes in which PARP1/2 detect DNA damage and recruit repair factors via PARylation.",
-      "interpretation": "This is the direct mechanistic repair pathway perturbed by olaparib through PARP1/2 inhibition and PARP trapping, linking upstream repair blockade to downstream accumulation of cytotoxic lesions in susceptible tumor contexts.",
+      "interpretation": "This is the direct mechanistic repair pathway perturbed by olaparib through PARP1/2 inhibition and PARP trapping, linking upstream repair blockade to downstream accumulation of cytotoxic lesions in susceptible tumor contexts.\n\nBaseline-focused rationale:\n- If PARP1 itself is lost or catalytically inactivated in the tumor at baseline, olaparib cannot effectively trap PARP1 on DNA. This “loss of target” reduces PARP-trapping cytotoxicity and is a recognised mechanism of PARPi resistance, albeit often accompanied by some BER defects. Such tumors are predicted to be intrinsically less responsive to olaparib despite DNA repair abnormalities.",
       "Administration_of_olaparib": {
         "Before": {
           "Pathway_regulation": {

@@ -24,10 +24,20 @@
     "HALLMARK_KRAS_SIGNALING_UP",
     "HALLMARK_APOPTOSIS"
   ],
+  "pathways_sensitive_upregulated": [
+    "REACTOME_SIGNALING_BY_NTRKS",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "HALLMARK_KRAS_SIGNALING_UP"
+  ],
+  "pathway_sensitive_downregulated": [
+    "HALLMARK_APOPTOSIS"
+  ],
+  "pathway_resistant_upregulated": [],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "REACTOME_SIGNALING_BY_NTRKS": {
       "description": "Canonical TRK receptor signaling pathway (TRKA/TRKB/TRKC) and downstream effectors including PI3K/AKT and RAS/MAPK signaling modules.",
-      "interpretation": "In NTRK fusion–positive breast cancers (e.g., secretory carcinoma), TRK signaling is constitutively active and functions as a dominant oncogenic driver pathway.",
+      "interpretation": "In NTRK fusion–positive breast cancers (e.g., secretory carcinoma), TRK signaling is constitutively active and functions as a dominant oncogenic driver pathway.\n\nBaseline-focused rationale:\n- In secretory breast carcinoma (SBC) and rare other NTRK-fusion breast cancers, ETV6–NTRK3 or other NTRK fusions create a constitutively active TRK oncoprotein that drives proliferation and survival. Larotrectinib selectively inhibits TRKA/B/C, shutting down this pathway and producing high response rates irrespective of tumor histology.",
       "Administration_of_larotrectinib": {
         "Before": {
           "Pathway_regulation": {
@@ -97,7 +107,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "Core cell-survival and growth signaling program reflecting PI3K→AKT→mTOR pathway activity.",
-      "interpretation": "This pathway can be activated downstream of constitutively active TRK fusion signaling in NTRK fusion–positive tumors, supporting survival and proliferation programs in breast cancer contexts where the TRK axis is oncogenic.",
+      "interpretation": "This pathway can be activated downstream of constitutively active TRK fusion signaling in NTRK fusion–positive tumors, supporting survival and proliferation programs in breast cancer contexts where the TRK axis is oncogenic.\n\nBaseline-focused rationale:\n- Activated TRK receptors signal to PI3K–AKT–mTOR, promoting survival and resistance to apoptosis. In TRK-fusion models, larotrectinib acutely suppresses phospho-AKT/mTOR and induces tumor regression. However, many non-NTRK-driven breast cancers also have high PI3K/AKT, so this hallmark alone should not be used as a prescribing biomarker for larotrectinib.",
       "Administration_of_larotrectinib": {
         "Before": {
           "Pathway_regulation": {
@@ -167,7 +177,7 @@
     },
     "HALLMARK_KRAS_SIGNALING_UP": {
       "description": "Gene-expression program consistent with activation of the RAS–RAF–MEK–ERK (MAPK) cascade.",
-      "interpretation": "TRK fusion kinases can activate RAS/MAPK signaling; in breast cancers driven by NTRK fusions, MAPK pathway activity reflects a key proliferative output of the TRK oncogenic driver.",
+      "interpretation": "TRK fusion kinases can activate RAS/MAPK signaling; in breast cancers driven by NTRK fusions, MAPK pathway activity reflects a key proliferative output of the TRK oncogenic driver.\n\nBaseline-focused rationale:\n- TRK activation engages the RAS/MAPK cascade, driving proliferation. Preclinical TRK-fusion models show that larotrectinib inhibits downstream ERK phosphorylation together with PI3K/AKT, consistent with addiction of the MAPK arm to TRK signaling. However, MAPK activation is ubiquitous in breast cancer and is not specific for NTRK fusions.",
       "Administration_of_larotrectinib": {
         "Before": {
           "Pathway_regulation": {
@@ -237,7 +247,7 @@
     },
     "HALLMARK_APOPTOSIS": {
       "description": "Programmed cell death signaling and execution machinery reflected by apoptosis-associated gene expression.",
-      "interpretation": "Apoptosis is typically suppressed in cancer; in TRK-driven breast tumors, restoration of apoptotic signaling is a key biological consequence associated with effective blockade of the TRK oncogenic driver.",
+      "interpretation": "Apoptosis is typically suppressed in cancer; in TRK-driven breast tumors, restoration of apoptotic signaling is a key biological consequence associated with effective blockade of the TRK oncogenic driver.\n\nBaseline-focused rationale:\n- Oncogenic TRK signaling promotes cell survival and inhibits apoptosis. In TRK-fusion models and clinical biopsies, TRK inhibition (including larotrectinib) leads to increased apoptotic markers and tumor shrinkage. Nevertheless, low apoptosis is a general hallmark of malignancy and does not uniquely identify NTRK-fusion-positive breast cancer.",
       "Administration_of_larotrectinib": {
         "Before": {
           "Pathway_regulation": {

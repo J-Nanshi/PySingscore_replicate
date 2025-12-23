@@ -23,7 +23,7 @@
 "HALLMARK_G2M_CHECKPOINT",
 "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
 "HALLMARK_KRAS_SIGNALING_UP",
-"REACTOME_CYCLIN_E_ASSOCIATED_EVENTS",
+"REACTOME_CYCLIN_E_ASSOCIATED_EVENTS_DURING_G1_S_TRANSITION",
 "WU_APOPTOSIS_BY_CDKN1A_VIA_TP53",
 "REACTOME_ABERRANT_REGULATION_OF_MITOTIC_G1_S_TRANSITION_IN_CANCER_DUE_TO_RB1_DEFECTS"
 ],
@@ -44,7 +44,7 @@
 "description": "Captures activation of MAPK/ERK-related signaling programs often driven by upstream receptor and growth-factor signaling inputs.",
 "interpretation": "MAPK/ERK-linked signaling can sustain proliferative signaling in breast cancer and contribute to reduced reliance on CDK4/6–RB1 gating, affecting durability of response to CDK4/6 inhibition."
 },
-"REACTOME_CYCLIN_E_ASSOCIATED_EVENTS": {
+"REACTOME_CYCLIN_E_ASSOCIATED_EVENTS_DURING_G1_S_TRANSITION": {
 "description": "Represents Cyclin E–linked events controlling late G1 to S-phase entry and related transcriptional and replication programs.",
 "interpretation": "Cyclin E/CDK2 activity can provide an alternative route to RB1 phosphorylation and S-phase entry in breast cancer, influencing how strongly tumors depend on cyclin D–CDK4/6 control."
 },

@@ -28,10 +28,28 @@
     "REACTOME_SIGNALING_BY_HIPPO",
     "HALLMARK_G2M_CHECKPOINT"
   ],
+  "pathways_sensitive_upregulated": [
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_ESTROGEN_RESPONSE_EARLY",
+    "REACTOME_CYCLIN_D_ASSOCIATED_EVENTS_IN_G1"
+  ],
+  "pathway_sensitive_downregulated": [],
+  "pathway_resistant_upregulated": [
+    "REACTOME_CYCLIN_E_ASSOCIATED_EVENTS_DURING_G1_S_TRANSITION",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "REACTOME_SIGNALING_BY_FGFR1",
+    "KEGG_MEDICUS_REFERENCE_P16_CELL_CYCLE_G1_S",
+    "HALLMARK_G2M_CHECKPOINT"
+  ],
+  "pathway_resistant_downregulated": [
+    "REACTOME_ABERRANT_REGULATION_OF_MITOTIC_G1_S_TRANSITION_IN_CANCER_DUE_TO_RB1_DEFECTS",
+    "KEGG_MEDICUS_REFERENCE_PDL_PD1_SHP_PI3K_SIGNALING_PATHWAY",
+    "REACTOME_SIGNALING_BY_HIPPO"
+  ],
   "pathway_sets_annotations": {
     "HALLMARK_E2F_TARGETS": {
       "description": "Gene set representing E2F-regulated transcriptional programs that drive DNA replication and S-phase entry.",
-      "interpretation": "E2F output reflects the proliferative state governed by RB1; suppression of E2F targets is central to the cell-cycle control axis targeted by CDK4/6 inhibition in breast cancer.",
+      "interpretation": "E2F output reflects the proliferative state governed by RB1; suppression of E2F targets is central to the cell-cycle control axis targeted by CDK4/6 inhibition in breast cancer.\n\nBaseline-focused rationale:\n- In RB1-proficient tumors, CDK4/6-mediated RB phosphorylation releases E2F, inducing DNA replication genes (polymerases, MCMs, CDC6, etc.). Abemaciclib blocks RB phosphorylation, re-pressing E2F targets. Moderate to high E2F-target expression reflecting active but RB-dependent cycling tends to mark tumors that respond; extreme E2F activation via RB loss/c-MYC can bypass CDK4/6 and confer resistance.",
       "Administration_of_abemaciclib": {
         "Before": {
           "Pathway_regulation": {
@@ -101,7 +119,7 @@
     },
     "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
       "description": "Gene set capturing early transcriptional responses to estrogen receptor signaling.",
-      "interpretation": "Estrogen receptor signaling in luminal breast cancer upregulates proliferative programs including Cyclin D1, linking ER activity to CDK4/6-dependent G1 progression.",
+      "interpretation": "Estrogen receptor signaling in luminal breast cancer upregulates proliferative programs including Cyclin D1, linking ER activity to CDK4/6-dependent G1 progression.\n\nBaseline-focused rationale:\n- ER signaling induces CCND1 (cyclin D1) and promotes CDK4/6 activity. Luminal ER⁺/HER2– tumors with intact ER signaling and dependence on estrogen-driven cyclin D1 show the greatest benefit from ET + CDK4/6i; ET plus abemaciclib suppresses ER target genes and cell cycle. Loss of ER or an “ER-low/non-luminal” phenotype associates with poorer CDK4/6i benefit.",
       "Administration_of_abemaciclib": {
         "Before": {
           "Pathway_regulation": {
@@ -171,7 +189,7 @@
     },
     "REACTOME_CYCLIN_D_ASSOCIATED_EVENTS_IN_G1": {
       "description": "Reactome pathway describing Cyclin D–CDK4/6-driven regulation of G1 progression through RB1 phosphorylation.",
-      "interpretation": "This pathway captures the core G1 control module frequently engaged in ER-driven breast cancers, where cyclin D–CDK4/6 activity is a major determinant of proliferation.",
+      "interpretation": "This pathway captures the core G1 control module frequently engaged in ER-driven breast cancers, where cyclin D–CDK4/6 activity is a major determinant of proliferation.\n\nBaseline-focused rationale:\n- Overexpression/amplification of cyclin D1 (CCND1) or high CDK4/6 levels mark tumors that rely on this axis for RB phosphorylation and G1–S entry. Such tumors are particularly vulnerable to abemaciclib; pharmacologic CDK4/6 inhibition reduces pRb and arrests cells in G1.",
       "Administration_of_abemaciclib": {
         "Before": {
           "Pathway_regulation": {
@@ -241,7 +259,7 @@
     },
     "REACTOME_CYCLIN_E_ASSOCIATED_EVENTS_DURING_G1_S_TRANSITION": {
       "description": "Reactome pathway describing Cyclin E–CDK2-mediated events controlling the G1/S transition.",
-      "interpretation": "Cyclin E–CDK2 provides an alternative mechanism to promote S-phase entry and can maintain G1/S progression independent of cyclin D–CDK4/6 signaling.",
+      "interpretation": "Cyclin E–CDK2 provides an alternative mechanism to promote S-phase entry and can maintain G1/S progression independent of cyclin D–CDK4/6 signaling.\n\nBaseline-focused rationale:\n- Cyclin E–CDK2 can maintain RB phosphorylation and drive S-phase entry even when CDK4/6 is inhibited. Clinical and translational data show high CCNE1 expression associates with short PFS and resistance to palbociclib/abemaciclib; low CCNE1 correlates with better outcomes.",
       "Administration_of_abemaciclib": {
         "Before": {
           "Pathway_regulation": {
@@ -311,7 +329,7 @@
     },
     "REACTOME_ABERRANT_REGULATION_OF_MITOTIC_G1_S_TRANSITION_IN_CANCER_DUE_TO_RB1_DEFECTS": {
       "description": "Reactome pathway describing dysregulated G1/S control in cancer caused by RB1 defects.",
-      "interpretation": "RB1 dysfunction removes a key tumor-suppressive checkpoint in breast cancer, leading to uncontrolled G1/S transition and altering the relevance of RB1-dependent cell-cycle control.",
+      "interpretation": "RB1 dysfunction removes a key tumor-suppressive checkpoint in breast cancer, leading to uncontrolled G1/S transition and altering the relevance of RB1-dependent cell-cycle control.\n\nBaseline-focused rationale:\n- RB1 is the canonical target of CDK4/6i. Tumors with RB1 loss-of-function (genomic loss, truncating mutation, complete protein loss) fail to undergo G1 arrest with CDK4/6 blockade and are essentially insensitive to abemaciclib. RB1 loss is a well-described mechanism of both de novo and acquired CDK4/6i resistance.",
       "Administration_of_abemaciclib": {
         "Before": {
           "Pathway_regulation": {
@@ -381,7 +399,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "Gene set representing PI3K/AKT/mTOR pathway activity involved in growth, survival, and proliferation signaling.",
-      "interpretation": "PI3K/AKT/mTOR is frequently activated in HR+ breast cancers and can sustain growth and survival programs that intersect with cell-cycle control and therapy response.",
+      "interpretation": "PI3K/AKT/mTOR is frequently activated in HR+ breast cancers and can sustain growth and survival programs that intersect with cell-cycle control and therapy response.\n\nBaseline-focused rationale:\n- Activation of PI3K/AKT/mTOR supports cell growth and survival independent of cyclin D–CDK4/6, and is enriched in endocrine-resistant tumors. Functional proteomic and resistance-model studies show PI3K/AKT/mTOR upregulation in CDK4/6i-resistant breast cancer; dual CDK4/6 + PI3K/mTOR targeting can restore apoptosis and overcome resistance.",
       "Administration_of_abemaciclib": {
         "Before": {
           "Pathway_regulation": {
@@ -451,7 +469,7 @@
     },
     "REACTOME_SIGNALING_BY_FGFR1": {
       "description": "Reactome pathway describing signaling downstream of FGFR1 through MAPK and PI3K-related cascades.",
-      "interpretation": "FGFR1 pathway activation promotes proliferative and survival signaling in breast cancer and can drive endocrine resistance and alternative growth signaling networks.",
+      "interpretation": "FGFR1 pathway activation promotes proliferative and survival signaling in breast cancer and can drive endocrine resistance and alternative growth signaling networks.\n\nBaseline-focused rationale:\n- FGFR1 amplification and MAPK activation induce cyclins and CDK6, providing an alternative proliferative drive that bypasses CDK4/6 blockade. In ER⁺ breast cancer, FGFR1-altered models and patients show resistance to ET + CDK4/6i, which can be mitigated by FGFR inhibitors.",
       "Administration_of_abemaciclib": {
         "Before": {
           "Pathway_regulation": {
@@ -521,7 +539,7 @@
     },
     "KEGG_MEDICUS_REFERENCE_P16_CELL_CYCLE_G1_S": {
       "description": "KEGG Medicus reference pathway describing CDKN2A (p16INK4A) regulation of CDK4/6 and the G1/S transition.",
-      "interpretation": "p16INK4A is a key regulator of the G1 checkpoint; its expression patterns reflect underlying RB1–CDK4/6 axis status and cell-cycle control states in breast cancer.",
+      "interpretation": "p16INK4A is a key regulator of the G1 checkpoint; its expression patterns reflect underlying RB1–CDK4/6 axis status and cell-cycle control states in breast cancer.\n\nBaseline-focused rationale:\n- CDKN2A/p16^INK4A^ normally inhibits cyclin D–CDK4/6. In many HR⁺ breast cancers, loss of p16 is part of the oncogenic program and may mark CDK4/6 dependence and sensitivity; conversely, high p16 frequently accompanies RB1 dysfunction or other cell-cycle rewiring, correlating with poor response to CDK4/6i in several datasets and xenograft models. Thus “p16 up” is generally a red flag for resistance when it reflects an abnormal RB loop.",
       "Administration_of_abemaciclib": {
         "Before": {
           "Pathway_regulation": {
@@ -591,7 +609,7 @@
     },
     "KEGG_MEDICUS_REFERENCE_PDL_PD1_SHP_PI3K_SIGNALING_PATHWAY": {
       "description": "KEGG Medicus reference pathway describing PD-1/PD-L1 checkpoint signaling via SHP phosphatases and PI3K-related signaling in immune contexts.",
-      "interpretation": "This pathway represents immune checkpoint regulation that can shape the tumor microenvironment and antitumor immune activity relevant to breast cancer treatment responses.",
+      "interpretation": "This pathway represents immune checkpoint regulation that can shape the tumor microenvironment and antitumor immune activity relevant to breast cancer treatment responses.\n\nBaseline-focused rationale:\n- CDK4/6 inhibition (including abemaciclib) modulates the tumor immune microenvironment, increasing antigen presentation and T-cell infiltration but also inducing PD-L1 upregulation as a negative feedback. This PD-L1 increase is treatment-associated, not a classic baseline selection marker; it may limit long-term responses unless combined with immune checkpoint blockade. Upregulation is primarily post-treatment/adaptive (CDK4/6i-induced PD-L1 on tumor and immune cells)",
       "Administration_of_abemaciclib": {
         "Before": {
           "Pathway_regulation": {
@@ -661,7 +679,7 @@
     },
     "REACTOME_SIGNALING_BY_HIPPO": {
       "description": "Reactome pathway describing Hippo tumor suppressor signaling controlling YAP/TAZ-driven transcription and proliferation programs.",
-      "interpretation": "Hippo pathway integrity restrains proliferative signaling; disruption (e.g., via FAT1 loss) can increase proliferative drivers such as CDK6 and cyclins in breast cancer.",
+      "interpretation": "Hippo pathway integrity restrains proliferative signaling; disruption (e.g., via FAT1 loss) can increase proliferative drivers such as CDK6 and cyclins in breast cancer.\n\nBaseline-focused rationale:\n- Loss of FAT1 impairs Hippo tumor-suppressor signaling, leading to nuclear YAP/TAZ accumulation and transcriptional upregulation of CDK6 and other proliferative genes. Functional genomics screens and clinical correlates in ER⁺ breast cancer show FAT1 and other Hippo alterations as recurrent drivers of CDK4/6i resistance.",
       "Administration_of_abemaciclib": {
         "Before": {
           "Pathway_regulation": {
@@ -731,7 +749,7 @@
     },
     "HALLMARK_G2M_CHECKPOINT": {
       "description": "Gene set representing regulation of the G2/M checkpoint and mitotic progression programs.",
-      "interpretation": "G2/M checkpoint and mitotic gene expression tracks overall proliferation programs in breast tumors and is coupled to broader cell-cycle activity states relevant to therapeutic control of growth.",
+      "interpretation": "G2/M checkpoint and mitotic gene expression tracks overall proliferation programs in breast tumors and is coupled to broader cell-cycle activity states relevant to therapeutic control of growth.\n\nBaseline-focused rationale:\n- TK1 activity reflects S-phase flux and is downstream of CDK4/6–RB–E2F signaling. Patients starting CDK4/6i + ET with high baseline TK1 but showing a robust early decline in TK1 activity have better PFS; persistent or rising TK1 on therapy marks early progression. Thus TK1 is best viewed as a pharmacodynamic marker, with baseline high proliferation compatible with sensitivity but on-treatment decrease being the key favorable sign.",
       "Administration_of_abemaciclib": {
         "Before": {
           "Pathway_regulation": {

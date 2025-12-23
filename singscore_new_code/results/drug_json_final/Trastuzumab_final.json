@@ -45,10 +45,28 @@
     "HALLMARK_IL6_JAK_STAT3_SIGNALING",
     "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION"
   ],
+  "pathways_sensitive_upregulated": [
+    "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2",
+    "KEGG_MAPK_SIGNALING_PATHWAY",
+    "HALLMARK_E2F_TARGETS",
+    "GOBP_FC_GAMMA_RECEPTOR_SIGNALING_PATHWAY",
+    "KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY"
+  ],
+  "pathway_sensitive_downregulated": [],
+  "pathway_resistant_upregulated": [
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "HALLMARK_ANGIOGENESIS",
+    "HALLMARK_NOTCH_SIGNALING",
+    "HALLMARK_IL6_JAK_STAT3_SIGNALING",
+    "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION"
+  ],
+  "pathway_resistant_downregulated": [
+    "HALLMARK_APOPTOSIS"
+  ],
   "pathway_sets_annotations": {
     "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2": {
       "description": "Represents oncogenic HER2 (ERBB2) receptor signaling driven by HER2 overexpression/amplification, including receptor activation and downstream proliferative/survival signaling outputs.",
-      "interpretation": "HER2-driven signaling is a key dependency in HER2-amplified breast cancer and is the central disease driver that trastuzumab targets at the receptor level.",
+      "interpretation": "HER2-driven signaling is a key dependency in HER2-amplified breast cancer and is the central disease driver that trastuzumab targets at the receptor level.\n\nBaseline-focused rationale:\n- Trastuzumab only works when HER2 is overexpressed and functionally drives growth. High HER2 amplification/overexpression is required for benefit; persistence of HER2 signaling via truncated p95-HER2 or alternative dimer partners can blunt response. (PMC)",
       "Administration_of_trastuzumab": {
         "Before": {
           "Pathway_regulation": {
@@ -118,7 +136,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "Core survival and growth signaling axis downstream of receptor tyrosine kinases, integrating PI3K, AKT, and mTOR activity to promote proliferation and resistance to cell death.",
-      "interpretation": "PI3K/AKT/mTOR pathway activity is a major determinant of tumor survival in HER2+ breast cancer and is highlighted as a critical bypass/resistance axis when it remains active despite HER2 blockade.",
+      "interpretation": "PI3K/AKT/mTOR pathway activity is a major determinant of tumor survival in HER2+ breast cancer and is highlighted as a critical bypass/resistance axis when it remains active despite HER2 blockade.\n\nBaseline-focused rationale:\n- When PI3K/AKT is constitutively activated downstream (PIK3CA mutation, PTEN loss), cells bypass HER2 dependence and show poorer response to trastuzumab; tumors with intact/less-activated PI3K/AKT are more trastuzumab-sensitive. (PMC)",
       "Administration_of_trastuzumab": {
         "Before": {
           "Pathway_regulation": {
@@ -188,7 +206,7 @@
     },
     "KEGG_MAPK_SIGNALING_PATHWAY": {
       "description": "Mitogenic signaling cascade (RAS/RAF/MEK/ERK) that transduces growth factor receptor inputs into transcriptional programs that drive proliferation and differentiation.",
-      "interpretation": "MAPK signaling functions as a major HER2-linked growth pathway supporting tumor proliferation; sustained MAPK signaling is noted as a contributor to reduced response.",
+      "interpretation": "MAPK signaling functions as a major HER2-linked growth pathway supporting tumor proliferation; sustained MAPK signaling is noted as a contributor to reduced response.\n\nBaseline-focused rationale:\n- HER2 overexpression drives MAPK and PI3K pathways. If MAPK activity falls when HER2 is blocked, tumors are HER2-dependent and respond. If MAPK remains high because of RAS/RAF or other lesions, trastuzumab has limited effect. (Wikipedia)",
       "Administration_of_trastuzumab": {
         "Before": {
           "Pathway_regulation": {
@@ -258,7 +276,7 @@
     },
     "HALLMARK_E2F_TARGETS": {
       "description": "Gene program reflecting E2F-driven transcription required for S-phase entry and DNA replication, typically downstream of RB phosphorylation and cell-cycle progression.",
-      "interpretation": "E2F target activity serves as a proliferation readout in HER2+ tumors; trastuzumab’s anti-proliferative effects are linked to cell-cycle arrest and reduced proliferation-associated gene expression.",
+      "interpretation": "E2F target activity serves as a proliferation readout in HER2+ tumors; trastuzumab’s anti-proliferative effects are linked to cell-cycle arrest and reduced proliferation-associated gene expression.\n\nBaseline-focused rationale:\n- Baseline HER2+ tumors show strong proliferation. Trastuzumab’s anti-proliferative effect relies on upregulating p27Kip1 and inducing sustained G1 arrest. Tumors with intact p27 and Rb can arrest and are more sensitive; loss of p27 or hyperactive cyclin E/CDK2 uncouples cell cycle from HER2 and mediates resistance. (PubMed)",
       "Administration_of_trastuzumab": {
         "Before": {
           "Pathway_regulation": {
@@ -328,7 +346,7 @@
     },
     "HALLMARK_APOPTOSIS": {
       "description": "Programs governing intrinsic and extrinsic apoptotic signaling that execute regulated cell death through caspase activation and death receptor/mitochondrial pathways.",
-      "interpretation": "Apoptotic competence is relevant to HER2 blockade because trastuzumab can sensitize HER2+ tumor cells to apoptotic death, whereas anti-apoptotic signaling is described in resistant states.",
+      "interpretation": "Apoptotic competence is relevant to HER2 blockade because trastuzumab can sensitize HER2+ tumor cells to apoptotic death, whereas anti-apoptotic signaling is described in resistant states.\n\nBaseline-focused rationale:\n- HER2+ tumors frequently upregulate survival pathways and anti-apoptotic proteins. Trastuzumab contributes to growth inhibition and apoptosis; if apoptotic pathways (e.g. p53, death receptors, caspases) remain at least partly intact, cells can undergo apoptosis after HER2 blockade. Highly anti-apoptotic phenotypes (e.g. strong STAT3/BCL-2/survivin signaling) favor resistance. (PMC)",
       "Administration_of_trastuzumab": {
         "Before": {
           "Pathway_regulation": {
@@ -398,7 +416,7 @@
     },
     "GOBP_FC_GAMMA_RECEPTOR_SIGNALING_PATHWAY": {
       "description": "Immune effector signaling initiated by Fcγ receptor engagement on immune cells, triggering activation cascades that promote antibody-dependent cytotoxic and phagocytic responses.",
-      "interpretation": "Fcγ receptor signaling underlies trastuzumab’s immune mechanism (ADCC) and is described as an important component of effective tumor clearance in HER2+ disease.",
+      "interpretation": "Fcγ receptor signaling underlies trastuzumab’s immune mechanism (ADCC) and is described as an important component of effective tumor clearance in HER2+ disease.\n\nBaseline-focused rationale:\n- Trastuzumab-coated HER2+ cells are killed via ADCC when Fcγ receptors on NK/effector cells function well. High-affinity FCGR2A/FCGR3A genotypes and strong in-vitro ADCC correlate with better clinical benefit; impaired FcγR signaling or immunosuppressive TME reduces trastuzumab efficacy. (PMC)",
       "Administration_of_trastuzumab": {
         "Before": {
           "Pathway_regulation": {
@@ -468,7 +486,7 @@
     },
     "KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY": {
       "description": "NK cell activation and cytotoxic effector mechanisms (including perforin/granzyme-mediated killing) that eliminate antibody-opsonized target cells.",
-      "interpretation": "NK-mediated cytotoxicity is mechanistically tied to trastuzumab-driven ADCC and is described as correlating with response when robust immune activation is present.",
+      "interpretation": "NK-mediated cytotoxicity is mechanistically tied to trastuzumab-driven ADCC and is described as correlating with response when robust immune activation is present.\n\nBaseline-focused rationale:\n- NK cells are the main effectors of trastuzumab-mediated ADCC. Robust NK activity (perforin/granzyme, cytotoxic gene signatures) supports anti-HER2 antibody efficacy, whereas low NK activity or suppressive TME limits benefit. (ScienceDirect)",
       "Administration_of_trastuzumab": {
         "Before": {
           "Pathway_regulation": {
@@ -538,7 +556,7 @@
     },
     "HALLMARK_ANGIOGENESIS": {
       "description": "Gene program reflecting angiogenic signaling and neovascularization processes that support tumor perfusion, growth, and progression.",
-      "interpretation": "Angiogenesis is described as a tumor-supportive process that can be inhibited by trastuzumab and may counteract therapy when high.",
+      "interpretation": "Angiogenesis is described as a tumor-supportive process that can be inhibited by trastuzumab and may counteract therapy when high.\n\nBaseline-focused rationale:\n- HER2 overexpression upregulates VEGF and other angiogenic factors, contributing to aggressive behavior and poor prognosis; trastuzumab can reduce VEGF expression and angiogenesis, but high VEGF/angiogenic signatures often associate with worse outcomes and have motivated dual HER2 + VEGF blockade approaches. (PubMed)",
       "Administration_of_trastuzumab": {
         "Before": {
           "Pathway_regulation": {
@@ -608,7 +626,7 @@
     },
     "HALLMARK_NOTCH_SIGNALING": {
       "description": "Developmental signaling pathway controlling cell fate, stemness, and survival via NOTCH receptor activation and downstream transcriptional programs.",
-      "interpretation": "Notch signaling is described as a compensatory survival/stemness pathway that can increase after HER2 blockade and contribute to resistance biology.",
+      "interpretation": "Notch signaling is described as a compensatory survival/stemness pathway that can increase after HER2 blockade and contribute to resistance biology.\n\nBaseline-focused rationale:\n- Upregulation of Jagged1/Notch1 and STAT3 is a well-characterized mechanism of trastuzumab resistance. Trastuzumab itself can induce Jagged1/Notch/STAT3 activation in some contexts, leading to increased stemness, survival, and angiogenesis; blocking this axis can resensitize tumors. (AACR Journals)",
       "Administration_of_trastuzumab": {
         "Before": {
           "Pathway_regulation": {
@@ -678,7 +696,7 @@
     },
     "HALLMARK_IL6_JAK_STAT3_SIGNALING": {
       "description": "Cytokine-driven signaling axis in which IL-6 activates JAK kinases and STAT3 transcriptional programs that promote inflammation, survival, and immune regulation.",
-      "interpretation": "IL-6/JAK/STAT3 signaling is described as implicated in resistance and survival programs (often linked with Notch/STAT3 and inflammatory signaling) in the trastuzumab context.",
+      "interpretation": "IL-6/JAK/STAT3 signaling is described as implicated in resistance and survival programs (often linked with Notch/STAT3 and inflammatory signaling) in the trastuzumab context.\n\nBaseline-focused rationale:\n- IL-6–JAK–STAT3 loops feed into STAT3 activation, promoting proliferation, survival, and angiogenesis. Elevated IL-6/JAK–STAT3 is frequently reported in HER2+ trastuzumab-resistant models and contributes to maintenance of resistant clones. (Frontiers)",
       "Administration_of_trastuzumab": {
         "Before": {
           "Pathway_regulation": {
@@ -748,7 +766,7 @@
     },
     "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
       "description": "Phenotypic transition program involving loss of epithelial features and gain of mesenchymal traits, associated with invasiveness, stem-like behavior, and therapy resistance.",
-      "interpretation": "EMT is described as linked to a stem-like, trastuzumab-resistant phenotype and is noted as relevant even if not a direct trastuzumab target pathway.",
+      "interpretation": "EMT is described as linked to a stem-like, trastuzumab-resistant phenotype and is noted as relevant even if not a direct trastuzumab target pathway.\n\nBaseline-focused rationale:\n- HER2+ tumors with EMT-like, stem-cell–like features show reduced trastuzumab sensitivity. TGF-β-driven EMT and vasculogenic mimicry have been linked to acquired trastuzumab resistance; epithelial, less-EMT tumors tend to respond better. (jcancer.org)",
       "Administration_of_trastuzumab": {
         "Before": {
           "Pathway_regulation": {

@@ -31,10 +31,20 @@
     "HALLMARK_G2M_CHECKPOINT",
     "PID_RET_PATHWAY"
   ],
+  "pathways_sensitive_upregulated": [
+    "KEGG_MEDICUS_VARIANT_RET_FUSION_KINASE_TO_RAS_ERK_SIGNALING_PATHWAY",
+    "KEGG_MEDICUS_VARIANT_MUTATION_ACTIVATED_RET_TO_PI3K_SIGNALING_PATHWAY",
+    "HALLMARK_E2F_TARGETS",
+    "HALLMARK_G2M_CHECKPOINT",
+    "PID_RET_PATHWAY"
+  ],
+  "pathway_sensitive_downregulated": [],
+  "pathway_resistant_upregulated": [],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "KEGG_MEDICUS_VARIANT_RET_FUSION_KINASE_TO_RAS_ERK_SIGNALING_PATHWAY": {
       "description": "Constitutively active RET fusions drive downstream RAS/MAPK (MAPK/ERK) signaling.",
-      "interpretation": "RET fusion–driven MAPK/ERK signaling is a core proliferative pathway in RET-altered breast cancers and is a major downstream axis of oncogenic RET activity.",
+      "interpretation": "RET fusion–driven MAPK/ERK signaling is a core proliferative pathway in RET-altered breast cancers and is a major downstream axis of oncogenic RET activity.\n\nBaseline-focused rationale:\n- RET signaling in ER⁺ BC activates MAPK and promotes endocrine resistance; RET fusions/overexpression act as oncogenic drivers, and selpercatinib provides deep and durable responses in RET-altered tumors (including a complete response in RET-fusion BC). A high KRAS/MAPK hallmark score mainly reflects RET pathway hyperactivation rather than intrinsic resistance, so these tumors are expected to be sensitive to selpercatinib.",
       "Administration_of_selpercatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -104,7 +114,7 @@
     },
     "KEGG_MEDICUS_VARIANT_MUTATION_ACTIVATED_RET_TO_PI3K_SIGNALING_PATHWAY": {
       "description": "Activated RET triggers downstream PI3K/AKT signaling that supports tumor cell survival and growth.",
-      "interpretation": "PI3K/AKT signaling is a key survival pathway downstream of RET activation in RET-driven breast cancer contexts.",
+      "interpretation": "PI3K/AKT signaling is a key survival pathway downstream of RET activation in RET-driven breast cancer contexts.\n\nBaseline-focused rationale:\n- RET activation can converge on mTOR/p70S6K and PI3K/AKT in ER⁺ BC, contributing to endocrine resistance. In non-breast RET-driven models, AKT–mTOR pathway upregulation is a mechanism of acquired resistance to selpercatinib that can be overcome with mTOR inhibition, suggesting that PI3K/AKT/mTOR hyperactivation not fully dependent on RET limits RET-TKI efficacy. In ER⁺ BC, co-targeting PI3K/AKT/mTOR (e.g. with everolimus or PI3Ki) plus endocrine therapy is already standard in some settings, so PI3K-high/RET-high tumors may need combinatorial approaches rather than selpercatinib alone.",
       "Administration_of_selpercatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -174,7 +184,7 @@
     },
     "HALLMARK_E2F_TARGETS": {
       "description": "Cell-cycle transcriptional program driven by E2F-associated genes linked to proliferation.",
-      "interpretation": "E2F-driven cell-cycle activity reflects proliferative state in breast cancer models and is reported as suppressed in endocrine-resistant ER+ models upon RET inhibition.",
+      "interpretation": "E2F-driven cell-cycle activity reflects proliferative state in breast cancer models and is reported as suppressed in endocrine-resistant ER+ models upon RET inhibition.\n\nBaseline-focused rationale:\n- In ER⁺ BC models resistant to combined CDK4/6i + endocrine therapy, RET is upregulated; gene-set analysis shows enrichment of E2F targets and other proliferation programs. RET knockdown or pharmacologic inhibition (including selpercatinib in combination with CDK4/6i) reduces cell growth partly by downregulating E2F-controlled cell-cycle genes, making high E2F activity more of a RET-driven vulnerability than a resistance marker.",
       "Administration_of_selpercatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -244,7 +254,7 @@
     },
     "HALLMARK_G2M_CHECKPOINT": {
       "description": "Gene program associated with G2/M checkpoint control and mitotic progression.",
-      "interpretation": "G2/M checkpoint regulators contribute to mitotic progression in breast cancer models and are reported as suppressed in resistant ER+ cell lines upon selpercatinib treatment.",
+      "interpretation": "G2/M checkpoint regulators contribute to mitotic progression in breast cancer models and are reported as suppressed in resistant ER+ cell lines upon selpercatinib treatment.\n\nBaseline-focused rationale:\n- High G2/M pathway activity is associated with aggressive, metastatic-prone breast cancers. In CDK4/6i+ET-resistant ER⁺ models, RET overexpression sustains growth; RET knockdown enriches for downregulation of Hallmark G2M checkpoint and blocks G2–M progression. RET inhibition with selpercatinib plus CDK4/6i/fulvestrant resensitizes these models, indicating that tumors with G2/M-high, RET-driven proliferation can be sensitive to RET targeting.",
       "Administration_of_selpercatinib": {
         "Before": {
           "Pathway_regulation": {
@@ -314,7 +324,7 @@
     },
     "PID_RET_PATHWAY": {
       "description": "RET (rearranged during transfection) receptor tyrosine kinase signaling pathway.",
-      "interpretation": "Aberrant RET activity (fusions or amplifications/overexpression) can drive oncogenic signaling and is linked to therapeutic resistance (including endocrine resistance) in breast cancer contexts described.",
+      "interpretation": "Aberrant RET activity (fusions or amplifications/overexpression) can drive oncogenic signaling and is linked to therapeutic resistance (including endocrine resistance) in breast cancer contexts described.\n\nBaseline-focused rationale:\n- RET is overexpressed in a subset of ER⁺ BC and cooperates with ER to drive tumor growth. GDNF–RET signaling induces ER target genes and contributes to endocrine resistance, yet tumors often remain ER-positive/ER-driven. Preclinical work (e.g., RET inhibition with TKIs + aromatase inhibitors) and more recent data with selpercatinib in ER⁺/RET-high, CDK4/6i+ET-resistant models support dual targeting ER and RET, so a high estrogen-response hallmark can define a context where adding selpercatinib to endocrine therapy is rational. Your original “Down” assignment is inconsistent with this.",
       "Administration_of_selpercatinib": {
         "Before": {
           "Pathway_regulation": {

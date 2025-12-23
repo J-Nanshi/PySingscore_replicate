@@ -28,7 +28,7 @@
 "HALLMARK_ESTROGEN_RESPONSE_EARLY",
 "REACTOME_ESTROGEN_DEPENDENT_NUCLEAR_EVENTS_DOWNSTREAM_OF_ESR_MEMBRANE_SIGNALING",
 "HALLMARK_E2F_TARGETS",
-"P53_SIGNALING_PATHWAY",
+"KEGG_P53_SIGNALING_PATHWAY",
 "HALLMARK_INTERFERON_GAMMA_RESPONSE",
 "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
 "KEGG_ERBB_SIGNALING_PATHWAY",
@@ -53,7 +53,7 @@
 "description": "Genes regulated by E2F transcription factors involved in G1/S transition, DNA replication, and proliferation.",
 "interpretation": "Reflects proliferative output downstream of ER signaling and cell-cycle control that influences tumor growth dynamics in ER+ disease."
 },
-"P53_SIGNALING_PATHWAY": {
+"KEGG_P53_SIGNALING_PATHWAY": {
 "description": "p53-mediated stress response controlling cell-cycle arrest, DNA damage responses, and apoptosis.",
 "interpretation": "Links tumor suppressor control of growth arrest and apoptosis to treatment response pathways in ER+ breast cancer."
 },

@@ -25,10 +25,25 @@
     "HALLMARK_TNFA_SIGNALING_VIA_NFKB",
     "REACTOME_SIGNALING_BY_VEGF"
   ],
+  "pathways_sensitive_upregulated": [
+    "REACTOME_CO_INHIBITION_BY_PD_1",
+    "WP_CANCER_IMMUNOTHERAPY_BY_PD1_BLOCKADE",
+    "REACTOME_TCR_SIGNALING",
+    "GOBP_T_CELL_ACTIVATION",
+    "KEGG_JAK_STAT_SIGNALING_PATHWAY",
+    "KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION",
+    "HALLMARK_TNFA_SIGNALING_VIA_NFKB"
+  ],
+  "pathway_sensitive_downregulated": [],
+  "pathway_resistant_upregulated": [
+    "HALLMARK_TGF_BETA_SIGNALING",
+    "REACTOME_SIGNALING_BY_VEGF"
+  ],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "REACTOME_CO_INHIBITION_BY_PD_1": {
       "description": "PD-1 engagement inhibits T-cell receptor signaling and IL-2 production, suppressing T-cell activation and function.",
-      "interpretation": "This immune-checkpoint pathway is central to tumor immune evasion; blocking PD-1 can restore anti-tumor T-cell responses in breast cancer.",
+      "interpretation": "This immune-checkpoint pathway is central to tumor immune evasion; blocking PD-1 can restore anti-tumor T-cell responses in breast cancer.\n\nBaseline-focused rationale:\n- Upregulated PD-1 co-inhibitory signaling on tumor-infiltrating T cells marks an “exhausted” state driven by chronic antigen exposure and PD-L1/PD-L2 engagement. Pembrolizumab directly targets PD-1, restoring TCR signaling and effector function. Thus, tumors with higher baseline PD-1 pathway activity (e.g., PD-1⁺ exhausted CD8⁺ T cells) are more likely to benefit from PD-1 blockade.",
       "Administration_of_pembrolizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -98,7 +113,7 @@
     },
     "WP_CANCER_IMMUNOTHERAPY_BY_PD1_BLOCKADE": {
       "description": null,
-      "interpretation": null,
+      "interpretation": "Baseline-focused rationale:\n- High baseline PD-L1 expression on tumor and/or immune cells (e.g., CPS ≥10 in TNBC) reflects active PD-1/PD-L1 immune evasion. Pembrolizumab binds PD-1 on T cells, disrupting this inhibitory axis. Clinical data in TNBC (KEYNOTE-355, KEYNOTE-522) show that PD-L1-high tumors derive greater benefit from pembrolizumab plus chemotherapy than PD-L1-low tumors.",
       "Administration_of_pembrolizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -168,7 +183,7 @@
     },
     "REACTOME_TCR_SIGNALING": {
       "description": "Activation of the T-cell receptor triggers downstream signaling cascades (including NF-κB) leading to T-cell proliferation and effector function.",
-      "interpretation": "TCR signaling supports anti-tumor immunity; higher activity of T-cell signaling programs is relevant to effective PD-1 blockade in breast cancer.",
+      "interpretation": "TCR signaling supports anti-tumor immunity; higher activity of T-cell signaling programs is relevant to effective PD-1 blockade in breast cancer.\n\nBaseline-focused rationale:\n- Active TCR signaling (e.g., clonal expansion and activation of tumor-infiltrating CD8⁺ T cells) underlies an inflamed, antigen-experienced TME. Transcriptomic studies in breast cancer show that T-cell–inflamed/TCR-active gene signatures, including cytotoxic and interferon-γ–related modules, correlate with response to PD-1/PD-L1 inhibitors, including pembrolizumab in TNBC.",
       "Administration_of_pembrolizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -238,7 +253,7 @@
     },
     "GOBP_T_CELL_ACTIVATION": {
       "description": "General biological process of activating T cells, driven by antigen receptor and co-stimulatory signals and shaped by cytokines.",
-      "interpretation": "T-cell activation is a core requirement for immune-mediated tumor killing and is a key biological context for checkpoint inhibitor activity in breast cancer.",
+      "interpretation": "T-cell activation is a core requirement for immune-mediated tumor killing and is a key biological context for checkpoint inhibitor activity in breast cancer.\n\nBaseline-focused rationale:\n- Upregulation of T-cell activation programs (CD28 costimulation, CD3/TCR complex, IFN-γ production, granzyme/perforin genes) marks “hot” tumors with pre-existing anti-tumor immunity. In breast cancer, high TILs and T-cell activation signatures are associated with improved outcomes and with better response to checkpoint blockade, especially in TNBC.",
       "Administration_of_pembrolizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -308,7 +323,7 @@
     },
     "KEGG_JAK_STAT_SIGNALING_PATHWAY": {
       "description": "Cytokine signaling (including interferons) activates JAK/STAT modules; IFN-γ receptor engagement triggers JAK1/2 and STAT1 phosphorylation and transcription of immune-effector genes.",
-      "interpretation": "Cytokine-driven JAK/STAT signaling contributes to immune effector programs within tumors and is relevant to anti-tumor immune activity during PD-1 blockade.",
+      "interpretation": "Cytokine-driven JAK/STAT signaling contributes to immune effector programs within tumors and is relevant to anti-tumor immune activity during PD-1 blockade.\n\nBaseline-focused rationale:\n- Interferon-γ and certain interleukins engage JAK1/2 and STAT1/STAT3 to induce antigen-presentation genes (HLA, B2M), chemokines (CXCL9/10/11), and immune-effector programs. Upregulated IFN-γ/JAK-STAT1 pathways at baseline define the “T-cell-inflamed” gene signature that predicts benefit from PD-1/PD-L1 blockade across cancers, including TNBC cohorts treated with pembrolizumab. Conversely, JAK1/2 loss-of-function is a resistance mechanism.",
       "Administration_of_pembrolizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -378,7 +393,7 @@
     },
     "KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION": {
       "description": "Broad network of cytokines (e.g., IL-2, interferons, chemokines) and receptors coordinating innate and adaptive immune responses.",
-      "interpretation": "Cytokine and chemokine signaling shapes immune-cell recruitment and activation in the tumor microenvironment, influencing immune engagement in breast cancer.",
+      "interpretation": "Cytokine and chemokine signaling shapes immune-cell recruitment and activation in the tumor microenvironment, influencing immune engagement in breast cancer.\n\nBaseline-focused rationale:\n- Higher expression of pro-inflammatory cytokines and chemokines (e.g., IFN-γ, CXCL9/10/11, CCL5) in the tumor and stroma promotes recruitment and retention of effector T cells and NK cells. In TNBC, chemokine-rich, immune-inflamed transcriptomic subtypes are enriched for response to pembrolizumab-based regimens, whereas immune-cold subtypes with low cytokine signaling show poor benefit.",
       "Administration_of_pembrolizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -448,7 +463,7 @@
     },
     "HALLMARK_TGF_BETA_SIGNALING": {
       "description": "TGF-β signaling through receptor/SMAD pathways fosters immune tolerance and can exclude cytotoxic T cells from the tumor microenvironment.",
-      "interpretation": "TGF-β–driven immune suppression and exclusion are relevant tumor-microenvironment features that can counter anti-tumor immunity in breast cancer.",
+      "interpretation": "TGF-β–driven immune suppression and exclusion are relevant tumor-microenvironment features that can counter anti-tumor immunity in breast cancer.\n\nBaseline-focused rationale:\n- Activation of TGF-β signaling in tumor cells and stromal fibroblasts promotes extracellular-matrix remodeling, exclusion of CD8⁺ T cells from tumor nests, differentiation of Tregs, and myeloid-derived suppressor cell (MDSC) recruitment. High TGF-β/EMT/exclusion signatures in breast and other solid tumors are associated with primary resistance to PD-1/PD-L1 inhibitors; dual TGF-β plus PD-L1 blockade can reverse this phenotype in preclinical models.",
       "Administration_of_pembrolizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -518,7 +533,7 @@
     },
     "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
       "description": "NF-κB transcription factor signaling drives inflammatory gene expression and is activated by cytokines and antigen (TCR) signals in T cells.",
-      "interpretation": "Inflammatory signaling programs are part of immune activation states in tumors and are relevant to immune regulation in breast cancer.",
+      "interpretation": "Inflammatory signaling programs are part of immune activation states in tumors and are relevant to immune regulation in breast cancer.\n\nBaseline-focused rationale:\n- Within effector T cells and antigen-presenting cells, NF-κB activation downstream of TCR/CD28 and pattern-recognition receptors drives production of IL-2, IFN-γ, and inflammatory chemokines that sustain antitumor immunity. Tumors with NF-κB–linked inflammatory signatures (often overlapping with IFN-γ and chemokine modules) tend to be more immune-inflamed and can respond better to PD-1 blockade, including pembrolizumab, provided that NF-κB is not dominantly tumor-intrinsic and immunosuppressive.",
       "Administration_of_pembrolizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -588,7 +603,7 @@
     },
     "REACTOME_SIGNALING_BY_VEGF": {
       "description": "VEGF and its receptors promote angiogenesis and vascular permeability, supporting tumor blood vessel formation and tumor growth.",
-      "interpretation": "VEGF-driven angiogenesis is associated with immune evasion features in the tumor microenvironment and is relevant to immune context in breast cancer.",
+      "interpretation": "VEGF-driven angiogenesis is associated with immune evasion features in the tumor microenvironment and is relevant to immune context in breast cancer.\n\nBaseline-focused rationale:\n- High VEGF signaling promotes abnormal, leaky vasculature, hypoxia, and endothelial anergy, all of which limit effector T-cell trafficking into the tumor and support immunosuppressive myeloid populations. Across multiple solid tumors, including breast cancer, elevated VEGF/hypoxia/angiogenesis signatures are associated with reduced benefit from checkpoint inhibitors, while combining anti-VEGF agents with PD-1/PD-L1 blockade can partially overcome this resistance.",
       "Administration_of_pembrolizumab": {
         "Before": {
           "Pathway_regulation": {

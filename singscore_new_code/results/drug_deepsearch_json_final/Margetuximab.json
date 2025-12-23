@@ -18,7 +18,7 @@
 ],
 "pathway_sets": [
 "KEGG_ERBB_SIGNALING_PATHWAY",
-"REACTOME_ERBB2_SIGNALING",
+"REACTOME_SIGNALING_BY_ERBB2",
 "REACTOME_DOWNREGULATION_OF_ERBB2_SIGNALING",
 "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
 "KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY",
@@ -30,7 +30,7 @@
 "description": "Canonical HER family receptor signaling (including HER2) that propagates growth and survival signals through RAS\u2013MAPK and PI3K\u2013AKT nodes.",
 "interpretation": "ERBB signaling is the core oncogenic driver in HER2-amplified breast cancers and underpins dependence on HER2-directed antibody therapy."
 },
-"REACTOME_ERBB2_SIGNALING": {
+"REACTOME_SIGNALING_BY_ERBB2": {
 "description": "HER2/ERBB2-driven signaling network in cancer, including receptor dimerization and downstream kinase cascades controlling proliferation and survival.",
 "interpretation": "ERBB2 signaling is central to the malignant phenotype in HER2-positive breast cancer and provides the primary biological context for anti-HER2 antibodies."
 },

@@ -19,16 +19,32 @@
     "HALLMARK_APOPTOSIS",
     "HALLMARK_INTERFERON_GAMMA_RESPONSE",
     "REACTOME_NFKB_AND_MAP_KINASES_ACTIVATION_MEDIATED_BY_TLR4_SIGNALING_REPERTOIRE",
-    "REACTOME_PI3K_AKT_SIGNALING",
+    "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER",
     "KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION",
     "KEGG_ABC_TRANSPORTERS",
     "REACTOME_CELL_CYCLE",
     "HALLMARK_ANGIOGENESIS"
   ],
+  "pathways_sensitive_upregulated": [
+    "HALLMARK_G2M_CHECKPOINT",
+    "HALLMARK_MITOTIC_SPINDLE",
+    "HALLMARK_APOPTOSIS",
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+    "REACTOME_CELL_CYCLE"
+  ],
+  "pathway_sensitive_downregulated": [],
+  "pathway_resistant_upregulated": [
+    "REACTOME_NFKB_AND_MAP_KINASES_ACTIVATION_MEDIATED_BY_TLR4_SIGNALING_REPERTOIRE",
+    "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER",
+    "KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION",
+    "KEGG_ABC_TRANSPORTERS",
+    "HALLMARK_ANGIOGENESIS"
+  ],
+  "pathway_resistant_downregulated": [],
   "pathway_sets_annotations": {
     "HALLMARK_G2M_CHECKPOINT": {
       "description": "Gene program controlling the G2→M transition and mitotic checkpoint functions, reflecting regulation of mitosis and G2/M transition.",
-      "interpretation": "Cell-cycle checkpoint activity is central to breast-tumor proliferation and treatment response, especially in rapidly dividing tumors where mitotic control is a key vulnerability.",
+      "interpretation": "Cell-cycle checkpoint activity is central to breast-tumor proliferation and treatment response, especially in rapidly dividing tumors where mitotic control is a key vulnerability.\n\nBaseline-focused rationale:\n- Paclitaxel primarily kills actively cycling cells by disrupting mitosis; a higher baseline G2/M program (high proliferation/mitotic entry) generally aligns with greater taxane vulnerability.",
       "Administration_of_paclitaxel": {
         "Before": {
           "Pathway_regulation": {
@@ -98,7 +114,7 @@
     },
     "HALLMARK_MITOTIC_SPINDLE": {
       "description": "Gene program related to mitotic spindle structure/function and microtubule dynamics required for mitosis.",
-      "interpretation": "Mitotic spindle integrity is required for successful cell division; reliance on mitotic machinery is a hallmark of proliferative breast cancers.",
+      "interpretation": "Mitotic spindle integrity is required for successful cell division; reliance on mitotic machinery is a hallmark of proliferative breast cancers.\n\nBaseline-focused rationale:\n- Paclitaxel targets microtubule/spindle dynamics; tumors with stronger baseline mitotic-spindle/mitosis activity (many cells entering mitosis) are more likely to be impacted.",
       "Administration_of_paclitaxel": {
         "Before": {
           "Pathway_regulation": {
@@ -168,7 +184,7 @@
     },
     "HALLMARK_APOPTOSIS": {
       "description": "Programmed cell death pathway activity, including regulation by anti-apoptotic factors such as BCL2.",
-      "interpretation": "Apoptotic competence influences whether breast tumor cells undergo cell death under cytotoxic stress and is a major determinant of chemotherapy responsiveness.",
+      "interpretation": "Apoptotic competence influences whether breast tumor cells undergo cell death under cytotoxic stress and is a major determinant of chemotherapy responsiveness.\n\nBaseline-focused rationale:\n- Paclitaxel-induced mitotic stress triggers intrinsic apoptosis; taxane exposure can inactivate anti-apoptotic BCL2 via phosphorylation and/or direct interaction, enabling caspase-mediated cell death.",
       "Administration_of_paclitaxel": {
         "Before": {
           "Pathway_regulation": {
@@ -238,7 +254,7 @@
     },
     "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
       "description": "Innate immune/interferon-stimulated gene programs induced in tumor cells, reflecting interferon pathway activation.",
-      "interpretation": "Interferon-associated transcriptional programs can shape anti-tumor immunity and tumor–immune interactions in breast cancer, particularly in immune-infiltrated disease contexts.",
+      "interpretation": "Interferon-associated transcriptional programs can shape anti-tumor immunity and tumor–immune interactions in breast cancer, particularly in immune-infiltrated disease contexts.\n\nBaseline-focused rationale:\n- Breast tumors with higher baseline immune activation (including IFN-related gene programs/TIL-associated signatures) frequently show better response to neoadjuvant chemotherapy (commonly anthracycline/taxane regimens), consistent with chemo–immune cooperation.",
       "Administration_of_paclitaxel": {
         "Before": {
           "Pathway_regulation": {
@@ -308,7 +324,7 @@
     },
     "REACTOME_NFKB_AND_MAP_KINASES_ACTIVATION_MEDIATED_BY_TLR4_SIGNALING_REPERTOIRE": {
       "description": "TLR4-linked signaling that activates NF-κB and MAPK pathways and can promote inflammatory cytokine production (e.g., IL-6/IL-8).",
-      "interpretation": "Inflammatory survival signaling in breast tumor cells can influence progression, metastasis, and treatment outcomes through cytokine-driven feedback and stress-response programs.",
+      "interpretation": "Inflammatory survival signaling in breast tumor cells can influence progression, metastasis, and treatment outcomes through cytokine-driven feedback and stress-response programs.\n\nBaseline-focused rationale:\n- Paclitaxel can activate TLR4 signaling in breast-cancer cells; high baseline TLR4/NF-κB inflammatory-survival wiring aligns with reduced paclitaxel cytotoxicity and more aggressive behavior.",
       "Administration_of_paclitaxel": {
         "Before": {
           "Pathway_regulation": {
@@ -376,9 +392,9 @@
         }
       }
     },
-    "REACTOME_PI3K_AKT_SIGNALING": {
+    "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER": {
       "description": "PI3K/AKT survival signaling that promotes cell survival and can protect cells from apoptosis.",
-      "interpretation": "PI3K/AKT signaling is a major pro-survival axis in breast cancer that supports growth and cell survival under therapeutic stress.",
+      "interpretation": "PI3K/AKT signaling is a major pro-survival axis in breast cancer that supports growth and cell survival under therapeutic stress.\n\nBaseline-focused rationale:\n- High baseline PI3K/AKT survival signaling counteracts mitotic-stress death programs and is associated with resistance to chemotherapy in breast cancer.",
       "Administration_of_paclitaxel": {
         "Before": {
           "Pathway_regulation": {
@@ -448,7 +464,7 @@
     },
     "KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION": {
       "description": "Cytokine signaling network including IL-6/IL-8 and related cytokine–receptor interactions that can create autocrine signaling loops.",
-      "interpretation": "Cytokine signaling can modulate tumor–microenvironment interactions and tumor cell survival/progression programs in breast cancer.",
+      "interpretation": "Cytokine signaling can modulate tumor–microenvironment interactions and tumor cell survival/progression programs in breast cancer.\n\nBaseline-focused rationale:\n- Pro-tumor cytokine loops (e.g., IL6/IL8) can create NF-κB/Wnt–reinforced autocrine feedback, enriching drug-tolerant/CSC-like populations after chemotherapy exposure/withdrawal, supporting resistance.",
       "Administration_of_paclitaxel": {
         "Before": {
           "Pathway_regulation": {
@@ -518,7 +534,7 @@
     },
     "KEGG_ABC_TRANSPORTERS": {
       "description": "ABC transporter-mediated drug efflux processes involving transporters such as ABCB1 and ABCC3 that export drugs from cells.",
-      "interpretation": "Drug efflux capacity affects intracellular exposure to chemotherapy and is a key determinant of treatment failure and refractory disease biology.",
+      "interpretation": "Drug efflux capacity affects intracellular exposure to chemotherapy and is a key determinant of treatment failure and refractory disease biology.\n\nBaseline-focused rationale:\n- ABCB1/P-gp and related ABC transporters reduce intracellular paclitaxel levels, a canonical taxane resistance mechanism.",
       "Administration_of_paclitaxel": {
         "Before": {
           "Pathway_regulation": {
@@ -588,7 +604,7 @@
     },
     "REACTOME_CELL_CYCLE": {
       "description": "Overall cell-cycle gene expression programs controlling proliferation and progression through cell-cycle phases.",
-      "interpretation": "Cell-cycle activity reflects proliferative state and underpins aggressiveness and chemotherapy responsiveness in breast cancers.",
+      "interpretation": "Cell-cycle activity reflects proliferative state and underpins aggressiveness and chemotherapy responsiveness in breast cancers.\n\nBaseline-focused rationale:\n- Paclitaxel efficacy depends on cells progressing into mitosis; therefore higher baseline cell-cycle activity (cycling fraction) generally aligns with better response than a quiescent baseline state.",
       "Administration_of_paclitaxel": {
         "Before": {
           "Pathway_regulation": {
@@ -658,7 +674,7 @@
     },
     "HALLMARK_ANGIOGENESIS": {
       "description": "Angiogenesis-related gene programs associated with pro-angiogenic signals and blood-vessel formation.",
-      "interpretation": "Angiogenesis supports tumor growth and progression and can be influenced by inflammatory cytokine signaling in breast cancer.",
+      "interpretation": "Angiogenesis supports tumor growth and progression and can be influenced by inflammatory cytokine signaling in breast cancer.\n\nBaseline-focused rationale:\n- High baseline angiogenesis often co-occurs with inflammatory cytokine/NF-κB programs and can support tumor progression and therapy resistance; paclitaxel–TLR4 inflammatory circuits can also promote angiogenesis/lymphangiogenesis in relevant models.",
       "Administration_of_paclitaxel": {
         "Before": {
           "Pathway_regulation": {

@@ -31,10 +31,30 @@
     "GOBP_KYNURENINE_METABOLIC_PROCESS",
     "GOBP_REGULATION_OF_T_CELL_COSTIMULATION"
   ],
+  "pathways_sensitive_upregulated": [
+    "HALLMARK_INTERFERON_GAMMA_RESPONSE",
+    "HALLMARK_ALLOGRAFT_REJECTION",
+    "WP_CANCER_IMMUNOTHERAPY_BY_PD1_BLOCKADE"
+  ],
+  "pathway_sensitive_downregulated": [
+    "KEGG_HOMOLOGOUS_RECOMBINATION"
+  ],
+  "pathway_resistant_upregulated": [
+    "HALLMARK_WNT_BETA_CATENIN_SIGNALING",
+    "HALLMARK_TGF_BETA_SIGNALING",
+    "GOBP_REGULATION_OF_T_CELL_ACTIVATION",
+    "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
+    "HALLMARK_HYPOXIA",
+    "GOBP_KYNURENINE_METABOLIC_PROCESS"
+  ],
+  "pathway_resistant_downregulated": [
+    "GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION",
+    "GOBP_REGULATION_OF_T_CELL_COSTIMULATION"
+  ],
   "pathway_sets_annotations": {
     "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
       "description": "Interferon-γ–driven immune activation program that includes interferon-responsive genes involved in antigen presentation and immune chemokine signaling.",
-      "interpretation": "This pathway reflects an immune-inflamed tumor microenvironment in breast cancer, supporting antigen presentation and immune-cell recruitment that underpins response to PD-L1 blockade.",
+      "interpretation": "This pathway reflects an immune-inflamed tumor microenvironment in breast cancer, supporting antigen presentation and immune-cell recruitment that underpins response to PD-L1 blockade.\n\nBaseline-focused rationale:\n- A high IFN-γ gene signature at baseline reflects a pre-existing antitumor immune response with increased MHC expression, chemokines and PD-L1 induction. Across tumors and in TNBC neoadjuvant/biomarker work, IFN-γ–related mRNA profiles predict better response to PD-1/PD-L1 blockade, including atezolizumab-containing regimens. (PMC)",
       "Administration_of_atezolizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -104,7 +124,7 @@
     },
     "HALLMARK_ALLOGRAFT_REJECTION": {
       "description": "Immune cytotoxicity and lymphocyte activation signature enriched for T-cell and NK-cell effector programs.",
-      "interpretation": "In breast tumors, this signature captures the presence and activity of cytotoxic immune infiltrates that are central to checkpoint inhibitor efficacy.",
+      "interpretation": "In breast tumors, this signature captures the presence and activity of cytotoxic immune infiltrates that are central to checkpoint inhibitor efficacy.\n\nBaseline-focused rationale:\n- The “allograft rejection” set captures cytotoxic CD8⁺ T-cell/NK infiltration and Th1-type inflammation. Such T-cell-inflamed signatures correlate with higher response rates to PD-1/PD-L1 inhibitors and are incorporated into immune-related gene signatures predicting atezo benefit in TNBC. (AACR Journals)",
       "Administration_of_atezolizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -174,7 +194,7 @@
     },
     "WP_CANCER_IMMUNOTHERAPY_BY_PD1_BLOCKADE": {
       "description": "Checkpoint signaling pathway describing PD-1/PD-L1–mediated inhibition of T-cell activation and its therapeutic blockade.",
-      "interpretation": "This pathway is the core axis targeted by atezolizumab (via PD-L1), and its activity defines immune suppression that can be released by PD-L1 blockade in breast cancer.",
+      "interpretation": "This pathway is the core axis targeted by atezolizumab (via PD-L1), and its activity defines immune suppression that can be released by PD-L1 blockade in breast cancer.\n\nBaseline-focused rationale:\n- Baseline activation of the PD-1/PD-L1 axis (especially PD-L1 expression on tumor-infiltrating immune cells) provides the pharmacologic target for atezolizumab. In IMpassion130, clinical benefit was restricted to PD-L1+ mTNBC, supporting that an “on” PD-1/PD-L1 pathway predicts sensitivity. (New England Journal of Medicine)",
       "Administration_of_atezolizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -244,7 +264,7 @@
     },
     "HALLMARK_WNT_BETA_CATENIN_SIGNALING": {
       "description": "Wnt ligand–driven β-catenin signaling program implicated in tumor cell state and stromal interactions.",
-      "interpretation": "In breast cancer, Wnt/β-catenin activity is linked to immune exclusion and reduced permissiveness of the tumor microenvironment to effective anti-tumor T-cell infiltration.",
+      "interpretation": "In breast cancer, Wnt/β-catenin activity is linked to immune exclusion and reduced permissiveness of the tumor microenvironment to effective anti-tumor T-cell infiltration.\n\nBaseline-focused rationale:\n- Tumor-intrinsic Wnt/β-catenin activation is linked to non-T-cell-inflamed, immune-excluded tumors with loss of dendritic-cell recruitment and poor CD8⁺ infiltration, leading to primary resistance to ICIs. Although much data are from melanoma and other cancers, this immune-excluded program is relevant to breast TNBC. (Frontiers)",
       "Administration_of_atezolizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -314,7 +334,7 @@
     },
     "HALLMARK_TGF_BETA_SIGNALING": {
       "description": "TGF-β signaling program regulating fibroblast activation, extracellular matrix remodeling, and immune suppression.",
-      "interpretation": "This pathway contributes to immune-excluded tumor states in breast cancer by promoting stromal barriers and immunosuppressive cues that limit effective immune-cell penetration.",
+      "interpretation": "This pathway contributes to immune-excluded tumor states in breast cancer by promoting stromal barriers and immunosuppressive cues that limit effective immune-cell penetration.\n\nBaseline-focused rationale:\n- High TGF-β and EMT signatures define an immune-excluded phenotype with dense stroma and peritumoral T-cell trapping. In atezolizumab-treated urothelial cancer and in TNBC biomarker studies, stromal TGF-β signaling is associated with poor response, while TGF-β blockade plus anti-PD-L1 restores intratumoral CD8⁺ T-cell infiltration and antitumor activity. (PMC)",
       "Administration_of_atezolizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -384,7 +404,7 @@
     },
     "GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION": {
       "description": "Processes enabling antigen processing and presentation (including MHC class I presentation) required for T-cell recognition of tumor antigens.",
-      "interpretation": "Effective antigen presentation is fundamental to T-cell–mediated killing in breast cancer immunotherapy; defects in this process enable immune escape despite checkpoint blockade.",
+      "interpretation": "Effective antigen presentation is fundamental to T-cell–mediated killing in breast cancer immunotherapy; defects in this process enable immune escape despite checkpoint blockade.\n\nBaseline-focused rationale:\n- Downregulation or loss of antigen processing/presentation (e.g., B2M, HLA-I, TAP defects, or JAK/IFN signaling mutations) prevents CD8⁺ T cells from recognizing tumor cells, causing primary or acquired resistance to PD-1/PD-L1 blockade irrespective of PD-L1 status. This mechanism is described across cancers and is relevant to breast. (New England Journal of Medicine)",
       "Administration_of_atezolizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -454,7 +474,7 @@
     },
     "GOBP_REGULATION_OF_T_CELL_ACTIVATION": {
       "description": "Biological processes that regulate T-cell activation states through cytokines, antigen presentation, and receptor–ligand interactions.",
-      "interpretation": "T-cell activation programs shape whether breast tumors are immune-inflamed versus immune suppressed, influencing the capacity of checkpoint blockade to restore cytotoxic function.",
+      "interpretation": "T-cell activation programs shape whether breast tumors are immune-inflamed versus immune suppressed, influencing the capacity of checkpoint blockade to restore cytotoxic function.\n\nBaseline-focused rationale:\n- High LAG-3 on intratumoral T cells marks deeper exhaustion; co-expression with PD-1 defines dysfunctional T cells that respond poorly to PD-1/PD-L1 blockade alone. Upregulation of LAG-3 after PD-1/PD-L1 therapy is a recognized adaptive resistance mechanism, motivating dual PD-1/LAG-3 blockade. (PMC)",
       "Administration_of_atezolizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -524,7 +544,7 @@
     },
     "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
       "description": "Oncogenic PI3K–AKT–mTOR signaling program controlling cell survival, growth, metabolism, and microenvironmental signaling.",
-      "interpretation": "In breast cancer, PI3K/AKT/mTOR activity is described as contributing to an immune-suppressive milieu and reduced tumor immune infiltration, impacting responsiveness to PD-L1 blockade.",
+      "interpretation": "In breast cancer, PI3K/AKT/mTOR activity is described as contributing to an immune-suppressive milieu and reduced tumor immune infiltration, impacting responsiveness to PD-L1 blockade.\n\nBaseline-focused rationale:\n- PTEN loss and oncogenic PI3K/AKT/mTOR activation promote an immunosuppressive TME via reduced CD8⁺ T-cell infiltration and increased VEGF/cytokines. Across cancers (including breast/TNBC), PTEN/PI3K alterations are linked to poorer response to PD-1/PD-L1 blockade and are being targeted to re-sensitize tumors to ICIs. (MDPI)",
       "Administration_of_atezolizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -594,7 +614,7 @@
     },
     "HALLMARK_HYPOXIA": {
       "description": "Hypoxia-response transcriptional program driven by low oxygen stress and associated microenvironmental remodeling.",
-      "interpretation": "Hypoxia-related programs in breast cancer are associated with immune dysfunction and reduced immune-cell infiltration, shaping an environment less favorable for effective checkpoint inhibitor activity.",
+      "interpretation": "Hypoxia-related programs in breast cancer are associated with immune dysfunction and reduced immune-cell infiltration, shaping an environment less favorable for effective checkpoint inhibitor activity.\n\nBaseline-focused rationale:\n- Hypoxia via HIF-1α drives VEGF-mediated abnormal vasculature, T-cell exclusion, recruitment of Tregs/MDSCs and PD-L1 upregulation on tumor and myeloid cells. High hypoxia signatures associate with immune-excluded, ICI-refractory tumors, including breast, and VEGF/HIF-1α targeting is being explored to improve PD-1/PD-L1 responses. (SpringerLink)",
       "Administration_of_atezolizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -664,7 +684,7 @@
     },
     "KEGG_HOMOLOGOUS_RECOMBINATION": {
       "description": "Homologous recombination DNA double-strand break repair pathway (HR) that maintains genome integrity.",
-      "interpretation": "In breast cancer, homologous recombination deficiency is discussed as increasing genomic instability and tumor immunogenicity, providing context for immune engagement relevant to checkpoint inhibitor response.",
+      "interpretation": "In breast cancer, homologous recombination deficiency is discussed as increasing genomic instability and tumor immunogenicity, providing context for immune engagement relevant to checkpoint inhibitor response.\n\nBaseline-focused rationale:\n- HRD/BRCA1/2-mutated and HRD-like TNBC have increased genomic instability, higher TMB and more neoantigens, which can favor T-cell infiltration and PD-L1 expression. Multiple reviews link DDR defects to improved ICI benefit, though responses are heterogeneous and depend on co-existing immune-suppressive programs. (PubMed)",
       "Administration_of_atezolizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -734,7 +754,7 @@
     },
     "GOBP_KYNURENINE_METABOLIC_PROCESS": {
       "description": "Tryptophan catabolism to kynurenine and related metabolites, a metabolic axis that can modulate immune responses.",
-      "interpretation": "Kynurenine-pathway activity is described as creating a metabolically immunosuppressive environment that can dampen anti-tumor T-cell function in breast cancer.",
+      "interpretation": "Kynurenine-pathway activity is described as creating a metabolically immunosuppressive environment that can dampen anti-tumor T-cell function in breast cancer.\n\nBaseline-focused rationale:\n- IDO1 catabolizes tryptophan to kynurenine, suppressing T-cell proliferation and promoting Tregs and dysfunctional NK cells. High IDO1 expression is common in high-grade/TNBC and often co-expressed with PD-L1, contributing to resistance to PD-1/PD-L1 monotherapy; IDO1 inhibition (e.g., GDC-0919) has been combined with atezolizumab in early trials. (ScienceDirect)",
       "Administration_of_atezolizumab": {
         "Before": {
           "Pathway_regulation": {
@@ -804,7 +824,7 @@
     },
     "GOBP_REGULATION_OF_T_CELL_COSTIMULATION": {
       "description": "Processes regulating co-stimulatory signaling necessary for full T-cell activation (e.g., CD28/B7 and cytokine support).",
-      "interpretation": "Adequate co-stimulation is necessary for effective T-cell activation; deficits in co-stimulatory signaling can limit the effectiveness of checkpoint blockade in breast tumors.",
+      "interpretation": "Adequate co-stimulation is necessary for effective T-cell activation; deficits in co-stimulatory signaling can limit the effectiveness of checkpoint blockade in breast tumors.\n\nBaseline-focused rationale:\n- Effective CD8⁺ T-cell priming requires TCR plus CD28–CD80/86 co-stimulation and IL-2 signaling. In the absence of these signals (e.g., low CD80/86 on APCs, chronic CTLA-4 engagement, steroids), T cells become anergic or exhausted and cannot be fully re-activated by PD-L1 blockade alone, limiting atezo benefit even if PD-L1 is high. (PMC)",
       "Administration_of_atezolizumab": {
         "Before": {
           "Pathway_regulation": {

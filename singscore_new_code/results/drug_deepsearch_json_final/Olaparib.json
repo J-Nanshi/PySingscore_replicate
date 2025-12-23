@@ -18,11 +18,11 @@
 "PARP3"
 ],
 "pathway_sets": [
-"REACTOME_HOMOLOGOUS_RECOMBINATION",
+"REACTOME_HDR_THROUGH_HOMOLOGOUS_RECOMBINATION_HRR",
 "REACTOME_NONHOMOLOGOUS_END_JOINING_NHEJ",
 "HALLMARK_PI3K_AKT_MTOR_SIGNALING",
 "HALLMARK_INTERFERON_ALPHA_RESPONSE",
-"REACTOME_ABCFAMILY_PROTEINS_MEDIATED_TRANSPORT",
+"KEGG_ABC_TRANSPORTERS",
 "REACTOME_ACTIVATION_OF_ATR_IN_RESPONSE_TO_REPLICATION_STRESS",
 "HALLMARK_APOPTOSIS",
 "HALLMARK_P53_PATHWAY",
@@ -30,7 +30,7 @@
 "REACTOME_BASE_EXCISION_REPAIR"
 ],
 "pathway_sets_annotations": {
-"REACTOME_HOMOLOGOUS_RECOMBINATION": {
+"REACTOME_HDR_THROUGH_HOMOLOGOUS_RECOMBINATION_HRR": {
 "description": "High-fidelity double-strand break repair pathway requiring BRCA1/BRCA2 and other HR factors (e.g., RAD51) to repair replication-associated DNA damage.",
 "interpretation": "Olaparib's therapeutic rationale in breast cancer is strongly tied to tumors with homologous recombination repair dysfunction (HRD) and the capacity (or lack thereof) to resolve DSBs created downstream of PARP inhibition; tumors can evolve adaptations that restore HR capacity."
 },
@@ -46,7 +46,7 @@
 "description": "Type I interferon gene program reflecting innate immune activation, including interferon-stimulated genes downstream of cGAS-STING signaling.",
 "interpretation": "PARP inhibitor-associated DNA damage can engage innate immune sensing pathways and Type I interferon signaling, supporting immune-mediated tumor control and providing rationale for combinations involving immunotherapy or STING-pathway activation (notably highlighted in BRCA-associated breast cancer models)."
 },
-"REACTOME_ABCFAMILY_PROTEINS_MEDIATED_TRANSPORT": {
+"KEGG_ABC_TRANSPORTERS": {
 "description": "ATP-binding cassette (ABC) transporter-mediated drug transport/efflux processes (e.g., ABCB1/P-gp, ABCG2) that reduce intracellular exposure to substrates.",
 "interpretation": "Drug-efflux mechanisms are a key pharmacologic determinant of tumor drug exposure and are highlighted as an important resistance-related process that can also drive cross-resistance with other agents."
 },
