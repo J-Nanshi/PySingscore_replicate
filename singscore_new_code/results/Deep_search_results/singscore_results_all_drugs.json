@@ -1,0 +1,1455 @@
+{
+  "Abemaciclib": {
+    "pathways_sensitive_upregulated": {
+      "HALLMARK_E2F_TARGETS": {
+        "total_score": 0.1608183874948581,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+        "total_score": 0.17335140068111587,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_CYCLIN_D_ASSOCIATED_EVENTS_IN_G1": {
+        "total_score": 0.18788469951581244,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {},
+    "pathway_resistant_upregulated": {
+      "REACTOME_CYCLIN_E_ASSOCIATED_EVENTS_DURING_G1_S_TRANSITION": {
+        "total_score": 0.2559563601448045,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_SIGNALING_BY_FGFR1": {
+        "total_score": 0.1981084088380226,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_MEDICUS_REFERENCE_P16_CELL_CYCLE_G1_S": {
+        "total_score": 0.1541795918367347,
+        "empirical_p_value": 0.04409559044095591
+      },
+      "HALLMARK_G2M_CHECKPOINT": {
+        "total_score": 0.1759551531670115,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_downregulated": {
+      "REACTOME_ABERRANT_REGULATION_OF_MITOTIC_G1_S_TRANSITION_IN_CANCER_DUE_TO_RB1_DEFECTS": {
+        "total_score": 0.12686818082477347,
+        "empirical_p_value": 0.036096390360963904
+      },
+      "KEGG_MEDICUS_REFERENCE_PDL_PD1_SHP_PI3K_SIGNALING_PATHWAY": {
+        "total_score": 0.12016366010937884,
+        "empirical_p_value": 0.12098790120987901
+      },
+      "REACTOME_SIGNALING_BY_HIPPO": {
+        "total_score": 0.11825643119640672,
+        "empirical_p_value": 0.033096690330966905
+      }
+    }
+  },
+  "Alpelisib": {
+    "pathways_sensitive_upregulated": {
+      "REACTOME_PI3K_AKT_ACTIVATION": {
+        "total_score": 0.172879565006417,
+        "empirical_p_value": 0.0375962403759624
+      },
+      "REACTOME_ESR_MEDIATED_SIGNALING": {
+        "total_score": 0.18324192933536354,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_APOPTOSIS": {
+        "total_score": 0.1894911030622598,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "STEIN_ESR1_TARGETS": {
+        "total_score": 0.15281620957838715,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {},
+    "pathway_resistant_upregulated": {
+      "REACTOME_MTOR_SIGNALLING": {
+        "total_score": 0.25126217443873733,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_SIGNALING_BY_ERBB2": {
+        "total_score": 0.21948160261651672,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_GLYCOLYSIS_GLUCONEOGENESIS": {
+        "total_score": 0.07461162431925061,
+        "empirical_p_value": 0.029097090290970903
+      },
+      "KEGG_MAPK_SIGNALING_PATHWAY": {
+        "total_score": 0.12041568505326894,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_downregulated": {}
+  },
+  "Anastrozole": {
+    "pathways_sensitive_upregulated": {
+      "HALLMARK_ESTROGEN_RESPONSE_LATE": {
+        "total_score": 0.14228505797971636,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_STEROID_HORMONE_BIOSYNTHESIS": {
+        "total_score": -0.1431374601683144,
+        "empirical_p_value": 0.9976002399760024
+      }
+    },
+    "pathway_sensitive_downregulated": {
+      "HALLMARK_E2F_TARGETS": {
+        "total_score": 0.1608183874948581,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_upregulated": {
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_ERBB_SIGNALING_PATHWAY": {
+        "total_score": 0.15595135167680174,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_MAPK_SIGNALING_PATHWAY": {
+        "total_score": 0.12041568505326894,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_FATTY_ACID_METABOLISM": {
+        "total_score": 0.14358333090914632,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "total_score": 0.11016568506520419,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_IL6_JAK_STAT3_SIGNALING": {
+        "total_score": 0.04208795557192946,
+        "empirical_p_value": 0.0968903109689031
+      },
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+        "total_score": 0.08407717319252894,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_downregulated": {}
+  },
+  "Atezolizumab": {
+    "pathways_sensitive_upregulated": {
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "total_score": 0.11016568506520419,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_ALLOGRAFT_REJECTION": {
+        "total_score": 0.034736352579067376,
+        "empirical_p_value": 0.0608939106089391
+      },
+      "WP_CANCER_IMMUNOTHERAPY_BY_PD1_BLOCKADE": {
+        "total_score": 0.01123519804001627,
+        "empirical_p_value": 0.4350564943505649
+      }
+    },
+    "pathway_sensitive_downregulated": {
+      "KEGG_HOMOLOGOUS_RECOMBINATION": {
+        "total_score": 0.17269830896168614,
+        "empirical_p_value": 0.0005999400059994001
+      }
+    },
+    "pathway_resistant_upregulated": {
+      "HALLMARK_WNT_BETA_CATENIN_SIGNALING": {
+        "total_score": 0.15545354051766846,
+        "empirical_p_value": 0.00029997000299970003
+      },
+      "HALLMARK_TGF_BETA_SIGNALING": {
+        "total_score": 0.250567692181888,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "GOBP_REGULATION_OF_T_CELL_ACTIVATION": {
+        "total_score": 0.05034955141476882,
+        "empirical_p_value": 0.00029997000299970003
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_HYPOXIA": {
+        "total_score": 0.1571318958804322,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "GOBP_KYNURENINE_METABOLIC_PROCESS": {
+        "total_score": -0.14466938775510202,
+        "empirical_p_value": 0.9459054094590541
+      }
+    },
+    "pathway_resistant_downregulated": {
+      "GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION": {
+        "total_score": 0.0825966735432292,
+        "empirical_p_value": 0.0015998400159984002
+      },
+      "GOBP_REGULATION_OF_T_CELL_COSTIMULATION": {
+        "total_score": -0.17816364007345437,
+        "empirical_p_value": 0.9141085891410858
+      }
+    }
+  },
+  "Bevacizumab": {
+    "pathways_sensitive_upregulated": {
+      "KEGG_VEGF_SIGNALING_PATHWAY": {
+        "total_score": 0.1365978051848018,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "total_score": 0.11016568506520419,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_ANGIOGENESIS": {
+        "total_score": 0.12705734714723482,
+        "empirical_p_value": 0.0040995900409959
+      }
+    },
+    "pathway_sensitive_downregulated": {
+      "REACTOME_SIGNALING_BY_PDGF": {
+        "total_score": 0.21517075792449958,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_upregulated": {
+      "HALLMARK_HYPOXIA": {
+        "total_score": 0.1571318958804322,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+        "total_score": 0.1659121244208679,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_SIGNALING_BY_NOTCH": {
+        "total_score": 0.20824167158734275,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "SMID_BREAST_CANCER_BASAL_UP": {
+        "total_score": -0.03254356833285588,
+        "empirical_p_value": 0.9962003799620038
+      },
+      "PID_FGF_PATHWAY": {
+        "total_score": 0.14888881843567725,
+        "empirical_p_value": 0.00029997000299970003
+      },
+      "REACTOME_TIE2_SIGNALING": {
+        "total_score": 0.1154118351570581,
+        "empirical_p_value": 0.04509549045095491
+      },
+      "REACTOME_SIGNALING_BY_MET": {
+        "total_score": 0.195370090507615,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_IL6_JAK_STAT3_SIGNALING": {
+        "total_score": 0.04208795557192946,
+        "empirical_p_value": 0.0968903109689031
+      }
+    },
+    "pathway_resistant_downregulated": {}
+  },
+  "Capivasertib": {
+    "pathways_sensitive_upregulated": {
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "PID_FOXO_PATHWAY": {
+        "total_score": 0.2842977801473523,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+        "total_score": 0.17335140068111587,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {
+      "REACTOME_SIGNALING_BY_ERBB2": {
+        "total_score": 0.21948160261651672,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_upregulated": {
+      "HALLMARK_E2F_TARGETS": {
+        "total_score": 0.1608183874948581,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_MAPK_SIGNALING_PATHWAY": {
+        "total_score": 0.12041568505326894,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "PID_PI3KCI_PATHWAY": {
+        "total_score": 0.1565029433406917,
+        "empirical_p_value": 0.00029997000299970003
+      },
+      "HALLMARK_MTORC1_SIGNALING": {
+        "total_score": 0.21761836619236197,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_downregulated": {
+      "HALLMARK_APOPTOSIS": {
+        "total_score": 0.1894911030622598,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    }
+  },
+  "Dostarlimab": {
+    "pathways_sensitive_upregulated": {
+      "REACTOME_CO_INHIBITION_BY_PD_1": {
+        "total_score": -0.10527067945475133,
+        "empirical_p_value": 0.9452054794520548
+      },
+      "KEGG_T_CELL_RECEPTOR_SIGNALING_PATHWAY": {
+        "total_score": 0.11141585091361772,
+        "empirical_p_value": 0.00019998000199980003
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "total_score": 0.11016568506520419,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_MEDICUS_REFERENCE_CGAS_STING_SIGNALING_PATHWAY": {
+        "total_score": -0.016047597670256153,
+        "empirical_p_value": 0.5588441155884412
+      }
+    },
+    "pathway_sensitive_downregulated": {},
+    "pathway_resistant_upregulated": {
+      "HALLMARK_TGF_BETA_SIGNALING": {
+        "total_score": 0.250567692181888,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_WNT_BETA_CATENIN_SIGNALING": {
+        "total_score": 0.15545354051766846,
+        "empirical_p_value": 0.00029997000299970003
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "GOBP_TOLERANCE_INDUCTION_DEPENDENT_UPON_IMMUNE_RESPONSE": {
+        "total_score": -0.32229862074593973,
+        "empirical_p_value": 0.99000099990001
+      },
+      "GOBP_L_TRYPTOPHAN_CATABOLIC_PROCESS_TO_KYNURENINE": {
+        "total_score": -0.21337278106508872,
+        "empirical_p_value": 0.9496050394960504
+      },
+      "REACTOME_INTERLEUKIN_10_SIGNALING": {
+        "total_score": -0.1016680268713121,
+        "empirical_p_value": 0.9828017198280172
+      }
+    },
+    "pathway_resistant_downregulated": {
+      "GOBP_ANTIGEN_PROCESSING_AND_PRESENTATION_OF_PEPTIDE_ANTIGEN_VIA_MHC_CLASS_I": {
+        "total_score": 0.19261805454966374,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_JAK_STAT_SIGNALING_PATHWAY": {
+        "total_score": 0.04546500655118346,
+        "empirical_p_value": 0.0451954804519548
+      }
+    }
+  },
+  "Elacestrant": {
+    "pathways_sensitive_upregulated": {
+      "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+        "total_score": 0.17335140068111587,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_MEDICUS_REFERENCE_NUCLEAR_INITIATED_ESTROGEN_SIGNALING_PATHWAY": {
+        "total_score": 0.3254882388520496,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "WP_ESTROGEN_SIGNALING": {
+        "total_score": 0.33232603724273113,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_LATE": {
+        "total_score": 0.14228505797971636,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_E2F_TARGETS": {
+        "total_score": 0.1608183874948581,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_G2M_CHECKPOINT": {
+        "total_score": 0.1759551531670115,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {},
+    "pathway_resistant_upregulated": {
+      "HALLMARK_MTORC1_SIGNALING": {
+        "total_score": 0.21761836619236197,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_ERBB_SIGNALING_PATHWAY": {
+        "total_score": 0.15595135167680174,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_downregulated": {
+      "HALLMARK_APOPTOSIS": {
+        "total_score": 0.1894911030622598,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    }
+  },
+  "Entrectinib": {
+    "pathways_sensitive_upregulated": {
+      "REACTOME_SIGNALING_BY_NTRKS": {
+        "total_score": 0.19706982501361958,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_APOPTOSIS": {
+        "total_score": 0.1894911030622598,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {},
+    "pathway_resistant_upregulated": {
+      "HALLMARK_KRAS_SIGNALING_UP": {
+        "total_score": 0.027096560858132168,
+        "empirical_p_value": 0.09929007099290071
+      },
+      "REACTOME_SIGNALING_BY_MET": {
+        "total_score": 0.195370090507615,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+        "total_score": 0.1659121244208679,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_ERBB_SIGNALING_PATHWAY": {
+        "total_score": 0.15595135167680174,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_downregulated": {}
+  },
+  "Everolimus": {
+    "pathways_sensitive_upregulated": {
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_MTORC1_SIGNALING": {
+        "total_score": 0.21761836619236197,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "WP_ESTROGEN_SIGNALING": {
+        "total_score": 0.33232603724273113,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_E2F_TARGETS": {
+        "total_score": 0.1608183874948581,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_ANGIOGENESIS": {
+        "total_score": 0.12705734714723482,
+        "empirical_p_value": 0.0040995900409959
+      }
+    },
+    "pathway_sensitive_downregulated": {},
+    "pathway_resistant_upregulated": {
+      "GOBP_PROCESS_UTILIZING_AUTOPHAGIC_MECHANISM": {
+        "total_score": 0.20028775204300975,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_MYC_TARGETS_V1": {
+        "total_score": 0.2879945157898415,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_MEDICUS_REFERENCE_IGF_IGF1R_PI3K_SIGNALING_PATHWAY": {
+        "total_score": 0.20697510841201905,
+        "empirical_p_value": 0.0036996300369963003
+      },
+      "KEGG_MEDICUS_REFERENCE_PDL_PD1_SHP_PI3K_SIGNALING_PATHWAY": {
+        "total_score": 0.12016366010937884,
+        "empirical_p_value": 0.12098790120987901
+      }
+    },
+    "pathway_resistant_downregulated": {}
+  },
+  "Exemestane": {
+    "pathways_sensitive_upregulated": {
+      "REACTOME_ESTROGEN_BIOSYNTHESIS": {
+        "total_score": -0.023256478269740866,
+        "empirical_p_value": 0.5717428257174283
+      },
+      "REACTOME_ESTROGEN_DEPENDENT_GENE_EXPRESSION": {
+        "total_score": 0.21525760596427113,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "WP_ESTROGEN_SIGNALING": {
+        "total_score": 0.33232603724273113,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_METABOLISM_OF_STEROID_HORMONES": {
+        "total_score": -0.06628657348168082,
+        "empirical_p_value": 0.8964103589641036
+      },
+      "HALLMARK_ANDROGEN_RESPONSE": {
+        "total_score": 0.2574830209188024,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {
+      "HALLMARK_APOPTOSIS": {
+        "total_score": 0.1894911030622598,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_upregulated": {
+      "KEGG_ERBB_SIGNALING_PATHWAY": {
+        "total_score": 0.15595135167680174,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_E2F_TARGETS": {
+        "total_score": 0.1608183874948581,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+        "total_score": 0.1659121244208679,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_IL6_JAK_STAT3_SIGNALING": {
+        "total_score": 0.04208795557192946,
+        "empirical_p_value": 0.0968903109689031
+      }
+    },
+    "pathway_resistant_downregulated": {}
+  },
+  "Fulvestrant": {
+    "pathways_sensitive_upregulated": {
+      "GOBP_ESTROGEN_RECEPTOR_SIGNALING_PATHWAY": {
+        "total_score": 0.21848050346905523,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_INTERFERON_GAMMA_SIGNALING": {
+        "total_score": 0.13613753913421034,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_APOPTOSIS": {
+        "total_score": 0.20980564491764142,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {},
+    "pathway_resistant_upregulated": {
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_ERBB_SIGNALING_PATHWAY": {
+        "total_score": 0.15595135167680174,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_MAPK_SIGNALING_PATHWAY": {
+        "total_score": 0.12041568505326894,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "BIOCARTA_NFKB_PATHWAY": {
+        "total_score": 0.1617237282433902,
+        "empirical_p_value": 0.0051994800519948
+      },
+      "GOBP_CELL_CYCLE_G1_S_PHASE_TRANSITION": {
+        "total_score": 0.18152330106984804,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_downregulated": {
+      "REACTOME_GPER1_SIGNALING": {
+        "total_score": 0.110469845940665,
+        "empirical_p_value": 0.0065993400659934
+      },
+      "GOCC_RB_E2F_COMPLEX": {
+        "total_score": -0.09537237298510509,
+        "empirical_p_value": 0.7639236076392361
+      }
+    }
+  },
+  "Lapatinib": {
+    "pathways_sensitive_upregulated": {
+      "KEGG_ERBB_SIGNALING_PATHWAY": {
+        "total_score": 0.15595135167680174,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_E2F_TARGETS": {
+        "total_score": 0.1608183874948581,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_FOXO_MEDIATED_TRANSCRIPTION": {
+        "total_score": 0.18351316273753948,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "BIOCARTA_G1_PATHWAY": {
+        "total_score": 0.23142966926408493,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {},
+    "pathway_resistant_upregulated": {
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+        "total_score": 0.17335140068111587,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "NAGASHIMA_NRG1_SIGNALING_UP": {
+        "total_score": 0.11188996868182555,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_GRB7_EVENTS_IN_ERBB2_SIGNALING": {
+        "total_score": 0.12091001836359927,
+        "empirical_p_value": 0.17938206179382063
+      },
+      "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+        "total_score": 0.1659121244208679,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_SIGNALING_BY_MET": {
+        "total_score": 0.195370090507615,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_OXIDATIVE_PHOSPHORYLATION": {
+        "total_score": 0.2355020567667626,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+        "total_score": 0.08407717319252894,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_downregulated": {
+      "BIOCARTA_PTEN_PATHWAY": {
+        "total_score": 0.32541710596785156,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_APOPTOSIS": {
+        "total_score": 0.1894911030622598,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    }
+  },
+  "Larotrectinib": {
+    "pathways_sensitive_upregulated": {
+      "REACTOME_SIGNALING_BY_NTRKS": {
+        "total_score": 0.19706982501361958,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_KRAS_SIGNALING_UP": {
+        "total_score": 0.027096560858132168,
+        "empirical_p_value": 0.09929007099290071
+      }
+    },
+    "pathway_sensitive_downregulated": {
+      "HALLMARK_APOPTOSIS": {
+        "total_score": 0.1894911030622598,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_upregulated": {},
+    "pathway_resistant_downregulated": {}
+  },
+  "Letrozole": {
+    "pathways_sensitive_upregulated": {
+      "HALLMARK_ESTROGEN_RESPONSE_LATE": {
+        "total_score": 0.14228505797971636,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_STEROID_HORMONE_BIOSYNTHESIS": {
+        "total_score": -0.1431374601683144,
+        "empirical_p_value": 0.9976002399760024
+      }
+    },
+    "pathway_sensitive_downregulated": {},
+    "pathway_resistant_upregulated": {
+      "HALLMARK_E2F_TARGETS": {
+        "total_score": 0.1608183874948581,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_MAPK_SIGNALING_PATHWAY": {
+        "total_score": 0.12041568505326894,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "PID_FOXM1_PATHWAY": {
+        "total_score": 0.1895334732712789,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "PID_PLK1_PATHWAY": {
+        "total_score": 0.17006710836864114,
+        "empirical_p_value": 0.00019998000199980003
+      },
+      "REACTOME_EXTRACELLULAR_MATRIX_ORGANIZATION": {
+        "total_score": 0.07801124810577564,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_DEGRADATION_OF_THE_EXTRACELLULAR_MATRIX": {
+        "total_score": 0.0863145376255895,
+        "empirical_p_value": 0.0004999500049995
+      },
+      "HALLMARK_ANGIOGENESIS": {
+        "total_score": 0.12705734714723482,
+        "empirical_p_value": 0.0040995900409959
+      },
+      "HALLMARK_HYPOXIA": {
+        "total_score": 0.1571318958804322,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "total_score": 0.11016568506520419,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_downregulated": {
+      "HALLMARK_APOPTOSIS": {
+        "total_score": 0.1894911030622598,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    }
+  },
+  "Margetuximab": {
+    "pathways_sensitive_upregulated": {
+      "KEGG_ERBB_SIGNALING_PATHWAY": {
+        "total_score": 0.15595135167680174,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_SIGNALING_BY_ERBB2": {
+        "total_score": 0.21948160261651672,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY": {
+        "total_score": 0.056094192839377666,
+        "empirical_p_value": 0.0244975502449755
+      },
+      "REACTOME_FCGAMMA_RECEPTOR_FCGR_DEPENDENT_PHAGOCYTOSIS": {
+        "total_score": 0.17430582666406402,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "total_score": 0.11016568506520419,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {},
+    "pathway_resistant_upregulated": {
+      "REACTOME_DOWNREGULATION_OF_ERBB2_SIGNALING": {
+        "total_score": 0.1803629556489269,
+        "empirical_p_value": 0.00039996000399960006
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_downregulated": {}
+  },
+  "Neratinib": {
+    "pathways_sensitive_upregulated": {
+      "REACTOME_SIGNALING_BY_ERBB2": {
+        "total_score": 0.21948160261651672,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_APOPTOSIS": {
+        "total_score": 0.1894911030622598,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {
+      "HALLMARK_MTORC1_SIGNALING": {
+        "total_score": 0.21761836619236197,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_E2F_TARGETS": {
+        "total_score": 0.1608183874948581,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_upregulated": {
+      "REACTOME_MAPK1_MAPK3_SIGNALING": {
+        "total_score": 0.11081469573889013,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER": {
+        "total_score": 0.05285513910578976,
+        "empirical_p_value": 0.0334966503349665
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_LATE": {
+        "total_score": 0.14228505797971636,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_downregulated": {}
+  },
+  "Olaparib": {
+    "pathways_sensitive_upregulated": {
+      "HALLMARK_INTERFERON_ALPHA_RESPONSE": {
+        "total_score": 0.13228903309500895,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_APOPTOSIS": {
+        "total_score": 0.1894911030622598,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {
+      "REACTOME_HDR_THROUGH_HOMOLOGOUS_RECOMBINATION_HRR": {
+        "total_score": 0.1739658591527602,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_FANCONI_ANEMIA_PATHWAY": {
+        "total_score": 0.13540501711945763,
+        "empirical_p_value": 0.0023997600239976003
+      }
+    },
+    "pathway_resistant_upregulated": {
+      "KEGG_ABC_TRANSPORTERS": {
+        "total_score": 0.019475388651455372,
+        "empirical_p_value": 0.3357664233576642
+      },
+      "REACTOME_ACTIVATION_OF_ATR_IN_RESPONSE_TO_REPLICATION_STRESS": {
+        "total_score": 0.06986684719287994,
+        "empirical_p_value": 0.0724927507249275
+      }
+    },
+    "pathway_resistant_downregulated": {
+      "REACTOME_NONHOMOLOGOUS_END_JOINING_NHEJ": {
+        "total_score": 0.1599945466939332,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_P53_PATHWAY": {
+        "total_score": 0.1626367063192321,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_BASE_EXCISION_REPAIR": {
+        "total_score": 0.139181597687433,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    }
+  },
+  "Paclitaxel": {
+    "pathways_sensitive_upregulated": {
+      "HALLMARK_G2M_CHECKPOINT": {
+        "total_score": 0.1759551531670115,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_MITOTIC_SPINDLE": {
+        "total_score": 0.23076831651160246,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_APOPTOSIS": {
+        "total_score": 0.1894911030622598,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "total_score": 0.11016568506520419,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_CELL_CYCLE": {
+        "total_score": 0.17407461008162572,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {},
+    "pathway_resistant_upregulated": {
+      "REACTOME_NFKB_AND_MAP_KINASES_ACTIVATION_MEDIATED_BY_TLR4_SIGNALING_REPERTOIRE": {
+        "total_score": 0.20265081320966316,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER": {
+        "total_score": 0.05285513910578976,
+        "empirical_p_value": 0.0334966503349665
+      },
+      "KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION": {
+        "total_score": -0.10926874245626522,
+        "empirical_p_value": 1.0
+      },
+      "KEGG_ABC_TRANSPORTERS": {
+        "total_score": 0.019475388651455372,
+        "empirical_p_value": 0.3357664233576642
+      },
+      "HALLMARK_ANGIOGENESIS": {
+        "total_score": 0.12705734714723482,
+        "empirical_p_value": 0.0040995900409959
+      }
+    },
+    "pathway_resistant_downregulated": {}
+  },
+  "Palbociclib": {
+    "pathways_sensitive_upregulated": {
+      "REACTOME_CELL_CYCLE": {
+        "total_score": 0.17407461008162572,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_E2F_TARGETS": {
+        "total_score": 0.1608183874948581,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "GOBP_CELLULAR_SENESCENCE": {
+        "total_score": 0.1679816889968051,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {},
+    "pathway_resistant_upregulated": {
+      "HALLMARK_G2M_CHECKPOINT": {
+        "total_score": 0.1759551531670115,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER": {
+        "total_score": 0.05285513910578976,
+        "empirical_p_value": 0.0334966503349665
+      },
+      "REACTOME_FGFR1_LIGAND_BINDING_AND_ACTIVATION": {
+        "total_score": -0.022440619097625514,
+        "empirical_p_value": 0.5983401659834017
+      },
+      "KEGG_MAPK_SIGNALING_PATHWAY": {
+        "total_score": 0.12041568505326894,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_MYC_TARGETS_V1": {
+        "total_score": 0.2879945157898415,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_MTORC1_SIGNALING": {
+        "total_score": 0.21761836619236197,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_downregulated": {}
+  },
+  "Pembrolizumab": {
+    "pathways_sensitive_upregulated": {
+      "REACTOME_CO_INHIBITION_BY_PD_1": {
+        "total_score": -0.10527067945475133,
+        "empirical_p_value": 0.9452054794520548
+      },
+      "WP_CANCER_IMMUNOTHERAPY_BY_PD1_BLOCKADE": {
+        "total_score": 0.01123519804001627,
+        "empirical_p_value": 0.4350564943505649
+      },
+      "REACTOME_TCR_SIGNALING": {
+        "total_score": 0.17452557180595574,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "GOBP_T_CELL_ACTIVATION": {
+        "total_score": 0.06205369705432062,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_JAK_STAT_SIGNALING_PATHWAY": {
+        "total_score": 0.04546500655118346,
+        "empirical_p_value": 0.0451954804519548
+      },
+      "KEGG_CYTOKINE_CYTOKINE_RECEPTOR_INTERACTION": {
+        "total_score": -0.10926874245626522,
+        "empirical_p_value": 1.0
+      },
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+        "total_score": 0.08407717319252894,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {},
+    "pathway_resistant_upregulated": {
+      "HALLMARK_TGF_BETA_SIGNALING": {
+        "total_score": 0.250567692181888,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_SIGNALING_BY_VEGF": {
+        "total_score": 0.20407430171412966,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_downregulated": {}
+  },
+  "Pertuzumab": {
+    "pathways_sensitive_upregulated": {
+      "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2": {
+        "total_score": 0.3261747232725639,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_MAPK_SIGNALING_PATHWAY": {
+        "total_score": 0.12041568505326894,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_E2F_TARGETS": {
+        "total_score": 0.1608183874948581,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "GOBP_FC_GAMMA_RECEPTOR_SIGNALING_PATHWAY": {
+        "total_score": 0.05482970961622646,
+        "empirical_p_value": 0.1327867213278672
+      },
+      "REACTOME_SIGNALING_BY_ERBB2_IN_CANCER": {
+        "total_score": 0.16206973470900932,
+        "empirical_p_value": 0.0023997600239976003
+      }
+    },
+    "pathway_sensitive_downregulated": {
+      "HALLMARK_APOPTOSIS": {
+        "total_score": 0.1894911030622598,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_upregulated": {},
+    "pathway_resistant_downregulated": {}
+  },
+  "Ribociclib": {
+    "pathways_sensitive_upregulated": {
+      "HALLMARK_E2F_TARGETS": {
+        "total_score": 0.1608183874948581,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_G2M_CHECKPOINT": {
+        "total_score": 0.1759551531670115,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "WU_APOPTOSIS_BY_CDKN1A_VIA_TP53": {
+        "total_score": 0.12571472602955147,
+        "empirical_p_value": 0.0010998900109989002
+      }
+    },
+    "pathway_sensitive_downregulated": {},
+    "pathway_resistant_upregulated": {
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_KRAS_SIGNALING_UP": {
+        "total_score": 0.027096560858132168,
+        "empirical_p_value": 0.09929007099290071
+      },
+      "REACTOME_CYCLIN_E_ASSOCIATED_EVENTS_DURING_G1_S_TRANSITION": {
+        "total_score": 0.2559563601448045,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_ABERRANT_REGULATION_OF_MITOTIC_G1_S_TRANSITION_IN_CANCER_DUE_TO_RB1_DEFECTS": {
+        "total_score": 0.12686818082477347,
+        "empirical_p_value": 0.036096390360963904
+      }
+    },
+    "pathway_resistant_downregulated": {}
+  },
+  "Sacituzumab govitecan": {
+    "pathways_sensitive_upregulated": {
+      "WP_TROP2_REGULATORY_SIGNALING": {
+        "total_score": 0.26313982524451673,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "GOMF_DNA_TOPOISOMERASE_ACTIVITY": {
+        "total_score": 0.222752747850691,
+        "empirical_p_value": 0.028597140285971403
+      }
+    },
+    "pathway_sensitive_downregulated": {},
+    "pathway_resistant_upregulated": {
+      "REACTOME_GLUCURONIDATION": {
+        "total_score": -0.022813127808842315,
+        "empirical_p_value": 0.5856414358564144
+      }
+    },
+    "pathway_resistant_downregulated": {}
+  },
+  "Selpercatinib": {
+    "pathways_sensitive_upregulated": {
+      "KEGG_MEDICUS_VARIANT_RET_FUSION_KINASE_TO_RAS_ERK_SIGNALING_PATHWAY": {
+        "total_score": 0.3117771040747489,
+        "empirical_p_value": 0.00019998000199980003
+      },
+      "KEGG_MEDICUS_VARIANT_MUTATION_ACTIVATED_RET_TO_PI3K_SIGNALING_PATHWAY": {
+        "total_score": 0.22559382907517755,
+        "empirical_p_value": 0.012098790120987902
+      },
+      "HALLMARK_E2F_TARGETS": {
+        "total_score": 0.1608183874948581,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_G2M_CHECKPOINT": {
+        "total_score": 0.1759551531670115,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "PID_RET_PATHWAY": {
+        "total_score": 0.22646324430068454,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {},
+    "pathway_resistant_upregulated": {},
+    "pathway_resistant_downregulated": {}
+  },
+  "Talazoparib": {
+    "pathways_sensitive_upregulated": {
+      "HALLMARK_APOPTOSIS": {
+        "total_score": 0.1894911030622598,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {
+      "REACTOME_HDR_THROUGH_HOMOLOGOUS_RECOMBINATION_HRR": {
+        "total_score": 0.1739658591527602,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_upregulated": {
+      "REACTOME_ABC_FAMILY_PROTEINS_MEDIATED_TRANSPORT": {
+        "total_score": 0.18985754430650204,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_ACTIVATION_OF_ATR_IN_RESPONSE_TO_REPLICATION_STRESS": {
+        "total_score": 0.06986684719287994,
+        "empirical_p_value": 0.0724927507249275
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_downregulated": {}
+  },
+  "Tamoxifen": {
+    "pathways_sensitive_upregulated": {
+      "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+        "total_score": 0.17335140068111587,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_ESTROGEN_DEPENDENT_NUCLEAR_EVENTS_DOWNSTREAM_OF_ESR_MEMBRANE_SIGNALING": {
+        "total_score": 0.12527736938114298,
+        "empirical_p_value": 0.0173982601739826
+      },
+      "KEGG_P53_SIGNALING_PATHWAY": {
+        "total_score": 0.14542764413898435,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {},
+    "pathway_resistant_upregulated": {
+      "HALLMARK_E2F_TARGETS": {
+        "total_score": 0.1608183874948581,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "total_score": 0.11016568506520419,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_ERBB_SIGNALING_PATHWAY": {
+        "total_score": 0.15595135167680174,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_KRAS_SIGNALING_UP": {
+        "total_score": 0.027096560858132168,
+        "empirical_p_value": 0.09929007099290071
+      },
+      "KEGG_HEDGEHOG_SIGNALING_PATHWAY": {
+        "total_score": -0.07492197941251744,
+        "empirical_p_value": 0.9627037296270373
+      },
+      "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+        "total_score": 0.1659121244208679,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+        "total_score": 0.08407717319252894,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_HOMOLOGOUS_RECOMBINATION": {
+        "total_score": 0.17269830896168614,
+        "empirical_p_value": 0.0005999400059994001
+      }
+    },
+    "pathway_resistant_downregulated": {
+      "KEGG_GAP_JUNCTION": {
+        "total_score": 0.10308103756464304,
+        "empirical_p_value": 0.0006999300069993001
+      },
+      "KEGG_DRUG_METABOLISM_CYTOCHROME_P450": {
+        "total_score": -0.06387468932219464,
+        "empirical_p_value": 0.9401059894010599
+      }
+    }
+  },
+  "Toremifene": {
+    "pathways_sensitive_upregulated": {
+      "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+        "total_score": 0.17335140068111587,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_LATE": {
+        "total_score": 0.14228505797971636,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_ESR_MEDIATED_SIGNALING": {
+        "total_score": 0.18324192933536354,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_G2M_CHECKPOINT": {
+        "total_score": 0.1759551531670115,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_E2F_TARGETS": {
+        "total_score": 0.1608183874948581,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {
+      "HALLMARK_APOPTOSIS": {
+        "total_score": 0.1894911030622598,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_TGF_BETA_SIGNALING": {
+        "total_score": 0.250567692181888,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_upregulated": {
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_downregulated": {}
+  },
+  "Trastuzumab deruxtecan": {
+    "pathways_sensitive_upregulated": {
+      "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2": {
+        "total_score": 0.3261747232725639,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_FCGAMMA_RECEPTOR_FCGR_DEPENDENT_PHAGOCYTOSIS": {
+        "total_score": 0.17430582666406402,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "total_score": 0.11016568506520419,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {
+      "HALLMARK_DNA_REPAIR": {
+        "total_score": 0.1964211822660098,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_upregulated": {
+      "HALLMARK_G2M_CHECKPOINT": {
+        "total_score": 0.1759551531670115,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "GOBP_REGULATION_OF_PHAGOCYTOSIS": {
+        "total_score": 0.06967140380336101,
+        "empirical_p_value": 0.009799020097990201
+      },
+      "GOBP_NEGATIVE_REGULATION_OF_EXECUTION_PHASE_OF_APOPTOSIS": {
+        "total_score": 0.0659824525607019,
+        "empirical_p_value": 0.30816918308169183
+      },
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_downregulated": {}
+  },
+  "Trastuzumab emtansine": {
+    "pathways_sensitive_upregulated": {
+      "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2": {
+        "total_score": 0.3261747232725639,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_SIGNALING_BY_ERBB2_IN_CANCER": {
+        "total_score": 0.16206973470900932,
+        "empirical_p_value": 0.0023997600239976003
+      },
+      "HALLMARK_APOPTOSIS": {
+        "total_score": 0.1894911030622598,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_INTERFERON_GAMMA_RESPONSE": {
+        "total_score": 0.11016568506520419,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "GOBP_RECEPTOR_MEDIATED_ENDOCYTOSIS": {
+        "total_score": 0.13268641154185956,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "GOBP_LYSOSOMAL_TRANSPORT": {
+        "total_score": 0.18935523644491836,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_upregulated": {
+      "HALLMARK_KRAS_SIGNALING_UP": {
+        "total_score": 0.027096560858132168,
+        "empirical_p_value": 0.09929007099290071
+      },
+      "HALLMARK_G2M_CHECKPOINT": {
+        "total_score": 0.1759551531670115,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_E2F_TARGETS": {
+        "total_score": 0.1608183874948581,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_ABC_TRANSPORTERS": {
+        "total_score": 0.019475388651455372,
+        "empirical_p_value": 0.3357664233576642
+      },
+      "GOBP_CAVEOLIN_MEDIATED_ENDOCYTOSIS": {
+        "total_score": 0.27390913914853665,
+        "empirical_p_value": 0.00039996000399960006
+      }
+    },
+    "pathway_resistant_downregulated": {}
+  },
+  "Trastuzumab": {
+    "pathways_sensitive_upregulated": {
+      "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2": {
+        "total_score": 0.3261747232725639,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "KEGG_MAPK_SIGNALING_PATHWAY": {
+        "total_score": 0.12041568505326894,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_E2F_TARGETS": {
+        "total_score": 0.1608183874948581,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "GOBP_FC_GAMMA_RECEPTOR_SIGNALING_PATHWAY": {
+        "total_score": 0.05482970961622646,
+        "empirical_p_value": 0.1327867213278672
+      },
+      "KEGG_NATURAL_KILLER_CELL_MEDIATED_CYTOTOXICITY": {
+        "total_score": 0.056094192839377666,
+        "empirical_p_value": 0.0244975502449755
+      }
+    },
+    "pathway_sensitive_downregulated": {},
+    "pathway_resistant_upregulated": {
+      "HALLMARK_PI3K_AKT_MTOR_SIGNALING": {
+        "total_score": 0.2343030833051759,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_ANGIOGENESIS": {
+        "total_score": 0.12705734714723482,
+        "empirical_p_value": 0.0040995900409959
+      },
+      "HALLMARK_NOTCH_SIGNALING": {
+        "total_score": 0.1300721566304437,
+        "empirical_p_value": 0.005099490050994901
+      },
+      "HALLMARK_IL6_JAK_STAT3_SIGNALING": {
+        "total_score": 0.04208795557192946,
+        "empirical_p_value": 0.0968903109689031
+      },
+      "HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION": {
+        "total_score": 0.1659121244208679,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_downregulated": {
+      "HALLMARK_APOPTOSIS": {
+        "total_score": 0.1894911030622598,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    }
+  },
+  "Tucatinib": {
+    "pathways_sensitive_upregulated": {
+      "REACTOME_CONSTITUTIVE_SIGNALING_BY_OVEREXPRESSED_ERBB2": {
+        "total_score": 0.3261747232725639,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_PI3K_AKT_SIGNALING_IN_CANCER": {
+        "total_score": 0.05285513910578976,
+        "empirical_p_value": 0.0334966503349665
+      },
+      "KEGG_MAPK_SIGNALING_PATHWAY": {
+        "total_score": 0.12041568505326894,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "REACTOME_TCR_SIGNALING": {
+        "total_score": 0.17452557180595574,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_sensitive_downregulated": {},
+    "pathway_resistant_upregulated": {
+      "REACTOME_SIGNALING_BY_EGFR_IN_CANCER": {
+        "total_score": 0.15574515009189305,
+        "empirical_p_value": 0.004299570042995701
+      },
+      "HALLMARK_NOTCH_SIGNALING": {
+        "total_score": 0.1300721566304437,
+        "empirical_p_value": 0.005099490050994901
+      },
+      "HALLMARK_WNT_BETA_CATENIN_SIGNALING": {
+        "total_score": 0.15545354051766846,
+        "empirical_p_value": 0.00029997000299970003
+      },
+      "HALLMARK_TNFA_SIGNALING_VIA_NFKB": {
+        "total_score": 0.08407717319252894,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_MTORC1_SIGNALING": {
+        "total_score": 0.21761836619236197,
+        "empirical_p_value": 9.999000099990002e-05
+      },
+      "HALLMARK_ESTROGEN_RESPONSE_EARLY": {
+        "total_score": 0.17335140068111587,
+        "empirical_p_value": 9.999000099990002e-05
+      }
+    },
+    "pathway_resistant_downregulated": {}
+  }
+}
